@@ -30,6 +30,8 @@ jobs:
         run: echo Hello, world!
 
       # Runs a set of commands using the runners shell
+      # Must switch to src directory because the test script looks at directories
+      # in the parent directory
       - name: test task formats. 
         run: |
             cd src
