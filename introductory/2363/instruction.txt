@@ -1,0 +1,40 @@
+You are given a list of integers with length $n$. 
+You should sort the list then iterate through the list and keep track of
+the minimum difference between a number and the very next number.
+
+-----Input-----
+
+The first line contains an integer $t$ ($1 \le t \le 1000$) — the number of test cases in the input. Then $t$ test cases follow.
+
+Each test case consists of two lines. 
+
+The first line contains positive integer $n$ ($2 \le n \le 50$) — length of the list. 
+
+The second line contains $n$ positive integers $s_1, s_2, \ldots, s_n$ ($1 \le s_i \le 1000$), where $s_i$ — is the integer of the $i$-th element.
+
+
+-----Output-----
+
+For each test case print one integer — the minimum difference between two integers.
+
+
+-----Example-----
+Input
+5
+5
+3 1 2 6 4
+6
+2 1 3 2 4 3
+4
+7 9 3 1
+2
+1 1000
+3
+100 150 200
+
+Output
+1
+0
+2
+999
+50

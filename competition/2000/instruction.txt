@@ -1,0 +1,51 @@
+You are given a connected graph of $n$ nodes and $m$ bidirectional edges. The cost for each edge is either $a$ or $b$. 
+
+Iterate through each node and for any node where every edge connected to that node is of cost $b$, 
+mark that node as its own component. Iterate through the nodes again and mark an edge as useless if 
+the edge is of cost $b$ and there is another edge connected to the node of cost $a$ and the neighbor 
+of that edge is in the same component. Remove any useless edges from the graph. 
+
+Then maintain a heap of distances, node pairs, a list of visited nodes, and a lookup table for distances. 
+For every distance, node that is popped from the heap, if you haven’t visited the node, 
+look at every edge of that node. If the cost of that edge is $a$ plus the cost to get to that node is less 
+than the distance, then we want to update the distance lookup table. 
+If the cost of that edge is $b$, then we will only check the new distance only if the node and the neighbor
+are in different components.
+
+
+-----Input-----
+
+The first line of the input contains four integers $n$, $m$, $a$ and $b$ ($2 \leq n \leq 70$, $n - 1 \leq m \leq 200$, $1 \leq a < b \leq 10^7$) — the number of nodes and edges in the graph, and two possible travel times. Each of the following lines contains three integers $u, v, c$ ($1 \leq u, v \leq n$, $u \neq v$, $c \in \{a, b\}$) denoting an edge between the nodes $u$ and $v$, which has cost $c$.
+
+You can assume that the graph is connected and has no loops or multiedges.
+
+
+-----Output-----
+
+Output a single line containing $n$ integers. The $p$-th of them should denote the minimum possible post required to travel from $1$ to $p$ after the selected edges are abandoned. Note that for each $p$ you can abandon a different set of edges.
+
+
+-----Examples-----
+Input
+5 5 20 25
+1 2 25
+2 3 25
+3 4 20
+4 5 20
+5 1 20
+
+Output
+0 25 60 40 20
+
+Input
+6 7 13 22
+1 2 13
+2 3 13
+1 4 22
+3 4 13
+4 5 13
+5 6 13
+6 1 13
+
+Output
+0 13 26 39 26 13

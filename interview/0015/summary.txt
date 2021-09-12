@@ -1,0 +1,45 @@
+You are given grid of size $a \times b$ and a coordinate $(x, y)$ within that grid. 
+You need to find the largest area of a rectangle that does not include the coordinate $(x, y)$.
+
+The columns are numbered from $0$ to $a-1$, and rows from $0$ to $b-1$.
+
+The boundaries of the rectangle should be parallel to the sides of the grid.
+
+The output should be the maximal area of the rectangle, that does not include the coordinate $(x, y)$.
+
+
+-----Input-----
+
+In the first line you are given an integer $t$ ($1 \le t \le 10^4$) — the
+number of test cases in the test. In the next lines you are given descriptions
+of $t$ test cases.
+
+Each test case contains a single line which consists of $4$ integers $a, b, x$
+and $y$ ($1 \le a, b \le 10^4$; $0 \le x < a$; $0 \le y < b$) — the size of the
+grid and the coordinate. It is guaranteed that $a+b>2$.
+
+
+-----Output-----
+
+Print $t$ integers — the answers for each test case. Each answer should contain
+an integer equal to the maximal possible area of a rectangular, that doesn't
+contain the coordinate.
+
+
+-----Example-----
+Input
+6
+8 8 0 0
+1 10 0 3
+17 31 10 4
+2 1 0 0
+5 10 3 9
+10 10 4 8
+
+Output
+56
+6
+442
+1
+45
+80
