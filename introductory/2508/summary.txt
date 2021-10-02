@@ -1,0 +1,27 @@
+you are given an array.
+Return the minimum number of elements in array that must move in order for all numbers in array to be in non-decreasing order.
+Notice that when a group of indexes are selected they can reorder in any possible way between themselves and the non selected indexes remain the same.
+ 
+Example 1:
+Input: heights = [1,1,4,2,1,3]
+Output: 3
+Explanation: 
+Current array : [1,1,4,2,1,3]
+Target array  : [1,1,1,2,3,4]
+On index 2 we have 4 vs 1 so we have to move this element.
+On index 4 we have 1 vs 3 so we have to move this element.
+On index 5 we have 3 vs 4 so we have to move this element.
+
+Example 2:
+Input: heights = [5,1,2,3,4]
+Output: 5
+
+Example 3:
+Input: heights = [1,2,3,4,5]
+Output: 0
+
+ 
+Constraints:
+
+1 <= heights.length <= 100
+1 <= heights[i] <= 100
