@@ -1,5 +1,5 @@
 # Prompt-Summarization
-Using NLP techniques to summarize prompts for program synthesis. [Repo Here](https://github.com/kurbster/Prompt-Summarization)
+Using NLP techniques to summarize prompts for program synthesis.
 ## Motivation
 Recently, researchers and companies have been focusing on probram synthesis.
 Which is the task of generating code given a prompt. There has been some success when the prompts
