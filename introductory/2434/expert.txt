@@ -1,0 +1,25 @@
+You are given an array with some bits. there three possible combinations of bits 10, 11, 0. convert array to string and find if the last charecter should be a one bit charecter or not 
+
+Example 1:
+
+Input: 
+bits = [1, 0, 0]
+Output: True
+Explanation: 
+The only way to decode it is two-bit character and one-bit character. So the last character is one-bit character.
+
+
+
+Example 2:
+
+Input: 
+bits = [1, 1, 1, 0]
+Output: False
+Explanation: 
+The only way to decode it is two-bit character and two-bit character. So the last character is NOT one-bit character.
+
+
+
+Note:
+1 .
+bits[i] is always 0 or 1.
