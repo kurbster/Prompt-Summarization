@@ -1,5 +1,5 @@
 # Prompt-Summarization
-Using NLP techniques to summarize prompts for program synthesis.
+Using NLP techniques to summarize prompts for program synthesis. [Repo Here](https://github.com/kurbster/Prompt-Summarization)
 ## Motivation
 Recently, researchers and companies have been focusing on probram synthesis.
 Which is the task of generating code given a prompt. There has been some success when the prompts
@@ -17,7 +17,6 @@ This area of NLP is changing rapidly and any contributions could change the cour
 4. Create your summarization files.
     1. `summary.txt` - A basic summary of the prompt
     2. `expert.txt` - An expert summary of the prompt
-    3. `instruction.txt` - A description of the code solution
 5. Run the `format.sh` script.
 6. Push the changes to your local branch and submit a Pull Request.
     1. The `test.sh` will be run for every pull request to decide if it can merge.
@@ -28,4 +27,3 @@ This area of NLP is changing rapidly and any contributions could change the cour
 2. To summarize what it says:
     1. `summary.txt` - Copy `question.txt` and remove any superfluous information.
     2. `expert.txt` - Copy `summary.txt` and remove any information an expert would find obvious.
-    3. `instruction.txt` - Use the `view_solution.sh` script to view different code solutions. Then describe the steps of that solution.
