@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=(question.txt summary.txt instruction.txt expert.txt)
+files=(question.txt summary.txt expert.txt)
 
 clean_problem() {
     # $1 - the problem directory
