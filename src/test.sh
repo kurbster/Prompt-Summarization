@@ -2,7 +2,7 @@
 
 echo "Testing script"
 
-required_files=(question.txt summary.txt instruction.txt expert.txt)
+required_files=(question.txt summary.txt expert.txt)
 
 for problem in $(find .. -mindepth 2 -type d -not -path "../.git*" -not -path "../APPS/*"); do
     for file in "${required_files[@]}"; do
