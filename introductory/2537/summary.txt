@@ -1,4 +1,4 @@
-you are given a array of numbers. we know distance between all pairs of neighboring indexes where distance[i] is sum of numbers between the index i and (i + 1) % n. you can count distance in both direction of indexes
+You are given a array of numbers. we know distance between all pairs of neighboring indexes where distance[i] is sum of numbers between the index i and (i + 1) % n. you can count distance in both direction of indexes
 Return the shortest distance between the given indexes. Also, you can traverse the array in both directions
 
 Example 1:

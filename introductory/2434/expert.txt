@@ -1,6 +1,4 @@
-We have two patterns in characters. The first one can be represented by one bit 0. The second one can be represented by two bits either 10 or 11. 
-
-You are given an array with several bits. Return whether the last character must be a one-bit character or not. the given array will always ends with a zero
+You are given an array with some bits. there three possible combinations of bits 10, 11, 0. convert array to string and find if the last charecter should be a one bit charecter or not 
 
 Example 1:
 
