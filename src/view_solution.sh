@@ -5,6 +5,4 @@ idx="${2:-0}"
 
 problem=$(find ../*/$num -type d)
 
-[[ -z $problem ]] && echo "$num is not a valid problem"
-
-python3 solution.py $problem $idx
+[[ -z $problem ]] && echo "$num is not a valid problem" || python3 solution.py $problem $idx
