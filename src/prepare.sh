@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd ../APPS > /dev/null
+pushd "../apps_dataset/APPS" > /dev/null
 
 levels=(interview competition introductory)
 for lvl in "${levels[@]}"; do
@@ -8,10 +8,15 @@ for lvl in "${levels[@]}"; do
 done
 
 for fname in $(find 'train' -mindepth 1 -type d); do
-    level=$(sed -e 's/"//g' -e 's/^[ \t]*difficulty: //g' -e 's/[{}]//' "$fname/metadata.json")
+    level=$(awk -F[:,\"] '{print $5}' "$fname/metadata.json")
     mv $fname $level
 done
 
 rm -r train 'test' README.txt
+
+# we are in apps_dataset/APPS
+cd ../..
+mv apps_dataset/APPS .
+rmdir apps_dataset
 
 popd > /dev/null

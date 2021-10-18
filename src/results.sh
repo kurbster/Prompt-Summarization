@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 files=(question.txt summary.txt expert.txt)
-num="$1"
+outfile="report.txt"
 
 report_problem() {
     pushd $1 > /dev/null
     echo -e "\nwc results for problem $1"
-    echo "   lines   words   chars"
+    echo "line word char" | tee "$outfile"
     result=$(wc -lwm ${files[@]})
-    echo "$result"
+    echo "$result" | tee -a "$outfile"
+    printf "\nWord reduction percentage\n%-11s %-6s %-6s\n" filename words chars
     awk '{
         if ($NF == "question.txt")
         {
@@ -23,15 +24,16 @@ report_problem() {
             outC=(diffC/char)*100
             printf "%-11s %.2f%% %.2f%%\n", $NF, outW, outC
         }
-    }' <<< $result
+    }' <<< $result | tee -a "$outfile"
     popd > /dev/null
 }
 
-[[ -z $num ]] && echo "report all problems" && {
+[[ -z $1 ]] && echo "report all problems" && {
     for problem in $(find .. -mindepth 2 -type d -not -path "../.git*" -not -path "../APPS/*"); do
         report_problem $problem
     done
 } || {
-    problem=$(find ../*/$num -type d)
+    problem=$(find ../*/$1 -type d)
+    [[ -z $problem ]] && echo "$1 is not a valid problem. It has not been summarized." || \
     report_problem $problem
 }

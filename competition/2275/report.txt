@@ -1,0 +1,7 @@
+line word char
+  45  361 2053 question.txt
+  37  195 1100 summary.txt
+  33  134  764 expert.txt
+ 115  690 3917 total
+summary.txt 45.98% 46.42%
+expert.txt  62.88% 62.79%
