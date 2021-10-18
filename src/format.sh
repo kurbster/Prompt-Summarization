@@ -6,8 +6,10 @@ clean_problem() {
     # $1 - the problem directory
     # $2 - the filename to clean
     ! [[ -f $1/$2 ]]  && echo "ERROR. You must add the file $2 to this directory $1." && error=1 || {
-        trim=$(sed -E -e 's/-{5}Input-{5}/Input:/' -e 's/-{5}Output-{5}/Output:/' -e 's/-{5}Examples-{5}/Examples:/' -e 's/-{5}Note-{5}/Note:/' "$1/$2")
-        tr -d "[\t\n\r]" <<< $trim > "$1/clean-$2"
+        trim=$(sed -E -e 's/-{5}Input-{5}/Input:/' -e 's/-{5}Output-{5}/Output:/' -e 's/-{5}Examples-{5}/Examples:/' \
+                   -e 's/-{5}Note-{5}/Note:/' -e 's/[[:space:]]*$//' "$1/$2")
+        # weird bug? when redirecting sed to file the spaces aren't removed
+        echo $trim > "$1/clean-$2"
     }
 }
 
