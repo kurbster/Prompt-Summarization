@@ -1,0 +1,13 @@
+Given two strings a and b return true if a can be constructed from string charecters in b else false
+
+Each letter in the b string can only be used once in your a string.
+
+
+Note:
+You may assume that both strings contain only lowercase letters.
+
+
+
+canConstruct("a", "b") -> false
+canConstruct("aa", "ab") -> false
+canConstruct("aa", "aab") -> true
