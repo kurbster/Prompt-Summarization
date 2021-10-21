@@ -1,0 +1,1 @@
+{"fn_name": "negation_value", "inputs": [["!", false], ["!", true], ["!!!", []]], "outputs": [[true], [false], [true]]}

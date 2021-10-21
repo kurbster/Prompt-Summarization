@@ -1,0 +1,2 @@
+def loneliest(number):
+	

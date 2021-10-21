@@ -1,0 +1,1 @@
+{"fn_name": "eval_object", "inputs": [[{"a": 1, "b": 1, "operation": "+"}], [{"a": 1, "b": 1, "operation": "-"}], [{"a": 1, "b": 1, "operation": "/"}], [{"a": 1, "b": 1, "operation": "*"}], [{"a": 1, "b": 1, "operation": "%"}], [{"a": 1, "b": 1, "operation": "**"}]], "outputs": [[2], [0], [1], [1], [0], [1]]}

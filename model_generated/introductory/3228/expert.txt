@@ -1,0 +1,2 @@
+ Given a string of characters, find if the same sequence of characters exists in the string. 
+`

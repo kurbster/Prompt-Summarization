@@ -1,0 +1,2 @@
+ You are given a string of random characters (numbers, letters, and symbols). To decode this string into the key we're searching for:  (1) count the number occurences of each ascii lowercase letter, and (2) return an ordered string, 26 places long, corresponding to the number of occurences for each corresponding letter in the alphabet. For example: ```python '$aaaa#bbb*cc^fff!z' gives '43200300000000000000000001'    ^   
+.

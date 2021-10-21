@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "60 3\n2012-03-16 16:15:25: Disk size is\n2012-03-16 16:15:25: Network failute\n2012-03-16 16:16:29: Cant write varlog\n2012-03-16 16:16:42: Unable to start process\n2012-03-16 16:16:43: Disk size is too small\n2012-03-16 16:16:53: Timeout detected\n",
+    "1 2\n2012-03-16 23:59:59:Disk size\n2012-03-17 00:00:00: Network\n2012-03-17 00:00:01:Cant write varlog\n",
+    "2 2\n2012-03-16 23:59:59:Disk size is too sm\n2012-03-17 00:00:00:Network failute dete\n2012-03-17 00:00:01:Cant write varlogmysq\n",
+    "10 30\n2012-02-03 10:01:10: qQsNeHR.BLmZVMsESEKKDvqcQHHzBeddbKiIb,aDQnBKNtdcvitwtpUDGVFSh.Lx,FPBZXdSrsSDZtIJDgx!mSovndGiqHlCwCFAHy\n",
+    "2 3\n2012-02-20 16:15:00: Dis\n2012-03-16 16:15:01: Net\n2012-03-16 16:15:02: Cant write varlog\n2012-03-16 16:15:02: Unable to start process\n2012-03-16 16:16:43: Dis\n2012-03-16 16:16:53: Timeout detected\n",
+    "2 4\n2012-02-20 16:15:00: Dis\n2012-03-16 16:15:01: Net\n2012-03-16 16:15:02: Cant write varlog\n2012-03-16 16:15:02: Unable to start process\n2012-03-16 16:16:43: Dis\n2012-03-16 16:16:53: Timeout detected\n"
+  ],
+  "outputs": [
+    "2012-03-16 16:16:43\n",
+    "-1\n",
+    "2012-03-17 00:00:00\n",
+    "-1\n",
+    "2012-03-16 16:15:02\n",
+    "-1\n"
+  ]
+}

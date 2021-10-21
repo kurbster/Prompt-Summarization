@@ -1,0 +1,1 @@
+{"fn_name": "areYouPlayingBanjo", "inputs": [["Adam"], ["Paul"], ["Ringo"], ["bravo"], ["rolf"]], "outputs": [["Adam does not play banjo"], ["Paul does not play banjo"], ["Ringo plays banjo"], ["bravo does not play banjo"], ["rolf plays banjo"]]}

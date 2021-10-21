@@ -1,0 +1,2 @@
+ You are given an integer $n$. Create a tree with $n$ leaves. Each leaf has $n$ children. The root of the tree has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $n$ children. The root has $
+!

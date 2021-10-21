@@ -1,0 +1,2 @@
+ You are given a string of negations. Return what the value would be if those negations were applied to it. 
+.
