@@ -1,0 +1,1 @@
+["s = input()\ns_ar = s.split(' ')\nfinal_ar = []\nspace = ' '\nfor w in s_ar:\n    final_ar.append(w.capitalize())\nprint((space.join(final_ar)))\n"]

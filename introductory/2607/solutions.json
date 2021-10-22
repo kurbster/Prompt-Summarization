@@ -1,0 +1,1 @@
+["#!/bin/python3\n\nimport sys\nfrom collections import Counter\n\ndef __starting_point():\n    s = input().strip()\n    best = Counter(s)\n    sortit = sorted(list(best.items()), key = lambda x: (-x[1], x[0]))[:3]\n        \n    print((\"\\n\".join(x[0]+\" \"+str(x[1]) for x in sortit)))\n\n__starting_point()"]
