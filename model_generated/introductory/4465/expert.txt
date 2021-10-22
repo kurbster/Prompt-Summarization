@@ -1,0 +1,1 @@
+ You are given an integer.  Rearrange it so that it becomes a maximum value.

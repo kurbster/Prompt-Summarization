@@ -1,0 +1,1 @@
+ Given an array of integers, check if the number added modulo 2 to the given number will be an even number. Example: Input: [1,2,3,4,5,6]  Output: False Explanation: Previously above given number is added modulo 2 to 1. The result is 1. So, all numbers before this are not even numbers.

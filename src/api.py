@@ -45,6 +45,7 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
     if prompt_type == 'general':
         example_prompts = random.sample(probs, cfg.numPrompts)
 
+    example_prompts = ['2537', '2200', '0443', '2000', '0205']
     for ex in example_prompts:
         # Get the original prompt and the summarized
         orig = glob.glob(f'../[ic]*/{ex}/question.txt')[0]
@@ -61,6 +62,9 @@ def select_summary_prompt(probs: list[str]):
     total_probs = [str(i).zfill(4) for i in range(5000) if str(i).zfill(4) not in probs]
     assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000'
     prob = random.choice(total_probs)
+
+    prob ='0311'
+
     prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
 
     # Copy the original directory to the output directory
@@ -105,7 +109,7 @@ def make_prompt():
     prompt, extra, output_dir = get_prompt(cfg)
 
     prompt_dict = {'prompt': prompt}
-    print(cfg)
+    #print(cfg)
     api_cfg = OmegaConf.merge(cfg.apiParams, prompt_dict)
     api_cfg = OmegaConf.to_container(api_cfg)
     data = {**api_cfg}
@@ -138,5 +142,6 @@ def make_prompt():
     return usage[model] < TOKEN_LIMITS[model]
 
 if __name__ == '__main__':
-    while make_prompt():
-        pass
+    make_prompt()
+    #while make_prompt():
+    #    pass

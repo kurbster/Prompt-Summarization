@@ -1,0 +1,1 @@
+ You are given the number of miles per imperial gallon and output the number of km per liter. Note: 1 Miles = 1.609344 km 1 Imperial Gallon = 4.54609188 litres Round to 2 decimals. If the answer ends with 0, round up without 0. So should be 5.5 not 5.5000000000000000000000000000  

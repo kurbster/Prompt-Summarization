@@ -1,0 +1,2 @@
+ You have N strings, whose length is L. Iroha is allowed to use initial subsequences of these strings to form the final string. Find the smallest string among those that she can build this way. 
+-----Input----- The input is given from Standard Input in the following format: N L S_1 S_2 : S_N -----Output----- Print the lexicographically smallest string that Iroha can produce. -----Sample Input----- 3 3 dxx axx cxx -----Sample Output----- axxcxxdxx The following order should be used: axx, cxx, dxx.

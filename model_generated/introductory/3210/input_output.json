@@ -1,0 +1,1 @@
+{"fn_name": "get_strings", "inputs": [["Chicago"], ["Bangkok"], ["Las Vegas"], ["Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch"]], "outputs": [["c:**,h:*,i:*,a:*,g:*,o:*"], ["b:*,a:*,n:*,g:*,k:**,o:*"], ["l:*,a:**,s:**,v:*,e:*,g:*"], ["l:***********,a:***,n:****,f:*,i:***,r:****,p:*,w:****,g:*******,y:*****,o:******,e:*,c:**,h:**,d:*,b:*,t:*,s:*"]]}
