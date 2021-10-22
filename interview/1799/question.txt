@@ -1,0 +1,22 @@
+Based on the well known ['Eight Queens' problem](https://en.wikipedia.org/wiki/Eight_queens_puzzle).
+
+#### Summary
+Your challenge is to place N queens on a chess board such that none of the queens are attacking each other.
+
+#### Details
+A standard 8x8 chess board has its rows (aka ranks) labelled 1-8 from bottom to top, and its columns (aka files) labelled a-h from left to right. Any square can be denoted by a combination of letter and number. For example, the top left square is a8. A queen may attack any square on its rank or file. It may also attack any square diagonally.
+
+In this kata, chessboard may have any size from 1 to 10. Columns are marked with letters a-j, and rows with single digit from 1 to 0 (first row is marked with 1, ninth row is marked with 9, and tenth row is marked with 0, so `a1` denotes bottom left field of the chessboard, and `j0` - top right field on a 10x10 board).
+
+You will be given the position of one queen on the board (e.g. `'c3'`). Your challenge is to compute the position of the remaining queens and return the full solution (including the original input) as a comma-separated string (e.g. `'d8,a7,e6,h5,b4,g3,c2,f1'`). Fields do not have to be sorted in any particular way, but you have to adhere to above format (lowercase letters, no spaces, fields separated with commas).
+
+Note that there may be multiple valid solutions for a given starting position. Your function only needs to produce (any) one of these. All given starting positions produce valid solutions.
+
+If you wish to write more tests, the validity of a solution may be checked using preloaded function (see sample tests).
+
+Hint: check the wiki article for the various algorithms that are applicable to this problem.
+
+----
+Next steps:
+ - [N queens problem (with no mandatory queen position)](https://www.codewars.com/kata/52cdc1b015db27c484000031)
+ - [N queens problem (with one mandatory queen position) - challenge version](https://www.codewars.com/kata/5985ea20695be6079e000003)
