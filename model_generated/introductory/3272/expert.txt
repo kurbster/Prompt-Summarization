@@ -1,0 +1,1 @@
+ You are given an array. Find the mean (average) of the numbers in the array.

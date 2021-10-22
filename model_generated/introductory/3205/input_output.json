@@ -1,0 +1,1 @@
+{"fn_name": "is_divisible", "inputs": [[3, 2, 2], [3, 3, 4], [12, 3, 4], [8, 3, 4], [48, 3, 4], [100, 5, 10], [100, 5, 3], [4, 4, 2], [5, 2, 3], [17, 17, 17], [17, 1, 17]], "outputs": [[false], [false], [true], [false], [true], [true], [false], [true], [false], [true], [true]]}

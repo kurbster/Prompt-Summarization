@@ -1,0 +1,2 @@
+def part(arr):
+	

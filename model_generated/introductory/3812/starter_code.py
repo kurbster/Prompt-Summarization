@@ -1,0 +1,2 @@
+def nerdify(txt):
+	

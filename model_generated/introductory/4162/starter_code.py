@@ -1,0 +1,2 @@
+def friends(n):
+	

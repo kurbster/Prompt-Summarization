@@ -1,0 +1,1 @@
+ Given two dates, find the date of younger one when older one is 1/2 of younger one's age. 

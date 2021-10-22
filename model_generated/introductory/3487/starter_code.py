@@ -1,0 +1,2 @@
+def beeramid(bonus, price):
+	

@@ -32,20 +32,26 @@ def get_prompt(cfg: OmegaConf) -> str:
     # The priming prompt is the header plus our generated examples.
     priming_prompts = [cfg.header]
     priming_prompts = priming_prompts + generate_example_prompt(prompt_type, cfg, probs)
-
+    for i, p in enumerate(priming_prompts):
+        if any(ord(c) >= 128 for c in p):
+            print(f'Prompt {i} was not ascii')
     final_prompt = '\n\n'.join(priming_prompts) + f'\n\nJargon: {prompt}\nSimple:'
-
+    final_prompt = final_prompt.encode('ascii', 'replace')
+    final_prompt = final_prompt.decode('ascii')
+    final_prompt = final_prompt.replace('?', ' ')
+    if any(ord(c) >= 128 for c in final_prompt):
+            print('Final_prompt was not ascii')
     # We must return the remainder to append it to the output file
     return final_prompt, remainder, output_dir
 
 def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) -> str:
     prompt_cfg = OmegaConf.load(cfg.promptFile)
     output = []
+    
     # If it's a general problem choose any examples
     if prompt_type == 'general':
         example_prompts = random.sample(probs, cfg.numPrompts)
 
-    example_prompts = ['2537', '2200', '0443', '2000', '0205']
     for ex in example_prompts:
         # Get the original prompt and the summarized
         orig = glob.glob(f'../[ic]*/{ex}/question.txt')[0]
@@ -63,8 +69,6 @@ def select_summary_prompt(probs: list[str]):
     assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000'
     prob = random.choice(total_probs)
 
-    prob ='0311'
-
     prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
 
     # Copy the original directory to the output directory
@@ -74,7 +78,7 @@ def select_summary_prompt(probs: list[str]):
     return prompt, output_dir
 
 def detect_type(fname: str) -> str:
-    print(f'I am the fname {fname}')
+    print(f'I am the name of the file to summarize: {fname}')
     return 'general'
 
 def split_question(fname: str) -> str:
@@ -91,6 +95,10 @@ def split_question(fname: str) -> str:
     prompt_idx = prompt.find('-----Input')
     if prompt_idx == -1:
         prompt_idx = prompt.find('=====Input')
+    
+    # If we did not properly split the input we are wasting tokens
+    # In initial expeirments we found passing the entire prompt did
+    # not improve model performance
     if prompt_idx == -1:
         print(f'For file {fname} We did not find a split!!!')
         return prompt, ''
@@ -109,7 +117,6 @@ def make_prompt():
     prompt, extra, output_dir = get_prompt(cfg)
 
     prompt_dict = {'prompt': prompt}
-    #print(cfg)
     api_cfg = OmegaConf.merge(cfg.apiParams, prompt_dict)
     api_cfg = OmegaConf.to_container(api_cfg)
     data = {**api_cfg}
@@ -136,12 +143,11 @@ def make_prompt():
         usage = OmegaConf.load('usage.yaml')
 
         # Account for some error in calculating num tokens
-        usage[model] += int(tokens_used * 1.15)
+        usage[model] += int(tokens_used * 1.20)
         OmegaConf.save(config=usage, f='usage.yaml')
 
     return usage[model] < TOKEN_LIMITS[model]
 
 if __name__ == '__main__':
-    make_prompt()
-    #while make_prompt():
-    #    pass
+    while make_prompt():
+        pass

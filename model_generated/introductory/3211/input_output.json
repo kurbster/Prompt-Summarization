@@ -1,0 +1,1 @@
+{"fn_name": "divide", "inputs": [[4], [2], [5], [88], [100], [67], [90], [10], [99], [32]], "outputs": [[true], [false], [false], [true], [true], [false], [true], [true], [false], [true]]}

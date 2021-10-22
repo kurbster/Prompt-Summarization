@@ -1,0 +1,1 @@
+{"fn_name": "replace_dots", "inputs": [[""], ["no dots"], ["one.two.three"], ["........"]], "outputs": [[""], ["no dots"], ["one-two-three"], ["--------"]]}

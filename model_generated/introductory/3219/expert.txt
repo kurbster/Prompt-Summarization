@@ -1,0 +1,1 @@
+ You are given a list of numbers. For each number, you need to find the sextuplet of primes that ends with it.

@@ -1,0 +1,1 @@
+ Given a circle with radius *r* and a square of side length *d*, determine the area of the square that can fit inside the circle.

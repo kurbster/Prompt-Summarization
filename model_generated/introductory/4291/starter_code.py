@@ -1,0 +1,2 @@
+def century(year):
+	

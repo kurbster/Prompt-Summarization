@@ -1,0 +1,1 @@
+{"fn_name": "sortme", "inputs": [[["Hello", "there", "I'm", "fine"]], [["C", "d", "a", "B"]], [["CodeWars"]], [[]]], "outputs": [[["fine", "Hello", "I'm", "there"]], [["a", "B", "C", "d"]], [["CodeWars"]], [[]]]}

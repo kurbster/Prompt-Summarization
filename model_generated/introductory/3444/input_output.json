@@ -1,0 +1,1 @@
+{"fn_name": "cyclic_string", "inputs": [["cabca"], ["aba"], ["ccccccccccc"], ["abaca"]], "outputs": [[3], [2], [1], [4]]}

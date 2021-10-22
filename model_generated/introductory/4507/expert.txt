@@ -1,0 +1,1 @@
+ You are given a starting location and a length. You need to simulate the string endlessly repeating in both directions and return a substring beginning at the starting location and continues for length. 

@@ -1,0 +1,1 @@
+ Given an integer array `arr`. Your task is to remove one element, maximize the product of elements.  The result is the element which should be removed. If more than one valid results exist, return the smallest one.
