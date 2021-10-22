@@ -1,0 +1,3 @@
+Your need to create a function `combos` that accepts `num` (30 > `num` > 0) and returns an array of arrays of positive integers that sum to `num`.
+
+For an optimal solution, the following operation should complete within 6000ms.

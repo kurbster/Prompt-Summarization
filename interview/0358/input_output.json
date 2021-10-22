@@ -1,0 +1,1 @@
+{"fn_name": "findReplaceString", "inputs": [["\"abcd\"", [0, 2], ["\"a\"", " \"cd\""], ["\"eee\"", " \"ffff\""]]], "outputs": ["\"abcd\""]}
