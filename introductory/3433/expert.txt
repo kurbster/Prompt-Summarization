@@ -1,0 +1,10 @@
+Given an array containing only zeros and ones, find the index of the zero that, if converted to one, 
+will make the longest sequence of ones.
+
+For instance, given the array:
+```
+[1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 1, 1]
+```
+replacing the zero at index 10 forms a sequence of 9 ones:
+
+If there are multiple valid answers, return the last one

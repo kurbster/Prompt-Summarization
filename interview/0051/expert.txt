@@ -1,0 +1,37 @@
+Let x, y, and z, be non-negative integers. d_1 reprsents the absolute difference between x and y, and d_2 represents
+the absolute difference between y and z. Your goal is to figure out if d_1 and d_2 can become equivlanet after all moves have been expended.
+
+In each move, you can increment x, y, or z by 1.
+
+You will be given n, the total number of moves you're allowed, and k, the number of moves that had already
+been used.
+
+-----Input-----
+
+The first line of the input contains a single integer corresponding to number of test cases t (1 ≤ t ≤ 10^5).
+
+Each of the next t lines will contain four space-separated integers 
+n, k, d_1, d_2 (1 ≤ n ≤ 10^12; 0 ≤ k ≤ n; 0 ≤ d_1, d_2 ≤ k) — data for the current test case.
+
+
+-----Output-----
+
+For each test case, output a single line containing either "yes" if it is possible for d_1 and d_2 to be equal,
+or "no" otherwise without quotes.
+
+
+-----Examples-----
+Input
+5
+3 0 0 0
+3 3 0 0
+6 4 1 0
+6 3 3 0
+3 3 3 2
+
+Output
+yes
+yes
+yes
+no
+no  
