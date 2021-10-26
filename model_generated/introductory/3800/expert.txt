@@ -1,0 +1,1 @@
+ You are given a string `s`. You need to convert that string to the opposite format. 

@@ -1,0 +1,1 @@
+ You are given a list of integers and strings. You have to remove some strings from the list. 

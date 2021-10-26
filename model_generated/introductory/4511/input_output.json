@@ -1,0 +1,1 @@
+{"fn_name": "permute_a_palindrome", "inputs": [["a"], ["aa"], ["baa"], ["aab"], ["baabcd"], ["racecars"], ["abcdefghba"], [""]], "outputs": [[true], [true], [true], [true], [false], [false], [false], [true]]}

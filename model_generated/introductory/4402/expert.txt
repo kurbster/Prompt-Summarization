@@ -1,0 +1,1 @@
+ Given an input string, return true if the string contains consecutive letters as they appear in the English alphabet and if each letter occurs only once. 

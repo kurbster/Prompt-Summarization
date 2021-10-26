@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "5\n2 2 1\nBB\n1 1 1\nAB\n3 2 8\nAABBBBAABB\n5 3 4\nBBBBB\n2 1 1\nABABAB\n"
+  ],
+  "outputs": [
+    "2\n1\n3\n1\n6\n"
+  ]
+}

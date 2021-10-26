@@ -1,0 +1,2 @@
+def uncollapse(digits):
+	

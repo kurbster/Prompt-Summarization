@@ -1,0 +1,1 @@
+ You are given a list of integers and your task is to return a list of snapshots after **each change** of the initial list. e.g.  If the initial list would be l=[1,2,4,3] my algorithm rotates l[2] and l[3] and after that it adds [1,2,3,4] to the result, which is a list of snapshots. 

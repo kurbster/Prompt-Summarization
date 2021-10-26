@@ -1,0 +1,1 @@
+["import numpy\nn,m = list(map(int,input().split()))\nprint((numpy.eye(n,m,k=0)))\n", "import numpy\n\nn, m = [int(x) for x in input().strip().split()]\n\nprint(numpy.eye(n, m))"]

@@ -1,0 +1,1 @@
+{"fn_name": "roll", "inputs": [[""], [{}], ["abc"], ["2d6+3 abc"], ["abc 2d6+3"], ["2d6++4"]], "outputs": [[false], [false], [false], [false], [false], [false]]}

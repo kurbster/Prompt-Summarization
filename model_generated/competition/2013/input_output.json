@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "codeforces\n",
+    "abacaba\n",
+    "babbbabaababbaa\n",
+    "bcbacaabcababaccccaaaabacbbcbbaa\n",
+    "cabaccaacccabaacdbdcbcdbccbccbabbdadbdcdcdbdbcdcdbdadcbcda\n",
+    "a\n",
+    "eeeedddccbceaabdaecaebaeaecccbdeeeaadcecdbeacecdcdcceabaadbcbbadcdaeddbcccaaeebccecaeeeaebcaaccbdaccbdcadadaaeacbbdcbaeeaecedeeeedadec\n",
+    "fddfbabadaadaddfbfecadfaefaefefabcccdbbeeabcbbddefbafdcafdfcbdffeeaffcaebbbedabddeaecdddffcbeaafffcddccccfffdbcddcfccefafdbeaacbdeeebdeaaacdfdecadfeafaeaefbfdfffeeaefebdceebcebbfeaccfafdccdcecedeedadcadbfefccfdedfaaefabbaeebdebeecaadbebcfeafbfeeefcfaecadfe\n",
+    "aaaaaaaaaa\n",
+    "abbabaaaaa\n",
+    "bbbbbbbbbbbb\n",
+    "aabaaaaaaaaaaaa\n",
+    "aaaaaaaaaaaaaaaaaaaa\n",
+    "abaabaaaaaabbaaaaaaabaaaaaaaaabaaaabaaaaaaabaaaaaaaaaabaaaaaaaaaaaaaaabaaaabbaaaaabaaaaaaaabaaaaaaaa\n",
+    "abbbbbbbabbbbbbbbbbbbbbbbbbbbbbbabbabbbbbabbbbbbbbbbbabbbbbbbbabbabbbbbbbbbbbbbbabbabbbaababbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbabbbbabbbbbbbbbbbbbbbabbbbbbbbbaababbbbbbbbabbbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbabbbabbbbbaabbabbbbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbbaabbbbbbbbbbbbababbabbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbabbbbbbbbbbbabbbbbbbbbbbbbbbbbbbbbbabbbbbbbabbbbbbb\n",
+    "aaaaa\n",
+    "aaa\n",
+    "aa\n"
+  ],
+  "outputs": [
+    "bncdenqbdr\n",
+    "aaacaba\n",
+    "aabbbabaababbaa\n",
+    "abaacaabcababaccccaaaabacbbcbbaa\n",
+    "babaccaacccabaacdbdcbcdbccbccbabbdadbdcdcdbdbcdcdbdadcbcda\n",
+    "z\n",
+    "ddddcccbbabdaabdaecaebaeaecccbdeeeaadcecdbeacecdcdcceabaadbcbbadcdaeddbcccaaeebccecaeeeaebcaaccbdaccbdcadadaaeacbbdcbaeeaecedeeeedadec\n",
+    "ecceaabadaadaddfbfecadfaefaefefabcccdbbeeabcbbddefbafdcafdfcbdffeeaffcaebbbedabddeaecdddffcbeaafffcddccccfffdbcddcfccefafdbeaacbdeeebdeaaacdfdecadfeafaeaefbfdfffeeaefebdceebcebbfeaccfafdccdcecedeedadcadbfefccfdedfaaefabbaeebdebeecaadbebcfeafbfeeefcfaecadfe\n",
+    "aaaaaaaaaz\n",
+    "aaaabaaaaa\n",
+    "aaaaaaaaaaaa\n",
+    "aaaaaaaaaaaaaaa\n",
+    "aaaaaaaaaaaaaaaaaaaz\n",
+    "aaaabaaaaaabbaaaaaaabaaaaaaaaabaaaabaaaaaaabaaaaaaaaaabaaaaaaaaaaaaaaabaaaabbaaaaabaaaaaaaabaaaaaaaa\n",
+    "aaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbabbabbbbbabbbbbbbbbbbabbbbbbbbabbabbbbbbbbbbbbbbabbabbbaababbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbabbbbabbbbbbbbbbbbbbbabbbbbbbbbaababbbbbbbbabbbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbbbbbbabbabbbbbbbbbbbbbbbbabbbabbbbbaabbabbbbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbbaabbbbbbbbbbbbababbabbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbabbbbbbbbbbbabbbbbbbbbbbbbbbbbbbbbbabbbbbbbabbbbbbb\n",
+    "aaaaz\n",
+    "aaz\n",
+    "az\n"
+  ]
+}

@@ -1,0 +1,1 @@
+ You are given a list of non-negative integers representing the amount of money of each house.  You need to find the maximum amount of money you can rob tonight without alerting the police.  

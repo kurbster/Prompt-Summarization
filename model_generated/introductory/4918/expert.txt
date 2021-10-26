@@ -1,0 +1,1 @@
+ Given an integer a convert it to base 10. In Python you will be given an integer. In Javascript and C++ you will be given a string

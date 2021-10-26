@@ -1,0 +1,1 @@
+ You will be given a list of intervals, and you need to return a list of intervals representing common, positive-length free time for all employees, also in sorted order.

@@ -1,0 +1,1 @@
+{"fn_name": "find_missing_letter", "inputs": [[["a", "b", "c", "d", "f"]], [["O", "Q", "R", "S"]], [["b", "d"]]], "outputs": [["e"], ["P"], ["c"]]}

@@ -1,0 +1,2 @@
+def trotter(n):
+	

@@ -1,0 +1,1 @@
+ Given an integer n return a string containing "last chunk", "max is", and "for digit". Use n and fibonacci to find the maximum count for each digit.

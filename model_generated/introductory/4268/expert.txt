@@ -1,0 +1,1 @@
+ Given a non-negative number, return the next bigger polydivisible number, or an empty value like `null` or `Nothing`.

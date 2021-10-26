@@ -1,0 +1,1 @@
+ You are given a list of weighted directed edges in a directed acyclic graph. You need to find the weight of the shortest path from node `0` to node `N-1`. If there is no such path, return `-1`. 

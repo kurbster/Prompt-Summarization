@@ -1,0 +1,1 @@
+{"fn_name": "is_divide_by", "inputs": [[8, 2, 4], [12, -3, 4], [8, 3, 4], [48, 2, -5], [-100, -25, 10], [10000, 5, -3], [4, 4, 2], [5, 2, 3], [-96, 25, 17], [33, 1, 33]], "outputs": [[true], [true], [false], [false], [true], [false], [true], [false], [false], [true]]}

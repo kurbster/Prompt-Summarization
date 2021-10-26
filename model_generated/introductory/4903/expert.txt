@@ -1,0 +1,1 @@
+ A sequence is usually a set or an array of numbers that has a strict way for moving from the nth term to the (n+1)th term. If ``f(n) = f(n-1) + c`` where ``c`` is a constant value, then ``f`` is an arithmetic sequence. An example would be (where the first term is 0 and the constant is 1) is [0, 1, 2, 3, 4, 5, ... and so on] ) Else if

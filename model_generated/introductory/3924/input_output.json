@@ -1,0 +1,1 @@
+{"fn_name": "reverse_words", "inputs": [["The quick brown fox jumps over the lazy dog."], ["apple"], ["a b c d"], ["double  spaced  words"], ["stressed desserts"], ["hello hello"]], "outputs": [["ehT kciuq nworb xof spmuj revo eht yzal .god"], ["elppa"], ["a b c d"], ["elbuod  decaps  sdrow"], ["desserts stressed"], ["olleh olleh"]]}

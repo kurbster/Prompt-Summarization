@@ -1,0 +1,1 @@
+{"fn_name": "are_coprime", "inputs": [[20, 27], [12, 39], [17, 34], [34, 17], [35, 10], [64, 27]], "outputs": [[true], [false], [false], [false], [false], [true]]}

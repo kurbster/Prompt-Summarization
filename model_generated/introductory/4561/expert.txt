@@ -1,0 +1,1 @@
+ Your task is to return `True` if at least one of the possiblities is a palindrome or `False` otherwise.

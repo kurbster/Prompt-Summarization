@@ -1,0 +1,1 @@
+ You are given two strings s and t both of length n and both consisting of lowercase Latin letters. One move is defined as taking contiguous substring of both s and t and reversing it. You need to find if it is possible to make s and t after some sequence of moves 

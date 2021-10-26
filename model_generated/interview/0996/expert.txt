@@ -1,0 +1,1 @@
+ You are given N scores. You need to find the winner and the maximum lead attained by the winner. 

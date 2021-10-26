@@ -1,0 +1,24 @@
+The goal of this kata is to implement [trie](https://en.wikipedia.org/wiki/Trie) (or prefix tree) using dictionaries (aka hash maps or hash tables), where:
+
+1. the dictionary keys are the prefixes
+2. the value of a leaf node is `None` in Python, `nil` in Ruby and `null` in Groovy, JavaScript and Java.
+3. the value for empty input is `{}` in Python, Ruby, Javascript and Java (empty map) and `[:]` in Groovy.
+
+**Examples:**
+
+```python
+>>> build_trie()
+{}
+>>> build_trie("")
+{}
+>>> build_trie("trie")
+{'t': {'tr': {'tri': {'trie': None}}}}
+>>> build_trie("tree")
+{'t': {'tr': {'tre': {'tree': None}}}}
+>>> build_trie("A","to", "tea", "ted", "ten", "i", "in", "inn")
+{'A': None, 't': {'to': None, 'te': {'tea': None, 'ted': None, 'ten': None}}, 'i': {'in': {'inn': None}}}
+>>> build_trie("true", "trust")
+{'t': {'tr': {'tru': {'true': None, 'trus': {'trust': None}}}}}
+```
+
+Happy coding! :)

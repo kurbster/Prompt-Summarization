@@ -1,0 +1,1 @@
+{"fn_name": "color_probability", "inputs": [["red", "bumpy"], ["green", "bumpy"], ["yellow", "smooth"], ["red", "smooth"], ["green", "smooth"], ["yellow", "bumpy"]], "outputs": [["0.57"], ["0.14"], ["0.33"], ["0.33"], ["0.33"], ["0.28"]]}

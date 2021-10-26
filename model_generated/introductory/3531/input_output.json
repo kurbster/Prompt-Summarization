@@ -1,0 +1,1 @@
+{"fn_name": "valid_mersenne", "inputs": [[2], [3], [5], [7], [11], [13], [17], [19], [21], [23], [31], [49], [61], [89], [107], [127], [221], [521], [607], [1279]], "outputs": [[true], [true], [true], [true], [false], [true], [true], [true], [false], [false], [true], [false], [true], [true], [true], [true], [false], [true], [true], [true]]}

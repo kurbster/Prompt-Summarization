@@ -1,0 +1,1 @@
+ You are given an integer `n`. In one step, you can either double the value of `n`, or decrement `n` by 1. Return the minimum number of steps required before the value of `n` equals `0`.   Example 1: Input: n = 2, Output = 2 Explanation: Use double operation and then decrement operation {2 -> 4 -> 3}. Example 2: Input: n = 5, Output = 2 Explanation: Use decrement and then double

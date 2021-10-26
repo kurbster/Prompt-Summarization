@@ -1,0 +1,1 @@
+ Your need to create a function `sort_photos` that accepts a `gallery` of photos as input and returns an array of 5 most recent photos. The input is in the format `YYYY.imgN`. You should return the 5 most recent photos and next one following the last.

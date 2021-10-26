@@ -1,0 +1,1 @@
+ Given an encoded string, return the actual phone number in string form.

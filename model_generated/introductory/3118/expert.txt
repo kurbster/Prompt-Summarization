@@ -1,0 +1,1 @@
+ Given an integer, you need to find if the number is lucky or not. If the number is divisible by 9 or the sum of all digits is 0 then the number is considered lucky, else the number is not lucky.

@@ -1,0 +1,1 @@
+{"fn_name": "unusual_lex_order", "inputs": [[["nigeb", "ta", "eht", "gninnigeb"]], [["a", "b", "a", "d", "c"]]], "outputs": [[["ta", "nigeb", "gninnigeb", "eht"]], [["a", "a", "b", "c", "d"]]]}

@@ -1,0 +1,1 @@
+ You are given an integer n. Calculate the least common multiple of the sum of its digits and their product. 

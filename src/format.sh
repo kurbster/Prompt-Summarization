@@ -13,8 +13,9 @@ clean_problem() {
     }
 }
 
-for problem in $(find .. -mindepth 2 -type d -not -path "../.git*" \
-                -not -path "../APPS/*" -not -path "../model_generated*"); do
+#for problem in $(find .. -mindepth 2 -type d -not -path "../.git*" \
+#                -not -path "../APPS/*" -not -path "../model_generated*"); do
+for problem in $(find ../[ic]* -mindepth 1 -type d); do
     for file in "${files[@]}"; do
         ! [[ -f $problem/clean-$file ]] \
             && echo "Problem $problem/$file needs to be cleaned." \

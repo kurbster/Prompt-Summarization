@@ -1,0 +1,1 @@
+{"fn_name": "numeric_formatter", "inputs": [["xxx xxxxx xx", "5465253289"], ["xxx xxxxx xx"], ["+555 aaaa bbbb", "18031978"], ["+555 aaaa bbbb"], ["xxxx yyyy zzzz"]], "outputs": [["546 52532 89"], ["123 45678 90"], ["+555 1803 1978"], ["+555 1234 5678"], ["1234 5678 9012"]]}

@@ -1,0 +1,1 @@
+ You are given a string. You need to replace every letter with a two digit number. The first digit is the row number, and the second digit is the column number of following square.

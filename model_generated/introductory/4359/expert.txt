@@ -1,0 +1,1 @@
+ Given a ```times``` array of 5 positive floats (representing seconds), return an array / tuple with the Cuber's result (to 2 decimal places) AND their fastest solve. For example: ```python cube_times([9.5, 7.6, 11.4, 10.5, 8.1]) = (9.37, 7.6) # Because (9.5 + 10.5 + 8

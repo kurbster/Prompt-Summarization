@@ -66,7 +66,9 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
 def select_summary_prompt(probs: list[str]):
     # Select a random problem to summarize
     total_probs = [str(i).zfill(4) for i in range(5000) if str(i).zfill(4) not in probs]
-    assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000'
+    
+    # will fail because of collisions
+    #assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000. It is {len(total_probs) + len(probs)}'
     prob = random.choice(total_probs)
 
     prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
@@ -116,6 +118,12 @@ def make_prompt():
 
     prompt, extra, output_dir = get_prompt(cfg)
 
+    # If the prompt is over 1900 tokens we will most likely get
+    # An API error. The model can only take 2048 tokens.
+    prompt_tokens = len(prompt.split())
+    if prompt_tokens > 1900:
+        print(f'Our prompt was too long. Had {prompt_tokens} tokens.')
+        return True
     prompt_dict = {'prompt': prompt}
     api_cfg = OmegaConf.merge(cfg.apiParams, prompt_dict)
     api_cfg = OmegaConf.to_container(api_cfg)
@@ -123,7 +131,6 @@ def make_prompt():
 
     result = requests.post(url, headers=header, json=data)
     if result.status_code >= 400:
-        tokens_used = len(prompt.split())
         print('API request error!!!')
         print(result.status_code)
         print(result.text)
@@ -138,7 +145,7 @@ def make_prompt():
             f.write(text+'\n'+extra)
 
         # Update the token usage this is a rough estimate
-        tokens_used = len(prompt.split()) + len(text.split())
+        tokens_used = prompt_tokens + len(text.split())
         print(f'Tokens used this run ~= {tokens_used}')
         usage = OmegaConf.load('usage.yaml')
 

@@ -1,0 +1,1 @@
+{"fn_name": "solve", "inputs": [["abc"], ["abd"], ["dabc"], ["abbc"]], "outputs": [[true], [false], [true], [false]]}

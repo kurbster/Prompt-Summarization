@@ -1,0 +1,1 @@
+{"fn_name": "aks_test", "inputs": [[3], [4], [5], [7], [10], [33], [101], [1], [2], [11213], [8191], [8192]], "outputs": [[true], [false], [true], [true], [false], [false], [true], [false], [true], [true], [true], [false]]}

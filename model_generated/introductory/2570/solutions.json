@@ -1,0 +1,1 @@
+["n=int(input())\nar=range(1,n+1)\nfor i in ar:\n    print(i,end=\"\")\n", "def __starting_point():\n    n = int(input())\n    \n    num = 1\n    while num <= n:\n        print(num, end='')\n        num += 1\n\n__starting_point()"]
