@@ -1,0 +1,1 @@
+ You are given a sequence of numbers, in random order. The sequence will always have 10 numbers. You need to return the correct base.

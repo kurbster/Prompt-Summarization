@@ -1,0 +1,2 @@
+ Given $L$ and $R$, compute $G(L, R)$. 
+-----Input----- - The first line of the input contains a single integer $T$ denoting the number of test cases. The description of $T$ test cases follows. - The first and only line of each test case contains two space-separated integers $L$ and $R$. -----Output----- For each test case, print a single line containing one integer — the value of the function $G(L, R)$. -----Constraints----- - $1 \le T \le 10^5$ - $1 \le L \le R \le 10^9$ -----Example Input----- 5 1 10 3 6 4 10 10 17 100 159 -----Example Output----- 28 9 28 79 7485

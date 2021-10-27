@@ -1,0 +1,1 @@
+{"inputs": [["4", "1 4 3 2", "5", "2 3 4 5 1", "1", "1", "0"]], "outputs": [["ambiguous", "not ambiguous", "ambiguous"]]}

@@ -1,0 +1,1 @@
+ You are given an array of strings. Return a single string containing all the strings separated by a comma. Empty strings should be ignored. Empty arrays or null/nil values being passed into the method should result in an empty string being returned.

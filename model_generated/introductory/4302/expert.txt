@@ -1,0 +1,1 @@
+ You are given an array of peers' test scores. You need to calculate the average and compare your score! 

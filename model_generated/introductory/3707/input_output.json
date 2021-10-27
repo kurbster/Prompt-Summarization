@@ -1,0 +1,1 @@
+{"fn_name": "sorter", "inputs": [[["Algebra", "History", "Geometry", "English"]], [["Algebra", "history", "Geometry", "english"]], [["Alg#bra", "$istory", "Geom^try", "**english"]]], "outputs": [[["Algebra", "English", "Geometry", "History"]], [["Algebra", "english", "Geometry", "history"]], [["$istory", "**english", "Alg#bra", "Geom^try"]]]}

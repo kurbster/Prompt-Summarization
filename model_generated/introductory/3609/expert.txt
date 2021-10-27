@@ -1,0 +1,1 @@
+ An array is onion if for all values of j and k, if j >= 0, k >= 0, j + k = array.length - 1, j != k then 10 <= a[j] + a[k] 

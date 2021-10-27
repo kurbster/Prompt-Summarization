@@ -1,0 +1,1 @@
+ Given a string, return a list of integers detailing the count of uppercase letters, lowercase, numbers and special characters, as follows. ```Haskell Solve("*'&ABCDabcde12345") = [4,5,5,3].  --the order is: uppercase letters, lowercase, numbers and special characters. ``` More examples in the test cases.  Good luck!

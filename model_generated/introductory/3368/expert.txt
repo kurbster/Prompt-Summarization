@@ -1,0 +1,1 @@
+ Given $n$, determine if $n$ is a circle prime. There are 100 random tests for numbers up to 10000.

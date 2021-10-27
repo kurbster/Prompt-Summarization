@@ -1,0 +1,1 @@
+ you are told to create a function that takes a string and returns True if the string is empty or otherwise grouped correctly or False if it is grouped incorrectly. 

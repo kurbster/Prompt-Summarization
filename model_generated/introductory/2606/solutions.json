@@ -1,0 +1,1 @@
+["import numpy\np = numpy.array(list(map(float,input().split())),float)\nx = float(input())\nprint((numpy.polyval(p,x)))\n", "import numpy as np\n\narray = np.array(list(map(float, input().strip().split())))\nx = float(input().strip())\n\nprint((np.polyval(array, x)))\n"]

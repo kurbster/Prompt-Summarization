@@ -1,0 +1,1 @@
+ You are given an array `arr`. Find the length of the sequence in `arr`, between the first and the second occurrence of a specified number. 

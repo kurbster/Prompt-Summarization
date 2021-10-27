@@ -1,0 +1,2 @@
+def accum(s):
+	

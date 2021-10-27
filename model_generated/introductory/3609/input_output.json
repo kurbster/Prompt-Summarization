@@ -1,0 +1,1 @@
+{"fn_name": "is_onion_array", "inputs": [[[6, 0, 4]], [[1, 1, 15, 10, -1]]], "outputs": [[true], [false]]}

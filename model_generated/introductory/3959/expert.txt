@@ -1,0 +1,1 @@
+ Given an array `arr` that contains some integers(positive, negative or 0), and a `range` list such as `[[start1,end1],[start2,end2],...]`, start and end are the index of `arr` and start always less than end. Your task is to calculate the sum value of each range (start index and end index are both inclusive), and return the maximum sum value.

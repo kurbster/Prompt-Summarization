@@ -1,0 +1,1 @@
+ You are given two arrays of people. You need to find the name of the person with the highest age. 

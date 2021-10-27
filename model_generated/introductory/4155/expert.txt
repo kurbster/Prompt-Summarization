@@ -1,0 +1,1 @@
+ Given a range of numbers, return a count of numbers within that range that are upside down. For example, `solve(0,10) = 3`, because there are only `3` upside down numbers `>= 0 and < 10`. They are `0, 1, 8`. More examples in the test cases.

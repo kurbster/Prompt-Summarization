@@ -1,0 +1,1 @@
+["import numpy\nn = int(input())\nar = []\nfor i in range(n):\n    tmp = list(map(float,input().split()))\n    ar.append(tmp)\nnp_ar = numpy.array(ar,float)\nprint((numpy.linalg.det(np_ar)))\n", "import numpy as np\n\nn = int(input().strip())\narray = np.array([[float(x) for x in input().strip().split()] for _ in range(n)], dtype = float)\n\nprint((np.linalg.det(array)))\n"]

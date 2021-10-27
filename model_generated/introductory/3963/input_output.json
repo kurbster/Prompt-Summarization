@@ -1,0 +1,1 @@
+{"fn_name": "amicable_numbers", "inputs": [[220, 284], [220, 280], [1184, 1210], [220221, 282224], [10744, 10856], [299920, 9284], [999220, 2849], [122265, 139815]], "outputs": [[true], [false], [true], [false], [true], [false], [false], [true]]}

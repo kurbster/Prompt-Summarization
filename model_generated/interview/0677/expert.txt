@@ -1,0 +1,2 @@
+ You are given a date. Find the day from a particular date.
+-----Input----- It consists of a single line entry consisting of date in format dd mm yyyy. i.e. the input line consists of the three numbers written in order followed by spaces. Eg. Input for 18-12-1990 is be written as 18 12 1990 -----Output----- It consists of single line output showing the day for that particular date. -----Example----- Input: 14 3 2012 Output: Wednesday

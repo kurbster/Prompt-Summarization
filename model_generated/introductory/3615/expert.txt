@@ -1,0 +1,1 @@
+ Given a list of pairs of (person, destination), output a list of presentations, including presenter and presentation title, that satisfy **one simple rule**:  > the holiday/journey being presented must have been visited _only_ by the presenter and no one else from the audience. 

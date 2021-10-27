@@ -1,0 +1,2 @@
+def beasts(heads, tails):
+	

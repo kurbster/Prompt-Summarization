@@ -1,0 +1,1 @@
+{"fn_name": "format_words", "inputs": [[["one", "two", "three", "four"]], [["one"]], [["one", "", "three"]], [["", "", "three"]], [["one", "two", ""]], [[]], [null], [[""]]], "outputs": [["one, two, three and four"], ["one"], ["one and three"], ["three"], ["one and two"], [""], [""], [""]]}

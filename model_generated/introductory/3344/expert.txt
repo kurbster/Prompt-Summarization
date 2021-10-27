@@ -1,0 +1,1 @@
+ You are given an integer, and should return either true or false, which should be given as an array.

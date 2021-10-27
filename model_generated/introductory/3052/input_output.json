@@ -1,0 +1,1 @@
+{"fn_name": "remove", "inputs": [["Hi!"], ["Hi!!!"], ["!Hi"], ["!Hi!"], ["Hi! Hi!"], ["Hi"]], "outputs": [["Hi!"], ["Hi!!!"], ["Hi"], ["Hi!"], ["Hi Hi!"], ["Hi"]]}

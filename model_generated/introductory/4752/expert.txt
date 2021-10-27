@@ -1,0 +1,1 @@
+ You are given a string. You need to identify if given string has a repeated pattern. If yes, return the subpattern. If no, return the base string. 

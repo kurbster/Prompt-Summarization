@@ -1,0 +1,1 @@
+ You are given two integers. Find the greatest common divisor of them. 

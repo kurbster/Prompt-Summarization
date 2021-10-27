@@ -1,0 +1,1 @@
+ You are given a range `[x..y]` (where `x   y`). The input given is `x   y`. You need to return the number of integers within the range `[x..y]` (both ends included) that are divisible by `k`.

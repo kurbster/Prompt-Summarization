@@ -1,0 +1,1 @@
+{"fn_name": "is_square", "inputs": [[-1], [25], [26]], "outputs": [[false], [true], [false]]}

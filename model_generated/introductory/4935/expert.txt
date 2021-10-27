@@ -1,0 +1,1 @@
+ You are given a string that represents map of the world. You need to find the percentage of human population that got infected in the end. Return the percentage % of the total population that got infected.

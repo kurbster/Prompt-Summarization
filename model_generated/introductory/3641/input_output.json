@@ -1,0 +1,1 @@
+{"fn_name": "reverse_complement", "inputs": [["TTCCGGAA"], ["GACTGACTGTA"], [""], ["XYZ"]], "outputs": [["TTCCGGAA"], ["TACAGTCAGTC"], [""], ["Invalid sequence"]]}

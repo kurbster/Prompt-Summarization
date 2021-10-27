@@ -1,0 +1,1 @@
+ You are given two numbers, a and b, and you need to calculate the slope of the line. 

@@ -1,0 +1,1 @@
+ Two numbers are amicable if the sum of their proper divisors is equal to the other number. For example, 220 and 284 are amicable. 

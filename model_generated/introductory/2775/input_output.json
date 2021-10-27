@@ -1,0 +1,1 @@
+{"fn_name": "likes", "inputs": [[[]], [["Peter"]], [["Jacob", "Alex"]], [["Max", "John", "Mark"]], [["Alex", "Jacob", "Mark", "Max"]]], "outputs": [["no one likes this"], ["Peter likes this"], ["Jacob and Alex like this"], ["Max, John and Mark like this"], ["Alex, Jacob and 2 others like this"]]}

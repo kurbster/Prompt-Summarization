@@ -1,0 +1,1 @@
+{"fn_name": "scrabble_score", "inputs": [[""], ["a"], ["street"], ["STREET"], [" a"], ["st re et"], ["f"], ["quirky"], ["MULTIBILLIONAIRE"], ["alacrity"]], "outputs": [[0], [1], [6], [6], [1], [6], [4], [22], [20], [13]]}

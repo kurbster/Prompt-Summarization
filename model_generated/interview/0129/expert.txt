@@ -1,0 +1,1 @@
+ Given an array of positive integers, find the max score a pair of sightseeing spots can have. 

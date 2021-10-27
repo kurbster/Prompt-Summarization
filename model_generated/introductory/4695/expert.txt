@@ -1,0 +1,1 @@
+ # Task You have to write a function ```python def count_squares(n): ``` that solves Feynman's question in general. The input to your function will always be a positive integer. #Examples ```python count_squares(1) =  1 count_squares(2) =  5 count_squares(3) = 14 ``` (Adapted from the Sphere Online Judge problem SAMER08F by Diego Satoba)

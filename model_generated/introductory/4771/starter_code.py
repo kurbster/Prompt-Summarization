@@ -1,0 +1,2 @@
+def encryptor(key, message):
+	

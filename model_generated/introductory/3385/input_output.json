@@ -1,0 +1,1 @@
+{"fn_name": "longest", "inputs": [["asd"], ["nab"], ["abcdeapbcdef"], ["asdfaaaabbbbcttavvfffffdf"], ["asdfbyfgiklag"], ["z"], ["zyba"]], "outputs": [["as"], ["ab"], ["abcde"], ["aaaabbbbctt"], ["fgikl"], ["z"], ["z"]]}

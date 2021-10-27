@@ -1,0 +1,2 @@
+def mygcd(x,y):
+	

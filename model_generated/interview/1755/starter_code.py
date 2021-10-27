@@ -1,0 +1,2 @@
+def splitlist(lst):
+	

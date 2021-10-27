@@ -1,0 +1,1 @@
+["# cook your dish here\nfor _ in range(int(input())):\n n = int(input())\n a = list(map(int, input().split()))\n curr = 0\n ans = 0\n for x in a:\n  curr += x\n  ans += abs(curr)\n print(ans)"]

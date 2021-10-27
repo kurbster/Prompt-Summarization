@@ -1,0 +1,1 @@
+{"fn_name": "has_subpattern", "inputs": [["a"], ["aaaa"], ["abcd"], ["babababababababa"], ["bbabbaaabbaaaabb"], ["123a123a123a"], ["123A123a123a"], ["12aa13a21233"], ["12aa13a21233A"], ["abcdabcaccd"]], "outputs": [["a"], ["a"], ["abcd"], ["ab"], ["ab"], ["123a"], ["111222333Aaa"], ["123a"], ["111222333Aaaa"], ["aaabbccccdd"]]}

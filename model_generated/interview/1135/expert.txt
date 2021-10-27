@@ -1,0 +1,2 @@
+ 
+-----Input:----- - First line will contain $T$, number of testcases. - Each test case consist of a line with two space separated integers $N,K$. -----Output:----- For each testcase, output in a single line conaining $N$ integers representing one possible ordering in which the dinosaurs can be placed. -----Constraints----- - $1 \leq T \leq 2^8$ - $2 \leq N \leq 20$ - $0 \leq K \leq N-1$ -----Sample Input:----- 1 5 2 -----Sample Output:----- 2 3 1 5 4

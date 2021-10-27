@@ -1,0 +1,1 @@
+ You are given a number `n` (positive integer). You need to find the sum of all multiples of `n` below `m`. 

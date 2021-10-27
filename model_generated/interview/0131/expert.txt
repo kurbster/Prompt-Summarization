@@ -1,0 +1,1 @@
+ Given an alphanumeric string, capitalize each word For example: alison heck => Alison Heck 

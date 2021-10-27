@@ -1,0 +1,1 @@
+ We have a set of consecutive numbers from ```1``` to ```n```. We want to count all the subsets that do not contain consecutive numbers. E.g. If our set ```S1``` is equal to ```[1,2,3,4,5]``` The subsets that fulfill these property are: ``` [1],[2],[3],[4],[5],[1,3],[1,4],[1,5],[

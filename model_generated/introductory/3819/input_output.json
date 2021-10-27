@@ -1,0 +1,1 @@
+{"fn_name": "smash", "inputs": [[[]], [["hello"]], [["hello", "world"]], [["hello", "amazing", "world"]], [["this", "is", "a", "really", "long", "sentence"]]], "outputs": [[""], ["hello"], ["hello world"], ["hello amazing world"], ["this is a really long sentence"]]}
