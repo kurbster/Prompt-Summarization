@@ -106,14 +106,20 @@ def split_question(fname: str) -> str:
         return prompt, ''
     return prompt[:prompt_idx], prompt[prompt_idx:]
     
-def make_prompt():
+def make_prompt(token=None, model=None):
     TOKEN_LIMITS = {'large': 30000, 'jumbo': 10000}
     cfg = OmegaConf.load('config.yaml')
     
-    header = {'Authorization': f'Bearer {cfg.token}'}
+    if not token:
+        token = cfg.token
+
+    # If model not defined look at cfg
+    if not model:
+        model = cfg.model
+
+    header = {'Authorization': f'Bearer {token}'}
     cfg.pop('token')
     
-    model = cfg.model
     url = f'https://api.ai21.com/studio/v1/j1-{model}/complete'
 
     prompt, extra, output_dir = get_prompt(cfg)
@@ -153,8 +159,22 @@ def make_prompt():
         usage[model] += int(tokens_used * 1.20)
         OmegaConf.save(config=usage, f='usage.yaml')
 
-    return usage[model] < TOKEN_LIMITS[model]
+    return True
+    # TODO: Add a way to control limit
+    #return usage[model] < TOKEN_LIMITS[model]
+
+def main(*a, **kw):
+    while make_prompt(*a, **kw):
+        pass
 
 if __name__ == '__main__':
-    while make_prompt():
-        pass
+    #while make_prompt():
+        #pass
+    with open('./api_keys') as f:
+        keys = f.readlines()
+    for key in keys:
+        key = key.strip()
+        print(f'\n\n\nAHAHAHAHRUNNING WITH API KEY == {key}\n\n\n')
+        if not key.startswith('#'):
+            main(token=key, model='large')
+            main(token=key, model='jumbo')
