@@ -1,0 +1,1 @@
+ You are given two strings `code` and `message`. The `code` is a string that generates the key in the way shown below: ```  1  | h a m s t e r  2  | i b n   u f  3  | j c o   v g  4  | k d p   w  5  | l   q   x  6  |         y  7  |    

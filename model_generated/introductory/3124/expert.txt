@@ -1,0 +1,1 @@
+ Return the largest integer exponent `x` such that p^(x) evenly divides `n`. If `p<=1` return `null`/`None` (throw an `ArgumentOutOfRange` exception in C#).

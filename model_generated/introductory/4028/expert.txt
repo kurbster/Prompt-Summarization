@@ -1,0 +1,1 @@
+ You are given a list of numbers from 1 to 100. For each number, return its distance (in miles) from one station to the next along the Pony Express route.

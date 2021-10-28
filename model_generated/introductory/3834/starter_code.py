@@ -1,0 +1,2 @@
+def palin(a,b):
+	

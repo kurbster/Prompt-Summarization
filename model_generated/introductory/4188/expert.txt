@@ -1,0 +1,1 @@
+ You are given an unsorted array/list of numbers starting from 1 up to n. Find the sole duplicate number. Hints: a solution in linear time can be found; using the most intuitive ones to search for duplicates that can run in O(n ) time won't work.

@@ -1,0 +1,1 @@
+{"fn_name": "am_i_wilson", "inputs": [[0], [1], [5], [8], [9], [11], [13], [101], [563], [569]], "outputs": [[false], [false], [true], [false], [false], [false], [true], [false], [true], [false]]}

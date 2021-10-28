@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "4\nezor\n",
+    "10\nnznooeeoer\n",
+    "4\neorz\n",
+    "3\nnoe\n",
+    "40\noeerzzozozzrezeezzzoroozrrreorrreereooeo\n",
+    "32\noeonznzneeononnerooooooeeeneenre\n",
+    "35\nozrorrooeoeeeozonoenzoeoreenzrzenen\n",
+    "30\nooeoeneenneooeennnoeeonnooneno\n",
+    "400\nzzzerrzrzzrozrezooreroeoeezerrzeerooereezeeererrezrororoorrzezoeerrorzrezzrzoerrzorrooerzrzeozrrorzzzzeoeereeroeozezeozoozooereoeorrzoroeoezooeerorreeorezeozeroerezoerooooeerozrrorzozeroereerozeozeoerroroereeeerzzrzeeozrezzozeoooeerzzzorozrzezrrorozezoorzzerzroeeeerorreeoezoeroeeezerrzeorzoeorzoeeororzezrzzorrreozzorzroozzoereorzzroozoreorrrorezzozzzzezorzzrzoooorzzzrrozeezrzzzezzoezeozoooezroozez\n",
+    "356\neeroooreoeoeroenezononnenonrnrzenonooozrznrezonezeeoeezeoroenoezrrrzoeoeooeeeezrrorzrooorrenznoororoozzrezeroerzrnnoreoeoznezrznorznozoozeoneeezerrnronrernzzrneoeroezoorerzrneoeoozerenreeozrneoeozeoeonzernneoeozooeeoezoroeroeorzeeeeooozooorzeeorzreezeezooeeezeooeozreooeoooeoenzrezonrnzoezooeoneneeozrnozooooeoeozreezerzooroooernzneozzznnezeneennerzereonee\n",
+    "350\nzzornzoereooreoeeoeeeezezrnzzeozorororznoznzoozrozezrnornrrronneeeeonezeornoooeeeeeeernzooozrroeezznzeozooenoroooeeeooezorrozoeoonoonreoezerrenozoenooeenneneorzorzonooooozoeoneeooorennezeezoeeeoereezoorrnreerenezneznzoooereorzozeoerznoonzrzneonzreoeeoenoeroeorooerrezroeoeeeoneneornonennnenenoeznonzreenororeeeznoeeeoezonorzoeoonreroenneeeezoorozrzoz\n",
+    "300\noeeeneoenooonnoeeoonenoeeeooeeneoeneeeenoeooooenneneeneoneonnnonnonnnnennoneoonenoeononennnonoonneeoooeeeeneonooeoonoononoeeooennnneneneeneoononeeeennooeenooeoeoeneeoennooeeennenoonenneooenoenneneneoeonnneooooneeonoonnnnnoeoenoonnnennnoneeononeeeenoeeeoeoeoonnonoeneoneooooonoooneeeeooneneonnoneeoooe\n"
+  ],
+  "outputs": [
+    "0 \n",
+    "1 1 0 \n",
+    "0 \n",
+    "1 \n",
+    "0 0 0 0 0 0 0 0 0 0 \n",
+    "1 1 1 1 1 1 1 1 0 0 \n",
+    "1 1 1 1 1 0 0 0 0 0 \n",
+    "1 1 1 1 1 1 1 1 1 1 \n",
+    "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 \n",
+    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 \n",
+    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 \n",
+    "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 \n"
+  ]
+}

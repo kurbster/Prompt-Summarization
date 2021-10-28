@@ -1,0 +1,2 @@
+ Given an array of roots of a polynomial equation, you should reconstruct this equation.  Example 1: Input: [0] Output: x = 0 Example 2: Input: [1] Output: x - 1 = 0 Example 3: Input: [1, -1] Output: x^2 - 1 = 0 Example 4: Input: [0, 2, 3] Output: x^3 - 5x^2 + 6x = 0
+

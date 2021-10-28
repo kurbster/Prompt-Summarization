@@ -1,0 +1,1 @@
+["t=int(input())\ncount=[]\n\nfor i in range(t) :\n s = input()\n a,b,c,n = s.split()\n n=int(n)\n d = int(a+b*n+c,2)\n count.append(0)\n while(d>0) :\n  d=(d&(d+1))-1\n  count[i]+=1\n\n\nfor i in range(t) :\n print(count[i])\n"]

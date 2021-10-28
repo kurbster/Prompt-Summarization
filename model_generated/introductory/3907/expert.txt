@@ -1,0 +1,1 @@
+ You are given a command string and a response string. Your task is to process these strings and return a string. Your string must consist of the received header, your "FFFF" instruction code, and the result of your calculation. 

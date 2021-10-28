@@ -1,0 +1,1 @@
+ You are given an array of strings and a character to be used as border.  You need to output the frame with the content inside. 

@@ -1,0 +1,1 @@
+ You are given a list of numbers, and the sequence contains only the numbers with different colours. You need to output a sorted array with the smallest `k` terms, having the same marked colour, but higher than `val`.

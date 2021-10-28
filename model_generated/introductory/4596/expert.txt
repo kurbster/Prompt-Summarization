@@ -1,0 +1,1 @@
+ Write a function that takes a number or a string and gives back the number of permutations without repetitions that can generated using all of its element.

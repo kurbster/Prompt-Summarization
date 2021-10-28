@@ -1,0 +1,1 @@
+{"fn_name": "validate_usr", "inputs": [["asddsa"], ["a"], ["Hass"], ["Hasd_12assssssasasasasasaasasasasas"], [""], ["____"], ["012"], ["p1pp1"], ["asd43 34"], ["asd43_34"]], "outputs": [[true], [false], [false], [false], [false], [true], [false], [true], [false], [true]]}

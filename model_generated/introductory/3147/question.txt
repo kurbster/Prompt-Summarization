@@ -1,0 +1,36 @@
+*This is the advanced version of the [Total Primes](https://www.codewars.com/kata/total-primes/) kata.*
+
+---
+
+The number `23` is the smallest prime that can be "cut" into **multiple** primes: `2, 3`. Another such prime is `6173`, which can be cut into `61, 73` or `617, 3` or `61, 7, 3` (all primes). A third one is `557` which can be sliced into `5, 5, 7`. Let's call these numbers **total primes**.
+
+Notes:
+* one-digit primes are excluded by definition;
+* leading zeros are also excluded: e.g. splitting `307` into `3, 07` is **not** valid
+
+
+## Task
+
+Complete the function that takes a range `[a..b]` (both limits included) and returns the total primes within that range (`a ≤ total primes ≤ b`).
+
+The tests go up to 10^(6).
+~~~if:python
+For your convenience, a list of primes up to 10^(6) is preloaded, called `PRIMES`.
+~~~
+
+
+## Examples
+```
+(0, 100)  ==>  [23, 37, 53, 73]
+
+(500, 600) ==> [523, 541, 547, 557, 571, 577, 593]
+```
+Happy coding!
+
+---
+
+## My other katas
+
+If you enjoyed this kata then please try [my other katas](https://www.codewars.com/collections/katas-created-by-anter69)! :-)
+
+#### *Translations are welcome!*

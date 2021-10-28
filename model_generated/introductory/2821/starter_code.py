@@ -1,0 +1,2 @@
+def trim(beard):
+	

@@ -1,0 +1,2 @@
+def colorful(number):
+	

@@ -1,0 +1,1 @@
+ Given an array of size n, find the maximum possible number Alex can get.

@@ -1,0 +1,1 @@
+{"fn_name": "first_non_repeated", "inputs": [["test"], ["teeter"], ["1122321235121222"], ["rend"]], "outputs": [["e"], ["r"], ["5"], ["r"]]}

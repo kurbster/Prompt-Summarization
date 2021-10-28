@@ -1,0 +1,1 @@
+ Given an integer n, return an array of strings with all possible combinations of heads and tails.

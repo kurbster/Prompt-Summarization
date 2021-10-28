@@ -1,0 +1,1 @@
+ You are given an integer. Square every digit of the integer.  Concatenating each digit, return the result. 

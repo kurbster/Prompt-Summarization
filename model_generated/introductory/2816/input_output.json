@@ -1,0 +1,1 @@
+{"fn_name": "calculate", "inputs": [["1plus2plus3plus4"], ["1minus2minus3minus4"], ["1plus2plus3minus4"], ["1minus2plus3minus4"], ["1plus2minus3plus4minus5"]], "outputs": [["10"], ["-8"], ["2"], ["-2"], ["-1"]]}

@@ -1,0 +1,1 @@
+["def __starting_point():\n    a = int(input())\n    b = int(input())\n    \n    print((a//b))\n    print((a/b))\n\n__starting_point()"]

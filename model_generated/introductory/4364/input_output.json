@@ -1,0 +1,1 @@
+{"fn_name": "odd_or_even", "inputs": [[[0, 1, 2]], [[0, 1, 3]], [[1023, 1, 2]]], "outputs": [["odd"], ["even"], ["even"]]}

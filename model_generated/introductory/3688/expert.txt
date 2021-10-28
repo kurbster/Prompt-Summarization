@@ -1,0 +1,1 @@
+ You are given the table of numbers. You need to find the largest possible sum of the numbers.  If you cannot make two sums of equal value, return 0.  

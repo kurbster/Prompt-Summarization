@@ -1,0 +1,1 @@
+ Complete a function that takes a range `[a..b]` (both limits included) and returns the total primes within that range (`a   total primes   b`). The tests go up to 10^(6). 

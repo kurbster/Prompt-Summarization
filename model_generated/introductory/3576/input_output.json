@@ -1,0 +1,1 @@
+{"fn_name": "longest", "inputs": [[["simple", "is", "better", "than", "complex"]], [["explicit", "is", "better", "than", "implicit"]], [["beautiful", "is", "better", "than", "ugly"]]], "outputs": [[7], [8], [9]]}

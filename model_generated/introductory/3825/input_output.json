@@ -1,0 +1,1 @@
+{"fn_name": "filter_words", "inputs": [["You're Bad! timmy!"], ["You're MEAN! timmy!"], ["You're UGLY!! timmy!"], ["You're horrible! timmy!"], ["You're HiDeOuS!! timmy!"]], "outputs": [["You're awesome! timmy!"], ["You're awesome! timmy!"], ["You're awesome!! timmy!"], ["You're awesome! timmy!"], ["You're awesome!! timmy!"]]}

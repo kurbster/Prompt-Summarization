@@ -1,0 +1,1 @@
+ You are given two arrays of non-negative integers, and need to output whether player 1 is the winner. You can assume both players play to maximize their score. 

@@ -1,0 +1,1 @@
+ You are given an array of planets.  Return the name (in English) of that planet.  Example 1: Input: planets = [ 'Mercury', 'Venus', 'Earth' ] Output: 'Mercury' Example 2: Input: planets = [ 'Mercury', 'Venus', 'Earth', 'Mars' ] Output: 'Mercury' Example 3: Input: planets = [ 'Mercury', 'Venus', 'Earth', 'Mars'

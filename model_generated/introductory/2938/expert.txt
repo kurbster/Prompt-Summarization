@@ -1,0 +1,1 @@
+ You have to write a function `pattern` which creates the following Pattern(See Examples) upto n(parameter) number of rows.  

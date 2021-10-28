@@ -1,0 +1,1 @@
+{"fn_name": "how_many_pizzas", "inputs": [[16], [12], [8], [6], [0]], "outputs": [["pizzas: 4, slices: 0"], ["pizzas: 2, slices: 2"], ["pizzas: 1, slices: 0"], ["pizzas: 0, slices: 4"], ["pizzas: 0, slices: 0"]]}

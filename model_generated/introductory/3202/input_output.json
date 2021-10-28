@@ -1,0 +1,1 @@
+{"fn_name": "greet", "inputs": [["Daniel", "Daniel"], ["Greg", "Daniel"]], "outputs": [["Hello boss"], ["Hello guest"]]}

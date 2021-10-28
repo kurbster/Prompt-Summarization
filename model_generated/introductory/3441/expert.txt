@@ -1,0 +1,1 @@
+ Given an array of integers, return the average rounded down to the nearest integer.

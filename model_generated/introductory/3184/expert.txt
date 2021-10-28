@@ -1,0 +1,1 @@
+ You are given a string and a number. You need to return the number of plates of sushi and condiments. 

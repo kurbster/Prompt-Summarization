@@ -1,0 +1,1 @@
+ You are given 2 integer arrays of length $n$, array $x$ and array $y$. For each array, you want to make all its values equivalent such that $x_1$ = $x_2$ = $x_3$ = ... = $x_n$ and $y_1$ = $y_2$ = $y_3$ = ... = $y_n$ in the least number of moves possible. In one move, you can decrement the value of an element by 1 at $x_i$ or $y_i$, or

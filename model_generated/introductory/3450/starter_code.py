@@ -1,0 +1,2 @@
+def array(string):
+	

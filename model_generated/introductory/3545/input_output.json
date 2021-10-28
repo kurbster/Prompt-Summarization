@@ -1,0 +1,1 @@
+{"fn_name": "well", "inputs": [[[["bad", "bAd", "bad"], ["bad", "bAd", "bad"], ["bad", "bAd", "bad"]]], [[["gOOd", "bad", "BAD", "bad", "bad"], ["bad", "bAd", "bad"], ["GOOD", "bad", "bad", "bAd"]]], [[["gOOd", "bAd", "BAD", "bad", "bad", "GOOD"], ["bad"], ["gOOd", "BAD"]]]], "outputs": [["Fail!"], ["Publish!"], ["I smell a series!"]]}

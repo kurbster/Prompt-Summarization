@@ -1,0 +1,1 @@
+{"fn_name": "total_bill", "inputs": [["rr"], ["rr rrr"], ["rr rrr rrr rr"], ["rrrrrrrrrrrrrrrrrr   rr r"], [""]], "outputs": [[4], [8], [16], [34], [0]]}

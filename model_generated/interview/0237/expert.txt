@@ -1,0 +1,1 @@
+ You are given an array A of 0s and 1s. You need to count the number of non-empty subarrays that have sum S.  

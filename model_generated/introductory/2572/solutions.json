@@ -1,0 +1,1 @@
+["# Enter your code here. Read input from STDIN. Print output to STDOUT\na=int(input())\nb=int(input())\nc=int(input())\nprint((pow(a,b)))\nprint((pow(a,b,c)))\n", "#!/usr/bin/env python3\n\ndef __starting_point():\n    a = int(input().strip())\n    b = int(input().strip())\n    m = int(input().strip())\n    \n    print(pow(a, b))\n    print(pow(a, b, m))\n__starting_point()"]

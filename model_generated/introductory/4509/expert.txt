@@ -1,0 +1,1 @@
+ Validate rhythm with a meter. _________________________________________________ Rules: 1. Rhythmic division requires that in one whole note (1) there are two half notes (2) or four quarter notes (4) or eight eighth notes (8).  Examples: 1 = 2 + 2, 1 = 4 + 4 + 4 + 4 ...  Note that: 2 = 4 + 4, 4 = 8 + 8, 2 =

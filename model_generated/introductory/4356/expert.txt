@@ -1,0 +1,1 @@
+ Determine whether a positive integer number is colorful or not. Colorful number are positive integers such that all consecutive subsets of digits have different product. 

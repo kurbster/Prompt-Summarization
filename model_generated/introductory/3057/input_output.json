@@ -1,0 +1,1 @@
+{"fn_name": "is_bouncy", "inputs": [[0], [99], [101], [120], [122], [221], [2379], [29340], [234689], [98874], [92722983], [129347924210]], "outputs": [[false], [false], [true], [true], [false], [false], [false], [true], [false], [false], [true], [true]]}

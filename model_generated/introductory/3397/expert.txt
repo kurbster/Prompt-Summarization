@@ -1,0 +1,1 @@
+ You are given a `message` and a `code`. The `code` is a nonnegative integer and it decrypts in binary the `message`. Write a function that takes `message` and `code` as input and returns hidden message decrypted from `message` using the `code`.   Note: `message` and `code` will be non-negative integers.

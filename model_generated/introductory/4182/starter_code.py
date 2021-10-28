@@ -1,0 +1,2 @@
+def survivor(n):
+	

@@ -1,0 +1,1 @@
+ You are given a string. Return `true`/`false` depending on whether the string is in alphabetical order or not. For example, `isAlphabetic('kata')` is False as 'a' comes after 'k', but `isAlphabetic('ant')` is True.  

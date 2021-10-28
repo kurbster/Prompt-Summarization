@@ -1,0 +1,1 @@
+{"fn_name": "validate_word", "inputs": [["abcabc"], ["Abcabc"], ["AbcabcC"], ["AbcCBa"], ["pippi"], ["?!?!?!"], ["abc123"], ["abcabcd"], ["abc!abc!"], ["abc:abc"]], "outputs": [[true], [true], [false], [true], [false], [true], [true], [false], [true], [false]]}

@@ -1,0 +1,6137 @@
+{
+    "id": "d3cdcfe9-405a-4157-9d87-89be3805f0ac",
+    "prompt": {
+        "text": "The following paragraphs contain computer science jargon. Rewrite them using simple words.\n\nJargon: Master Shifu is training Po to become The Dragon Warrior and as a final assignment he must obtain maximum deliciousness from dumplings. There are  $N$ plates of dumplings in front of him with deliciousness $A_1, A_2, \\ldots, A_N$, Po can choose any number of continuous plates of  dumplings. The total deliciousness is the sum of deliciousness of all the  chosen dumplings. What is the minimum number of plates he must choose so that total deliciousness is maximum possible  Note: Po must choose atleast one plate. \nSimple: You are given N values with weight attached to each value. You need to find minimum number of continuous values to be chosen such that total weight is maximum possible. \n\nJargon: Recently, Pari and Arya did some research about NP-Hard problems and they found the minimum vertex cover problem very interesting. Suppose the graph G is given. Subset A of its vertices is called a vertex cover of this graph, if for each edge uv there is at least one endpoint of it in this set, i.e. $u \\in A$ or $v \\in A$ (or both). Pari and Arya have won a great undirected graph as an award in a team contest. Now they have to split it in two parts, but both of them want their parts of the graph to be a vertex cover. They have agreed to give you their graph and you need to find two disjoint subsets of its vertices A and B, such that both A and B are vertex cover or claim it's impossible. Each vertex should be given to no more than one of the friends (or you can even keep it for yourself). \nSimple: You are given a graph with $n$ vertices and $m$ edges. You should find two disjoint subsets of its vertices A and B, such that both A and B are vertex covers or claim it's impossible. \n\nJargon: =====Problem Statement===== ABCXYZ company has up to 100 employees. The company decides to create a unique identification number (UID) for each of its employees. The company has assigned you the task of validating all the randomly generated UIDs. A valid UID must follow the rules below: It must contain at least 2 uppercase English alphabet characters. It must contain at least 3 digits (0-9). It should only contain alphanumeric characters (a-z, A-Z & 0-9). No character should repeat. There must be exactly 10 characters in a valid UID. \nSimple: =====Problem Statement===== You are given a string A valid string must follow the conditions below: It must contain at least 2 uppercase English alphabet characters. It must contain at least 3 digits 0 to 9. It should only contain alphanumeric characters a-z, A-Z & 0-9. No character should repeat. There must be exactly 10 characters in a valid string. \n\nJargon: Regex Failure - Bug Fixing #2 Oh no, Timmy's received some hate mail recently but he knows better. Help Timmy fix his regex filter so he can be awesome again!\nSimple:",
+        "tokens": [
+            {
+                "generatedToken": {
+                    "token": "\u2581The\u2581following",
+                    "logprob": -7.560122489929199
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 0,
+                    "end": 13
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581paragraphs",
+                    "logprob": -6.672235488891602
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 13,
+                    "end": 24
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581contain",
+                    "logprob": -3.3134682178497314
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 24,
+                    "end": 32
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581computer\u2581science",
+                    "logprob": -13.517721176147461
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 32,
+                    "end": 49
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581jargon",
+                    "logprob": -4.808598518371582
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 49,
+                    "end": 56
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -1.0436985492706299
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 56,
+                    "end": 57
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Rewrite",
+                    "logprob": -12.340215682983398
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 57,
+                    "end": 65
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581them",
+                    "logprob": -1.2315609455108643
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 65,
+                    "end": 70
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581using",
+                    "logprob": -1.1486423015594482
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 70,
+                    "end": 76
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581simple\u2581words",
+                    "logprob": -5.432238578796387
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 76,
+                    "end": 89
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.9308373332023621
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 89,
+                    "end": 90
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.32722440361976624
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 90,
+                    "end": 91
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -2.803138017654419
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 91,
+                    "end": 92
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Jar",
+                    "logprob": -9.925179481506348
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 92,
+                    "end": 95
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "gon",
+                    "logprob": -0.008153723552823067
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 95,
+                    "end": 98
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -1.8386240005493164
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 98,
+                    "end": 99
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Master",
+                    "logprob": -10.620928764343262
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 99,
+                    "end": 106
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Shif",
+                    "logprob": -11.933403968811035
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 106,
+                    "end": 111
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "u",
+                    "logprob": -0.10979823023080826
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 111,
+                    "end": 112
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581is",
+                    "logprob": -4.009865760803223
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 112,
+                    "end": 115
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581training",
+                    "logprob": -5.185795783996582
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 115,
+                    "end": 124
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Po",
+                    "logprob": -6.998639106750488
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 124,
+                    "end": 127
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to\u2581become",
+                    "logprob": -6.059519290924072
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 127,
+                    "end": 137
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581The",
+                    "logprob": -7.032139301300049
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 137,
+                    "end": 141
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Dragon",
+                    "logprob": -1.4910424947738647
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 141,
+                    "end": 148
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Warrior",
+                    "logprob": -0.2397676259279251
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 148,
+                    "end": 156
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581and",
+                    "logprob": -4.494279384613037
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 156,
+                    "end": 160
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581as\u2581a",
+                    "logprob": -8.016748428344727
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 160,
+                    "end": 165
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581final",
+                    "logprob": -2.4046316146850586
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 165,
+                    "end": 171
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581assignment",
+                    "logprob": -6.0831522941589355
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 171,
+                    "end": 182
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581he",
+                    "logprob": -2.5676116943359375
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 182,
+                    "end": 185
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581obtain",
+                    "logprob": -11.093963623046875
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 185,
+                    "end": 197
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581maximum",
+                    "logprob": -10.186363220214844
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 197,
+                    "end": 205
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581deliciousness",
+                    "logprob": -12.369568824768066
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 205,
+                    "end": 219
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581from",
+                    "logprob": -1.875714659690857
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 219,
+                    "end": 224
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581dumplings",
+                    "logprob": -6.743597984313965
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 224,
+                    "end": 234
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.3588535487651825
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 234,
+                    "end": 235
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581There\u2581are",
+                    "logprob": -7.332432746887207
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 235,
+                    "end": 245
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.7341775298118591
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 245,
+                    "end": 246
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -14.075757026672363
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 246,
+                    "end": 248
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "N",
+                    "logprob": -3.16487717628479
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 248,
+                    "end": 249
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.2167515754699707
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 249,
+                    "end": 250
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581plates",
+                    "logprob": -8.045665740966797
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 250,
+                    "end": 257
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of",
+                    "logprob": -0.47841769456863403
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 257,
+                    "end": 260
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581dumplings",
+                    "logprob": -0.07011695206165314
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 260,
+                    "end": 270
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581in\u2581front\u2581of\u2581him",
+                    "logprob": -6.420963287353516
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 270,
+                    "end": 286
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581with",
+                    "logprob": -4.364643573760986
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 286,
+                    "end": 291
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581deliciousness",
+                    "logprob": -6.650594711303711
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 291,
+                    "end": 305
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -2.0906100273132324
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 305,
+                    "end": 307
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "A_",
+                    "logprob": -7.822754383087158
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 307,
+                    "end": 309
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "1",
+                    "logprob": -0.19691802561283112
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 309,
+                    "end": 310
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -0.43392571806907654
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 310,
+                    "end": 311
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A",
+                    "logprob": -1.3219246864318848
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 311,
+                    "end": 313
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "_",
+                    "logprob": -0.00549662671983242
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 313,
+                    "end": 314
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "2",
+                    "logprob": -0.005199718754738569
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 314,
+                    "end": 315
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -0.04184865206480026
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 315,
+                    "end": 316
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581\\ldots",
+                    "logprob": -0.9448435306549072
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 316,
+                    "end": 323
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -0.44649696350097656
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 323,
+                    "end": 324
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A",
+                    "logprob": -0.01826420985162258
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 324,
+                    "end": 326
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "_N",
+                    "logprob": -0.0408172644674778
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 326,
+                    "end": 328
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.047635506838560104
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 328,
+                    "end": 329
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -2.812156915664673
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 329,
+                    "end": 330
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Po",
+                    "logprob": -6.267293930053711
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 330,
+                    "end": 333
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581can\u2581choose",
+                    "logprob": -5.276169776916504
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 333,
+                    "end": 344
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581any\u2581number\u2581of",
+                    "logprob": -4.958870887756348
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 344,
+                    "end": 358
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581continuous",
+                    "logprob": -13.162938117980957
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 358,
+                    "end": 369
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581plates",
+                    "logprob": -0.9613723754882812
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 369,
+                    "end": 376
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of",
+                    "logprob": -1.6323833465576172
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 376,
+                    "end": 379
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -5.495489120483398
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 379,
+                    "end": 380
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581dumplings",
+                    "logprob": -1.5704677104949951
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 380,
+                    "end": 390
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -1.6332566738128662
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 390,
+                    "end": 391
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581The\u2581total",
+                    "logprob": -5.764081954956055
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 391,
+                    "end": 401
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581deliciousness",
+                    "logprob": -0.47501182556152344
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 401,
+                    "end": 415
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581is",
+                    "logprob": -2.129577875137329
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 415,
+                    "end": 418
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581the\u2581sum\u2581of",
+                    "logprob": -2.8999884128570557
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 418,
+                    "end": 429
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581deliciousness",
+                    "logprob": -0.7223532199859619
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 429,
+                    "end": 443
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of\u2581all\u2581the",
+                    "logprob": -2.561890125274658
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 443,
+                    "end": 454
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.561182975769043
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 454,
+                    "end": 455
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581chosen",
+                    "logprob": -4.789271831512451
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 455,
+                    "end": 462
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581dumplings",
+                    "logprob": -1.994756817817688
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 462,
+                    "end": 472
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.4927625060081482
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 472,
+                    "end": 473
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581What\u2581is\u2581the",
+                    "logprob": -6.359646797180176
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 473,
+                    "end": 485
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581minimum\u2581number\u2581of",
+                    "logprob": -0.45193806290626526
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 485,
+                    "end": 503
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581plates",
+                    "logprob": -0.6383002400398254
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 503,
+                    "end": 510
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581he",
+                    "logprob": -5.777365684509277
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 510,
+                    "end": 513
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581choose",
+                    "logprob": -1.8695374727249146
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 513,
+                    "end": 525
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581so\u2581that",
+                    "logprob": -2.736717700958252
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 525,
+                    "end": 533
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581total",
+                    "logprob": -4.70965576171875
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 533,
+                    "end": 539
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581deliciousness",
+                    "logprob": -0.03291149437427521
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 539,
+                    "end": 553
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581is",
+                    "logprob": -0.6955240368843079
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 553,
+                    "end": 556
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581maximum",
+                    "logprob": -1.0433733463287354
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 556,
+                    "end": 564
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581possible",
+                    "logprob": -4.401219367980957
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 564,
+                    "end": 573
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -2.864631175994873
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 573,
+                    "end": 574
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Note",
+                    "logprob": -15.898299217224121
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 574,
+                    "end": 579
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.15567553043365479
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 579,
+                    "end": 580
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Po",
+                    "logprob": -2.8760838508605957
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 580,
+                    "end": 583
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581choose",
+                    "logprob": -3.8073251247406006
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 583,
+                    "end": 595
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581atleast",
+                    "logprob": -6.394245624542236
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 595,
+                    "end": 603
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581one",
+                    "logprob": -0.6937790513038635
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 603,
+                    "end": 607
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581plate",
+                    "logprob": -0.1989126354455948
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 607,
+                    "end": 613
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -2.1161060333251953
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 613,
+                    "end": 614
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.10642671585083
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 614,
+                    "end": 615
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.47232574224472046
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 615,
+                    "end": 616
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Simple",
+                    "logprob": -7.3484930992126465
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 616,
+                    "end": 622
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -2.251516342163086
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 622,
+                    "end": 623
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581You\u2581are",
+                    "logprob": -7.929468631744385
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 623,
+                    "end": 631
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581given",
+                    "logprob": -1.2454394102096558
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 631,
+                    "end": 637
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581N",
+                    "logprob": -2.845806121826172
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 637,
+                    "end": 639
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581values",
+                    "logprob": -7.845496654510498
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 639,
+                    "end": 646
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581with",
+                    "logprob": -4.526185035705566
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 646,
+                    "end": 651
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581weight",
+                    "logprob": -6.130949974060059
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 651,
+                    "end": 658
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581attached\u2581to",
+                    "logprob": -7.877385139465332
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 658,
+                    "end": 670
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581each",
+                    "logprob": -1.3118312358856201
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 670,
+                    "end": 675
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581value",
+                    "logprob": -1.0224543809890747
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 675,
+                    "end": 681
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.4987475275993347
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 681,
+                    "end": 682
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581You\u2581need\u2581to",
+                    "logprob": -2.715466022491455
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 682,
+                    "end": 694
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581find",
+                    "logprob": -1.5823428630828857
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 694,
+                    "end": 699
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581minimum\u2581number\u2581of",
+                    "logprob": -6.147367477416992
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 699,
+                    "end": 717
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581continuous",
+                    "logprob": -9.398946762084961
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 717,
+                    "end": 728
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581values",
+                    "logprob": -2.34147310256958
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 728,
+                    "end": 735
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to\u2581be",
+                    "logprob": -6.369562149047852
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 735,
+                    "end": 741
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581chosen",
+                    "logprob": -1.9403363466262817
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 741,
+                    "end": 748
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581such\u2581that",
+                    "logprob": -2.1041452884674072
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 748,
+                    "end": 758
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581total",
+                    "logprob": -2.398813247680664
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 758,
+                    "end": 764
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581weight\u2581is",
+                    "logprob": -0.6386974453926086
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 764,
+                    "end": 774
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581maximum",
+                    "logprob": -0.3037664592266083
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 774,
+                    "end": 782
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581possible",
+                    "logprob": -0.9153202176094055
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 782,
+                    "end": 791
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.23469792306423187
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 791,
+                    "end": 792
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.8719854950904846
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 792,
+                    "end": 793
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.1661263108253479
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 793,
+                    "end": 794
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.6323063373565674
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 794,
+                    "end": 795
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Jar",
+                    "logprob": -5.593464374542236
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 795,
+                    "end": 798
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "gon",
+                    "logprob": -6.627816765103489e-05
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 798,
+                    "end": 801
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.10545239597558975
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 801,
+                    "end": 802
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Recently",
+                    "logprob": -9.408867835998535
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 802,
+                    "end": 811
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -1.2883503437042236
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 811,
+                    "end": 812
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Pari",
+                    "logprob": -12.254226684570312
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 812,
+                    "end": 817
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581and",
+                    "logprob": -2.599398136138916
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 817,
+                    "end": 821
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Arya",
+                    "logprob": -6.434455871582031
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 821,
+                    "end": 826
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581did\u2581some",
+                    "logprob": -7.759767532348633
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 826,
+                    "end": 835
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581research",
+                    "logprob": -2.709486722946167
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 835,
+                    "end": 844
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581about",
+                    "logprob": -2.2590556144714355
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 844,
+                    "end": 850
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581NP",
+                    "logprob": -7.140580177307129
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 850,
+                    "end": 853
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "-",
+                    "logprob": -1.952104091644287
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 853,
+                    "end": 854
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "Hard",
+                    "logprob": -1.1861331462860107
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 854,
+                    "end": 858
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581problems\u2581and",
+                    "logprob": -3.282406806945801
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 858,
+                    "end": 871
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581they\u2581found",
+                    "logprob": -3.319260358810425
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 871,
+                    "end": 882
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581the\u2581minimum",
+                    "logprob": -8.75356388092041
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 882,
+                    "end": 894
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -5.391963005065918
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 894,
+                    "end": 901
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581cover",
+                    "logprob": -0.4095563292503357
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 901,
+                    "end": 907
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581problem",
+                    "logprob": -0.7476311922073364
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 907,
+                    "end": 915
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581very\u2581interesting",
+                    "logprob": -9.91652774810791
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 915,
+                    "end": 932
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.34750357270240784
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 932,
+                    "end": 933
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Suppose",
+                    "logprob": -5.309504985809326
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 933,
+                    "end": 941
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581the\u2581graph",
+                    "logprob": -4.208074569702148
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 941,
+                    "end": 951
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581G",
+                    "logprob": -1.1583055257797241
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 951,
+                    "end": 953
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581is\u2581given",
+                    "logprob": -4.113014221191406
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 953,
+                    "end": 962
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -1.7266631126403809
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 962,
+                    "end": 963
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.303821086883545
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 963,
+                    "end": 964
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "Subset",
+                    "logprob": -9.795909881591797
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 964,
+                    "end": 970
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A",
+                    "logprob": -2.561272144317627
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 970,
+                    "end": 972
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of\u2581its",
+                    "logprob": -8.10955810546875
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 972,
+                    "end": 979
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertices",
+                    "logprob": -0.20545880496501923
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 979,
+                    "end": 988
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581is\u2581called\u2581a",
+                    "logprob": -3.432784080505371
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 988,
+                    "end": 1000
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -0.7500439882278442
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1000,
+                    "end": 1007
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581cover",
+                    "logprob": -0.6969091296195984
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1007,
+                    "end": 1013
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of\u2581this",
+                    "logprob": -6.9706525802612305
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1013,
+                    "end": 1021
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581graph",
+                    "logprob": -0.013511399738490582
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1021,
+                    "end": 1027
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -3.1326212882995605
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1027,
+                    "end": 1028
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581if",
+                    "logprob": -0.5315819382667542
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1028,
+                    "end": 1031
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581for\u2581each",
+                    "logprob": -3.003897190093994
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1031,
+                    "end": 1040
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581edge",
+                    "logprob": -3.2328948974609375
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1040,
+                    "end": 1045
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.8186464309692383
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1045,
+                    "end": 1046
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "uv",
+                    "logprob": -3.9263534545898438
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1046,
+                    "end": 1048
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581there\u2581is",
+                    "logprob": -4.121270179748535
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1048,
+                    "end": 1057
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581at\u2581least\u2581one",
+                    "logprob": -0.5632903575897217
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1057,
+                    "end": 1070
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581endpoint",
+                    "logprob": -8.751228332519531
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1070,
+                    "end": 1079
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of\u2581it",
+                    "logprob": -8.389126777648926
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1079,
+                    "end": 1085
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581in\u2581this",
+                    "logprob": -6.103402614593506
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1085,
+                    "end": 1093
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581set",
+                    "logprob": -0.7426308393478394
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1093,
+                    "end": 1097
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -3.5211668014526367
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1097,
+                    "end": 1098
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581i.e.",
+                    "logprob": -2.70772647857666
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1098,
+                    "end": 1103
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -5.840536117553711
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1103,
+                    "end": 1105
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "u",
+                    "logprob": -1.9903855323791504
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1105,
+                    "end": 1106
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.6157186031341553
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1106,
+                    "end": 1107
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\\in\u2581A",
+                    "logprob": -0.06460998207330704
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1107,
+                    "end": 1112
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.34987354278564453
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1112,
+                    "end": 1113
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581or",
+                    "logprob": -1.1880369186401367
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1113,
+                    "end": 1116
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -0.012360046617686749
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1116,
+                    "end": 1118
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "v",
+                    "logprob": -0.03593738004565239
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1118,
+                    "end": 1119
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.014845142140984535
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1119,
+                    "end": 1120
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\\in\u2581A",
+                    "logprob": -0.006308996584266424
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1120,
+                    "end": 1125
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.007142367772758007
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1125,
+                    "end": 1126
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.8716635704040527
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1126,
+                    "end": 1127
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "(",
+                    "logprob": -1.765895128250122
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1127,
+                    "end": 1128
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "or",
+                    "logprob": -3.1560540199279785
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1128,
+                    "end": 1130
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581both",
+                    "logprob": -0.2704036831855774
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1130,
+                    "end": 1135
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ")",
+                    "logprob": -0.20000459253787994
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1135,
+                    "end": 1136
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.10585643351078033
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1136,
+                    "end": 1137
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Pari",
+                    "logprob": -6.373691558837891
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1137,
+                    "end": 1142
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581and",
+                    "logprob": -0.08500517904758453
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1142,
+                    "end": 1146
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Arya",
+                    "logprob": -0.00779668940231204
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1146,
+                    "end": 1151
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581have\u2581won",
+                    "logprob": -12.37062931060791
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1151,
+                    "end": 1160
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581a\u2581great",
+                    "logprob": -8.197102546691895
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1160,
+                    "end": 1168
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581un",
+                    "logprob": -11.274299621582031
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1168,
+                    "end": 1171
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "directed",
+                    "logprob": -4.364072799682617
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1171,
+                    "end": 1179
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581graph",
+                    "logprob": -1.0322239398956299
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1179,
+                    "end": 1185
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581as",
+                    "logprob": -8.336114883422852
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1185,
+                    "end": 1188
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581an\u2581award",
+                    "logprob": -5.387269973754883
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1188,
+                    "end": 1197
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581in\u2581a",
+                    "logprob": -6.700648307800293
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1197,
+                    "end": 1202
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581team",
+                    "logprob": -6.553521156311035
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1202,
+                    "end": 1207
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581contest",
+                    "logprob": -2.7775306701660156
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1207,
+                    "end": 1215
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.7217803001403809
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1215,
+                    "end": 1216
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Now",
+                    "logprob": -2.7934811115264893
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1216,
+                    "end": 1220
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581they\u2581have",
+                    "logprob": -2.6883139610290527
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1220,
+                    "end": 1230
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to\u2581split",
+                    "logprob": -5.784136772155762
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1230,
+                    "end": 1239
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581it\u2581in",
+                    "logprob": -4.8470258712768555
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1239,
+                    "end": 1245
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581two\u2581parts",
+                    "logprob": -1.5217843055725098
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1245,
+                    "end": 1255
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -1.7839951515197754
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1255,
+                    "end": 1256
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581but",
+                    "logprob": -5.2439680099487305
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1256,
+                    "end": 1260
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581both\u2581of\u2581them",
+                    "logprob": -3.9607481956481934
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1260,
+                    "end": 1273
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581want",
+                    "logprob": -3.0963962078094482
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1273,
+                    "end": 1278
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581their",
+                    "logprob": -3.191178321838379
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1278,
+                    "end": 1284
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581parts\u2581of\u2581the",
+                    "logprob": -4.771769046783447
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1284,
+                    "end": 1297
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581graph",
+                    "logprob": -0.07632796466350555
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1297,
+                    "end": 1303
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to\u2581be\u2581a",
+                    "logprob": -4.418654441833496
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1303,
+                    "end": 1311
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -0.0933699756860733
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1311,
+                    "end": 1318
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581cover",
+                    "logprob": -0.23202911019325256
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1318,
+                    "end": 1324
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.9340870380401611
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1324,
+                    "end": 1325
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581They\u2581have",
+                    "logprob": -4.312187671661377
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1325,
+                    "end": 1335
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581agreed\u2581to",
+                    "logprob": -5.941546440124512
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1335,
+                    "end": 1345
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581give\u2581you",
+                    "logprob": -8.867093086242676
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1345,
+                    "end": 1354
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581their",
+                    "logprob": -2.5670831203460693
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1354,
+                    "end": 1360
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581graph",
+                    "logprob": -2.1424689292907715
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1360,
+                    "end": 1366
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581and",
+                    "logprob": -1.9957382678985596
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1366,
+                    "end": 1370
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581you\u2581need\u2581to\u2581find",
+                    "logprob": -6.719265937805176
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1370,
+                    "end": 1387
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581two",
+                    "logprob": -5.211108207702637
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1387,
+                    "end": 1391
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581disjoint",
+                    "logprob": -2.8253865242004395
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1391,
+                    "end": 1400
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581subsets\u2581of",
+                    "logprob": -6.974815845489502
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1400,
+                    "end": 1411
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581its",
+                    "logprob": -1.6792850494384766
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1411,
+                    "end": 1415
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertices",
+                    "logprob": -0.03842119500041008
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1415,
+                    "end": 1424
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A\u2581and\u2581B",
+                    "logprob": -7.02188777923584
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1424,
+                    "end": 1432
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -2.2202248573303223
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1432,
+                    "end": 1433
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581such\u2581that",
+                    "logprob": -0.4668508768081665
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1433,
+                    "end": 1443
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581both",
+                    "logprob": -2.6237740516662598
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1443,
+                    "end": 1448
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A\u2581and\u2581B",
+                    "logprob": -2.1970717906951904
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1448,
+                    "end": 1456
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581are",
+                    "logprob": -0.9133212566375732
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1456,
+                    "end": 1460
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -0.01617570035159588
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1460,
+                    "end": 1467
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581cover",
+                    "logprob": -1.5262192487716675
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1467,
+                    "end": 1473
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581or",
+                    "logprob": -7.2883758544921875
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1473,
+                    "end": 1476
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581claim",
+                    "logprob": -11.716565132141113
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1476,
+                    "end": 1482
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581it's\u2581impossible",
+                    "logprob": -11.803520202636719
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1482,
+                    "end": 1498
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.33471599221229553
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1498,
+                    "end": 1499
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Each",
+                    "logprob": -5.188194274902344
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1499,
+                    "end": 1504
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -1.5052120685577393
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1504,
+                    "end": 1511
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581should\u2581be\u2581given",
+                    "logprob": -8.229026794433594
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1511,
+                    "end": 1527
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to",
+                    "logprob": -4.7675395011901855
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1527,
+                    "end": 1530
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581no\u2581more\u2581than",
+                    "logprob": -8.575467109680176
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1530,
+                    "end": 1543
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581one\u2581of\u2581the",
+                    "logprob": -2.314366340637207
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1543,
+                    "end": 1554
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581friends",
+                    "logprob": -6.25763463973999
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1554,
+                    "end": 1562
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.186401844024658
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1562,
+                    "end": 1563
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "(",
+                    "logprob": -0.6890388131141663
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1563,
+                    "end": 1564
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "or",
+                    "logprob": -2.945626735687256
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1564,
+                    "end": 1566
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581you\u2581can\u2581even",
+                    "logprob": -9.229040145874023
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1566,
+                    "end": 1579
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581keep\u2581it",
+                    "logprob": -6.419119834899902
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1579,
+                    "end": 1587
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581for\u2581yourself",
+                    "logprob": -0.8647074699401855
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1587,
+                    "end": 1600
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ")",
+                    "logprob": -0.3888597786426544
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1600,
+                    "end": 1601
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.2547226846218109
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1601,
+                    "end": 1602
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.9538372755050659
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1602,
+                    "end": 1603
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.1445702314376831
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1603,
+                    "end": 1604
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Simple",
+                    "logprob": -0.1914794147014618
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1604,
+                    "end": 1610
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.009296227246522903
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1610,
+                    "end": 1611
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581You\u2581are",
+                    "logprob": -0.8588566184043884
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1611,
+                    "end": 1619
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581given",
+                    "logprob": -0.23465804755687714
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1619,
+                    "end": 1625
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581a\u2581graph",
+                    "logprob": -0.8578560948371887
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1625,
+                    "end": 1633
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581with",
+                    "logprob": -2.609321117401123
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1633,
+                    "end": 1638
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -3.2394909858703613
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1638,
+                    "end": 1640
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "n",
+                    "logprob": -0.9248829483985901
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1640,
+                    "end": 1641
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.03135190159082413
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1641,
+                    "end": 1642
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertices",
+                    "logprob": -0.09077703207731247
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1642,
+                    "end": 1651
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581and",
+                    "logprob": -0.8959206342697144
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1651,
+                    "end": 1655
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581$",
+                    "logprob": -0.35509273409843445
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1655,
+                    "end": 1657
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "m",
+                    "logprob": -0.3131193220615387
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1657,
+                    "end": 1658
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "$",
+                    "logprob": -0.010118616744875908
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1658,
+                    "end": 1659
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581edges",
+                    "logprob": -0.16210323572158813
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1659,
+                    "end": 1665
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.2503547966480255
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1665,
+                    "end": 1666
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581You\u2581should",
+                    "logprob": -6.939198017120361
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1666,
+                    "end": 1677
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581find",
+                    "logprob": -0.5435619354248047
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1677,
+                    "end": 1682
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581two",
+                    "logprob": -0.31518909335136414
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1682,
+                    "end": 1686
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581disjoint",
+                    "logprob": -0.2420347034931183
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1686,
+                    "end": 1695
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581subsets\u2581of",
+                    "logprob": -1.2381484508514404
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1695,
+                    "end": 1706
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581its",
+                    "logprob": -0.7352114319801331
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1706,
+                    "end": 1710
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertices",
+                    "logprob": -0.029877347871661186
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1710,
+                    "end": 1719
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A\u2581and\u2581B",
+                    "logprob": -0.6340727806091309
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1719,
+                    "end": 1727
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -1.5759354829788208
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1727,
+                    "end": 1728
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581such\u2581that",
+                    "logprob": -0.033989548683166504
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1728,
+                    "end": 1738
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581both",
+                    "logprob": -0.14511437714099884
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1738,
+                    "end": 1743
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A\u2581and\u2581B",
+                    "logprob": -0.0203792043030262
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1743,
+                    "end": 1751
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581are",
+                    "logprob": -0.16033175587654114
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1751,
+                    "end": 1755
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581vertex",
+                    "logprob": -0.00997876562178135
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1755,
+                    "end": 1762
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581covers",
+                    "logprob": -3.9554266929626465
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1762,
+                    "end": 1769
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581or",
+                    "logprob": -0.9699640274047852
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1769,
+                    "end": 1772
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581claim",
+                    "logprob": -0.24734804034233093
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1772,
+                    "end": 1778
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581it's\u2581impossible",
+                    "logprob": -0.12902027368545532
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1778,
+                    "end": 1794
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.05382327735424042
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1794,
+                    "end": 1795
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -2.1313581466674805
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1795,
+                    "end": 1796
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.06540331989526749
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1796,
+                    "end": 1797
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.08594934642314911
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1797,
+                    "end": 1798
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Jar",
+                    "logprob": -0.36727282404899597
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1798,
+                    "end": 1801
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "gon",
+                    "logprob": -2.264974000354414e-06
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1801,
+                    "end": 1804
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.009914440102875233
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1804,
+                    "end": 1805
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581==",
+                    "logprob": -10.974958419799805
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1805,
+                    "end": 1808
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "===",
+                    "logprob": -0.5822373628616333
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1808,
+                    "end": 1811
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "Problem",
+                    "logprob": -7.898883819580078
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1811,
+                    "end": 1818
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Statement",
+                    "logprob": -2.5089616775512695
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1818,
+                    "end": 1828
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "===",
+                    "logprob": -0.7825443744659424
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1828,
+                    "end": 1831
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "==",
+                    "logprob": -0.2286999225616455
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1831,
+                    "end": 1833
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581ABC",
+                    "logprob": -10.04574203491211
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1833,
+                    "end": 1837
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "XYZ",
+                    "logprob": -5.050429821014404
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1837,
+                    "end": 1840
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581company\u2581has",
+                    "logprob": -7.864299774169922
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1840,
+                    "end": 1852
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581up\u2581to",
+                    "logprob": -9.431877136230469
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1852,
+                    "end": 1858
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.7294149994850159
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1858,
+                    "end": 1859
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "100",
+                    "logprob": -2.639991044998169
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1859,
+                    "end": 1862
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581employees",
+                    "logprob": -1.2480388879776
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1862,
+                    "end": 1872
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.684833288192749
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1872,
+                    "end": 1873
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581The\u2581company",
+                    "logprob": -3.3046934604644775
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1873,
+                    "end": 1885
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581decides",
+                    "logprob": -5.1519904136657715
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1885,
+                    "end": 1893
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to\u2581create\u2581a\u2581unique",
+                    "logprob": -10.734085083007812
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1893,
+                    "end": 1912
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581identification\u2581number",
+                    "logprob": -3.3567278385162354
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1912,
+                    "end": 1934
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -1.330718994140625
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1934,
+                    "end": 1935
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "(",
+                    "logprob": -0.02846642956137657
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1935,
+                    "end": 1936
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "UID",
+                    "logprob": -0.7692257165908813
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1936,
+                    "end": 1939
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ")",
+                    "logprob": -0.010513750836253166
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1939,
+                    "end": 1940
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581for\u2581each",
+                    "logprob": -1.4426820278167725
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1940,
+                    "end": 1949
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581of",
+                    "logprob": -1.7661182880401611
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1949,
+                    "end": 1952
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581its\u2581employees",
+                    "logprob": -0.17098194360733032
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1952,
+                    "end": 1966
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.4349502623081207
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1966,
+                    "end": 1967
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581The\u2581company\u2581has",
+                    "logprob": -5.035691261291504
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1967,
+                    "end": 1983
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581assigned",
+                    "logprob": -5.426637649536133
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1983,
+                    "end": 1992
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581you",
+                    "logprob": -8.16558837890625
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1992,
+                    "end": 1996
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581the\u2581task\u2581of",
+                    "logprob": -1.1052446365356445
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 1996,
+                    "end": 2008
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581validating",
+                    "logprob": -9.10547161102295
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2008,
+                    "end": 2019
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581all\u2581the",
+                    "logprob": -3.6082465648651123
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2019,
+                    "end": 2027
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581randomly\u2581generated",
+                    "logprob": -6.669364929199219
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2027,
+                    "end": 2046
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.22598052024841309
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2046,
+                    "end": 2047
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "UID",
+                    "logprob": -0.006327476352453232
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2047,
+                    "end": 2050
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "s.",
+                    "logprob": -1.4127485752105713
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2050,
+                    "end": 2052
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A",
+                    "logprob": -3.7600955963134766
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2052,
+                    "end": 2054
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581valid",
+                    "logprob": -2.592916965484619
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2054,
+                    "end": 2060
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.066768579185009
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2060,
+                    "end": 2061
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "UID",
+                    "logprob": -0.0037558982148766518
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2061,
+                    "end": 2064
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must",
+                    "logprob": -4.5864152908325195
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2064,
+                    "end": 2069
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581follow\u2581the\u2581rules",
+                    "logprob": -6.834928035736084
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2069,
+                    "end": 2086
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581below",
+                    "logprob": -1.9737615585327148
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2086,
+                    "end": 2092
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.3465069830417633
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2092,
+                    "end": 2093
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It",
+                    "logprob": -5.452990531921387
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2093,
+                    "end": 2096
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581contain",
+                    "logprob": -1.2317023277282715
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2096,
+                    "end": 2109
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581at\u2581least",
+                    "logprob": -2.504073143005371
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2109,
+                    "end": 2118
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.11024311929941177
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2118,
+                    "end": 2119
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "2",
+                    "logprob": -2.5109777450561523
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2119,
+                    "end": 2120
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581uppercase",
+                    "logprob": -2.9602975845336914
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2120,
+                    "end": 2130
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581English",
+                    "logprob": -4.952789783477783
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2130,
+                    "end": 2138
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581alphabet",
+                    "logprob": -0.6572824716567993
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2138,
+                    "end": 2147
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters",
+                    "logprob": -4.534991264343262
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2147,
+                    "end": 2158
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.8725664615631104
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2158,
+                    "end": 2159
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It",
+                    "logprob": -0.6260870695114136
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2159,
+                    "end": 2162
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581contain",
+                    "logprob": -0.4633147120475769
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2162,
+                    "end": 2175
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581at\u2581least",
+                    "logprob": -0.8673807978630066
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2175,
+                    "end": 2184
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.0093030771240592
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2184,
+                    "end": 2185
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "3",
+                    "logprob": -1.889617919921875
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2185,
+                    "end": 2186
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581digits",
+                    "logprob": -1.4952183961868286
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2186,
+                    "end": 2193
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -2.7401504516601562
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2193,
+                    "end": 2194
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "(",
+                    "logprob": -0.07495934516191483
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2194,
+                    "end": 2195
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "0",
+                    "logprob": -1.6970957517623901
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2195,
+                    "end": 2196
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "-",
+                    "logprob": -0.47836774587631226
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2196,
+                    "end": 2197
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "9",
+                    "logprob": -0.006596101447939873
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2197,
+                    "end": 2198
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ")",
+                    "logprob": -0.03692498430609703
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2198,
+                    "end": 2199
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.13747121393680573
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2199,
+                    "end": 2200
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It\u2581should",
+                    "logprob": -4.8324198722839355
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2200,
+                    "end": 2210
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581only",
+                    "logprob": -4.581991195678711
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2210,
+                    "end": 2215
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581contain",
+                    "logprob": -0.1445533186197281
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2215,
+                    "end": 2223
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581alphanumeric",
+                    "logprob": -3.145186185836792
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2223,
+                    "end": 2236
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters",
+                    "logprob": -0.25842025876045227
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2236,
+                    "end": 2247
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -1.8111807107925415
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2247,
+                    "end": 2248
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "(",
+                    "logprob": -0.0380510538816452
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2248,
+                    "end": 2249
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "a-z",
+                    "logprob": -2.791262626647949
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2249,
+                    "end": 2252
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -0.4067378640174866
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2252,
+                    "end": 2253
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.1580825299024582
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2253,
+                    "end": 2254
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "A-Z",
+                    "logprob": -0.07090460509061813
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2254,
+                    "end": 2257
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581&",
+                    "logprob": -7.0083794593811035
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2257,
+                    "end": 2259
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.2500912547111511
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2259,
+                    "end": 2260
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "0",
+                    "logprob": -0.12855620682239532
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2260,
+                    "end": 2261
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "-",
+                    "logprob": -0.017360981553792953
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2261,
+                    "end": 2262
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "9",
+                    "logprob": -0.0009074860718101263
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2262,
+                    "end": 2263
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ")",
+                    "logprob": -0.024113470688462257
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2263,
+                    "end": 2264
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.2106921374797821
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2264,
+                    "end": 2265
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581No",
+                    "logprob": -4.0781402587890625
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2265,
+                    "end": 2268
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581character",
+                    "logprob": -3.470498561859131
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2268,
+                    "end": 2278
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581should",
+                    "logprob": -2.926715612411499
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2278,
+                    "end": 2285
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581repeat",
+                    "logprob": -0.024605941027402878
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2285,
+                    "end": 2292
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -1.6282366514205933
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2292,
+                    "end": 2293
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581There\u2581must\u2581be",
+                    "logprob": -7.3031415939331055
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2293,
+                    "end": 2307
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581exactly",
+                    "logprob": -4.330699920654297
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2307,
+                    "end": 2315
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.09589534997940063
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2315,
+                    "end": 2316
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "10",
+                    "logprob": -2.4766035079956055
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2316,
+                    "end": 2318
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters\u2581in",
+                    "logprob": -3.2482199668884277
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2318,
+                    "end": 2332
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581a\u2581valid",
+                    "logprob": -1.2020214796066284
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2332,
+                    "end": 2340
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.021266991272568703
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2340,
+                    "end": 2341
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "UID",
+                    "logprob": -0.00344825629144907
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2341,
+                    "end": 2344
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.12279821187257767
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2344,
+                    "end": 2345
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -1.8735883235931396
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2345,
+                    "end": 2346
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.24821364879608154
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2346,
+                    "end": 2347
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Simple",
+                    "logprob": -0.1481340378522873
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2347,
+                    "end": 2353
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.005626792553812265
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2353,
+                    "end": 2354
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581==",
+                    "logprob": -5.757519245147705
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2354,
+                    "end": 2357
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "===",
+                    "logprob": -0.012324251234531403
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2357,
+                    "end": 2360
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "Problem",
+                    "logprob": -0.9134784936904907
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2360,
+                    "end": 2367
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Statement",
+                    "logprob": -0.036957841366529465
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2367,
+                    "end": 2377
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "===",
+                    "logprob": -0.07519743591547012
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2377,
+                    "end": 2380
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "==",
+                    "logprob": -0.005899753887206316
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2380,
+                    "end": 2382
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581You\u2581are",
+                    "logprob": -1.783925175666809
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2382,
+                    "end": 2390
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581given",
+                    "logprob": -0.21861566603183746
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2390,
+                    "end": 2396
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581a\u2581string",
+                    "logprob": -2.722015380859375
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2396,
+                    "end": 2405
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581A",
+                    "logprob": -6.505654335021973
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2405,
+                    "end": 2407
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581valid",
+                    "logprob": -6.5109543800354
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2407,
+                    "end": 2413
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581string",
+                    "logprob": -3.8587310314178467
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2413,
+                    "end": 2420
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581follow",
+                    "logprob": -4.333405494689941
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2420,
+                    "end": 2432
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581the\u2581conditions",
+                    "logprob": -5.202749252319336
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2432,
+                    "end": 2447
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581below",
+                    "logprob": -2.132885456085205
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2447,
+                    "end": 2453
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.37157395482063293
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2453,
+                    "end": 2454
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It",
+                    "logprob": -0.7536458969116211
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2454,
+                    "end": 2457
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581contain",
+                    "logprob": -0.05621939152479172
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2457,
+                    "end": 2470
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581at\u2581least",
+                    "logprob": -0.3753831386566162
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2470,
+                    "end": 2479
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.010056187398731709
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2479,
+                    "end": 2480
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "2",
+                    "logprob": -0.03141428530216217
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2480,
+                    "end": 2481
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581uppercase",
+                    "logprob": -0.02110663242638111
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2481,
+                    "end": 2491
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581English",
+                    "logprob": -0.006534281652420759
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2491,
+                    "end": 2499
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581alphabet",
+                    "logprob": -0.014976797625422478
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2499,
+                    "end": 2508
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters",
+                    "logprob": -0.023225879296660423
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2508,
+                    "end": 2519
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.040290120989084244
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2519,
+                    "end": 2520
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It",
+                    "logprob": -0.013544565066695213
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2520,
+                    "end": 2523
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581must\u2581contain",
+                    "logprob": -0.012511925771832466
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2523,
+                    "end": 2536
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581at\u2581least",
+                    "logprob": -0.01069551520049572
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2536,
+                    "end": 2545
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.00037543877260759473
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2545,
+                    "end": 2546
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "3",
+                    "logprob": -0.0023237864952534437
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2546,
+                    "end": 2547
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581digits",
+                    "logprob": -0.009874779731035233
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2547,
+                    "end": 2554
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.0142059950158
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2554,
+                    "end": 2555
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "0",
+                    "logprob": -8.594402313232422
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2555,
+                    "end": 2556
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581to",
+                    "logprob": -4.4046454429626465
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2556,
+                    "end": 2559
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.003571680746972561
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2559,
+                    "end": 2560
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "9",
+                    "logprob": -0.0059022423811256886
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2560,
+                    "end": 2561
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.20252545177936554
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2561,
+                    "end": 2562
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581It\u2581should",
+                    "logprob": -0.26129692792892456
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2562,
+                    "end": 2572
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581only",
+                    "logprob": -0.006981147453188896
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2572,
+                    "end": 2577
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581contain",
+                    "logprob": -0.007859732955694199
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2577,
+                    "end": 2585
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581alphanumeric",
+                    "logprob": -0.04428146407008171
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2585,
+                    "end": 2598
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters",
+                    "logprob": -0.04820673167705536
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2598,
+                    "end": 2609
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.06746270507574081
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2609,
+                    "end": 2610
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "a-z",
+                    "logprob": -3.866436004638672
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2610,
+                    "end": 2613
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -0.07020574808120728
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2613,
+                    "end": 2614
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.0518333800137043
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2614,
+                    "end": 2615
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "A-Z",
+                    "logprob": -0.008783041499555111
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2615,
+                    "end": 2618
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581&",
+                    "logprob": -0.35796287655830383
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2618,
+                    "end": 2620
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.013936703093349934
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2620,
+                    "end": 2621
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "0",
+                    "logprob": -0.0016644446877762675
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2621,
+                    "end": 2622
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "-",
+                    "logprob": -0.20080186426639557
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2622,
+                    "end": 2623
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "9",
+                    "logprob": -0.0005476167425513268
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2623,
+                    "end": 2624
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.3363622725009918
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2624,
+                    "end": 2625
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581No",
+                    "logprob": -0.10016797482967377
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2625,
+                    "end": 2628
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581character",
+                    "logprob": -0.005364783573895693
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2628,
+                    "end": 2638
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581should",
+                    "logprob": -0.0464676097035408
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2638,
+                    "end": 2645
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581repeat",
+                    "logprob": -0.0018817351665347815
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2645,
+                    "end": 2652
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.05293578654527664
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2652,
+                    "end": 2653
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581There\u2581must\u2581be",
+                    "logprob": -0.13079732656478882
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2653,
+                    "end": 2667
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581exactly",
+                    "logprob": -0.005566334817558527
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2667,
+                    "end": 2675
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.008434861898422241
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2675,
+                    "end": 2676
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "10",
+                    "logprob": -0.0225728377699852
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2676,
+                    "end": 2678
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581characters\u2581in",
+                    "logprob": -0.06668125838041306
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2678,
+                    "end": 2692
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581a\u2581valid",
+                    "logprob": -0.03810166195034981
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2692,
+                    "end": 2700
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581string",
+                    "logprob": -0.4714606702327728
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2700,
+                    "end": 2707
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -0.23734326660633087
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2707,
+                    "end": 2708
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -0.5777367353439331
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2708,
+                    "end": 2709
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.040720440447330475
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2709,
+                    "end": 2710
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -0.08586139231920242
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2710,
+                    "end": 2711
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Jar",
+                    "logprob": -0.39150333404541016
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2711,
+                    "end": 2714
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "gon",
+                    "logprob": -3.576272320060525e-06
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2714,
+                    "end": 2717
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.016331925988197327
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2717,
+                    "end": 2718
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581",
+                    "logprob": -3.7526180744171143
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2718,
+                    "end": 2719
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "Regex",
+                    "logprob": -9.013519287109375
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2719,
+                    "end": 2724
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Failure",
+                    "logprob": -11.5114107131958
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2724,
+                    "end": 2732
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581-",
+                    "logprob": -4.1610918045043945
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2732,
+                    "end": 2734
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Bug",
+                    "logprob": -8.104776382446289
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2734,
+                    "end": 2738
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Fixing",
+                    "logprob": -6.177108287811279
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2738,
+                    "end": 2745
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581#",
+                    "logprob": -7.600034713745117
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2745,
+                    "end": 2747
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "2",
+                    "logprob": -2.1260557174682617
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2747,
+                    "end": 2748
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Oh\u2581no",
+                    "logprob": -11.029343605041504
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2748,
+                    "end": 2754
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ",",
+                    "logprob": -1.8097714185714722
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2754,
+                    "end": 2755
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Timmy",
+                    "logprob": -11.54912281036377
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2755,
+                    "end": 2761
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "'s",
+                    "logprob": -1.9931100606918335
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2761,
+                    "end": 2763
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581received",
+                    "logprob": -9.637990951538086
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2763,
+                    "end": 2772
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581some",
+                    "logprob": -4.407181739807129
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2772,
+                    "end": 2777
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581hate",
+                    "logprob": -6.866786003112793
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2777,
+                    "end": 2782
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581mail",
+                    "logprob": -0.5304084420204163
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2782,
+                    "end": 2787
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581recently",
+                    "logprob": -6.491235733032227
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2787,
+                    "end": 2796
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581but",
+                    "logprob": -7.41273832321167
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2796,
+                    "end": 2800
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581he\u2581knows",
+                    "logprob": -6.20657205581665
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2800,
+                    "end": 2809
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581better",
+                    "logprob": -5.712003231048584
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2809,
+                    "end": 2816
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ".",
+                    "logprob": -1.1423563957214355
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2816,
+                    "end": 2817
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Help",
+                    "logprob": -7.191252708435059
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2817,
+                    "end": 2822
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Timmy",
+                    "logprob": -2.0523109436035156
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2822,
+                    "end": 2828
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581fix",
+                    "logprob": -2.259523391723633
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2828,
+                    "end": 2832
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581his",
+                    "logprob": -0.9570781588554382
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2832,
+                    "end": 2836
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581regex",
+                    "logprob": -1.6134204864501953
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2836,
+                    "end": 2842
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581filter",
+                    "logprob": -5.27058219909668
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2842,
+                    "end": 2849
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581so\u2581he",
+                    "logprob": -5.637153625488281
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2849,
+                    "end": 2855
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581can\u2581be",
+                    "logprob": -4.7328715324401855
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2855,
+                    "end": 2862
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581awesome",
+                    "logprob": -6.433313369750977
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2862,
+                    "end": 2870
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581again",
+                    "logprob": -1.7265870571136475
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2870,
+                    "end": 2876
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "!",
+                    "logprob": -1.3513202667236328
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2876,
+                    "end": 2877
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "<|newline|>",
+                    "logprob": -2.876978874206543
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2877,
+                    "end": 2878
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": "\u2581Simple",
+                    "logprob": -0.5379452705383301
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2878,
+                    "end": 2884
+                }
+            },
+            {
+                "generatedToken": {
+                    "token": ":",
+                    "logprob": -0.010700821876525879
+                },
+                "topTokens": null,
+                "textRange": {
+                    "start": 2884,
+                    "end": 2885
+                }
+            }
+        ]
+    },
+    "completions": [
+        {
+            "data": {
+                "text": " Regex Failure - Bug Fixing #2 Oh no, Timmy's received some hate mail recently but he knows better. Help Timmy fix his regex filter so he can be awesome again!",
+                "tokens": [
+                    {
+                        "generatedToken": {
+                            "token": "\u2581",
+                            "logprob": -1.5622026920318604
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 0,
+                            "end": 1
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "Regex",
+                            "logprob": -0.22752645611763
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 1,
+                            "end": 6
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Failure",
+                            "logprob": -0.20127034187316895
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 6,
+                            "end": 14
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581-",
+                            "logprob": -0.10145871341228485
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 14,
+                            "end": 16
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Bug",
+                            "logprob": -0.01868293434381485
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 16,
+                            "end": 20
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Fixing",
+                            "logprob": -0.009074280969798565
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 20,
+                            "end": 27
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581#",
+                            "logprob": -0.20967386662960052
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 27,
+                            "end": 29
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "2",
+                            "logprob": -0.05736110359430313
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 29,
+                            "end": 30
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Oh\u2581no",
+                            "logprob": -0.269951194524765
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 30,
+                            "end": 36
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": ",",
+                            "logprob": -0.040683358907699585
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 36,
+                            "end": 37
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Timmy",
+                            "logprob": -0.033342115581035614
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 37,
+                            "end": 43
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "'s",
+                            "logprob": -0.3407495617866516
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 43,
+                            "end": 45
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581received",
+                            "logprob": -0.039699919521808624
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 45,
+                            "end": 54
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581some",
+                            "logprob": -0.00427653593942523
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 54,
+                            "end": 59
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581hate",
+                            "logprob": -0.01429824996739626
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 59,
+                            "end": 64
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581mail",
+                            "logprob": -0.0056891427375376225
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 64,
+                            "end": 69
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581recently",
+                            "logprob": -0.02029954083263874
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 69,
+                            "end": 78
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581but",
+                            "logprob": -0.07304024696350098
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 78,
+                            "end": 82
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581he\u2581knows",
+                            "logprob": -0.012007102370262146
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 82,
+                            "end": 91
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581better",
+                            "logprob": -0.0012211493449285626
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 91,
+                            "end": 98
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": ".",
+                            "logprob": -0.006154276430606842
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 98,
+                            "end": 99
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Help",
+                            "logprob": -0.04359079524874687
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 99,
+                            "end": 104
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581Timmy",
+                            "logprob": -0.00912625715136528
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 104,
+                            "end": 110
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581fix",
+                            "logprob": -0.0070377313531935215
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 110,
+                            "end": 114
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581his",
+                            "logprob": -0.001064806361682713
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 114,
+                            "end": 118
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581regex",
+                            "logprob": -0.030754433944821358
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 118,
+                            "end": 124
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581filter",
+                            "logprob": -0.010377849452197552
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 124,
+                            "end": 131
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581so\u2581he",
+                            "logprob": -0.0192521084100008
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 131,
+                            "end": 137
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581can\u2581be",
+                            "logprob": -0.0017596489051356912
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 137,
+                            "end": 144
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581awesome",
+                            "logprob": -0.0021347845904529095
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 144,
+                            "end": 152
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "\u2581again",
+                            "logprob": -0.003937231842428446
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 152,
+                            "end": 158
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "!",
+                            "logprob": -0.08754485845565796
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 158,
+                            "end": 159
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "<|newline|>",
+                            "logprob": -0.5477322340011597
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 159,
+                            "end": 159
+                        }
+                    },
+                    {
+                        "generatedToken": {
+                            "token": "<|newline|>",
+                            "logprob": -0.06411737948656082
+                        },
+                        "topTokens": null,
+                        "textRange": {
+                            "start": 159,
+                            "end": 159
+                        }
+                    }
+                ]
+            },
+            "finishReason": {
+                "reason": "stop",
+                "sequence": "\n\n"
+            }
+        }
+    ]
+}

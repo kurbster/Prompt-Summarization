@@ -1,0 +1,1 @@
+{"fn_name": "disjunction", "inputs": [[[false, true, true], false], [[false, true, false], false], [[false, true, true, true], true], [[true, true, true], false], [[true, true, true, true], false]], "outputs": [[true], [true], [true], [true], [true]]}

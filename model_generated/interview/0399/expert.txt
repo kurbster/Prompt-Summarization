@@ -1,0 +1,1 @@
+ You are given a non-empty string containing only digits and you need to find the total number of ways to decode it. 

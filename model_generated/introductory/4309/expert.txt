@@ -1,0 +1,1 @@
+ # Description:  Replace the pair of exclamation marks and question marks to spaces(from the left to the right). A pair of exclamation marks and question marks must has the same number of "!" and " ". # Examples ``` replace("!!") === "!!" replace("!  ") === "!  " replace("! ") === "  " replace("!!  ") === "    " replace("!!!    ") === "!!!    " replace("

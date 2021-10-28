@@ -1,0 +1,1 @@
+ Given a C++ program, remove all comments from it.

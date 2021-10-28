@@ -1,0 +1,1 @@
+ You are given a list of integers. You want to compute the number of pairs that can be formed by adding up all the integers in the list. 

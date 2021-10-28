@@ -1,0 +1,1 @@
+{"fn_name": "describeList", "inputs": [[[]], [[1]], [[1, 2, 5, 4]], [["one"]], [["one", "two"]], [[[1, 2]]]], "outputs": [["empty"], ["singleton"], ["longer"], ["singleton"], ["longer"], ["singleton"]]}

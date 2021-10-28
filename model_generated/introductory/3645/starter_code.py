@@ -1,0 +1,2 @@
+def diff(a, b):
+	

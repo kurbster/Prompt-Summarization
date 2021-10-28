@@ -1,0 +1,1 @@
+{"fn_name": "check_alive", "inputs": [[5], [0], [-5]], "outputs": [[true], [false], [false]]}

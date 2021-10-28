@@ -1,0 +1,1 @@
+ You are given N- space separated integers ai,  ai+1,.....aN  You need to output a single integer. The maximum possible beauty of the song.

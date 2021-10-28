@@ -1,0 +1,2 @@
+ You are given an array of integers N, K, and Q, and your goal is to calculate the sum of all Fibonacci numbers. 
+-----Input----- The first line contains a single integer Q, the number of queries. Each of the next Q lines contain two integers each, Ni and Ki. -----Output----- Output Q lines with one integer each. The ith line should contain the value S(Ni, Ki). -----Constraints----- - 1 <= Q <= 5*104 - 1 <= N <= 1018 - 1 <= K <= 1018 -----Example----- Input: 1 1 1 Output: 1

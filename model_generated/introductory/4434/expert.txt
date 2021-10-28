@@ -1,0 +1,1 @@
+ You are given a non-empty string. Return the first non-repeated character in the string. 

@@ -1,0 +1,1 @@
+ Given a range (a,b) return sum of dominant primes in that range. Note: a <= range <= b and b will not exceed 500000.

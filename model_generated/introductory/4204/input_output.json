@@ -1,0 +1,1 @@
+{"fn_name": "palindrome", "inputs": [[8], [281], [1029], [1221], ["BGHHGB"], ["11029"], [-1029]], "outputs": [[11], [282], [1001], [1221], ["Not valid"], ["Not valid"], ["Not valid"]]}

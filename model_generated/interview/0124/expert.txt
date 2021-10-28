@@ -1,0 +1,1 @@
+ You are given an array sorted in ascending order. The array may contain duplicates. You are given a target value to search. If found in the array return true, otherwise return false. 

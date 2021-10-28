@@ -1,0 +1,1 @@
+{"fn_name": "london_city_hacker", "inputs": [[[12, "Central", "Circle", 21]], [["Piccidilly", 56]], [["Northern", "Central", "Circle"]], [["Piccidilly", 56, 93, 243]], [[386, 56, 1, 876]], [[]]], "outputs": [["\u00a37.80"], ["\u00a33.90"], ["\u00a37.20"], ["\u00a35.40"], ["\u00a33.00"], ["\u00a30.00"]]}

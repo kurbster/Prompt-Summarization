@@ -1,0 +1,1 @@
+["import textwrap\ns = input()\nw = int(input().strip())\nprint((textwrap.fill(s,w)))\n"]

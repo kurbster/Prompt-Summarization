@@ -1,0 +1,1 @@
+{"fn_name": "are_equally_strong", "inputs": [[10, 15, 15, 10], [15, 10, 15, 10], [10, 10, 10, 10], [15, 10, 15, 9], [10, 5, 5, 10], [1, 10, 10, 0], [10, 5, 11, 4]], "outputs": [[true], [true], [true], [false], [true], [false], [false]]}

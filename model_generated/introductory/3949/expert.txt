@@ -1,0 +1,1 @@
+ You are given following inputs: total amount $, service rating, tip amount.  You need to calculate the tip amount.  Example 1: Input: Amount = 15, Service = "Good", Tip = 10 Output: 10 Explanation:  If Amount = 15, Service = "Good", Tip = 10, then tip = 10. Example 2: Input: Amount = 15, Service = "Great", Tip = 15 Output: 15 

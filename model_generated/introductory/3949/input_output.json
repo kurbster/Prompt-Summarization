@@ -1,0 +1,1 @@
+{"fn_name": "calculate_tip", "inputs": [[30, "poor"], [20, "Excellent"], [20, "hi"], [107.65, "GReat"], [20, "great!"]], "outputs": [[2], [4], ["Rating not recognised"], [17], ["Rating not recognised"]]}

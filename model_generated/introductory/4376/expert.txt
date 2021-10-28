@@ -1,0 +1,1 @@
+ # Task  Prepare a code that given the number of digits ```n```, may output the amount of palindromes of length equals to n and the total amount of palindromes below 10^(n). You will see more examples in the box. Happy coding!! (You don't know what palindromes are  Investigate, :))

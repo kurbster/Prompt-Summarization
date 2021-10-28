@@ -1,0 +1,1 @@
+ You are given a sequence of digits. Your task is to count the number of target in the sequence.

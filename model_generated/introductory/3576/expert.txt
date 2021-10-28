@@ -1,0 +1,1 @@
+ # Task  Complete the function that takes one argument, a list of words, and returns the length of the longest word in the list. # Example  ```python ['simple', 'is', 'better', 'than', 'complex'] ==> 7 ``` # Input/Output  - `[input]` a list of words (comma separated) - `[output]` the length of the longest word in the list

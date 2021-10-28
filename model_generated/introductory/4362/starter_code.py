@@ -1,0 +1,2 @@
+def frogify(s):
+	

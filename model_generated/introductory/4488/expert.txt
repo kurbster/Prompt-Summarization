@@ -1,0 +1,1 @@
+ Given an array of numbers, return an array where each index represents the amount of times an element appeared.

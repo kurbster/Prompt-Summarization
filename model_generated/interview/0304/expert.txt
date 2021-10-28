@@ -1,0 +1,1 @@
+ You are given an array of ages. The array contains $n$ elements. Each person will friend request exactly one person. 

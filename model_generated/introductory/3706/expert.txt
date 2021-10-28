@@ -1,0 +1,1 @@
+ Assume that you started to store items in progressively expanding square location, like this for the first 9 numbers: ``` 05 04 03 06 01 02 07 08 09 ``` And like this for the expanding to include up to the first 25 numbers: ``` 17 16 15 14 13 18 05 04 03 12 19 06 01 02 11 20 07 08 09 10 21 22 23 24 

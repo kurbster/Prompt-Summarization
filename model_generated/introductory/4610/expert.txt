@@ -1,0 +1,1 @@
+ You are given an integer `n`. Your task is to determine that using this two operations step by step, is it possible to obtain number `n`. 

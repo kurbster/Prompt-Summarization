@@ -1,0 +1,1 @@
+{"fn_name": "calculate", "inputs": [["Panda has 48 apples and loses 4"], ["Jerry has 34 apples and gains 6"], ["Tom has 20 apples and gains 15"], ["Fred has 110 bananas and loses 50"], ["Pippi has 20 tunas and gains 0"]], "outputs": [[44], [40], [35], [60], [20]]}

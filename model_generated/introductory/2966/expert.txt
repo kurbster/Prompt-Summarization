@@ -1,0 +1,1 @@
+ You are given a string. You need to extract the operator and numbers that are operated on. Return the result of the calculation. 

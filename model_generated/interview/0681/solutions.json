@@ -1,0 +1,1 @@
+["\nfrom math import ceil\nfrom bisect import bisect_right as b_r\nfrom bisect import bisect_left as b_l\nar = list(map(int , input().split()))\na = [int(ceil((ar[1]-int(x)+1)/ar[2])) for x in input().split()]\ns = sum(a)\nar[1] = max(a)\nm = ar[1] - (s-ar[1])%2\nmi = s%2 \nprint(int( (m-mi)//2 +1)%(10**9+7))\n\n"]

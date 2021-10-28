@@ -1,0 +1,9 @@
+Linked Lists - Length & Count
+
+Implement Length() to count the number of nodes in a linked list.
+Implement Count() to count the occurrences of an integer in a linked list.
+
+
+I've decided to bundle these two functions within the same Kata since they are both very similar.
+
+The `push()`/`Push()` and `buildOneTwoThree()`/`BuildOneTwoThree()` functions do not need to be redefined.

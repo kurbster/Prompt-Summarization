@@ -1,0 +1,1 @@
+{"fn_name": "count_deaf_rats", "inputs": [["~O~O~O~O P"], ["P O~ O~ ~O O~"], ["~O~O~O~OP~O~OO~"], ["O~~OO~~OO~~OO~P~OO~~OO~~OO~~O"], ["~OP"], ["PO~"], ["O~P"], ["P~O"], ["         P"], ["P         "], ["         P      "], ["P"]], "outputs": [[0], [1], [2], [8], [0], [0], [1], [1], [0], [0], [0], [0]]}

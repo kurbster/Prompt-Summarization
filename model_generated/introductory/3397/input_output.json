@@ -1,0 +1,1 @@
+{"fn_name": "grille", "inputs": [["abcdef", 5], ["", 5], ["abcd", 1], ["0abc", 2], ["ab", 255], ["ab", 256], ["abcde", 32], ["tcddoadepwweasresd", 77098]], "outputs": [["df"], [""], ["d"], ["b"], ["ab"], [""], [""], ["codewars"]]}

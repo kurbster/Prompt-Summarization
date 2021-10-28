@@ -1,0 +1,1 @@
+{"fn_name": "coin", "inputs": [[1], [2], [3]], "outputs": [[["H", "T"]], [["HH", "HT", "TH", "TT"]], [["HHH", "HHT", "HTH", "HTT", "THH", "THT", "TTH", "TTT"]]]}

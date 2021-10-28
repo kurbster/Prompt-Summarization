@@ -1,0 +1,1 @@
+{"fn_name": "frame", "inputs": [[["Small", "frame"], "~"], [["Create", "this", "kata"], "+"], [["This is a very long single frame"], "-"]], "outputs": [["~~~~~~~~~\n~ Small ~\n~ frame ~\n~~~~~~~~~"], ["++++++++++\n+ Create +\n+ this   +\n+ kata   +\n++++++++++"], ["------------------------------------\n- This is a very long single frame -\n------------------------------------"]]}

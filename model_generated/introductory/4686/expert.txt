@@ -1,0 +1,1 @@
+ You are given a list of integers. You need to double every second integer in the list starting from the left.

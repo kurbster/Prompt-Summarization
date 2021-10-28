@@ -1,0 +1,1 @@
+ You are given an uppercase 9 letter string and the words that can be made from the letters. Return the longest word.   Example 1: Input: letters = "ZZZZZZZZZ" longest word = None letters = "POVMERKIA",  longest word = ["VAMPIRE"] letters = "DVAVPALEM" longest word = ["VAMPED", "VALVED", "PALMED"]   Explanation: 

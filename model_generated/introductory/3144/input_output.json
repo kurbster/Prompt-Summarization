@@ -1,0 +1,1 @@
+{"fn_name": "number_of_pairs", "inputs": [[["red", "red"]], [["red", "green", "blue"]], [["gray", "black", "purple", "purple", "gray", "black"]], [[]], [["red", "green", "blue", "blue", "red", "green", "red", "red", "red"]]], "outputs": [[1], [0], [3], [0], [4]]}

@@ -1,0 +1,2 @@
+ You are given a 24 hours time string. You should return True if the string is valid. You can assume no spaces are allowed. Example 1: Input:  01:00 - 1:00   Output: True Explanation:  The string is 01:00 - 1:00. Example 2: Input:  24:00  Output: False Explanation:  The string is 24:00. Note: 1. 24 hours is 24.hours.
+

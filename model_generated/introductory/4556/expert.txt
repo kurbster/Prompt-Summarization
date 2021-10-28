@@ -1,0 +1,1 @@
+ Given a string of integers, count how many times that integer repeats itself, then return a string showing the count and the integer.

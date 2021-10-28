@@ -1,0 +1,2 @@
+def justify(text, width):
+	

@@ -1,0 +1,1 @@
+ You are given a number. Return its closest numerical palindrome.  If ```num``` is a numerical palindrome itself, return it.  For this kata, single digit numbers will NOT be considered numerical palindromes.  Also, you know the drill - be sure to return "Not valid" if the input is not an integer or is less than 0. 

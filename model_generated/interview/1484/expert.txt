@@ -1,0 +1,2 @@
+ Given some strings representing chemical formulas, find the total atomic weight of each chemical formula.
+-----Input:----- - First line will contain $T$, number of testcases. Then the testcases follow.  - Each testcase contains of a single line of input $S$.  -----Output:----- For each testcase, output in a single line, the total atomic weight. -----Constraints----- - $1 \leq T \leq 100$ - Length of string $S \leq 100$ - String contains $x, y, z, 1, 2,..., 9$ and parenthesis -----Sample Input:----- 2 (xy)2 x(x2y)3(z)2 -----Sample Output:----- 12 46

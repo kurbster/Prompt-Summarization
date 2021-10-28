@@ -1,0 +1,1 @@
+{"fn_name": "solve", "inputs": [["3(ab)"], ["2(a3(b))"], ["3(b(2(c)))"], ["k(a3(b(a2(c))))"]], "outputs": [["ababab"], ["abbbabbb"], ["bccbccbcc"], ["kabaccbaccbacc"]]}

@@ -1,0 +1,37 @@
+After completing some serious investigation, Watson and Holmes are now chilling themselves in the Shimla hills. Very soon Holmes became bored. Holmes lived entirely for his profession. We know he is a workaholic. So Holmes wants to stop his vacation and get back to work. But after a tiresome season, Watson is in no mood to return soon. So to keep Holmes engaged, he decided to give Holmes one math problem. And Holmes agreed to solve the problem and said as soon as he solves the problem, they should return back to work. Watson too agreed. 
+The problem was as follows. Watson knows Holmes’ favorite numbers are 6 and 5. So he decided to give Holmes N  single digit numbers. Watson asked Holmes to form a new number with the given N numbers in such a way that the newly formed number should be completely divisible by 5 and 6. Watson told Holmes that he should also form the number from these digits in such a way that the formed number is maximum. He may or may not use all the given numbers. But he is not allowed to use leading zeros. Though he is allowed to leave out some of the numbers, he is not allowed to add any extra numbers, which means the maximum count of each digit in the newly formed number, is the same as the number of times that number is present in those given N digits.
+
+-----Input-----
+The first line of input contains one integers T denoting the number of test cases.
+Each test case consists of one integer N, number of numbers.
+Next line contains contains N single digit integers 
+
+-----Output-----
+For each test case output a single number, where the above said conditions are satisfied. If it is not possible to create such a number with the given constraints print -1.If there exists a solution, the maximised number should be greater than or equal to 0. 
+
+-----Constraints-----
+- 1 ≤ T ≤ 100
+- 1 ≤ N ≤ 10000
+- 0 ≤ Each digit ≤ 9
+
+-----Subtasks-----
+Subtask #1 : (90 points)
+- 1 ≤ T ≤ 100
+- 1 ≤ N ≤ 10000
+
+Subtask 2 : (10 points) 
+
+- 1 ≤ T ≤ 10
+- 1 ≤ N≤ 10
+
+-----Example-----
+Input:
+2
+12
+3 1 2 3 2 0 2 2 2 0 2 3
+11
+3 9 9 6 4 3 6 4 9 6 0
+
+Output:
+33322222200
+999666330

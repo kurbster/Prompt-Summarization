@@ -1,0 +1,1 @@
+ Given whose turn it was on the previous round and whether he won, determine whose turn it is on the next round.

@@ -1,0 +1,1 @@
+ For a given quantity and price (per mango), calculate the total cost of the mangoes.

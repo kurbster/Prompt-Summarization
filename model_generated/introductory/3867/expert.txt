@@ -1,0 +1,1 @@
+ You are given an array of strings containing fruits. You need to replace all the rotten fruits with fresh ones.

@@ -1,0 +1,1 @@
+ You are given a String. You need to return a String. The String should be in lowercase and uppercase. The String should be in UPPERCASE if number is odd and in LOWERCASE if number is even. 

@@ -1,0 +1,1 @@
+ You are given an array of arrays. Trim the beard using the first rule. Trim the beard using the second rule. Return the corrected array.

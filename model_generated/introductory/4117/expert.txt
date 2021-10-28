@@ -1,0 +1,1 @@
+ Given an string, sum all the numbers in the string. 

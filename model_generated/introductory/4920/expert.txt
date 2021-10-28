@@ -1,0 +1,1 @@
+ Given a certain array of integers, return the minimum number that may be divisible for all the numbers of the array.

@@ -1,0 +1,1 @@
+ You are given an input string. For each symbol in the string if it's the first character occurrence, replace it with a '1', else replace it with the amount of times you've already seen it... (this does not apply to the C language translation) 

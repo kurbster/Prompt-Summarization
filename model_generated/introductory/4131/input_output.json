@@ -1,0 +1,1 @@
+{"fn_name": "how_much_water", "inputs": [[10, 10, 21], [10, 10, 2], [10, 11, 20], [50, 15, 29], [50, 15, 15]], "outputs": [["Too much clothes"], ["Not enough clothes"], [23.58], [189.87], [50]]}

@@ -1,0 +1,1 @@
+{"fn_name": "is_palindrome", "inputs": [["anna"], ["walter"], [12321], [123456]], "outputs": [[true], [false], [true], [false]]}

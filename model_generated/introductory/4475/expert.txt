@@ -1,0 +1,1 @@
+ You are given a list of numbers. Find the minimum or the maximum value in the list.  Example: ```python find([3, 9, 1, 11, 13, 5]) # => 3 ```

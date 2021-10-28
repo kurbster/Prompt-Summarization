@@ -1,0 +1,1 @@
+{"fn_name": "findLongestWord", "inputs": [["\"abpcplea\"", ["\"ale\"", "\"apple\"", "\"monkey\"", "\"plea\""]]], "outputs": ["\"apple\""]}

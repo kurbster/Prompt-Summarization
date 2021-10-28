@@ -1,0 +1,1 @@
+ You are given an integer. Find the largest prime below it and the smallest prime above it. 

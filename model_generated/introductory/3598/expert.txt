@@ -1,0 +1,1 @@
+ You are given a seat number (between 1-60) and a letter (A-K). Return the seat location in the following format: '2B' would return 'Front-Left'. If the number is over 60, or the letter is not valid, return 'No Seat!!'. 
