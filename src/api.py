@@ -168,13 +168,11 @@ def main(*a, **kw):
         pass
 
 if __name__ == '__main__':
-    #while make_prompt():
-        #pass
     with open('./api_keys') as f:
         keys = f.readlines()
     for key in keys:
         key = key.strip()
-        print(f'\n\n\nAHAHAHAHRUNNING WITH API KEY == {key}\n\n\n')
+        print(f'\n\n\nRUNNING WITH API KEY == {key}\n\n\n')
         if not key.startswith('#'):
             main(token=key, model='large')
             main(token=key, model='jumbo')
