@@ -1,0 +1,1 @@
+ You are given a string S, a root node T, and a depth D (where D is the depth of this node). You are asked to reconstruct the tree T, starting from the root node T. 

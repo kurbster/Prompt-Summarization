@@ -1,0 +1,1 @@
+ You have two arrays of integers. You need to output the biggest number from them. 

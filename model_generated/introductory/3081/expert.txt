@@ -1,0 +1,1 @@
+ You are given an array with $n$ elements, where each element can be one of 4 types. You need to fill that array with 4 types of elements, taking as parameters the size of the array and the type of the element.

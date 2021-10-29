@@ -1,0 +1,1 @@
+{"fn_name": "the_biggest_search_keys", "inputs": [["key1", "key22", "key333"], ["coding", "sorting", "tryruby"], ["small keyword", "how to coding?", "very nice kata", "a lot of keys", "I like Ruby!!!"], ["pippi"]], "outputs": [["'key333'"], ["'sorting', 'tryruby'"], ["'I like Ruby!!!', 'how to coding?', 'very nice kata'"], ["'pippi'"]]}

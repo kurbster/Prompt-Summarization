@@ -1,0 +1,1 @@
+{"fn_name": "no_ifs_no_buts", "inputs": [[45, 51], [1, 2], [-3, 2], [1, 1], [100, 100], [100, 80], [20, 19]], "outputs": [["45 is smaller than 51"], ["1 is smaller than 2"], ["-3 is smaller than 2"], ["1 is equal to 1"], ["100 is equal to 100"], ["100 is greater than 80"], ["20 is greater than 19"]]}

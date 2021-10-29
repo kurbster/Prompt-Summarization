@@ -1,0 +1,1 @@
+{"fn_name": "get_function", "inputs": [[[1, 2, 4, 7, 11]], [[0, 1, 2, 3, 100000]], [[0, 1, 2, 100000, 4]], [[0, 1, 100000, 3, 4]], [[0, 100000, 2, 3, 4]]], "outputs": [["Non-linear sequence"], ["Non-linear sequence"], ["Non-linear sequence"], ["Non-linear sequence"], ["Non-linear sequence"]]}

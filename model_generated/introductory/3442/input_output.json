@@ -1,0 +1,1 @@
+{"fn_name": "code_for_same_protein", "inputs": [["ATGTCGTCAATTTAA", "ATGTCGTCAATTTAA"], ["ATGTTTTAA", "ATGTTCTAA"], ["ATGTTTTAA", "ATGATATAA"], ["ATGTTTGGGAATAATTAAGGGTAA", "ATGTTCGGGAATAATGGGAGGTAA"]], "outputs": [[true], [true], [false], [false]]}

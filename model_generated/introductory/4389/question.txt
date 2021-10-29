@@ -1,0 +1,20 @@
+## Story
+
+John runs a shop, bought some goods, and then sells them. He used a special accounting method, like this:
+```
+[[60,20],[60,-20]]
+```
+Each sub array records the commodity price and profit/loss to sell (percentage). Positive mean profit and negative means loss.
+
+In the example above, John's first commodity sold at a price of $60, he made a profit of 20%; Second commodities are sold at a price of $60 too, but he lost 20%.
+
+Please calculate, whether his account is profit or loss in the end?
+    
+## Rules
+
+Write a function ```profitLoss```, argument ```records``` is the list of sales.
+
+return a number(positive or negative), round to two decimal places.
+    
+
+## Examples

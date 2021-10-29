@@ -1,0 +1,2 @@
+def simpson(n):
+	

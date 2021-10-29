@@ -1,0 +1,1 @@
+{"fn_name": "my_first_kata", "inputs": [[3, 5], ["hello", 3], [67, "bye"], [true, true], [314, 107], [1, 32], [-1, -1], [19483, 9], ["hello", {}], [[], "pippi"]], "outputs": [[5], [false], [false], [false], [207], [1], [0], [16], [false], [false]]}

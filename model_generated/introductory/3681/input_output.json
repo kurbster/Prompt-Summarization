@@ -1,0 +1,1 @@
+{"fn_name": "convert_num", "inputs": [[122, "bin"], ["dog", "bin"], [0, "hex"], [123, "lol"]], "outputs": [["0b1111010"], ["Invalid number input"], ["0x0"], ["Invalid base input"]]}

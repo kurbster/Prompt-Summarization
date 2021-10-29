@@ -1,0 +1,1 @@
+ Given a non-empty array, create a function ```consecutive(arr)``` that takes the array and returns the number of integers needed to make the contents of the array consecutive from the lowest number to the highest number. 

@@ -1,0 +1,1 @@
+{"fn_name": "case_sensitive", "inputs": [["asd"], ["cellS"], ["z"], [""]], "outputs": [[[true, []]], [[false, ["S"]]], [[true, []]], [[true, []]]]}

@@ -1,0 +1,2 @@
+ You are given two strings, S, T, and an integer, i. S and T are strings and i.
+=====Input Format===== A single line of input containing the string S. Note: The string S will contain only uppercase letters: [A-Z]. =====Constraints===== 0 < len(S) < 10^6 =====Output Format===== Print one line: the name of the winner and their score separated by a space. If the game is a draw, print Draw.

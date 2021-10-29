@@ -1,0 +1,1 @@
+ Complete the function to determine the number of bits required to convert integer `A` to integer `B` (where `A` and `B` >= 0) The upper limit for `A` and `B` is 2^(16), `int.MaxValue` or similar. For example, you can change 31 to 14 by flipping the 4th and 0th bit: ```  31  0 0 0 1 1 1 1 1  14 

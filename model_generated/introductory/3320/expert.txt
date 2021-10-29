@@ -1,0 +1,1 @@
+ You are given a 2D Array of results ('h' and 't') of coin flips. Write a function that will take a 2D Array of results ('h' and 't') of coin flips and return its hexagram as a string. Each line of the hexagram should begin on a new line.

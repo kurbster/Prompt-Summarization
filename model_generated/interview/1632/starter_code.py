@@ -1,0 +1,2 @@
+def countOnes(left, right):
+	

@@ -1,0 +1,2 @@
+def scf(lst):
+	

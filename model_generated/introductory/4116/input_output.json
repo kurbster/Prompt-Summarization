@@ -1,0 +1,1 @@
+{"fn_name": "is_audio", "inputs": [["Nothing Else Matters.mp3"], ["NothingElseMatters.mp3"], ["DaftPunk.FLAC"], ["DaftPunk.flac"], ["AmonTobin.aac"], [" Amon Tobin.alac"], ["tobin.alac"]], "outputs": [[false], [true], [false], [true], [true], [false], [true]]}

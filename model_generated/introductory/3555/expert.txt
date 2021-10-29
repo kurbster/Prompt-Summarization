@@ -1,0 +1,1 @@
+ You are given 2 integers, n and k. Return a string which shows the minimum number of moves to complete the tower of Hanoi consisting of n layers. 

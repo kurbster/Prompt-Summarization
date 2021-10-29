@@ -1,0 +1,1 @@
+ You are given a non-empty string of length 1 - 1000. You need to reorder it. 

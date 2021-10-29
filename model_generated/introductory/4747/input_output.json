@@ -1,0 +1,1 @@
+{"fn_name": "repeat_str", "inputs": [[4, "a"], [3, "hello "], [2, "abc"]], "outputs": [["aaaa"], ["hello hello hello "], ["abcabc"]]}

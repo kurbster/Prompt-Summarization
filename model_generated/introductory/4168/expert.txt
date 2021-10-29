@@ -1,0 +1,1 @@
+ Implement a function which takes a string, and returns its hash value. Algorithm steps: * `a` := sum of the ascii values of the input characters * `b` := sum of every difference between the consecutive characters of the input (second char minus first char, third minus second, ...) * `c` := (`a` OR `b`) AND ((NOT `a`) shift left by 2 bits) * `d` := `c` XOR (32 * 

@@ -1,0 +1,1 @@
+{"inputs": [["3", "saturday sunday 2 4", "monday wednesday 1 20", "saturday sunday 3 5"]], "outputs": [["2", "many", "impossible"]]}

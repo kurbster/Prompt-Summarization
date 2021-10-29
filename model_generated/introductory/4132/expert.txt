@@ -1,0 +1,1 @@
+ You are given two strings, where the first string is an animal, and the second string is a tail. If the tail is right return true, else return false. The arguments will always be strings, and normal letters.

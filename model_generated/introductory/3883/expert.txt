@@ -1,0 +1,1 @@
+ Given a string, return lexicographically lowest element in the list. 

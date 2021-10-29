@@ -1,0 +1,1 @@
+ You are given a string. You need to remove the parentheses. 

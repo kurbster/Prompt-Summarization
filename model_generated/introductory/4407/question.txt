@@ -1,0 +1,37 @@
+Write a function that accepts two parameters (a and b) and says whether a is smaller than, bigger than, or equal to b.
+
+Here is an example code:
+var noIfsNoButs = function (a,b) {
+  if(a > b) return a + " is greater than " + b
+  else if(a < b) return a + " is smaller than " + b
+  else if(a == b) return a + " is equal to " + b
+}
+
+
+There's only one problem...
+
+You can't use if statements, and you can't use shorthands like (a < b)?true:false;
+
+in fact the word "if" and the character "?" are not allowed in the code. 
+
+
+Inputs are guarenteed to be numbers
+
+You are always welcome to check out some of my other katas:
+
+Very Easy (Kyu 8)
+Add Numbers
+Easy (Kyu 7-6)
+Convert Color image to greyscale
+Array Transformations
+Basic Compression
+Find Primes in Range
+No Ifs No Buts
+Medium (Kyu 5-4)
+Identify Frames In An Image
+Photoshop Like - Magic Wand
+Scientific Notation
+Vending Machine - FSA
+Find Matching Parenthesis
+Hard (Kyu 3-2)
+Ascii Art Generator

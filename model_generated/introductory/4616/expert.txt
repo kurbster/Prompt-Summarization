@@ -1,0 +1,1 @@
+ You are given an integer and you need to convert it to a binary and then reduce it to a single digit.

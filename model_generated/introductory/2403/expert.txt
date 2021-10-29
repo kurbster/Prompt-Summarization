@@ -1,0 +1,1 @@
+ You are given an integer. You are asked to find if it is a perfect number. 

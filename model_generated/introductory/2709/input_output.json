@@ -1,0 +1,1 @@
+{"fn_name": "take_umbrella", "inputs": [["sunny", 0.4], ["rainy", 0.0], ["cloudy", 0.2]], "outputs": [[false], [true], [false]]}

@@ -1,0 +1,1 @@
+ Given an array arr, find the sum of its elements. 

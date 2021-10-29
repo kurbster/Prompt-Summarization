@@ -1,0 +1,1 @@
+ Given an integer, return the next bigger number that can be formed by rearranging its digits. 

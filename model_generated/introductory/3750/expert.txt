@@ -1,0 +1,1 @@
+ You are given a string $s$. You can determine the number of letters in $s$ and number of digits in $s$. 

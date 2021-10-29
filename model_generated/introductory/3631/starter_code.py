@@ -1,0 +1,2 @@
+def bingo(ticket, win):
+	

@@ -1,0 +1,1 @@
+ You are given an array. The array is given as (a, b, c, ..., z) where z is the length of the array. The array represents a list of numbers. 

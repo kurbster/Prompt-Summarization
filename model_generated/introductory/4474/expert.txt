@@ -1,0 +1,1 @@
+ You are given 2 integers, the number of bars and the number of boxes. Print how many cigarettes Timothy can smoke. 

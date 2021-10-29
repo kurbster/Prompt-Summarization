@@ -1,0 +1,1 @@
+ You are given a number. You need to return `true` if the number begins with 1, 2, or 3, and `false` otherwise. 

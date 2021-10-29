@@ -1,0 +1,1 @@
+{"fn_name": "build_palindrome", "inputs": [["abcdc"], ["ababab"]], "outputs": [["abcdcba"], ["abababa"]]}

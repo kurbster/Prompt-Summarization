@@ -1,0 +1,1 @@
+ You are given an array of integers. You need to find the largest rectangle that fits on the given array. 

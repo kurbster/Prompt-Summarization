@@ -1,0 +1,1 @@
+{"fn_name": "remove_parentheses", "inputs": [["example(unwanted thing)example"], ["example (unwanted thing) example"], ["a (bc d)e"], ["a(b(c))"], ["hello example (words(more words) here) something"], ["(first group) (second group) (third group)"]], "outputs": [["exampleexample"], ["example  example"], ["a e"], ["a"], ["hello example  something"], ["  "]]}

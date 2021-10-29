@@ -1,0 +1,1 @@
+{"fn_name": "double_check", "inputs": [["abca"], ["aabc"], ["a 11 c d"], ["AabBcC"], ["a b  c"], ["a b c d e f g h i h k"], ["2020"], ["a!@\u20ac\u00a3#$%^&*()_-+=}]{[|':;?/>.<,~"]], "outputs": [[false], [true], [true], [true], [true], [false], [false], [false]]}

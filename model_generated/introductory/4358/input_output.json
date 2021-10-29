@@ -1,0 +1,1 @@
+{"fn_name": "ellipse_contains_point", "inputs": [[{"x": 0, "y": 0}, {"x": 0, "y": 0}, 2, {"x": 0, "y": 0}], [{"x": 0, "y": 0}, {"x": 0, "y": 0}, 2, {"x": 1, "y": 1}]], "outputs": [[true], [false]]}

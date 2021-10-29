@@ -1,0 +1,1 @@
+{"fn_name": "jumbled_string", "inputs": [["Such Wow!", 1], ["better example", 2], ["qwertyuio", 2], ["Greetings", 8], ["I like it!", 1234], ["codingisfornerdsyounerd", 10101010], ["this_test_will_hurt_you", 12345678987654321]], "outputs": [["Sc o!uhWw"], ["bexltept merae"], ["qtorieuwy"], ["Gtsegenri"], ["Iiei t kl!"], ["criyinodedsgufrnodnoser"], ["ti_etwl_utyuhsts_ilhr_o"]]}

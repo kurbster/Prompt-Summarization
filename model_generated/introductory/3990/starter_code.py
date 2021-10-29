@@ -1,0 +1,2 @@
+def derive(coefficient, exponent):
+	

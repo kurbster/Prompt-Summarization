@@ -1,0 +1,1 @@
+ You are given a list of attributes for a given file. Return the file type.   Example 1: -rwxr-xr-x ==> `file` Example 2: -rwx------ ==> `directory` Example 3: -rwx------- ==> `symlink` Example 4: -rwx--x--x ==> `character_file` Example 5: -rwx--x--x ==> `block_file` Example 6: -rwx--x-

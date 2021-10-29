@@ -1,0 +1,1 @@
+ You are given $n$ integers. Return the grade based on that number. 

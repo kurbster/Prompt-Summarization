@@ -1,0 +1,2 @@
+def consecutive(arr):
+	

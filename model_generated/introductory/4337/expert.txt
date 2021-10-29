@@ -1,0 +1,1 @@
+ You need to swap the head and the tail of the specified array. Return new array. For example:

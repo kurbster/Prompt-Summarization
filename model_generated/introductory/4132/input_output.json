@@ -1,0 +1,1 @@
+{"fn_name": "correct_tail", "inputs": [["Fox", "x"], ["Rhino", "o"], ["Meerkat", "t"], ["Emu", "t"], ["Badger", "s"], ["Giraffe", "d"]], "outputs": [[true], [true], [true], [false], [false], [false]]}

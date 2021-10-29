@@ -1,0 +1,1 @@
+ You are given two strings, 'a' and 'b'. Your task is to make 'a' and 'b' transpose. 

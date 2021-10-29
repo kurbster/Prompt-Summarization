@@ -1,0 +1,1 @@
+ b91encode('test') = 'fPNKd' b91decode('fPNKd') = 'test' b91decode('>OwJh>Io0Tv!8PE') = 'Hello World!' b91encode('Hello World!') = '>OwJh>Io0Tv!8PE' 

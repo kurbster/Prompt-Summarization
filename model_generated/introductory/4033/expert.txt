@@ -1,0 +1,1 @@
+ You are given a string and a character. Return the string with character inserted. 

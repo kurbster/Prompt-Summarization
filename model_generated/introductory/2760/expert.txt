@@ -1,0 +1,1 @@
+ Given some environmental variables return the new total of licks along with the condition that proved to be most challenging (causing the most added licks) in that trial. 

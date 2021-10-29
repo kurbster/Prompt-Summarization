@@ -1,0 +1,1 @@
+ Given a list of n numbers, you need to return if the number is a 132 pattern.

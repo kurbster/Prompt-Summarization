@@ -1,0 +1,1 @@
+ You are given an array of integers. You need to find smallest common factor of all integers in the array. 

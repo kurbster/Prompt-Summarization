@@ -1,0 +1,1 @@
+["class Solution:\n     def findLHS(self, nums):\n         \"\"\"\n         :type nums: List[int]\n         :rtype: int\n         \"\"\"\n         count = collections.Counter(nums)\n         ret = 0\n         for i in count:\n             if i+1 in count:\n                 ret = max(ret, count[i]+count[i+1])\n        \n         return ret\n                 \n"]

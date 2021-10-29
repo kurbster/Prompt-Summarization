@@ -1,0 +1,1 @@
+{"fn_name": "bingo", "inputs": [[[["ABC", 65], ["HGR", 74], ["BYHT", 74]], 2], [[["ABC", 65], ["HGR", 74], ["BYHT", 74]], 1], [[["HGTYRE", 74], ["BE", 66], ["JKTY", 74]], 3]], "outputs": [["Loser!"], ["Winner!"], ["Loser!"]]}

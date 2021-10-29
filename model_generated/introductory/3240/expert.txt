@@ -1,0 +1,1 @@
+ Given a positive integer n, return the least binary expansion of n.

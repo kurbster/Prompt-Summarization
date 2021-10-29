@@ -1,0 +1,1 @@
+{"fn_name": "hydrate", "inputs": [["1 beer"], ["2 glasses of wine and 1 shot"], ["1 shot, 5 beers, 2 shots, 1 glass of wine, 1 beer"]], "outputs": [["1 glass of water"], ["3 glasses of water"], ["10 glasses of water"]]}

@@ -1,0 +1,2 @@
+def pairwise(arr, n):
+	

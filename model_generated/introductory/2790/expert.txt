@@ -1,0 +1,1 @@
+ You are given an array of strings. For each string, remove all consecutive duplicate letters from each string in the array.  Example: input: dup(["abracadabra","allottee","assessee"]) = ["abracadabra","alote","asese"] output: ["abracadabra","alote","asese"]  Example: input: dup(["kelless","keenness"]) = ["kel

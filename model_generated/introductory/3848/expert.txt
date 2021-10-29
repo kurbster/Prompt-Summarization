@@ -1,0 +1,1 @@
+ You are given three integers in the range [0-99]. You must determine if any ordering of the numbers forms a date from the 20th century. - If no ordering forms a date, return the string `"invalid"`. - If multiple distinct orderings form dates, return the string `"ambiguous"`. - If only one ordering forms a date, return that date as a string with format `"YY/MM/DD"`. 

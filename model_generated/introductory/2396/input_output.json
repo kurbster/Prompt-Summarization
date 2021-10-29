@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "6\n8\nbbdcaaaa\n8\nasdfghjk\n8\nceaaaabb\n8\nbbaaddcc\n1\nz\n2\nac\n"
+  ],
+  "outputs": [
+    "0\n7\n4\n5\n1\n1\n"
+  ]
+}

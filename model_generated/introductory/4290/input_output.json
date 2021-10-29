@@ -1,0 +1,1 @@
+{"fn_name": "types", "inputs": [[10], [9.7], ["Hello World!"], [[1, 2, 3, 4]], [1023], [true], ["True"], [{"name": "John", "age": 32}], [null], [3.141], [false], ["8.6"], ["*&^"], [4.5]], "outputs": [["int"], ["float"], ["str"], ["list"], ["int"], ["bool"], ["str"], ["dict"], ["NoneType"], ["float"], ["bool"], ["str"], ["str"], ["float"]]}

@@ -1,0 +1,1 @@
+ Bob likes to add an "err" to every word that ends with a consonant. 

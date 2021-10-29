@@ -1,0 +1,1 @@
+ You are given an integer $i$ and an integer $j$, where $i < j$. You need to return $i$.

@@ -1,0 +1,1 @@
+{"fn_name": "has_two_cube_sums", "inputs": [[1], [1729], [42], [4103], [4102], [4104], [4105], [4106], [0], [46163]], "outputs": [[false], [true], [false], [false], [false], [true], [false], [false], [false], [false]]}

@@ -1,0 +1,1 @@
+{"fn_name": "capitalize", "inputs": [["abcdef", [1, 2, 5]], ["abcdef", [1, 2, 5, 100]], ["codewars", [1, 3, 5, 50]], ["abracadabra", [2, 6, 9, 10]], ["codewarriors", [5]], ["indexinglessons", [0]]], "outputs": [["aBCdeF"], ["aBCdeF"], ["cOdEwArs"], ["abRacaDabRA"], ["codewArriors"], ["Indexinglessons"]]}

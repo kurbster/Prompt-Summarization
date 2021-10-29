@@ -1,0 +1,1 @@
+["s = input()\ns = sorted(s,key = lambda x:(x.isdigit() and int(x)%2==0, x.isdigit(),x.isupper(),x.islower(),x))\nprint(*(s),sep = '')\n", "#!/usr/bin/env python3\n\ndef __starting_point():\n    string = input().strip()\n    \n    print(*sorted(string, key = lambda x: (-x.islower(), x.isdigit() - x.isupper(), x in '02468', x)), sep='')\n__starting_point()"]

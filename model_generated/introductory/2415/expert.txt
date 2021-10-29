@@ -1,0 +1,1 @@
+ Input: An array of integers. Output: An integer. 

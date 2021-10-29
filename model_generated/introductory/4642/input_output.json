@@ -1,0 +1,1 @@
+{"fn_name": "calculate_damage", "inputs": [["fire", "water", 100, 100], ["grass", "water", 100, 100], ["electric", "fire", 100, 100], ["grass", "electric", 57, 19], ["grass", "water", 40, 40], ["grass", "fire", 35, 5], ["fire", "electric", 10, 2]], "outputs": [[25], [100], [50], [150], [100], [175], [250]]}

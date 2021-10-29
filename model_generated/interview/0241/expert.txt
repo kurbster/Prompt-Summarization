@@ -1,0 +1,1 @@
+ You are given three instructions. You need to check if there exists circle such that robot never leaves the circle. 

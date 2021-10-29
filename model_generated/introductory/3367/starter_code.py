@@ -1,0 +1,2 @@
+def routes(n):
+	

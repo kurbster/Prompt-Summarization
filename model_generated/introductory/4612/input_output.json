@@ -1,0 +1,1 @@
+{"fn_name": "expression_out", "inputs": [["1 + 3"], ["2 - 10"], ["6 ** 9"], ["5 = 5"], ["7 * 4"], ["2 / 2"], ["8 != 5"]], "outputs": [["One Plus Three"], ["Two Minus Ten"], ["Six To The Power Of Nine"], ["Five Equals Five"], ["Seven Times Four"], ["Two Divided By Two"], ["Eight Does Not Equal Five"]]}

@@ -1,0 +1,1 @@
+{"fn_name": "next_numb", "inputs": [[12], [13], [99], [999999], [9999999999]], "outputs": [[15], [15], [105], [1023459], ["There is no possible number that fulfills those requirements"]]}

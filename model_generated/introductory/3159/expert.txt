@@ -1,0 +1,1 @@
+ Given an array of integers, return `true` if the array is `odd-heavy` else return `false`.   Constraints:  1 <= array.length <= 10000  1 <= array[i] <= 10000  1 <= array[0] <= 10000  1 <= array[1] <= 10000  1 <= array[2] <= 10000  1 <= array[3] <= 10000  1 <= array[4] <= 10000 

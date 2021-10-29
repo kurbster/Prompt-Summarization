@@ -1,0 +1,1 @@
+["def types(x):\n    return type(x).__name__", "def types(x):\n    return str(type(x).__name__)", "def types(x):\n    return str(type(x))[8:-2]", "types = lambda x: type(x).__name__", "types = lambda d: type(d).__name__", "def types(n):\n    return type(n).__name__", "def types(x):\n    return str(type(x)).split('\\'')[1]"]

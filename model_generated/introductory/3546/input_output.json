@@ -1,0 +1,1 @@
+{"fn_name": "validate_ean", "inputs": [["9783815820865"], ["9783815820864"], ["9783827317100"]], "outputs": [[true], [false], [true]]}

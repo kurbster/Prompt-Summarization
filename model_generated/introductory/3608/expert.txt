@@ -1,0 +1,1 @@
+ You are given a string. You have to find the longest palindrome in it. A palindrome is a string that read the same forwards and backwards. Example 1: Input: `"aaaaaaa"` Output: `"a"` Example 2: Input: `"aaaaaa"` Output: `"a"` Example 3: Input: `"aaaaa"` Output: `"a"`

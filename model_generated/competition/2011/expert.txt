@@ -1,0 +1,2 @@
+ You are given a number $n$. Write a program that will get the number x such that x is the number in the textbook that corresponds to the number $n$. 
+-----Input----- The first line contains integer n (1 ≤ n ≤ 10^9). -----Output----- In the first line print one integer k — number of different values of x satisfying the condition.  In next k lines print these values in ascending order. -----Examples----- Input 21 Output 1 15 Input 20 Output 0 -----Note----- In the first test case x = 15 there is only one variant: 15 + 1 + 5 = 21. In the second test case there are no such x.

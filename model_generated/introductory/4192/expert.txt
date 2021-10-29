@@ -1,0 +1,1 @@
+ You are given an array `arr` and a number `n`. Call a pair of numbers from the array a `Perfect Pair` if their sum is equal to `n`.  Find all of the perfect pairs and return the sum of their indices. 

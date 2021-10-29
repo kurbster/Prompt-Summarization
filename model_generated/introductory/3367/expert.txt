@@ -1,0 +1,1 @@
+ Given a side length n, traveling only right and down how many ways are there to get from the top left corner to the bottom right corner of an n by n grid. 

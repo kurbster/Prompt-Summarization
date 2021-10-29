@@ -1,0 +1,1 @@
+{"fn_name": "blocks_to_collect", "inputs": [[1], [2], [3]], "outputs": [[{"total": 9, "gold": 9, "diamond": 0, "emerald": 0, "iron": 0}], [{"total": 34, "gold": 9, "diamond": 25, "emerald": 0, "iron": 0}], [{"total": 83, "gold": 9, "diamond": 25, "emerald": 49, "iron": 0}]]}
