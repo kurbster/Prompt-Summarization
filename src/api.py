@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import re
 import os
 import json
 import glob
@@ -25,9 +26,9 @@ def get_prompt(cfg: OmegaConf) -> str:
 
     # TODO: Get the problem category
     prompt_type = detect_type(prompt)
-    
+
     # This is the prompt we want to summarize
-    prompt, remainder = split_question(prompt)
+    prompt, remainder = split_question(prompt, cfg.splitFile)
     
     # The priming prompt is the header plus our generated examples.
     priming_prompts = [cfg.header]
@@ -57,8 +58,8 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
         orig = glob.glob(f'../[ic]*/{ex}/question.txt')[0]
         example = glob.glob(f'../[ic]*/{ex}/{cfg.summaryType}.txt')[0]
         print(f'Using summary {example} for priming model')
-        orig, _ = split_question(orig)
-        example, _ = split_question(example)
+        orig, _ = split_question(orig, cfg.splitFile)
+        example, _ = split_question(example, cfg.splitFile)
         output.append(f'Jargon: {orig}\nSimple: {example}')
     
     return output
@@ -83,27 +84,27 @@ def detect_type(fname: str) -> str:
     print(f'I am the name of the file to summarize: {fname}')
     return 'general'
 
-def split_question(fname: str) -> str:
+def split_question(fname: str, split_file: str) -> str:
     # Read the prompt
     prompt = []
     with open(fname) as f:
         prompt = f.readlines()
+
+    with open(split_file) as f:
+        re_str = f.read().splitlines()
+
+    re_str = '|'.join(re_str)
+    regex = re.compile(re_str)
     
     # Strip newlines
     prompt = [p.strip('\n') for p in prompt if p != '\n']
     prompt = ' '.join(prompt)
 
     # Find the prompt section
-    prompt_idx = prompt.find('-----Input')
-    if prompt_idx == -1:
-        prompt_idx = prompt.find('=====Input')
-    
-    # If we did not properly split the input we are wasting tokens
-    # In initial expeirments we found passing the entire prompt did
-    # not improve model performance
-    if prompt_idx == -1:
-        print(f'For file {fname} We did not find a split!!!')
-        return prompt, ''
+    prompt_idx = -1
+    match = regex.search(prompt)
+    if match:
+        prompt_idx = match.span()[0]
     return prompt[:prompt_idx], prompt[prompt_idx:]
     
 def make_prompt(token=None, model=None):

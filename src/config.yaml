@@ -1,6 +1,7 @@
 token: YOUR-API-TOKEN-HERE
 model: jumbo # should be large or jumbo
 header: The following paragraphs contain computer science jargon. Rewrite them using simple words.
+splitFile: split.txt
 promptFile: prompt.yaml
 numPrompts: 5
 summaryType: expert
