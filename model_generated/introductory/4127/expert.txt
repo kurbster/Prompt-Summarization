@@ -1,0 +1,1 @@
+ We are given two integers, diff and nMax. The task is to find the amount of pairs of integers that fulfill this property, all of them being smaller (not smaller or equal) than nMax. 

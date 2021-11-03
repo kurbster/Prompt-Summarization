@@ -1,0 +1,1 @@
+ Given an input string, check if it is possibly formed by long pressing characters. Example 1: Input: name = "alex", typed = "aaleex" Output: true Explanation: 'a' and 'e' in 'alex' were long pressed. Example 2: Input: name = "saeed", typed = "ssaaedd" Output: false Explanation: 'e' must have been pressed twice, but it wasn't in the typed output. Example 3: Input: name = "leelee"

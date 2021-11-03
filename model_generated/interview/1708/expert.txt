@@ -1,0 +1,2 @@
+ You are given a memory manager. You need to generate all possible memory blocks, and test if read/write operations can successfully write to/read from memory blocks. 
+.

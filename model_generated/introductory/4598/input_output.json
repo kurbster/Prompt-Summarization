@@ -1,0 +1,1 @@
+{"fn_name": "calculate", "inputs": [["1", "1", "add"], ["1", "1", "subtract"], ["1", "1", "multiply"], ["10", "10", "multiply"], ["100", "10", "subtract"]], "outputs": [["10"], ["0"], ["1"], ["100"], ["10"]]}

@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "4\n2 2\n0 0\n0 0\n2 2\n0 0\n0 1\n2 3\n1 0 1\n1 1 0\n3 3\n1 0 0\n0 0 0\n1 0 0\n"
+  ],
+  "outputs": [
+    "Vivek\nAshish\nVivek\nAshish\n"
+  ]
+}

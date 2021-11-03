@@ -1,0 +1,1 @@
+["t=int(input())\nwhile(t):\n k=1\n j=0\n n=int(input())\n while(n>0):\n  if(n<=k):\n   j+=1\n   n=0\n  elif n>2*k:\n   j+=2\n   n=n-2*k\n   k+=1\n  else:\n   j+=2\n   n=0\n print(j)\n t-=1", "import math\nfor t in range(int(input())):\n n=int(input())\n x=math.sqrt(n)-1\n print(int(math.ceil(2*x+1)))\n"]

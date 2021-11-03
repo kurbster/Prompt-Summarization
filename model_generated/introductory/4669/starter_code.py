@@ -1,0 +1,2 @@
+def beggars(values, n):
+	

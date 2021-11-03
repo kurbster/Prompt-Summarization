@@ -1,0 +1,1 @@
+ You are given the string "1357". Return all possible PINs (or all variations) of that string.

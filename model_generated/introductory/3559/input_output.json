@@ -1,0 +1,1 @@
+{"fn_name": "chromosome_check", "inputs": [["XY"], ["XX"]], "outputs": [["Congratulations! You're going to have a son."], ["Congratulations! You're going to have a daughter."]]}

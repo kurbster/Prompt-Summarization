@@ -1,0 +1,1 @@
+{"inputs": [["4", "helowrd 0", "background 0", "abcdefghijklmnopqrstuvwxyz 0", "b 1"]], "outputs": [["abcfgij", "efhijlmpqs", "NOPE", "a"]]}

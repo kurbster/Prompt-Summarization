@@ -1,0 +1,1 @@
+{"fn_name": "optimalDivision", "inputs": [[[1000, 100, 10, 2]]], "outputs": ["1000/(100/10/2)"]}

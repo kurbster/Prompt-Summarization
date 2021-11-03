@@ -1,0 +1,2 @@
+ You are given a string s. Partition s such that every substring of the partition is a palindrome. 
+Example: Input: "aab" Output: 1 Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cut.

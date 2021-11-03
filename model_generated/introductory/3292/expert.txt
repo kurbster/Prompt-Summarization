@@ -1,0 +1,1 @@
+ Given two strings, find the difference between their total number of digits.

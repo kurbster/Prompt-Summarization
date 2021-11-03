@@ -1,0 +1,1 @@
+["for _ in range(int(input())):\n    s = input().strip()\n    a = []\n    last = 0\n    for i in range(len(s)):\n     if s[i] == 'P':\n      a.append(i - last)\n      last = i + 1\n    x = 0\n    a = a[::-1]\n    for v in a[::2]:\n     x ^= v % 3\n    print('Yes' if x else 'No')"]

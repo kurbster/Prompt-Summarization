@@ -1,0 +1,1 @@
+ Given an input string str and a pattern pat, find if str follows the same pattern. Here follow means a full match, such that there is a bijection between a letter in pat and a non-empty word in str.

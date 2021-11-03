@@ -1,0 +1,1 @@
+  Given a 4-digit time, return a 12-hour time string.

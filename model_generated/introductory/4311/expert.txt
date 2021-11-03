@@ -1,0 +1,1 @@
+ You are given an array of positive integers arr. Calculate and return the number of prime pairs.  

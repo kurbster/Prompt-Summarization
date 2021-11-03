@@ -1,0 +1,1 @@
+ You are given a set of integers (k, n) such that 2   k   n. Your task is to write an algorithm to compute the sum of all minimal product-sum numbers where 2   k   n.

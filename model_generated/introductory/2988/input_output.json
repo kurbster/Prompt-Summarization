@@ -1,0 +1,1 @@
+{"fn_name": "reverse_and_combine_text", "inputs": [["abc def"], ["abc def ghi jkl"], ["dfghrtcbafed"], ["234hh54 53455 sdfqwzrt rtteetrt hjhjh lllll12  44"], ["sdfsdf wee sdffg 342234 ftt"]], "outputs": [["cbafed"], ["defabcjklghi"], ["dfghrtcbafed"], ["trzwqfdstrteettr45hh4325543544hjhjh21lllll"], ["gffds432243fdsfdseewttf"]]}

@@ -1,0 +1,51 @@
+## Story
+
+> "You have serious coding skillz? You wannabe a [scener](https://en.wikipedia.org/wiki/Demoscene)? Complete this mission and u can get in teh crew!"
+
+You have read a similar message on your favourite [diskmag](https://en.wikipedia.org/wiki/Disk_magazine) back in the early 90s, and got really excited. You contacted the demo crew immediately and they gave you the following job: write a vertical sinus scroller... **for the printer!**
+
+## Your task
+
+Write a function that takes three parameters: `text`, `amp` (for [peak amplitude](https://en.wikipedia.org/wiki/Amplitude)) and `period` (or [wavelength](https://en.wikipedia.org/wiki/Wavelength)). Return a string (split into multiple lines) that will display the text as a vertical sine wave.
+
+Note: `amp` and `period` are measured in characters and are always positive integers; `text` is never empty.
+
+## Example
+
+```python
+>>> scroller('Hello World!', 3, 10)
+'   H\n     e\n      l\n      l\n     o\n    \n W\no\nr\n l\n   d\n     !'
+```
+
+Doesn't make much sense? Well, let's print it!
+
+```python
+   H        1
+     e      2
+      l     3
+      l     4
+     o      5
+            6
+ W          7
+o           8
+r           9
+ l         10
+   d        1
+     !      2
+
+3210123
+```
+
+(Obviously, the numbers are only shown above to demonstrate `amp` and `period`)
+
+Happy coding!
+
+*Note:* due to the inevitable use of floats, solutions with slight rounding errors (1 space difference in less than 10% of the output lines) will be accepted.
+
+---
+
+## My other katas
+
+If you enjoyed this kata then please try [my other katas](https://www.codewars.com/collections/katas-created-by-anter69)! :-)
+
+#### *Translations are welcome!*

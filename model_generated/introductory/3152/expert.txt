@@ -1,0 +1,1 @@
+ You are given an array of bits. You need to implement an interpreter for the language MiniBitMove. 

@@ -1,0 +1,1 @@
+ Given s, an array of pairs of indices in the string and swaps, return lexicographically smallest string that s can be changed to after using the swaps.   Example 1: Input: s = "dcab", pairs = [[0,3],[1,2]] Output: "bacd" Explaination:  Swap s[0] and s[3], s = "bcad" Swap s[1] and s[2]

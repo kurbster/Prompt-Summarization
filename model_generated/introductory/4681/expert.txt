@@ -1,0 +1,1 @@
+ You are given a string. You need to re-order the characters using python's builtin function `str.lower`. 

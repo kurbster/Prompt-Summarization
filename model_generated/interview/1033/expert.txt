@@ -1,0 +1,1 @@
+ Given an array $a$ of length $n$. Find the minimum change(difference made) in the sum of values of all the nodes in the tree, such that all the leaf nodes have the same value. 

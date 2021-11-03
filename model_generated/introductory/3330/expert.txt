@@ -1,0 +1,1 @@
+ You are given two positive integers (m and n), make a triangle pattern with number sequence (m to n). The order is clockwise, starting from the top corner, like this:  1 3 2  6 7 7 5 0 9 9 4 3 2 1 0  1 3 2  6 7 7 5 0 9 9 4 3 2 1 

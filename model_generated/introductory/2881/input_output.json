@@ -1,0 +1,1 @@
+{"fn_name": "validate", "inputs": [[123], [1], [2121], [1230], [8675309], [4111111111111111], [26], [2626262626262626], [91], [92], [912030], [922030]], "outputs": [[false], [false], [true], [true], [false], [true], [true], [true], [true], [false], [true], [false]]}

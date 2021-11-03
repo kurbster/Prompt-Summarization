@@ -1,0 +1,1 @@
+ Imagine `n` horizontal lines and `m` vertical lines. Some of these lines intersect, creating rectangles. How many rectangles are there 

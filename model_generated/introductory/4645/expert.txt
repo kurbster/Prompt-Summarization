@@ -1,0 +1,1 @@
+ Return the Fraction as an int-Array: promenade("") == [1,1] promenade("LR") == [2,3] promenade("LRLL") == [4,7]

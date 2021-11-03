@@ -1,0 +1,2 @@
+ The function rgb is incomplete. You need to complete it so that passing in RGB decimal values will result in hexadecimal representation being returned. 
+Note: Your answer should always be 6 characters long, the shorthand with 3 will not work here. The following are examples of  expected output values: ```python rgb(255, 255, 255) # returns FFFFFF rgb(255, 255, 300) # returns FFFFFF rgb(0,0,0) # returns 000000 rgb(148, 0, 211) # returns 9400D3 ``` ```if:nasm char \*rgb(int r, int g, int b, char \*outp) ```

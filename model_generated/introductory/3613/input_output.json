@@ -1,0 +1,1 @@
+{"fn_name": "is_substitution_cipher", "inputs": [["aacb", "aabc"], ["aa", "bc"], ["aaxxaaz", "aazzaay"], ["aaxyaa", "aazzaa"], ["aazzaa", "aaxyaa"], ["jpeuizmi", "mxxcwriq"]], "outputs": [[true], [false], [true], [false], [false], [false]]}

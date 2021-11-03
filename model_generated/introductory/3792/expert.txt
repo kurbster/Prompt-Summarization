@@ -1,0 +1,1 @@
+ Given `p` and `r`, determine how many times the agitators chanted the slogan `p`, such that Roka could hear `r`.  It is guaranteed that Roka heard nothing but the `endings` of the slogan `p` repeated several times.  Output the result modulo `10`. 

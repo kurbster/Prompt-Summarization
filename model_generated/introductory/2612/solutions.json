@@ -1,0 +1,1 @@
+["# Enter your code here. Read input from STDIN. Print output to STDOUT\na=int(input())\nfor i in range(0,a):\n    print((i*i))\n", "def __starting_point():\n    n = int(input())\n\n    num = 0\n    while num < n:\n        print(pow(num, 2))\n        num += 1\n__starting_point()"]

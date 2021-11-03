@@ -1,0 +1,1 @@
+ You are given a list of integers and you must print the indices of the smallest prime below that index.

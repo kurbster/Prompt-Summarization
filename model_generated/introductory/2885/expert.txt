@@ -1,0 +1,1 @@
+ You are given a positive integer `n`. Your task is to return the `n`th digit of Champernowne's constant.

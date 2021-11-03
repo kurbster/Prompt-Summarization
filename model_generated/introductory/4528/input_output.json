@@ -1,0 +1,1 @@
+{"fn_name": "my_languages", "inputs": [[{"Java": 10, "Ruby": 80, "Python": 65}], [{"Hindi": 60, "Greek": 71, "Dutch": 93}], [{"C++": 50, "ASM": 10, "Haskell": 20}]], "outputs": [[["Ruby", "Python"]], [["Dutch", "Greek", "Hindi"]], [[]]]}

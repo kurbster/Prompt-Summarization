@@ -1,0 +1,1 @@
+ You are given an integer `n`, an integer `k`, and an integer `m`.  Your task is to return `k` if `n` is a forgiving number for `k`, and `m` otherwise. 

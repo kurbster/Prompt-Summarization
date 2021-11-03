@@ -1,0 +1,1 @@
+{"fn_name": "find_spec_prod_part", "inputs": [[1416, "max"], [1416, "min"], [10007, "max"]], "outputs": [[[[708, 2], 1420]], [[[59, 24], 166]], ["It is a prime number"]]}

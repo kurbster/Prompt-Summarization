@@ -1,0 +1,1 @@
+ You are given a string of bits representing a message, and a parity bit array. Check if there is any error in the coded message, correct it if it exists, and return the corrected string of bits.

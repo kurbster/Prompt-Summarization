@@ -1,0 +1,1 @@
+ Given an integer $n$, determine if $n$ can be represented by exactly $n$ Roman digits grouped together.

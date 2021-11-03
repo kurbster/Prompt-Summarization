@@ -1,0 +1,1 @@
+{"fn_name": "is_anagram", "inputs": [["foefet", "toffee"], ["Buckethead", "DeathCubeK"], ["Twoo", "WooT"], ["dumble", "bumble"], ["ound", "round"], ["apple", "pale"]], "outputs": [[true], [true], [true], [false], [false], [false]]}

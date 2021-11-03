@@ -1,0 +1,2 @@
+ You are given a number $n$.  Calculate $n!$ (the factorial of $n$). 
+-----Input----- First line of input contains an integer T denoting the number of test cases. The next T lines contain an integer N. -----Output----- For each test case, print a single line containing the solution to the spell which is equal to factorial of N, i.e. N!. Since the output could be large, output it modulo 1589540031(Grand Master Oogway's current age). -----Constraints----- - 1 ≤ T ≤ 100000 - 1 ≤ N ≤ 100000 -----Example----- Input: 4 1 2 3 4 Output: 1 2 6 24

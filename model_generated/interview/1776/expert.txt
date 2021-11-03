@@ -1,0 +1,1 @@
+ Given a number `N` of sides, a number `M` of rolls and a number `T` of points, return a probability `P(NdM >= T)`. 

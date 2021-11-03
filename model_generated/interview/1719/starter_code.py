@@ -1,0 +1,2 @@
+def zeroes (base, number):
+	

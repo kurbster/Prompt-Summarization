@@ -1,0 +1,1 @@
+ Given a year, return the element and animal that year represents ("Element Animal").  For example I'm born in 1998 so I'm an "Earth Tiger". ```animals``` (or ```$animals``` in Ruby) is a preloaded array containing the animals in order: ```['Rat', 'Ox', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse', 'Goat', 'Monkey', 'Rooster', 'Dog'

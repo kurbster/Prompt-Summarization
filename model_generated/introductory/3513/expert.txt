@@ -1,0 +1,1 @@
+ You are given an integer `a`   `2   a   1000` and an integer `b`   `1   b < a   1000`. 

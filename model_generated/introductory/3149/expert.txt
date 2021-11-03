@@ -1,0 +1,2 @@
+ You are given a 'new' roof. If it has a hole at the location where the old roof has a tile sticking up, then the new roof will fit. 
+.

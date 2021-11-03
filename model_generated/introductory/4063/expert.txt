@@ -1,0 +1,1 @@
+ You are given a text. Your task is to remove punctuation and underscores and to add an extra character at the end of the word.

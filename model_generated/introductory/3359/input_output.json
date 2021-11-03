@@ -1,0 +1,1 @@
+{"fn_name": "title_to_number", "inputs": [["A"], ["Z"], ["AA"], ["AZ"], ["BA"], ["CODEWARS"], ["ZZZTOP"], ["OYAJI"], ["LONELINESS"], ["UNFORGIVABLE"]], "outputs": [[1], [26], [27], [52], [53], [28779382963], [321268054], [7294985], [68400586976949], [79089429845931757]]}

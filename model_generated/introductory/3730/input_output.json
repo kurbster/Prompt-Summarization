@@ -1,0 +1,1 @@
+{"fn_name": "capitalize", "inputs": [["abcdef"], ["codewars"], ["abracadabra"], ["codewarriors"], ["indexinglessons"], ["codingisafunactivity"]], "outputs": [[["AbCdEf", "aBcDeF"]], [["CoDeWaRs", "cOdEwArS"]], [["AbRaCaDaBrA", "aBrAcAdAbRa"]], [["CoDeWaRrIoRs", "cOdEwArRiOrS"]], [["InDeXiNgLeSsOnS", "iNdExInGlEsSoNs"]], [["CoDiNgIsAfUnAcTiViTy", "cOdInGiSaFuNaCtIvItY"]]]}

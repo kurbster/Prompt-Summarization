@@ -1,0 +1,1 @@
+ Given a chess board position, return possible moves of chess queen. Returned value should be an ```array``` with possible moves sorted alphabetically, exluded starting position. For example when input position is ```A1``` return value should be: ```["A2", "A3", "A4", "A5", "A6", "A7", "A8", "B1", "B2", "C1", "C3", "D1", "D4", "E1

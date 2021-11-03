@@ -1,0 +1,1 @@
+ You are given an array of integers. Your task is to return the powerset of that array. Implement an algorithm that does it in a depth-first search fashion. That is, for every integer in the array, we can either choose to take or not take it. At first, we choose `NOT` to take it, then we choose to take it(see more details in example).

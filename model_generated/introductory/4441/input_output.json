@@ -1,0 +1,1 @@
+{"fn_name": "chmod_calculator", "inputs": [[{"user": "rwx", "group": "r-x", "other": "r-x"}], [{"user": "rwx", "group": "r--", "other": "r--"}], [{"user": "r-x", "group": "r-x", "other": "---"}], [{"group": "rwx"}], [{}]], "outputs": [["755"], ["744"], ["550"], ["070"], ["000"]]}

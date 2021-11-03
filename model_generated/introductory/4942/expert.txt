@@ -1,0 +1,1 @@
+ Given a list of directions, return a new list that will get you to the same point. 

@@ -1,0 +1,1 @@
+ You are given a string $s$. Find the longest substring $s'$ of $s$, where $s'$ has largest sum of its digits. 

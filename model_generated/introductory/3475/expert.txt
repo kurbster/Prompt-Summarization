@@ -1,0 +1,2 @@
+ Given an string, return an integer if string is in one of the formats specified below, or `null/nil/None` otherwise
+.

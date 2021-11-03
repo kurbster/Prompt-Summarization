@@ -1,0 +1,1 @@
+ You are given a date object and the number of days until Christmas. You need to return the number of days until Christmas. Example 1: Input: d = 1/1/2011 Output: 356 Example 2: Input: d = 1/1/2012 Output: 365

@@ -1,0 +1,1 @@
+ You are given an array with positive integers (the height of people). You need to rearrange them in such a way that the height of each position is not decreasing.

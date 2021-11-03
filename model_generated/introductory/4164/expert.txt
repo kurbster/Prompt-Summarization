@@ -1,0 +1,1 @@
+ You are given a string S, and should return the first character that is not repeated anywhere in the string. 

@@ -1,0 +1,1 @@
+ Given a string of length $n$, determine if the count of each of the characters can be equal if we remove a single character from that string. 

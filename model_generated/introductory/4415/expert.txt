@@ -1,0 +1,1 @@
+ Given an array with string digits that occurrs more than once, for example, ```arr = ['1', '2', '2', '2', '3', '3']```. How many different string numbers can be generated taking the 6 elements at a time  We present the list of them below in an unsorted way: ```  ['223213', '312322', '223312', '222133', '312223', '223321', '223231',

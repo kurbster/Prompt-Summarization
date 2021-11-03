@@ -1,0 +1,1 @@
+{"fn_name": "categorize_study", "inputs": [[0.01, 3], [0.04, 6], [0.0001, 0], [0.012, 0]], "outputs": [["Needs review"], ["Fine"], ["Needs review"], ["Pants on fire"]]}

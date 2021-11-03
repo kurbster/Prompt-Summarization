@@ -1,0 +1,1 @@
+["class Solution:\n    def numSteps(self, s: str) -> int:\n        i, mid_zero = 0 , 0 \n        for j in range(1, len(s)):\n            if s[j] == '1':\n                mid_zero += j -i - 1\n                i = j\n        if i == 0:\n            return len(s)-1\n        return mid_zero + 1 + len(s)\n"]

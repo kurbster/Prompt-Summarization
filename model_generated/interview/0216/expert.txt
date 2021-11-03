@@ -1,0 +1,1 @@
+ Given a string of length 10^5, return the number of different frogs that finish all the croak in the given string.  

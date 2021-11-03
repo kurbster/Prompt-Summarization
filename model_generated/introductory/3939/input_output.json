@@ -1,0 +1,1 @@
+{"fn_name": "rps", "inputs": [["rock", "scissors"], ["scissors", "paper"], ["paper", "rock"], ["scissors", "rock"], ["paper", "scissors"], ["rock", "paper"], ["rock", "rock"], ["scissors", "scissors"], ["paper", "paper"]], "outputs": [["Player 1 won!"], ["Player 1 won!"], ["Player 1 won!"], ["Player 2 won!"], ["Player 2 won!"], ["Player 2 won!"], ["Draw!"], ["Draw!"], ["Draw!"]]}

@@ -1,0 +1,1 @@
+["try:\r\n    n,m,a=map(int,input().split())\r\n    if n%a!=0:\r\n        number1=(n//a)+1\r\n    else:\r\n        number1=(n//a)\r\n    if m%a!=0:\r\n        number2=(m//a)+1\r\n    else:\r\n        number2=(m//a)\r\n    print(number1*number2)\r\nexcept:\r\n    pass"]

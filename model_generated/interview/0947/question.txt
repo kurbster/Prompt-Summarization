@@ -1,0 +1,38 @@
+In this problem we are concerned with words constructed using the lowercase letters of the English alphabet - that is, a,b,c,…,z. These words need not necessarily be meaningful: any sequence of letters forms a word. For example, abbca is a word.
+We say that we can "hop" from the word $w_1$ to the word $w_2$ if they are "sufficiently close". We define $w_2$ to be sufficiently close to $w_1$ if one of the following holds:
+- $w_2$ is obtained from $w_1$ by deleting one letter.
+- $w_2$ is obtained from $w_1$ by replacing one of the letters in $w_1$ by some letter that appears to its right in $w_1$ and which is also to its right in alphabetical order.
+For example, we can hop from abbca to abca by deleting the second (or third letter). We can hop from aabca to abbca by replacing the a in the second position by the letter b that appears to the right of the a in aabca and which is also to its right in alphabetical order. On the other hand we cannot hop from abbca to aabca since we would need to replace the b in the second position by a, but a is to the left of b in alphabetical order.
+You will be given a collection of words $W$. Your task is to find the length of the longest sequence $w_1, w_2, \ldots $ of distinct words from $W$ such that we may hop from $w_1$ to $w_2$, $w_2$ to $w_3$ and so on. We call this the hopping number for this set.
+For example, if
+$W$ = {abacd, bcdada, dd, abcd,bcdd, adcd, addd, aa, ccd, add, ad}
+then, the hopping number is 7 corresponding to the sequence
+abacd, abcd, adcd, addd, add, ad, dd
+
+-----Input Format:-----
+- The first line of the input contains one integer $N$ indicating the number of words in the input. 
+- This is followed by $N$ lines of input, lines 2, 3,…, $N$+1, each containing one word over the letters {a,b,…, z}.
+
+-----Output Format:-----
+The output should be a single integer, indicating the hopping number of the given set of words.
+
+-----Test Data:-----
+- $N \leq 100$
+- You may assume that each word has at most 10 letters.
+
+-----Sample Input:-----
+11
+abacd
+bcdada
+dd
+abcd
+bcdd
+adcd
+addd
+aa
+ccd
+add
+ad
+
+-----Sample Output:-----
+7

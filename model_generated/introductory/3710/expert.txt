@@ -1,0 +1,1 @@
+ You are given two integers `u0` and `u1`. In one step, you need to generate a sequence of length `n`, where `n` is `u0` + `u1`. ___Note:__ Your program should generate `n` distinct terms. ___Example:__ ``` u0 = 1 u1 = 2 n = 3 u0 + u1 = 4 u0 + u1 + 

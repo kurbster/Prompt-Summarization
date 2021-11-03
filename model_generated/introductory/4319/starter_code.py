@@ -1,0 +1,2 @@
+def countzero(string):
+	

@@ -1,0 +1,1 @@
+ You are given a list of integers and an integer N. You need to print all integers upto N that are multiples of the given integer. 

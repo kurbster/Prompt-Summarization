@@ -1,0 +1,1 @@
+{"fn_name": "repeatedStringMatch", "inputs": [["\"abcd\"", "\"cdabcdab\""]], "outputs": [-1]}

@@ -1,0 +1,1 @@
+ You are given a list of integers representing the number of clock-cycles a process has. The processes can be run in parallel. You have to implement Round-Robin scheduling. 

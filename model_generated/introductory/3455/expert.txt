@@ -1,0 +1,1 @@
+ You are given a list of numbers. You are asked to check if they are prime or not. 

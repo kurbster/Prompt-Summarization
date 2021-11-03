@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    "5 5\n2 3\n1 4\n2 4\n2 3\n1 4\n",
+    "2 2\n2 1\n1 2\n",
+    "2 4\n2 1\n1 2\n1 2\n1 2\n",
+    "4 1\n1 4\n",
+    "10 42\n1 4\n1 2\n2 2\n2 8\n1 10\n1 7\n2 8\n2 3\n1 9\n1 2\n2 4\n2 8\n2 4\n1 7\n2 3\n1 9\n1 6\n2 7\n2 7\n1 10\n1 2\n1 10\n2 7\n1 5\n2 2\n1 4\n1 10\n1 2\n2 6\n2 9\n1 7\n1 2\n1 7\n2 3\n1 10\n2 7\n2 5\n2 5\n1 10\n1 8\n2 9\n1 6\n",
+    "10 83\n1 3\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n1 4\n2 2\n2 3\n2 3\n2 3\n2 3\n2 3\n2 3\n1 4\n1 5\n1 7\n2 2\n2 2\n1 5\n2 2\n1 3\n2 1\n2 6\n1 5\n2 6\n2 9\n1 2\n2 5\n1 2\n2 5\n2 4\n2 4\n1 2\n1 2\n1 4\n2 6\n2 6\n2 4\n2 4\n1 2\n1 2\n2 4\n2 4\n2 3\n2 3\n1 2\n2 9\n1 2\n1 2\n1 2\n2 6\n2 6\n2 4\n2 4\n2 3\n2 5\n2 5\n2 3\n2 3\n2 3\n2 6\n2 6\n2 3\n2 3\n2 6\n2 6\n2 6\n2 6\n2 6\n2 6\n2 3\n2 3\n1 2\n1 2\n2 6\n2 1\n2 6\n2 6\n2 6\n2 7\n",
+    "855 26\n1 75\n2 74\n2 74\n2 74\n2 74\n2 74\n2 74\n2 74\n2 74\n1 323\n2 74\n2 74\n2 74\n2 74\n2 322\n2 322\n2 322\n2 649\n1 703\n1 251\n2 457\n2 322\n2 702\n2 382\n2 702\n2 500\n",
+    "73034 53\n2 21523\n1 21522\n2 21523\n2 21521\n2 37146\n2 21521\n2 21521\n2 21521\n1 37145\n2 37146\n1 54737\n2 66924\n2 21521\n2 28767\n2 21521\n2 21521\n2 21521\n1 28766\n2 28767\n2 54736\n2 54736\n2 31558\n2 37144\n2 41201\n1 60566\n2 15970\n2 37144\n2 25868\n1 277\n2 1743\n1 25867\n2 25868\n1 40857\n1 38088\n2 21521\n2 21521\n1 15969\n2 39373\n1 51066\n2 15970\n1 24859\n2 28765\n2 28765\n2 60565\n2 60565\n2 21521\n2 21521\n2 38087\n2 38087\n2 21521\n2 21521\n2 45056\n2 21521\n",
+    "100000 6\n2 72326\n1 72325\n2 72326\n2 72324\n2 72324\n2 91418\n",
+    "3 27\n2 2\n2 2\n1 2\n2 1\n2 1\n2 1\n2 1\n2 1\n1 2\n1 2\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n1 3\n2 2\n2 2\n2 1\n",
+    "100000 46\n1 82674\n2 82673\n2 82673\n2 82673\n2 82673\n2 82673\n2 82673\n2 82673\n2 82673\n2 87908\n2 58694\n1 58693\n2 58694\n2 82673\n2 82673\n1 87907\n2 87908\n2 82673\n2 82673\n1 64610\n2 64609\n2 64609\n2 58692\n2 58692\n2 64609\n2 64609\n2 64609\n2 64609\n2 87906\n2 87906\n2 64609\n2 22164\n2 2840\n2 43302\n2 64609\n2 58692\n2 58692\n2 87906\n2 87906\n1 22163\n2 76010\n2 22164\n2 64609\n2 64609\n1 43301\n2 43302\n",
+    "3 68\n1 3\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n2 2\n1 3\n1 2\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n1 2\n1 2\n2 1\n2 1\n2 1\n2 1\n2 1\n2 1\n",
+    "327 22\n2 68\n1 67\n1 214\n2 68\n2 213\n2 213\n2 66\n2 66\n2 66\n2 66\n2 66\n2 66\n2 213\n2 213\n1 15\n2 14\n2 14\n2 213\n2 213\n2 66\n2 66\n2 14\n",
+    "76183 37\n1 68009\n2 68008\n2 68008\n2 51883\n1 51882\n2 51883\n2 51881\n2 51881\n2 51881\n2 51881\n2 68008\n2 68008\n2 68008\n2 68008\n2 51881\n2 40751\n2 51881\n2 51881\n2 51881\n2 2204\n1 40750\n2 40751\n2 62512\n2 68008\n2 68008\n2 40749\n2 33598\n2 40749\n1 33597\n2 33598\n2 33596\n2 54671\n1 65682\n2 33596\n1 62511\n2 62512\n2 62510\n"
+  ],
+  "outputs": [
+    "Yes\nNo\nNo\nNo\nYes\n",
+    "Yes\nNo\n",
+    "Yes\nNo\nYes\nNo\n",
+    "Yes\n",
+    "Yes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\nNo\n",
+    "Yes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nYes\nYes\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nNo\nYes\nYes\nNo\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\n",
+    "Yes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nYes\n",
+    "Yes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nYes\nNo\nYes\nYes\nYes\nNo\nYes\nNo\nNo\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\n",
+    "Yes\nNo\nYes\nNo\nYes\nYes\n",
+    "Yes\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\n",
+    "Yes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\n",
+    "Yes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\n",
+    "Yes\nNo\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\n",
+    "Yes\nNo\nYes\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nYes\nNo\n"
+  ]
+}

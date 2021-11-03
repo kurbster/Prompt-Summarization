@@ -1,0 +1,1 @@
+ Given a word and an array of words, return an array of all the anagrams (or an empty array). If a word is an anagram of another, then return the first word. For example: anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa'] anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']

@@ -1,0 +1,1 @@
+{"inputs": ["2\n<html><head><title>HTML Parser - I</title></head>\n<body data-modal-target class='1'><h1>HackerRank</h1><br /></body></html>"], "outputs": ["Start : html\nStart : head\nStart : title\nEnd   : title\nEnd   : head\nStart : body\n-> data-modal-target > None\n-> class > 1\nStart : h1\nEnd   : h1\nEmpty : br\nEnd   : body\nEnd   : html"]}

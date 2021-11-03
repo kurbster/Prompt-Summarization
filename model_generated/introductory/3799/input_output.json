@@ -1,0 +1,1 @@
+{"fn_name": "baubles_on_tree", "inputs": [[5, 5], [5, 0], [6, 5], [50, 9], [0, 10]], "outputs": [[[1, 1, 1, 1, 1]], ["Grandma, we will have to buy a Christmas tree first!"], [[2, 1, 1, 1, 1]], [[6, 6, 6, 6, 6, 5, 5, 5, 5]], [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]]}

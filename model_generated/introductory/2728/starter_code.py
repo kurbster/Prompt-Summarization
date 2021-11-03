@@ -1,0 +1,2 @@
+def inverseMod(a, m):
+	

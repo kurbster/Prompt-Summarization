@@ -1,0 +1,1 @@
+{"inputs": ["3\n1 0\n2 $\n3 1"], "outputs": ["Error Code: integer division or modulo by zero\nError Code: invalid literal for int() with base 10: '$'\n3"]}

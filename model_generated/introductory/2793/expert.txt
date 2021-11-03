@@ -1,0 +1,2 @@
+ You are given the number of members of the starting group. The group size S means that on the first day a group of S members comes to the hotel and stays for S days. Then comes a group of S + 1 members and so on. 
+.

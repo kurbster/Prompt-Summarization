@@ -1,0 +1,1 @@
+ Given an array of positive integers target and an array initial of same size with all zeros. Return the minimum number of operations to form a target array from initial if you are allowed to do the following operation: Choose any subarray from initial and increment each value by one. The answer is guaranteed to fit within the range of a 32-bit signed integer. 

@@ -1,0 +1,1 @@
+ You are given an array of integers.  Sum consecutive even numbers and consecutive odd numbers.  Repeat the process while it can be done and return the length of the final array. 

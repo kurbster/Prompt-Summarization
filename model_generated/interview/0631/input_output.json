@@ -1,0 +1,1 @@
+{"inputs": [["5858 1234"]], "outputs": [["1624", "Output details", "The correct answer of 5858-1234 is 4624.", "So, for instance, 2624, 4324, 4623, 4604 and 4629 will be accepted, but 0624, 624, 5858, 4624 and 04624 will be rejected.", "Notes", "The problem setter is also not good at arithmetic."]]}

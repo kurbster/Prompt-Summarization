@@ -1,0 +1,1 @@
+{"fn_name": "shortestSuperstring", "inputs": [[["\"alex\"", "\"loves\"", "\"leetcode\""]]], "outputs": ["\"leetcode\"loves\"alex\""]}

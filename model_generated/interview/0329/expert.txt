@@ -1,0 +1,1 @@
+ You are given a matrix grid. You are given two integers, i and j. You need to find path from (0, 0) to (rows - 1, cols - 1) with the maximum non-negative product. 

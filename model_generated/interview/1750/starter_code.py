@@ -1,0 +1,2 @@
+def mystery(n):
+	

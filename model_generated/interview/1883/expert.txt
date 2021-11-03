@@ -1,0 +1,1 @@
+ Given an array of integers, output the number of ways the nth value can be distributed in the array. For example, if the array is [0, 1, 1, 2, 1, 2, 3, 2, 3, 3, 3, 4, 3, 4, 4, 5, 4, 5, 5], then 2*3*5 = 30. 

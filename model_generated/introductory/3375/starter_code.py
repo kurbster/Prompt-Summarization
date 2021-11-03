@@ -1,0 +1,2 @@
+def going(n):
+	

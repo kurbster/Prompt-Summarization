@@ -1,0 +1,2 @@
+ Given a string of letters return a score for a word. 
+Example In accordance to the above ```alpha``` object, the name ```Mary Jane``` will have a name score of ```20``` => M=3 + a=1 + r=4 + y=5 + J=2 + a=1 + n=3 + e=1

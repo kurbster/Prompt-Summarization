@@ -1,0 +1,2 @@
+ You are given n, the number of teams, m, the number of questions, and r, the number of subjects. Your task is to find out the number of unique sets of questions. 
+-----Input Format----- Line 1 contains the number of teams ‘n’. In the next n lines, each line contains three space separated integers,i.e, the number of questions of each subject(in no particular order). employee -----Output----- Print the number of unique sets 		 		 -----Example Text Case----- Input: 5 6 5 4 2 3 7 4 6 5 7 2 3 5 3 1 	 Output: 1 		

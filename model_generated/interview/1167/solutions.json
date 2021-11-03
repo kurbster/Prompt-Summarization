@@ -1,0 +1,1 @@
+["s = input().lower()\r\nvow = [\"a\", \"e\", \"i\", \"o\", \"u\", \"y\"]\r\nans = \"\"\r\nfor ch in s:\r\n    if ch in vow:\r\n        continue\r\n    if ch.isalpha():\r\n        ans += \".\" + ch\r\nprint(ans)\r\n"]

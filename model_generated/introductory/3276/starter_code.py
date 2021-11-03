@@ -1,0 +1,2 @@
+def missing(nums, str):
+	

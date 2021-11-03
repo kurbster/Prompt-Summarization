@@ -1,0 +1,1 @@
+ Given three points (x, y, z), your task is to return the coordinate of the point (x, y, z), and the coordinate of the point (x, y, z), and the coordinate of the point (x, y, z).

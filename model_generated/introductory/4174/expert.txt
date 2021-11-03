@@ -1,0 +1,1 @@
+ You are given a list of numbers. Return the minimum number that evenly divides all numbers in the list. 

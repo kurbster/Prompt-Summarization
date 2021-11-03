@@ -1,0 +1,1 @@
+ Given a list of buildings, your task is to find a list of optimal rooftop latch points for minimal web expenditure.

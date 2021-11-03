@@ -1,0 +1,1 @@
+ Given a string and a position, return true if the cat can catch the mouse from that position else false. The cat can jump over three characters. So: C.....m returns 'Escaped!'   <-- more than three characters between C...m returns 'Caught!'

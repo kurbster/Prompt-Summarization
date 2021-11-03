@@ -1,0 +1,1 @@
+{"fn_name": "decompose_single_strand", "inputs": [["AGGTGACACCGCAAGCCTTATATTAGC"]], "outputs": [["Frame 1: AGG TGA CAC CGC AAG CCT TAT ATT AGC\nFrame 2: A GGT GAC ACC GCA AGC CTT ATA TTA GC\nFrame 3: AG GTG ACA CCG CAA GCC TTA TAT TAG C"]]}

@@ -1,0 +1,1 @@
+{"inputs": [["6", "18", "..H..T...HTH....T.", "3", "...", "10", "H..H..T..T", "2", "HT", "11", ".T...H..H.T", "7", "H..T..H"]], "outputs": [["Valid", "Valid", "Invalid", "Valid", "Invalid", "Invalid"]]}

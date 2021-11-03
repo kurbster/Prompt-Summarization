@@ -1,0 +1,1 @@
+ You are given an integer n (n >= 0) and a digit d (0 <= d <= 9). You need to return the number of digits d used in the writing of all the k**2 where k is between 0 and n. Example 1: Input: n = 10, d = 1, k = 0, k = 1, k = 4, k = 9, k = 16, k = 25, k = 36, k

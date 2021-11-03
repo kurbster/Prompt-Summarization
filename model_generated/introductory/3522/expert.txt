@@ -1,0 +1,2 @@
+ You are given an unsorted array. Return the minimum number of operations needed to sort the array.  ___ Example 1: Input: [1,4,5,3,2] Output: 2 Explanation:  Use double operation and then decrement operation {1 -> 4 -> 5 -> 3 -> 2}.
+Simple: You are given an unsorted array. Return the minimum number of operations needed to sort the array.  ___ Example 1: Input: [1,4,5,3

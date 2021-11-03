@@ -1,0 +1,2 @@
+def transform(A, x):
+	

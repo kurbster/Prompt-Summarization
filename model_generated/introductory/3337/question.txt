@@ -1,0 +1,5 @@
+It's March and you just can't seem to get your mind off brackets. However, it is not due to basketball. You need to extract statements within strings that are contained within brackets.
+
+You have to write a function that returns a list of statements that are contained within brackets given a string. If the value entered in the function is not a string, well, you know where that variable should be sitting.
+
+Good luck!

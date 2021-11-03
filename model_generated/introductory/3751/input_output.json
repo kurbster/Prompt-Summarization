@@ -1,0 +1,1 @@
+{"fn_name": "bool_to_word", "inputs": [[true], [false]], "outputs": [["Yes"], ["No"]]}

@@ -1,0 +1,1 @@
+ You are given an integer, in base n (from 2 to 36). Your task is to translate the given number to the corresponding base. For example, if the integer is 32, your answer should be  ``` 32  -->  "32  That's just 20, in base 16!" 39  -->  "39  That's just 21, in base 19!" ``` *Hint: if you don't know (enough) about [numeral systems](https://en.wikipedia.org/wiki/Numeral_system) and

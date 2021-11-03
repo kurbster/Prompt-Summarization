@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "10\n1\n248618\n3\n12 10 8\n6\n100 11 15 9 7 8\n4\n0 1 1 0\n2\n0 0\n2\n0 1\n2\n1 0\n2\n1 1\n3\n0 1 0\n3\n1 0 1\n"
+  ],
+  "outputs": [
+    "Yes\nYes\nYes\nNo\nNo\nYes\nYes\nYes\nYes\nNo\n"
+  ]
+}

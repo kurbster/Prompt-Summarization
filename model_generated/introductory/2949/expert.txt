@@ -1,0 +1,1 @@
+ *Inspired by the [Fold an Array](https://www.codewars.com/kata/fold-an-array) kata. This one is sort of similar but a little different.* --- ## Task You will receive an array as parameter that contains 1 or more integers and a number `n`. Here is a little visualization of the process: * Step 1: Split the array in two: ```   [1, 2, 5, 7, 2, 3, 5, 7, 8]         /           

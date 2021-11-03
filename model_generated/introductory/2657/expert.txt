@@ -1,0 +1,1 @@
+ Given an input string, return a string with the first character of each word in the string. For example: ``` "This Is A Test" ==> "TIAT" ```

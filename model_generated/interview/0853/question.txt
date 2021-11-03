@@ -1,0 +1,68 @@
+The new Formula 1 season is about to begin and Chef has got the chance to work with the Formula 1 technical team.  
+Recently, the pre-season testing ended and the technical team found out that their timing system for qualifying was a little bit buggy. So, they asked Chef to fix it before the season begins.  
+His task is to write a program to find the starting lineup of the race by taking the timings of the drivers in qualifying.
+(If you don’t know the rules that make the starting grid in Formula 1, consider that the driver with the least time will start at the front). 
+Note: 
+- Two or more drivers can have the same name.  
+- Every driver will have a distinct time.  
+
+-----Input:-----
+- The first line of the input consists of a single integer $T$ denoting the number of test cases.  
+- First line of each test case consists of a single integer $N$ denoting the number of drivers to set a time.  
+- The following $2*N$ lines consists of the driver’s name $S$ in one line and its timing details  $X$ (in milliseconds) in the next line.  
+
+-----Output:-----
+- For each test case output the starting lineup of the race i.e., name of each driver in the order they will start the race. Print each name in a new line.  
+
+-----Constraints-----
+- 1 <= $T$ <= 10  
+- 1 <= $N$ <= 105 
+- 1 <= $|S|$ <= 20  
+- 1 <= $X$ <= 109 
+
+-----Subtasks-----
+Subtask #1 (20 points): 
+- 1 <= $N$ <= 100  
+Subtask #2 (80 points): 
+- Original Constraints  
+
+-----Sample Input:-----
+2
+
+3
+
+Hamilton
+
+75000
+
+Vettel
+
+76000
+
+Bottas
+
+75500
+
+2
+
+Leclerc
+
+666666
+
+Verstappen
+
+666777  
+
+-----Sample Output:-----
+Hamilton
+
+Bottas
+
+Vettel
+
+Leclerc
+
+Verstappen  
+
+-----EXPLANATION:-----
+The drivers with the least time are ahead in the lineup.

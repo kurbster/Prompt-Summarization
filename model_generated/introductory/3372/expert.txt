@@ -1,0 +1,1 @@
+ Given two words and a letter, return a single word that's a combination of both words, merged at the point where the given letter first appears in each word. 

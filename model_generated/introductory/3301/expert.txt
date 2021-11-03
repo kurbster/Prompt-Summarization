@@ -1,0 +1,1 @@
+ Give the summation of all even numbers in a Fibonacci sequence up to, but not including, the maximum value. 

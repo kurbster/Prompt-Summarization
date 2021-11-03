@@ -1,0 +1,1 @@
+["def diagonal_difference(matrix):\n l = sum(matrix[i][i] for i in range(N))\n r = sum(matrix[i][N-i-1] for i in range(N))\n return abs(l - r)\n\nmatrix = []\nN = eval(input())\nfor _ in range(N):\n matrix.append(list(map(int, input().split())))\n\nprint(diagonal_difference(matrix))"]

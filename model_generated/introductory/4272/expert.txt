@@ -1,0 +1,1 @@
+ You are given two strings. You need to return the greeting for a user. 

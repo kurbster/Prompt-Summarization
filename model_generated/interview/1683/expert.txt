@@ -1,0 +1,1 @@
+ You are playing a two-player game where a player can move some soldiers from one town to another. Help Uttu choose so that he will always win regardless of Gangwar's moves.

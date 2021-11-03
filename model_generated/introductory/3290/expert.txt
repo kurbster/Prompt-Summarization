@@ -1,0 +1,1 @@
+ create a function that takes in the sum of the two people and the age difference 

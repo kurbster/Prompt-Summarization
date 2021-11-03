@@ -1,0 +1,1 @@
+ You are given a list of integers. For each integer, you are asked: 1. If the integer is odd, return 1. If the integer is even, return 0. 2. If the integer is prime, return 1. If the integer is not prime, return 0. 3. If the integer is of the form `(2k + 1)` for some `k`, return 1. If the integer is not of the form `(2k + 1)` for some `k`, return 0. 

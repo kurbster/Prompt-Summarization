@@ -1,0 +1,1 @@
+ You are given following inputs: ``` Python Jeff = User('Jeff', 70, True) Joe = User('Joe', 70, False) Jeff.withdraw(2) # Returns 'Jeff has 68.' Joe.check(Jeff, 50) # Returns 'Joe has 120 and Jeff has 18.' Jeff.check(Joe, 80) # Raises a ValueError Joe.checking_account = True # Enables checking for Joe Jeff.check

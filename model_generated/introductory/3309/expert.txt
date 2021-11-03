@@ -1,0 +1,1 @@
+ You are given a string containing an ohms value. Return a string containing the resistor's color codes. 

@@ -1,0 +1,1 @@
+ You are given a list of 5 integers. The task is to return the list of the scores. 

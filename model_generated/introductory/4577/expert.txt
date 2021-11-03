@@ -1,0 +1,1 @@
+ You are given a string. Remove every instance of the word 'bug' and return the new string. ('bug' can be singular or plural)   Example 1: Input: 'obugobugobuoobugsoo' Output: 'ooobuoobugsoo' Explanation:  'obugobugobuoobugsoo' is a valid string. 'obugobugo' is not a valid string. Thus, 'ooobuoobugsoo' is a valid string.  Example 2: Input: 'ob

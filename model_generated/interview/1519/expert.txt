@@ -1,0 +1,2 @@
+ You are given $at$ $least$ $1$ $beastcoin$ and a message. You need to find the minimum donation you can make so that your message will be visible. Return the minimum donation. 
+-----Input Format----- - First line contain an interger $T$, which denotes number of testcases. Next $T$ lines contain single interger $X$.     -----Output Format----- - For every testcase print one integer, i.e. minimum donation Jon needs to make. -----Constriants----- - $ 1 \leq T \leq 100000 $  - $ 2 \leq X \leq 10^{18} $  -----Sample Input----- 2 3 7  -----Sample Output----- 4 8

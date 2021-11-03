@@ -1,0 +1,1 @@
+ You are given a list of numbers, find the average. 

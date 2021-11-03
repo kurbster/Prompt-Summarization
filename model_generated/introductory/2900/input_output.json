@@ -1,0 +1,1 @@
+{"fn_name": "string_transformer", "inputs": [["Example string"], ["Example Input"], ["To be OR not to be That is the Question"], [""], ["You Know When  THAT  Hotline Bling"], [" A b C d E f G "]], "outputs": [["STRING eXAMPLE"], ["iNPUT eXAMPLE"], ["qUESTION THE IS tHAT BE TO NOT or BE tO"], [""], ["bLING hOTLINE  that  wHEN kNOW yOU"], [" g F e D c B a "]]}

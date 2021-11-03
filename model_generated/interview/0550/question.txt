@@ -1,0 +1,39 @@
+There is Chef and Chef’s Crush who are playing a game of numbers.
+
+Chef’s crush has a number $A$ and Chef has a number $B$.
+
+Now, Chef wants Chef’s crush to win the game always, since she is his crush. The game ends when the greatest value of A^B is reached after performing some number of operations (possibly zero), Where ^ is Bitwise XOR.
+
+Before performing any operation you have to ensure that both $A$ and $B$ have the same number of bits without any change in the values. It is not guaranteed that $A$ and $B$ should have same number of bits in the input.
+For example, if $A$ is $2$ and $B$ is $15$, then the binary representation of both the numbers will have to be $0010$ and $1111$ respectively, before performing any operation.  
+The operation is defined as  : 
+- Right circular shift of the bits of only $B$ from MSB$_B$ to LSB$_B$ i.e. if we consider $B_1 B_2 B_3 B_4$ as binary number, then after one circular right shift, it would be $B_4 B_1 B_2 B_3$
+They both are busy with themselves, can you find the number of operations to end the game?
+
+-----Input :-----
+- The first line of input contains $T$, (number of test cases)  
+- Then each of the next $T$ lines contain : two integers $A$ and $B$ respectively.
+
+-----Output :-----
+For each test case print two space-separated integers, The number of operations to end the game and value of A^B when the game ends.
+
+-----Constraints :-----
+- $1 \leq T \leq100$ 
+- $1\leq A,B \leq 10^{18}$
+
+-----Subtasks  :-----
+- 30 Points: $1\leq A,B \leq 10^5$
+- 70 Points: Original Constraints
+
+-----Sample Input :-----
+1
+4 5
+
+-----Sample Output :-----
+2 7
+
+-----Explanation  :-----
+Binary  representation of  $4$ is $100$ and binary  representation  $5$ is $101$.   
+- After operation $1$ : $B$ $=$ $110$, so A^B $=$ $2$ 
+- After operation $2$ : $B$ $=$ $011$, so A^B $=$ $7$ 
+So, the value of A^B will be $7$. Which is the greatest possible value for A^B and the number of operations are $2$.

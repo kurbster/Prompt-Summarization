@@ -1,0 +1,1 @@
+ You have a list of positive numbers. You need to find the first number in the list, which is ugly. 

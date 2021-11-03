@@ -1,0 +1,2 @@
+def totalAmountVisible(topNum, numOfSides):
+	

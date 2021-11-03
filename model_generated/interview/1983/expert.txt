@@ -1,0 +1,1 @@
+ Implement a class `ProductOfNumbers` that supports two methods: add(int num) and getProduct(int k). You can assume that always the current list has at least k numbers. At any time, the product of any contiguous sequence of numbers will fit into a single 32-bit integer without overflowing.

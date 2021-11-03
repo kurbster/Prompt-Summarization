@@ -1,0 +1,1 @@
+ Given a number of digits ```digits```, find the smallest integer whose square is greater or equal to the sum of the squares of the first ```digits``` digits of pi, including the ```3``` before the decimal point.

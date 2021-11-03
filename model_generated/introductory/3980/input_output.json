@@ -1,0 +1,1 @@
+{"fn_name": "reverse", "inputs": [["hello world"], ["HELLO WORLD"], ["HeLlo World"], ["WWW"], ["parallel universe"], ["shhh"], ["bookkeeper"]], "outputs": [["heLLo world"], ["HEllO WORLD"], ["HeLlo World"], ["www"], ["paraLLel universe"], ["sHHH"], ["bOOKKEEper"]]}

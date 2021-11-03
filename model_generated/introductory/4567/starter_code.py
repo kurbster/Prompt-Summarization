@@ -1,0 +1,2 @@
+def pillow(s):
+	

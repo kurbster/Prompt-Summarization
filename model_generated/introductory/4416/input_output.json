@@ -1,0 +1,1 @@
+{"fn_name": "loose_change", "inputs": [[56], [0], [100], [-3], [7.9]], "outputs": [[{"Nickels": 1, "Pennies": 1, "Dimes": 0, "Quarters": 2}], [{"Nickels": 0, "Pennies": 0, "Dimes": 0, "Quarters": 0}], [{"Nickels": 0, "Pennies": 0, "Dimes": 0, "Quarters": 4}], [{"Nickels": 0, "Pennies": 0, "Dimes": 0, "Quarters": 0}], [{"Nickels": 1, "Pennies": 2, "Dimes": 0, "Quarters": 0}]]}

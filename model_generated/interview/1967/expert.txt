@@ -1,0 +1,1 @@
+ Given a list of strings, split them into a list of strings, where each string is of length 3 and starts with 0, 1 or 2 characters. For example, given [ "0", "1", "2" ], the output should be [ "0", "1", "2", "3" ], [ "0", "1", "2", "3", "4" ], [ "0", "1",

@@ -1,0 +1,1 @@
+ You are given a 2D array and a string. Your function should return true or false depending on whether the string is found in the array as per Boggle rules.

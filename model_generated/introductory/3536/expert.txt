@@ -1,0 +1,2 @@
+ Given a gear train, find RPM of the first and last cogs. 
+2

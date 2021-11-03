@@ -1,0 +1,1 @@
+ Given an integer N, your task is to find out the number of integer pairs with LCM equal to N.

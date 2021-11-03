@@ -1,0 +1,1 @@
+ You are given a string. Return true if it is a haiku. ## Examples ``` An old silent pond... A frog jumps into the pond, splash! Silence again. ``` ...should return `True`, as this is a valid 5 7 5 haiku: ``` An old si lent pond...            # 5 syllables A frog jumps in to the pond,      # 7 splash! Si lence a gain.          # 5 ``` Another example: ``` Autumn moonlight

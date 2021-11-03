@@ -1,0 +1,2 @@
+def swap(string_):
+	

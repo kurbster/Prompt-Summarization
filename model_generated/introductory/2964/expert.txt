@@ -1,0 +1,1 @@
+ You are given an array of minimum 4 positive integers. You need to return the sum of the lowest positive numbers. 

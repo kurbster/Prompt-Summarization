@@ -1,0 +1,1 @@
+{"fn_name": "is_isogram", "inputs": [["Dermatoglyphics"], ["isogram"], ["moose"], ["isIsogram"], ["aba"], ["moOse"], ["thumbscrewjapingly"], ["abcdefghijklmnopqrstuvwxyz"], ["abcdefghijklmnopqrstuwwxyz"], [""]], "outputs": [[true], [true], [false], [false], [false], [false], [true], [true], [false], [true]]}

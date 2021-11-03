@@ -1,0 +1,74 @@
+You are given a system of pipes. It consists of two rows, each row consists of $n$ pipes. The top left pipe has the coordinates $(1, 1)$ and the bottom right — $(2, n)$.
+
+There are six types of pipes: two types of straight pipes and four types of curved pipes. Here are the examples of all six types:
+
+ [Image] Types of pipes 
+
+You can turn each of the given pipes $90$ degrees clockwise or counterclockwise arbitrary (possibly, zero) number of times (so the types $1$ and $2$ can become each other and types $3, 4, 5, 6$ can become each other).
+
+You want to turn some pipes in a way that the water flow can start at $(1, 0)$ (to the left of the top left pipe), move to the pipe at $(1, 1)$, flow somehow by connected pipes to the pipe at $(2, n)$ and flow right to $(2, n + 1)$.
+
+Pipes are connected if they are adjacent in the system and their ends are connected. Here are examples of connected pipes:
+
+ [Image] Examples of connected pipes 
+
+Let's describe the problem using some example:
+
+ [Image] The first example input 
+
+And its solution is below:  [Image] The first example answer 
+
+As you can see, the water flow is the poorly drawn blue line. To obtain the answer, we need to turn the pipe at $(1, 2)$ $90$ degrees clockwise, the pipe at $(2, 3)$ $90$ degrees, the pipe at $(1, 6)$ $90$ degrees, the pipe at $(1, 7)$ $180$ degrees and the pipe at $(2, 7)$ $180$ degrees. Then the flow of water can reach $(2, n + 1)$ from $(1, 0)$.
+
+You have to answer $q$ independent queries.
+
+
+-----Input-----
+
+The first line of the input contains one integer $q$ ($1 \le q \le 10^4$) — the number of queries. Then $q$ queries follow.
+
+Each query consists of exactly three lines. The first line of the query contains one integer $n$ ($1 \le n \le 2 \cdot 10^5$) — the number of pipes in each row. The next two lines contain a description of the first and the second rows correspondingly. Each row description consists of $n$ digits from $1$ to $6$ without any whitespaces between them, each digit corresponds to the type of pipe in the corresponding cell. See the problem statement to understand which digits correspond to which types of pipes.
+
+It is guaranteed that the sum of $n$ over all queries does not exceed $2 \cdot 10^5$.
+
+
+-----Output-----
+
+For the $i$-th query print the answer for it — "YES" (without quotes) if it is possible to turn some pipes in a way that the water flow can reach $(2, n + 1)$ from $(1, 0)$, and "NO" otherwise.
+
+
+-----Example-----
+Input
+6
+7
+2323216
+1615124
+1
+3
+4
+2
+13
+24
+2
+12
+34
+3
+536
+345
+2
+46
+54
+
+Output
+YES
+YES
+YES
+NO
+YES
+NO
+
+
+
+-----Note-----
+
+The first query from the example is described in the problem statement.

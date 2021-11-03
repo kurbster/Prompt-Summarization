@@ -1,0 +1,1 @@
+ Given an array representing a series of floors you need to travel by elevator, return an integer representing the total distance travelled for visiting each floor in the array in order. 

@@ -1,0 +1,2 @@
+ Given two integers, calculate the number of moves it takes for the two rings to reach the same number. 
+`

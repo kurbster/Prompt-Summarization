@@ -1,0 +1,1 @@
+ You are given an array of integers. You need to delete numbers such that their list contains each number only up to N times, without changing the order. 

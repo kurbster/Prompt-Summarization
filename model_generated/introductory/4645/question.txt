@@ -1,0 +1,48 @@
+> If you've finished this kata, you can try the [more difficult version](https://www.codewars.com/kata/5b256145a454c8a6990000b5).
+
+
+## Taking a walk
+A promenade is a way of uniquely representing a fraction by a succession of “left or right” choices. 
+
+For example, the promenade `"LRLL"` represents the fraction `4/7`.
+
+Each successive choice (`L` or `R`) changes the value of the promenade by combining the values of the
+promenade before the most recent left choice with the value before the most recent right choice. If the value before the most recent left choice was *l/m* and the value before the most recent right choice
+was r/s then the new value will be *(l+r) / (m+s)*. 
+
+If there has never been a left choice we use *l=1* and *m=0*;  
+if there has never been a right choice we use *r=0* and *s=1*.
+
+
+So let's take a walk.
+
+* `""` An empty promenade has never had a left choice nor a right choice. Therefore we use *(l=1 and m=0)* and *(r=0 and s=1)*.  
+So the value of `""` is *(1+0) / (0+1) = 1/1*.
+* `"L"`. Before the most recent left choice we have `""`, which equals *1/1*. There still has never been a right choice, so *(r=0 and s=1)*. So the value of `"L"` is *(1+0)/(1+1) = 1/2*
+* `"LR"` = 2/3 as we use the values of `""` (before the left choice) and `"L"` (before the right choice)
+* `"LRL"` = 3/5 as we use the values of `"LR"` and `"L"`
+* `"LRLL"` = 4/7 as we use the values of `"LRL"` and `"L"` 
+
+
+Fractions are allowed to have a larger than b.
+
+
+## Your task
+
+Implement the `promenade` function, which takes an promenade as input (represented as a string), and returns 
+the corresponding fraction (represented as a tuple, containing the numerator and the denominator).
+
+```Python
+promenade("") == (1,1)
+promenade("LR") == (2,3)
+promenade("LRLL") == (4,7)
+```
+```Java
+Return the Fraction as an int-Array:
+promenade("") == [1,1]
+promenade("LR") == [2,3]
+promenade("LRLL") == [4,7]
+```
+
+
+*adapted from the 2016 British Informatics Olympiad*

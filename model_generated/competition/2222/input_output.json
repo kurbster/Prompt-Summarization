@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "2\n16 4\n...AAAAA........\ns.BBB......CCCCC\n........DDDDD...\n16 4\n...AAAAA........\ns.BBB....CCCCC..\n.......DDDDD....\n",
+    "2\n10 4\ns.ZZ......\n.....AAABB\n.YYYYYY...\n10 4\ns.ZZ......\n....AAAABB\n.YYYYYY...\n",
+    "1\n100 26\ns................PPPP.CCCCC..UUUUUU.........YYYQQQQQQQ...GGGGG............MMM.....JJJJ..............\n.OOOOOO....EEE....................................................SSSSSS........LLLLLL......NNNIIII.\n......FFFFFF...VVVV..ZZZBBB...KKKKK..WWWWWWWXXX..RRRRRRR......AAAAADDDDDDD.HHH............TTTTTTT...\n",
+    "2\n16 4\n...AAAAA........\ns.BBB......CCCCC\n........DDDDD...\n16 4\n...AAAAA........\ns.BBB....CCCCC..\n.......DDDDD....\n",
+    "2\n10 4\ns.ZZ......\n.....AAABB\n.YYYYYY...\n10 4\ns.ZZ......\n....AAAABB\n.YYYYYY...\n",
+    "1\n100 26\ns................PPPP.CCCCC..UUUUUU.........YYYQQQQQQQ...GGGGG............MMM.....JJJJ..............\n.OOOOOO....EEE....................................................SSSSSS........LLLLLL......NNNIIII.\n......FFFFFF...VVVV..ZZZBBB...KKKKK..WWWWWWWXXX..RRRRRRR......AAAAADDDDDDD.HHH............TTTTTTT...\n"
+  ],
+  "outputs": [
+    "YES\nNO\n",
+    "YES\nNO\n",
+    "YES\n",
+    "YES\nNO\n",
+    "YES\nNO\n",
+    "YES\n"
+  ]
+}

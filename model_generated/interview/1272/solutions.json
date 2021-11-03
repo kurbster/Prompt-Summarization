@@ -1,0 +1,1 @@
+["# cook your dish here\nn=int(input())\nfor _ in range(n):\n a=int(input())\n if(a%2==0):\n  f=(a//2)-1\n  s=a-f\n else:\n  f=(a//2)\n  s=a-f\n print(f,s)"]

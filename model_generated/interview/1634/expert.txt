@@ -1,0 +1,1 @@
+ You are given a list of numbers, you need to return a list containing all the numbers which are increasing or decreasing. Your function should accept a number and return a list containing all the numbers which are increasing or decreasing.

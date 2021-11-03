@@ -1,0 +1,1 @@
+ ## Nova polynomial add This kata is from a series on polynomial handling. ( [#1](http://www.codewars.com/kata/nova-polynomial-1-add-1) [#2](http://www.codewars.com/kata/570eb07e127ad107270005fe) [#3](http://www.codewars.com/kata/5714041e8807940ff3001140 ) [#4](http://www.codewars.com/kata/571a2e2

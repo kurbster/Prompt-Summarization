@@ -1,0 +1,1 @@
+ You are given an array/list of numbers without its last element. You need to write a function that returns an array/list without its last element.

@@ -1,0 +1,1 @@
+ Chef wants to gift pairs to his friends this new year. But his friends like good pairs only. A pair (a, b) is called a good pair if 1 <= a < b <= N such that GCD(a*b, P) = 1. Since Chef is busy in preparation for the party, he wants your help to find all the good pairs. 

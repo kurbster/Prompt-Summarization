@@ -1,0 +1,1 @@
+ Given an array of positive integers. The array should be sorted by the amount of distinct perfect squares and reversed, that can be generated from each number permuting its digits. E.g.: ```arr = [715, 112, 136, 169, 144]```  ```  Number   Perfect Squares w/ its Digits   Amount  715                -                       0  112               121                      1  

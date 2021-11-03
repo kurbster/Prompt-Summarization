@@ -1,0 +1,46 @@
+# Disclaimer
+
+This Kata is an insane step-up from [GiacomoSorbi's Kata](https://www.codewars.com/kata/total-increasing-or-decreasing-numbers-up-to-a-power-of-10/python),
+so I recommend to solve it first before trying this one.
+
+# Problem Description
+
+A positive integer `n` is called an *increasing number* if its digits are in increasing order
+(e.g. 123, 144568, 56799).
+
+Similarly, `n` is called a *decreasing number* if its digits are in decreasing order
+(e.g. 210, 76642, 998500).
+
+Note that the numbers whose digits are all the same (e.g. 1111, 22222) are both increasing and decreasing.
+
+Given the maximum number of digits (`max_digits`), how many positive integers in the range are either increasing or decreasing (or both)?
+Since your answer will be very large, please give your answer **modulo 12345787**.
+
+Also note that, unlike Giacomo's version, the number zero is excluded from the counts
+(because it's not positive).
+
+# Constraints
+
+`1 <= max_digits <= 10 ** 9`
+
+**Note the input size!**
+
+The input will be always a valid integer.
+
+# Examples
+
+```python
+# Up to two digits, all numbers are either increasing or decreasing
+insane_inc_or_dec(1) == 9
+insane_inc_or_dec(2) == 99
+insane_inc_or_dec(3) == 474
+insane_inc_or_dec(4) == 1674
+insane_inc_or_dec(5) == 4953
+insane_inc_or_dec(6) == 12951
+```
+
+# Acknowledgement
+
+This problem was inspired by [Project Euler #113: Non-bouncy Numbers](https://projecteuler.net/problem=113).
+
+If you enjoyed this Kata, please also have a look at [my other Katas](https://www.codewars.com/users/Bubbler/authored)!

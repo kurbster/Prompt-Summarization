@@ -1,0 +1,1 @@
+{"fn_name": "namelist", "inputs": [[[{"name": "Bart"}, {"name": "Lisa"}, {"name": "Maggie"}, {"name": "Homer"}, {"name": "Marge"}]], [[{"name": "Bart"}, {"name": "Lisa"}, {"name": "Maggie"}]], [[{"name": "Bart"}, {"name": "Lisa"}]], [[{"name": "Bart"}]], [[]]], "outputs": [["Bart, Lisa, Maggie, Homer & Marge"], ["Bart, Lisa & Maggie"], ["Bart & Lisa"], ["Bart"], [""]]}

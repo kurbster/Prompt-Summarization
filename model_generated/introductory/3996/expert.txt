@@ -1,0 +1,1 @@
+ You are given an array of integers. You need to find the sum squares of the elements at even positions (*i.e.,* 2nd, 4th, *etc.*) plus the sum of the rest of the elements at odd position. For empty arrays, result should be 0 (zero) (except for Haskell). 

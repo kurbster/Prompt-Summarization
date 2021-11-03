@@ -1,0 +1,1 @@
+ Given a rational number n ``` n >= 0, with denominator strictly positive```   - as a string (example: "2/3" in Ruby, Python, Clojure, JS, CS, Go)  - or as two strings (example: "2" "3" in Haskell, Java, CSharp, C++, Swift)  - or as a rational or decimal number (example: 3/4, 0.67 in R)  - or two integers

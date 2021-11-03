@@ -1,0 +1,2 @@
+def champernowneDigit(n):
+	

@@ -1,0 +1,1 @@
+ Given some cipher text, a function should return the length of the key that was used to encrypt it. 

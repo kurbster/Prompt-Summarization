@@ -1,0 +1,1 @@
+ You are given an input string S.  S is a string of n characters. S is a string of n characters.  The input string S is "RBYYBBRRB", "YRBGB", "G", "GGGGG", or "RBYYBBRRB", "YRBGB", "G", "GGGGG".  The input string S is "WRRBBW", "RB", or "WRRBBW", "RB".

@@ -1,0 +1,1 @@
+{"fn_name": "solve", "inputs": [["aaab"], ["abcabc"], ["4455"], ["zazcbaabc"], ["223456776543"], ["432612345665"], ["qponmlkjihgfeeiefghijklmnopqrsttsr"]], "outputs": [[false], [false], [true], [true], [true], [false], [false]]}

@@ -1,0 +1,1 @@
+{"inputs": [["5", "1 1", "R", "2 3", "LLRU", "3 2", "LLRU", "4 3", "ULURUDRDLD", "3 6", "RURUR"]], "outputs": [["unsafe", "safe", "unsafe", "safe", "safe"]]}

@@ -1,0 +1,1 @@
+{"fn_name": "remove_url_anchor", "inputs": [["www.codewars.com#about"], ["www.codewars.com/katas/?page=1#about"], ["www.codewars.com/katas/"]], "outputs": [["www.codewars.com"], ["www.codewars.com/katas/?page=1"], ["www.codewars.com/katas/"]]}

@@ -1,0 +1,1 @@
+ Write a function ```dithering(width, height)``` which yields coordinate tuples: ```python g = dithering(6, 5) for i in range(7):   print g.next() ``` Will print: ``` (0, 0) (4, 4) (4, 0) (0, 4) (2, 2) (2, 0) (2, 4) ```

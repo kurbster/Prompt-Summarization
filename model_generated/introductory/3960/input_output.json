@@ -1,0 +1,1 @@
+{"fn_name": "align_right", "inputs": [["abc def", 10], ["I take up the whole line", 24], ["Two lines, I am", 10]], "outputs": [["   abc def"], ["I take up the whole line"], ["Two lines,\n      I am"]]}

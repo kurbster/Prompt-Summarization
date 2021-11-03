@@ -1,0 +1,1 @@
+{"inputs": [["20 3", "3", "2", "5"]], "outputs": [["6", "Hint:", "You may use  64 -bit integers ( long long  in C/C++) to avoid errors while multiplying large integers. The maximum value you can store in a  32 -bit integer is  2 31 \u2212 1 , which is approximately  2 \u22c5 10 9 .  64 -bit integers can store values greater than  10 18 ."]]}

@@ -1,0 +1,1 @@
+{"fn_name": "count_adjacent_pairs", "inputs": [[""], ["orange Orange kiwi pineapple apple"], ["banana banana banana"], ["banana banana banana terracotta banana terracotta terracotta pie!"], ["pineapple apple"]], "outputs": [[0], [1], [1], [2], [0]]}

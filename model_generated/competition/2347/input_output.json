@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "9\n6 4\n100110\n3 2\n1?1\n3 2\n1?0\n4 4\n????\n7 4\n1?0??1?\n10 10\n11??11??11\n4 2\n1??1\n4 4\n?0?0\n6 2\n????00\n"
+  ],
+  "outputs": [
+    "YES\nYES\nNO\nYES\nYES\nNO\nNO\nYES\nNO\n"
+  ]
+}

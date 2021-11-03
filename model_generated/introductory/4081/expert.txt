@@ -1,0 +1,1 @@
+ Given an array of numbers, return the index of the lump that is most pronounced. The most pronounced lump is the one that has the biggest differential to its surrounding values. If there is no distinct highest value (more than one occurence of the largest differential), return -1.

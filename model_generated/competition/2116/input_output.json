@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    "3\ncbabc\n",
+    "2\nabcab\n",
+    "3\nbcabcbaccba\n",
+    "5\nimmaydobun\n",
+    "5\nwjjdqawypvtgrncmqvcsergermprauyevcegjtcrrblkwiugrcjfpjyxngyryxntauxlouvwgjzpsuxyxvhavgezwtuzknetdibv\n",
+    "10\nefispvmzuutsrpxzfrykhabznxiyquwvhwhrksrgzodtuepfvamilfdynapzhzyhncorhzuewrrkcduvuhwsrprjrmgctnvrdtpj\n",
+    "20\nhlicqhxayiodyephxlfoetfketnaabpfegqcrjzlshkxfzjssvpvzhzylgowwovgxznzowvpklbwbzhwtkkaomjkenhpedmbmjic\n",
+    "50\ntyhjolxuexoffdkdwimsjujorgeksyiyvvqecvhpjsuayqnibijtipuqhkulxpysotlmtrsgygpkdhkrtntwqzrpfckiscaphyhv\n",
+    "1\nbaaa\n",
+    "5\nbbbbba\n",
+    "10\nbbabcbbaabcbcbcbaabbccaacccbbbcaaacabbbbaaaccbcccacbbccaccbbaacaccbabcaaaacaccacbaaccaaccbaacabbbaac\n"
+  ],
+  "outputs": [
+    "a\n",
+    "aab\n",
+    "aaabb\n",
+    "ab\n",
+    "aaaabbcccccddeeeeeefggggggghiijjjjjjkkllmmnnnnoppppqqrrrrrrrrsstttttu\n",
+    "aaabcccddddeeeffffgghhhhhhhiiijjkkklm\n",
+    "aaaabbbbcccddeeeeeeffffg\n",
+    "aab\n",
+    "aaab\n",
+    "ab\n",
+    "aaaaaaaaaaa\n"
+  ]
+}

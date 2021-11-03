@@ -1,0 +1,2 @@
+def distribute(m, n):
+	

@@ -1,0 +1,1 @@
+ Given a time t, get n seconds before t

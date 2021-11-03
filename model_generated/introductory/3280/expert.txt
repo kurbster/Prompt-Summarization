@@ -1,0 +1,1 @@
+ You are given seconds (a non-negative integer) as input. You need to return the time (hh:mm:ss) in human readable format (`HH:MM:SS`) 

@@ -1,0 +1,1 @@
+ A circle is defined by three coplanar points that are not aligned. You will be given a list of circles and a point [xP, yP]. You have to create a function, `count_circles()` (Javascript `countCircles()`), that will count the amount of circles that contains the point P inside (the circle border line is included). `python list_of_circles = ([[[-3,2], [1,1], [6,4]], [[-

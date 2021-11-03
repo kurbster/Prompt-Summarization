@@ -1,0 +1,1 @@
+{"fn_name": "cube_odd", "inputs": [[[1, 2, 3, 4]], [[-3, -2, 2, 3]], [["a", 12, 9, "z", 42]], [[true, false, 2, 4, 1]]], "outputs": [[28], [0], [null], [null]]}

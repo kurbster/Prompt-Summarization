@@ -1,0 +1,2 @@
+ Given a list of strings, return list of strings which are possibley invalid in any order. 
+=====Input Format===== A single line containing the string S and integer value k separated by a space. =====Constraints===== 0<k≤len(S) The string contains only UPPERCASE characters. =====Output Format===== Print the combinations with their replacements of string S on separate lines.

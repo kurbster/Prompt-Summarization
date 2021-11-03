@@ -1,0 +1,1 @@
+ An architect wants to construct a vaulted building supported by a family of arches Cn. fn(x) = -nx - xlog(x) is the equation of the arch Cn where `x` is a positive real number (0 < x <= 1), `log(x)` is the natural logarithm (base e), `n` a non negative integer. Let fn(0) = 0. Be An the point of Cn where the tangent to Cn is horizontal and Bn+1 the orthogonal projection of An on

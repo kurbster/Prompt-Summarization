@@ -1,0 +1,1 @@
+{"inputs": [["5 6", "html text/html", "htm text/html", "png image/png", "svg image/svg+xml", "txt text/plain", "index.html", "this.file.has.lots.of.dots.txt", "nodotsatall", "virus.exe", "dont.let.the.png.fool.you", "case.matters.TXT"]], "outputs": [["text/html", "text/plain", "unknown", "unknown", "unknown", "unknown"]]}

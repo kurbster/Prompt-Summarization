@@ -1,0 +1,1 @@
+["t = int(input())\nfor i in range(t):\n n = int(input())\n suffixes = {}\n xx = input().split()\n for x in range(n):\n  try:\n   a = suffixes[xx[x][-3:]]\n  except Exception as e:\n   a = []\n  a.append(xx[x])\n\n  suffixes.update({xx[x][-3:]: a})\n\n print(\"Case : %d\" % (i + 1))\n for a in sorted(suffixes):\n  print(\"\".join(b + \" \" for b in sorted(suffixes[a])).strip())"]

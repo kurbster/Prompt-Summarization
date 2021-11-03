@@ -1,0 +1,2 @@
+def josephus(items,k):
+	

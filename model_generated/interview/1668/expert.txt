@@ -1,0 +1,1 @@
+ Given an integer, return the next smaller integer containing the same digits. Return -1 (for Haskell: return `Nothing`, for Rust: return `None`), when there is no smaller number that contains the same digits. Also return -1 when the next smaller number with the same digits would require the leading digit to be zero. 

@@ -1,0 +1,1 @@
+ You are given a list of integers. You need to determine the number of odd numbers. 

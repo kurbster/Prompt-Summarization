@@ -1,0 +1,1 @@
+ You are given an equation. Return the result without order of operations.

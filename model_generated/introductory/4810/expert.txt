@@ -1,0 +1,1 @@
+ You are given an array of edges and a string. Based on the edges, you should build a minimum/maximum spanning tree. 

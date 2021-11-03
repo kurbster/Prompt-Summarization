@@ -1,0 +1,1 @@
+ You are given a string and you want to return a new string containing all the vowels [a,e,i,o,u] in that order.   Your function should be case insensitive to the vowels.

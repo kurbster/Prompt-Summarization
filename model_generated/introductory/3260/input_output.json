@@ -1,0 +1,1 @@
+{"fn_name": "rearranger", "inputs": [[4, 32, 3, 34, 7, 12], [10, 32, 3, 34, 7, 12]], "outputs": [["Rearrangement: 12, 3, 34, 7, 32 generates: 12334732 divisible by 4"], ["There is no possible rearrangement"]]}

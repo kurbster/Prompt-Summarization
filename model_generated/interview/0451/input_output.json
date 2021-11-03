@@ -1,0 +1,1 @@
+{"fn_name": "isRationalEqual", "inputs": [["\"0.(52)\"", "\"0.5(25)\""]], "outputs": [true]}

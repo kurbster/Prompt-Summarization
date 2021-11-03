@@ -1,0 +1,1 @@
+{"fn_name": "increment_string", "inputs": [["foo"], ["foobar001"], ["foobar1"], ["foobar00"], ["foobar99"], [""], ["foobar000"], ["foobar999"], ["foobar00999"], ["1"], ["009"]], "outputs": [["foo1"], ["foobar002"], ["foobar2"], ["foobar01"], ["foobar100"], ["1"], ["foobar001"], ["foobar1000"], ["foobar01000"], ["2"], ["010"]]}

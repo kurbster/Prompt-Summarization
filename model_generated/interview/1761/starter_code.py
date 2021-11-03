@@ -1,0 +1,2 @@
+def find(n):
+	

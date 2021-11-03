@@ -1,0 +1,1 @@
+ Given SHA-256 hash, return the value that was hashed. You are also given the characters that make the expected value, but in alphabetical order. The returned value is less than 10 characters long. Return `nil` for Ruby and Crystal, `None` for Python, `null` for Java when the hash cannot be cracked with the given characters. 

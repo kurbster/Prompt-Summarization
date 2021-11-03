@@ -1,0 +1,1 @@
+ You are given a string. If the string is a valid IPv4 address, return "IPv4". If the string is a valid IPv6 address, return "IPv6". If the string is a valid IPv4 address or a valid IPv6 address, return "IPv4". If the string is neither a IPv4 address nor a IPv6 address, return "Neither".

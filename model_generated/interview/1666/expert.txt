@@ -1,0 +1,1 @@
+ Given an array X of positive integers, transform it and return the transformed sum.

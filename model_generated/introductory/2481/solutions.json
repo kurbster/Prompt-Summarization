@@ -1,0 +1,1 @@
+["class Solution:\n     def arrayPairSum(self, nums):\n         \"\"\"\n         :type nums: List[int]\n         :rtype: int\n         \"\"\"\n         nums.sort()\n         return sum(nums[::2])"]

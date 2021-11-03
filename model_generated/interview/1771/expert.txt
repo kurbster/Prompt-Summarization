@@ -1,0 +1,1 @@
+ Given a set of positive integers `S`, your task is to write a generator function that generates the members of the closure of `S` in ascending numerical order. 

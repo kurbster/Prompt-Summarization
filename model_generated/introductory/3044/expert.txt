@@ -1,0 +1,1 @@
+ In this Kata, you will be given a string and your task is to determine if that string can be a palindrome if we rotate one or more characters to the left.  Input will be strings of lowercase letters or numbers only.  Good luck!

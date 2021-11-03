@@ -1,0 +1,1 @@
+{"fn_name": "next_item", "inputs": [[[1, 2, 3, 4, 5, 6, 7, 8], 3], [["a", "b", "c"], "d"], [["a", "b", "c"], "c"], ["testing", "t"], ["Hello!", "o"], ["Hello!", "!"], ["Hello!", "x"]], "outputs": [[4], [null], [null], ["e"], ["!"], [null], [null]]}

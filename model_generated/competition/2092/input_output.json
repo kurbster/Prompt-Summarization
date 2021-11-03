@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "4\nSVO\nSVO->CDG\nLHR->SVO\nSVO->LHR\nCDG->SVO\n",
+    "3\nSVO\nSVO->HKT\nHKT->SVO\nSVO->RAP\n",
+    "1\nESJ\nESJ->TSJ\n",
+    "2\nXMR\nFAJ->XMR\nXMR->FAJ\n",
+    "3\nZIZ\nDWJ->ZIZ\nZIZ->DWJ\nZIZ->DWJ\n",
+    "10\nPVO\nDMN->PVO\nDMN->PVO\nPVO->DMN\nDMN->PVO\nPVO->DMN\nPVO->DMN\nPVO->DMN\nDMN->PVO\nPVO->DMN\nDMN->PVO\n",
+    "11\nIAU\nIAU->RUQ\nIAU->RUQ\nRUQ->IAU\nRUQ->IAU\nIAU->RUQ\nRUQ->IAU\nIAU->RUQ\nRUQ->IAU\nIAU->RUQ\nIAU->RUQ\nRUQ->IAU\n",
+    "10\nHPN\nDFI->HPN\nHPN->KAB\nHPN->DFI\nVSO->HPN\nHPN->KZX\nHPN->VSO\nKZX->HPN\nLDW->HPN\nKAB->HPN\nHPN->LDW\n",
+    "11\nFGH\nFGH->BRZ\nUBK->FGH\nQRE->FGH\nFGH->KQK\nFGH->QRE\nKQK->FGH\nFGH->UBK\nBRZ->FGH\nFGH->ALX\nALX->FGH\nFGH->KQK\n",
+    "50\nPFH\nJFV->PFH\nBVP->PFH\nPFH->BVP\nPFH->JFV\nPFH->ETQ\nPFH->LQJ\nZTO->PFH\nPFH->BVP\nPFH->RXO\nPFH->ZTO\nHWL->PFH\nPFH->HIV\nPFH->AFP\nPFH->HWL\nOBB->PFH\nHIV->PFH\nPFH->LSR\nAFP->PFH\nLQJ->PFH\nHWL->PFH\nETQ->PFH\nPFH->HWL\nLSR->PFH\nWBR->PFH\nBNZ->PFH\nHQR->PFH\nZTO->PFH\nPFH->WBR\nPFH->BYJ\nRXO->PFH\nFHZ->PFH\nFHZ->PFH\nPFN->PFH\nPFH->GMB\nPFH->JFV\nJFV->PFH\nGNZ->PFH\nPFH->BNZ\nPFH->GNZ\nPFH->HQR\nBYJ->PFH\nGMB->PFH\nPFH->FHZ\nPFH->FHZ\nPFH->ZTO\nPFH->UGD\nBVP->PFH\nUGD->PFH\nPFH->PFN\nPFH->OBB\n",
+    "1\nAAK\nAAK->ABA\n",
+    "1\nXYZ\nXYZ->XYR\n"
+  ],
+  "outputs": [
+    "home\n",
+    "contest\n",
+    "contest\n",
+    "home\n",
+    "contest\n",
+    "home\n",
+    "contest\n",
+    "home\n",
+    "contest\n",
+    "home\n",
+    "contest\n",
+    "contest\n"
+  ]
+}

@@ -1,0 +1,1 @@
+{"fn_name": "isSubsequence", "inputs": [["\"abc\"", "\"ahbgdc\""]], "outputs": [true]}

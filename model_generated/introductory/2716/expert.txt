@@ -1,0 +1,1 @@
+ You are given a string. You want to encode all the lowercase vowels in the string using numbers. Then you want to decode the numbers back into vowels. 

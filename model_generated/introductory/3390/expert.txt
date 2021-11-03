@@ -1,0 +1,1 @@
+ Given an integer, check if it is a narcissistic number in base 10

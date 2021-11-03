@@ -1,0 +1,1 @@
+{"fn_name": "is_sorted_and_how", "inputs": [[[1, 2]], [[15, 7, 3, -8]], [[4, 2, 30]]], "outputs": [["yes, ascending"], ["yes, descending"], ["no"]]}

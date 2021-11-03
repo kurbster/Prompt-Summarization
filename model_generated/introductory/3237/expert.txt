@@ -1,0 +1,1 @@
+ You are given a table with number column. You need to return a table with is_even column containing "Even" or "Odd" depending on number column values.

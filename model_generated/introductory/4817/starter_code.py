@@ -1,0 +1,2 @@
+def spread(func, args):
+	

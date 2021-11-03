@@ -1,0 +1,1 @@
+{"fn_name": "caesar_crypto_encode", "inputs": [["123,.)(!?", 10], ["", 10], [null, 10], ["   ", 10], ["Hello world!", 127], ["eBIIL TLOIA!", -127], ["ksdjai8983hdk?}{", 15], ["Hello world!", 0]], "outputs": [["123,.)(!?"], [""], [""], [""], ["eBIIL TLOIA!"], ["Hello world!"], ["zHsypx8983wsz?}{"], ["Hello world!"]]}

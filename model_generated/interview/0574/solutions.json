@@ -1,0 +1,1 @@
+["for t in range(int(input())):\n n=int(input())\n a=list(map(int,input().split()))\n s=0\n l=[]\n for i in range(n):\n  if (a[i]<0):\n   e=i\n   ss=sum(a[s:e])\n   l.append((ss,e-s,n-s))\n   s=i+1\n e=n\n ss=sum(a[s:e])\n l.append((ss,e-s,n-s))\n x=max(l)\n s=n-x[2]\n e=x[1]+s\n for i in range(s,e):\n  print(a[i], end=' ')\n print(\"\")"]

@@ -1,0 +1,2 @@
+def slogans(p,r):
+	

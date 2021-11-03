@@ -1,0 +1,1 @@
+{"fn_name": "words_to_marks", "inputs": [["attitude"], ["friends"], ["family"], ["selfness"], ["knowledge"]], "outputs": [[100], [75], [66], [99], [96]]}

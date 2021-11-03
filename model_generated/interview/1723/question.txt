@@ -1,0 +1,50 @@
+## Bezier curves
+
+When a shape is described using vector graphics, its outline is often described as a sequence of linear, quadratic, and cubic Bezier curves. You can read about [Bézier curves](https://en.wikipedia.org/wiki/B%C3%A9zier_curve) on Wikipedia. 
+
+You don't need to know much about Bezier curves to solve this kata. Just know that the equations of the linear, quadratic, and cubic curves are given by (respectively):
+
+1. `P(t) = (1 - t) * P0 + t * P1`
+2. `P(t) = (1 - t)**2 * P0 + 2 * (1 - t) * t * P1 + t**2 * P2`
+3. `P(t) = (1 - t)**3 * P0 + 3 * (1 - t)**2 * t * P1 + 3 * (1 - t) * t**2 * P2 + t**3 * P3`
+
+The points `P0`, `P1`, `P2`, `P3` are called the control points of the curve, and `t` is a variable, which, when taking values from `0` to `1`, will cause `P(t)` to trace the curve.
+
+This should suffice to implement the `point_at(t)` method of the classes you are to implement.
+
+To implement the `sub_segment(t)` method, see, in particular, the section on Constructing Bézier Curves of the above referenced Wikipedia article.
+
+This section shows animations of how the Bézier curves grow. The animations are showing longer and longer subsegments, hence showing how subsegments are constructed. If you look closely at the quad curve animation, you can see how the control points move from starting all at P0 and ending up at P0, P1 and P2 respectively. Now look closely at the animation of the cubic curve. See how the control points of the growing subsection start at P0 and end up at P0, P1, P2, and P3. No need to read anything, just look. At the end of the referenced subsection there is a link to de Casteljau's algorithm, which you might find helpful, but I wouldn't go there. Just look carefully at the animations.
+
+In this kata, you are asked to implement a class for each of the linear, quadratic, and cubic Bézier curves. These classes must extend the following abstract base class and implement the abstract methods:
+
+```Python
+from abc import ABCMeta, abstractmethod
+
+
+class Segment(metaclass=ABCMeta):
+
+    @property
+    @abstractmethod
+    def control_points(self):
+        pass
+
+    @abstractmethod
+    def point_at(self, t):
+        pass
+
+    @abstractmethod
+    def sub_segment(self, t):
+        pass
+```
+
+`control_points` is a property that returns the coordinates of the points that define the curve. Since the linear curve has two control points (the start and end of the segment), `control_points` will hold 4 floats, which are the x- and y-coordinates of the first point followed by the x- and y-coordinates of the second point.  For the quadratic and cubic curves there are 6 and 8 control points respectively.
+
+The method `point_at(t)` should return the point obtained when inserting `t` in the equation for the curve. This method will be tested for values of `t` in the interval `[0, 1]` only (although it's possible to extrapolate the curve). 
+
+The method `sub_segment(t_0)` should return the curve that starts at the first point and ends at the point returned by `point_at(t_0)` and follows the curve of the object that this method is invoked on otherwise. For example, if `quad` is a quadratic curve, then `quad.sub_segment(t_0)` is a quadratic curve that starts at `quad`'s first point and ends at `quad.point_at(t_0)` and follows `quad`'s curve. More precisely, 
+
+```
+quad.point_at(t_0 * t) == quad.sub_segment(t_0).point_at(t)
+```
+for all values of `t` in the interval `[0, 1]`.

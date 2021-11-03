@@ -1,0 +1,2 @@
+def minimum(arr):
+	

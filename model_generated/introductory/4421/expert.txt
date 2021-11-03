@@ -1,0 +1,1 @@
+ You are given a string, which may contain time. Your task is to parse time from this string. 

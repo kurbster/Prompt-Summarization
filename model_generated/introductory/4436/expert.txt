@@ -1,0 +1,1 @@
+ you are given two integers m and n (m <= n <= 50000), your task is to calculate the sum of all the numbers from 0 to n^m. 

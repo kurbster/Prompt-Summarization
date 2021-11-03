@@ -1,0 +1,2 @@
+ You are given price table p p = [ 0,  1,  5,  8,  9, 10] and a list of positive integers n
+_

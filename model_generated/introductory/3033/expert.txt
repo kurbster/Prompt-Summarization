@@ -1,0 +1,1 @@
+ You are given tickscript. You need to convert it to simple python.

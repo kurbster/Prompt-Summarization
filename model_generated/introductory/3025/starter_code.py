@@ -1,0 +1,2 @@
+def locate(seq, value):
+	

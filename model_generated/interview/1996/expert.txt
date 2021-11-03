@@ -1,0 +1,1 @@
+ You are given a graph with N nodes with labels 0, 1, ..., N-1, where N is the length of graph. The graph is given in the following form: graph[i] is a list of labels j such that (i, j) is a directed edge of the graph. Example: Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]] Output: [2,4,5,6] Here is a diagram of the above graph. Note:

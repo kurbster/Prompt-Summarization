@@ -1,0 +1,1 @@
+ Given two strings, if the first one contains the word "berhampore", print the second one. If the first one contains the word "serampore", print the second one. If the first one contains neither, print the second one. If both strings contain the word "berhampore", print "both". 

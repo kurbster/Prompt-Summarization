@@ -1,0 +1,1 @@
+{"fn_name": "pig_latin", "inputs": [["Hello"], ["CCCC"], ["tes3t5"], ["ay"], [""], ["YA"], ["123"], ["ya1"], ["yaYAya"], ["YayayA"]], "outputs": [["ellohay"], ["ccccay"], [null], ["ayway"], [null], ["ayay"], [null], [null], ["ayayayay"], ["ayayayay"]]}

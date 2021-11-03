@@ -1,0 +1,1 @@
+{"fn_name": "lcs", "inputs": [["a", "b"], ["a", "a"], ["abc", "ac"], ["abcdef", "abc"], ["abcdef", "acf"], ["anothertest", "notatest"], ["132535365", "123456789"], ["finaltest", "zzzfinallyzzz"]], "outputs": [[""], ["a"], ["ac"], ["abc"], ["acf"], ["nottest"], ["12356"], ["final"]]}

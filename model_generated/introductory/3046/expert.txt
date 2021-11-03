@@ -1,0 +1,1 @@
+ Given a positive integer `n`, return first n dgits of Thue-Morse sequence, as a string. ![alt](https://upload.wikimedia.org/wikipedia/commons/f/f1/Morse-Thue_sequence.gif) Ex.: ```python thue_morse(1);  #"0" thue_morse(2);  #"01" thue_morse(5);  #"01101

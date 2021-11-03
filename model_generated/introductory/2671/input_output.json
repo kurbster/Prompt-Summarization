@@ -1,0 +1,1 @@
+{"fn_name": "cat_mouse", "inputs": [["..D.....C.m", 2], ["............C.............D..m...", 8], ["m.C...", 5], [".CD......m.", 10], [".CD......m.", 1]], "outputs": [["Caught!"], ["Escaped!"], ["boring without all three"], ["Protected!"], ["Escaped!"]]}

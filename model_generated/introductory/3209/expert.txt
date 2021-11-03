@@ -1,0 +1,1 @@
+ You are given three non-negative integers `x,y,z`. They represent the remainders of the unknown positive integer `n` divided by 3,5,7. That is: `n % 3 = x, n % 5 = y, n % 7 = z` Your task is to find the minimum possible positive integer `n` and return it. 

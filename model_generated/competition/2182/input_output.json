@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "tinkoff\nzscoder\n",
+    "xxxxxx\nxxxxxx\n",
+    "ioi\nimo\n",
+    "abc\naaa\n",
+    "reddit\nabcdef\n",
+    "cbxz\naaaa\n",
+    "bcdef\nabbbc\n",
+    "z\ny\n",
+    "y\nz\n"
+  ],
+  "outputs": [
+    "fzfsirk\n",
+    "xxxxxx\n",
+    "ioi\n",
+    "aab\n",
+    "dfdeed\n",
+    "abac\n",
+    "bccdb\n",
+    "z\n",
+    "y\n"
+  ]
+}

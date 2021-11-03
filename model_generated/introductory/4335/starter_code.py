@@ -1,0 +1,2 @@
+def anagrams(word, words):
+	

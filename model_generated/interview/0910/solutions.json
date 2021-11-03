@@ -1,0 +1,1 @@
+["t =int(input())\r\nfor i in range(t):\r\n    C=[ord(x)-ord('R') for x in list(input())]\r\n    N=int(input())\r\n    L=sum(C)\r\n    r=1\r\n    c=0\r\n    while(r*L<N*12):\r\n        c+=N*12-r*L\r\n        r+=1\r\n    print(c)\r\n\r\n\r\n\r\n\r\n\r\n\r\n"]

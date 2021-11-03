@@ -1,0 +1,1 @@
+ Given an array of integers, you need to select two numbers from that array such that the product of their sum will be minimum.  Constraints: 1 <= n <= 100 1 <= nums[i] <= n - 1 0 <= nums[i] <= 1000

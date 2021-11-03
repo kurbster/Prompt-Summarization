@@ -1,0 +1,1 @@
+ Find the amount of pairs that have the same digits but in different order when an integer of range nMax is multiplied by k.

@@ -1,0 +1,1 @@
+ Given a m x n matrix targetGrid, where targetGrid[row][col] is the color in the position (row, col) of the grid. Return true if it is possible to print the matrix targetGrid, otherwise, return false.

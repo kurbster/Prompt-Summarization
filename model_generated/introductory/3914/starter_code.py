@@ -1,0 +1,2 @@
+def dominator(arr):
+	

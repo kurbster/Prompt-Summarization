@@ -1,0 +1,1 @@
+{"fn_name": "encode", "inputs": [["hello"], ["How are you today?"], ["This is an encoding test."]], "outputs": [["h2ll4"], ["H4w 1r2 y45 t4d1y?"], ["Th3s 3s 1n 2nc4d3ng t2st."]]}

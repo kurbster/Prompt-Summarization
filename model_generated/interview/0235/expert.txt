@@ -1,0 +1,1 @@
+ You are given an array A consisting of N numbers. A slice of that array is any pair of integers (P, Q) such that 0 <= P < Q <= N. A slice (P, Q) of array A is called arithmetic if the sequence:     A[P], A[p + 1], ..., A[Q - 1], A[Q] is arithmetic. In particular, this means that P + 1 < Q. You need to return the number of arithmetic slices in the array A. 

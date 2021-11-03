@@ -1,0 +1,1 @@
+ You are given a 5 digit number. You need to return a string with 5 digit padded number. 

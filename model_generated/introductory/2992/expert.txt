@@ -1,0 +1,2 @@
+ Given two strings A and B, change all occurrences of A to B and vice versa. 
+Example: 'acb' --> 'bca' 'aabacbaa' --> 'bbabcabb'

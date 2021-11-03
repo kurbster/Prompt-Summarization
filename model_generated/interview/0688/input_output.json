@@ -1,0 +1,1 @@
+{"inputs": [["4", "00000000", "10101010", "10000001", "10010011"]], "outputs": [["uniform", "non-uniform", "uniform", "non-uniform"]]}

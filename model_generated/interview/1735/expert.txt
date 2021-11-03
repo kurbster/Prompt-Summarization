@@ -1,0 +1,1 @@
+ Given a list of ints, return a list of pairs, where each pair is a coordinate of the path. 

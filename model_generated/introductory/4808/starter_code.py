@@ -1,0 +1,2 @@
+def equalize(arr):
+	

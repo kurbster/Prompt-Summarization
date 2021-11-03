@@ -1,0 +1,1 @@
+{"fn_name": "remove", "inputs": [["this is a string", {"t": 1, "i": 2}], ["hello world", {"x": 5, "i": 2}], ["apples and bananas", {"a": 50, "n": 1}], ["a", {"a": 1, "n": 1}], ["codewars", {"c": 5, "o": 1, "d": 1, "e": 1, "w": 1, "z": 1, "a": 1, "r": 1, "s": 1}]], "outputs": [["hs s a string"], ["hello world"], ["pples d bnns"], [""], [""]]}

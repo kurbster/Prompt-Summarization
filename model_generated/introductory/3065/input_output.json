@@ -1,0 +1,1 @@
+{"fn_name": "get_textliterals", "inputs": [["select 'text' into row from table where a = 'value'"], ["if a>'data'and b<'nnn' then c:='test'; end if;"], ["select aaa, bbb, ccc, /*'ddd'?*/ into row from table;"], ["a:='data''s';"]], "outputs": [[[[7, 13], [44, 51]]], [[[5, 11], [17, 22], [31, 37]]], [[]], [[[3, 12]]]]}

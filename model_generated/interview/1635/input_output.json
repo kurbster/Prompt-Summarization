@@ -1,0 +1,1 @@
+{"fn_name": "middle_permutation", "inputs": [["abc"], ["abcd"], ["abcdx"], ["abcdxg"], ["abcdxgz"]], "outputs": [["bac"], ["bdca"], ["cbxda"], ["cxgdba"], ["dczxgba"]]}

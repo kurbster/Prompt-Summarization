@@ -1,0 +1,1 @@
+ Given two integers a and b, return a string s such that s = n * base * (a * b) where n is the number of decimals, base is the base, a is the smaller integer, and b is the larger integer. 

@@ -1,0 +1,1 @@
+ You are given an array. It should show that space decreasing. For example running this function on the array ['i', 'have','no','space'] would produce ['i','ihave','ihaveno','ihavenospace'].

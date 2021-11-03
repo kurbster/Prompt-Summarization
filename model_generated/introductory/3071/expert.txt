@@ -1,0 +1,1 @@
+ Given two integers a and b. return the last decimal digit of their factorial. Example 1: Input: a = 4, b = 1 Output: 4 Example 2: Input: a = 4, b = 2 Output: 6 Example 3: Input: a = 9, b = 7 Output: 9 Example 4: Input: a = 10, b = 10 ** 10 Output: 0 Example 5: Input: a

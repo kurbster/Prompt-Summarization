@@ -1,0 +1,2 @@
+def siegfried(week, txt):
+	

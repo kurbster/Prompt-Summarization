@@ -1,0 +1,2 @@
+ You are given an array of size $N$ of sweets. You are allowed to eat one type of sweet in a day. You need to find out the minimum number of days in which you will eat all the sweets. 
+-----Input:----- - First-line will contain $N$, the number of sweets.   - The next line will contain $N$ space integers denoting the type of sweets. -----Output:----- Output the minimum number of days in which he can eat all the sweets. -----Constraints----- - $1 \leq N \leq 10000$ - $1 \leq a[i] \leq 10^3$ -----Sample Input:----- 3 1 2 2 -----Sample Output:----- 2

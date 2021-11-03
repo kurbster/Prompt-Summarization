@@ -1,0 +1,1 @@
+{"fn_name": "switcheroo", "inputs": [["abc"], ["aaabcccbaaa"], ["ccccc"], ["abababababababab"], ["aaaaa"]], "outputs": [["bac"], ["bbbacccabbb"], ["ccccc"], ["babababababababa"], ["bbbbb"]]}

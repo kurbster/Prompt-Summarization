@@ -1,0 +1,1 @@
+ You are given a string representing a polynomial (like "3x-zx+2xy-x"). The string can contain arbitrary variables represented by lowercase characters in the english alphabet. Return a string representing the simplified polynomial. 

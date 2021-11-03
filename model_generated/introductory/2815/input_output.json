@@ -1,0 +1,1 @@
+{"fn_name": "compress", "inputs": [["The bumble bee"], ["SILLY LITTLE BOYS silly little boys"], ["Ask not what your COUNTRY can do for you ASK WHAT YOU CAN DO FOR YOUR country"], ["The number 0 is such a strange number Strangely it has zero meaning"]], "outputs": [["012"], ["012012"], ["01234567802856734"], ["012345617891011"]]}

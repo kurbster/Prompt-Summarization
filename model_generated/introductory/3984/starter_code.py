@@ -1,0 +1,2 @@
+def tacofy(word):
+	

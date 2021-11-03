@@ -1,0 +1,2 @@
+ Given a string, determine if it is possible to print it. 
+-----Input:----- - First line will contain $T$, number of testcases. Then the testcases follow.  - Each testcase contains a single line of input, a string $ s  $. The string consists only of $0's$ and $1's$. -----Output:----- For each testcase, output "YES" or "NO" depending on the input. -----Constraints----- -  $1 \leq T \leq 10000$ -  $1 \leq length of each string \leq 10000$ -  $ 1 \leq Summation length \leq 10^5$ -----Sample Input:----- 1 100 -----Sample Output:----- NO -----EXPLANATION:-----

@@ -1,0 +1,2 @@
+ You are given two arrays, one containing only | character and other containing only . character. You need to find if it is possible to construct an array containing only . and | characters.
+=====Input Format===== A single line containing the space separated values of N and M. =====Constraints===== 5 < N < 101 15 < M < 303 =====Output Format===== Output the design pattern.

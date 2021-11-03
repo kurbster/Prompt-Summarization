@@ -1,0 +1,1 @@
+ Create a function which take the number of iterations `n` and return the string `instruction`. For example:  ``` n=0, should return: 'F' n=1, should return: 'FRFR' n=2, should return: 'FRFRRLFLFR' ``` `n` should be a number and non-negative integer. All other case should return the empty string: `''`.

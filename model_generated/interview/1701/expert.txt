@@ -1,0 +1,1 @@
+ You are given a list of words, you need to output a sorted list. Comparison should be case sensitive.

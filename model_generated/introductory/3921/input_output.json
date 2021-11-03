@@ -1,0 +1,1 @@
+{"fn_name": "corrections", "inputs": [[8], [1], [-2], [-1], [0]], "outputs": [["8 is more than zero."], ["1 is more than zero."], ["-2 is equal to or less than zero."], ["-1 is equal to or less than zero."], ["0 is equal to or less than zero."]]}

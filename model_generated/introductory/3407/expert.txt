@@ -1,0 +1,1 @@
+ Given an integer, count number of steps needed to get palindrome. 

@@ -1,0 +1,1 @@
+ Given a word, replace vowels with consonants.

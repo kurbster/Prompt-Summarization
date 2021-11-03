@@ -1,0 +1,1 @@
+ You are given a positive integer n. Find all Pythagorean triplets whose product is equal to n. 

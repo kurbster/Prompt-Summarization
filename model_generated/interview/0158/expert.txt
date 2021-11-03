@@ -1,0 +1,1 @@
+ Given two strings A and B, return the smallest K for which A and B are K-similar. 

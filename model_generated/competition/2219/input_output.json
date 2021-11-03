@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "6 8\nabdabc\n+ 1 a\n+ 1 d\n+ 2 b\n+ 2 c\n+ 3 a\n+ 3 b\n+ 1 c\n- 2\n",
+    "6 8\nabbaab\n+ 1 a\n+ 2 a\n+ 3 a\n+ 1 b\n+ 2 b\n+ 3 b\n- 1\n+ 2 z\n",
+    "1 1\nz\n+ 3 z\n",
+    "1 1\nt\n+ 2 p\n",
+    "2 12\naa\n+ 1 a\n+ 2 a\n+ 3 a\n- 1\n+ 1 a\n- 2\n+ 2 a\n- 3\n+ 3 a\n+ 2 a\n- 1\n- 3\n",
+    "2 10\nuh\n+ 1 h\n+ 2 u\n+ 3 h\n- 1\n- 2\n+ 2 h\n+ 3 u\n- 2\n+ 1 u\n- 3\n"
+  ],
+  "outputs": [
+    "YES\nYES\nYES\nYES\nYES\nYES\nNO\nYES\n",
+    "YES\nYES\nYES\nYES\nYES\nNO\nYES\nNO\n",
+    "YES\n",
+    "NO\n",
+    "YES\nYES\nNO\nYES\nNO\nYES\nNO\nYES\nNO\nNO\nNO\nYES\n",
+    "YES\nYES\nNO\nYES\nYES\nNO\nNO\nNO\nNO\nYES\n"
+  ]
+}

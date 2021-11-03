@@ -1,0 +1,2 @@
+ ### Scalability Unfortunately, machine integer numbers has not enough precision for larger values. Floating point numbers drop the tail we need. We can fall back to arbitrary-precision ones - built-ins or from a library, but calculating the full product isn't an efficient way to find just the _tail_ of a factorial. Calculating `100'000!` in compiled language takes around 10 seconds. `1'000'000!` would be around 10 minutes, even using efficient [Karatsuba algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) ### Your
+.

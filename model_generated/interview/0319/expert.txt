@@ -1,0 +1,1 @@
+ You are given values = [1,2,3,-1,-2,-3,7] and you need to find Alice and Bob's outcome.

@@ -1,0 +1,2 @@
+ You are given an array. You need to calculate the product of all the numbers in it. 
+`

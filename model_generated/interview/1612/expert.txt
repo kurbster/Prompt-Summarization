@@ -1,0 +1,1 @@
+ you are given a number n, find the partition with the maximum or minimum score. 

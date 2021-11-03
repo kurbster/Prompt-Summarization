@@ -1,0 +1,1 @@
+["n, k = map(int, input().split())\na = [0] * n\nb = ['0'] * n\nc = []\ns = input()\nfor i in range(n):\n    if k != 0:\n        if s[i] == '(':\n            c.append(i)\n        else:\n            d = c.pop()\n            a[i] = 1\n            a[d] = 1\n            k -= 2\nfor i in range(n):\n    if a[i] == 1:\n        print(s[i], end = '')\n"]

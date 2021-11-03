@@ -1,0 +1,2 @@
+ =====Example===== Given an integer n, print the nth power. n = 3, Output: 3^3 = 9 Example 2: Given an integer n, print the nth power. n = 2, Output: 2^2 = 4 Example 3: Given an integer n, print the nth power. n = 1, Output: 1^1 = 1   Constraints: 0 <= n
+=====Input Format===== The first and only line contains the integer, n. =====Constraints===== 1≤n≤20 =====Output Format===== Print lines, one corresponding to each i.

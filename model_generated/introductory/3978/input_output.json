@@ -1,0 +1,1 @@
+{"fn_name": "check_for_factor", "inputs": [[10, 2], [63, 7], [2450, 5], [24612, 3], [9, 2], [653, 7], [2453, 5], [24617, 3]], "outputs": [[true], [true], [true], [true], [false], [false], [false], [false]]}

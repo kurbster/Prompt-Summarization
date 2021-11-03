@@ -1,0 +1,2 @@
+ You are given two names. You have to find the number of remaining letters. 
+-----Input----- The no. of test cases (<100) two names (may include spaces) for each test case. -----Output----- FLAMES result (Friends/Love/...etc) for each test case -----Example----- Input: 2 SHILPA AAMIR MATT DENISE Output: ENEMIES LOVE By: Chintan, Asad, Ashayam, Akanksha

@@ -1,0 +1,1 @@
+{"fn_name": "bits_battle", "inputs": [[[5, 3, 14]], [[3, 8, 22, 15, 78]], [[]], [[1, 13, 16]]], "outputs": [["odds win"], ["evens win"], ["tie"], ["tie"]]}

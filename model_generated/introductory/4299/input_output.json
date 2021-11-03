@@ -1,0 +1,1 @@
+{"fn_name": "is_prime_happy", "inputs": [[5], [8], [25], [32], [2], [0]], "outputs": [[true], [false], [true], [true], [false], [false]]}

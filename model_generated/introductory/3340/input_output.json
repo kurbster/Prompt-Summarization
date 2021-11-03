@@ -1,0 +1,1 @@
+{"fn_name": "sharkovsky", "inputs": [[18, 12], [3, 9], [10, 16], [1, 22], [32, 1024], [17, 17]], "outputs": [[true], [true], [true], [false], [false], [false]]}

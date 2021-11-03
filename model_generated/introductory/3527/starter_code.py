@@ -1,0 +1,2 @@
+def quotable(name, quote):
+	

@@ -1,0 +1,1 @@
+{"fn_name": "kebabize", "inputs": [["myCamelCasedString"], ["myCamelHas3Humps"], ["SOS"], ["42"], ["CodeWars"]], "outputs": [["my-camel-cased-string"], ["my-camel-has-humps"], ["s-o-s"], [""], ["code-wars"]]}

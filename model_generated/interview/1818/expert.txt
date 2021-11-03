@@ -1,0 +1,1 @@
+ You are given the root node of the tree. You need to find the lexicographically smallest string that starts at the leaf of the root node and ends at the root node. 

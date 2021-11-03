@@ -1,0 +1,1 @@
+{"fn_name": "shorten_to_date", "inputs": [["Monday February 2, 8pm"], ["Tuesday May 29, 8pm"], ["Wed September 1, 3am"], ["Friday May 2, 9am"], ["Tuesday January 29, 10pm"]], "outputs": [["Monday February 2"], ["Tuesday May 29"], ["Wed September 1"], ["Friday May 2"], ["Tuesday January 29"]]}

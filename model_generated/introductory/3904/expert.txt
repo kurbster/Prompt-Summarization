@@ -1,0 +1,1 @@
+ You are given l and r. For all integers from l to r, inclusive, we wrote down all of their integer divisors except 1. Find the integer that we wrote down the maximum number of times. Solve the problem to show that it's not a NP problem.

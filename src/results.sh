@@ -29,8 +29,6 @@ report_problem() {
 }
 
 [[ -z $1 ]] && echo "report all problems" && {
-    #for problem in $(find .. -mindepth 2 -type d -not -path "../.git*"\
-    #    -not -path "../model_generated/*" -not -path "../APPS/*"); do
     for problem in $(find ../[ic]* -mindepth 1 -type d); do
         report_problem $problem
     done

@@ -1,0 +1,2 @@
+def advice(agents, n):
+	

@@ -1,0 +1,2 @@
+ 
+Examples: ```python sum_cubes(2) > 9  # sum of the cubes of 1 and 2 is 1 + 8 ```

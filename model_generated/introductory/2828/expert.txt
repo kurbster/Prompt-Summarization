@@ -1,0 +1,1 @@
+ A [Power Law](https://en.wikipedia.org/wiki/Power_law) distribution occurs whenever "a relative change in one quantity results in a proportional relative change in the other quantity." For example, if *y* = 120 when *x* = 1 and *y* = 60 when *x* = 2 (i.e. *y* halves whenever *x* doubles) then when *x* = 4, *y* = 30 and when *x* = 8, *y* = 15

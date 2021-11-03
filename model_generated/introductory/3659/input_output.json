@@ -1,0 +1,1 @@
+{"fn_name": "variance", "inputs": [[["Hello", "world"]], [["Hi", "world"]], [["Variance", "is", "not", "a", "good", "stimator"]]], "outputs": [[0], [2.25], [7.5556]]}

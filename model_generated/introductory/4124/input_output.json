@@ -1,0 +1,1 @@
+{"fn_name": "has_unique_chars", "inputs": [["  nAa"], ["abcdef"], ["++-"]], "outputs": [[false], [true], [false]]}

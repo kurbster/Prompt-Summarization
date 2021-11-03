@@ -1,0 +1,1 @@
+ You are given a list of blocked squares and a source square. Return true if and only if it is possible to reach the target square through a sequence of moves.  Note that 0 <= blocked.length <= 200 blocked[i].length == 2 0 <= blocked[i][j] < 10^6 source.length == target.length == 2 0 <= source[i][j], target[i][j] < 10^6 source != target

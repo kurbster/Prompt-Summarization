@@ -1,0 +1,1 @@
+ Return the amount of numbers between `1` and `n` (inclusive) that can be represented as the difference of two perfect squares.

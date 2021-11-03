@@ -1,0 +1,2 @@
+ Given an array of integers represented as coefficients and a number, return the value of polynomial at that number. 
+.

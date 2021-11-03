@@ -1,0 +1,2 @@
+ You are given a binary tree. You need to check if given string is a preorder traversal serialization of the tree. 
+Example 1: Input: "9,3,4,#,#,1,#,#,2,#,6,#,#" Output: true Example 2: Input: "1,#" Output: false Example 3: Input: "9,#,#,1" Output: false

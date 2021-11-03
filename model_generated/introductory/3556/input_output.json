@@ -1,0 +1,1 @@
+{"fn_name": "diamonds_and_toads", "inputs": [["Ruby and Crystal", "good"], ["This string contain some Ruby and some Crystal in it", "good"], ["Python and Squirrel", "evil"], ["This string contain some Python and some Squirrel in it", "evil"]], "outputs": [[{"ruby": 3, "crystal": 2}], [{"ruby": 4, "crystal": 3}], [{"python": 2, "squirrel": 2}], [{"python": 2, "squirrel": 6}]]}

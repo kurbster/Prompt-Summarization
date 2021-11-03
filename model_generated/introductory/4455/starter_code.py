@@ -1,0 +1,2 @@
+def sumin(n):
+	

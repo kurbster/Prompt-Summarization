@@ -1,0 +1,1 @@
+ Given an integer width and a string ratio, output the screen dimensions. Example 1: Input: width = 1920, ratio = 16:9 Output: 1920x1080 Example 2: Input: width = 1920, ratio = 4:3 Output: 960x1080 Example 3: Input: width = 1920, ratio = 1:1 Output: 1920x1920 Example 4: Input: width = 1920, ratio = 16:9 Output: 

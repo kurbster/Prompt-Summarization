@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "3 3\naaa\n",
+    "3 3\naab\n",
+    "1 2\na\n",
+    "10 9\nabacadefgh\n",
+    "15 3\nabababababababa\n",
+    "100 26\njysrixyptvsesnapfljeqkytlpeepjopspmkviqdqbdkylvfiawhdjjdvqqvcjmmsgfdmpjwahuwhgsyfcgnefzmqlvtvqqfbfsf\n",
+    "1 26\nz\n"
+  ],
+  "outputs": [
+    "6\n",
+    "11\n",
+    "1\n",
+    "789\n",
+    "345\n",
+    "237400\n",
+    "25\n"
+  ]
+}

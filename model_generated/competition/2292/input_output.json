@@ -1,0 +1,1 @@
+{"inputs": ["aab\n", "bcbc\n", "ddd\n"], "outputs": ["1\n1\n", "2\n3\n", "3\n1\n"]}

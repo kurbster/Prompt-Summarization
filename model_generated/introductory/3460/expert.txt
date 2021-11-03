@@ -1,0 +1,1 @@
+ Given a string ``string`` that contains only letters, you have to find out the number of **unique** strings (including ``string`` itself) that can be produced by re-arranging the letters of the ``string``.  Strings are case **insensitive**. 

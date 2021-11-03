@@ -1,0 +1,1 @@
+{"fn_name": "arithmetic", "inputs": [[1, 2, "add"], [8, 2, "subtract"], [5, 2, "multiply"], [8, 2, "divide"]], "outputs": [[3], [6], [10], [4]]}

@@ -1,0 +1,1 @@
+{"fn_name": "zero_fuel", "inputs": [[50, 25, 2], [60, 30, 3], [70, 25, 1], [100, 25, 3]], "outputs": [[true], [true], [false], [false]]}

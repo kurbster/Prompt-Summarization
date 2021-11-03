@@ -1,0 +1,2 @@
+ A class that supports function overloading.
+# Notes    * If there are any flaw in testing then report me.    * If you need some hints then ping me in discourse. _Enjoy!_ _Thanks to B4B for his contribution._ _I can assure you that this can be done without using any library/modules._

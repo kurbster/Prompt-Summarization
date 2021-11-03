@@ -1,0 +1,2 @@
+ You are given an array of interval [1, 5], you need to return sum of interval length. 
+Examples: ```C# // empty intervals Intervals.SumIntervals(new (int, int)[]{ });  // => 0 Intervals.SumIntervals(new (int, int)[]{ (2, 2), (5, 5)});  // => 0 // disjoined intervals Intervals.SumIntervals(new (int, int)[]{   (1, 2), (3, 5) });  // => (2-1) + (5-3) = 3 // overlapping intervals Intervals.SumIntervals(new (int, int)[]{   (1, 4), (3, 6), (2, 8) });  // (1,8) => 7 ```

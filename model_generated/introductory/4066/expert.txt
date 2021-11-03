@@ -1,0 +1,1 @@
+ Split a string into n words, where n is the number of words in the string.

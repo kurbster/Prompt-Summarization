@@ -1,0 +1,1 @@
+ You are given an array with some numbers. there three possible combinations of numbers 10, 11, 0. convert array to string and find if last charecter should be a one bit charecter or not

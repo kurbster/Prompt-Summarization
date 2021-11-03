@@ -1,0 +1,1 @@
+["class Solution:\n     def countSmaller(self, nums):\n         \"\"\"\n         :type nums: List[int]\n         :rtype: List[int]\n         \"\"\"\n         s = sorted(nums)\n         c = []\n         for n in nums:\n             p = bisect.bisect_left(s, n)\n             c.append(p)\n             s.pop(p)\n         return c\n"]

@@ -67,6 +67,7 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
 def select_summary_prompt(probs: list[str]):
     # Select a random problem to summarize
     total_probs = [str(i).zfill(4) for i in range(5000) if str(i).zfill(4) not in probs]
+
     
     # will fail because of collisions
     #assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000. It is {len(total_probs) + len(probs)}'
@@ -81,7 +82,7 @@ def select_summary_prompt(probs: list[str]):
     return prompt, output_dir
 
 def detect_type(fname: str) -> str:
-    print(f'I am the name of the file to summarize: {fname}')
+    #print(f'I am the name of the file to summarize: {fname}')
     return 'general'
 
 def split_question(fname: str, split_file: str) -> str:

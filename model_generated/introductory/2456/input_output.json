@@ -1,0 +1,1 @@
+{"fn_name": "backspaceCompare", "inputs": [["\"ab#c\"", "\"ad#c\""]], "outputs": [true]}

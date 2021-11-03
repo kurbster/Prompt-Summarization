@@ -1,0 +1,1 @@
+["import numpy\nar = list(map(float,input().split()))\nnp_ar = numpy.array(ar,float)\nprint((np_ar[::-1]))\n"]

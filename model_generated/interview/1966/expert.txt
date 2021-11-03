@@ -1,0 +1,1 @@
+ Given an (rows * columns) matrix mat of ones and zeros, return how many submatrices have all ones.

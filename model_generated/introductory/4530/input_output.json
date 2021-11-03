@@ -1,0 +1,1 @@
+{"fn_name": "consonant_count", "inputs": [[""], ["aaaaa"], ["helLo world"], ["h^$&^#$&^elLo world"], ["0123456789"], ["012345_Cb"]], "outputs": [[0], [0], [7], [7], [0], [2]]}

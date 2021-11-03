@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "3\nRRRR\nRSP\nS\n"
+  ],
+  "outputs": [
+    "PPPP\nPPP\nR\n"
+  ]
+}

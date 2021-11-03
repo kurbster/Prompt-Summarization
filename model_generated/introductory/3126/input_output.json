@@ -1,0 +1,1 @@
+{"fn_name": "palindrome_rearranging", "inputs": [["aabb"], ["aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"], ["abbcabb"], ["zyyzzzzz"], ["aaabbb"]], "outputs": [[true], [false], [true], [true], [false]]}

@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    "10\nhttp://abacaba.ru/test\nhttp://abacaba.ru/\nhttp://abacaba.com\nhttp://abacaba.com/test\nhttp://abacaba.de/\nhttp://abacaba.ru/test\nhttp://abacaba.de/test\nhttp://abacaba.com/\nhttp://abacaba.com/t\nhttp://abacaba.com/test\n",
+    "14\nhttp://c\nhttp://ccc.bbbb/aba..b\nhttp://cba.com\nhttp://a.c/aba..b/a\nhttp://abc/\nhttp://a.c/\nhttp://ccc.bbbb\nhttp://ab.ac.bc.aa/\nhttp://a.a.a/\nhttp://ccc.bbbb/\nhttp://cba.com/\nhttp://cba.com/aba..b\nhttp://a.a.a/aba..b/a\nhttp://abc/aba..b/a\n",
+    "10\nhttp://tqr.ekdb.nh/w\nhttp://p.ulz/ifw\nhttp://w.gw.dw.xn/kpe\nhttp://byt.mqii.zkv/j/xt\nhttp://ovquj.rbgrlw/k..\nhttp://bv.plu.e.dslg/j/xt\nhttp://udgci.ufgi.gwbd.s/\nhttp://l.oh.ne.o.r/.vo\nhttp://l.oh.ne.o.r/w\nhttp://tqr.ekdb.nh/.vo\n",
+    "12\nhttp://ickght.ck/mr\nhttp://a.exhel/.b\nhttp://a.exhel/\nhttp://ti.cdm/\nhttp://ti.cdm/x/wd/lm.h.\nhttp://ickght.ck/a\nhttp://ickght.ck\nhttp://c.gcnk.d/.b\nhttp://c.gcnk.d/x/wd/lm.h.\nhttp://ti.cdm/.b\nhttp://a.exhel/x/wd/lm.h.\nhttp://c.gcnk.d/\n",
+    "14\nhttp://jr/kgb\nhttp://ps.p.t.jeua.x.a.q.t\nhttp://gsqqs.n/t/\nhttp://w.afwsnuc.ff.km/cohox/u.\nhttp://u.s.wbumkuqm/\nhttp://u.s.wbumkuqm/cohox/u.\nhttp://nq.dzjkjcwv.f.s/bvm/\nhttp://zoy.shgg\nhttp://gsqqs.n\nhttp://u.s.wbumkuqm/b.pd.\nhttp://w.afwsnuc.ff.km/\nhttp://w.afwsnuc.ff.km/b.pd.\nhttp://nq.dzjkjcwv.f.s/n\nhttp://nq.dzjkjcwv.f.s/ldbw\n",
+    "15\nhttp://l.edzplwqsij.rw/\nhttp://m.e.mehd.acsoinzm/s\nhttp://yg.ttahn.xin.obgez/ap/\nhttp://qqbb.pqkaqcncodxmaae\nhttp://lzi.a.flkp.lnn.k/o/qfr.cp\nhttp://lzi.a.flkp.lnn.k/f\nhttp://p.ngu.gkoq/.szinwwi\nhttp://qqbb.pqkaqcncodxmaae/od\nhttp://qqbb.pqkaqcncodxmaae\nhttp://wsxvmi.qpe.fihtgdvi/e./\nhttp://p.ngu.gkoq/zfoh\nhttp://m.e.mehd.acsoinzm/xp\nhttp://c.gy.p.h.tkrxt.jnsjt/j\nhttp://wsxvmi.qpe.fihtgdvi/grkag.z\nhttp://p.ngu.gkoq/t\n",
+    "15\nhttp://w.hhjvdn.mmu/.ca.p\nhttp://m.p.p.lar/\nhttp://lgmjun.r.kogpr.ijn/./t\nhttp://bapchpl.mcw.a.lob/d/ym/./g.q\nhttp://uxnjfnjp.kxr.ss.e.uu/jwo./hjl/\nhttp://fd.ezw.ykbb.xhl.t/\nhttp://i.xcb.kr/.ca.p\nhttp://jofec.ry.fht.gt\nhttp://qeo.gghwe.lcr/d/ym/./g.q\nhttp://gt\nhttp://gjvifpf.d/d/ym/./g.q\nhttp://oba\nhttp://rjs.qwd/v/hi\nhttp://fgkj/\nhttp://ivun.naumc.l/.ca.p\n",
+    "20\nhttp://gjwr/xsoiagp/\nhttp://gdnmu/j\nhttp://yfygudx.e.aqa.ezh/j\nhttp://mpjxue.cuvipq/\nhttp://a/\nhttp://kr/..n/c.\nhttp://a/xsoiagp/\nhttp://kr/z\nhttp://kr/v.cv/rk/k\nhttp://lvhpz\nhttp://qv.v.jqzhq\nhttp://y.no/\nhttp://kr/n\nhttp://y.no/xsoiagp/\nhttp://kr/ebe/z/\nhttp://olsvbxxw.win.n/j\nhttp://p.ct/j\nhttp://mpjxue.cuvipq/xsoiagp/\nhttp://kr/j\nhttp://gjwr/\n",
+    "1\nhttp://a\n",
+    "1\nhttp://a.a.a.f.r.f.q.e.w.a/fwe..sdfv....\n",
+    "3\nhttp://abacaba.com/test\nhttp://abacaba.de/test\nhttp://abacaba.de/test\n"
+  ],
+  "outputs": [
+    "1\nhttp://abacaba.de http://abacaba.ru \n",
+    "2\nhttp://cba.com http://ccc.bbbb \nhttp://a.a.a http://a.c http://abc \n",
+    "2\nhttp://l.oh.ne.o.r http://tqr.ekdb.nh \nhttp://bv.plu.e.dslg http://byt.mqii.zkv \n",
+    "1\nhttp://a.exhel http://c.gcnk.d http://ti.cdm \n",
+    "2\nhttp://ps.p.t.jeua.x.a.q.t http://zoy.shgg \nhttp://u.s.wbumkuqm http://w.afwsnuc.ff.km \n",
+    "0\n",
+    "4\nhttp://gt http://jofec.ry.fht.gt http://oba \nhttp://fd.ezw.ykbb.xhl.t http://fgkj http://m.p.p.lar \nhttp://i.xcb.kr http://ivun.naumc.l http://w.hhjvdn.mmu \nhttp://bapchpl.mcw.a.lob http://gjvifpf.d http://qeo.gghwe.lcr \n",
+    "3\nhttp://lvhpz http://qv.v.jqzhq \nhttp://a http://gjwr http://mpjxue.cuvipq http://y.no \nhttp://gdnmu http://olsvbxxw.win.n http://p.ct http://yfygudx.e.aqa.ezh \n",
+    "0\n",
+    "0\n",
+    "1\nhttp://abacaba.com http://abacaba.de \n"
+  ]
+}

@@ -1,0 +1,2 @@
+def namelist(names):
+	

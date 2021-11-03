@@ -1,0 +1,2 @@
+ You are given a string s which is possibly encrypted. You need to decrypt it. When you decrypt it, you must return the original string. 
+-----Input----- The input consists of a single line string without any space or numeric or special characters. -----Output----- It will consist of in the encrypted string which comprises the letters followed by each time it has occurred in the original string in order. -----Example----- Input: information Output: i2n2f1o2r1m1a1t1

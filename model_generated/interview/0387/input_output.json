@@ -1,0 +1,1 @@
+{"fn_name": "rankTeams", "inputs": [[["\"ABC\"", "\"ACB\"", "\"ABC\"", "\"ACB\"", "\"ACB\""]]], "outputs": ["\"ACB"]}

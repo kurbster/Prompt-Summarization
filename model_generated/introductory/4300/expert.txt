@@ -1,0 +1,1 @@
+ You are given two strings. You need to count the number of times the first string occurs in the second.  For example, if you have strings ``"zazapulz"`` and ``"zazapulz"``, you need to return the count of ``"zazapulz"``.  

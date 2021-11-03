@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "3\nxabb\naabx\ntechnocup\ntechnocup\na\nz\n"
+  ],
+  "outputs": [
+    "YES\nYES\nNO\n"
+  ]
+}

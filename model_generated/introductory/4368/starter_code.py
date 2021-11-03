@@ -1,0 +1,2 @@
+def cost(mins):
+	

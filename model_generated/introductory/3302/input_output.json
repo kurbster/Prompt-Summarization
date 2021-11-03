@@ -1,0 +1,1 @@
+{"fn_name": "strings_crossover", "inputs": [[["abc", "aaa", "aba", "bab"], "bbb"], [["aacccc", "bbcccc"], "abdddd"], [["a", "b", "c", "d", "e"], "c"], [["aa", "ab", "ba"], "bb"], [["a", "b", "c", "d", "e"], "f"], [["aaa", "aaa"], "aaa"]], "outputs": [[2], [0], [4], [1], [0], [1]]}

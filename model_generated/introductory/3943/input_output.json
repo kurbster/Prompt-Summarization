@@ -1,0 +1,1 @@
+{"fn_name": "ellipse", "inputs": [[5, 2], [6, 8], [13, 1]], "outputs": [["Area: 31.4, perimeter: 23.1"], ["Area: 150.8, perimeter: 44.2"], ["Area: 40.8, perimeter: 54.6"]]}

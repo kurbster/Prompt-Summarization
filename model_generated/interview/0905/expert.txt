@@ -1,0 +1,2 @@
+ A king and a few of his soldiers are caught by an enemy king in a war. The king has to kill the second man, third man has to kill the fourth, fifth man to kill the sixth and so on. When the circle is completed, the remaining people have to form a circle and the process has to repeat. The last man standing will be set free. If the king has to be set free, which position he should take.   
+-----Input----- Any positive integer in the range 1 to 10000. -----Output----- A positive integer indicating safest position -----Example----- Input: 9 Output: 3

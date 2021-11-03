@@ -1,0 +1,1 @@
+{"fn_name": "password", "inputs": [["Abcd1234"], ["Abcd123"], ["abcd1234"], ["AbcdefGhijKlmnopQRsTuvwxyZ1234567890"], ["ABCD1234"], ["Ab1!@#$%^&*()-_+={}[]|\\:;?/>.<,"], ["!@#$%^&*()-_+={}[]|\\:;?/>.<,"], [""], [" aA1----"], ["4aA1----"]], "outputs": [[true], [false], [false], [true], [false], [true], [false], [false], [true], [true]]}

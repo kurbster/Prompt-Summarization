@@ -1,0 +1,1 @@
+ you are given a string. You must determine if all that is open is then closed, and nothing is closed which is not already open!
