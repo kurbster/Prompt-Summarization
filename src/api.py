@@ -10,15 +10,9 @@ import requests
 from omegaconf import OmegaConf
 
 def get_prompt(cfg: OmegaConf) -> str:
-    # Get the problems we have already done
-    probs = glob.glob('../[ic]*/*')
-    #model_probs = glob.glob('../data/studio21_generated/[ic]*/*')
-    test_probs  = glob.glob('../data/studio21_generated/test/[ic]*/*')
-
-    probs = [os.path.basename(p) for p in probs]
-    #model_probs = [os.path.basename(p) for p in model_probs]
-    test_probs = [os.path.basename(p) for p in test_probs]
-
+    
+    test_probs = get_completed_problems()
+    
     #prompt, output_dir = select_summary_prompt(probs+model_probs)
     prompt, output_dir = select_summary_prompt(test_probs)
     
@@ -34,19 +28,46 @@ def get_prompt(cfg: OmegaConf) -> str:
     prompt, remainder = split_question(prompt, cfg.splitFile)
     
     # The priming prompt is the header plus our generated examples.
-    priming_prompts = [cfg.header]
-    priming_prompts = priming_prompts + generate_example_prompt(prompt_type, cfg, probs)
-    for i, p in enumerate(priming_prompts):
-        if any(ord(c) >= 128 for c in p):
-            print(f'Prompt {i} was not ascii')
-    final_prompt = '\n\n'.join(priming_prompts) + f'\n\nJargon: {prompt}\nSimple:'
-    final_prompt = final_prompt.encode('ascii', 'replace')
-    final_prompt = final_prompt.decode('ascii')
-    final_prompt = final_prompt.replace('?', ' ')
-    if any(ord(c) >= 128 for c in final_prompt):
-            print('Final_prompt was not ascii')
+    priming_prompts = [cfg.header] + generate_example_prompt(prompt_type, cfg, probs)
+    
+    # This is done to remove unicode characters
+    final_prompt = ensure_ascii(priming_prompts)
+
     # We must return the remainder to append it to the output file
     return final_prompt, remainder, output_dir
+
+def get_completed_problems() -> list[str]:
+    # Get the problems we have already done
+    probs = glob.glob('../[ic]*/*')
+    #model_probs = glob.glob('../data/studio21_generated/[ic]*/*')
+    test_probs  = glob.glob('../data/studio21_generated/test/[ic]*/*')
+
+    probs = [os.path.basename(p) for p in probs]
+    #model_probs = [os.path.basename(p) for p in model_probs]
+    test_probs = [os.path.basename(p) for p in test_probs]
+    
+    return test_probs
+
+def select_summary_prompt(probs: list[str]):
+    # Select a random problem to summarize
+    # For the test set intro problems start @4000
+    total_probs = [str(i).zfill(4) for i in range(4000) if str(i).zfill(4) not in probs]
+
+    # will fail because of collisions
+    #assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000. It is {len(total_probs) + len(probs)}'
+    prob = random.choice(total_probs)
+
+    # For generating train sequences
+    #prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
+
+    # For generating test sequences
+    prompt = glob.glob(f'../APPS/test/*/{prob}/question.txt')[0]
+
+    # Copy the original directory to the output directory
+    prompt_dir = os.path.split(prompt)[0]
+    output_dir = prompt_dir.replace('APPS', 'data/studio21_generated')
+    shutil.copytree(prompt_dir, output_dir)
+    return prompt, output_dir
 
 def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) -> str:
     prompt_cfg = OmegaConf.load(cfg.promptFile)
@@ -66,28 +87,6 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
         output.append(f'Jargon: {orig}\nSimple: {example}')
     
     return output
-
-def select_summary_prompt(probs: list[str]):
-    # Select a random problem to summarize
-    # For the test set intro problems start @4000
-    total_probs = [str(i).zfill(4) for i in range(4000) if str(i).zfill(4) not in probs]
-
-    
-    # will fail because of collisions
-    #assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000. It is {len(total_probs) + len(probs)}'
-    prob = random.choice(total_probs)
-
-    # For generating train sequences
-    #prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
-
-    # For generating test sequences
-    prompt = glob.glob(f'../APPS/test/*/{prob}/question.txt')[0]
-
-    # Copy the original directory to the output directory
-    prompt_dir = os.path.split(prompt)[0]
-    output_dir = prompt_dir.replace('APPS', 'data/studio21_generated')
-    shutil.copytree(prompt_dir, output_dir)
-    return prompt, output_dir
 
 def detect_type(fname: str) -> str:
     print(f'I am the name of the file to summarize: {fname}')
@@ -116,6 +115,18 @@ def split_question(fname: str, split_file: str) -> str:
         prompt_idx = match.span()[0]
     return prompt[:prompt_idx], prompt[prompt_idx:]
     
+def ensure_ascii(priming_prompts):
+    for i, p in enumerate(priming_prompts):
+        if any(ord(c) >= 128 for c in p):
+            print(f'Prompt {i} was not ascii')
+    final_prompt = '\n\n'.join(priming_prompts) + f'\n\nJargon: {prompt}\nSimple:'
+    final_prompt = final_prompt.encode('ascii', 'replace')
+    final_prompt = final_prompt.decode('ascii')
+    final_prompt = final_prompt.replace('?', ' ')
+    if any(ord(c) >= 128 for c in final_prompt):
+            print('Final_prompt was not ascii')
+    return final_prompt
+
 def make_prompt(token=None, model=None):
     TOKEN_LIMITS = {'large': 30000, 'jumbo': 10000}
     cfg = OmegaConf.load('config.yaml')
