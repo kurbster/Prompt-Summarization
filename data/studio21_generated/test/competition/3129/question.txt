@@ -1,0 +1,18 @@
+Peter has lined up hay bales. Some hay bales contain parasites and he wants to move the infected hay bales to the back of the sequence, to minimize the chance that the parasites spread. To sort the haybales, he repeatedly takes out any three consecutive hay bales and puts them back in sorted order. Your task is to calculate the minimum number of operations Peter has to execute to sort the sequence.
+
+-----Input-----
+The input contains a single string $s$ ($3 \leq |s| \leq 500$), the sequence of hay bales. Each character of $s$ is either ‘C’ (for a clean hay bale) or ‘P’ (for an infected one).
+
+-----Output-----
+The output must contain one integer, the minimum number of steps Peter has to execute.
+
+-----Examples-----
+Sample Input 1:
+CPCC
+Sample Output 1:
+1
+
+Sample Input 2:
+PPPPCCCC
+Sample Output 2:
+8

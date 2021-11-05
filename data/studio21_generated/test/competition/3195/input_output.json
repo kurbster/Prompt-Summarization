@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "4 4 4\n3\n2 green\n18 yellow\n34 red\n5 green\n",
+        "4 4 4\n4\n2 green\n6 yellow\n10 red\n14 green\n4 red\n",
+        "6 6 6\n6\n5 green\n6 green\n9 yellow\n12 yellow\n15 red\n19 red\n7 green\n"
+    ],
+    "outputs": [
+        "0.25\n",
+        "0\n",
+        "1\n"
+    ]
+}

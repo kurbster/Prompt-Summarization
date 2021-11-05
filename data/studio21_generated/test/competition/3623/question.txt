@@ -1,0 +1,17 @@
+Bob’s green thumb has recently gotten him a job as a gardener at a local park. Along with caring for all the plants in the garden, he was also given the responsibility of completely redesigning the park with all new equipment and green spaces.
+
+Unfortunately for Bob, he’s not as good at financing as he is at gardening, and may have messed up. In one area of the garden, he has a courtyard in the shape of a perfect square. In the process of designing the courtyard, he spent so much money on fertilizer and grass seed that he had to buy cheap sprinklers.
+
+When the time came to install the sprinklers, Bob found out that the sprinklers don’t all rotate the same amount, and not all of the grass is getting water. Assuming that each sprinkler can spray water infinitely far, help Bob determine the proportion of the courtyard that is watered by the sprinklers.
+
+-----Input-----
+The input consists of a single line containing four real numbers $a$, $b$, $c$, and $d$ ($0\leq a, b, c, d\leq 90$) representing the sizes of four angles in degrees. The number $a$ represents the angle that the bottom right sprinkler rotates from the right wall; similarly, $b$ is the angle that the top right sprinkler rotates from the top wall, $c$ is the angle that the top left sprinkler rotates from the left wall, and $d$ is the angle that the bottom left sprinkler rotates from the bottom wall. All numbers will be given with no more than $3$ digits after the decimal point.
+
+-----Output-----
+Output the proportion of the area of the courtyard that is watered by the sprinklers as a real number. Your answer will be considered correct if it is within $10^{-6}$ of the correct answer.
+
+-----Examples-----
+Sample Input:
+45 45 0 0
+Sample Output:
+0.75

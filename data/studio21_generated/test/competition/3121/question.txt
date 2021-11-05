@@ -1,0 +1,28 @@
+The other day Unnar was playing the video game Geezer Scripts, Geezer Scripts V to be precise. He opened a door (in the game) and before he knew he was in a large and complicated cave-system, full of enemies who will attack as soon as Unnar gets to close to them. What’s worse is that the game doesn’t remember which enemies the player has already defeated so if the player leaves and comes back again the enemy will have respawned. Since Unnar is quite prone to getting lost he needs your help to find a way through the cave which incurs minimal damage to him.
+
+Unnar’s character has some $A$ attack points and $H$ health points. The same is true for his enemies. When Unnar fights an enemy Unnar goes first. He subtracts his attack points from the enemies health points and the enemy then does the same. This process is repeated until either Unnar or the enemy has fewer than $1$ health points. The loser is the one who ran out of health points. If Unnar loses it’s Game Over, but if Unnar wins he can continue traversing the cave-system but his lost health points do not regenerate.
+
+The cave-system is not evenly elevated so its passages are one-way. The cave-system can be modelled using $n$ areas connected with $m$ one-way passages. Unnar starts in area $1$ and wants to get to area $n$. Every passage contains an enemy but the areas are safe.
+
+-----Input-----
+The first line of the input contains two integers $1 \leq A, H \leq 10^9$ where $A$ denotes Unnar’s attack points and $H$ his health points. The second line contains $1 \leq n, m \leq 10^5$ where $n$ is the number of ares in the cave and $m$ the number of passages. The next $m$ lines contain four integers $1 \leq e_ i, b_ i \leq n$ and $1 \leq a_ i, h_ i \leq 10^9$, indicating a passage from area $e_ i$ to $b_ i$ whose enemy has $a_ i$ attack points and $h_ i$ health points.
+
+-----Output-----
+If Unnar can’t get through the cave-system output ‘Oh no’, without the quotes. Otherwise output the maximum health Unnar can have after getting through the cave-system.
+
+-----Examples-----
+Sample Input 1:
+1 2
+3 2
+1 2 1 2
+2 3 1 2
+Sample Output 1:
+Oh no
+
+Sample Input 2:
+1 3
+3 2
+1 2 1 2
+2 3 1 2
+Sample Output 2:
+1

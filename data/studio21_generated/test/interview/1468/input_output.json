@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    "3\n#book\n#bigtown\n#big\n",
+    "3\n#book\n#cool\n#cold\n",
+    "4\n#car\n#cart\n#art\n#at\n",
+    "3\n#apple\n#apple\n#fruit\n",
+    "1\n#h\n",
+    "2\n#y\n#q\n",
+    "3\n#sima\n#simb\n#sima\n",
+    "1\n#lxqnqdnkpeayhxh\n",
+    "6\n#abu\n#abc\n#ac\n#bk\n#bmm\n#bb\n",
+    "7\n#a\n#aab\n#abc\n#abq\n#ab\n#ac\n#z\n",
+    "15\n#a\n#a\n#b\n#c\n#e\n#i\n#k\n#m\n#o\n#r\n#u\n#v\n#w\n#w\n#e\n",
+    "5\n#abcde\n#abcd\n#abc\n#ab\n#a\n",
+    "5\n#xyz\n#yzx\n#zzxy\n#zzy\n#yz\n",
+    "15\n#a\n#b\n#c\n#c\n#f\n#h\n#i\n#j\n#l\n#l\n#q\n#q\n#u\n#z\n#z\n",
+    "6\n#jgpajxhyrlbnpcfkklkfjflexcbhza\n#jgpajxhyrlbnpcfkklkfjflexcbhz\n#jgpajxhyrlbnpcfkklkfjflexcb\n#jgpajxhyrlbnpcfkklkfjflex\n#jgpajxhyrlbnpcfkklkfjf\n#jgpajxhyrlbnpcfkk\n",
+    "37\n#dut\n#du\n#du\n#dxzd\n#dxz\n#dxz\n#dyyr\n#dyy\n#dyy\n#dzuo\n#dzu\n#dzu\n#wldl\n#wld\n#wl\n#wl\n#xeuu\n#xeu\n#xe\n#xe\n#ytki\n#ytk\n#yt\n#yt\n#yvbn\n#yvb\n#yvb\n#zvip\n#zvi\n#zv\n#zv\n#zzag\n#zza\n#zza\n#zznz\n#zznz\n#zzo\n",
+    "2\n#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaab\n#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"
+  ],
+  "outputs": [
+    "#b\n#big\n#big\n",
+    "#book\n#co\n#cold\n",
+    "#\n#\n#art\n#at\n",
+    "#apple\n#apple\n#fruit\n",
+    "#h\n",
+    "#\n#q\n",
+    "#sim\n#sim\n#sima\n",
+    "#lxqnqdnkpeayhxh\n",
+    "#ab\n#abc\n#ac\n#b\n#b\n#bb\n",
+    "#a\n#aab\n#ab\n#ab\n#ab\n#ac\n#z\n",
+    "#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#\n#e\n",
+    "#a\n#a\n#a\n#a\n#a\n",
+    "#\n#\n#\n#\n#yz\n",
+    "#a\n#b\n#c\n#c\n#f\n#h\n#i\n#j\n#l\n#l\n#q\n#q\n#u\n#z\n#z\n",
+    "#jgpajxhyrlbnpcfkk\n#jgpajxhyrlbnpcfkk\n#jgpajxhyrlbnpcfkk\n#jgpajxhyrlbnpcfkk\n#jgpajxhyrlbnpcfkk\n#jgpajxhyrlbnpcfkk\n",
+    "#du\n#du\n#du\n#dxz\n#dxz\n#dxz\n#dyy\n#dyy\n#dyy\n#dzu\n#dzu\n#dzu\n#wl\n#wl\n#wl\n#wl\n#xe\n#xe\n#xe\n#xe\n#yt\n#yt\n#yt\n#yt\n#yvb\n#yvb\n#yvb\n#zv\n#zv\n#zv\n#zv\n#zza\n#zza\n#zza\n#zznz\n#zznz\n#zzo\n",
+    "#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n#aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n"
+  ]
+}

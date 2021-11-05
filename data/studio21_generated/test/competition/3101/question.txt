@@ -1,0 +1,22 @@
+Once upon a time, high up on Mount Olympus, it came to pass that the gods held a competition to see who among them was the best at sorting lists of integers. Eris, the goddess of discord, finds this terribly boring and plans to add some mischief to the mix to make things more fun. She will sabotage the answers of Zeus so that his list of numbers is no longer sorted, which will no doubt be so embarrassing that he becomes furious and starts a minor war. 
+
+Eris must be careful not to be discovered while performing her sabotage, so she decides to only change a single digit in one of the numbers in Zeus’ answer. The resulting number may not have any leading zeros (unless it becomes equal to zero in which case a single zero digit is allowed). Eris can only replace a digit with another digit – adding or removing digits is not allowed.
+
+-----Input-----
+The first line of input contains $n$ ($2 \leq n \leq 100$), the length of Zeus’ answer. The second line contains $n$ integers $a_1, a_2, \ldots , a_ n$ ($0 \leq a_1 \le a_2 \le \ldots \le a_ n \leq 10^{15}$), Zeus’ answer.
+
+-----Output-----
+If Eris can make the list not be sorted by changing a single digit of one of the numbers, then output $n$ integers $b_1, \ldots , b_ n$, the resulting list of numbers after making the change. Otherwise, output “impossible”. If there are many valid solutions, any one will be accepted.
+
+-----Examples-----
+Sample Input 1:
+3
+2020 2020 2020
+Sample Output 1:
+2021 2020 2020
+
+Sample Input 2:
+2
+1 9999999
+Sample Output 2:
+impossible

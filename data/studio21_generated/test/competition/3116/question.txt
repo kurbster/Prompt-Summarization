@@ -1,0 +1,28 @@
+Vera is an astronomer studying locality of nearby star systems. The star systems can be thought of as 3D points in space. Vera would like to place a can around the stars. In other words, she would like to know what is the smallest volume cylinder that encloses the stars. The cylinder can be oriented in any direction. At least one base of the cylinder must have at least three stars.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The first line of input will contain a single integer $n$ ($4 \le n \le 1000$), representing the number of stars.
+
+Each of the next $n$ lines will contain three integers $x$, $y$ and $z$ ($-1000 \le x, y, z \le 1000$), representing the position of a single star. No two stars will be at the same position. No four stars will be coplanar.
+
+-----Output-----
+Output a floating point number representing the smallest volume cylinder that can enclose all the stars. Your answer must be accurate within a relative tolerance of $10^{-6}$.
+
+-----Examples-----
+Sample Input 1:
+4
+1 0 0
+1 1 0
+0 0 0
+0 0 1
+Sample Output 1:
+1.57079633
+
+Sample Input 2:
+4
+-100 0 0
+10 0 10
+-10 -10 -10
+0 0 0
+Sample Output 2:
+41938.65135885

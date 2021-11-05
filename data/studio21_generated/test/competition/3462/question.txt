@@ -1,0 +1,19 @@
+You are implementing an operating system, and now need to write a program to list files in a directory: “ls”. You want the user to be able to list only files that match a given pattern that can include wildcards (*), for example *.c. A wildcard matches zero or more characters of any kind.
+
+-----Input-----
+The first line contains a string $P$, containing $1$–$100$ characters ’a’–’z’, ’*’ and ’.’. This is the pattern. The second line contains an integer $N$, $1 \leq N \leq 100$, which is the number of files in the directory. Then follow $N$ lines containing the names of the files in the directory. Each line is a string containing $1$–$100$ characters ’a’–’z’ and ’.’.
+
+-----Output-----
+The output shall consist of the filenames that match the pattern, $P$, each on its own line, in the same order that they were given as input.
+
+-----Examples-----
+Sample Input:
+*.*
+4
+main.c
+a.out
+readme
+yacc
+Sample Output:
+main.c
+a.out

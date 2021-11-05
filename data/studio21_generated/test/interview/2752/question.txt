@@ -1,0 +1,30 @@
+Gregory Brandon Sr. works at some startup in Redmond that owns a huge campus with a lot of office buildings. Since Gregory likes to work in different environments, he will work in exactly two buildings every day. On the $i$-th day, Gregory walks from his home to building $a_ i$ in the morning, walks from building $a_ i$ to building $b_ i$ at noon, and walks from building $b_ i$ to his home in the evening.
+
+Gregory owns two umbrellas, but he does not like to carry them around. However, it rains a lot in Redmond, and Gregory must use an umbrella if he walks when it is raining (otherwise he will become infinitely unhappy). Gregory currently has both umbrellas at home, but he may choose to leave them in the office buildings for convenience. It will cost one unit of Gregory’s happiness every time he needs to carry an umbrella while walking, regardless of whether he carries one or two umbrellas, and regardless of whether he is using the umbrella. Luckily, Gregory can accurately predict the weather in the morning, at noon, and in the evening for up to $n$ days. Knowing the weather for the next $n$ days, how many units of happiness must Gregory lose from carrying umbrellas?
+
+-----Input-----
+The first line of the input contains two space-separated integers $n$ and $k$ ($1\le n \le 10^4$, $2\le k\le 30$), denoting the number of days and the number of buildings Gregory will ever work in. These buildings are numbered from $1$ to $k$.
+
+Each of the next $n$ lines of input contains two space-separated integers $a_ i$ and $b_ i$ ($1\le a_ i, b_ i \le k$, $a_ i\neq b_ i$), denoting the buildings that Gregory will work in during the morning and the afternoon respectively.
+
+Each of the next $n$ lines of input contains a string of three characters $w_ i$, representing the weather on the $i$-th day. Each character is either S, to denote that it will be sunny or R to denote that it will be rainy. The first, second, and third characters in the string $w_ i$ respectively represent the weather in the morning, at noon, and in the evening of the $i$-th day.
+
+-----Output-----
+Output the minimum number of happiness units Gregory must lose from carrying umbrellas.
+
+-----Examples-----
+Sample Input 1:
+1 2
+1 2
+SSR
+Sample Output 1:
+3
+
+Sample Input 2:
+2 3
+3 2
+3 1
+SRS
+SRR
+Sample Output 2:
+4

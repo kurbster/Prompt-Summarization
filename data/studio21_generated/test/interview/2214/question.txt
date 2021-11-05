@@ -1,0 +1,49 @@
+A binary matrix is called good if every even length square sub-matrix has an odd number of ones. 
+
+Given a binary matrix $a$ consisting of $n$ rows and $m$ columns, determine the minimum number of cells you need to change to make it good, or report that there is no way to make it good at all. 
+
+All the terms above have their usual meanings — refer to the Notes section for their formal definitions. 
+
+
+-----Input-----
+
+The first line of input contains two integers $n$ and $m$ ($1 \leq n \leq m \leq 10^6$ and $n\cdot m \leq 10^6$)  — the number of rows and columns in $a$, respectively. 
+
+The following $n$ lines each contain $m$ characters, each of which is one of 0 and 1. If the $j$-th character on the $i$-th line is 1, then $a_{i,j} = 1$. Similarly, if the $j$-th character on the $i$-th line is 0, then $a_{i,j} = 0$.
+
+
+-----Output-----
+
+Output the minimum number of cells you need to change to make $a$ good, or output $-1$ if it's not possible at all.
+
+
+-----Examples-----
+Input
+3 3
+101
+001
+110
+
+Output
+2
+Input
+7 15
+000100001010010
+100111010110001
+101101111100100
+010000111111010
+111010010100001
+000011001111101
+111111011010011
+
+Output
+-1
+
+
+-----Note-----
+
+In the first case, changing $a_{1,1}$ to $0$ and $a_{2,2}$ to $1$ is enough. 
+
+You can verify that there is no way to make the matrix in the second case good. 
+
+Some definitions —   A binary matrix is one in which every element is either $1$ or $0$.  A sub-matrix is described by $4$ parameters — $r_1$, $r_2$, $c_1$, and $c_2$; here, $1 \leq r_1 \leq r_2 \leq n$ and $1 \leq c_1 \leq c_2 \leq m$.  This sub-matrix contains all elements $a_{i,j}$ that satisfy both $r_1 \leq i \leq r_2$ and $c_1 \leq j \leq c_2$.  A sub-matrix is, further, called an even length square if $r_2-r_1 = c_2-c_1$ and $r_2-r_1+1$ is divisible by $2$.

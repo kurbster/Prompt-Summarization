@@ -1,0 +1,42 @@
+Years have passed since Bash dropped out of university to become a Pokenom trainer. The adventure was full of difficulties and hardship, but Bash overcame all obstacles and became the best Pokenom trainer, like no one ever was!
+
+Today Bash is celebrating his $13$th anniversary of dropping out of university and becoming a Pokenom trainer.
+
+For the celebration party, Bash decided to prepare cakes for his $N$ Pokenoms. Bash’s Pokenoms are numbered from $1$ to $N$, inclusive. There are $N$ different cakes. The $i$-th Pokenom wants to eat the $i$-th cake.
+
+The cakes are made using some ingredients. Each ingredient is uniquely marked by a prime number between $1$ and $N$, inclusive.
+
+The recipe of the $X$-th cake contains $k$ grams of ingredient $p$ iff $p^{k}$ divides $X$, and $p^{k+1}$ does not. In other words, let the prime factorization of $X$ be $X = p_{1}^{k_{1}} \times p_{2}^{k_{2}} \times \cdots \times p_{m}^{k_{m}}$, the recipe of the $X$-th cake contains $k_{1}$ grams of ingredient $p_{1}$, $k_{2}$ grams of ingredient $p_{2}$, …, $k_{m}$ grams of ingredient $p_{m}$.
+
+Bash goes to a supermarket to buy ingredients. There, Bash realizes that the ingredients are very expensive. If Bash buys $k$ grams of ingredient $q$, Bash’s happiness decreases by $k^{2} \times C_{q}$.
+
+If the $i$-th Pokenom sees that Bash buys enough ingredient for the $i$-th cake, the Pokenom’s happiness increases by $V_{i}$.
+
+Please help Bash buy ingredients so that the total happiness of Bash and his $N$ Pokenoms is maximized!
+
+Note that the $i$-th Pokenom just needs to see that Bash has enough ingredients for the $i$-th cake. So even if the amount of ingredients Bash buys is enough to make either the $x$-th cake or the $y$-th cake, but not both, the total happiness still increases by $V_{x} + V_{y}$.
+
+For example, consider $N = 100$ and Bash buys $2$ grams of ingredient $2$, $1$ gram of ingredient $3$ and $1$ gram of ingredient $5$: Bash’s happiness decreases by $4 \times C_{2} + 1 \times C_{3} + 1 \times C_{5}$. Bash has enough ingredients for cakes $1..6, 10, 12, 15, 20, 30,$ and $60$. So the happiness of the Pokenoms increases by\[ V_{1} + V_{2} + \cdots + V_{6} + V_{10} + V_{12} + V_{15} + V_{20} + V_{30} + V_{60}. \]
+
+-----Input-----
+ - The first line contains one integer $N$ $(1 \leq N \leq 10^{4})$.
+ - The second line contains $N$ integers $V_{1}, V_{2}, \ldots V_{N}$$(0 \leq V_{i} \leq 10^{4})$.
+ - The third line contains $N$ integers $C_{1}, C_{2}, \ldots , C_{N}$$(0 \leq C_{i} \leq 10^{4})$. It is guaranteed that $C_{i} = 0$ if $i$ is not a prime.
+
+-----Output-----
+Print a single integer $B$ — the maximum total happiness of Bash and his Pokenoms.
+
+-----Examples-----
+Sample Input 1:
+10
+1 2 3 40 5 6 7 8 9 10
+0 2 3 0 5 0 7 0 0 0
+Sample Output 1:
+51
+
+Sample Input 2:
+1
+2207
+0
+Sample Output 2:
+2207

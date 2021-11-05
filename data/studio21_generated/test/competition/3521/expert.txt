@@ -1,0 +1,4 @@
+ You are given an array $a$ of length $n$ consisting of zeros. You perform $n$ actions with this array: during the $i$-th action: Choose the leftmost maximum length subarray consisting only of zeros; Let this segment be $[l; r]$.  If $r-l+1$ is odd then assign $a[\frac{l+r}{2}] := i$ otherwise assign $a[\frac{l+r-1}{2}] := i$.  
+
+
+-----Input----- The first line contains the value $N$, $1\le N\le 10^5$. Following this are $N$ lines each containing three real numbers $T_ i$, $s_ i$, and $a_ i$, with $0<T_ i\le 1000$, $0\le s_ i\le 100$, and $0\le a_ i < 2\pi $. All real numbers in the input have at most $6$ digits after the decimal point. -----Output----- On a single line output the maximum distance the spacecraft can travel. Your answer is considered correct if it has an absolute or relative error of at most $10^{-6}$. -----Examples----- Sample Input: 2 100 1 1 100 1 1.5 Sample Output: 199.500000

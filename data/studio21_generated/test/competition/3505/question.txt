@@ -1,0 +1,14 @@
+Given $N$ integers in the range $[-50000, 50000]$, how many ways are there to pick three integers $a_ i$, $a_ j$, $a_ k$, such that $i$, $j$, $k$ are pairwise distinct and $a_ i + a_ j = a_ k$? Two ways are different if their ordered triples $(i, j, k)$ of indices are different.
+
+-----Input-----
+The first line of input consists of a single integer $N$ ($1 \leq N \leq 200000$). The next line consists of $N$ space-separated integers $a_1, a_2, \dots , a_ N$.
+
+-----Output-----
+Output an integer representing the number of ways.
+
+-----Examples-----
+Sample Input:
+4
+1 2 3 4
+Sample Output:
+4

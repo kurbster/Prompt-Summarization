@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "11\nsabcabcfabc\n",
+        "18\ntrutrutiktiktappop\n",
+        "6\nabcdef\n"
+    ],
+    "outputs": [
+        "3\n",
+        "4\n",
+        "0\n"
+    ]
+}

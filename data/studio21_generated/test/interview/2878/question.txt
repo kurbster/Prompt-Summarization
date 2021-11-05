@@ -1,0 +1,33 @@
+Mirko and Slavko are playing a new game, “Trojke” (Triplets, in English). First they use a chalk to draw an $N \times N$ square grid on the road. Then they write letters into some of the squares. No letter is written more than once in the grid.
+
+The game consists of trying to find three letters on a line as fast as possible. Three letters are considered to be on the same line if there is a line going through the centre of each of the three squares.
+
+After a while it gets harder to find new triplets. Mirko and Slavko need a program that counts all the triplets, so that they know if the game is over or they need to search further.
+
+-----Input-----
+The first line contains an integer $N$ ($3 \le N \le 100$), the dimension of the grid.
+
+Each of the $N$ following lines contains $N$ characters describing the grid – uppercase letters and the character ’.’ which marks an empty square.
+
+-----Output-----
+Output the number of triples on a single line.
+
+-----Examples-----
+Sample Input 1:
+4
+...D
+..C.
+.B..
+A...
+Sample Output 1:
+4
+
+Sample Input 2:
+5
+..T..
+A....
+.FE.R
+....X
+S....
+Sample Output 2:
+3

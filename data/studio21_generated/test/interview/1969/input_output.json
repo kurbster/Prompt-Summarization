@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "5\n.....\n.XXX.\n.XXX.\n.XXX.\n.....\n",
+    "2\nXX\nXX\n",
+    "6\n......\nX.X.X.\n.X.X.X\nX.X.X.\n.X.X.X\n......\n",
+    "1\nX\n",
+    "1\n.\n",
+    "2\n.X\nX.\n",
+    "2\n..\n..\n",
+    "3\n...\n.X.\n...\n",
+    "14\nXXX.XXXXX..X.X\nX..XX..X...X..\n.....X.XX..XXX\n.X..X..XXX.XX.\n...XXXX.XX..XX\n.X..XX...XXX..\nXX.XX.XX..XXX.\n.X..X.....X.XX\n...XXX...XX.XX\nXXX.XX.XX.X.XX\nX.XXXX..XX.XX.\n.X.XX....X....\nX..XX..X.XX.X.\n..X...XX....XX\n"
+  ],
+  "outputs": [
+    "1\n",
+    "0\n",
+    "4\n",
+    "0\n",
+    "0\n",
+    "0\n",
+    "0\n",
+    "0\n",
+    "2\n"
+  ]
+}

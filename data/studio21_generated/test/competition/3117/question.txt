@@ -1,0 +1,24 @@
+Ivana won the bet (Zvonko hadn’t foreseen this and suspects that it is due to outside interference) and now Zvonko is waiting for her at the movies. While he is waiting, he is observing messages on a screen above him.
+
+As Ivana is running late, Zvonko has been looking at the screen for a while and noticed that some messages appeared on the screen more than once. Naturally, he’s been writing down all messages on a piece of paper. He wants to know the length of the longest string that appeared at least twice (appears in two different positions on the paper).
+
+-----Input-----
+The first line of input contains an integer $L~ (1 \leq L \leq 200000)$, the length of the string Zvonko wrote down.
+
+The second line contains a string of $L$ lowercase letter of the English alphabet.
+
+-----Output-----
+Output the length of the longest string that appears twice on a single line. If there is no such string, output zero.
+
+-----Examples-----
+Sample Input 1:
+11
+sabcabcfabc
+Sample Output 1:
+3
+
+Sample Input 2:
+18
+trutrutiktiktappop
+Sample Output 2:
+4

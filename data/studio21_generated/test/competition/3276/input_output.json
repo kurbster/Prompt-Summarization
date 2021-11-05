@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "4 5\nWRRRG\nWRRRG\nWRRRG\nWBBBB\n",
+        "3 4\nWWRR\nWRRR\nWRRR\n",
+        "3 3\nWWW\nWWW\nWWW\n"
+    ],
+    "outputs": [
+        "YES\n",
+        "NO\n",
+        "YES\n"
+    ]
+}

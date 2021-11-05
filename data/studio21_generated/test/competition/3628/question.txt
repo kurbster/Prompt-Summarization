@@ -1,0 +1,21 @@
+Alan works for a company specialising in computer security. He recently came up with what he thinks is a great public key cryptosystem, in which the private key consists of two permutations $\pi $ and $\sigma $ of $\{ 1, \dots , n\} $. The public key $(a_1, \dots , a_ n)$ is then given by $a_ i \equiv \pi _ i + \sigma _ i \pmod{n}$ for $1 \leq i \leq n$. The expression $x \equiv y \pmod n$ means that $x$ and $y$ have the same remainder after division by $n$.
+
+As an example with $n = 5$, consider\begin{align*} \pi & = (3,1,5,2,4), \\ \sigma & = (5,1,3,4,2), \text {and} \\ a & = (3,2,3,1,1). \end{align*}
+
+Here, for example, $a_5 \equiv 1 \equiv 4 + 2 \equiv \pi _5 + \sigma _5 \pmod{5}$, and all the entries in $\pi $ and $\sigma $ respectively are $\{ 1, \dots , 5\} $, each number occurring exactly once.
+
+Alan’s coworkers have some doubts about this system being secure, since finding any private key corresponding to the public key would break the system. Your task is to help them out. Given $n$ and a sequence $a = (a_1, \dots , a_ n)$, determine whether there are two permutations $\pi $ and $\sigma $ such that $\pi _ i + \sigma _ i = a_ i \pmod{n}$ for each $i$. If there are more such pairs, print any of them.
+
+-----Input-----
+The first line contains the length $n$ of the sequence and the permutation is written. The second line contains integers $a_1, \dots , a_ n$, satisfying $1 \leq a_ i \leq n$. The length $n$ satisfies $1 \leq n \leq 1000$.
+
+-----Output-----
+If there is no solution, output “impossible”. If there is a solution, output any of them, writing the two permutations on one line each.
+
+-----Examples-----
+Sample Input:
+5
+3 2 3 1 1
+Sample Output:
+1 4 3 5 2 
+2 3 5 1 4

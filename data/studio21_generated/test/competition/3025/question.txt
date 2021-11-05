@@ -1,0 +1,47 @@
+In the hills of a distant land there is a valley with many villages. The villages are all ruled by a cruel king who demands that each village pay him tribute in gold each year. The villages are required to bring gold to the king as quickly as possible when he demands it.
+
+There is a bandit village in the kingdom. The bandit village has saved no gold for the king, because they spent every bit of gold that they had! What are they going to do? Well, since they’re bandits, when they travel through other villages to get to the castle, they may (or may not) choose to steal the gold from any of those villages on their path to the castle, and present it to the king as their own.
+
+The bandits travel through as few villages as possible to reach the castle. They also have one other consideration-after delivering the gold to the king the bandits must be able to return home. They consider it unsafe to return home traveling through a village from whom they stole gold. The bandits do not otherwise care how long it takes to return home.
+
+Determine the maximum amount of gold the bandits can steal on their way to the king’s castle and still be able to return home safely.
+
+-----Input-----
+There will be a single test case in the input. This test case will begin with a line with two integers, $n$ ($3 \le n \le 36$) and $m$ ($n-1 \le m \le n(n-1)/2$), where $n$ is the number of villages, and $m$ is the number of roads. The villages are numbered $1 \ldots n$. Village $1$ is the bandit’s home, and village $2$ holds the king’s castle. On the next line will be $n-2$ space-separated integers $g$ ($1 \le g \le 5000$), which are the amount of gold in each village $3, 4, \ldots , n$, skipping the bandit’s home and the king’s castle. On each of the following $m$ lines will be two integers, $a$ and $b$ ($1 \le a < b \le n$) indicating that there is a road between villages $a$ and $b$. All roads are two-way. All $m$ $(a,b)$ pairs will be unique. There will be a path, direct or indirect, from every village to every other village.
+
+-----Output-----
+Output a single integer, indicating the maximum amount of gold that the bandits can purloin and still get safely home.
+
+-----Examples-----
+Sample Input 1:
+3 3
+1
+1 2
+2 3
+1 3
+Sample Output 1:
+0
+
+Sample Input 2:
+4 4
+24 10
+1 3
+2 3
+2 4
+1 4
+Sample Output 2:
+24
+
+Sample Input 3:
+6 8
+100 500 300 75
+1 3
+1 4
+3 6
+4 5
+3 5
+4 6
+2 5
+2 6
+Sample Output 3:
+800

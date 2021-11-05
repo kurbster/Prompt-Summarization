@@ -1,0 +1,2 @@
+ You are given N integers. You need to output if they are pairwise coprime, setwise coprime, or neither. 
+-----Input----- Input is given from Standard Input in the following format: N A_1 \ldots A_N -----Output----- If \{A_i\} is pairwise coprime, print pairwise coprime; if \{A_i\} is setwise coprime, print setwise coprime; if neither, print not coprime. -----Sample Input----- 3 3 4 5 -----Sample Output----- pairwise coprime GCD(3,4)=GCD(3,5)=GCD(4,5)=1, so they are pairwise coprime.

@@ -1,0 +1,34 @@
+A National Geographic film crew is visiting the ZOO this week. They are creating a documentary about animal speed and they would like to film one or more cheetahs running at full pace. A solitary running cheetah has been filmed successfully many times. Therefore, the crew is also after a much more spectacular feat: As many as possible cheetahs sprinting on parallel tracks filmed together in one shot.
+
+“No, that is impossible,” said the director. “We cannot squeeze those animals into some sort of a start box, as you probably imagine, and then open the box and make them run all at once. It is clearly too dangerous and unpredictable. No.”
+
+“Then let us make more boxes and open some of them earlier and some of them later,” said one of the filmmakers. “Could that work?”
+
+“And if we open the boxes with the slower cheetahs a bit earlier then after a while the faster ones will be overtaking the slower ones and that would be a great shot,” pointed out another filmmaker. “We would like to see the whole pack rather short with the last animals close the leading ones. As close as possible and at least for a moment.”
+
+It was a long and difficult discussion which ensued, but in the end the circumstances of the experiment were agreed upon.
+
+You are given the start time and the speed of each cheetah. The length of the pack, which is defined as the distance between the first and the last cheetah in the pack, might be different at different moments. Find the minimum length of the pack during the run, where all cheetahs must be running. You may also suppose that the track is so long that the minimum length of the pack happens at least a moment before the first cheetah reaches the finish line.
+
+All start boxes will be so close that you may consider them to be in the same place. The $k$-th cheetah will be released from its start box at the given time $t_ k$. The $k$-th cheetah is expected to run the whole distance at constant speed $v_ k$.
+
+-----Input-----
+The first line contains the number of cheetahs $N$ ($1 \leq N \leq 100000$). Next, there are $N$ lines, each line contains two integers $t_ k$, $v_ k$ separated by spaces and representing the start time and velocity of the $k$-th cheetah ($1 \leq k \leq N$). All input values $t_ k$ and $v_ k$ are positive and less than $10^5$.
+
+-----Output-----
+Print a single line with one floating point number $L$ specifying the minimum length of the running pack. Your answer should not differ from the correct answer by more than $10^{-2}$. The length of the pack is the distance between the first and the last animal in the pack. The length can be measured at any time $T \geq \max _{k = 1, \ldots , N} t_ k$. We suppose that each cheetah is running at a constant speed for all the time from the start and also at its moment of release from the start box.
+
+-----Examples-----
+Sample Input 1:
+2
+1 1
+1 1
+Sample Output 1:
+0.000
+
+Sample Input 2:
+2
+1 99999
+99999 99999
+Sample Output 2:
+9999700002.000

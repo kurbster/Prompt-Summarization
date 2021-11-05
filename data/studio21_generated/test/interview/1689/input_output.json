@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "6\nOO|OX\nXO|XX\nOX|OO\nXX|OX\nOO|OO\nOO|XX\n",
+    "4\nXO|OX\nXO|XX\nOX|OX\nXX|OX\n",
+    "5\nXX|XX\nXX|XX\nXO|OX\nXO|OO\nOX|XO\n",
+    "1\nXO|OX\n",
+    "1\nOO|OO\n",
+    "4\nXO|XX\nXX|XO\nOX|XX\nXO|XO\n",
+    "9\nOX|XO\nOX|XO\nXO|OX\nOX|OX\nXO|OX\nXX|OO\nOX|OX\nOX|XO\nOX|OX\n",
+    "61\nOX|XX\nOX|XX\nOX|XX\nXO|XO\nXX|XO\nXX|XX\nXX|XX\nOX|XX\nXO|XO\nOX|XO\nXO|OX\nXX|XX\nXX|XX\nOX|OX\nXX|OX\nOX|XO\nOX|XO\nXO|OX\nXO|XX\nOX|XX\nOX|XX\nXO|OX\nXO|XX\nXO|XX\nOX|XX\nXX|XX\nXX|XO\nXO|XX\nXX|XX\nXO|OX\nXX|XO\nXO|XX\nXO|XO\nXO|OX\nXX|OX\nXO|OX\nOX|XX\nXX|OX\nXX|XX\nOX|XO\nOX|XX\nXO|OX\nOX|XX\nOX|XX\nXO|XO\nXO|XX\nOX|XX\nXO|XO\nOX|XX\nXX|XX\nOX|XO\nXO|XO\nXO|XO\nOX|OX\nXX|OX\nXX|OX\nOX|XO\nOX|XX\nOX|OX\nXO|XX\nOX|XX\n",
+    "1\nOO|XX\n",
+    "10\nOO|XX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXX|XX\n",
+    "10\nXX|XX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXX|OO\n",
+    "5\nXX|XX\nXX|XX\nXO|OX\nOO|OX\nOX|XO\n",
+    "6\nOO|XX\nXO|XX\nOX|OO\nXX|OX\nOO|XX\nOX|XX\n"
+  ],
+  "outputs": [
+    "YES\n++|OX\nXO|XX\nOX|OO\nXX|OX\nOO|OO\nOO|XX\n",
+    "NO\n",
+    "YES\nXX|XX\nXX|XX\nXO|OX\nXO|++\nOX|XO\n",
+    "NO\n",
+    "YES\n++|OO\n",
+    "NO\n",
+    "YES\nOX|XO\nOX|XO\nXO|OX\nOX|OX\nXO|OX\nXX|++\nOX|OX\nOX|XO\nOX|OX\n",
+    "NO\n",
+    "YES\n++|XX\n",
+    "YES\n++|XX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXX|XX\n",
+    "YES\nXX|XX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXO|OX\nXX|++\n",
+    "YES\nXX|XX\nXX|XX\nXO|OX\n++|OX\nOX|XO\n",
+    "YES\n++|XX\nXO|XX\nOX|OO\nXX|OX\nOO|XX\nOX|XX\n"
+  ]
+}

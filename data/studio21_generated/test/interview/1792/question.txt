@@ -1,0 +1,73 @@
+Thanks to the Doctor's help, the rebels managed to steal enough gold to launch a full-scale attack on the Empire! However, Darth Vader is looking for revenge and wants to take back his gold.
+
+The rebels have hidden the gold in various bases throughout the galaxy. Darth Vader and the Empire are looking to send out their spaceships to attack these bases.
+
+The galaxy can be represented as an undirected graph with $n$ planets (nodes) and $m$ wormholes (edges), each connecting two planets.
+
+A total of $s$ empire spaceships and $b$ rebel bases are located at different planets in the galaxy.
+
+Each spaceship is given a location $x$, denoting the index of the planet on which it is located, an attacking strength $a$, and a certain amount of fuel $f$.
+
+Each base is given a location $x$, and a defensive strength $d$.
+
+A spaceship can attack a base if both of these conditions hold:   the spaceship's attacking strength is greater or equal than the defensive strength of the base  the spaceship's fuel is greater or equal to the shortest distance, computed as the number of wormholes, between the spaceship's planet and the base's planet 
+
+Vader is very particular about his attacking formations. He requires that each spaceship is to attack at most one base and that each base is to be attacked by at most one spaceship.
+
+Vader knows that the rebels have hidden $k$ gold in each base, so he will assign the spaceships to attack bases in such a way that maximizes the number of bases attacked.
+
+Therefore, for each base that is attacked, the rebels lose $k$ gold.
+
+However, the rebels have the ability to create any number of dummy bases. With the Doctor's help, these bases would exist beyond space and time, so all spaceship can reach them and attack them. Moreover, a dummy base is designed to seem irresistible: that is, it will always be attacked by some spaceship.
+
+Of course, dummy bases do not contain any gold, but creating such a dummy base costs $h$ gold.
+
+What is the minimum gold the rebels can lose if they create an optimal number of dummy bases?
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $m$ ($1 \leq n \leq 100$, $0 \leq m \leq 10000$), the number of nodes and the number of edges, respectively.
+
+The next $m$ lines contain two integers $u$ and $v$ ($1 \leq u$, $v \leq n$) denoting an undirected edge between the two nodes.
+
+The next line contains four integers $s$, $b$, $k$ and $h$ ($1 \leq s$, $b \leq 1000$, $0 \leq k$, $h \leq 10^9$), the number of spaceships, the number of bases, the cost of having a base attacked, and the cost of creating a dummy base, respectively.
+
+The next $s$ lines contain three integers $x$, $a$, $f$ ($1 \leq x \leq n$, $0 \leq a$, $f \leq 10^9$), denoting the location, attack, and fuel of the spaceship.
+
+The next $b$ lines contain two integers $x$, $d$ ($1 \leq x \leq n$, $0 \leq d \leq 10^9$), denoting the location and defence of the base.
+
+
+-----Output-----
+
+Print a single integer, the minimum cost in terms of gold.
+
+
+-----Example-----
+Input
+6 7
+1 2
+2 3
+3 4
+4 6
+6 5
+4 4
+3 6
+4 2 7 3
+1 10 2
+3 8 2
+5 1 0
+6 5 4
+3 7
+5 2
+
+Output
+12
+
+
+
+-----Note-----
+
+One way to minimize the cost is to build $4$ dummy bases, for a total cost of $4 \times 3 = 12$.
+
+One empire spaceship will be assigned to attack each of these dummy bases, resulting in zero actual bases attacked.

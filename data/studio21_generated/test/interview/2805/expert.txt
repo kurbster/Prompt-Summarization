@@ -1,0 +1,2 @@
+ You are given an integer $N$. Your task is to write a program that solves Frane s problem. 
+-----Input----- The first and only line of input contains the integer $1 \le N \le 10^9$. -----Output----- Output the result from Frane’s program on a single line. -----Examples----- Sample Input 1: 1 Sample Output 1: 0 Sample Input 2: 10 Sample Output 2: 5

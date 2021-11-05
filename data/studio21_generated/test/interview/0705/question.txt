@@ -1,0 +1,51 @@
+Rock... Paper!
+
+After Karen have found the deterministic winning (losing?) strategy for rock-paper-scissors, her brother, Koyomi, comes up with a new game as a substitute. The game works as follows.
+
+A positive integer n is decided first. Both Koyomi and Karen independently choose n distinct positive integers, denoted by x_1, x_2, ..., x_{n} and y_1, y_2, ..., y_{n} respectively. They reveal their sequences, and repeat until all of 2n integers become distinct, which is the only final state to be kept and considered.
+
+Then they count the number of ordered pairs (i, j) (1 ≤ i, j ≤ n) such that the value x_{i} xor y_{j} equals to one of the 2n integers. Here xor means the bitwise exclusive or operation on two integers, and is denoted by operators ^ and/or xor in most programming languages.
+
+Karen claims a win if the number of such pairs is even, and Koyomi does otherwise. And you're here to help determine the winner of their latest game.
+
+
+-----Input-----
+
+The first line of input contains a positive integer n (1 ≤ n ≤ 2 000) — the length of both sequences.
+
+The second line contains n space-separated integers x_1, x_2, ..., x_{n} (1 ≤ x_{i} ≤ 2·10^6) — the integers finally chosen by Koyomi.
+
+The third line contains n space-separated integers y_1, y_2, ..., y_{n} (1 ≤ y_{i} ≤ 2·10^6) — the integers finally chosen by Karen.
+
+Input guarantees that the given 2n integers are pairwise distinct, that is, no pair (i, j) (1 ≤ i, j ≤ n) exists such that one of the following holds: x_{i} = y_{j}; i ≠ j and x_{i} = x_{j}; i ≠ j and y_{i} = y_{j}.
+
+
+-----Output-----
+
+Output one line — the name of the winner, that is, "Koyomi" or "Karen" (without quotes). Please be aware of the capitalization.
+
+
+-----Examples-----
+Input
+3
+1 2 3
+4 5 6
+
+Output
+Karen
+
+Input
+5
+2 4 6 8 10
+9 7 5 3 1
+
+Output
+Karen
+
+
+
+-----Note-----
+
+In the first example, there are 6 pairs satisfying the constraint: (1, 1), (1, 2), (2, 1), (2, 3), (3, 2) and (3, 3). Thus, Karen wins since 6 is an even number.
+
+In the second example, there are 16 such pairs, and Karen wins again.

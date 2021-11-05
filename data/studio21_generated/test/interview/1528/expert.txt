@@ -1,0 +1,2 @@
+ You are given an integer N and an integer X. How many patties will Lunlun the Dachshund eat from the bottom of this burger? 
+-----Input----- Input is given from Standard Input in the following format: N X -----Output----- Print the number of patties in the bottom-most X layers from the bottom of a level-N burger. -----Sample Input----- 2 7 -----Sample Output----- 4 There are 4 patties in the bottom-most 7 layers of a level-2 burger (BBPPPBPBPPPBB).

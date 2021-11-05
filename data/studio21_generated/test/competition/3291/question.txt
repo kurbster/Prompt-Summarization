@@ -1,0 +1,38 @@
+You are an employee of the Boxing And Processing Company and you are tasked with distributing boxes in one of the company’s enormous warehouses. At BAPC Ltd., boxes travel by conveyor belt. Two conveyor belts can be merged into one by letting one drop its content onto the other. On the other hand, a belt can be split into two by using a splitter, which sends a specific portion of its input to its first output and the rest to its second output. Normally your splitters are adjustable, being able to distribute its input over its output belts in any conceivable ratio, but in an attempt to cut costs your boss has ordered cheap knock-off splitters which can only distribute its input in a fixed ratio $a:b$. Instead of arguing with your boss about how you really need some $c:d$ splitters, you decide to make them yourself.
+
+Of course, with your frugal boss, you have to watch your costs. You cannot build your splitter system in such a way that there are boxes that never leave the system. Nor can you use splitters that never receive any boxes. Finally, you cannot use too many $a: b$ splitters in total.
+
+Given the ratios $a:b$ and $c:d$, construct a network of belts and at most $200$ knock-off $a:b$ splitters that has a single global input belt and two global output belts over which the global input is distributed in a ratio $c:d$.
+
+Note that a splitter of ratio $x : y$ sends exactly $\frac x{x+y}$ of the incoming boxes to the first output and exactly $\frac y{x+y}$ of them to the second output.
+
+-----Input-----
+ - The first line contains two integers $1\leq a,b\leq 10^9$ with $a+b\leq 10^9$ denoting the ratio $a:b$ of your knock-off splitter.
+ - The second line contains two integers $1\leq c,d\leq 10^9$ with $c+d\leq 10^9$ denoting the ratio $c:d$ of your desired splitter.
+
+-----Output-----
+ - The first line contains an integer $1\leq n\leq 200$, the number of $a:b$ splitters used.
+ - Then follow $n$ lines, the $i$-th of which contains two integers $-2\leq l_ i,r_ i<n$.
+
+Here $l_ i$ is the index of the splitter connected to the left output of the $i$-th splitter, where it deposits $a/(a+b)$ of its input. Similarly $r_ i$ is the index of the splitter receiving $b/(a+b)$ of the input of the $i$-th splitter. The splitters are indexed starting from $0$. The global input is connected to splitter $0$. The special values $-1$ and $-2$ for $l_ i$ and $r_ i$ correspond to the first and second global output, which need to receive $c/(c+d)$ and $d/(c+d)$ of the global input respectively.
+
+Note that you cannot place a splitter in such a way that no box ever reaches it, nor in such a way that a box that passes through it will never reach the output.
+
+If there are multiple possible solutions, you may output any one of them.
+
+-----Examples-----
+Sample Input 1:
+2 3
+3 2
+Sample Output 1:
+1
+-2 -1
+
+Sample Input 2:
+1 2
+3 4
+Sample Output 2:
+3
+-1 1
+2 1
+0 -2

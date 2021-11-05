@@ -1,0 +1,36 @@
+Jack, naïve fellow that he is, has fallen into the clutches of a dastardly and sophisticated multi-level marketing scheme.
+
+It all started when a mysterious stranger pushed upon young Jack a bag of ordinary beans, promising that if only he could amass the right quantities of each kind of bean, he could grow a mighty beanstalk and climb it to the unimaginable wealth at its top.
+
+This all sounds very sensible to Jack... But there is one catch. He must acquire the extra beans from other farmers, who as one might expect are not too keen to give away the fruits (nor the seeds) of their labour. Each time Jack comes to ask for a bean, they will give him exactly one from their farm, but since he is not a paying customer the exact species may vary between farmers and between visits.
+
+There is another option, but it is expensive. Jack can give up some of his cows to the mysterious stranger in exchange for one additional bean per cow. Of course, this is a drastic measure. We would like to help Jack keep as many of his cows as possible, while still achieving his goals.
+
+How many cows will Jack need to budget for to have $100\% $ certainty of success?
+
+-----Input-----
+ - One line containing an integer $B$, ($1 \le B \le 20$), the number of types of beans available.
+ - One line containing $B$ integers, $V_1 \ldots V_ B$, ($0 \le V_1 \ldots V_ B \le 100$), the number of each kind of bean required.
+ - One line containing $T$ ($1 \le T \le 100$), the number of other farms in Jack’s small village.
+ - $T$ more lines, each beginning with an integer $M$ ($1 \le M \le B$) giving the number of kinds of bean this farmer grows. This is followed by $M$ more distinct integers $T_1 \ldots T_ M$ ($1 \le T_1 \ldots T_ M \le B$), each corresponding to one kind of bean.
+
+-----Output-----
+ - One line containing one integer: the number of cows Jack must bring with him in order to be $100\% $ sure of ending the day with enough beans to grow a magical beanstalk.
+
+-----Examples-----
+Sample Input 1:
+1
+5
+1
+1 1
+Sample Output 1:
+0
+
+Sample Input 2:
+3
+5 5 5
+2
+2 1 2
+2 2 3
+Sample Output 2:
+10

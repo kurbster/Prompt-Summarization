@@ -1,0 +1,51 @@
+Ramu was a lazy farmer. He had inherited a fairly large farm and a nice house from his father. Ramu leased out the farm land to others and earned a rather handsome income. His father used to keep a buffalo at home and sell its milk but the buffalo died a few days after his father did.
+Ramu too wanted to make some money from buffaloes, but in a quite a different way. He decided that his future lay in speculating on buffaloes. In the market in his village, buffaloes were bought and sold everyday. The price fluctuated over the year, but on any single day the price was always the same.
+He decided that he would buy buffaloes when the price was low and sell them when the price was high and, in the process, accummulate great wealth. Unfortunately his house had space for just one buffalo and so he could own at most one buffalo at any time.
+Before he entered the buffalo market, he decided to examine to examine the variation in the price of buffaloes over the last few days and determine the maximum profit he could have made. Suppose, the price of a buffalo over the last $10$ days varied as
+1012811111012151310101281111101215131010\quad  12\quad  8\quad  11\quad  11\quad  10\quad  12\quad  15\quad  13\quad  10
+Ramu is a lazy fellow and he reckoned that he would have been willing to visit the market at most $5$ times (each time to either buy or sell a buffalo) over the last $10$ days. Given this, the maximum profit he could have made is $9$ rupees. To achieve this, he buys a buffalo on day $1$, sells it on day $2$, buys one more on day $3$ and sells it on day $8$. If he was a little less lazy and was willing to visit the market $6$ times, then he could have made more money. He could have bought on day $1$, sold on day $2$, bought on day $3$, sold on day $4$, bought on day $6$ and sold on day $8$ to make a profit of $10$ rupees.
+Your task is help Ramu calculate the maximum amount he can earn by speculating on buffaloes, given a history of daily buffalo prices over a period and a limit on how many times Ramu is willing to go to the market during this period.
+
+-----Input:-----
+- The first line of the input contains two integers $N$ and $K$, where $N$ is the number of days for which the price data is available and $K$ is the maximum number of times that Ramu is willing to visit the cattle market. 
+- The next $N$ lines (line $2, 3,...,N+1$) contain a single positive integer each. The integer on line $i+1$, $1 \leq i \leq N$, indicates the price of a buffalo on day $i$.
+
+-----Output:-----
+A single nonnegative integer indicating that maximum amount of profit that Ramu can make if he were to make at most $K$ trips to the market.
+
+-----Constraints:-----
+- $1 \leq N \leq 400$.
+- $1 \leq K \leq 400$.
+- $0 \leq$ price of a buffalo on any day $\leq 1000$
+
+-----Sample Input 1:-----
+10 5
+10
+12
+8
+11
+11
+10
+12
+15
+13
+10
+
+-----Sample Output 1:-----
+9
+
+-----Sample Input 2:-----
+10 6
+10
+12
+8
+11
+11
+10
+12
+15
+13
+10
+
+-----Sample Output 2:-----
+10

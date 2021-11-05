@@ -1,0 +1,24 @@
+Your friend’s newest hobby is to play movie theme songs on her freshly acquired floppy drive organ. This organ is a collection of good old floppy drives, where each drive has been tampered with to produce sound of a unique frequency. The sound is produced by a step motor that moves the read/write head of the floppy drive along the radial axis of the drive’s spin disk. The radial axis starts in the center of the spin disk and ends at the outer edge of the spin disk.
+
+The sound from one drive will play continuously as long as the read/write head keeps moving in one direction; when the head changes direction, there is a brief pause of $1$fs—one floppysecond, or about $100$ microseconds. The read/write head must change direction when it reaches either the inner or the outer end point of the radial axis, but it can also change direction at any other point along this axis, as determined by your friend. You can make the head stay still at any time and for as long as you wish. The starting position of the read-write head can be chosen freely.
+
+Your friend is a nutcase perfectionist, and will not accept any pauses where there are not supposed to be any; nor will she accept sound when there is meant to be silence. To figure out whether a given piece of music can be played—perfectly—on her organ, she has asked for your help.
+
+For each frequency, you are given a list of intervals, each describing when that particular frequency should play, and you must decide if all of the frequencies can be played as intended. You can assume your friend has enough drives to cover all the required frequencies.
+
+-----Input-----
+The first line contains an integer $f, 1 \leq f \leq 10$, denoting the number of frequencies used. Then follow $f$ blocks, on the format:
+ - A single line with two integers $t_ i, 1\leq t_ i \leq 10\ 000$ and $n_ i, 1\leq n_ i \leq 100$; the number of floppyseconds it takes for the read/write head of frequency $i$ to move between the end points of its radial axis, and the number of intervals for which frequency $i$ should play.
+ - $n_ i$ lines, where the $j$-th line has two integers $t_{i,2j}, t_{i,2j+1}$, where $0\leq t_{i,2j},t_{i,2j+1} \leq 1\ 000\ 000$, indicating that the $i$-th frequency should start playing at time $t_{i,2j}$ and stop playing at time $t_{i,2j+1}$. You can assume that these numbers are in stricly ascending order, i.e. $t_{i,1} < t_{i,2} < \dots < t_{i, 2n_ i}$.
+
+-----Output-----
+If it is possible to play all the $f$ frequencies as intended, output “possible”. Otherwise output “impossible”.
+
+-----Examples-----
+Sample Input:
+1
+6 2
+0 4
+6 12
+Sample Output:
+possible

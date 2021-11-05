@@ -1,0 +1,52 @@
+A PIN code is a string that consists of exactly $4$ digits. Examples of possible PIN codes: 7013, 0000 and 0990. Please note that the PIN code can begin with any digit, even with 0.
+
+Polycarp has $n$ ($2 \le n \le 10$) bank cards, the PIN code of the $i$-th card is $p_i$.
+
+Polycarp has recently read a recommendation that it is better to set different PIN codes on different cards. Thus he wants to change the minimal number of digits in the PIN codes of his cards so that all $n$ codes would become different.
+
+Formally, in one step, Polycarp picks $i$-th card ($1 \le i \le n$), then in its PIN code $p_i$ selects one position (from $1$ to $4$), and changes the digit in this position to any other. He needs to change the minimum number of digits so that all PIN codes become different.
+
+Polycarp quickly solved this problem. Can you solve it?
+
+
+-----Input-----
+
+The first line contains integer $t$ ($1 \le t \le 100$) — the number of test cases in the input. Then test cases follow.
+
+The first line of each of $t$ test sets contains a single integer $n$ ($2 \le n \le 10$) — the number of Polycarp's bank cards. The next $n$ lines contain the PIN codes $p_1, p_2, \dots, p_n$ — one per line. The length of each of them is $4$. All PIN codes consist of digits only.
+
+
+-----Output-----
+
+Print the answers to $t$ test sets. The answer to each set should consist of a $n + 1$ lines
+
+In the first line print $k$ — the least number of changes to make all PIN codes different. In the next $n$ lines output the changed PIN codes in the order corresponding to their appearance in the input. If there are several optimal answers, print any of them.
+
+
+-----Example-----
+Input
+3
+2
+1234
+0600
+2
+1337
+1337
+4
+3139
+3139
+3139
+3139
+
+Output
+0
+1234
+0600
+1
+1337
+1237
+3
+3139
+3138
+3939
+6139

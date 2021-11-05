@@ -1,0 +1,2 @@
+ 
+-----Input----- The first and only line of input contains an integer n (1 ≤ n ≤ 1000). -----Output----- Print Eleven's new name on the first and only line of output. -----Examples----- Input 8 Output OOOoOooO Input 15 Output OOOoOooOooooOoo

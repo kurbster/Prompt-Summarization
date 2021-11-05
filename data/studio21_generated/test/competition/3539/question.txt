@@ -1,0 +1,37 @@
+A Bipartite Graph is an undirected graph whose vertices can be partitioned into $2$ sets such that, for each edge $(u, v)$, $u$ and $v$ belong to different sets.
+
+Socket has challenged Bash to a Bipartite Battle. In the Bipartite Battle, Bash and Socket play a game with Bipartite Graphs.
+
+The Bipartite Battle happens as follows:
+ - Socket draws $N$ bipartite graphs. The $i$-th graph has $2$ sets of vertices, one with $a_ i$ vertices, and the other with $b_ i$ vertices.
+ - Then the $2$ players, Bash and Socket alternatively take turns. In each turn, a player must choose exactly one non-empty graph, then delete exactly one edge or exactly one vertex of the chosen graph. If the player deletes one vertex, all edges adjacent to it are also deleted.
+ - The player who cannot move loses. Note that this can only happen when all edges and all vertices of all graphs have been deleted.
+ - Bash plays first.
+
+Of course, Socket does not want to play fair. Socket plans to draw bipartite graphs such that he always wins.
+
+How many ways can Socket draw $N$ bipartite graphs, so that he always wins, assuming both players play optimally?
+
+-----Notes-----
+For the $i$-th bipartite graph, let’s number the vertices in first set from $1$ to $a_ i$, and the vertices in second set from $1$ to $b_ i$.
+
+An edge connecting vertex $u$ in first set and vertex $v$ in second set is denoted as $(u, v)$.
+
+Two drawings of bipartite graphs are considered different iff there exists an index $j$ and a pair of integers $(u, v)$, such that:
+ - $(u, v)$ is an edge of $j$-th graph in one drawing.
+ - $(u, v)$ is NOT an edge of $j$-th graph in the other drawing.
+
+-----Input-----
+The first line of input contains the integer $N$ $(1 \le N \le 10^5)$.
+
+$N$ lines follow, each line contains exactly $2$ space-separated integers $a_ i$ and $b_ i$$(1 \le a_ i, b_ i \le 10^9)$.
+
+-----Output-----
+Print exactly one integer — the number of ways Socket can draw $N$ bipartite graphs, modulo $10^9 + 7$.
+
+-----Examples-----
+Sample Input:
+1
+1 1
+Sample Output:
+1

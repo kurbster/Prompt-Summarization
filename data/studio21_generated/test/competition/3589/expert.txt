@@ -1,0 +1,2 @@
+ Nikolaj has been tasked with implementing check digits. He needs to find how many numbers in the interval $[L, R]$ result in each digit. 
+-----Input----- A single line consisting of two integers $L$ and $R$ with $1 \leq L \leq R \leq 10^{15}$. -----Output----- Print $9$ integers $a_1, a_2, \ldots , a_9$ on a single line. The $i$th number $a_ i$ is the number of integers $x$ satisfying $L \leq x \leq R$ such that repeated multiplication of the nonzero digits of $x$ results in the digit $i$. -----Examples----- Sample Input: 50 100 Sample Output: 3 7 4 6 5 7 2 15 2

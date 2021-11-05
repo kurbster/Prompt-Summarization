@@ -1,0 +1,35 @@
+Chef likes arrays a lot. Today, he found an array A consisting of N positive integers.
+Let L denote the sorted (in non-increasing order) list of size N*(N+1)/2 containing the sums of all possible contiguous subarrays of A. Chef is interested in finding the first K elements from the list L. Can you help him in accomplishing this task?
+
+-----Input-----
+There is only a single test case per input file.
+The first line of input contains two space separated integer numbers N and K denoting the size of the array and the number of the maximal sums you need to find.
+The following line contains N space separated integer numbers denoting the array A.
+
+-----Output-----
+Output K space separated integers where the ith integer denotes the ith element of L.
+
+-----Constraints-----
+- 1 ≤ N ≤ 105
+- 1 ≤ K ≤ min(N*(N+1)/2, 105)
+- 1 ≤ Ai ≤ 109
+
+-----Subtasks-----
+- Subtask 1 (47 pts) : 1 ≤ N ≤ 1000, 1 ≤ K ≤ min{N*(N+1)/2, 105}
+- Subtask 2 (53 pts) : 1 ≤ N ≤ 105, 1 ≤ K ≤ min{N*(N+1)/2, 105}
+
+-----Example-----
+Input 13 4
+1 3 4
+
+Output 18 7 4 4
+
+Input 23 3
+10 2 7
+
+Output 219 12 10
+
+-----Explanation-----
+Test 1:
+
+The first 4 elements of it are [8, 7, 4, 4].

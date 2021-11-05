@@ -1,0 +1,54 @@
+A new dog show on TV is starting next week. On the show dogs are required to demonstrate bottomless stomach, strategic thinking and self-preservation instinct. You and your dog are invited to compete with other participants and naturally you want to win!
+
+On the show a dog needs to eat as many bowls of dog food as possible (bottomless stomach helps here). Dogs compete separately of each other and the rules are as follows:
+
+At the start of the show the dog and the bowls are located on a line. The dog starts at position x = 0 and n bowls are located at positions x = 1, x = 2, ..., x = n. The bowls are numbered from 1 to n from left to right. After the show starts the dog immediately begins to run to the right to the first bowl.
+
+The food inside bowls is not ready for eating at the start because it is too hot (dog's self-preservation instinct prevents eating). More formally, the dog can eat from the i-th bowl after t_{i} seconds from the start of the show or later.
+
+It takes dog 1 second to move from the position x to the position x + 1. The dog is not allowed to move to the left, the dog runs only to the right with the constant speed 1 distance unit per second. When the dog reaches a bowl (say, the bowl i), the following cases are possible:  the food had cooled down (i.e. it passed at least t_{i} seconds from the show start): the dog immediately eats the food and runs to the right without any stop,  the food is hot (i.e. it passed less than t_{i} seconds from the show start): the dog has two options: to wait for the i-th bowl, eat the food and continue to run at the moment t_{i} or to skip the i-th bowl and continue to run to the right without any stop. 
+
+After T seconds from the start the show ends. If the dog reaches a bowl of food at moment T the dog can not eat it. The show stops before T seconds if the dog had run to the right of the last bowl.
+
+You need to help your dog create a strategy with which the maximum possible number of bowls of food will be eaten in T seconds.
+
+
+-----Input-----
+
+Two integer numbers are given in the first line - n and T (1 ≤ n ≤ 200 000, 1 ≤ T ≤ 2·10^9) — the number of bowls of food and the time when the dog is stopped.
+
+On the next line numbers t_1, t_2, ..., t_{n} (1 ≤ t_{i} ≤ 10^9) are given, where t_{i} is the moment of time when the i-th bowl of food is ready for eating.
+
+
+-----Output-----
+
+Output a single integer — the maximum number of bowls of food the dog will be able to eat in T seconds.
+
+
+-----Examples-----
+Input
+3 5
+1 5 3
+
+Output
+2
+
+Input
+1 2
+1
+
+Output
+1
+
+Input
+1 1
+1
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first example the dog should skip the second bowl to eat from the two bowls (the first and the third).

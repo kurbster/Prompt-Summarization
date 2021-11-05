@@ -1,0 +1,18 @@
+Filoména wants to write a message on her newly opened sticker store. She wants to write the message using stickers that she sells in the store. Each sticker spells a word and has a price. She has unlimited supply of any type of sticker. The stickers can overlap but the maximum thickness of the message is two stickers, that is, at no place should more than two stickers overlap (otherwise the message would stick out too much). Now she wonders whether it is possible to write the message and if so, what is the minimal cost of doing it?
+
+-----Input-----
+The first line contains the message written as one word in capital letters. The second line contains $n$, the number of different types of stickers. Each of the next $n$ lines contains the word spelled by the sticker and the price of the sticker (the word is a single word in capital letters; the price of the sticker is a positive integer $\leq 100000$). You may assume that $n\leq 500$ and that length of each sticker is at most $20$. The length of the message is at most $1000$.
+
+-----Output-----
+The output consists of a single line. If the message can be assembled from the stickers with no more than two stickers overlapping at any place then it should contain the minimal cost of creating the message. Otherwise it should contain the string IMPOSSIBLE.
+
+-----Examples-----
+Sample Input:
+BUYSTICKERS
+4
+BUYER 10
+STICKY 10
+TICKERS 1
+ERS 8
+Sample Output:
+28

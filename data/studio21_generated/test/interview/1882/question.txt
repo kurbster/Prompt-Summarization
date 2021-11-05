@@ -1,0 +1,70 @@
+You are preparing for an exam on scheduling theory. The exam will last for exactly T milliseconds and will consist of n problems. You can either solve problem i in exactly t_{i} milliseconds or ignore it and spend no time. You don't need time to rest after solving a problem, either.
+
+Unfortunately, your teacher considers some of the problems too easy for you. Thus, he assigned an integer a_{i} to every problem i meaning that the problem i can bring you a point to the final score only in case you have solved no more than a_{i} problems overall (including problem i).
+
+Formally, suppose you solve problems p_1, p_2, ..., p_{k} during the exam. Then, your final score s will be equal to the number of values of j between 1 and k such that k ≤ a_{p}_{j}.
+
+You have guessed that the real first problem of the exam is already in front of you. Therefore, you want to choose a set of problems to solve during the exam maximizing your final score in advance. Don't forget that the exam is limited in time, and you must have enough time to solve all chosen problems. If there exist different sets of problems leading to the maximum final score, any of them will do.
+
+
+-----Input-----
+
+The first line contains two integers n and T (1 ≤ n ≤ 2·10^5; 1 ≤ T ≤ 10^9) — the number of problems in the exam and the length of the exam in milliseconds, respectively.
+
+Each of the next n lines contains two integers a_{i} and t_{i} (1 ≤ a_{i} ≤ n; 1 ≤ t_{i} ≤ 10^4). The problems are numbered from 1 to n.
+
+
+-----Output-----
+
+In the first line, output a single integer s — your maximum possible final score.
+
+In the second line, output a single integer k (0 ≤ k ≤ n) — the number of problems you should solve.
+
+In the third line, output k distinct integers p_1, p_2, ..., p_{k} (1 ≤ p_{i} ≤ n) — the indexes of problems you should solve, in any order.
+
+If there are several optimal sets of problems, you may output any of them.
+
+
+-----Examples-----
+Input
+5 300
+3 100
+4 150
+4 80
+2 90
+2 300
+
+Output
+2
+3
+3 1 4
+
+Input
+2 100
+1 787
+2 788
+
+Output
+0
+0
+
+
+Input
+2 100
+2 42
+2 58
+
+Output
+2
+2
+1 2
+
+
+
+-----Note-----
+
+In the first example, you should solve problems 3, 1, and 4. In this case you'll spend 80 + 100 + 90 = 270 milliseconds, falling within the length of the exam, 300 milliseconds (and even leaving yourself 30 milliseconds to have a rest). Problems 3 and 1 will bring you a point each, while problem 4 won't. You'll score two points.
+
+In the second example, the length of the exam is catastrophically not enough to solve even a single problem.
+
+In the third example, you have just enough time to solve both problems in 42 + 58 = 100 milliseconds and hand your solutions to the teacher with a smile.

@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "3\n9\niredppipe\npiedpiper\n4\nestt\ntest\n4\ntste\ntest\n",
+    "4\n1\na\nz\n5\nadhas\ndasha\n5\naashd\ndasha\n5\naahsd\ndasha\n",
+    "6\n7\ncontest\nntecost\n7\ncontest\nnstteco\n7\ncontest\ntnsteco\n7\ncontest\ncotestn\n7\ncontest\ncontest\n7\nontestc\ncontest\n",
+    "5\n2\nab\naa\n2\naa\naa\n2\nab\nba\n2\nbb\nba\n3\naab\nabb\n"
+  ],
+  "outputs": [
+    "2\n1\n2\n",
+    "-1\n2\n2\n3\n",
+    "3\n4\n4\n1\n0\n1\n",
+    "-1\n0\n1\n-1\n-1\n"
+  ]
+}

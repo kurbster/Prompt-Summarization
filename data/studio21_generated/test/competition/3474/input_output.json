@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5 10 10 10 10 0\n5 10 10 5 10 0\n6 10 10 10 10 0\n",
+        "10 10 20 20 20 10\n"
+    ],
+    "outputs": [
+        "negative-infinity 0\n5 12.5\nnegative-infinity -5\n",
+        "can't hit the wall\n"
+    ]
+}

@@ -1,0 +1,2 @@
+ You are given two integers H and X. Your task is to find the number of attacks Caracal needs to make before winning. 
+-----Input----- Input is given from Standard Input in the following format: H -----Output----- Find the minimum number of attacks Caracal needs to make before winning. -----Sample Input----- 2 -----Sample Output----- 3 When Caracal attacks the initial monster, it disappears, and two monsters appear, each with the health of 1. Then, Caracal can attack each of these new monsters once and win with a total of three attacks.

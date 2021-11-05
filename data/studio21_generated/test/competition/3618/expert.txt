@@ -1,0 +1,2 @@
+ You are given a list of $n$ integers and $d$ days. On each day you must increment an element and decrement an adjacent positive element. Find the maximum number of best friend pairs that Gon and Killua can have. 
+-----Input----- The input contains exactly one integer $n$ $(1 \le n \le 10^5)$. -----Output----- The output contains exactly one integer — the number of pairs of best friend numbers with exactly $n$ digits, modulo $998244353$. -----Examples----- Sample Input: 1 Sample Output: 10

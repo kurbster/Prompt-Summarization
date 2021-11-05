@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2\nHelloWorld.c\nint Main() {\n    printf(\"Hello %d\\n\",i);\n}\n***END***\nAdd.c\nint Main() {\n  for (int i=0; i<10; i++)\n    sum += i;\n  printf(\"SUM %d\", sum);\n}\n***END***\nint Main() {\n  printf(\"Hello %d\\n\",i);\n  printf(\"THE END\\n\");\n}\n***END***\n",
+        "2\nHelloWorld1.bas\n10 PRINT \"*******************\"\n20 PRINT \"*******************\"\n30 PRINT \"--- HELLO WORLD ---\"\n40 PRINT \"*******************\"\n50 PRINT \"*******************\"\n***END***\nHelloWorld2.bas\n10  PRINT   \"-------------------\"\n20  PRINT   \"*******************\"\n30  PRINT   \"--- HELLO WORLD ---\"\n40  PRINT   \"*******************\"\n50  PRINT   \"-------------------\"\n***END***\n10 REM Hello ver 1.0 (c) Acme 2008\n20 PRINT \"*******************\"\n30 PRINT \"--- HELLO WORLD ---\"\n40 PRINT \"*******************\"\n50 END\n***END***\n"
+    ],
+    "outputs": [
+        "2 HelloWorld.c\n",
+        "3 HelloWorld1.bas HelloWorld2.bas\n"
+    ]
+}

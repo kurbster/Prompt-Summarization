@@ -1,0 +1,24 @@
+Zvonko is playing with digits again, even though his mother has warned him that he is doing too much math and should go outside to play with his friends.
+
+In his latest game, Zvonko looks for multiples of an integer $X$, composed only of certain digits. A multiple of $X$ is any number divisible by $X$.
+
+In order to ruin Zvonko’s fun, his mother decided to get a program that solves the problem. Write a program that calculates how many multiples of $X$ are between $A$ and $B$ (inclusive), such that, when written in decimal, they contain only certain allowed digits.
+
+-----Input-----
+The first line of input contains three integers $X$, $A$ and $B$ ($1 \le X < 10^{11}$ , $1 \le A \le B < 10^{11}$). The second line contains the allowed digits. The digits will be given with no spaces, sorted in increasing order and without duplicates. There will be at least one allowed digit.
+
+-----Output-----
+Output the number of multiples Zvonko can make on a single line.
+
+-----Examples-----
+Sample Input 1:
+2 1 20
+0123456789
+Sample Output 1:
+10
+
+Sample Input 2:
+6 100 9294
+23689
+Sample Output 2:
+111

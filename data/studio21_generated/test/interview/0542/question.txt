@@ -1,0 +1,57 @@
+Vasya has become interested in wrestling. In wrestling wrestlers use techniques for which they are awarded points by judges. The wrestler who gets the most points wins.
+
+When the numbers of points of both wrestlers are equal, the wrestler whose sequence of points is lexicographically greater, wins.
+
+If the sequences of the awarded points coincide, the wrestler who performed the last technique wins. Your task is to determine which wrestler won.
+
+
+-----Input-----
+
+The first line contains number n — the number of techniques that the wrestlers have used (1 ≤ n ≤ 2·10^5). 
+
+The following n lines contain integer numbers a_{i} (|a_{i}| ≤ 10^9, a_{i} ≠ 0). If a_{i} is positive, that means that the first wrestler performed the technique that was awarded with a_{i} points. And if a_{i} is negative, that means that the second wrestler performed the technique that was awarded with ( - a_{i}) points.
+
+The techniques are given in chronological order.
+
+
+-----Output-----
+
+If the first wrestler wins, print string "first", otherwise print "second"
+
+
+-----Examples-----
+Input
+5
+1
+2
+-3
+-4
+3
+
+Output
+second
+
+Input
+3
+-1
+-2
+3
+
+Output
+first
+
+Input
+2
+4
+-4
+
+Output
+second
+
+
+
+-----Note-----
+
+Sequence x  =  x_1x_2... x_{|}x| is lexicographically larger than sequence y  =  y_1y_2... y_{|}y|, if either |x|  >  |y| and x_1  =  y_1,  x_2  =  y_2, ... ,  x_{|}y|  =  y_{|}y|, or there is such number r (r  <  |x|, r  <  |y|), that x_1  =  y_1,  x_2  =  y_2,  ... ,  x_{r}  =  y_{r} and x_{r}  +  1  >  y_{r}  +  1.
+
+We use notation |a| to denote length of sequence a.

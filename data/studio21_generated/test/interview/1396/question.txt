@@ -1,0 +1,35 @@
+Iahub is training for the IOI. What is a better way to train than playing a Zuma-like game? 
+
+There are n balls put in a row. Each ball is colored in one of k colors. Initially the row doesn't contain three or more contiguous balls with the same color. Iahub has a single ball of color x. He can insert his ball at any position in the row (probably, between two other balls). If at any moment there are three or more contiguous balls of the same color in the row, they are destroyed immediately. This rule is applied multiple times, until there are no more sets of 3 or more contiguous balls of the same color. 
+
+For example, if Iahub has the row of balls [black, black, white, white, black, black] and a white ball, he can insert the ball between two white balls. Thus three white balls are destroyed, and then four black balls become contiguous, so all four balls are destroyed. The row will not contain any ball in the end, so Iahub can destroy all 6 balls.
+
+Iahub wants to destroy as many balls as possible. You are given the description of the row of balls, and the color of Iahub's ball. Help Iahub train for the IOI by telling him the maximum number of balls from the row he can destroy.
+
+
+-----Input-----
+
+The first line of input contains three integers: n (1 ≤ n ≤ 100), k (1 ≤ k ≤ 100) and x (1 ≤ x ≤ k). The next line contains n space-separated integers c_1, c_2, ..., c_{n} (1 ≤ c_{i} ≤ k). Number c_{i} means that the i-th ball in the row has color c_{i}.
+
+It is guaranteed that the initial row of balls will never contain three or more contiguous balls of the same color. 
+
+
+-----Output-----
+
+Print a single integer — the maximum number of balls Iahub can destroy.
+
+
+-----Examples-----
+Input
+6 2 2
+1 1 2 2 1 1
+
+Output
+6
+
+Input
+1 1 1
+1
+
+Output
+0

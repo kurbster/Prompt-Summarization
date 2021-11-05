@@ -1,0 +1,61 @@
+Inna and Dima bought a table of size n × m in the shop. Each cell of the table contains a single letter: "D", "I", "M", "A".
+
+Inna loves Dima, so she wants to go through his name as many times as possible as she moves through the table. For that, Inna acts as follows:
+
+  initially, Inna chooses some cell of the table where letter "D" is written;  then Inna can move to some side-adjacent table cell that contains letter "I"; then from this cell she can go to one of the side-adjacent table cells that contains the written letter "M"; then she can go to a side-adjacent cell that contains letter "A". Then Inna assumes that she has gone through her sweetheart's name;  Inna's next move can be going to one of the side-adjacent table cells that contains letter "D" and then walk on through name DIMA in the similar manner. Inna never skips a letter. So, from the letter "D" she always goes to the letter "I", from the letter "I" she always goes the to letter "M", from the letter "M" she always goes to the letter "A", and from the letter "A" she always goes to the letter "D". 
+
+Depending on the choice of the initial table cell, Inna can go through name DIMA either an infinite number of times or some positive finite number of times or she can't go through his name once. Help Inna find out what maximum number of times she can go through name DIMA.
+
+
+-----Input-----
+
+The first line of the input contains two integers n and m (1 ≤ n, m ≤ 10^3). 
+
+Then follow n lines that describe Inna and Dima's table. Each line contains m characters. Each character is one of the following four characters: "D", "I", "M", "A". 
+
+Note that it is not guaranteed that the table contains at least one letter "D".
+
+
+-----Output-----
+
+If Inna cannot go through name DIMA once, print on a single line "Poor Dima!" without the quotes. If there is the infinite number of names DIMA Inna can go through, print "Poor Inna!" without the quotes. Otherwise print a single integer — the maximum number of times Inna can go through name DIMA.
+
+
+-----Examples-----
+Input
+1 2
+DI
+
+Output
+Poor Dima!
+
+Input
+2 2
+MA
+ID
+
+Output
+Poor Inna!
+
+Input
+5 5
+DIMAD
+DIMAI
+DIMAM
+DDMAA
+AAMID
+
+Output
+4
+
+
+
+-----Note-----
+
+Notes to the samples:
+
+In the first test sample, Inna cannot go through name DIMA a single time.
+
+In the second test sample, Inna can go through the infinite number of words DIMA. For that, she should move in the clockwise direction starting from the lower right corner.
+
+In the third test sample the best strategy is to start from the cell in the upper left corner of the table. Starting from this cell, Inna can go through name DIMA four times.

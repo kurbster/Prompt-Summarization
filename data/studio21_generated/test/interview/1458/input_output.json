@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    "7\nabacaba\n",
+    "6\naabcfg\n",
+    "12\nparapapapaaa\n",
+    "4\npara\n",
+    "5\nbadec\n",
+    "7\nbcbcbdc\n",
+    "7\nstoopid\n",
+    "2\nba\n",
+    "7\nbaaaccb\n",
+    "6\nbabcdc\n",
+    "3\nacb\n",
+    "3\nbac\n",
+    "2\naa\n",
+    "7\nyxyzyyx\n",
+    "3\naba\n",
+    "3\naaa\n",
+    "7\nbdadccd\n"
+  ],
+  "outputs": [
+    "YES\n2 3\n",
+    "NO\n",
+    "YES\n1 2\n",
+    "YES\n1 2\n",
+    "YES\n1 2\n",
+    "YES\n2 3\n",
+    "YES\n2 3\n",
+    "YES\n1 2\n",
+    "YES\n1 2\n",
+    "YES\n1 2\n",
+    "YES\n2 3\n",
+    "YES\n1 2\n",
+    "NO\n",
+    "YES\n1 2\n",
+    "YES\n2 3\n",
+    "NO\n",
+    "YES\n2 3\n"
+  ]
+}

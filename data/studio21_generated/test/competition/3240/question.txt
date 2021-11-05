@@ -1,0 +1,29 @@
+Binary Town is holding its biennial elections. All $k$ positions on its council are open, and as usual Notnomde and Yraglac are the only ones running for each position.
+
+Having long since abandoned quaint majority voting, Binary Town uses binary voting instead. In binary voting, all $v$ voters can cast any number of ballots, or not vote at all. The $k^\mathrm {th}$ least significant bits of the total number of ballots are then used to determine which candidate wins each position. That is, Notnomde wins position $j$ if the $j^\mathrm {th}$ least significant bit of the total number of ballots is $0$, otherwise Yraglac wins.
+
+You know your neighbours well, and know exactly how many ballots $b_ i$ each one will cast if they choose to vote. For some reason, not everyone is happy with the electoral system so not everyone votes. Thankfully, you also know the probability $p_ i$ of each citizen voting.
+
+Since you like Yraglac more than Notnomde, you want to cast the number of ballots which maximizes the expected number of positions held by Yraglac.
+
+Suppose there are $k = 2$ positions and $v = 2$ voters, and you know with $50\% $ probability that the voter other than yourself will cast one ballot. If you cast one ballot, the total number of ballots could be $01_2$ or $10_2$ with equal probability, so the expected number of positions for Yraglac is $1$. If you cast two ballots, the total number of ballots could be $10_2$ or $11_2$ with equal probability, making Yraglac’s expected number of positions $1.5$. In this case, you then decide to cast two ballots since that maximizes Yraglac’s expected number of positions.
+
+-----Input-----
+The first line contains two space-separated integers $1 \leq k \leq 16$, the number of positions, and $2 \leq v \leq 100$, the number of voters (including yourself). It is followed by $v - 1$ lines, each containing two space-separated numbers: a decimal $0 \leq p_ i \leq 1$, the probability of voter $i$ casting ballots, and an integer $0 \leq b_ i \leq 2^k - 1$, the number of ballots voter $i$ would cast should they vote.
+
+-----Output-----
+Output on a single line the number of ballots $0 \leq b_ v \leq 2^k - 1$ you should cast to maximize the expected number of positions held by Yraglac. The answer is guaranteed to be unique.
+
+-----Examples-----
+Sample Input 1:
+2 2
+0.5 1
+Sample Output 1:
+2
+
+Sample Input 2:
+4 3
+1 11
+0.4 1
+Sample Output 2:
+3

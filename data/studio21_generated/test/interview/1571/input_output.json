@@ -1,0 +1,36 @@
+{
+  "inputs": [
+    "abab\nba\n",
+    "defineintlonglong\nsignedmain\n",
+    "rotator\nrotator\n",
+    "cacdcdbbbb\nbdcaccdbbb\n",
+    "f\np\n",
+    "baabbaaaaa\nababa\n",
+    "cbaabccadacadbaacbadddcdabcacdbbabccbbcbbcbbaadcabadcbdcadddccbbbbdacdbcbaddacaadbcddadbabbdbbacabdd\ncccdacdabbacbbcacdca\n",
+    "tqlrrtidhfpgevosrsya\nysrsvgphitrrqtldfeoa\n",
+    "d\nd\n",
+    "ebkkiajfffiiifcgheijbcdafkcdckgdakhicebfgkeiffjbkdbgjeb\nebffigfbciadcdfdbiehgciiifakbekijfffjcakckgkhekejbkdgjb\n",
+    "acacdddadaddcbbbbdacb\nbabbbcadddacacdaddbdc\n",
+    "dadebcabefcbaffce\ncffbfcaddebabecae\n",
+    "babbaaababbbbabbaaaababbbaabababbaabbaababbaaabaabbabaabbaababababbaabaaabaaaaababbaabaaaaabaabbabaaababbbb\nbbaabbbbabbbbaaaaaababbbabaaabbbbabababbbaabbbbbabaababbaabaaabaabbababababaaaaabaabbabaaabaaaaaaaaaaaaabbb\n",
+    "yz\nzy\n",
+    "eternalalexandersookeustzeouuanisafqaqautomaton\nnoiol\n"
+  ],
+  "outputs": [
+    "12",
+    "0",
+    "4",
+    "24",
+    "0",
+    "120",
+    "773806867",
+    "2",
+    "2",
+    "12",
+    "64",
+    "2",
+    "284471294",
+    "2",
+    "1920"
+  ]
+}

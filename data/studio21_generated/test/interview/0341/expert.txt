@@ -1,0 +1,2 @@
+ You are given a string T, which tells you which hand the machine will play in the i-th round. 
+-----Input----- Input is given from Standard Input in the following format: N K R S P T -----Output----- Print the maximum total score earned in the game. -----Sample Input----- 5 2 8 7 6 rsrpr -----Sample Output----- 27 The machine will play {Rock, Scissors, Rock, Paper, Rock}. We can, for example, play {Paper, Rock, Rock, Scissors, Paper} against it to earn 27 points. We cannot earn more points, so the answer is 27.

@@ -1,0 +1,29 @@
+“The power to arrest­–to deprive a citizen of liberty­–must be used fairly, responsibly, and without bias.” ­–Loretta Lynch.
+
+Due to desperation caused by the global financial crisis, you, left with no other options, decided to rob a bank to survive. Unfortunately, while you were able to escape with a small fortune, the city’s police is now out in full force trying to hunt you down.
+
+The city can be represented as a grid with $R$ rows and $C$ columns. Each block in the city is represented as a cell in this grid. The city has very strict border controls and has shut down all its borders for $24$ hours after the bank robbery to find and arrest you.
+
+You have intercepted the officer’s calls and have discovered that the police force intends to, for the next $24$ hours, search all blocks within $K$ blocks of their current location (that is, all blocks that can be reached by traveling a total of at most $K$ blocks horizontally or vertically). Unfortunately, you don’t know their current location, so you can only assume that they are at some random block, each block with equal probability.
+
+You hence also intend to hide at a random location in the city. You will choose a block uniformly at random and hide there, hoping that it is not a block the police will search. Since you have no idea where the police are, this may unfortunately also be a block the police is currently at (and will definitely search).
+
+You can assume that, unfortunately, the police are very thorough in their search and they will definitely catch you if they search the block you are in. However, if the $24$ hours elapse without the block you are in being searched, you will surely be able to escape as the borders are reopened.
+
+What is the probability that you will evade capture?
+
+-----Input-----
+The first and only line of input contains three integers, $R$, $C$ ($1 \leq R, C \leq 10^{11}$) and $K$ ($1 \leq K \leq 2\cdot 10^{11}$), the number of rows in the city, the number of columns in the city and the number of blocks the police will search, respectively.
+
+-----Output-----
+It can be shown that the probability of evading capture can be uniquely represented as an irreducible fraction $p/q$.
+
+Output a single integer on a line by itself, containing the remainder after dividing $p\cdot q^{-1}$ by $10^{11}+3$, where $q^{-1}$ denotes the modular multiplicative inverse of $q$ with respect to the modulus $10^{11}+3$.
+
+The input will be such that $q^{-1}$ always exists.
+
+-----Examples-----
+Sample Input:
+5 4 2
+Sample Output:
+14500000001

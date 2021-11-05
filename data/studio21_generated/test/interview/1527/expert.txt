@@ -1,0 +1,2 @@
+ You are given a maze. You need to output the maximum possible number of moves Aoki has to make. 
+-----Input----- Input is given from Standard Input in the following format: H W S_{11}...S_{1W} : S_{H1}...S_{HW} -----Output----- Print the maximum possible number of moves Aoki has to make. -----Sample Input----- 3 3 ... ... ... -----Sample Output----- 4 If Takahashi chooses the top-left square as the starting square and the bottom-right square as the goal square, Aoki has to make four moves.

@@ -1,0 +1,39 @@
+Given an array a_1, a_2, ..., a_{n} of n integers, find the largest number in the array that is not a perfect square.
+
+A number x is said to be a perfect square if there exists an integer y such that x = y^2.
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 1000) — the number of elements in the array.
+
+The second line contains n integers a_1, a_2, ..., a_{n} ( - 10^6 ≤ a_{i} ≤ 10^6) — the elements of the array.
+
+It is guaranteed that at least one element of the array is not a perfect square.
+
+
+-----Output-----
+
+Print the largest number in the array which is not a perfect square. It is guaranteed that an answer always exists.
+
+
+-----Examples-----
+Input
+2
+4 2
+
+Output
+2
+
+Input
+8
+1 2 4 8 16 32 64 576
+
+Output
+32
+
+
+
+-----Note-----
+
+In the first sample case, 4 is a perfect square, so the largest number in the array that is not a perfect square is 2.

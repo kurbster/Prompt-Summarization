@@ -1,0 +1,48 @@
+The R2 company has n employees working for it. The work involves constant exchange of ideas, sharing the stories of success and upcoming challenging. For that, R2 uses a famous instant messaging program Spyke.
+
+R2 has m Spyke chats just to discuss all sorts of issues. In each chat, some group of employees exchanges messages daily. An employee can simultaneously talk in multiple chats. If some employee is in the k-th chat, he can write messages to this chat and receive notifications about messages from this chat. If an employee writes a message in the chat, all other participants of the chat receive a message notification.
+
+The R2 company is conducting an audit. Now the specialists study effective communication between the employees. For this purpose, they have a chat log and the description of chat structure. You, as one of audit specialists, are commissioned to write a program that will use this data to determine the total number of message notifications received by each employee.
+
+
+-----Input-----
+
+The first line contains three space-separated integers n, m and k (2 ≤ n ≤ 2·10^4; 1 ≤ m ≤ 10; 1 ≤ k ≤ 2·10^5) — the number of the employees, the number of chats and the number of events in the log, correspondingly. 
+
+Next n lines contain matrix a of size n × m, consisting of numbers zero and one. The element of this matrix, recorded in the j-th column of the i-th line, (let's denote it as a_{ij}) equals 1, if the i-th employee is the participant of the j-th chat, otherwise the element equals 0. Assume that the employees are numbered from 1 to n and the chats are numbered from 1 to m.
+
+Next k lines contain the description of the log events. The i-th line contains two space-separated integers x_{i} and y_{i} (1 ≤ x_{i} ≤ n; 1 ≤ y_{i} ≤ m) which mean that the employee number x_{i} sent one message to chat number y_{i}. It is guaranteed that employee number x_{i} is a participant of chat y_{i}. It is guaranteed that each chat contains at least two employees.
+
+
+-----Output-----
+
+Print in the single line n space-separated integers, where the i-th integer shows the number of message notifications the i-th employee receives.
+
+
+-----Examples-----
+Input
+3 4 5
+1 1 1 1
+1 0 1 1
+1 1 0 0
+1 1
+3 1
+1 3
+2 4
+3 2
+
+Output
+3 3 1 
+Input
+4 3 4
+0 1 1
+1 0 1
+1 1 1
+0 0 0
+1 2
+2 1
+3 1
+1 3
+
+Output
+0 2 3 0

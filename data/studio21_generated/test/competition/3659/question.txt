@@ -1,0 +1,21 @@
+No wonder the old bookcase caved under the massive piles of books Tom had stacked on it. He had better build a new one, this time large enough to hold all of his books. Tom finds it practical to have the books close at hand when he works at his desk. Therefore, he is imagining a compact solution with the bookcase standing on the back of the desk. Obviously, this would put some restrictions on the size of the bookcase, it should preferably be as small as possible. In addition, Tom would like the bookcase to have exactly three shelves for aesthetical reasons. 
+
+Wondering how small his bookcase could be, he models the problem as follows. He measures the height $h_ i$ and thickness $t_ i$ of each book $i$ and he seeks a partition of the books in three non-empty sets $S_1,S_2,S_3$ such that $\left(\sum _{j=1}^3 \max _{i \in S_ j} h_ i \right) \cdot \left( \max _{j=1}^3 \sum _{i\in S_ j} t_ i \right)$ is minimized, i.e., the area of the bookcase as seen when standing in front of it (the depth needed is obviously the largest width of all his books, regardless of the partition). Note that this formula does not give the exact area of the bookcase, since the actual shelves cause a small additional height, and the sides cause a small additional width. For simplicity, we will ignore this small discrepancy.
+
+Thinking a moment on the problem, Tom realizes he will need a computer program to do the job.
+
+-----Input-----
+The input begins with a line containing a single positive integer $N$, $3\leq N\leq 70$ giving the number of books. Then $N$ lines follow each containing two positive integers $h_ i$, $t_ i$, satisfying $150\leq h_ i \leq 300$ and $5\leq t_ i \leq 30$, the height and thickness of book $i$ respectively, in millimeters.
+
+-----Output-----
+Output one line containing the minimum area (height times width) of a three-shelf bookcase capable of holding all the books, expressed in square millimeters.
+
+-----Examples-----
+Sample Input:
+4
+220 29
+195 20
+200 9
+180 30
+Sample Output:
+18000

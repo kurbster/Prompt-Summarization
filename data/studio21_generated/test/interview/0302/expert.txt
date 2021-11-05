@@ -1,0 +1,2 @@
+ You are given positive integer n, represent it as sum of addends, where each addends is an integer number containing only 1s. 
+-----Input----- The first line of the input contains integer n (1 ≤ n < 10^15). -----Output----- Print expected minimal number of digits 1. -----Examples----- Input 121 Output 6

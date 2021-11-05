@@ -1,0 +1,18 @@
+A cat lives in a tree that has $N$ nodes. She will demarcate her territory by “marking” some of the tree nodes. Marked nodes may not be closer to each other than distance $D$, or the smell will be too overwhelming. Find the maximum number of nodes that the cat can mark.
+
+-----Input-----
+First line has two integers, $N$ and $D$. The $0$-th node is the root node of the tree. Then follows $N-1$ lines, the $i$-th of which contain a single integer $x_ i$ with $0 \leq x_ i < i$ (starting with $i = 1$). This means that node $x_ i$ is connected to node $i$.
+
+We always have $1 \leq N, D \leq 2 \cdot 10^5$.
+
+-----Output-----
+Output should contain one integer: the maximum number of nodes that can be marked.
+
+-----Examples-----
+Sample Input:
+4 3
+0
+0
+1
+Sample Output:
+2

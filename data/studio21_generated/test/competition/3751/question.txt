@@ -1,0 +1,45 @@
+Kostya likes Codeforces contests very much. However, he is very disappointed that his solutions are frequently hacked. That's why he decided to obfuscate (intentionally make less readable) his code before upcoming contest.
+
+To obfuscate the code, Kostya first looks at the first variable name used in his program and replaces all its occurrences with a single symbol a, then he looks at the second variable name that has not been replaced yet, and replaces all its occurrences with b, and so on. Kostya is well-mannered, so he doesn't use any one-letter names before obfuscation. Moreover, there are at most 26 unique identifiers in his programs.
+
+You are given a list of identifiers of some program with removed spaces and line breaks. Check if this program can be a result of Kostya's obfuscation.
+
+
+-----Input-----
+
+In the only line of input there is a string S of lowercase English letters (1 ≤ |S| ≤ 500) — the identifiers of a program with removed whitespace characters.
+
+
+-----Output-----
+
+If this program can be a result of Kostya's obfuscation, print "YES" (without quotes), otherwise print "NO".
+
+
+-----Examples-----
+Input
+abacaba
+
+Output
+YES
+
+Input
+jinotega
+
+Output
+NO
+
+
+
+-----Note-----
+
+In the first sample case, one possible list of identifiers would be "number string number character number string number". Here how Kostya would obfuscate the program:
+
+
+
+ replace all occurences of number with a, the result would be "a string a character a string a",
+
+ replace all occurences of string with b, the result would be "a b a character a b a",
+
+ replace all occurences of character with c, the result would be "a b a c a b a",
+
+ all identifiers have been replaced, thus the obfuscation is finished.

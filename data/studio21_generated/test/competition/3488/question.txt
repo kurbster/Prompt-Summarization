@@ -1,0 +1,38 @@
+Celery — the legendary Pokenom has been spotted in Alexa Forest.
+
+To become the best Pokenom trainer, Bash has arrived at Alexa Forest to capture Celery. After lots of information gathering, Bash was able to draw a map of Alexa Forest, and noted down $K$ sightings of Celery.
+
+Alexa Forest’s map is a convex polygon $A$ with $N$ vertices on the Cartesian plane. $K$ sightings of Celery can be considered as $K$ points — all are strictly inside Alexa Forest.
+
+Bash is ready to search Alexa Forest to find Celery. However, Bash realized that Alexa Forest is simply too big. It would take decades to search the entire forest. But Bash is smart. Based on his research, Bash knows that Celery can only be found inside a polygon $Z$, where the vertices of $Z$ are a subset of $A$, and all $K$ sightings of Celery must be strictly inside polygon $Z$.
+
+Of course, there can be multiple polygons $Z$ satisfying the above conditions. Your task is to help Bash find the polygon $Z$ with smallest number of vertices.
+
+-----Note-----
+A point $P$ is strictly inside Polygon $A$, iff $P$ is inside $A$ and $P$ does not lie on the border of $A$.
+
+-----Input-----
+ - The first line of input contains a single positive integer $N$$(3 \le N \le 2 \cdot 10^5)$.
+ - The next $N$ lines each contain $2$ integers $x_ i$, $y_ i$ — the coordinates of the $i$-th vertex of Alexa Forest $(-10^9 \le x_ i, y_ i \le 10^9)$. The vertices are listed in either clockwise or counterclockwise order. It is guaranteed that Alexa Forest is convex.
+ - The next line contains a single positive integer $K$ $(1 \le K \le 10^5)$.
+ - The next $K$ lines, each line contains $2$ integers $x_ i$, $y_ i$ — the coordinates of a sighting of Celery $(-10^9 \le x_ i, y_ i \le 10^9)$. All points are guaranteed to be inside Alexa Forest and no points are on the border of Alexa Forest.
+
+-----Output-----
+Output a single integer — the smallest number of vertices of polygon $Z$.
+
+-----Sample Clarification-----
+ - In the first example, the only valid polygon satisfied is the whole Alexa Forest.
+ - In the second example, there are two possible solutions with $4$ vertices:
+
+-----Examples-----
+Sample Input:
+4
+0 0
+0 3
+3 3
+3 0
+2
+1 1
+2 2
+Sample Output:
+4

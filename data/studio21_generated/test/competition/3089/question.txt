@@ -1,0 +1,31 @@
+You are operating a taxi company in the Land of Bytes, which is an interesting city. First, all roads in the city either along the north-south direction or along the east-west direction. Second, it’s an extremely large city such that the sizes of blocks between different roads are negligible. Therefore, each position in this city can be represented by coordinates $(x, y)$ of real values.
+
+The taxi drivers always takes the shortest path between the pick-up and drop-off points, following streets. Your company only operates the taxis within the central business district (CBD), which is a convex polygon of $n$ points.
+
+Assuming the pick-up and drop-off points from the passengers are chosen, uniformly at random, from inside the CBD, what is the expected distance that a taxi will travel? Assume the taxi travel distance between any points $(x, y)$ and $(x_1, y_1)$ is always $|x-x_1|+|y-y_1|$.
+
+-----Input-----
+The first line contains an integer $n$ ($3 \le n \le 100000$).
+
+Following this will be $n$ lines, each with two integer values values ($x, y$) representing the points on the border of CBD, where $|x|,|y| < 10^9$. The points are presented in a clockwise order and there will be no three points on the same line.
+
+-----Output-----
+The output is a single line containing one number, the expected distance expressed with a relative or absolute error less than $10^{-6}$.
+
+-----Examples-----
+Sample Input 1:
+4
+0 0
+0 1
+1 1
+1 0
+Sample Output 1:
+0.666666666666667
+
+Sample Input 2:
+3
+0 0
+1 1
+2 0
+Sample Output 2:
+0.733333333333333

@@ -1,0 +1,2 @@
+ You are given an infinite sequence of positive integer numbers. Your task is to print the $k$-th digit of this sequence. 
+-----Input----- The first and only line contains integer $k$ ($1 \le k \le 10^{12}$) — the position to process ($1$-based index). -----Output----- Print the $k$-th digit of the resulting infinite sequence. -----Examples----- Input 7 Output 7 Input 21 Output 5

@@ -1,0 +1,2 @@
+ Given n, count the number of pairs (x, y), where x   y   (x   y)   (y    x)   (x   y). 
+-----Input----- The single line contains integer n (1 ≤ n ≤ 16). -----Output----- In the single line print a single non-negative integer — the number of such pairs of permutations a and b, that exists permutation c that is sum of a and b, modulo 1000000007 (10^9 + 7). -----Examples----- Input 3 Output 18 Input 5 Output 1800

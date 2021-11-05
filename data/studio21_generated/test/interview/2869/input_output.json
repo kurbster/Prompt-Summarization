@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "VII\n",
+        "VI\n",
+        "III\n"
+    ],
+    "outputs": [
+        "VII\n",
+        "IV\n",
+        "III\n"
+    ]
+}

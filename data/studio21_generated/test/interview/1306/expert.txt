@@ -1,0 +1,2 @@
+ You are given a sequence of integers a_1, a_2, ..., a_{n}. You want to find the number of different ways you can make all numbers in the sequence equal h. 
+-----Input----- The first line contains two integers n, h (1 ≤ n, h ≤ 2000). The next line contains n integers a_1, a_2, ..., a_{n} (0 ≤ a_{i} ≤ 2000). -----Output----- Print a single integer — the answer to the problem modulo 1000000007 (10^9 + 7). -----Examples----- Input 3 2 1 1 1 Output 4 Input 5 1 1 1 1 1 1 Output 1 Input 4 3 3 2 1 1 Output 0

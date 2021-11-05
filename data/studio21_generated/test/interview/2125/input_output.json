@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "4 3\naaa\nbbb\nccb\nddd\n",
+    "6 1\na\na\nb\nb\nc\nc\n",
+    "1 1\na\n",
+    "10 10\naaaaarpppp\nbbbbsssssu\ncciiiiiiqq\nddmmgggggg\neeebbbbbbb\nfffffqoooo\ngxxxxrrrrr\nhhfuuuuuuu\niiillqqqqq\njjjjjppwww\n",
+    "10 10\naaaaaaaaaa\nbbbbbbbbbb\ncccccccccc\ndddddddddd\neeeeeeeeee\nffffffffff\ngggggggggg\nhhhhhhhhhh\niiiiiiiiii\njjjjjjjjjj\n",
+    "10 10\nitttrrrnnn\nbbbbpppkdv\nbbbbpppkzv\nbbbbpppkzv\nbbbbpppbbv\nippeerrsss\nippeerrsss\nibbeeeesss\niiieeeeeef\nllorrrrvzz\n",
+    "9 8\nwmmmmrww\nwmmmmrww\nwxxxxgww\nggggxgww\nssssmcww\nxxxxzcww\nwkwwwkww\nwcccccww\nwwwwwwww\n"
+  ],
+  "outputs": [
+    "6\n",
+    "1\n",
+    "0\n",
+    "138\n",
+    "440\n",
+    "14\n",
+    "45\n"
+  ]
+}

@@ -1,0 +1,36 @@
+"Teishi-zushi", a Japanese restaurant, is a plain restaurant with only one round counter. The outer circumference of the counter is C meters. Customers cannot go inside the counter.
+Nakahashi entered Teishi-zushi, and he was guided to the counter. Now, there are N pieces of sushi (vinegared rice with seafood and so on) on the counter. The distance measured clockwise from the point where Nakahashi is standing to the point where the i-th sushi is placed, is x_i meters. Also, the i-th sushi has a nutritive value of v_i kilocalories.
+Nakahashi can freely walk around the circumference of the counter. When he reach a point where a sushi is placed, he can eat that sushi and take in its nutrition (naturally, the sushi disappears). However, while walking, he consumes 1 kilocalories per meter.
+Whenever he is satisfied, he can leave the restaurant from any place (he does not have to return to the initial place). On balance, at most how much nutrition can he take in before he leaves? That is, what is the maximum possible value of the total nutrition taken in minus the total energy consumed? Assume that there are no other customers, and no new sushi will be added to the counter. Also, since Nakahashi has plenty of nutrition in his body, assume that no matter how much he walks and consumes energy, he never dies from hunger.
+
+-----Constraints-----
+ - 1 ≤ N ≤ 10^5
+ - 2 ≤ C ≤ 10^{14}
+ - 1 ≤ x_1 < x_2 < ... < x_N < C
+ - 1 ≤ v_i ≤ 10^9
+ - All values in input are integers.
+
+-----Subscores-----
+ - 300 points will be awarded for passing the test set satisfying N ≤ 100.
+
+-----Input-----
+Input is given from Standard Input in the following format:
+N C
+x_1 v_1
+x_2 v_2
+:
+x_N v_N
+
+-----Output-----
+If Nakahashi can take in at most c kilocalories on balance before he leaves the restaurant, print c.
+
+-----Sample Input-----
+3 20
+2 80
+9 120
+16 1
+
+-----Sample Output-----
+191
+
+There are three sushi on the counter with a circumference of 20 meters. If he walks two meters clockwise from the initial place, he can eat a sushi of 80 kilocalories. If he walks seven more meters clockwise, he can eat a sushi of 120 kilocalories. If he leaves now, the total nutrition taken in is 200 kilocalories, and the total energy consumed is 9 kilocalories, thus he can take in 191 kilocalories on balance, which is the largest possible value.

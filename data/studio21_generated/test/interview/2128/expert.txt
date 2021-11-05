@@ -1,0 +1,2 @@
+ 
+-----Input----- The first line contains one integer $n$ ($1\le n\le 2\cdot 10^5$) — the number of mirrors. The second line contains $n$ integers $p_1, p_2, \ldots, p_n$ ($1 \leq p_i \leq 100$). -----Output----- Print the answer modulo $998244353$ in a single line. -----Examples----- Input 1 50 Output 2 Input 3 10 20 50 Output 112 -----Note----- In the first test, there is only one mirror and it tells, that Creatnx is beautiful with probability $\frac{1}{2}$. So, the expected number of days until Creatnx becomes happy is $2$.

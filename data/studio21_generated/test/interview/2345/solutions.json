@@ -1,0 +1,1 @@
+["import sys\ninput = sys.stdin.readline\n\nt=int(input())\nfor test in range(t):\n    n=int(input())\n    A=list(map(int,input().split()))\n\n    ANS=[]\n    SET=set()\n\n    NOW=1\n    while not (NOW in SET):\n        ANS.append(NOW)\n        SET.add(NOW)\n        NOW=NOW-A[NOW-1]\n\n    x=ANS.index(NOW)\n\n    print(len(ANS[x:]))\n    print(*ANS[x:])\n"]

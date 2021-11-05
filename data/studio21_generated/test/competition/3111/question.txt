@@ -1,0 +1,49 @@
+Luka is not paying attention in class again, while the teacher is explaining redox reactions. Instead of paying attention, he is playing with analog dials.
+
+An analog dial is a small device which always shows one digit between $0$ and $9$. It also contains a small button which increases the number by $1$ (unless it is $9$, in which case it is changed to $0$).
+
+Luka has $N$ such dials on his desk, numbered $1$ to $N$ left to right, and two sheets of paper for him to write on.
+
+Luka’s game starts with him setting the dials in some starting configuration, which he then writes onto the first sheet. Luka then does the following $M$ times:
+ - Choose two integers $A$ and $B$ ($1 \le A \le B \le N$) and write them down on the first sheet.
+ - Calculate the sum of numbers on dials between $A$ and $B$ (inclusive), and write the sum down on the second sheet.
+ - Press the button once on all dials between $A$ and $B$.
+
+Just as he had finished his game, the teacher noticed him, and took away all his dials and the second sheet of paper.
+
+Given the contents of the first sheet, help him calculate the numbers on the second sheet.
+
+-----Input-----
+The first line contains two integers $N$ and $M$ ($1 \le N \le 250000$, $1 \le M \le 100000$).
+
+The second line contains the initial configuration of the dials, $N$ digits with no spaces. The first digit is the number initially on dial $1$, the second digit the number on dial $2$ and so on.
+
+Each of the following $M$ lines contains two integers $A$ and $B$ ($1 \le A \le B \le N$).
+
+-----Output-----
+Output $M$ lines, the sums calculated by Luka, in order in which he calculated them.
+
+-----Examples-----
+Sample Input 1:
+4 3
+1234
+1 4
+1 4
+1 4
+Sample Output 1:
+10
+14
+18
+
+Sample Input 2:
+4 4
+1234
+1 1
+1 2
+1 3
+1 4
+Sample Output 2:
+1
+4
+9
+16

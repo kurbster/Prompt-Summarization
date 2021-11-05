@@ -1,0 +1,47 @@
+Little Dima has two sequences of points with integer coordinates: sequence (a_1, 1), (a_2, 2), ..., (a_{n}, n) and sequence (b_1, 1), (b_2, 2), ..., (b_{n}, n).
+
+Now Dima wants to count the number of distinct sequences of points of length 2·n that can be assembled from these sequences, such that the x-coordinates of points in the assembled sequence will not decrease. Help him with that. Note that each element of the initial sequences should be used exactly once in the assembled sequence.
+
+Dima considers two assembled sequences (p_1, q_1), (p_2, q_2), ..., (p_{2·}n, q_{2·}n) and (x_1, y_1), (x_2, y_2), ..., (x_{2·}n, y_{2·}n) distinct, if there is such i (1 ≤ i ≤ 2·n), that (p_{i}, q_{i}) ≠ (x_{i}, y_{i}).
+
+As the answer can be rather large, print the remainder from dividing the answer by number m.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 10^5). The second line contains n integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^9). The third line contains n integers b_1, b_2, ..., b_{n} (1 ≤ b_{i} ≤ 10^9). The numbers in the lines are separated by spaces.
+
+The last line contains integer m (2 ≤ m ≤ 10^9 + 7).
+
+
+-----Output-----
+
+In the single line print the remainder after dividing the answer to the problem by number m. 
+
+
+-----Examples-----
+Input
+1
+1
+2
+7
+
+Output
+1
+
+Input
+2
+1 2
+2 3
+11
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first sample you can get only one sequence: (1, 1), (2, 1). 
+
+In the second sample you can get such sequences : (1, 1), (2, 2), (2, 1), (3, 2); (1, 1), (2, 1), (2, 2), (3, 2). Thus, the answer is 2.

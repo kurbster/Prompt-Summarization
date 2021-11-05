@@ -1,0 +1,2 @@
+ You have two integers $a$ and $m$. Find out if the number of details in the factory will be divisible by $m$ after $a$ days. 
+-----Input----- The first line contains two integers a and m (1 ≤ a, m ≤ 10^5). -----Output----- Print "Yes" (without quotes) if the production will eventually stop, otherwise print "No". -----Examples----- Input 1 5 Output No Input 3 6 Output Yes

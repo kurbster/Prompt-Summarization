@@ -1,0 +1,59 @@
+It is the last day of covid and you are coming back to your home with two empty sacks. On
+the way to your home, you found Ambani brothers donating all their wealth in form of coins
+after getting fed up with all the money they have. The coins have both positive and negative
+values and they are laid down in a line. Now as you don’t want to go with an empty sack so
+you also decided to take some of the money being given by Ambani’s. But anyone who
+wants the money has to follow a rule that he/she can choose an only contiguous segment of
+coins which are lying in a line (you can also imagine it like an array of coins) whether its value
+is positive or negative.
+Formally according to the rule if you are given an array [-1,2,3,4,2,0] you can only choose
+subarrays like [2,3], [4,2,0], [-1] , [-1,2,3,4,2,0] etc.
+Now as you have two siblings you decided to fill both the sacks with some coins. Your task is
+to choose the coins in such a way that the sum of values of all the coins(including sacks 1
+and 2) is maximum and both sacks are non-empty.
+For e.g.:
+If the array of coins is:
+-1 2 3 4 -3 -5 6 7 1
+Following are some ways you can choose the coins:
+2 3 4 and -5 6 7
+-1 2 3 and 6 7 1
+2 3 4 and 6 7 1
+and so on….
+You can see that among the given ways the 3rd way will yield maximum values (2+3+4) +
+(6+7+1)=23
+Note: 
+Both the sack should be non-empty.
+A subarray is a contiguous part of an array. An array that is inside another array.
+A coin can be inserted in one and only one sacks i.e you cannot choose a coin more than one time.
+
+-----Input:-----
+- The first line contains $n$, the number of coins in the array $c$.
+- The next line will contain $n$ space integers denoting the value $coin$ $c[i]$.
+
+-----Output:-----
+One and the only line containing the maximum possible sum of values of all the coins in
+both sacks.
+
+-----Constraints-----
+- $2 \leq n \leq 10^5$
+- $-10^5 \leq c[i] \leq 10^5$
+
+-----Sample Input 1:-----
+9
+
+-1 2 3 4 -3 -5 6 7 1
+
+-----Sample Output 1:-----
+23
+
+-----Sample Input 2:-----
+6
+
+-10 -1 -30 -40 -3 -11
+
+-----Sample Output 2:-----
+-4
+
+-----EXPLANATION:-----
+In first test case you can easily observe that the sum will be maximum if you choose [2,3,4]
+and [6,7,1] contiguous subarrays from the given array.

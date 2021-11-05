@@ -1,0 +1,38 @@
+Mirko got a set of intervals for his birthday. There are many games he can play with them. In one of them, Mirko must find the longest sequence of distinct intervals such that each interval in the sequence is in the set and that each interval contains the one that follows in the sequence.
+
+Write a program which finds one such longest sequence.
+
+-----Input-----
+The first line of input contains the integer $N$ $(1 \le N \le 100000)$, the number of intervals in the set.
+
+Each of the following $N$ lines contains two integers $A$ and $B$ describing one interval $(1 \le A < B \le 1000000)$.
+
+-----Output-----
+Output the length $K$ of the longest sequence on the first line.
+
+Each of the following $K$ lines should contain one element of the sequence, an interval in the same format it was given in the input.
+
+-----Examples-----
+Sample Input 1:
+3
+3 4
+2 5
+1 6
+Sample Output 1:
+3
+1 6
+2 5
+3 4
+
+Sample Input 2:
+5
+10 30
+20 40
+30 50
+10 60
+30 40
+Sample Output 2:
+3
+10 60
+30 50
+30 40

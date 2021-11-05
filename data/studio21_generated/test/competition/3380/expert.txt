@@ -1,0 +1,2 @@
+ You are given N cities. Each city picked uniformly at random another city to which they built a road. Calculate the probability that the road network ends up being connected. 
+-----Input----- The first line contains an integer $N$ $(2\le N\le 140)$ – the number of cities. -----Output----- Output one line containing a floating point number denoting the probability that the randomly built road network with $N$ cities and $N$ roads is connected. Your answer should have an absolute error of at most $10^{-8}$. -----Examples----- Sample Input: 4 Sample Output: 0.962962962963

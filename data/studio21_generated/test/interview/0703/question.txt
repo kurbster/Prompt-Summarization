@@ -1,0 +1,45 @@
+You have a nuts and lots of boxes. The boxes have a wonderful feature: if you put x (x ≥ 0) divisors (the spacial bars that can divide a box) to it, you get a box, divided into x + 1 sections.
+
+You are minimalist. Therefore, on the one hand, you are against dividing some box into more than k sections. On the other hand, you are against putting more than v nuts into some section of the box. What is the minimum number of boxes you have to use if you want to put all the nuts in boxes, and you have b divisors?
+
+Please note that you need to minimize the number of used boxes, not sections. You do not have to minimize the number of used divisors.
+
+
+-----Input-----
+
+The first line contains four space-separated integers k, a, b, v (2 ≤ k ≤ 1000; 1 ≤ a, b, v ≤ 1000) — the maximum number of sections in the box, the number of nuts, the number of divisors and the capacity of each section of the box.
+
+
+-----Output-----
+
+Print a single integer — the answer to the problem.
+
+
+-----Examples-----
+Input
+3 10 3 3
+
+Output
+2
+
+Input
+3 10 1 3
+
+Output
+3
+
+Input
+100 100 1 1000
+
+Output
+1
+
+
+
+-----Note-----
+
+In the first sample you can act like this:   Put two divisors to the first box. Now the first box has three sections and we can put three nuts into each section. Overall, the first box will have nine nuts.  Do not put any divisors into the second box. Thus, the second box has one section for the last nut. 
+
+In the end we've put all the ten nuts into boxes.
+
+The second sample is different as we have exactly one divisor and we put it to the first box. The next two boxes will have one section each.

@@ -1,0 +1,45 @@
+A game field is a strip of 1 × n square cells. In some cells there are Packmen, in some cells — asterisks, other cells are empty.
+
+Packman can move to neighboring cell in 1 time unit. If there is an asterisk in the target cell then Packman eats it. Packman doesn't spend any time to eat an asterisk.
+
+In the initial moment of time all Packmen begin to move. Each Packman can change direction of its move unlimited number of times, but it is not allowed to go beyond the boundaries of the game field. Packmen do not interfere with the movement of other packmen; in one cell there can be any number of packmen moving in any directions.
+
+Your task is to determine minimum possible time after which Packmen can eat all the asterisks.
+
+
+-----Input-----
+
+The first line contains a single integer n (2 ≤ n ≤ 10^5) — the length of the game field.
+
+The second line contains the description of the game field consisting of n symbols. If there is symbol '.' in position i — the cell i is empty. If there is symbol '*' in position i — in the cell i contains an asterisk. If there is symbol 'P' in position i — Packman is in the cell i.
+
+It is guaranteed that on the game field there is at least one Packman and at least one asterisk.
+
+
+-----Output-----
+
+Print minimum possible time after which Packmen can eat all asterisks.
+
+
+-----Examples-----
+Input
+7
+*..P*P*
+
+Output
+3
+
+Input
+10
+.**PP.*P.*
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first example Packman in position 4 will move to the left and will eat asterisk in position 1. He will spend 3 time units on it. During the same 3 time units Packman in position 6 will eat both of neighboring with it asterisks. For example, it can move to the left and eat asterisk in position 5 (in 1 time unit) and then move from the position 5 to the right and eat asterisk in the position 7 (in 2 time units). So in 3 time units Packmen will eat all asterisks on the game field.
+
+In the second example Packman in the position 4 will move to the left and after 2 time units will eat asterisks in positions 3 and 2. Packmen in positions 5 and 8 will move to the right and in 2 time units will eat asterisks in positions 7 and 10, respectively. So 2 time units is enough for Packmen to eat all asterisks on the game field.

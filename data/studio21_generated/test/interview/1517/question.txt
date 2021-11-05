@@ -1,0 +1,33 @@
+Permutation p is an ordered set of integers p_1,  p_2,  ...,  p_{n}, consisting of n distinct positive integers, each of them doesn't exceed n. We'll denote the i-th element of permutation p as p_{i}. We'll call number n the size or the length of permutation p_1,  p_2,  ...,  p_{n}.
+
+Petya decided to introduce the sum operation on the set of permutations of length n. Let's assume that we are given two permutations of length n: a_1, a_2, ..., a_{n} and b_1, b_2, ..., b_{n}. Petya calls the sum of permutations a and b such permutation c of length n, where c_{i} = ((a_{i} - 1 + b_{i} - 1) mod n) + 1 (1 ≤ i ≤ n).
+
+Operation $x \text{mod} y$ means taking the remainder after dividing number x by number y.
+
+Obviously, not for all permutations a and b exists permutation c that is sum of a and b. That's why Petya got sad and asked you to do the following: given n, count the number of such pairs of permutations a and b of length n, that exists permutation c that is sum of a and b. The pair of permutations x, y (x ≠ y) and the pair of permutations y, x are considered distinct pairs.
+
+As the answer can be rather large, print the remainder after dividing it by 1000000007 (10^9 + 7).
+
+
+-----Input-----
+
+The single line contains integer n (1 ≤ n ≤ 16).
+
+
+-----Output-----
+
+In the single line print a single non-negative integer — the number of such pairs of permutations a and b, that exists permutation c that is sum of a and b, modulo 1000000007 (10^9 + 7).
+
+
+-----Examples-----
+Input
+3
+
+Output
+18
+
+Input
+5
+
+Output
+1800

@@ -1,0 +1,55 @@
+The number "zero" is called "love" (or "l'oeuf" to be precise, literally means "egg" in French), for example when denoting the zero score in a game of tennis. 
+
+Aki is fond of numbers, especially those with trailing zeros. For example, the number $9200$ has two trailing zeros. Aki thinks the more trailing zero digits a number has, the prettier it is.
+
+However, Aki believes, that the number of trailing zeros of a number is not static, but depends on the base (radix) it is represented in. Thus, he considers a few scenarios with some numbers and bases. And now, since the numbers he used become quite bizarre, he asks you to help him to calculate the beauty of these numbers.
+
+Given two integers $n$ and $b$ (in decimal notation), your task is to calculate the number of trailing zero digits in the $b$-ary (in the base/radix of $b$) representation of $n\,!$ (factorial of $n$). 
+
+
+-----Input-----
+
+The only line of the input contains two integers $n$ and $b$ ($1 \le n \le 10^{18}$, $2 \le b \le 10^{12}$).
+
+
+-----Output-----
+
+Print an only integer — the number of trailing zero digits in the $b$-ary representation of $n!$
+
+
+-----Examples-----
+Input
+6 9
+
+Output
+1
+
+Input
+38 11
+
+Output
+3
+
+Input
+5 2
+
+Output
+3
+
+Input
+5 10
+
+Output
+1
+
+
+
+-----Note-----
+
+In the first example, $6!_{(10)} = 720_{(10)} = 880_{(9)}$.
+
+In the third and fourth example, $5!_{(10)} = 120_{(10)} = 1111000_{(2)}$.
+
+The representation of the number $x$ in the $b$-ary base is $d_1, d_2, \ldots, d_k$ if $x = d_1 b^{k - 1} + d_2 b^{k - 2} + \ldots + d_k b^0$, where $d_i$ are integers and $0 \le d_i \le b - 1$. For example, the number $720$ from the first example is represented as $880_{(9)}$ since $720 = 8 \cdot 9^2 + 8 \cdot 9 + 0 \cdot 1$.
+
+You can read more about bases here.

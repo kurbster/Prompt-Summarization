@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "2\n6 3\n7 3\n",
+    "1\n69 68\n",
+    "2\n69 68\n11 9\n"
+  ],
+  "outputs": [
+    "YES\nNO\n",
+    "NO\n",
+    "NO\nNO\n"
+  ]
+}

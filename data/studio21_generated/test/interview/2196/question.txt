@@ -1,0 +1,39 @@
+Ivan has got an array of n non-negative integers a_1, a_2, ..., a_{n}. Ivan knows that the array is sorted in the non-decreasing order. 
+
+Ivan wrote out integers 2^{a}_1, 2^{a}_2, ..., 2^{a}_{n} on a piece of paper. Now he wonders, what minimum number of integers of form 2^{b} (b ≥ 0) need to be added to the piece of paper so that the sum of all integers written on the paper equalled 2^{v} - 1 for some integer v (v ≥ 0). 
+
+Help Ivan, find the required quantity of numbers.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 10^5). The second input line contains n space-separated integers a_1, a_2, ..., a_{n} (0 ≤ a_{i} ≤ 2·10^9). It is guaranteed that a_1 ≤ a_2 ≤ ... ≤ a_{n}.
+
+
+-----Output-----
+
+Print a single integer — the answer to the problem.
+
+
+-----Examples-----
+Input
+4
+0 1 1 1
+
+Output
+0
+
+Input
+1
+3
+
+Output
+3
+
+
+
+-----Note-----
+
+In the first sample you do not need to add anything, the sum of numbers already equals 2^3 - 1 = 7.
+
+In the second sample you need to add numbers 2^0, 2^1, 2^2.

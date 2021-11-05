@@ -1,0 +1,62 @@
+Alice has a cute cat. To keep her cat fit, Alice wants to design an exercising walk for her cat! 
+
+Initially, Alice's cat is located in a cell $(x,y)$ of an infinite grid. According to Alice's theory, cat needs to move:   exactly $a$ steps left: from $(u,v)$ to $(u-1,v)$;  exactly $b$ steps right: from $(u,v)$ to $(u+1,v)$;  exactly $c$ steps down: from $(u,v)$ to $(u,v-1)$;  exactly $d$ steps up: from $(u,v)$ to $(u,v+1)$. 
+
+Note that the moves can be performed in an arbitrary order. For example, if the cat has to move $1$ step left, $3$ steps right and $2$ steps down, then the walk right, down, left, right, right, down is valid.
+
+Alice, however, is worrying that her cat might get lost if it moves far away from her. So she hopes that her cat is always in the area $[x_1,x_2]\times [y_1,y_2]$, i.e. for every cat's position $(u,v)$ of a walk $x_1 \le u \le x_2$ and $y_1 \le v \le y_2$ holds.
+
+Also, note that the cat can visit the same cell multiple times.
+
+Can you help Alice find out if there exists a walk satisfying her wishes?
+
+Formally, the walk should contain exactly $a+b+c+d$ unit moves ($a$ to the left, $b$ to the right, $c$ to the down, $d$ to the up). Alice can do the moves in any order. Her current position $(u, v)$ should always satisfy the constraints: $x_1 \le u \le x_2$, $y_1 \le v \le y_2$. The staring point is $(x, y)$.
+
+You are required to answer $t$ test cases independently.
+
+
+-----Input-----
+
+The first line contains a single integer $t$ ($1 \le t \le 10^3$) — the number of testcases. 
+
+The first line of each test case contains four integers $a$, $b$, $c$, $d$ ($0 \le a,b,c,d \le 10^8$, $a+b+c+d \ge 1$).
+
+The second line of the test case contains six integers $x$, $y$, $x_1$, $y_1$, $x_2$, $y_2$ ($-10^8 \le x_1\le x \le x_2 \le 10^8$, $-10^8 \le y_1 \le y \le y_2 \le 10^8$).
+
+
+-----Output-----
+
+For each test case, output "YES" in a separate line, if there exists a walk satisfying her wishes. Otherwise, output "NO" in a separate line. 
+
+You can print each letter in any case (upper or lower).
+
+
+-----Example-----
+Input
+6
+3 2 2 2
+0 0 -2 -2 2 2
+3 1 4 1
+0 0 -1 -1 1 1
+1 1 1 1
+1 1 1 1 1 1
+0 0 0 1
+0 0 0 0 0 1
+5 1 1 1
+0 0 -100 -100 0 100
+1 1 5 1
+0 0 -100 -100 100 0
+
+Output
+Yes
+No
+No
+Yes
+Yes
+Yes
+
+
+
+-----Note-----
+
+In the first test case, one valid exercising walk is $$(0,0)\rightarrow (-1,0) \rightarrow (-2,0)\rightarrow (-2,1) \rightarrow (-2,2)\rightarrow (-1,2)\rightarrow(0,2)\rightarrow (0,1)\rightarrow (0,0) \rightarrow (-1,0)$$

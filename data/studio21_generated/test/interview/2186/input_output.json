@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "2 3\naaaaa\nacacaca\naabaa\nccacacc\ncaaac\n",
+    "1 5\nacbacbacb\ncbacbacb\nacbacbac\naacbacbacb\nacbacbacbb\nacbaabacb\n",
+    "0 0\n",
+    "5 4\nab\ncacab\ncbabc\nacc\ncacab\nabc\naa\nacbca\ncb\n",
+    "9 9\ncaccbcacabccba\naacbcbcaabacbcbcba\nbabccaaacccacbb\ncaaabcaacbababbabbb\nabbaccacabacaaaa\nbccbccababcaacb\ncaacbcaacbababbabbb\nbcacababbbcaaca\nccbbcbababbccaab\nbbcbccababcaacb\naacccbabbacbabacaca\nbbcbcccbabcaacb\nacbacacbcacc\ncaaabcaaabacabbabbb\nabbbabaaaba\naacccbcaabacbcbcba\nabbaccacabbcaaaa\naaccbbcabbacbcbcba\n",
+    "1 1\nbbbbbbbaaaabbbbbaabbbba\naaabbbabbbbbbbaabbabbbb\n"
+  ],
+  "outputs": [
+    "YES\nNO\nNO\n",
+    "NO\nNO\nNO\nNO\nYES\n",
+    "",
+    "YES\nYES\nNO\nYES\n",
+    "YES\nNO\nNO\nNO\nNO\nNO\nYES\nYES\nNO\n",
+    "NO\n"
+  ]
+}

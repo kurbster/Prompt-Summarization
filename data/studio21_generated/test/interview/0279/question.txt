@@ -1,0 +1,39 @@
+The on-board computer on Polycarp's car measured that the car speed at the beginning of some section of the path equals v_1 meters per second, and in the end it is v_2 meters per second. We know that this section of the route took exactly t seconds to pass.
+
+Assuming that at each of the seconds the speed is constant, and between seconds the speed can change at most by d meters per second in absolute value (i.e., the difference in the speed of any two adjacent seconds does not exceed d in absolute value), find the maximum possible length of the path section in meters.
+
+
+-----Input-----
+
+The first line contains two integers v_1 and v_2 (1 ≤ v_1, v_2 ≤ 100) — the speeds in meters per second at the beginning of the segment and at the end of the segment, respectively.
+
+The second line contains two integers t (2 ≤ t ≤ 100) — the time when the car moves along the segment in seconds, d (0 ≤ d ≤ 10) — the maximum value of the speed change between adjacent seconds.
+
+It is guaranteed that there is a way to complete the segment so that:  the speed in the first second equals v_1,  the speed in the last second equals v_2,  the absolute value of difference of speeds between any two adjacent seconds doesn't exceed d. 
+
+
+-----Output-----
+
+Print the maximum possible length of the path segment in meters. 
+
+
+-----Examples-----
+Input
+5 6
+4 2
+
+Output
+26
+Input
+10 10
+10 0
+
+Output
+100
+
+
+-----Note-----
+
+In the first sample the sequence of speeds of Polycarpus' car can look as follows: 5, 7, 8, 6. Thus, the total path is 5 + 7 + 8 + 6 = 26 meters.
+
+In the second sample, as d = 0, the car covers the whole segment at constant speed v = 10. In t = 10 seconds it covers the distance of 100 meters.

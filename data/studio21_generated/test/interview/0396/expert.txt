@@ -1,0 +1,2 @@
+ Given a positive integer l and positive integer r, print the number of 2-3-integers between l and r. 
+-----Input----- The only line contains two integers l and r (1 ≤ l ≤ r ≤ 2·10^9). -----Output----- Print a single integer the number of 2-3-integers on the segment [l, r]. -----Examples----- Input 1 10 Output 7 Input 100 200 Output 5 Input 1 2000000000 Output 326 -----Note----- In the first example the 2-3-integers are 1, 2, 3, 4, 6, 8 and 9. In the second example the 2-3-integers are 108, 128, 144, 162 and 192.

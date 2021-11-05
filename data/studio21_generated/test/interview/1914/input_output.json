@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "aaabacaa\n2\na\naa\n",
+    "aaabacaa\n4\na\na\na\nb\n",
+    "abacabadabacaba\n22\na\nb\nc\nd\naba\naca\nabacabadabacaba\naa\ndab\nac\nca\nba\nab\nad\nda\nabacaba\nabacaba\nabacabad\nabacabad\ndabacaba\ndabacaba\nabacabadabacabaa\n",
+    "aa\n7\na\naa\naaa\naaaa\naaaaa\naaaaaa\naaaaaaa\n",
+    "abababa\n2\nabab\nabab\n",
+    "aaaa\n1\naa\n",
+    "aaaaa\n1\naaa\n",
+    "bflrqjofvczihn\n2\nbflrqjo\nfvczihn\n",
+    "hbyyyzbyzbyyya\n2\na\ngjdmoqcpucufi\n",
+    "aaiiacaaw\n2\nw\ndeaataaa\n"
+  ],
+  "outputs": [
+    "5\n",
+    "33\n",
+    "108\n",
+    "1\n",
+    "0\n",
+    "1\n",
+    "0\n",
+    "1\n",
+    "0\n",
+    "0\n"
+  ]
+}

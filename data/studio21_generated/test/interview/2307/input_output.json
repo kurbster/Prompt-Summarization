@@ -1,0 +1,1 @@
+{"inputs": [["1", "1", "", ""], ["1", "2", "", ""], ["4", "11 12 13 14", "", ""], ["3", "2 3 4", "", ""], ["5", "1 2 3 4 5", "", ""]], "outputs": [["NOT READY"], ["READY FOR BATTLE"], ["NOT READY"], ["READY FOR BATTLE"], ["NOT READY"]]}

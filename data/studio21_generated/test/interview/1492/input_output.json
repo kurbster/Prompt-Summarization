@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "3 6\nXXXXXX\nXXXXXX\nXXXXXX\n",
+    "10 10\n.XXXXXX...\n.XXXXXX...\n.XXXXXX...\n.XXXXXX...\n.XXXXXXXX.\n...XXXXXX.\n...XXXXXX.\n...XXXXXX.\n...XXXXXX.\n..........\n",
+    "4 5\nX....\n..XXX\n..XXX\n..XXX\n",
+    "1 1\nX\n",
+    "10 12\n...X..X..XX.\n.....X......\n..X.........\n...X..XX...X\n.......X.X..\n....X...X.X.\n..........X.\n......XXX...\n......X..X..\n..X....XX..X\n",
+    "13 12\n............\n...XXX..XXXX\n.XXXXXX.XXXX\n.XXXXXX.XXXX\n.XXXXXXXXXXX\n.XXXXXXXXXXX\n.XXX..XXXXXX\nXXXXXXXX....\nXXXXXXXXXX..\nXXXXXXXXXXX.\n.....XXXXXXX\n.....XXXXXXX\n.....XXXXXXX\n",
+    "15 14\n..............\n..XXXXXXXX....\n..XXXXXXXXXXXX\n..XXXXXXXXXXXX\nXXXXXXXXXXXXXX\nXXXXXXXXXXXXXX\nXXXXXXXXXXXXXX\nXXXXXXXXXXXXX.\nXXXXXXXXXXXXX.\n..XXXXXXXXX...\n.XXXXXXXXXXX..\n.XXXXXXXXXXX..\n.XXXXXXXXXXX..\n.XXXXXXXXXXX..\n.XXXXXXXXXXX..\n",
+    "17 17\n.................\n.....XXXXXXXXX...\n.....XXXXXXXXXXX.\n.....XXXXXXXXXXXX\n..XXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n.XXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXX\n.....XXXXXXXXXXXX\n.....XXXXXXXXX...\n.....XXXXXXXXX...\n",
+    "20 20\n....................\n....................\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXXX\n..XXXXXXXXXXXXXXXXX.\n..XXXXXXXXXXXXXXXXX.\n..XXXXXXXXXXXXXXXXX.\n..XXXXXXXXXXXXXXXXX.\n",
+    "7 7\nXXXXXXX\nXXXXXXX\nXXXXXXX\nXX...XX\nXXXXXXX\nXXXXXXX\nXXXXXXX\n",
+    "7 5\n..XXX\n..XXX\n..XXX\n.XXX.\nXXX..\nXXX..\nXXX..\n",
+    "3 8\nXXX..XXX\nXXXXXXXX\nXXXXXXXX\n",
+    "7 11\nXXX.XXX.XXX\nXXX.XXX.XXX\nXXX.XXX.XXX\n.XXXXXXXXX.\n..XXX.XXX..\n..XXX.XXX..\n..XXX.XXX..\n",
+    "5 5\n..XXX\n..XXX\nXXXXX\nXXXX.\nXXX..\n",
+    "8 7\n.XXX...\n.XXX...\n.XXX...\n..XXX..\n...XXX.\n....XXX\n....XXX\n....XXX\n",
+    "4 11\n.XXX.XXX...\n.XXXXXXX...\n.XXXXXXX...\n.XXX.XXX...\n"
+  ],
+  "outputs": [
+    "1\n......\n.XXXX.\n......\n",
+    "2\n..........\n..........\n...XX.....\n..........\n..........\n..........\n.....XX...\n..........\n..........\n..........\n",
+    "0\nX....\n..XXX\n..XXX\n..XXX\n",
+    "0\nX\n",
+    "0\n...X..X..XX.\n.....X......\n..X.........\n...X..XX...X\n.......X.X..\n....X...X.X.\n..........X.\n......XXX...\n......X..X..\n..X....XX..X\n",
+    "1\n............\n............\n....X....XX.\n..XXXX...XX.\n..XXXX...XX.\n..X....XXXX.\n..X.........\n..X.........\n.XXXXXX.....\n......XXX...\n......XXXX..\n......XXXXX.\n............\n",
+    "2\n..............\n..............\n..............\n....XXXX......\n....XXXXXXXX..\n....XXXXXXX...\n..XXXXXXXXX...\n....XXXXX.....\n....XXXXX.....\n....XXXXX.....\n....XXXXX.....\n....XXXXX.....\n...XXXXXXX....\n..............\n..............\n",
+    "3\n.................\n.................\n.................\n.................\n........XXX......\n........XXXXX....\n........XXXXXX...\n.....XXXXXXXXX...\n....XXXXXXXXXX...\n.....XXXXXXXXX...\n.....XXXXXXXXX...\n........XXXXXX...\n........XXX......\n........XXX......\n.................\n.................\n.................\n",
+    "6\n....................\n....................\n....................\n....................\n....................\n....................\n....................\n....................\n........XXXXXX......\n........XXXXXX......\n........XXXXX.......\n........XXXXX.......\n........XXXXX.......\n........XXXXX.......\n....................\n....................\n....................\n....................\n....................\n....................\n",
+    "0\nXXXXXXX\nXXXXXXX\nXXXXXXX\nXX...XX\nXXXXXXX\nXXXXXXX\nXXXXXXX\n",
+    "0\n..XXX\n..XXX\n..XXX\n.XXX.\nXXX..\nXXX..\nXXX..\n",
+    "0\nXXX..XXX\nXXXXXXXX\nXXXXXXXX\n",
+    "0\nXXX.XXX.XXX\nXXX.XXX.XXX\nXXX.XXX.XXX\n.XXXXXXXXX.\n..XXX.XXX..\n..XXX.XXX..\n..XXX.XXX..\n",
+    "0\n..XXX\n..XXX\nXXXXX\nXXXX.\nXXX..\n",
+    "0\n.XXX...\n.XXX...\n.XXX...\n..XXX..\n...XXX.\n....XXX\n....XXX\n....XXX\n",
+    "0\n.XXX.XXX...\n.XXXXXXX...\n.XXXXXXX...\n.XXX.XXX...\n"
+  ]
+}

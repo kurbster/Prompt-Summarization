@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 4\nHow much is 6 times 9? 42\nHow much is 9 times 6? 42\nIs there intelligent life on Earth? Probably\nWhat is the air speed velocity of an unladen swallow? African?\n",
+        "4 3\nWhat do we send? Code\nWhat do we want? Accepted\nWhen do we want it? Now!\n"
+    ],
+    "outputs": [
+        "2.0000000000\n",
+        "1.333333333\n"
+    ]
+}

@@ -1,0 +1,54 @@
+A long time ago in a galaxy far, far away$\ldots $ there was a cinematic universe with countless sequels, prequels, and everything in-between. You have always been confused of the ordering of the Star Wars movies. First they created the plot order movies $4$, $5$ and $6$. Then movie $1$, $2$ and $3$. Now they are creating side plot movies that fit in between old movies. 
+
+We actually have two orderings of Star Wars movies: creation order and plot order. You’d like to be able to translate between these orderings. Both orderings start at $1$. If a movie is created and inserted at plot index $i$ the plot index of every movie with a plot index $j$ where $i \leq j$ is increased by $1$.
+
+-----Input-----
+The first line of the input contains a single number $Q$, where $1 < Q \leq 600000$.
+
+Then follows $Q$ lines with a query on each.
+
+A query has the following form $q x$, where $q$ is either $1$ or $2$, and $x$ is a positive integer. If $q$ is $1$ it means that we created a movie that currently is number $x$ in plot order. For $q=2$ we would like to know what the creation index is of the movie that currently has the plot index $x$.
+
+If the number of movies so far is denoted with $n$, it is guaranteed that if $q=1$, $1 \leq x \leq n+1$ and if $q=2$, $1 \leq x \leq n$.
+
+-----Output-----
+For each query with $q=2$ output a line with a single number, the creation index of the movie with plot index $x$.
+
+-----Sample Explanation-----
+Sample Input $1$ corresponds to the $6$ original Star Wars movies. First three movies were created in order, then three more were created that has plot indices prior to the three created first. Then we inspect the creation order of all the movies in plot order. The $1$st, $2$nd and $3$rd movies in plot order are the $4$th, $5$th and $6$th movies created. The $4$th, $5$th and $6$th movies in plot order are the $1$st, $2$nd and $3$rd movies created.
+
+-----Examples-----
+Sample Input 1:
+12
+1 1
+1 2
+1 3
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+2 4
+2 5
+2 6
+Sample Output 1:
+4
+5
+6
+1
+2
+3
+
+Sample Input 2:
+6
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+Sample Output 2:
+1
+2
+3

@@ -1,0 +1,38 @@
+Mirko is playing with stacks. In the beginning of the game, he has an empty stack denoted with number $0$. In the $i$-th step of the game he will choose an existing stack denoted with $v$, copy it and do one of the following actions:
+ - place number $i$ on top of the new stack
+ - remove the number from the top of the new stack
+ - choose another stack denoted with $w$ and count how many different numbers exist that are in the new stack and in the stack denoted with $w$
+
+The newly created stack is denoted with $i$.
+
+Mirko doesn’t like to work with stacks so he wants you to write a program that will do it for him. For each operation of type 2 output the number removed from stack and for each operation of type 3 count the required numbers and output how many of them there are.
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \leq N \leq 300000$), the number of steps in Mirko’s game.
+
+The steps of the game are chronologically denoted with the first $N$ integers.
+
+The $i$-th of the following $N$ lines contains the description of the $i$-th step of the game in one of the following three forms:
+ - a v for an operation of type 1.
+ - b v for an operation of type 2.
+ - c v w for an operation of type 3.
+
+The first character in the line denotes the type of operation and the following one or two denote the accompanying stack labels that will always be integers from the interval $[0, i - 1]$.
+
+For each operation of type 2, the stack we are removing the element from will not be empty.
+
+-----Output-----
+For each operation type 2 or 3 output the required number, each in their own line, in the order the operations were given in the input.
+
+-----Examples-----
+Sample Input:
+5
+a 0
+a 1
+b 2
+c 2 3
+b 4
+Sample Output:
+2
+1
+2

@@ -1,0 +1,67 @@
+You desperately need to build some string t. For that you've got n more strings s_1, s_2, ..., s_{n}. To build string t, you are allowed to perform exactly |t| (|t| is the length of string t) operations on these strings. Each operation looks like that:  choose any non-empty string from strings s_1, s_2, ..., s_{n};  choose an arbitrary character from the chosen string and write it on a piece of paper;  remove the chosen character from the chosen string. 
+
+Note that after you perform the described operation, the total number of characters in strings s_1, s_2, ..., s_{n} decreases by 1. We are assumed to build string t, if the characters, written on the piece of paper, in the order of performed operations form string t.
+
+There are other limitations, though. For each string s_{i} you know number a_{i} — the maximum number of characters you are allowed to delete from string s_{i}. You also know that each operation that results in deleting a character from string s_{i}, costs i rubles. That is, an operation on string s_1 is the cheapest (it costs 1 ruble), and the operation on string s_{n} is the most expensive one (it costs n rubles).
+
+Your task is to count the minimum amount of money (in rubles) you will need to build string t by the given rules. Consider the cost of building string t to be the sum of prices of the operations you use.
+
+
+-----Input-----
+
+The first line of the input contains string t — the string that you need to build.
+
+The second line contains a single integer n (1 ≤ n ≤ 100) — the number of strings to which you are allowed to apply the described operation. Each of the next n lines contains a string and an integer. The i-th line contains space-separated string s_{i} and integer a_{i} (0 ≤ a_{i} ≤ 100). Number a_{i} represents the maximum number of characters that can be deleted from string s_{i}.
+
+All strings in the input only consist of lowercase English letters. All strings are non-empty. The lengths of all strings do not exceed 100 characters.
+
+
+-----Output-----
+
+Print a single number — the minimum money (in rubles) you need in order to build string t. If there is no solution, print -1.
+
+
+-----Examples-----
+Input
+bbaze
+3
+bzb 2
+aeb 3
+ba 10
+
+Output
+8
+
+Input
+abacaba
+4
+aba 2
+bcc 1
+caa 2
+bbb 5
+
+Output
+18
+
+Input
+xyz
+4
+axx 8
+za 1
+efg 4
+t 1
+
+Output
+-1
+
+
+
+-----Note-----
+
+Notes to the samples:
+
+In the first sample from the first string you should take characters "b" and "z" with price 1 ruble, from the second string characters "a", "e" и "b" with price 2 rubles. The price of the string t in this case is 2·1 + 3·2 = 8.
+
+In the second sample from the first string you should take two characters "a" with price 1 ruble, from the second string character "c" with price 2 rubles, from the third string two characters "a" with price 3 rubles, from the fourth string two characters "b" with price 4 rubles. The price of the string t in this case is 2·1 + 1·2 + 2·3 + 2·4 = 18.
+
+In the third sample the solution doesn't exist because there is no character "y" in given strings.

@@ -1,0 +1,71 @@
+You are given $n$ blocks, each of them is of the form [color$_1$|value|color$_2$], where the block can also be flipped to get [color$_2$|value|color$_1$]. 
+
+A sequence of blocks is called valid if the touching endpoints of neighboring blocks have the same color. For example, the sequence of three blocks A, B and C is valid if the left color of the B is the same as the right color of the A and the right color of the B is the same as the left color of C.
+
+The value of the sequence is defined as the sum of the values of the blocks in this sequence.
+
+Find the maximum possible value of the valid sequence that can be constructed from the subset of the given blocks. The blocks from the subset can be reordered and flipped if necessary. Each block can be used at most once in the sequence.
+
+
+-----Input-----
+
+The first line of input contains a single integer $n$ ($1 \le n \le 100$) — the number of given blocks.
+
+Each of the following $n$ lines describes corresponding block and consists of $\mathrm{color}_{1,i}$, $\mathrm{value}_i$ and $\mathrm{color}_{2,i}$ ($1 \le \mathrm{color}_{1,i}, \mathrm{color}_{2,i} \le 4$, $1 \le \mathrm{value}_i \le 100\,000$).
+
+
+-----Output-----
+
+Print exactly one integer — the maximum total value of the subset of blocks, which makes a valid sequence.
+
+
+-----Examples-----
+Input
+6
+2 1 4
+1 2 4
+3 4 4
+2 8 3
+3 16 3
+1 32 2
+
+Output
+63
+Input
+7
+1 100000 1
+1 100000 2
+1 100000 2
+4 50000 3
+3 50000 4
+4 50000 4
+3 50000 3
+
+Output
+300000
+Input
+4
+1 1000 1
+2 500 2
+3 250 3
+4 125 4
+
+Output
+1000
+
+
+-----Note-----
+
+In the first example, it is possible to form a valid sequence from all blocks.
+
+One of the valid sequences is the following:
+
+[4|2|1] [1|32|2] [2|8|3] [3|16|3] [3|4|4] [4|1|2]
+
+The first block from the input ([2|1|4] $\to$ [4|1|2]) and second ([1|2|4] $\to$ [4|2|1]) are flipped.
+
+In the second example, the optimal answers can be formed from the first three blocks as in the following (the second or the third block from the input is flipped):
+
+[2|100000|1] [1|100000|1] [1|100000|2]
+
+In the third example, it is not possible to form a valid sequence of two or more blocks, so the answer is a sequence consisting only of the first block since it is the block with the largest value.

@@ -1,0 +1,36 @@
+One day, Twilight Sparkle is interested in how to sort a sequence of integers a_1, a_2, ..., a_{n} in non-decreasing order. Being a young unicorn, the only operation she can perform is a unit shift. That is, she can move the last element of the sequence to its beginning:a_1, a_2, ..., a_{n} → a_{n}, a_1, a_2, ..., a_{n} - 1. 
+
+Help Twilight Sparkle to calculate: what is the minimum number of operations that she needs to sort the sequence?
+
+
+-----Input-----
+
+The first line contains an integer n (2 ≤ n ≤ 10^5). The second line contains n integer numbers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^5).
+
+
+-----Output-----
+
+If it's impossible to sort the sequence output -1. Otherwise output the minimum number of operations Twilight Sparkle needs to sort it.
+
+
+-----Examples-----
+Input
+2
+2 1
+
+Output
+1
+
+Input
+3
+1 3 2
+
+Output
+-1
+
+Input
+2
+1 2
+
+Output
+0

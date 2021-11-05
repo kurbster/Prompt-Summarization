@@ -1,0 +1,34 @@
+-----Input-----
+
+The input contains a single integer $a$ ($1 \le a \le 99$).
+
+
+-----Output-----
+
+Output "YES" or "NO".
+
+
+-----Examples-----
+Input
+5
+
+Output
+YES
+
+Input
+13
+
+Output
+NO
+
+Input
+24
+
+Output
+NO
+
+Input
+46
+
+Output
+YES

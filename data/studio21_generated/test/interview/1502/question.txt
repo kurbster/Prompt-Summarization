@@ -1,0 +1,19 @@
+[Image] 
+
+
+-----Input-----
+
+The input contains a single integer $a$ ($0 \le a \le 15$).
+
+
+-----Output-----
+
+Output a single integer.
+
+
+-----Example-----
+Input
+3
+
+Output
+13

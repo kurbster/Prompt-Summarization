@@ -1,0 +1,2 @@
+ Given an integer S, find how many sequences there are whose terms are all integers greater than or equal to 3, and whose sum is equal to S. The answer can be very large, so output it modulo 10^9 + 7. 
+-----Input----- Input is given from Standard Input in the following format: S -----Output----- Print the answer. -----Sample Input----- 7 -----Sample Output----- 3 3 sequences satisfy the condition: \{3,4\}, \{4,3\} and \{7\}.

@@ -1,0 +1,20 @@
+The $n$-queens problem is popular among computer science students. Its task is to place a maximum number of queens on an $n\times n$ chessboard so that no two queens attack each other. Two queens attack each other if they share a row, column, or diagonal.
+
+One day Zapray gets bored and extends the problem by loosening its constraint: It is allowed to have two queens attack each other, but no three queens can attack each other at the same time. In other words, there should not exist three queens $i$, $j$, and $k$ so that $i$ attacks $j$, $j$ attacks $k$, and $k$ attacks $i$.
+
+With the new constraint, Zapray would like to know at most how many queens he can place on an $n \times m$ chessboard, and in how many ways he can place a maximum number of queens. Additionally, some of the cells on the chessboard are broken, and queens cannot be placed on these broken cells. A broken cell between two queens does not prevent them from attacking each other.
+
+-----Input-----
+The first line has two integers $n$ and $m$ ($1 \leq n, m \leq 50, n \cdot m \leq 50$), describing the size of the chessboard. Each of the next $n$ lines has $m$ characters describing the cells on one row of the chess board. A dot (‘.’) denotes an empty cell, while a hash (‘#’) denotes a broken cell. There is at least one usable cell on the chessboard.
+
+-----Output-----
+Output two integers. The first is the maximum number of queens Zapray can place on the chessboard, and the second is the number of ways in which he can place that many queens.
+
+-----Examples-----
+Sample Input:
+3 4
+....
+.#.#
+....
+Sample Output:
+5 13

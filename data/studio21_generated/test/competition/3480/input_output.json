@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2 16\nHot cross buns! = Hot cross buns! =\n4 4 4 4 4 4 4 4\nOne a pen- ny, Two a pen- ny, Hot cross buns! =\n2 2 2 2 2 2 2 2 4 4 4 4\n",
+        "5 32\nAnd ev- ry-\n1 1 1\none neath a vine and fig tree, = shall live in\n2 1 1 2 2 2 2 1 1 1 1\npeace and un- a- fraid. =\n2 2 2 2 6 2\nAnd in- to plow shares beat their swords.\n2 1 1 2 2 2 2 4\nNa- tions shall learn war no more =\n2 2 2 2 2 2 1 3\n"
+    ],
+    "outputs": [
+        "Hot_cross_buns!_=___Hot_cross_buns!_=\n____________________Hot_cross_buns!_=\nOne_a_pen-_ny,_Two_a_pen-_ny,_Hot___cross____buns!_=\nHot___cross____buns!_=________One_a_pen-_ny,_Two_a_pen-_ny,\n",
+        "And_ev-_ry-\n/\none_neath_a_vine_and_fig_tree,_=_shall_live_in\n/\npeace_and_un-_a-_fraid.___=\n______________________And_ev-_ry-\nAnd_in-___to_plow_shares_beat_their_swords.\none_neath_a__vine_and____fig__tree,_=_shall_live_in\nNa-___tions_shall_learn_war_no_more_=\npeace_and___un-___a-____fraid._______=\n"
+    ]
+}

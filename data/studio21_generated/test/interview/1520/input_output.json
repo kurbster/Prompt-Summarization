@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "3\na\nb\na\n",
+    "2\nbnn\na\n",
+    "6\nw\ng\nc\nj\ny\nf\n",
+    "5\nm\ng\nu\nt\ntttt\n",
+    "4\nr\no\nw\nwwwwwwwwww\n",
+    "4\nvr\nhp\nl\nllbn\n",
+    "9\nlfpgbnlzyn\nc\ns\nw\nr\nm\nq\ny\nyinfblfcdhidphyfvgkxyuwomahiibbhnigdslsguhjkplibnhhrshtekwgefxeugyyyyy\n",
+    "3\nj\nk\nkkailgwqnxtdsttkkkkkkk\n",
+    "2\nn\nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn\n",
+    "2\nzxwp\nppppctfisvflhtjggg\n",
+    "6\nu\np\nm\nz\nv\nvv\n",
+    "3\nlt\nen\neeeeeeeeee\n",
+    "4\no\nyhnx\ne\nennn\n",
+    "6\nnf\nysvchtjkfgsbyfzxjaykey\nadvqnf\nwl\npi\nppppfvvmaebvhkoagppppp\n",
+    "4\nqe\nnd\niqryhukieskfvaeettersinksrmazelxtgvartuz\nvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n",
+    "10\nj\ndyfu\nudzj\nwwow\nxtnw\nf\nc\nq\no\ngggg\n"
+  ],
+  "outputs": [
+    "3\n",
+    "1\n",
+    "1\n",
+    "9\n",
+    "21\n",
+    "3\n",
+    "7\n",
+    "10\n",
+    "93\n",
+    "5\n",
+    "5\n",
+    "21\n",
+    "4\n",
+    "10\n",
+    "541\n",
+    "4\n"
+  ]
+}

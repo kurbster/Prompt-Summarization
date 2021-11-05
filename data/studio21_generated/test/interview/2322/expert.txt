@@ -1,0 +1,2 @@
+ You are given an array with integers. You are given another array with integers. Return the maximum integer that can be formed by using less than (m+1) integers from the first array and (n+1) integers from the second array. 
+.

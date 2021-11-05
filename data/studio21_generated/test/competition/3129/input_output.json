@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "CPCC\n",
+        "PPPPCCCC\n",
+        "CCCCPPPP\n"
+    ],
+    "outputs": [
+        "1\n",
+        "8\n",
+        "0\n"
+    ]
+}

@@ -1,0 +1,2 @@
+ You are given two integers n and m, n > 0 and m > 0.  On each turn, the first player can choose either to paint a cell or to leave it empty. The second player does the same. 
+-----Input----- The only line of the input contains one integer n (1 ≤ n ≤ 10^18) — the size of the field. -----Output----- Output number 1, if the player making the first turn wins when both players play optimally, otherwise print number 2. -----Examples----- Input 1 Output 1 Input 2 Output 2

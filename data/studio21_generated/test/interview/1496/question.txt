@@ -1,0 +1,65 @@
+Nura wants to buy k gadgets. She has only s burles for that. She can buy each gadget for dollars or for pounds. So each gadget is selling only for some type of currency. The type of currency and the cost in that currency are not changing.
+
+Nura can buy gadgets for n days. For each day you know the exchange rates of dollar and pound, so you know the cost of conversion burles to dollars or to pounds.
+
+Each day (from 1 to n) Nura can buy some gadgets by current exchange rate. Each day she can buy any gadgets she wants, but each gadget can be bought no more than once during n days.
+
+Help Nura to find the minimum day index when she will have k gadgets. Nura always pays with burles, which are converted according to the exchange rate of the purchase day. Nura can't buy dollars or pounds, she always stores only burles. Gadgets are numbered with integers from 1 to m in order of their appearing in input.
+
+
+-----Input-----
+
+First line contains four integers n, m, k, s (1 ≤ n ≤ 2·10^5, 1 ≤ k ≤ m ≤ 2·10^5, 1 ≤ s ≤ 10^9) — number of days, total number and required number of gadgets, number of burles Nura has.
+
+Second line contains n integers a_{i} (1 ≤ a_{i} ≤ 10^6) — the cost of one dollar in burles on i-th day.
+
+Third line contains n integers b_{i} (1 ≤ b_{i} ≤ 10^6) — the cost of one pound in burles on i-th day.
+
+Each of the next m lines contains two integers t_{i}, c_{i} (1 ≤ t_{i} ≤ 2, 1 ≤ c_{i} ≤ 10^6) — type of the gadget and it's cost. For the gadgets of the first type cost is specified in dollars. For the gadgets of the second type cost is specified in pounds.
+
+
+-----Output-----
+
+If Nura can't buy k gadgets print the only line with the number -1.
+
+Otherwise the first line should contain integer d — the minimum day index, when Nura will have k gadgets. On each of the next k lines print two integers q_{i}, d_{i} — the number of gadget and the day gadget should be bought. All values q_{i} should be different, but the values d_{i} can coincide (so Nura can buy several gadgets at one day). The days are numbered from 1 to n.
+
+In case there are multiple possible solutions, print any of them.
+
+
+-----Examples-----
+Input
+5 4 2 2
+1 2 3 2 1
+3 2 1 2 3
+1 1
+2 1
+1 2
+2 2
+
+Output
+3
+1 1
+2 3
+
+Input
+4 3 2 200
+69 70 71 72
+104 105 106 107
+1 1
+2 2
+1 2
+
+Output
+-1
+
+Input
+4 3 1 1000000000
+900000 910000 940000 990000
+990000 999000 999900 999990
+1 87654
+2 76543
+1 65432
+
+Output
+-1

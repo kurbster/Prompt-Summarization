@@ -1,0 +1,2 @@
+ You are given a string. You need to insert one lowercase English letter somewhere. You need to do it K times. 
+-----Input----- Input is given from Standard Input in the following format: K S -----Output----- Print the number of strings satisfying the condition, modulo (10^9+7). -----Sample Input----- 5 oof -----Sample Output----- 575111451 For example, we can obtain proofend, moonwolf, and onionpuf, while we cannot obtain oofsix, oofelevennn, voxafolt, or fooooooo.

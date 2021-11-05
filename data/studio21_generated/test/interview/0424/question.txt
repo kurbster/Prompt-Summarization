@@ -1,0 +1,45 @@
+Alice and Bob begin their day with a quick game. They first choose a starting number X_0 ≥ 3 and try to reach one million by the process described below. 
+
+Alice goes first and then they take alternating turns. In the i-th turn, the player whose turn it is selects a prime number smaller than the current number, and announces the smallest multiple of this prime number that is not smaller than the current number.
+
+Formally, he or she selects a prime p < X_{i} - 1 and then finds the minimum X_{i} ≥ X_{i} - 1 such that p divides X_{i}. Note that if the selected prime p already divides X_{i} - 1, then the number does not change.
+
+Eve has witnessed the state of the game after two turns. Given X_2, help her determine what is the smallest possible starting number X_0. Note that the players don't necessarily play optimally. You should consider all possible game evolutions.
+
+
+-----Input-----
+
+The input contains a single integer X_2 (4 ≤ X_2 ≤ 10^6). It is guaranteed that the integer X_2 is composite, that is, is not prime.
+
+
+-----Output-----
+
+Output a single integer — the minimum possible X_0.
+
+
+-----Examples-----
+Input
+14
+
+Output
+6
+
+Input
+20
+
+Output
+15
+
+Input
+8192
+
+Output
+8191
+
+
+
+-----Note-----
+
+In the first test, the smallest possible starting number is X_0 = 6. One possible course of the game is as follows:   Alice picks prime 5 and announces X_1 = 10  Bob picks prime 7 and announces X_2 = 14. 
+
+In the second case, let X_0 = 15.   Alice picks prime 2 and announces X_1 = 16  Bob picks prime 5 and announces X_2 = 20.

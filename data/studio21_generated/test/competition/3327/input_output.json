@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "1 15\n##.........####\n1\nCROSSWORD\n",
+        "3 6\n#.....\n....##\n###...\n6\nAT\nME\nDOG\nGOD\nVETO\nMAGIC\n"
+    ],
+    "outputs": [
+        "##CROSSWORD####\n",
+        "#MAGIC\nVETO##\n###DOG\n"
+    ]
+}

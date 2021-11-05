@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "4\na\nb\nab\nd\n",
+    "3\nab\nbc\nabc\n",
+    "1\ncodeforces\n",
+    "5\nyyyyyyyyyyyyyyyyyyyyyyyyyyy\nxxxxxx\nzz\nzzzzzzzzzzz\nzzzzzzzzzz\n",
+    "5\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nff\nsssssssssssssssssssssss\nwwwwwww\nxxxxxxxx\n",
+    "5\nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\nxdxxdxxddxdxdxxdddxdddxxxddx\npyfpffffyyfppyfffpypp\nzzzzzzzzzzzzzzzzzzzzzzzz\nzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\n",
+    "5\nnznnnznnnnznnnnznzznnnznnznnnnnnnzzn\nljjjjlljlllllj\nduuuudududduuuuududdddduduudduddududdduuuudduddd\nssssssssss\nqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq\n",
+    "10\ngzjzzjjjzjzgjgzzgzjjjzzzggjjggggjjzzgzz\nyyyyyyyyyyyyyy\nuuuuuuuuuuuuuuuuuuuuuuuu\nssssssssssssssssssssss\nuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu\ngzjgjzzzjgjzggjjjjjzjzzgjgjzgjgjzzjjggzgjzgjgj\ny\nsssssssssss\ngzjzgjjjzggjgzjzgzzz\nsssssssssssssssssssssssssssssss\n",
+    "3\naaa\nbbb\nab\n",
+    "5\naaa\nbbb\nccc\nddd\nab\n"
+  ],
+  "outputs": [
+    "2",
+    "1",
+    "1",
+    "3",
+    "5",
+    "4",
+    "5",
+    "4",
+    "1",
+    "3"
+  ]
+}

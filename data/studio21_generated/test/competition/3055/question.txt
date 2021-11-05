@@ -1,0 +1,40 @@
+Thore Husfeldt likes to compare his time on solved Kattis problems with other people. If he has written the fastest solution on a problem he screams “I’m amazing” in pure joy. However if his solution is not the fastest he likes to find out if he is the best Thore, or maybe the best ThoreH on the scoreboard. He is the best ThoreH if there is another Thore above him, but no ThoreH above him. Once a terrible incident took place where Thore misread the scoreboard and thought that he was the best, but instead it was some other Thore who was amazing. Now he needs your help to find the smallest prefix that uniquely determines himself on the scoreboard. 
+
+-----Input-----
+The first line of the input contains a single number $n$, where $1 < n \leq 100$.
+
+Then follows $n$ lines with a name on each line.
+
+Each name only contains characters from the set $\big [\text {a-zA-Z}\big ]$, i.e. lower and upper case English letters. Each name is at least one character and at most $100$ characters long.
+
+Exactly one name is “ThoreHusfeldt” in the input.
+
+-----Output-----
+The output is a single line. If “ThoreHusfeldt” is first on the scoreboard, output “Thore is awesome”. If another person, with a name containing “ThoreHusfeld”(note: no trailing “t”) as a prefix is above Thore, output “Thore sucks”.
+
+Otherwise output the smallest prefix that uniquely determines Thore on the scoreboard from the top. In other words: find the smallest prefix of “ThoreHusfeldt” that no-one above “ThoreHusfeldt” shares.
+
+-----Sample Explanation-----
+In Sample Input $1$ there is another Thore above “ThoreHusfeldt”. However, “ThoreHusfeldt” is still the best “ThoreH”.
+
+-----Examples-----
+Sample Input 1:
+2
+ThoreTiemann
+ThoreHusfeldt
+Sample Output 1:
+ThoreH
+
+Sample Input 2:
+2
+ThoreHusfeldt
+JohanSannemo
+Sample Output 2:
+Thore is awesome
+
+Sample Input 3:
+2
+ThoreHusfeldter
+ThoreHusfeldt
+Sample Output 3:
+Thore sucks

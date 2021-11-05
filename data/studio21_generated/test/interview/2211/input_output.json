@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "aaab\n2\naa 0 0\naab 1 1\n",
+    "ltntlnen\n3\nn 0 0\nttlneenl 1 4\nlelllt 1 1\n",
+    "a\n0\n",
+    "nysnvneyavzcebsbsvrsbcvzsrcr\n5\nycaa 1 3\nzsayyyvseccsbcbvzrr 5 16\nznz 1 3\nbvnzrccvcb 4 7\nseznebzeevvrncccaabsbny 17 21\n",
+    "oaoaa\n1\noaooaoooooaaaaaaaoooaao 2 18\n",
+    "aaajiajqjvehgzqjssaebbqzhggehreiihhrjeehzeaeiiigavjsqbszghavijavqszgbjhjzvvjqhvqvrhehhjjbsezsbraiiabrzvgvzvhrisjzhehaqehqerrvieseheavbigihahbqv\n0\n"
+  ],
+  "outputs": [
+    "3\n",
+    "2\n",
+    "1\n",
+    "0\n",
+    "7\n",
+    "10115\n"
+  ]
+}

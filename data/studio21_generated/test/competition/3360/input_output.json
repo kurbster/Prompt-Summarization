@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5\nS -> aSa\nS -> bSb\nS -> a\nS -> b\nS -> \nwhere are the abaaba palindromes on this line\nnone on this line\nhow about this aaaaaaabbbbbbbbbbbbbbbbba\neven a single a or b is a palindrome\n",
+        "5\nP -> AM\nP -> M\nA -> NNNx\nM -> NNNxNNNN\nN -> n\nmy phone number is nnnxnnnxnnnn what is yours\nmy number is nnnxnnnn at work\nthanks and just in case you can also call\nnnnxnnnxnnnn or nnnxnnnxnnnn\n"
+    ],
+    "outputs": [
+        "abaaba\nNONE\nabbbbbbbbbbbbbbbbba\na\n",
+        "nnnxnnnxnnnn\nnnnxnnnn\nNONE\nnnnxnnnxnnnn\n"
+    ]
+}

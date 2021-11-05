@@ -1,0 +1,37 @@
+Jzzhu has invented a kind of sequences, they meet the following property:$f_{1} = x ; f_{2} = y ; \forall i(i \geq 2), f_{i} = f_{i - 1} + f_{i + 1}$
+
+You are given x and y, please calculate f_{n} modulo 1000000007 (10^9 + 7).
+
+
+-----Input-----
+
+The first line contains two integers x and y (|x|, |y| ≤ 10^9). The second line contains a single integer n (1 ≤ n ≤ 2·10^9).
+
+
+-----Output-----
+
+Output a single integer representing f_{n} modulo 1000000007 (10^9 + 7).
+
+
+-----Examples-----
+Input
+2 3
+3
+
+Output
+1
+
+Input
+0 -1
+2
+
+Output
+1000000006
+
+
+
+-----Note-----
+
+In the first sample, f_2 = f_1 + f_3, 3 = 2 + f_3, f_3 = 1.
+
+In the second sample, f_2 =  - 1;  - 1 modulo (10^9 + 7) equals (10^9 + 6).

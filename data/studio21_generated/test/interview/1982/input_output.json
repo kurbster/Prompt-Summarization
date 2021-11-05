@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "6\n3 1\n4 2\n10 3\n10 2\n16 4\n16 5\n",
+    "1\n994999 23\n",
+    "11\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n4 2\n",
+    "1\n1000000 6326\n",
+    "1\n10000000 3164\n",
+    "1\n1926 817\n",
+    "1\n9999999 9999997\n",
+    "1\n10000000 9999998\n",
+    "1\n2 65536\n"
+  ],
+  "outputs": [
+    "YES\nYES\nNO\nYES\nYES\nNO\n",
+    "YES\n",
+    "YES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\n",
+    "NO\n",
+    "NO\n",
+    "NO\n",
+    "NO\n",
+    "NO\n",
+    "NO\n"
+  ]
+}

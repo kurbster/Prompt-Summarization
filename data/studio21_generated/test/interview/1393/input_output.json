@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "AbC\nDCbA\n",
+    "ABC\nabc\n",
+    "abacaba\nAbaCaBA\n",
+    "zzzzz\nZZZZZ\n",
+    "zzzZZZ\nZZZzzZ\n",
+    "abcdefghijklmnopqrstuvwxyz\nABCDEFGHIJKLMNOPQRSTUVWXYZ\n",
+    "abcdefghijklmnopqrstuvwxyz\nqrsimtabuvzhnwcdefgjklxyop\n",
+    "l\nFPbAVjsMpPDTLkfwNYFmBDHPTDSWSOUlrBHYJHPM\n",
+    "ncMeXssLHS\nuwyeMcaFatpInZVdEYpwJQSnVxLK\n",
+    "DpiNBmCRFWxpdbfGOzvvOcemjructoAdEwegTvbVbfWWRPGyEAxGdDRWVlqNyGWMWHMrHAIZpyxvgaflrsVZhhZRouvpxrKXFZam\nwwPLFtNfPtJXvMLuHjKfYyaRhreNSWSzOvDpqHCGcqllACNPGHxReeFUCmAqIKXYytsSQwIxJzNiiUtgebVuwRmWpRALLyKAzyDPvgIGxALSaeeTIqm\n",
+    "CCAE\ndcecc\n",
+    "Dccb\nbeeeb\n",
+    "Adc\neadeabcad\n",
+    "DBAdeb\ndeeabcddadaa\n",
+    "EDCED\neebeacdba\n",
+    "CdAbD\ndecbde\n",
+    "a\nB\n",
+    "r\nqA\n"
+  ],
+  "outputs": [
+    "3 0\n",
+    "0 3\n",
+    "3 4\n",
+    "0 5\n",
+    "5 1\n",
+    "0 26\n",
+    "26 0\n",
+    "1 0\n",
+    "6 1\n",
+    "66 12\n",
+    "0 3\n",
+    "1 0\n",
+    "2 1\n",
+    "3 2\n",
+    "0 4\n",
+    "2 2\n",
+    "0 0\n",
+    "0 0\n"
+  ]
+}

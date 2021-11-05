@@ -1,0 +1,2 @@
+ You are given a sequence of n positive integers a_1, a_2, ..., a_{n}. The marmots want you to find the sum of all numbers from 1 to n, inclusive. 
+-----Input----- The first line of the input contains two space-separated integers n and k (1 ≤ k ≤ n ≤ 2200). The second line contains n space-separated integers a_1, ..., a_{n} (1 ≤ a_{i} ≤ 10^4). -----Output----- Output one number. -----Examples----- Input 8 5 1 1 1 1 1 1 1 1 Output 5 Input 10 3 16 8 2 4 512 256 32 128 64 1 Output 7 Input 5 1 20 10 50 30 46 Output 10 Input 6 6 6 6 6 6 6 6 Output 36 Input 1 1 100 Output 100

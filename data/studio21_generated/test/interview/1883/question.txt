@@ -1,0 +1,52 @@
+Valera's finally decided to go on holiday! He packed up and headed for a ski resort.
+
+Valera's fancied a ski trip but he soon realized that he could get lost in this new place. Somebody gave him a useful hint: the resort has n objects (we will consider the objects indexed in some way by integers from 1 to n), each object is either a hotel or a mountain.
+
+Valera has also found out that the ski resort had multiple ski tracks. Specifically, for each object v, the resort has at most one object u, such that there is a ski track built from object u to object v. We also know that no hotel has got a ski track leading from the hotel to some object.
+
+Valera is afraid of getting lost on the resort. So he wants you to come up with a path he would walk along. The path must consist of objects v_1, v_2, ..., v_{k} (k ≥ 1) and meet the following conditions:  Objects with numbers v_1, v_2, ..., v_{k} - 1 are mountains and the object with number v_{k} is the hotel.  For any integer i (1 ≤ i < k), there is exactly one ski track leading from object v_{i}. This track goes to object v_{i} + 1.  The path contains as many objects as possible (k is maximal). 
+
+Help Valera. Find such path that meets all the criteria of our hero!
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 10^5) — the number of objects.
+
+The second line contains n space-separated integers type_1, type_2, ..., type_{n} — the types of the objects. If type_{i} equals zero, then the i-th object is the mountain. If type_{i} equals one, then the i-th object is the hotel. It is guaranteed that at least one object is a hotel.
+
+The third line of the input contains n space-separated integers a_1, a_2, ..., a_{n} (0 ≤ a_{i} ≤ n) — the description of the ski tracks. If number a_{i} equals zero, then there is no such object v, that has a ski track built from v to i. If number a_{i} doesn't equal zero, that means that there is a track built from object a_{i} to object i.
+
+
+-----Output-----
+
+In the first line print k — the maximum possible path length for Valera. In the second line print k integers v_1, v_2, ..., v_{k} — the path. If there are multiple solutions, you can print any of them.
+
+
+-----Examples-----
+Input
+5
+0 0 0 0 1
+0 1 2 3 4
+
+Output
+5
+1 2 3 4 5
+
+Input
+5
+0 0 1 0 1
+0 1 2 2 4
+
+Output
+2
+4 5
+
+Input
+4
+1 0 0 0
+2 3 4 2
+
+Output
+1
+1

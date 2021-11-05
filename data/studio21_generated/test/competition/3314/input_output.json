@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "ABC\nABC\nABC\n",
+        "ABBBAAAA\nBBBCCCBB\nCCCCAAAC\n",
+        "AABB\nBBCC\nACAC\n"
+    ],
+    "outputs": [
+        "2\n",
+        "3\n",
+        "-1\n"
+    ]
+}

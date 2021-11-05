@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "6\nabcbab\n2\ncb\ncbab\n",
+        "4\nabab\n2\nbac\nbaba\n",
+        "6\nabcabc\n2\nabca\ncab\n"
+    ],
+    "outputs": [
+        "2\n",
+        "4\n",
+        "1\n"
+    ]
+}

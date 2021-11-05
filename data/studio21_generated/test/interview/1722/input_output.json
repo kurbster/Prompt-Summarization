@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "4\njorge\njose\noscar\njerry\n",
+    "7\nkambei\ngorobei\nshichiroji\nkyuzo\nheihachi\nkatsushiro\nkikuchiyo\n",
+    "5\nmike\nmike\nmike\nmike\nmike\n",
+    "10\nnr\nbifiedubnohaektjox\nzxghhzkwfpbsmfsrvzry\njkv\nqppaqotfnqkogvsxyphj\ngjewi\ndzonunipvwclfwfngx\niwu\nzafueotqtrbntjy\nnvp\n",
+    "1\nnrkbi\n",
+    "5\nmrkbifiedu\nmohaektjox\ngxghhzkwfp\nmmfsrvzr\nmjkvyqppaq\n",
+    "20\ngrkbifiedu\ngohaektjox\nyxghhzkwfp\ngmfsrvzr\njjkvyqppaq\nmfnqko\nysxyphjvgj\njixdzo\nynipv\nilfwfngxa\ngutza\ngeotqtrb\ngjytnvppb\nmyllmkvnot\njafckw\njfccigs\njwabzf\nmjzeoxrui\ngctsja\nyvxpeybbh\n",
+    "20\nmrkbifiedu\nmohaektjox\ngxghhzkwfp\nmmfsrvzr\nmjkvyqppaq\nmfnqko\nmsxyphjvgj\nmixdzo\nmnipv\nglfwfngxa\nmutza\nmeotqtrb\nmjytnvppb\ngyllmkvnot\ngafckw\nmfccigs\nmwabzf\nmjzeoxrui\ngctsja\nmvxpeybbh\n",
+    "20\ngrkbifiedubnohaektjo\nizxghhzkwfpbsmfsrvzr\njjkvyqppaqotfnqkogvs\ngphjvgjewixdzonunipv\nilfwfngxaiwutzafueot\nirbntjytnvppbgyyllmk\njotpbafckwsufccigskt\njbzfmhjzeoxruiebctsj\nijvxpeybbhrezjuajkkp\njdqriujmuvcvphlcsxfm\nykwqjokeljlnyqpirlvp\nyhcczukakwarzzloccim\nmmygnzejmxmoksmsmnbq\ngzewloxwkwjrexgyiuwn\niacxcpwuwbvioohpndwm\nimkqihzucgjorhpukjjg\nmppnjejitmrbcckatznf\nmvqcunhdhjierflnmwld\njxoemcuqxabbzeqhlizr\nyscbwlaumgkbkpsxenpz\n",
+    "20\nnrkbifiedubnohaekt\noxyzxghhzkwfpbsm\nsrvzrywjkvyqppaqot\nnqkogvsxyphjvgje\nixdzonunipvwcl\nwfngxaiwutzaf\neotqtrbntjytnvpp\ngyyllmkvnotpbafc\nwsufccigsktwabzfmh\nzeoxruiebctsjal\nvxpeybbhrezjuajkkp\nedqriujmuvc\nphlcsxfmrikw\njokeljlnyq\nirlvpahhcczukakwarzz\noccimzwmygnzejmxmo\nsmsmnbqmozewloxwk\njrexgyiuwntaacxc\nwuwbvioohpndwmnfmk\nihzucgjorhpukjj\n",
+    "100\nm\ng\nm\nm\nm\ng\ng\nm\ng\nm\ng\ng\ng\nm\ng\ng\ng\nm\nm\nm\ng\nm\ng\ng\ng\nm\ng\ng\ng\ng\nm\ng\ng\nm\ng\ng\nm\nm\ng\nm\nm\nm\ng\ng\ng\ng\nm\nm\nm\nm\nm\ng\ng\ng\nm\nm\nm\nm\ng\ng\ng\nm\ng\nm\nm\ng\ng\ng\nm\ng\ng\ng\ng\nm\ng\ng\nm\ng\ng\ng\nm\ng\nm\nm\nm\nm\ng\ng\ng\ng\ng\nm\nm\ng\ng\nm\ng\nm\nm\nm\n",
+    "6\nyou\nare\na\nvery\ncurious\nindividual\n"
+  ],
+  "outputs": [
+    "1\n",
+    "2\n",
+    "4\n",
+    "0\n",
+    "0\n",
+    "2\n",
+    "16\n",
+    "53\n",
+    "13\n",
+    "2\n",
+    "1213\n",
+    "0\n"
+  ]
+}

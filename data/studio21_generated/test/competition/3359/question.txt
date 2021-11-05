@@ -1,0 +1,27 @@
+Photography is a deceptively simple subject to the naïve outsider.
+
+In truth, viewing angles, saturation levels, contrast, proper lighting and focusing all play a part. Today, we are most concerned with the problem of focus.
+
+The proudest space telescope of all, Inquisition IV, launched into space over a decade ago and is starting to show its age in the pictures sent back. Not only is the resolution low by modern standards, all images are painfully blurry! Each pixel in the camera viewport is reported as the average of all those around it in an $N \times N$ box, rounded downwards into an integer.
+
+To secure more funding for future research (and, if budget allows it, some lens wipes for the next telescope) you need to prove you know what’s out there, specifically the number of stellar bodies visible to the telescope. As is well-known by now, stellar bodies are very bright: in fact it is guaranteed that each registers as a region of horizontally and vertically connected pixels of total brightness to the sensor, while everything else registers as fully black.
+
+Handily the telescope has framed the entire “scene”, including capturing all of the surrounding blurriness on camera. This means that any pixels outside the capture region can also be considered as totally black.
+
+-----Input-----
+ - One line containing three integers $N$, $R$ and $C$ ($1\le N \le 99 \le R, C \le 1000$; $N\equiv 1\mod 2$) indicating the blur box width and rows and columns registered by the camera respectively.
+ - Another $R$ lines, each containing $C$ space-separated hexadecimal integers $L_{r,c}$ ($\mathtt{0x0000} \le L_{r,c} \le \mathtt{0xFFFF}$) where a value of $\mathtt{0x0000}$ is total blackness and a value of $\mathtt{0xFFFF}$ is total whiteness.
+
+-----Output-----
+A single integer: the number of stellar bodies visible in the snapshot.
+
+-----Examples-----
+Sample Input:
+1 5 6
+0000 FFFF 0000 0000 0000 0000
+FFFF FFFF 0000 FFFF FFFF 0000
+0000 0000 0000 FFFF 0000 0000
+0000 FFFF FFFF FFFF FFFF 0000
+0000 0000 0000 0000 0000 0000
+Sample Output:
+2

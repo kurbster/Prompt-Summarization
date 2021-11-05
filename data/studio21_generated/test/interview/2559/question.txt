@@ -1,0 +1,58 @@
+Welcome! Everything is fine.
+
+You have arrived in The Medium Place, the place between The Good Place and The Bad Place. You are assigned a task that will either make people happier or torture them for eternity.
+
+You have a list of $k$ pairs of people who have arrived in a new inhabited neighborhood. You need to assign each of the $2k$ people into one of the $2k$ houses. Each person will be the resident of exactly one house, and each house will have exactly one resident.
+
+Of course, in the neighborhood, it is possible to visit friends. There are $2k - 1$ roads, each of which connects two houses. It takes some time to traverse a road. We will specify the amount of time it takes in the input. The neighborhood is designed in such a way that from anyone's house, there is exactly one sequence of distinct roads you can take to any other house. In other words, the graph with the houses as vertices and the roads as edges is a tree.
+
+The truth is, these $k$ pairs of people are actually soulmates. We index them from $1$ to $k$. We denote by $f(i)$ the amount of time it takes for the $i$-th pair of soulmates to go to each other's houses.
+
+As we have said before, you will need to assign each of the $2k$ people into one of the $2k$ houses. You have two missions, one from the entities in The Good Place and one from the entities of The Bad Place. Here they are:  The first mission, from The Good Place, is to assign the people into the houses such that the sum of $f(i)$ over all pairs $i$ is minimized. Let's define this minimized sum as $G$. This makes sure that soulmates can easily and efficiently visit each other;  The second mission, from The Bad Place, is to assign the people into the houses such that the sum of $f(i)$ over all pairs $i$ is maximized. Let's define this maximized sum as $B$. This makes sure that soulmates will have a difficult time to visit each other. 
+
+What are the values of $G$ and $B$?
+
+
+-----Input-----
+
+The first line of input contains a single integer $t$ ($1 \le t \le 500$) denoting the number of test cases. The next lines contain descriptions of the test cases.
+
+The first line of each test case contains a single integer $k$ denoting the number of pairs of people ($1 \le k \le 10^5$). The next $2k - 1$ lines describe the roads; the $i$-th of them contains three space-separated integers $a_i, b_i, t_i$ which means that the $i$-th road connects the $a_i$-th and $b_i$-th houses with a road that takes $t_i$ units of time to traverse ($1 \le a_i, b_i \le 2k$, $a_i \neq b_i$, $1 \le t_i \le 10^6$). It is guaranteed that the given roads define a tree structure.
+
+It is guaranteed that the sum of the $k$ in a single file is at most $3 \cdot 10^5$.
+
+
+-----Output-----
+
+For each test case, output a single line containing two space-separated integers $G$ and $B$. 
+
+
+-----Example-----
+Input
+2
+3
+1 2 3
+3 2 4
+2 4 3
+4 5 6
+5 6 5
+2
+1 2 1
+1 3 2
+1 4 3
+
+Output
+15 33
+6 6
+
+
+
+-----Note-----
+
+For the sample test case, we have a minimum sum equal to $G = 15$. One way this can be achieved is with the following assignment:  The first pair of people get assigned to houses $5$ and $6$, giving us $f(1) = 5$;  The second pair of people get assigned to houses $1$ and $4$, giving us $f(2) = 6$;  The third pair of people get assigned to houses $3$ and $2$, giving us $f(3) = 4$. 
+
+Note that the sum of the $f(i)$ is $5 + 6 + 4 = 15$. 
+
+We also have a maximum sum equal to $B = 33$. One way this can be achieved is with the following assignment:  The first pair of people get assigned to houses $1$ and $4$, giving us $f(1) = 6$;  The second pair of people get assigned to houses $6$ and $2$, giving us $f(2) = 14$;  The third pair of people get assigned to houses $3$ and $5$, giving us $f(3) = 13$. 
+
+Note that the sum of the $f(i)$ is $6 + 14 + 13 = 33$.

@@ -1,0 +1,44 @@
+$n$ students are taking an exam. The highest possible score at this exam is $m$. Let $a_{i}$ be the score of the $i$-th student. You have access to the school database which stores the results of all students.
+
+You can change each student's score as long as the following conditions are satisfied:   All scores are integers  $0 \leq a_{i} \leq m$  The average score of the class doesn't change. 
+
+You are student $1$ and you would like to maximize your own score.
+
+Find the highest possible score you can assign to yourself such that all conditions are satisfied.
+
+
+-----Input-----
+
+Each test contains multiple test cases. 
+
+The first line contains the number of test cases $t$ ($1 \le t \le 200$). The description of the test cases follows.
+
+The first line of each test case contains two integers $n$ and $m$ ($1 \leq n \leq 10^{3}$, $1 \leq m \leq 10^{5}$)  — the number of students and the highest possible score respectively.
+
+The second line of each testcase contains $n$ integers $a_1, a_2, \dots, a_n$ ($ 0 \leq a_{i} \leq m$)  — scores of the students.
+
+
+-----Output-----
+
+For each testcase, output one integer  — the highest possible score you can assign to yourself such that both conditions are satisfied._
+
+
+-----Example-----
+Input
+2
+4 10
+1 2 3 4
+4 5
+1 2 3 4
+
+Output
+10
+5
+
+
+
+-----Note-----
+
+In the first case, $a = [1,2,3,4] $, with average of $2.5$. You can change array $a$ to $[10,0,0,0]$. Average remains $2.5$, and all conditions are satisfied.
+
+In the second case, $0 \leq a_{i} \leq 5$. You can change $a$ to $[5,1,1,3]$. You cannot increase $a_{1}$ further as it will violate condition $0\le a_i\le m$.

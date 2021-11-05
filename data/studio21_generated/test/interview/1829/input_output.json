@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    "5 1\npolandball\nis\na\ncool\ncharacter\nnope\n",
+    "2 2\nkremowka\nwadowicka\nkremowka\nwiedenska\n",
+    "1 2\na\na\nb\n",
+    "2 2\na\nb\nb\nc\n",
+    "2 1\nc\na\na\n",
+    "3 3\nab\nbc\ncd\ncd\ndf\nfg\n",
+    "3 3\nc\na\nb\na\nd\ng\n",
+    "1 1\naa\naa\n",
+    "2 1\na\nb\na\n",
+    "6 5\na\nb\nc\nd\ne\nf\nf\ne\nd\nz\ny\n",
+    "3 2\na\nb\nc\nd\ne\n"
+  ],
+  "outputs": [
+    "YES",
+    "YES",
+    "NO",
+    "YES",
+    "YES",
+    "YES",
+    "YES",
+    "YES",
+    "YES",
+    "YES",
+    "YES"
+  ]
+}

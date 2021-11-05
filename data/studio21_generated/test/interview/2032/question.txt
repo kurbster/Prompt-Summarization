@@ -1,0 +1,90 @@
+You play a strategic video game (yeah, we ran out of good problem legends). In this game you control a large army, and your goal is to conquer $n$ castles of your opponent.
+
+Let's describe the game process in detail. Initially you control an army of $k$ warriors. Your enemy controls $n$ castles; to conquer the $i$-th castle, you need at least $a_i$ warriors (you are so good at this game that you don't lose any warriors while taking over a castle, so your army stays the same after the fight). After you take control over a castle, you recruit new warriors into your army — formally, after you capture the $i$-th castle, $b_i$ warriors join your army. Furthermore, after capturing a castle (or later) you can defend it: if you leave at least one warrior in a castle, this castle is considered defended. Each castle has an importance parameter $c_i$, and your total score is the sum of importance values over all defended castles. There are two ways to defend a castle:
+
+  if you are currently in the castle $i$, you may leave one warrior to defend castle $i$;  there are $m$ one-way portals connecting the castles. Each portal is characterised by two numbers of castles $u$ and $v$ (for each portal holds $u > v$). A portal can be used as follows: if you are currently in the castle $u$, you may send one warrior to defend castle $v$. 
+
+Obviously, when you order your warrior to defend some castle, he leaves your army.
+
+You capture the castles in fixed order: you have to capture the first one, then the second one, and so on. After you capture the castle $i$ (but only before capturing castle $i + 1$) you may recruit new warriors from castle $i$, leave a warrior to defend castle $i$, and use any number of portals leading from castle $i$ to other castles having smaller numbers. As soon as you capture the next castle, these actions for castle $i$ won't be available to you.
+
+If, during some moment in the game, you don't have enough warriors to capture the next castle, you lose. Your goal is to maximize the sum of importance values over all defended castles (note that you may hire new warriors in the last castle, defend it and use portals leading from it even after you capture it — your score will be calculated afterwards).
+
+Can you determine an optimal strategy of capturing and defending the castles?
+
+
+-----Input-----
+
+The first line contains three integers $n$, $m$ and $k$ ($1 \le n \le 5000$, $0 \le m \le \min(\frac{n(n - 1)}{2}, 3 \cdot 10^5)$, $0 \le k \le 5000$) — the number of castles, the number of portals and initial size of your army, respectively.
+
+Then $n$ lines follow. The $i$-th line describes the $i$-th castle with three integers $a_i$, $b_i$ and $c_i$ ($0 \le a_i, b_i, c_i \le 5000$) — the number of warriors required to capture the $i$-th castle, the number of warriors available for hire in this castle and its importance value.
+
+Then $m$ lines follow. The $i$-th line describes the $i$-th portal with two integers $u_i$ and $v_i$ ($1 \le v_i < u_i \le n$), meaning that the portal leads from the castle $u_i$ to the castle $v_i$. There are no two same portals listed.
+
+It is guaranteed that the size of your army won't exceed $5000$ under any circumstances (i. e. $k + \sum\limits_{i = 1}^{n} b_i \le 5000$).
+
+
+-----Output-----
+
+If it's impossible to capture all the castles, print one integer $-1$.
+
+Otherwise, print one integer equal to the maximum sum of importance values of defended castles.
+
+
+-----Examples-----
+Input
+4 3 7
+7 4 17
+3 0 8
+11 2 0
+13 3 5
+3 1
+2 1
+4 3
+
+Output
+5
+
+Input
+4 3 7
+7 4 17
+3 0 8
+11 2 0
+13 3 5
+3 1
+2 1
+4 1
+
+Output
+22
+
+Input
+4 3 7
+7 4 17
+3 0 8
+11 2 0
+14 3 5
+3 1
+2 1
+4 3
+
+Output
+-1
+
+
+
+-----Note-----
+
+The best course of action in the first example is as follows:
+
+  capture the first castle;  hire warriors from the first castle, your army has $11$ warriors now;  capture the second castle;  capture the third castle;  hire warriors from the third castle, your army has $13$ warriors now;  capture the fourth castle;  leave one warrior to protect the fourth castle, your army has $12$ warriors now. 
+
+This course of action (and several other ones) gives $5$ as your total score.
+
+The best course of action in the second example is as follows:
+
+  capture the first castle;  hire warriors from the first castle, your army has $11$ warriors now;  capture the second castle;  capture the third castle;  hire warriors from the third castle, your army has $13$ warriors now;  capture the fourth castle;  leave one warrior to protect the fourth castle, your army has $12$ warriors now;  send one warrior to protect the first castle through the third portal, your army has $11$ warriors now. 
+
+This course of action (and several other ones) gives $22$ as your total score.
+
+In the third example it's impossible to capture the last castle: you need $14$ warriors to do so, but you can accumulate no more than $13$ without capturing it.

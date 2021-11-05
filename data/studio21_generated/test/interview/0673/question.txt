@@ -1,0 +1,31 @@
+Johny likes numbers n and k very much. Now Johny wants to find the smallest integer x greater than n, so it is divisible by the number k.
+
+
+-----Input-----
+
+The only line contains two integers n and k (1 ≤ n, k ≤ 10^9).
+
+
+-----Output-----
+
+Print the smallest integer x > n, so it is divisible by the number k.
+
+
+-----Examples-----
+Input
+5 3
+
+Output
+6
+
+Input
+25 13
+
+Output
+26
+
+Input
+26 13
+
+Output
+39

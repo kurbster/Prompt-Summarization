@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "abcdef\n1\n2\n",
+    "vwxyz\n2\n2 2\n",
+    "abcdef\n3\n1 2 3\n",
+    "jc\n5\n1 1 1 1 1\n",
+    "wljqgdlxyc\n13\n3 4 3 3 5 4 4 2 4 4 5 3 3\n",
+    "keicnqmuqinhsmtudqcilocxkbqgzhbkitmqwttdyoyvcbxincwjryzknubpacsngorexaldfurondbednowemnnlphhboycfavs\n2\n5 12\n",
+    "xwcxggxvfqbdklewbxkjzibmufnaywuxsqvwakefxbbkfandvigasbhbatsxyqxicrosatfsfybedklsaztyyiuurfbrzmwumujy\n100\n14 43 30 13 8 19 33 7 8 14 15 35 5 18 44 1 35 1 18 7 50 47 9 49 28 29 39 37 27 17 19 12 5 24 37 42 37 23 35 31 10 26 5 38 40 34 42 47 2 40 43 34 16 25 14 45 35 38 46 48 49 27 49 38 10 49 5 7 3 3 41 25 24 34 37 33 17 50 48 11 40 43 48 10 9 50 18 39 32 13 26 40 37 16 45 50 27 3 7 31\n"
+  ],
+  "outputs": [
+    "aedcbf\n",
+    "vwxyz\n",
+    "fbdcea\n",
+    "cj\n",
+    "wyjldgqxlc\n",
+    "keiccyobhhphsmtudqcilocxkbqgzhbkitmqwttdyoyvcbxincwjryzknubpacsngorexaldfurondbednowemnnlniqumqnfavs\n",
+    "xjcxggxvfbbruliyyxkjzikdebnfyftxsorcaxqyxbtkfhbdvigasnababsxfekiwvqsauwsayfumblsaztbweukdfqrzmwumuwy\n"
+  ]
+}

@@ -1,0 +1,40 @@
+Little Artem found a grasshopper. He brought it to his house and constructed a jumping area for him.
+
+The area looks like a strip of cells 1 × n. Each cell contains the direction for the next jump and the length of that jump. Grasshopper starts in the first cell and follows the instructions written on the cells. Grasshopper stops immediately if it jumps out of the strip. Now Artem wants to find out if this will ever happen.
+
+
+-----Input-----
+
+The first line of the input contains a single integer n (1 ≤ n ≤ 100 000) — length of the strip. 
+
+Next line contains a string of length n which consists of characters "<" and ">" only, that provide the direction of the jump from the corresponding cell. Next line contains n integers d_{i} (1 ≤ d_{i} ≤ 10^9) — the length of the jump from the i-th cell.
+
+
+-----Output-----
+
+Print "INFINITE" (without quotes) if grasshopper will continue his jumps forever. Otherwise print "FINITE" (without quotes).
+
+
+-----Examples-----
+Input
+2
+><
+1 2
+
+Output
+FINITE
+
+Input
+3
+>><
+2 1 1
+
+Output
+INFINITE
+
+
+-----Note-----
+
+In the first sample grasshopper starts from the first cell and jumps to the right on the next cell. When he is in the second cell he needs to jump two cells left so he will jump out of the strip.
+
+Second sample grasshopper path is 1 - 3 - 2 - 3 - 2 - 3 and so on. The path is infinite.

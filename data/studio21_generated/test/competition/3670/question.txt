@@ -1,0 +1,20 @@
+Luka started driving international routes with his truck. His biggest problem is the border with Slovenia. The border is a point of entrance into the European Union, so every truck is thoroughly examined. Because of this, Luka always has to wait several hours there. To kill the time, he comes up with various logic and math games.
+
+In one of them, Luka first reads the numbers off of $N$ license plates and writes them down on a piece of paper. Then he tries to find an integer $M$ greater than $1$ such that all integers on the paper give the same remainder when divided by $M$. Luka tries to find as many such integers $M$ as possible.
+
+Write a program that, given Luka’s $N$ integers, determines all such integers $M$.
+
+-----Input-----
+The first line contains the integer $N$ ($2 \le N \le 100$), the number of integers on paper. Each of the following $N$ lines contains one integer between $1$ and $1000000000$ (one billion). All these integers will be distinct. The input data will guarantee that at least one integer $M$ will always exist.
+
+-----Output-----
+Output all integers $M$ separated by spaces, in any order.
+
+-----Examples-----
+Sample Input:
+3
+6
+34
+38
+Sample Output:
+2 4

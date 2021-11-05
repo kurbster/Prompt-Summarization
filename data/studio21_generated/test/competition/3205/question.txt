@@ -1,0 +1,31 @@
+You and your friends have just returned from a beautiful vacation in the mountains of the Netherlands. When on vacation, it’s annoying to split the bill on every expense every time, so you just kept all the receipts from the vacation, and wrote down who paid how much for who. Now, it is time to settle the bill. 
+
+You could each take all the receipts showing that someone paid something for you, and then pay that person back. But then you would need a lot of transactions, and you want to keep up the lazy spirit from your trip. In the end, it does not matter who transfers money to whom; as long as in the end, everyone’s balance is $0$.
+
+Can you figure out the least number of transactions needed to settle the score? Assume everyone has enough spare cash to transfer an arbitrary amount of money to another person.
+
+-----Input-----
+Input consists of:
+ - A line containing two integers $M$, the number of people in the group, with $1\leq M \leq 20$, and $N$, the number of receipts from the trip, with $0\leq N\leq 1000$.
+ - $N$ lines, each with three integers $a, b, p$, where $0 \leq a,b < M$, and $1 \leq p \leq 1000$, signifying a receipt showing that person $a$ paid $p$ euros for person $b$.
+
+-----Output-----
+Output a single line containing a single integer, the least number of transactions necessary to settle all bills.
+
+-----Examples-----
+Sample Input 1:
+4 2
+0 1 1
+2 3 1
+Sample Output 1:
+2
+
+Sample Input 2:
+5 5
+0 1 3
+1 2 3
+2 3 3
+3 4 3
+4 0 3
+Sample Output 2:
+0

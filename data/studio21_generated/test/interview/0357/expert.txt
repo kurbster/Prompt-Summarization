@@ -1,0 +1,2 @@
+ You are given a string $s$ consisting of uppercase English letters. You need to find if the string $s$ contains any of Alex's friends' name exactly once.
+-----Input----- The only line contains string from lowercase and uppercase letters and "_" symbols of length, not more than 100 — the name of the problem. -----Output----- Print "YES", if problem is from this contest, and "NO" otherwise. -----Examples----- Input Alex_and_broken_contest Output NO Input NikitaAndString Output YES Input Danil_and_Olya Output NO

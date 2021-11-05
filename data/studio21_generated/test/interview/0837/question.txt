@@ -1,0 +1,31 @@
+zscoder wants to generate an input file for some programming competition problem.
+
+His input is a string consisting of n letters 'a'. He is too lazy to write a generator so he will manually generate the input in a text editor.
+
+Initially, the text editor is empty. It takes him x seconds to insert or delete a letter 'a' from the text file and y seconds to copy the contents of the entire text file, and duplicate it.
+
+zscoder wants to find the minimum amount of time needed for him to create the input file of exactly n letters 'a'. Help him to determine the amount of time needed to generate the input.
+
+
+-----Input-----
+
+The only line contains three integers n, x and y (1 ≤ n ≤ 10^7, 1 ≤ x, y ≤ 10^9) — the number of letters 'a' in the input file and the parameters from the problem statement.
+
+
+-----Output-----
+
+Print the only integer t — the minimum amount of time needed to generate the input file.
+
+
+-----Examples-----
+Input
+8 1 1
+
+Output
+4
+
+Input
+8 1 10
+
+Output
+8
