@@ -1,18 +1,31 @@
 #!/bin/bash
 
+levels=(interview competition introductory)
+
+make_dirs() {
+    for lvl in "${levels[@]}"; do
+        [[ ! -d $lvl ]] && mkdir $lvl
+    done
+}
+
+find_difficulty() {
+    for fname in $(find $1 -mindepth 1 -type d); do
+        level=$(awk -F[:,\"] '{print $5}' "$fname/metadata.json")
+        mv $fname $level
+    done
+}
+
 pushd "../apps_dataset/APPS" > /dev/null
 
-levels=(interview competition introductory)
-for lvl in "${levels[@]}"; do
-    [[ ! -d $lvl ]] && mkdir $lvl
-done
+make_dirs && find_difficulty 'train'
 
-for fname in $(find 'train' -mindepth 1 -type d); do
-    level=$(awk -F[:,\"] '{print $5}' "$fname/metadata.json")
-    mv $fname $level
-done
+pushd 'test' > /dev/null
 
-rm -r train 'test' README.txt
+make_dirs && find_difficulty '.'
+
+popd > /dev/null
+
+rm -r train README.txt
 
 # we are in apps_dataset/APPS
 cd ../..

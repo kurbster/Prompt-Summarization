@@ -27,11 +27,10 @@ report_problem() {
 }
 
 [[ -z $1 ]] && echo "report all problems" && {
-    for problem in $(find ../model_generated/* -mindepth 1 -type d); do
-        report_problem $problem
+    for problem in $(find ../data/studio21_generated/[ic]* -mindepth 1 -type d); do
+        ! [[ -f "$problem/report.txt" ]] && report_problem $problem
     done
-} || {
-    problem=$(find ../model_generated/*/$1 -type d)
-    [[ -z $problem ]] && echo "$1 is not a valid problem. It has not been summarized." || \
-    report_problem $problem
+    for problem in $(find ../data/studio21_generated/ -mindepth 3 -type d); do
+        ! [[ -f "$problem/report.txt" ]] && report_problem $problem
+    done
 }

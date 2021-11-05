@@ -12,12 +12,15 @@ from omegaconf import OmegaConf
 def get_prompt(cfg: OmegaConf) -> str:
     # Get the problems we have already done
     probs = glob.glob('../[ic]*/*')
-    model_probs = glob.glob('../model_generated/[ic]*/*')
+    #model_probs = glob.glob('../data/studio21_generated/[ic]*/*')
+    test_probs  = glob.glob('../data/studio21_generated/test/[ic]*/*')
 
     probs = [os.path.basename(p) for p in probs]
-    model_probs = [os.path.basename(p) for p in model_probs]
+    #model_probs = [os.path.basename(p) for p in model_probs]
+    test_probs = [os.path.basename(p) for p in test_probs]
 
-    prompt, output_dir = select_summary_prompt(probs+model_probs)
+    #prompt, output_dir = select_summary_prompt(probs+model_probs)
+    prompt, output_dir = select_summary_prompt(test_probs)
     
     # Save config in output dir
     fname = output_dir + '/config.yaml'
@@ -66,23 +69,28 @@ def generate_example_prompt(prompt_type: str, cfg: OmegaConf, probs: list[str]) 
 
 def select_summary_prompt(probs: list[str]):
     # Select a random problem to summarize
-    total_probs = [str(i).zfill(4) for i in range(5000) if str(i).zfill(4) not in probs]
+    # For the test set intro problems start @4000
+    total_probs = [str(i).zfill(4) for i in range(4000) if str(i).zfill(4) not in probs]
 
     
     # will fail because of collisions
     #assert len(total_probs) + len(probs) == 5000, f'The total probs must add to 5000. It is {len(total_probs) + len(probs)}'
     prob = random.choice(total_probs)
 
-    prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
+    # For generating train sequences
+    #prompt = glob.glob(f'../APPS/*/{prob}/question.txt')[0]
+
+    # For generating test sequences
+    prompt = glob.glob(f'../APPS/test/*/{prob}/question.txt')[0]
 
     # Copy the original directory to the output directory
     prompt_dir = os.path.split(prompt)[0]
-    output_dir = prompt_dir.replace('APPS', 'model_generated')
+    output_dir = prompt_dir.replace('APPS', 'data/studio21_generated')
     shutil.copytree(prompt_dir, output_dir)
     return prompt, output_dir
 
 def detect_type(fname: str) -> str:
-    #print(f'I am the name of the file to summarize: {fname}')
+    print(f'I am the name of the file to summarize: {fname}')
     return 'general'
 
 def split_question(fname: str, split_file: str) -> str:
@@ -129,7 +137,7 @@ def make_prompt(token=None, model=None):
     # If the prompt is over 1900 tokens we will most likely get
     # An API error. The model can only take 2048 tokens.
     prompt_tokens = len(prompt.split())
-    if prompt_tokens > 1900:
+    if prompt_tokens > 1800:
         print(f'Our prompt was too long. Had {prompt_tokens} tokens.')
         return True
     prompt_dict = {'prompt': prompt}
