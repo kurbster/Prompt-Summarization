@@ -1,0 +1,24 @@
+BAAS Inc. (Build Airplanes As-a-Service) has grand plans to build lots of airplanes. Naturally, the airplane construction process consists of multiple steps, each of which may take some time. Some steps can take more time to complete than others, e.g. attaching a plane wing may take longer than spray-painting the BAAS logo on the tail. Furthermore, some steps must to be completed before others can commence. For instance the hull needs to be assembled before the wings can be attached to it. If there is no dependency between two steps, then the steps can be completed in parallel.
+
+BAAS is trying very hard to become the market leader in airplane construction. Since customers value a speedy delivery, BAAS has decided to invest in their R&D department with the goal to decrease their delivery time. The chief scientist of BAAS is very optimistic and thinks that his department can reduce the time it takes to complete one step to $0$. However, since the money is always tight in the research sector at BAAS, he could only promise to eliminate exactly one of the construction steps. As the CEO of BAAS, your role implies figuring out which step you would like to eliminate to achieve the shortest possible construction time. It goes without saying that as the CEO you have complete access to the BAAS’s secret construction process blueprints.
+
+-----Input-----
+The first line of the input contains an integer $N$ ($2 \le N \le 400$), the number of steps in the build process.
+
+The next line contains the $N$ integers $a_1, a_2, \dots , a_ N$ ($1 \le a_ i \le 10^5$), the number of seconds each of the $N$ steps takes in the build process.
+
+This is followed by $N$ lines. The $i$’th of these lines contains an integer $C_ i$ followed by $C_ i$ integers $A_1, \dots , A_{C_ i}$ ($1 \le A_ j < i$). The integers $A_ j$ denote what steps the $i$’th step has a dependency on.
+
+It is guaranteed that there is no step that indirectly depends on itself. Furthermore, each step has a direct or indirect dependency on step $1$ (receiving an order), and step $N$ (delivering the airplane) has a direct or indirect dependency on every other step.
+
+-----Output-----
+Output a single integer – the shortest possible time it takes to construct an airplane assuming a single step can be reduced to take no time at all.
+
+-----Examples-----
+Sample Input:
+2
+15 20
+0
+1 1
+Sample Output:
+15

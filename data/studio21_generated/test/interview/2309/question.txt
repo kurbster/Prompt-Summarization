@@ -1,0 +1,96 @@
+You are given $n$ words, each of which consists of lowercase alphabet letters. Each word contains at least one vowel. You are going to choose some of the given words and make as many beautiful lyrics as possible.
+
+Each lyric consists of two lines. Each line consists of two words separated by whitespace. 
+
+A lyric is beautiful if and only if it satisfies all conditions below.   The number of vowels in the first word of the first line is the same as the number of vowels in the first word of the second line.  The number of vowels in the second word of the first line is the same as the number of vowels in the second word of the second line.  The last vowel of the first line is the same as the last vowel of the second line. Note that there may be consonants after the vowel. 
+
+Also, letters "a", "e", "o", "i", and "u" are vowels. Note that "y" is never vowel.
+
+For example of a beautiful lyric,  "hello hellooowww" 
+
+"whatsup yowowowow"  is a beautiful lyric because there are two vowels each in "hello" and "whatsup", four vowels each in "hellooowww" and "yowowowow" (keep in mind that "y" is not a vowel), and the last vowel of each line is "o".
+
+For example of a not beautiful lyric,  "hey man"
+
+"iam mcdic"  is not a beautiful lyric because "hey" and "iam" don't have same number of vowels and the last vowels of two lines are different ("a" in the first and "i" in the second).
+
+How many beautiful lyrics can you write from given words? Note that you cannot use a word more times than it is given to you. For example, if a word is given three times, you can use it at most three times.
+
+
+-----Input-----
+
+The first line contains single integer $n$ ($1 \le n \le 10^{5}$) — the number of words.
+
+The $i$-th of the next $n$ lines contains string $s_{i}$ consisting lowercase alphabet letters — the $i$-th word. It is guaranteed that the sum of the total word length is equal or less than $10^{6}$. Each word contains at least one vowel.
+
+
+-----Output-----
+
+In the first line, print $m$ — the number of maximum possible beautiful lyrics.
+
+In next $2m$ lines, print $m$ beautiful lyrics (two lines per lyric).
+
+If there are multiple answers, print any.
+
+
+-----Examples-----
+Input
+14
+wow
+this
+is
+the
+first
+mcdics
+codeforces
+round
+hooray
+i
+am
+proud
+about
+that
+
+Output
+3
+about proud
+hooray round
+wow first
+this is
+i that
+mcdics am
+
+Input
+7
+arsijo
+suggested
+the
+idea
+for
+this
+problem
+
+Output
+0
+
+Input
+4
+same
+same
+same
+differ
+
+Output
+1
+same differ
+same same
+
+
+
+-----Note-----
+
+In the first example, those beautiful lyrics are one of the possible answers. Let's look at the first lyric on the sample output of the first example. "about proud hooray round" forms a beautiful lyric because "about" and "hooray" have same number of vowels, "proud" and "round" have same number of vowels, and both lines have same last vowel. On the other hand, you cannot form any beautiful lyric with the word "codeforces".
+
+In the second example, you cannot form any beautiful lyric from given words.
+
+In the third example, you can use the word "same" up to three times.

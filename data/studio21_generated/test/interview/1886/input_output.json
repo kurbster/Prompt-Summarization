@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "ApPLe\n",
+    "konjac\n",
+    "a\n",
+    "A\n",
+    "z\n",
+    "ABACABA\n",
+    "P\n",
+    "Xyzzy\n",
+    "Zzz\n",
+    "Zp\n"
+  ],
+  "outputs": [
+    "ApPLe\n",
+    "Konjac\n",
+    "A\n",
+    "A\n",
+    "Z\n",
+    "ABACABA\n",
+    "P\n",
+    "Xyzzy\n",
+    "Zzz\n",
+    "Zp\n"
+  ]
+}

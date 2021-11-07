@@ -1,0 +1,35 @@
+You have a string s = s_1s_2...s_{|}s|, where |s| is the length of string s, and s_{i} its i-th character. 
+
+Let's introduce several definitions:  A substring s[i..j] (1 ≤ i ≤ j ≤ |s|) of string s is string s_{i}s_{i} + 1...s_{j}.  The prefix of string s of length l (1 ≤ l ≤ |s|) is string s[1..l].  The suffix of string s of length l (1 ≤ l ≤ |s|) is string s[|s| - l + 1..|s|]. 
+
+Your task is, for any prefix of string s which matches a suffix of string s, print the number of times it occurs in string s as a substring.
+
+
+-----Input-----
+
+The single line contains a sequence of characters s_1s_2...s_{|}s| (1 ≤ |s| ≤ 10^5) — string s. The string only consists of uppercase English letters.
+
+
+-----Output-----
+
+In the first line, print integer k (0 ≤ k ≤ |s|) — the number of prefixes that match a suffix of string s. Next print k lines, in each line print two integers l_{i} c_{i}. Numbers l_{i} c_{i} mean that the prefix of the length l_{i} matches the suffix of length l_{i} and occurs in string s as a substring c_{i} times. Print pairs l_{i} c_{i} in the order of increasing l_{i}.
+
+
+-----Examples-----
+Input
+ABACABA
+
+Output
+3
+1 4
+3 2
+7 1
+
+Input
+AAA
+
+Output
+3
+1 3
+2 2
+3 1

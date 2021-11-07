@@ -1,0 +1,27 @@
+Buffalo Bill wishes to cross a $1000 \times 1000$ square field. A number of snakes are on the field at various positions, and each snake can strike a particular distance in any direction. Can Bill make the trip without being bitten?
+
+Assume that the southwest corner of the field is at $(0,0)$ and the northwest corner at $(0,1000)$. Bill must enter the field somewhere between the southwest and northwest corner and must leave somewhere between the southeast and northeast corners.
+
+-----Input-----
+The input consists of a line containing $0 \le n \le 1000$, the number of snakes. A line follows for each snake, containing three integers: the $(x,y)$ location of the snake ($0 \le x, y \le 1000$) and its strike distance $1 \le d \le 1000$. The snake will bite anything that passes strictly closer than this distance from its location.
+
+-----Output-----
+If Bill can complete the trip, give coordinates with exactly two decimal digits at which he may enter and leave the field. Use the format shown in the sample input. If Bill may enter and leave at several places, give the most northerly. If there is no such pair of positions, print “Bill will be bitten.”
+
+-----Examples-----
+Sample Input 1:
+3
+500 500 499
+0 0 999
+1000 1000 200
+Sample Output 1:
+Bill enters at (0.00, 1000.00) and leaves at (1000.00, 800.00).
+
+Sample Input 2:
+4
+250 250 300
+750 250 300
+250 750 300
+750 750 300
+Sample Output 2:
+Bill will be bitten.

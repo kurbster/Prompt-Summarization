@@ -1,0 +1,26 @@
+We have N integers A_1, A_2, ..., A_N.
+There are \frac{N(N-1)}{2} ways to choose two of them and form a pair. If we compute the product of each of those pairs and sort the results in ascending order, what will be the K-th number in that list?
+
+-----Constraints-----
+ - All values in input are integers.
+ - 2 \leq N \leq 2 \times 10^5
+ - 1 \leq K \leq \frac{N(N-1)}{2}
+ - -10^9 \leq A_i \leq 10^9\ (1 \leq i \leq N)
+
+-----Input-----
+Input is given from Standard Input in the following format:
+N K
+A_1 A_2 \dots A_N
+
+-----Output-----
+Print the answer.
+
+-----Sample Input-----
+4 3
+3 3 -4 -2
+
+-----Sample Output-----
+-6
+
+There are six ways to form a pair. The products of those pairs are 9, -12, -6, -12, -6, 8.
+Sorting those numbers in ascending order, we have -12, -12, -6, -6, 8, 9. The third number in this list is -6.

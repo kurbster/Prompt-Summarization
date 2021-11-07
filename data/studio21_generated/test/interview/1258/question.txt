@@ -1,0 +1,38 @@
+Bob is an avid fan of the video game "League of Leesins", and today he celebrates as the League of Leesins World Championship comes to an end! 
+
+The tournament consisted of $n$ ($n \ge 5$) teams around the world. Before the tournament starts, Bob has made a prediction of the rankings of each team, from $1$-st to $n$-th. After the final, he compared the prediction with the actual result and found out that the $i$-th team according to his prediction ended up at the $p_i$-th position ($1 \le p_i \le n$, all $p_i$ are unique). In other words, $p$ is a permutation of $1, 2, \dots, n$.
+
+As Bob's favorite League player is the famous "3ga", he decided to write down every $3$ consecutive elements of the permutation $p$. Formally, Bob created an array $q$ of $n-2$ triples, where $q_i = (p_i, p_{i+1}, p_{i+2})$ for each $1 \le i \le n-2$. Bob was very proud of his array, so he showed it to his friend Alice.
+
+After learning of Bob's array, Alice declared that she could retrieve the permutation $p$ even if Bob rearranges the elements of $q$ and the elements within each triple. Of course, Bob did not believe in such magic, so he did just the same as above to see Alice's respond.
+
+For example, if $n = 5$ and $p = [1, 4, 2, 3, 5]$, then the original array $q$ will be $[(1, 4, 2), (4, 2, 3), (2, 3, 5)]$. Bob can then rearrange the numbers within each triple and the positions of the triples to get $[(4, 3, 2), (2, 3, 5), (4, 1, 2)]$. Note that $[(1, 4, 2), (4, 2, 2), (3, 3, 5)]$ is not a valid rearrangement of $q$, as Bob is not allowed to swap numbers belong to different triples.
+
+As Alice's friend, you know for sure that Alice was just trying to show off, so you decided to save her some face by giving her any permutation $p$ that is consistent with the array $q$ she was given. 
+
+
+-----Input-----
+
+The first line contains a single integer $n$ ($5 \le n \le 10^5$) — the size of permutation $p$.
+
+The $i$-th of the next $n-2$ lines contains $3$ integers $q_{i, 1}$, $q_{i, 2}$, $q_{i, 3}$ ($1 \le q_{i, j} \le n$) — the elements of the $i$-th triple of the rearranged (shuffled) array $q_i$, in random order. Remember, that the numbers within each triple can be rearranged and also the positions of the triples can be rearranged.
+
+It is guaranteed that there is at least one permutation $p$ that is consistent with the input. 
+
+
+-----Output-----
+
+Print $n$ distinct integers $p_1, p_2, \ldots, p_n$ ($1 \le p_i \le n$) such that $p$ is consistent with array $q$. 
+
+If there are multiple answers, print any. 
+
+
+-----Example-----
+Input
+5
+4 3 2
+2 3 5
+4 1 2
+
+Output
+1 4 2 3 5

@@ -1,0 +1,53 @@
+Little Petya likes arrays of integers a lot. Recently his mother has presented him one such array consisting of n elements. Petya is now wondering whether he can swap any two distinct integers in the array so that the array got unsorted. Please note that Petya can not swap equal integers even if they are in distinct positions in the array. Also note that Petya must swap some two integers even if the original array meets all requirements.
+
+Array a (the array elements are indexed from 1) consisting of n elements is called sorted if it meets at least one of the following two conditions:  a_1 ≤ a_2 ≤ ... ≤ a_{n};  a_1 ≥ a_2 ≥ ... ≥ a_{n}. 
+
+Help Petya find the two required positions to swap or else say that they do not exist.
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 10^5). The second line contains n non-negative space-separated integers a_1, a_2, ..., a_{n} — the elements of the array that Petya's mother presented him. All integers in the input do not exceed 10^9.
+
+
+-----Output-----
+
+If there is a pair of positions that make the array unsorted if swapped, then print the numbers of these positions separated by a space. If there are several pairs of positions, print any of them. If such pair does not exist, print -1. The positions in the array are numbered with integers from 1 to n.
+
+
+-----Examples-----
+Input
+1
+1
+
+Output
+-1
+
+Input
+2
+1 2
+
+Output
+-1
+
+Input
+4
+1 2 3 4
+
+Output
+1 2
+
+Input
+3
+1 1 1
+
+Output
+-1
+
+
+
+-----Note-----
+
+In the first two samples the required pairs obviously don't exist.
+
+In the third sample you can swap the first two elements. After that the array will look like this: 2 1 3 4. This array is unsorted.

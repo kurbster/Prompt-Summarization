@@ -1,0 +1,38 @@
+“A foole and his monie be soone at debate: which after with sorrow repents him too late.” ­–Thomas Tusser.
+
+The real estate bubble has popped, and the country has been thrown into a housing market crisis! You, an aspiring developer, sensed opportunity in the midst of chaos, and have decided to come in and snatch some properties on the cheap, hoping to resell them later for higher value.
+
+Of course, you are a keen buyer, and have done your due research on all of the factors that might affect resale value. One of them is the booming Chinese market. When selling to potential Chinese buyers, it is often important to be culturally sensitive and realize that certain numbers and concepts carry significant meanings in their language, some good and others bad.
+
+In particular,
+ - the digit $4$ is to be avoided at all costs, as in Chinese “four” sounds similar to the word “death”;
+ - the digit $6$ is lucky, as in Chinese “six” sounds similar to the word “flow”, as in “business flowing smoothly”;
+ - the digit $8$ is lucky, as in Chinese “eight” sounds similar to the word “wealth”; however
+ - according to yin and yang, one cannot have an extreme abundance of good things; a balance must be struck.
+
+Taking all the above into consideration, you’ve chanced upon a street with a long row of houses, with house numbers from $L$ to $R$ from end to end, inclusive. All of these houses have been foreclosed, and are now up for auction. You decide that you will purchase a house if and only if its house number satisfies all of the following conditions:
+ - it contains no digit $4$, and
+ - the number of digits that are either $6$ or $8$ is the same as the number of digits that aren’t.
+
+Note that house numbers are written in decimal with no leading zeros.
+
+How many of the houses will you purchase?
+
+-----Input-----
+The first and only line of input contains two integers, $L$ and $R$ ($1 \leq L \leq R \leq 10^{200000}$), the inclusive range of house numbers on the street.
+
+-----Output-----
+Output a single integer on a line by itself, the number of houses you will purchase, following your rules.
+
+Since this number can be quite large, you should output only the remainder after dividing this number by $10^9+7$.
+
+-----Examples-----
+Sample Input 1:
+30 70
+Sample Output 1:
+11
+
+Sample Input 2:
+66 69
+Sample Output 2:
+2

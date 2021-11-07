@@ -1,0 +1,1 @@
+{"inputs": ["6\nooxoox\n", "3\noox\n", "10\noxooxoxoox\n"], "outputs": ["SSSWWS\n", "-1\n", "SSWWSSSWWS\n"]}

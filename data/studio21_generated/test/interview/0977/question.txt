@@ -1,0 +1,71 @@
+This is the easy version of the problem. The difference between versions is the constraints on $n$ and $a_i$. You can make hacks only if all versions of the problem are solved.
+
+First, Aoi came up with the following idea for the competitive programming problem:
+
+Yuzu is a girl who collecting candies. Originally, she has $x$ candies. There are also $n$ enemies numbered with integers from $1$ to $n$. Enemy $i$ has $a_i$ candies.
+
+Yuzu is going to determine a permutation $P$. A permutation is an array consisting of $n$ distinct integers from $1$ to $n$ in arbitrary order. For example, $\{2,3,1,5,4\}$ is a permutation, but $\{1,2,2\}$ is not a permutation ($2$ appears twice in the array) and $\{1,3,4\}$ is also not a permutation (because $n=3$ but there is the number $4$ in the array).
+
+After that, she will do $n$ duels with the enemies with the following rules:  If Yuzu has equal or more number of candies than enemy $P_i$, she wins the duel and gets $1$ candy. Otherwise, she loses the duel and gets nothing.  The candy which Yuzu gets will be used in the next duels. 
+
+Yuzu wants to win all duels. How many valid permutations $P$ exist?
+
+This problem was easy and wasn't interesting for Akari, who is a friend of Aoi. And Akari made the following problem from the above idea:
+
+Let's define $f(x)$ as the number of valid permutations for the integer $x$.
+
+You are given $n$, $a$ and a prime number $p \le n$. Let's call a positive integer $x$ good, if the value $f(x)$ is not divisible by $p$. Find all good integers $x$.
+
+Your task is to solve this problem made by Akari.
+
+
+-----Input-----
+
+The first line contains two integers $n$, $p$ $(2 \le p \le n \le 2000)$. It is guaranteed, that the number $p$ is prime (it has exactly two divisors $1$ and $p$).
+
+The second line contains $n$ integers $a_1, a_2, \ldots, a_n$ $(1 \le a_i \le 2000)$.
+
+
+-----Output-----
+
+In the first line, print the number of good integers $x$.
+
+In the second line, output all good integers $x$ in the ascending order.
+
+It is guaranteed that the number of good integers $x$ does not exceed $10^5$.
+
+
+-----Examples-----
+Input
+3 2
+3 4 5
+
+Output
+1
+3
+
+Input
+4 3
+2 3 5 6
+
+Output
+2
+3 4
+
+Input
+4 3
+9 1 1 1
+
+Output
+0
+
+
+
+
+-----Note-----
+
+In the first test, $p=2$.  If $x \le 2$, there are no valid permutations for Yuzu. So $f(x)=0$ for all $x \le 2$. The number $0$ is divisible by $2$, so all integers $x \leq 2$ are not good.  If $x = 3$, $\{1,2,3\}$ is the only valid permutation for Yuzu. So $f(3)=1$, so the number $3$ is good.  If $x = 4$, $\{1,2,3\} , \{1,3,2\} , \{2,1,3\} , \{2,3,1\}$ are all valid permutations for Yuzu. So $f(4)=4$, so the number $4$ is not good.  If $x \ge 5$, all $6$ permutations are valid for Yuzu. So $f(x)=6$ for all $x \ge 5$, so all integers $x \ge 5$ are not good. 
+
+So, the only good number is $3$.
+
+In the third test, for all positive integers $x$ the value $f(x)$ is divisible by $p = 3$.

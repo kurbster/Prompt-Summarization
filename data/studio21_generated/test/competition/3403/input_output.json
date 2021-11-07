@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5\nhobotnica\nrobot\nhobi\nhobit\nrobi\n4\nrobi\nhobi\nhobit\nrakija\n",
+        "8\nmajmunica\nmajmun\nmajka\nmalina\nmalinska\nmalo\nmaleni\nmalesnica\n3\nkrampus\nmalnar\nmajmun\n"
+    ],
+    "outputs": [
+        "12\n10\n16\n7\n",
+        "8\n29\n14\n"
+    ]
+}

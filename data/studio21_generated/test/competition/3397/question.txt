@@ -1,0 +1,21 @@
+Yraglac is running a daycare service for dogs. He has $N$ dogs and he would like to take them on a walk. However, before he can walk the dogs, he needs to feed them first.
+
+Yraglac has $M$ feeding bowls. Because the dogs are very well trained, he can instruct a dog to eat from a specific bowl, but he can’t instruct multiple dogs to eat from the same bowl. A dog is considered to be fed after eating from a single bowl. However, different dogs may have different food preferences, so they may eat from the same food bowl at different speeds.
+
+As you know, dogs get impatient if they have to wait for long periods of time. Therefore, Yraglac wants to minimize the total amount of time that dogs spend waiting. More formally, suppose $t$ is the longest amount of time in seconds that any dog spent eating. Yraglac wants to minimize $T=\sum _{i=1}^{N} t-t_ i$, where $t_ i$ is the time in seconds that the $i^\textrm {th}$ dog spends eating.
+
+-----Input-----
+The first line contains integers $N$ and $M$, where $2\leq N\leq M\leq 50$.
+
+Each of the next $N$ lines of the input contains $M$ integers each. The $j^\textrm {th}$ integers on the $i^\textrm {th}$ line denotes the $t_{ij}$, the amount of time that the $i^\textrm {th}$ dog will spend on eating food from the $j^\textrm {th}$ bowl. Note that $1\leq t_{ij}\leq 200$.
+
+-----Output-----
+Output $T$, the minimum total waiting time in seconds.
+
+-----Examples-----
+Sample Input:
+2 3
+2 100 10
+100 1 10
+Sample Output:
+0

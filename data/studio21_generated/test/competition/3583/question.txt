@@ -1,0 +1,40 @@
+Near the great desert of Byteland lies a technologically advanced kingdom of hamsters. In the year 2020, to protect better their territories, the hamsters have decided to build a great wall surrounding crucial parts of their kingdom.
+
+The kingdom of hamsters is represented by a convex polygon with $n$ vertices. Vertices are numbered from $1$ to $n$, either in clockwise or counter-clockwise order. The $i$-th vertex’s coordinate is $(x_ i, y_ i)$. The hamsters want to choose $6$ unique vertices (among the $n$ vertices) and build a convex hexagonal wall connecting these $6$ vertices. Furthermore, the hamsters want their wall to be as long as possible. In other words, the hexagonal wall should have largest circumference.
+
+The hamsters want to know, for each vertex of their kingdom, if they choose this vertex as one of the vertices of the hexagonal wall (along with $5$ other vertices), what is the longest wall they can build?
+
+Even though the hamsters are technologically advanced, their computers crashed when they executed a brute force code for this problem. Please help them!
+
+-----Input-----
+ - The first line of the input contains a single integer $n$ $(6 \le n \le 2000)$.
+ - In the next $n$ lines, the $i$-th line contains two integers $x_ i$ and $y_ i$$(-10^9 \leq x_ i, y_ i \leq 10^9)$.
+
+-----Output-----
+Print exactly $n$ lines, the $i$-th line contains the maximum circumference of the convex hexagonal wall, such that the hexagon has the $i$-th vertex.
+
+Your answer will be considered correct if its relative or absolute error doesn’t exceed $10^{-3}$.
+
+Namely: let’s assume that your answer is $a$, and the answer of the jury is $b$. The checker program will consider your answer correct, if $\frac{|a-b|}{max(1,b)} \leq 10^{-3}$.
+
+-----Explanation of the sample input-----
+The left figure shows the first sample. There is only one way to create a convex hexagon. Its circumference is $2 + 4 \cdot \sqrt{2}$.
+
+The right figure shows the second sample. The hexagon with the maximum circumference containing the first vertex is shown below. Its circumference is $6 + 2 \cdot \sqrt{29} + 4 \cdot \sqrt{2}$. Due to the symmetry of the polygon, the hexagons with the maximum circumference containing other vertices should have the same result.
+
+-----Examples-----
+Sample Input:
+6
+1 2
+1 3
+2 4
+3 3
+3 2
+2 1
+Sample Output:
+7.656854249492381
+7.656854249492381
+7.656854249492381
+7.656854249492381
+7.656854249492381
+7.656854249492381

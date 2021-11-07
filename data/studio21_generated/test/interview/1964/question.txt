@@ -1,0 +1,44 @@
+Little Vasya went to the supermarket to get some groceries. He walked about the supermarket for a long time and got a basket full of products. Now he needs to choose the cashier to pay for the products.
+
+There are n cashiers at the exit from the supermarket. At the moment the queue for the i-th cashier already has k_{i} people. The j-th person standing in the queue to the i-th cashier has m_{i}, j items in the basket. Vasya knows that:  the cashier needs 5 seconds to scan one item;  after the cashier scans each item of some customer, he needs 15 seconds to take the customer's money and give him the change. 
+
+Of course, Vasya wants to select a queue so that he can leave the supermarket as soon as possible. Help him write a program that displays the minimum number of seconds after which Vasya can get to one of the cashiers.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 100) — the number of cashes in the shop. The second line contains n space-separated integers: k_1, k_2, ..., k_{n} (1 ≤ k_{i} ≤ 100), where k_{i} is the number of people in the queue to the i-th cashier.
+
+The i-th of the next n lines contains k_{i} space-separated integers: m_{i}, 1, m_{i}, 2, ..., m_{i}, k_{i} (1 ≤ m_{i}, j ≤ 100) — the number of products the j-th person in the queue for the i-th cash has.
+
+
+-----Output-----
+
+Print a single integer — the minimum number of seconds Vasya needs to get to the cashier.
+
+
+-----Examples-----
+Input
+1
+1
+1
+
+Output
+20
+
+Input
+4
+1 4 3 2
+100
+1 2 2 3
+1 9 1
+7 8
+
+Output
+100
+
+
+
+-----Note-----
+
+In the second test sample, if Vasya goes to the first queue, he gets to the cashier in 100·5 + 15 = 515 seconds. But if he chooses the second queue, he will need 1·5 + 2·5 + 2·5 + 3·5 + 4·15 = 100 seconds. He will need 1·5 + 9·5 + 1·5 + 3·15 = 100 seconds for the third one and 7·5 + 8·5 + 2·15 = 105 seconds for the fourth one. Thus, Vasya gets to the cashier quicker if he chooses the second or the third queue.

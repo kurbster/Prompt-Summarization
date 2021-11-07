@@ -1,0 +1,26 @@
+Tom the Straight Builder has finally finished building his Great Wall. Being a Straight Builder he has of course built a wall with no bends in it at all. And as far as you can see he has built this wall infinitely long and infinitely thin.
+
+On one side of the wall Tom’s wife Ellen has decided she wants to make a perfect lawn. It is not very important to Ellen (or to Tom for that matter) what shape it has or exactly where it is located, but Ellen requires the lawn to be at least $L$ square meters.
+
+To guard this pristine lawn from annoying trespassers Ellen has brought her dog William. William is a vicious dog and will attack any human being except Ellen upon sight. William can not cross the wall in any way. To reduce his own mutilations Tom has decided to tie William up with a chain to a pole and minimize the area he can cover while still being able to cover the whole lawn. The pole has been placed at location $(0,0)$ and Tom is not able to move it (it is after all the center of the universe).
+
+Tom needs to know what length of dog chain he needs to buy in the hardware store. Specifically he wants to know the shortest length chain in whole meters he can buy so that the dog is able to cover an area of at least $L$ square meters.
+
+-----Input-----
+The first line has one integer $L$ indicating the number of square meters for Ellen’s lawn. The second line contains two integers $x_1$ and $y_1$, followed by a third line containing two integers $x_2$ and $y_2$. These indicate that the wall passes through the points $(x_1, y_1)$ and $(x_2,y_2)$.
+
+-----Output-----
+Output the chain length, in whole meters, which Tom needs to acquire.
+
+-----Limits-----
+ - $1 \leq L \leq 10000$
+ - $-10000 \leq x_1, y_1, x_2, y_2 \leq 10000$
+ - $(x_1,y_1) \not= (x_2,y_2)$
+
+-----Examples-----
+Sample Input:
+4
+-10 0
+-10 10
+Sample Output:
+2

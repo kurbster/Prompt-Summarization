@@ -1,0 +1,2 @@
+ You are given n integers. find 1 integer which is missing. 
+-----Input----- The first line of the input contains integer n (2 ≤ n ≤ 100000) — the number of episodes in a season. Assume that the episodes are numbered by integers from 1 to n. The second line contains n - 1 integer a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ n) — the numbers of episodes that Polycarpus has watched. All values of a_{i} are distinct. -----Output----- Print the number of the episode that Polycarpus hasn't watched. -----Examples----- Input 10 3 8 10 1 7 9 6 5 2 Output 4

@@ -1,0 +1,31 @@
+Given an integer N, find two permutations:  Permutation p of numbers from 1 to N such that p_{i} ≠ i and p_{i} & i = 0 for all i = 1, 2, ..., N.  Permutation q of numbers from 1 to N such that q_{i} ≠ i and q_{i} & i ≠ 0 for all i = 1, 2, ..., N. 
+
+& is the bitwise AND operation.
+
+
+-----Input-----
+
+The input consists of one line containing a single integer N (1 ≤ N ≤ 10^5).
+
+
+-----Output-----
+
+For each subtask, if the required permutation doesn't exist, output a single line containing the word "NO"; otherwise output the word "YES" in the first line and N elements of the permutation, separated by spaces, in the second line. If there are several possible permutations in a subtask, output any of them.
+
+
+-----Examples-----
+Input
+3
+
+Output
+NO
+NO
+
+Input
+6
+
+Output
+YES
+6 5 4 3 2 1 
+YES
+3 6 2 5 1 4

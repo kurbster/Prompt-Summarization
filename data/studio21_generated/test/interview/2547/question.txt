@@ -1,0 +1,54 @@
+Easy and hard versions are actually different problems, so read statements of both problems completely and carefully.
+
+Summer vacation has started so Alice and Bob want to play and joy, but... Their mom doesn't think so. She says that they have to read exactly $m$ books before all entertainments. Alice and Bob will read each book together to end this exercise faster.
+
+There are $n$ books in the family library. The $i$-th book is described by three integers: $t_i$ — the amount of time Alice and Bob need to spend to read it, $a_i$ (equals $1$ if Alice likes the $i$-th book and $0$ if not), and $b_i$ (equals $1$ if Bob likes the $i$-th book and $0$ if not).
+
+So they need to choose exactly $m$ books from the given $n$ books in such a way that:  Alice likes at least $k$ books from the chosen set and Bob likes at least $k$ books from the chosen set;  the total reading time of these $m$ books is minimized (they are children and want to play and joy as soon a possible). 
+
+The set they choose is the same for both Alice an Bob (it's shared between them) and they read all books together, so the total reading time is the sum of $t_i$ over all books that are in the chosen set.
+
+Your task is to help them and find any suitable set of books or determine that it is impossible to find such a set.
+
+
+-----Input-----
+
+The first line of the input contains three integers $n$, $m$ and $k$ ($1 \le k \le m \le n \le 2 \cdot 10^5$).
+
+The next $n$ lines contain descriptions of books, one description per line: the $i$-th line contains three integers $t_i$, $a_i$ and $b_i$ ($1 \le t_i \le 10^4$, $0 \le a_i, b_i \le 1$), where:  $t_i$ — the amount of time required for reading the $i$-th book;  $a_i$ equals $1$ if Alice likes the $i$-th book and $0$ otherwise;  $b_i$ equals $1$ if Bob likes the $i$-th book and $0$ otherwise. 
+
+
+-----Output-----
+
+If there is no solution, print only one integer -1.
+
+If the solution exists, print $T$ in the first line — the minimum total reading time of the suitable set of books. In the second line print $m$ distinct integers from $1$ to $n$ in any order — indices of books which are in the set you found.
+
+If there are several answers, print any of them.
+
+
+-----Examples-----
+Input
+6 3 1
+6 0 0
+11 1 0
+9 0 1
+21 1 1
+10 1 0
+8 0 1
+
+Output
+24
+6 5 1 
+Input
+6 3 2
+6 0 0
+11 1 0
+9 0 1
+21 1 1
+10 1 0
+8 0 1
+
+Output
+39
+4 6 5

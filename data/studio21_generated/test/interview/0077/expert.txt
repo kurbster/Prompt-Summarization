@@ -1,0 +1,2 @@
+ 
+-----Input----- The first line contains integer number n (1 ≤ n ≤ 10^5). The second line contains n integer numbers a_1, a_2, ..., a_{n} ( - 10^4 ≤ a_{i} ≤ 10^4). The sequence contains at least one subsequence with odd sum. -----Output----- Print sum of resulting subseqeuence. -----Examples----- Input 4 -2 2 -3 1 Output 3 Input 3 2 -5 -3 Output -1 -----Note----- In the first example sum of the second and the fourth elements is 3.

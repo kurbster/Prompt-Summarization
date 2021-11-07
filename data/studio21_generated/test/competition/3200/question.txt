@@ -1,0 +1,25 @@
+You are at home and about to drive to work. The road you will take is a straight line with no speed limit. There are, however, traffic lights precisely every kilometer, and you can not pass a red light. The lights change instantaneously between green and red, and you can pass a light whenever it is green. You can also pass through a light at the exact moment of changing colour. There are no traffic lights at the start or the end of the road.
+
+Now your car is special; it is an iCar, the first Orange car, and it has only one button. When you hold down the button, the car accelerates at a constant rate of $1 \mathrm{m}/\mathrm{s}^2$; when you release the button the car stops on the spot.
+
+You have driven to work many times, so you happen to know the schedules of the traffic lights. Now the question is, how quickly can you get to work?
+
+-----Input-----
+The first line contains a single integer $n$, the length of the road in kilometers ($1 \leq n \leq 16$). Each of the next $n-1$ lines contains $3$ integers $t_ i$, $g_ i$ and $r_ i$, the first time the $i$-th light will switch from red to green after the moment you start driving the car; the green light duration, and the red light duration ($40\leq g_ i,r_ i\leq 50$; $0 \leq t_ i < g_ i+r_ i$). Times are given in seconds.
+
+You may assume that any light with $t_ i > r_ i$ is green at the time you start driving the car, and switches to red $t_ i - r_ i$ seconds later.
+
+-----Output-----
+Output the minimum time required to reach the end of the road. Answers within a relative or absolute error of $10^{-6}$ will be accepted.
+
+-----Examples-----
+Sample Input 1:
+1
+Sample Output 1:
+44.72135955
+
+Sample Input 2:
+2
+50 45 45
+Sample Output 2:
+68.52419365

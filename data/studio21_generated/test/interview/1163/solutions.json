@@ -1,0 +1,1 @@
+["from itertools import *\n\ninStr=next(open('input.txt'))\nn=int(inStr.split()[0])\nm=int(inStr.split()[1])\n\n\nboys=repeat('B', n)\ngirls=repeat('G', m)\n\nif n>m:\n    pairs = zip_longest(boys, girls)\nelse:\n    pairs = zip_longest(girls, boys)\nresult = (y for x in pairs for y in x if y is not None)\nans = ''.join(result)\nopen('output.txt', 'w').write(ans)\nprint(ans)"]

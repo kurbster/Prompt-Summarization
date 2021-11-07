@@ -1,0 +1,58 @@
+Petya has a rectangular Board of size $n \times m$. Initially, $k$ chips are placed on the board, $i$-th chip is located in the cell at the intersection of $sx_i$-th row and $sy_i$-th column.
+
+In one action, Petya can move all the chips to the left, right, down or up by $1$ cell.
+
+If the chip was in the $(x, y)$ cell, then after the operation:   left, its coordinates will be $(x, y - 1)$;  right, its coordinates will be $(x, y + 1)$;  down, its coordinates will be $(x + 1, y)$;  up, its coordinates will be $(x - 1, y)$. 
+
+If the chip is located by the wall of the board, and the action chosen by Petya moves it towards the wall, then the chip remains in its current position.
+
+Note that several chips can be located in the same cell.
+
+For each chip, Petya chose the position which it should visit. Note that it's not necessary for a chip to end up in this position.
+
+Since Petya does not have a lot of free time, he is ready to do no more than $2nm$ actions.
+
+You have to find out what actions Petya should do so that each chip visits the position that Petya selected for it at least once. Or determine that it is not possible to do this in $2nm$ actions.
+
+
+-----Input-----
+
+The first line contains three integers $n, m, k$ ($1 \le n, m, k \le 200$) — the number of rows and columns of the board and the number of chips, respectively.
+
+The next $k$ lines contains two integers each $sx_i, sy_i$ ($ 1 \le sx_i \le n, 1 \le sy_i \le m$) — the starting position of the $i$-th chip.
+
+The next $k$ lines contains two integers each $fx_i, fy_i$ ($ 1 \le fx_i \le n, 1 \le fy_i \le m$) — the position that the $i$-chip should visit at least once.
+
+
+-----Output-----
+
+In the first line print the number of operations so that each chip visits the position that Petya selected for it at least once.
+
+In the second line output the sequence of operations. To indicate operations left, right, down, and up, use the characters $L, R, D, U$ respectively.
+
+If the required sequence does not exist, print -1 in the single line.
+
+
+-----Examples-----
+Input
+3 3 2
+1 2
+2 1
+3 3
+3 2
+
+Output
+3
+DRD
+Input
+5 4 3
+3 4
+3 1
+3 3
+5 3
+1 3
+1 4
+
+Output
+9
+DDLUUUURR

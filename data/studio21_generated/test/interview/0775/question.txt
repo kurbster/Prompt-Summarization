@@ -1,0 +1,51 @@
+Zane the wizard is going to perform a magic show shuffling the cups.
+
+There are n cups, numbered from 1 to n, placed along the x-axis on a table that has m holes on it. More precisely, cup i is on the table at the position x = i.
+
+The problematic bone is initially at the position x = 1. Zane will confuse the audience by swapping the cups k times, the i-th time of which involves the cups at the positions x = u_{i} and x = v_{i}. If the bone happens to be at the position where there is a hole at any time, it will fall into the hole onto the ground and will not be affected by future swapping operations.
+
+Do not forget that Zane is a wizard. When he swaps the cups, he does not move them ordinarily. Instead, he teleports the cups (along with the bone, if it is inside) to the intended positions. Therefore, for example, when he swaps the cup at x = 4 and the one at x = 6, they will not be at the position x = 5 at any moment during the operation. [Image] 
+
+Zane’s puppy, Inzane, is in trouble. Zane is away on his vacation, and Inzane cannot find his beloved bone, as it would be too exhausting to try opening all the cups. Inzane knows that the Codeforces community has successfully helped Zane, so he wants to see if it could help him solve his problem too. Help Inzane determine the final position of the bone.
+
+
+-----Input-----
+
+The first line contains three integers n, m, and k (2 ≤ n ≤ 10^6, 1 ≤ m ≤ n, 1 ≤ k ≤ 3·10^5) — the number of cups, the number of holes on the table, and the number of swapping operations, respectively.
+
+The second line contains m distinct integers h_1, h_2, ..., h_{m} (1 ≤ h_{i} ≤ n) — the positions along the x-axis where there is a hole on the table.
+
+Each of the next k lines contains two integers u_{i} and v_{i} (1 ≤ u_{i}, v_{i} ≤ n, u_{i} ≠ v_{i}) — the positions of the cups to be swapped.
+
+
+-----Output-----
+
+Print one integer — the final position along the x-axis of the bone.
+
+
+-----Examples-----
+Input
+7 3 4
+3 4 6
+1 2
+2 5
+5 7
+7 1
+
+Output
+1
+Input
+5 1 2
+2
+1 2
+2 4
+
+Output
+2
+
+
+-----Note-----
+
+In the first sample, after the operations, the bone becomes at x = 2, x = 5, x = 7, and x = 1, respectively.
+
+In the second sample, after the first operation, the bone becomes at x = 2, and falls into the hole onto the ground.

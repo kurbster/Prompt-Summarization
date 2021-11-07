@@ -1,0 +1,49 @@
+Vasya should paint a fence in front of his own cottage. The fence is a sequence of n wooden boards arranged in a single row. Each board is a 1 centimeter wide rectangle. Let's number the board fence using numbers 1, 2, ..., n from left to right. The height of the i-th board is h_{i} centimeters.
+
+Vasya has a 1 centimeter wide brush and the paint of two colors, red and green. Of course, the amount of the paint is limited. Vasya counted the area he can paint each of the colors. It turned out that he can not paint over a square centimeters of the fence red, and he can not paint over b square centimeters green. Each board of the fence should be painted exactly one of the two colors. Perhaps Vasya won't need one of the colors.
+
+In addition, Vasya wants his fence to look smart. To do this, he should paint the fence so as to minimize the value that Vasya called the fence unattractiveness value. Vasya believes that two consecutive fence boards, painted different colors, look unattractive. The unattractiveness value of a fence is the total length of contact between the neighboring boards of various colors. To make the fence look nice, you need to minimize the value as low as possible. Your task is to find what is the minimum unattractiveness Vasya can get, if he paints his fence completely. $1$ 
+
+The picture shows the fence, where the heights of boards (from left to right) are 2,3,2,4,3,1. The first and the fifth boards are painted red, the others are painted green. The first and the second boards have contact length 2, the fourth and fifth boards have contact length 3, the fifth and the sixth have contact length 1. Therefore, the unattractiveness of the given painted fence is 2+3+1=6.
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 200) — the number of boards in Vasya's fence.
+
+The second line contains two integers a and b (0 ≤ a, b ≤ 4·10^4) — the area that can be painted red and the area that can be painted green, correspondingly.
+
+The third line contains a sequence of n integers h_1, h_2, ..., h_{n} (1 ≤ h_{i} ≤ 200) — the heights of the fence boards.
+
+All numbers in the lines are separated by single spaces.
+
+
+-----Output-----
+
+Print a single number — the minimum unattractiveness value Vasya can get if he paints his fence completely. If it is impossible to do, print  - 1.
+
+
+-----Examples-----
+Input
+4
+5 7
+3 3 4 1
+
+Output
+3
+
+Input
+3
+2 3
+1 3 1
+
+Output
+2
+
+Input
+3
+3 3
+2 2 2
+
+Output
+-1

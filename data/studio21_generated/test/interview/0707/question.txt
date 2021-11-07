@@ -1,0 +1,53 @@
+Ivan is going to sleep now and wants to set his alarm clock. There will be many necessary events tomorrow, the $i$-th of them will start during the $x_i$-th minute. Ivan doesn't want to skip any of the events, so he has to set his alarm clock in such a way that it rings during minutes $x_1, x_2, \dots, x_n$, so he will be awake during each of these minutes (note that it does not matter if his alarm clock will ring during any other minute).
+
+Ivan can choose two properties for the alarm clock — the first minute it will ring (let's denote it as $y$) and the interval between two consecutive signals (let's denote it by $p$). After the clock is set, it will ring during minutes $y, y + p, y + 2p, y + 3p$ and so on.
+
+Ivan can choose any minute as the first one, but he cannot choose any arbitrary value of $p$. He has to pick it among the given values $p_1, p_2, \dots, p_m$ (his phone does not support any other options for this setting).
+
+So Ivan has to choose the first minute $y$ when the alarm clock should start ringing and the interval between two consecutive signals $p_j$ in such a way that it will ring during all given minutes $x_1, x_2, \dots, x_n$ (and it does not matter if his alarm clock will ring in any other minutes).
+
+Your task is to tell the first minute $y$ and the index $j$ such that if Ivan sets his alarm clock with properties $y$ and $p_j$ it will ring during all given minutes $x_1, x_2, \dots, x_n$ or say that it is impossible to choose such values of the given properties. If there are multiple answers, you can print any.
+
+
+-----Input-----
+
+The first line of the input contains two integers $n$ and $m$ ($2 \le n \le 3 \cdot 10^5, 1 \le m \le 3 \cdot 10^5$) — the number of events and the number of possible settings for the interval between signals.
+
+The second line of the input contains $n$ integers $x_1, x_2, \dots, x_n$ ($1 \le x_i \le 10^{18}$), where $x_i$ is the minute when $i$-th event starts. It is guaranteed that all $x_i$ are given in increasing order (i. e. the condition $x_1 < x_2 < \dots < x_n$ holds).
+
+The third line of the input contains $m$ integers $p_1, p_2, \dots, p_m$ ($1 \le p_j \le 10^{18}$), where $p_j$ is the $j$-th option for the interval between two consecutive signals.
+
+
+-----Output-----
+
+If it's impossible to choose such values $y$ and $j$ so all constraints are satisfied, print "NO" in the first line.
+
+Otherwise print "YES" in the first line. Then print two integers $y$ ($1 \le y \le 10^{18}$) and $j$ ($1 \le j \le m$) in the second line, where $y$ is the first minute Ivan's alarm clock should start ringing and $j$ is the index of the option for the interval between two consecutive signals (options are numbered from $1$ to $m$ in the order they are given input). These values should be chosen in such a way that the alarm clock will ring during all given minutes $x_1, x_2, \dots, x_n$. If there are multiple answers, you can print any.
+
+
+-----Examples-----
+Input
+3 5
+3 12 18
+2 6 5 3 3
+
+Output
+YES
+3 4
+
+Input
+4 2
+1 5 17 19
+4 5
+
+Output
+NO
+
+Input
+4 2
+1 5 17 19
+2 1
+
+Output
+YES
+1 1

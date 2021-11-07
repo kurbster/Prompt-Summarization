@@ -1,0 +1,48 @@
+When Masha came to math classes today, she saw two integer sequences of length $n - 1$ on the blackboard. Let's denote the elements of the first sequence as $a_i$ ($0 \le a_i \le 3$), and the elements of the second sequence as $b_i$ ($0 \le b_i \le 3$).
+
+Masha became interested if or not there is an integer sequence of length $n$, which elements we will denote as $t_i$ ($0 \le t_i \le 3$), so that for every $i$ ($1 \le i \le n - 1$) the following is true:   $a_i = t_i | t_{i + 1}$ (where $|$ denotes the bitwise OR operation) and  $b_i = t_i \& t_{i + 1}$ (where $\&$ denotes the bitwise AND operation). 
+
+The question appeared to be too difficult for Masha, so now she asked you to check whether such a sequence $t_i$ of length $n$ exists. If it exists, find such a sequence. If there are multiple such sequences, find any of them.
+
+
+-----Input-----
+
+The first line contains a single integer $n$ ($2 \le n \le 10^5$) — the length of the sequence $t_i$. 
+
+The second line contains $n - 1$ integers $a_1, a_2, \ldots, a_{n-1}$ ($0 \le a_i \le 3$) — the first sequence on the blackboard.
+
+The third line contains $n - 1$ integers $b_1, b_2, \ldots, b_{n-1}$ ($0 \le b_i \le 3$) — the second sequence on the blackboard.
+
+
+-----Output-----
+
+In the first line print "YES" (without quotes), if there is a sequence $t_i$ that satisfies the conditions from the statements, and "NO" (without quotes), if there is no such sequence.
+
+If there is such a sequence, on the second line print $n$ integers $t_1, t_2, \ldots, t_n$ ($0 \le t_i \le 3$) — the sequence that satisfies the statements conditions.
+
+If there are multiple answers, print any of them.
+
+
+-----Examples-----
+Input
+4
+3 3 2
+1 2 0
+
+Output
+YES
+1 3 2 0 
+Input
+3
+1 3
+3 2
+
+Output
+NO
+
+
+-----Note-----
+
+In the first example it's easy to see that the sequence from output satisfies the given conditions:   $t_1 | t_2 = (01_2) | (11_2) = (11_2) = 3 = a_1$ and $t_1 \& t_2 = (01_2) \& (11_2) = (01_2) = 1 = b_1$;  $t_2 | t_3 = (11_2) | (10_2) = (11_2) = 3 = a_2$ and $t_2 \& t_3 = (11_2) \& (10_2) = (10_2) = 2 = b_2$;  $t_3 | t_4 = (10_2) | (00_2) = (10_2) = 2 = a_3$ and $t_3 \& t_4 = (10_2) \& (00_2) = (00_2) = 0 = b_3$. 
+
+In the second example there is no such sequence.

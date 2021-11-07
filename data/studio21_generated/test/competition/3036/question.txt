@@ -1,0 +1,51 @@
+The world-renowned Swedish Chef is planning a gourmet three-course dinner for some muppets: a starter course, a main course, and a dessert. His famous Swedish cook-book offers a wide variety of choices for each of these three courses, though some of them do not go well together (for instance, you of course cannot serve chocolate moose and sooted shreemp at the same dinner). 
+
+Each potential dish has a list of ingredients. Each ingredient is in turn available from a few different brands. Each brand is of course unique in its own special way, so using a particular brand of an ingredient will always result in a completely different dinner experience than using another brand of the same ingredient.
+
+Some common ingredients such as pølårber may appear in two of the three chosen dishes, or in all three of them. When an ingredient is used in more than one of the three selected dishes, Swedish Chef will use the same brand of the ingredient in all of them.
+
+While waiting for the meecaroo, Swedish Chef starts wondering: how many different dinner experiences are there that he could make, by different choices of dishes and brands for the ingredients?
+
+-----Input-----
+The input consists of:
+ - one line containing five integers $r$, $s$, $m$, $d$, $n$, where $1 \le r \le 1000$ is the number of different ingredients that exist, $1 \le s, m, d \le 25$ are the number of available starter dishes, main dishes, and desserts, respectively, and $0 \le n \le 2000$ is the number of pairs of dishes that do not go well together.
+ - one line containing $r$ integers $b_1, \ldots , b_ r$, where $1 \le b_ i \le 100$ is the number of different brands of ingredient $i$.
+ - $s+m+d$ lines describing the $s$ starter dishes, then the $m$ main dishes, then the $d$ desserts. Each such line starts with an integer $1 \le k \le 20$ denoting the number of ingredients of the dish, and is followed by $k$ distinct integers $i_1, \ldots , i_ k$, where for each $1 \le j \le k$, $1 \le i_ j \le r$ is an ingredient.
+ - $n$ lines each containing two incompatible dishes. Each dish is identified by an integer $1 \le j \le s+m+d$, referring to the $j$’th dish given in the input (so $1 \le j \le s$ refers to the starter dishes, $s < j \le s+m$ refers to the main dishes, and $s+m < j \le s+m+d$ refers to the desserts).
+
+Each pair of incompatible dishes in the input consists of two dishes of different types, and any one pair of dishes is listed at most once.
+
+-----Output-----
+If the number of different dinner experiences Swedish Chef can make is at most $10^{18}$, then output that number. Otherwise, output “too many”.
+
+-----Examples-----
+Sample Input 1:
+6 1 1 1 0
+2 3 1 5 3 2
+2 1 2
+3 3 4 5
+1 6
+Sample Output 1:
+180
+
+Sample Input 2:
+3 2 2 1 1
+2 3 2
+1 1
+1 2
+1 2
+1 3
+1 1
+2 3
+Sample Output 2:
+22
+
+Sample Input 3:
+3 1 1 1 1
+5 5 5
+3 1 2 3
+3 1 2 3
+3 1 2 3
+2 1
+Sample Output 3:
+0

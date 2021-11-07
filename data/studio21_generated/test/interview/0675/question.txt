@@ -1,0 +1,56 @@
+Anya loves to watch horror movies. In the best traditions of horror, she will be visited by m ghosts tonight. Anya has lots of candles prepared for the visits, each candle can produce light for exactly t seconds. It takes the girl one second to light one candle. More formally, Anya can spend one second to light one candle, then this candle burns for exactly t seconds and then goes out and can no longer be used.
+
+For each of the m ghosts Anya knows the time at which it comes: the i-th visit will happen w_{i} seconds after midnight, all w_{i}'s are distinct. Each visit lasts exactly one second.
+
+What is the minimum number of candles Anya should use so that during each visit, at least r candles are burning? Anya can start to light a candle at any time that is integer number of seconds from midnight, possibly, at the time before midnight. That means, she can start to light a candle integer number of seconds before midnight or integer number of seconds after a midnight, or in other words in any integer moment of time.
+
+
+-----Input-----
+
+The first line contains three integers m, t, r (1 ≤ m, t, r ≤ 300), representing the number of ghosts to visit Anya, the duration of a candle's burning and the minimum number of candles that should burn during each visit. 
+
+The next line contains m space-separated numbers w_{i} (1 ≤ i ≤ m, 1 ≤ w_{i} ≤ 300), the i-th of them repesents at what second after the midnight the i-th ghost will come. All w_{i}'s are distinct, they follow in the strictly increasing order.
+
+
+-----Output-----
+
+If it is possible to make at least r candles burn during each visit, then print the minimum number of candles that Anya needs to light for that.
+
+If that is impossible, print  - 1.
+
+
+-----Examples-----
+Input
+1 8 3
+10
+
+Output
+3
+
+Input
+2 10 1
+5 8
+
+Output
+1
+
+Input
+1 1 3
+10
+
+Output
+-1
+
+
+
+-----Note-----
+
+Anya can start lighting a candle in the same second with ghost visit. But this candle isn't counted as burning at this visit.
+
+It takes exactly one second to light up a candle and only after that second this candle is considered burning; it means that if Anya starts lighting candle at moment x, candle is buring from second x + 1 to second x + t inclusively.
+
+In the first sample test three candles are enough. For example, Anya can start lighting them at the 3-rd, 5-th and 7-th seconds after the midnight.
+
+In the second sample test one candle is enough. For example, Anya can start lighting it one second before the midnight.
+
+In the third sample test the answer is  - 1, since during each second at most one candle can burn but Anya needs three candles to light up the room at the moment when the ghost comes.

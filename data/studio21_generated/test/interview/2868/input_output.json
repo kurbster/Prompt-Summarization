@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "4\nacefdb\n",
+        "1000\naaaaaa\n",
+        "11\nsrama\n"
+    ],
+    "outputs": [
+        "abcdef\n",
+        "aaaaaa\n",
+        "sarma\n"
+    ]
+}

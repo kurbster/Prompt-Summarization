@@ -1,0 +1,87 @@
+Gildong has bought a famous painting software cfpaint. The working screen of cfpaint is square-shaped consisting of $n$ rows and $n$ columns of square cells. The rows are numbered from $1$ to $n$, from top to bottom, and the columns are numbered from $1$ to $n$, from left to right. The position of a cell at row $r$ and column $c$ is represented as $(r, c)$. There are only two colors for the cells in cfpaint — black and white.
+
+There is a tool named eraser in cfpaint. The eraser has an integer size $k$ ($1 \le k \le n$). To use the eraser, Gildong needs to click on a cell $(i, j)$ where $1 \le i, j \le n - k + 1$. When a cell $(i, j)$ is clicked, all of the cells $(i', j')$ where $i \le i' \le i + k - 1$ and $j \le j' \le j + k - 1$ become white. In other words, a square with side equal to $k$ cells and top left corner at $(i, j)$ is colored white.
+
+A white line is a row or a column without any black cells.
+
+Gildong has worked with cfpaint for some time, so some of the cells (possibly zero or all) are currently black. He wants to know the maximum number of white lines after using the eraser exactly once. Help Gildong find the answer to his question.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $k$ ($1 \le k \le n \le 2000$) — the number of rows and columns, and the size of the eraser.
+
+The next $n$ lines contain $n$ characters each without spaces. The $j$-th character in the $i$-th line represents the cell at $(i,j)$. Each character is given as either 'B' representing a black cell, or 'W' representing a white cell.
+
+
+-----Output-----
+
+Print one integer: the maximum number of white lines after using the eraser exactly once.
+
+
+-----Examples-----
+Input
+4 2
+BWWW
+WBBW
+WBBW
+WWWB
+
+Output
+4
+
+Input
+3 1
+BWB
+WWB
+BWB
+
+Output
+2
+
+Input
+5 3
+BWBBB
+BWBBB
+BBBBB
+BBBBB
+WBBBW
+
+Output
+2
+
+Input
+2 2
+BW
+WB
+
+Output
+4
+
+Input
+2 1
+WW
+WW
+
+Output
+4
+
+
+
+-----Note-----
+
+In the first example, Gildong can click the cell $(2, 2)$, then the working screen becomes: BWWW
+
+WWWW
+
+WWWW
+
+WWWB
+
+
+
+Then there are four white lines — the $2$-nd and $3$-rd row, and the $2$-nd and $3$-rd column.
+
+In the second example, clicking the cell $(2, 3)$ makes the $2$-nd row a white line.
+
+In the third example, both the $2$-nd column and $5$-th row become white lines by clicking the cell $(3, 2)$.

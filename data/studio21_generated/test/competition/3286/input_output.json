@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "car\n",
+        "cocar\n",
+        "cocaror\n"
+    ],
+    "outputs": [
+        "1\n",
+        "2\n",
+        "4\n"
+    ]
+}

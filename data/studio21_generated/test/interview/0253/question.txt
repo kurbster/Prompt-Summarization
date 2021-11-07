@@ -1,0 +1,41 @@
+Mishka is decorating the Christmas tree. He has got three garlands, and all of them will be put on the tree. After that Mishka will switch these garlands on.
+
+When a garland is switched on, it periodically changes its state — sometimes it is lit, sometimes not. Formally, if i-th garland is switched on during x-th second, then it is lit only during seconds x, x + k_{i}, x + 2k_{i}, x + 3k_{i} and so on.
+
+Mishka wants to switch on the garlands in such a way that during each second after switching the garlands on there would be at least one lit garland. Formally, Mishka wants to choose three integers x_1, x_2 and x_3 (not necessarily distinct) so that he will switch on the first garland during x_1-th second, the second one — during x_2-th second, and the third one — during x_3-th second, respectively, and during each second starting from max(x_1, x_2, x_3) at least one garland will be lit.
+
+Help Mishka by telling him if it is possible to do this!
+
+
+-----Input-----
+
+The first line contains three integers k_1, k_2 and k_3 (1 ≤ k_{i} ≤ 1500) — time intervals of the garlands.
+
+
+-----Output-----
+
+If Mishka can choose moments of time to switch on the garlands in such a way that each second after switching the garlands on at least one garland will be lit, print YES.
+
+Otherwise, print NO.
+
+
+-----Examples-----
+Input
+2 2 3
+
+Output
+YES
+
+Input
+4 2 3
+
+Output
+NO
+
+
+
+-----Note-----
+
+In the first example Mishka can choose x_1 = 1, x_2 = 2, x_3 = 1. The first garland will be lit during seconds 1, 3, 5, 7, ..., the second — 2, 4, 6, 8, ..., which already cover all the seconds after the 2-nd one. It doesn't even matter what x_3 is chosen. Our choice will lead third to be lit during seconds 1, 4, 7, 10, ..., though.
+
+In the second example there is no way to choose such moments of time, there always be some seconds when no garland is lit.

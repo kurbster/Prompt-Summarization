@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "2 650\n",
+        "2 651\n",
+        "5 12345678901234\n"
+    ],
+    "outputs": [
+        "zyz\n",
+        "-1\n",
+        "yuzczuyuyuzuyci\n"
+    ]
+}

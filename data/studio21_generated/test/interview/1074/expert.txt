@@ -1,0 +1,2 @@
+ You are given a list. You need to output a sorted list. Comparison should be case sensitive. example:  
+-----Input----- The input contains a single integer a (0 ≤ a ≤ 1 000 000). -----Output----- Output a single integer. -----Example----- Input 129 Output 1

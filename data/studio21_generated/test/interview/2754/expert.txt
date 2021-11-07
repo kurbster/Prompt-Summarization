@@ -1,0 +1,2 @@
+ Given an alphanumeric string, capitalize each word. 
+-----Input----- The input has a single line with three integers: $x$, $y_{low}$, and $y_{high}$ ($1 \leq x \leq y_{low} \leq y_{high} \leq 100$). -----Output----- Output the minimum and maximum possible choices of $k$. If the curving function can be applied an infinite number of times, output “inf” for the maximum. If there is no $k$ that meets the curving requirement, output a single word “impossible”. -----Examples----- Sample Input 1: 80 85 98 Sample Output 1: 1 3 Sample Input 2: 98 98 100 Sample Output 2: 0 inf

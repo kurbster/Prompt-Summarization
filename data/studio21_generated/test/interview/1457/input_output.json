@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    "intellect\ntell\n",
+    "google\napple\n",
+    "sirisiri\nsir\n",
+    "sirisiri\nsiri\n",
+    "aaaaaaa\naaaa\n",
+    "bbbbbb\nbb\n",
+    "abc\nabcabc\n",
+    "kek\nkekekek\n",
+    "aaaaa\naaa\n",
+    "abcdabcv\nabcd\n",
+    "abcabcabczabcabcabcz\ncab\n",
+    "aatopotopotopotaa\ntopot\n",
+    "abcabcabcabcabcabcabcabcabcabc\nabcabcabcabcabcabcabcabcabcabc\n",
+    "sosossosos\nsos\n",
+    "sosossosossosossosossosossosossosossosossosossosossosossosossosossosossosossosossosossosossosossosos\nsos\n",
+    "tatatx\ntatx\n",
+    "sxxsxxsxxd\nsxxsxxd\n"
+  ],
+  "outputs": [
+    "1",
+    "0",
+    "2",
+    "2",
+    "1",
+    "3",
+    "0",
+    "0",
+    "1",
+    "1",
+    "4",
+    "2",
+    "1",
+    "2",
+    "20",
+    "1",
+    "1"
+  ]
+}

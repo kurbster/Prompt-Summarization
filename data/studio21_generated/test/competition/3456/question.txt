@@ -1,0 +1,20 @@
+You are an employee at Micah’s Airlift Payload Services (MAPS), which is a local crane company. On this particular day, you receive a call from a guy named Jerry, asking for help in moving a large number of wooden crates.
+
+Jerry has $N$ stacks of crates, arranged side-by-side, in a perfectly straight row. However, not all of the stacks are of the same height, and Jerry is concerned that some of the taller stacks may tip over. To help ease his worries, Jerry has asked you to rearrange the crates so that each stack is composed of the same number of crates. In order to accomplish this goal, you are permitted to create new stacks of crates, however, he has asked you not to completely remove any of the existing stacks. A new stack can only be added immediately to the right of the current rightmost stack.
+
+The crane is initially positioned above the leftmost stack of crates. As the crane operator, you are able to perform $3$ different types of actions. You can either pick up one crate from the top of the current stack, drop one crate onto the top of the current stack, or move the crane to an adjacent stack. The crane may not carry more than one crate at a time.
+
+What is the minimum number of actions required to rearrange the crates into equal-sized stacks? The final position of the crane does not matter, however, the crane must not be left carrying a crate.
+
+-----Input-----
+The first line of input contains an integer $N$, where $2\leq N\leq 50000$, indicating the number of stacks. The next line contains $N$ space-separated integers, indicating the number of crates in each of the stacks, from left to right. Each stack contains between $1$ and $50000$ crates, inclusive.
+
+-----Output-----
+Output the minimum number of actions required to complete the job.
+
+-----Examples-----
+Sample Input:
+3
+5 3 4
+Sample Output:
+3

@@ -1,0 +1,22 @@
+You are the proud owner of the new Multispecies Animal Protection Sanctuary (MAPS). As you arrive on the morning of the grand opening, you realize with horror that some of the animals are in the wrong enclosures. You will deal with the overnight zookeeper later, but right now you need to move all of the animals back to their proper areas before the zoo opens.
+
+You may choose to begin at any of the enclosures, and you must move the animals, one at a time, back to their respective areas. Since time is of the essence, you cannot travel from one enclosure to another unless you are moving an animal directly back to its proper area. Note that the zoo is laid out in such a fashion that it is always possible to travel from one enclosure to another without passing through any other enclosures.
+
+Determine if it is possible to return all of the animals back to their proper enclosures subject to these restrictions.
+
+-----Input-----
+The first line of input contains two space-separated integers, $n$ and $m$, where $1\leq n\leq 10000$ denotes the number of different enclosures and $1\leq m\leq 50000$ denotes the total number of animals in the zoo. Each of the next $n$ lines gives the starting state of a different enclosure. Each enclosure is described on a single line using a series of space-separated tokens. The first token is a string indicating which type of animal belongs in this particular enclosure. The second token is a non-negative integer $a$, identifying the number of animals currently in this enclosure. This is followed by $a$ tokens on the same line, each of which is a string indicating the type of one of the animals currently in this enclosure.
+
+Each animal type is composed of lowercase letters (a–z) and contains between $1$ and $8$ characters, inclusive. Each animal in the zoo belongs to exactly one enclosure, and that may or may not correspond to the enclosure that the animal is currently in.
+
+-----Output-----
+If at least one animal is not in its proper enclosure, output “POSSIBLE” if it is possible to restore all of the animals back to their proper locations under the above restrictions; otherwise, output “IMPOSSIBLE”. If all the animals are already in their proper enclosures, output “FALSE ALARM” instead.
+
+-----Examples-----
+Sample Input:
+3 6
+monkey 2 lion penguin
+lion 3 monkey penguin lion
+penguin 1 monkey
+Sample Output:
+POSSIBLE

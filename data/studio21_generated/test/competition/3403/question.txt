@@ -1,0 +1,34 @@
+The longest common prefix of two words is the longest word that both words start with. For example, the longest common prefix of the words “identity” and “idealistic” is the word “ide”. A database contains $N$ words.
+
+The algorithm to search for a query word $W$ in the database is primitive. It compares the word $W$ one by one with each word in the database. Two words are compared letter by letter until a letter in which they differ is found or until the end of one of the words is reached (it is then established either that the words are equal or that one is longer than the other). When the algorithm finds the word $W$ in the database, it terminates.
+
+Analysing the algorithm shows that the number of steps needed to find a word $W$ is equal to the number of words $W$ is compared to, plus the sum of the lengths of the longest common prefixes of W and each of the words it was compared to.
+
+Write a program that calculates the number of steps the algorithm uses to find each of the $Q$ query words.
+
+-----Input-----
+The first line contains an integer $N$ $(1 \leq N \leq 30000)$, the number of words in the database. Each of the following $N$ lines contains a single word from the database. The words are given in the order the algorithm compares them to a query word. All words in the database will be distinct. The following line contains an integer $Q$ $(1 \leq Q \leq 30000)$, the number of words searched for. Each of the following $Q$ lines contains a single query word.
+
+All words in the input will be strings of less than $30$ lowercase letters of the English alphabet
+
+-----Output-----
+Output one integer per line for each query word, the number of steps the algorithm uses when searching for the word.
+
+-----Examples-----
+Sample Input:
+5
+hobotnica
+robot
+hobi
+hobit
+robi
+4
+robi
+hobi
+hobit
+rakija
+Sample Output:
+12
+10
+16
+7

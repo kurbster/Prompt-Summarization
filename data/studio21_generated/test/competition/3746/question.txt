@@ -1,0 +1,50 @@
+The Tower of Hanoi is a well-known mathematical puzzle. It consists of three rods, and a number of disks of different sizes which can slide onto any rod. The puzzle starts with the disks in a neat stack in ascending order of size on one rod, the smallest at the top, thus making a conical shape.
+
+The objective of the puzzle is to move the entire stack to another rod, obeying the following simple rules:   Only one disk can be moved at a time.  Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.  No disk may be placed on top of a smaller disk. 
+
+With three disks, the puzzle can be solved in seven moves. The minimum number of moves required to solve a Tower of Hanoi puzzle is 2^{n} - 1, where n is the number of disks. (c) Wikipedia.
+
+SmallY's puzzle is very similar to the famous Tower of Hanoi. In the Tower of Hanoi puzzle you need to solve a puzzle in minimum number of moves, in SmallY's puzzle each move costs some money and you need to solve the same puzzle but for minimal cost. At the beginning of SmallY's puzzle all n disks are on the first rod. Moving a disk from rod i to rod j (1 ≤ i, j ≤ 3) costs t_{ij} units of money. The goal of the puzzle is to move all the disks to the third rod.
+
+In the problem you are given matrix t and an integer n. You need to count the minimal cost of solving SmallY's puzzle, consisting of n disks.
+
+
+-----Input-----
+
+Each of the first three lines contains three integers — matrix t. The j-th integer in the i-th line is t_{ij} (1 ≤ t_{ij} ≤ 10000; i ≠ j). The following line contains a single integer n (1 ≤ n ≤ 40) — the number of disks.
+
+It is guaranteed that for all i (1 ≤ i ≤ 3), t_{ii} = 0.
+
+
+-----Output-----
+
+Print a single integer — the minimum cost of solving SmallY's puzzle.
+
+
+-----Examples-----
+Input
+0 1 1
+1 0 1
+1 1 0
+3
+
+Output
+7
+
+Input
+0 2 2
+1 0 100
+1 2 0
+3
+
+Output
+19
+
+Input
+0 2 1
+1 0 100
+1 2 0
+5
+
+Output
+87

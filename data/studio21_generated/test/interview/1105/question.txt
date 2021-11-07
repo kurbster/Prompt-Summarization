@@ -1,0 +1,47 @@
+During the "Russian Code Cup" programming competition, the testing system stores all sent solutions for each participant. We know that many participants use random numbers in their programs and are often sent several solutions with the same source code to check.
+
+Each participant is identified by some unique positive integer k, and each sent solution A is characterized by two numbers: x — the number of different solutions that are sent before the first solution identical to A, and k — the number of the participant, who is the author of the solution. Consequently, all identical solutions have the same x.
+
+It is known that the data in the testing system are stored in the chronological order, that is, if the testing system has a solution with number x (x > 0) of the participant with number k, then the testing system has a solution with number x - 1 of the same participant stored somewhere before.
+
+During the competition the checking system crashed, but then the data of the submissions of all participants have been restored. Now the jury wants to verify that the recovered data is in chronological order. Help the jury to do so.
+
+
+-----Input-----
+
+The first line of the input contains an integer n (1 ≤ n ≤ 10^5) — the number of solutions. Each of the following n lines contains two integers separated by space x and k (0 ≤ x ≤ 10^5; 1 ≤ k ≤ 10^5) — the number of previous unique solutions and the identifier of the participant.
+
+
+-----Output-----
+
+A single line of the output should contain «YES» if the data is in chronological order, and «NO» otherwise.
+
+
+-----Examples-----
+Input
+2
+0 1
+1 1
+
+Output
+YES
+
+Input
+4
+0 1
+1 2
+1 1
+0 2
+
+Output
+NO
+
+Input
+4
+0 1
+1 1
+0 1
+0 2
+
+Output
+YES

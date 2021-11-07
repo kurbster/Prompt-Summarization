@@ -1,0 +1,45 @@
+You are given a rooted tree with $n$ nodes. The nodes are labeled $1$ to $n$, and node $1$ is the root. Each node has a value $v_ i$.
+
+You would like to turn this tree into a heap. That is, you would like to choose the largest possible subset of nodes that satisfy this Heap Property: For every node pair $i$,$j$ in the subset, if node $i$ is an ancestor of node $j$ in the tree, then $v_ i > v_ j$. Note that equality is not allowed.
+
+Figure out the maximum number of nodes you can choose to form such a subset. The subset does not have to form a subtree.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The first line of input will contain a single integer $n$ ($1 \le n \le 2 \cdot 10^5$), which is the number of nodes in the tree. The nodes are numbered $1$ to $n$.
+
+Each of the next $n$ lines will describe the nodes, in order from $i=1$ to $n$. They will each contain two integers $v_ i$ and $p_ i$, where $v_ i$ ($0 \le v_ i \le 10^9$) is the value in the node, and $p_ i$ ($0 \le p_ i < i$) is the index of its parent. Every node’s index will be strictly greater than its parent node’s index. Only node 1, the root, will have $p_1=0$, since it has no parent. For all other nodes ($i=2, 3, \ldots , n$), $1 \le p_ i < i$.
+
+-----Output-----
+Output a single integer representing the number of nodes in the largest subset satisfying the Heap Property.
+
+-----Examples-----
+Sample Input 1:
+5
+3 0
+3 1
+3 2
+3 3
+3 4
+Sample Output 1:
+1
+
+Sample Input 2:
+5
+4 0
+3 1
+2 2
+1 3
+0 4
+Sample Output 2:
+5
+
+Sample Input 3:
+6
+3 0
+1 1
+2 1
+3 1
+4 1
+5 1
+Sample Output 3:
+5

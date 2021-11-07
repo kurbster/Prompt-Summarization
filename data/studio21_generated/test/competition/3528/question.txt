@@ -1,0 +1,36 @@
+Mirko found a wooden board and $N$ nails in his attic. Mirko hammered the nails into the board as fast as possible. The board can be modeled by a coordinate plane and the nails as points in it. No two nails have the same $x$- or the same $y$-coordinate.
+
+In order to keep having fun, Mirko stole his sister’s elastic hair band, spread it over all nails and then let go. The elastic, naturally, tightened around the nails.
+
+Mirko then repeats these steps while there are at least three nails in the board:
+ - Write down the area of the shape enclosed by the hair band.
+ - Picks the leftmost, rightmost, topmost or bottommost nail in the board.
+ - Remove the chosen nail from the board; the elastic tightens again around the remaining nails.
+
+Write a program that calculates the numbers written in step 1 of each iteration, if we know the nail Mirko picks in step 2 of each iteration.
+
+-----Input-----
+The first line contains the integer $N$ $(3 \leq N \leq 300000)$, the number of nails.
+
+Each of the following $N$ lines contains two integers separated by a space, the coordinates of a nail. All coordinates will be between 1 and $1000000000$. No two nails will share the same $x$- or $y$-coordinate. The next line contains $N-2$ letters ’L’, ’R’, ’U’ or ’D’. The letters represent the nails Mirko picked in order:
+ - ’L’ for the leftmost nail (smallest $x$-coordinate),
+ - ’R’ for the rightmost nail (largest $x$-coordinate),
+ - ’U’ for the topmost nail (largest $y$-coordinate),
+ - ’D’ for the bottommost nail (smallest $y$-coordinate).
+
+-----Output-----
+Output $N-2$ numbers, each on a separate line. The numbers are, in order, the areas that Mirko wrote down. Output numbers with one digit after the decimal point.
+
+-----Examples-----
+Sample Input:
+5
+1 4
+2 2
+4 1
+3 5
+5 3
+LUR
+Sample Output:
+9.0
+6.5
+2.5

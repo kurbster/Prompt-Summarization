@@ -1,0 +1,29 @@
+An artist begins with a roll of ribbon, one inch wide. She clips it into pieces of various integral lengths, then aligns them with the bottom of a frame, rising vertically in columns, to form a mountain scene. A mountain scene must be uneven; if all columns are the same height, it’s a plain scene, not a mountain scene! It is possible that she may not use all of the ribbon.
+
+If our artist has $4$ inches of ribbon and a $2 \times 2$ inch frame, she could form these scenes:
+
+She would not form these scenes, because they’re plains, not mountains!
+
+Given the length of the ribbon and the width and height of the frame, all in inches, how many different mountain scenes can she create? Two scenes are different if the regions covered by ribbon are different. There’s no point in putting more than one piece of ribbon in any column.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The input will consist of a single line with three space-separated integers $n$, $w$ and $h$, where $n$ ($0 \le n \le 10000$) is the length of the ribbon in inches, $w$ ($1 \le w \le 100$) is the width and $h$ ($1 \le h \le 100$) is the height of the frame, both in inches.
+
+-----Output-----
+Output a single integer, indicating the total number of mountain scenes our artist could possibly make, modulo $10^9 + 7$.
+
+-----Examples-----
+Sample Input 1:
+25 5 5
+Sample Output 1:
+7770
+
+Sample Input 2:
+15 5 5
+Sample Output 2:
+6050
+
+Sample Input 3:
+10 10 1
+Sample Output 3:
+1022

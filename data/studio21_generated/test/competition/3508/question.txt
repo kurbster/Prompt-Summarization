@@ -1,0 +1,20 @@
+Frustrated by his legendary inability to tear down Lund’s Cathedral, Finn the Giant wants to become better at destroying pillar-borne edifices. Together with his fellow trolls he has constructed a training site consisting of a colonnade of various pillars supporting a roof. The pillars differ in structural strength—some are hewn of Swedish granite, but in various styles, others are made of stone, clay, or even wood. The roof his a huge block of uniform granite. You can assume that in the beginning, each pillar is able to support its own part of the roof. The pillars have exactly the same distance.
+
+As an experienced builder, Finns known enough structural engineering to understand how roof weight distributes across pillars: every pillar supports the part of the roof closest to it. After removing pillars 1 and 2, the middle pillar supports the shaded part of the roof:
+
+At the left of pillar 0 and to the right of pillar $n-1$, the roof is supported by two indestructible pillars. Initially, every pillar is subject to the same pressure, 1000 kN.
+
+Finn is able to tear down exactly one of the internal pillars, independent of its structural integrity. He hopes to start a chain reaction, whereby the redistribution of the roof’s weights results in other pillars being crushed. Which pillar should Finn tear down to create the maximum damage?
+
+-----Input-----
+Input consists of two lines. On the first row, the number $n$ of pillars, with $1\leq n\leq 100000$. On the second row, $n$ integers $b_0$, $\ldots $, $b_{n-1}$, where $1000 \leq b_ i\leq 100000000$, representing how much each internal pillar can support (in kN), from left to right.
+
+-----Output-----
+A single line with two integers. First the maximal damage (counted in number of destroyed pillars) that Finn can cause. Second, the pillar he has to tear down. The internal pillars are numbered $0$, $1$, $\ldots $, $n-1$. If there are more than one correct answers, any will do.
+
+-----Examples-----
+Sample Input:
+5
+1341 2412 1200 3112 2391
+Sample Output:
+3 1

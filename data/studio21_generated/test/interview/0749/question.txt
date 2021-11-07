@@ -1,0 +1,33 @@
+You are given a string s consisting of lowercase Latin letters. Character c is called k-dominant iff each substring of s with length at least k contains this character c.
+
+You have to find minimum k such that there exists at least one k-dominant character.
+
+
+-----Input-----
+
+The first line contains string s consisting of lowercase Latin letters (1 ≤ |s| ≤ 100000).
+
+
+-----Output-----
+
+Print one number — the minimum value of k such that there exists at least one k-dominant character.
+
+
+-----Examples-----
+Input
+abacaba
+
+Output
+2
+
+Input
+zzzzz
+
+Output
+1
+
+Input
+abcde
+
+Output
+3

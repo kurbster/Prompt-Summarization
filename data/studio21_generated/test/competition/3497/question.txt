@@ -1,0 +1,25 @@
+You have all heard of the story of the three little pigs. However, this time they’re facing another predicament yet again!
+
+The three pigs brought a bunch of their pig friends into a tree, which is a connected undirected graph with $V$ vertices and $V-1$ edges. Originally there were $V$ pigs, one on each vertex of the tree. However, $V-P$ big bad wolves suddenly teleported into $V-P$ distinct vertices of $T$ and ate the pigs originally on these vertices. Now there are only $P$ pigs left, and every vertex of $T$ is occupied by a single pig or a single wolf (but not both).
+
+Of course, the surviving pigs now wants to escape. A pig is considered to have escaped if he is on any leaf vertex (a vertex connected to only one edge). A pig currently on vertex $u$ can move to vertex $v$ only if there is an edge connecting $u$ to $v$ and $v$ isn’t occupied by a wolf. However, more than one pig may be on the same vertex at the same time. The pigs want you to help them compute the minimum number of wolves which must be removed such that every pig can escape.
+
+-----Input-----
+The first line of the input contains two integers $V$ and $P$, $3\leq P\leq V\leq 200000$. This is followed by $V-1$ lines, each containing two integers $u$ and $v$, where $0\leq u,v\leq V-1$, indicating that there is an edge between vertex $u$ and vertex $v$. It is guaranteed that the graph represented by the input is a tree.
+
+The last line of the input contains $P$ integers, where $p_ i$ ($0\leq p_ i\leq V-1$) denotes the initial vertex occupied by the $i^\mathrm {th}$ pig. It is guaranteed that no two pigs occupy the same vertex.
+
+-----Output-----
+Output $W$, an integer denoting the minimum number of wolves to remove such that every pig can escape.
+
+-----Examples-----
+Sample Input:
+6 3
+0 1
+1 2
+2 3
+2 4
+1 5
+1 2 5 
+Sample Output:
+0

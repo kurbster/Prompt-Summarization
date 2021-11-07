@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "ABACABA\n",
+    "AAA\n",
+    "A\n",
+    "AAAAAAAAAAAAAAAAXAAAAAAAAAAAAAAAAAAAAAAA\n",
+    "AB\n",
+    "AXAXA\n",
+    "CODEFORCES\n",
+    "GERALDPAVELGERALDPAVEL\n",
+    "ZZ\n"
+  ],
+  "outputs": [
+    "3\n1 4\n3 2\n7 1\n",
+    "3\n1 3\n2 2\n3 1\n",
+    "1\n1 1\n",
+    "17\n1 39\n2 37\n3 35\n4 33\n5 31\n6 29\n7 27\n8 25\n9 23\n10 21\n11 19\n12 17\n13 15\n14 13\n15 11\n16 9\n40 1\n",
+    "1\n2 1\n",
+    "3\n1 3\n3 2\n5 1\n",
+    "1\n10 1\n",
+    "2\n11 2\n22 1\n",
+    "2\n1 2\n2 1\n"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "6 8\nBBBBBBBB\nBBBBBBBB\nBBBBBBBB\nWWWWWWWW\nWWWWWWWW\nWWWWWWWW\n",
+    "3 3\nWBW\nBWW\nWWW\n",
+    "3 6\nWWBBWW\nWWBBWW\nWWBBWW\n",
+    "4 4\nBBBB\nBBBB\nBBBB\nBBBW\n",
+    "10 9\nBWWWBWWBB\nBBWWBWBBW\nBBWBWBWBB\nBWBWBBBBB\nBBWBWBWBW\nBWWBWWBBW\nWBWWWBWWW\nWBBWBWBWW\nBBWWBWWBB\nBBWWBWWBW\n",
+    "4 1\nW\nW\nB\nB\n",
+    "2 10\nBBWBWWBWBB\nBBBBBBBBBW\n",
+    "100 1\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nW\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\nB\n",
+    "1 100\nWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n",
+    "4 5\nBWWBB\nBWBBW\nWBWWW\nWBWWB\n",
+    "2 9\nWBBBWBBBW\nBWWBBBBBB\n",
+    "6 6\nBBWWWB\nWBBBWB\nBBBBBW\nWWWWWW\nBBBBBW\nBWWBBB\n",
+    "1 1\nW\n",
+    "1 1\nB\n",
+    "1 8\nWWBWWWWW\n",
+    "2 8\nBBBBBBBB\nBBBBBBBB\n",
+    "1 52\nBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB\n",
+    "11 8\nWWWWWWWW\nWWWWWWWW\nWWWWWWWW\nWWWWWWWW\nWWWWWWWW\nWWWBWWWW\nWWWWWWWW\nWBWWWWWW\nWWWWWWWW\nWWWWWWWW\nWWWWWWWW\n"
+  ],
+  "outputs": [
+    "2\n",
+    "4\n",
+    "3\n",
+    "4\n",
+    "61\n",
+    "2\n",
+    "10\n",
+    "2\n",
+    "2\n",
+    "13\n",
+    "9\n",
+    "16\n",
+    "1\n",
+    "1\n",
+    "3\n",
+    "1\n",
+    "1\n",
+    "9\n"
+  ]
+}

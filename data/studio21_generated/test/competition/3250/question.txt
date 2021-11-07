@@ -1,0 +1,32 @@
+Most people have heard of Julius Caesar, a Roman dictator who lived in the first century BC and who was famous, amongst other things, for defeating enemies by pitting them against each other, thereby preventing them from uniting against him, a strategy known as “Divide and Conquer”. A lesser known fact is that Julius Caesar had a grandfather named Julius Senior, an old man who has miraculously lived to this day and who currently resides in an old age home in the town of Quackville.
+
+Life in the old age home is mostly dull, but every Friday, Julius Senior and his compatriots have a rousing game of Bingo! The stakes are especially high, for not only does the victor gain the much-coveted title of “Bingo Champion”, but there is also a reward of several sour candies. Julius Senior finds Bingo fun, but after never having won even once over all these millennia, the militaristic tendencies present in his family have begun to manifest themselves, and he has hatched a plot to gain the sour candies by illegitimate means. For his plan, he will need to make use of some divisibility hacks.
+
+A divisibility hack is a mental math trick that can be used to easily decide which positive integers $n$ are multiples of a given positive integer $d$. As well as depending on the divisor $d$, a specific divisibility hack is determined by two other integer parameters, $b > 1$ and $m > 0$. The parameters $b$ and $m$ are used to define a reduction function $f_{b,m}(n)$ that maps positive integers to (usually smaller) integers. For a given positive integer $n$, if\[ n = a_ kb^k + a_{k - 1}b^{k - 1} + \ldots + a_1b^1 + a_0b^0 \]
+
+is the base-$b$ expansion of $n$, then $f_{b,m}(n)$ is defined to be\begin{align*} & + (a_{m - 1} b^{m - 1} + a_{m - 2} b^{m - 2} + \ldots + a_1 b^1 + a_0 b^0)\\ & \quad - (a_{2m - 1} b^{m - 1} + a_{2m - 2} b^{m - 2} + \ldots + a_{m+1} b^1 + a_ m b^0)\\ & \quad \quad + (a_{3m-1} b^{m - 1} + a_{3m-2} b^{m - 2} + \ldots + a_{2m+1} b^1 + a_{2m} b^0) \\ & \quad \quad \quad - (a_{4m-1} b^{m - 1} + a_{4m-2} b^{m - 2} + \ldots + a_{3m+1} b^1 + a_{3m} b^0) \\ & \quad \quad \quad \quad \quad \quad \quad \vdots \end{align*}
+
+where $a_ j = 0$ whenever $j > k$. In other words, the reduction function is an alternating sum of terms, each of which is formed using $m$ consecutive base-$b$ digits of $n$, starting with the least significant digit. We say that the $(b,d,m)$ divisibility hack is valid if for all positive integers $n$, $f_{b,m}(n)$ is divisible by $d$ if and only if $n$ is divisible by $d$. Thus, if we have a large integer $n$ to check for divisibility by $d$, we can simply apply the reduction function to get a new smaller integer that we can instead test for divisibility by $d$.
+
+For example, it turns out that $(10,11,1)$ is a valid divisibility hack. We can therefore determine that $123456789$ is not a multiple of $11$, since $9 - 8 + 7 - 6 + 5 - 4 + 3 - 2 + 1 = 5$ is not a multiple of $11$. Also, $(10,7,3)$ is a valid divisibility hack, so we can use this to see that $42321999020$ is a multiple of $7$, since $20 - 999 + 321 - 42 = -700$ is a multiple of $7$.
+
+Julius Senior’s nefarious scheme is to disseminate knowledge of some specific divisibility hacks to a select group of senior citizens, and to train them to go rabid when he says the trigger word “MAPS” (Multiples Are Pretty Sick), using their divisibility hacks to scream facts about integers dividing or not dividing other integers at each other. His plan is to do this in the middle of their next Bingo tournament, whereupon he can take advantage of the ensuing chaos to purloin the sour candies without anyone noticing.
+
+Unfortunately, Julius Senior’s math skills aren’t what they used to be, so he is having a hard time coming up with divisibility hacks. In fact, when he randomly chooses integers $b$ and $d$, he can’t even figure out if there exists a positive integer $m$ such that the $(b,d,m)$ divisibility hack is valid. Can you write a program to help him determine when this is the case?
+
+-----Input-----
+The input consists of two space-separated integers, $b$ and $d$, satisfying the bounds $1 < b,d < 2^{63}$. It is guaranteed that $d$ is a prime number.
+
+-----Output-----
+If there exists a positive integer $m$ such that the $(b,d,m)$ divisibility hack is valid, output “yes”. Otherwise, output “no”.
+
+-----Examples-----
+Sample Input 1:
+10 11
+Sample Output 1:
+yes
+
+Sample Input 2:
+10 7
+Sample Output 2:
+yes

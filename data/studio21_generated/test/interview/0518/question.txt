@@ -1,0 +1,41 @@
+NN is an experienced internet user and that means he spends a lot of time on the social media. Once he found the following image on the Net, which asked him to compare the sizes of inner circles: [Image] 
+
+It turned out that the circles are equal. NN was very surprised by this fact, so he decided to create a similar picture himself.
+
+He managed to calculate the number of outer circles $n$ and the radius of the inner circle $r$. NN thinks that, using this information, you can exactly determine the radius of the outer circles $R$ so that the inner circle touches all of the outer ones externally and each pair of neighboring outer circles also touches each other. While NN tried very hard to guess the required radius, he didn't manage to do that. 
+
+Help NN find the required radius for building the required picture.
+
+
+-----Input-----
+
+The first and the only line of the input file contains two numbers $n$ and $r$ ($3 \leq n \leq 100$, $1 \leq r \leq 100$) — the number of the outer circles and the radius of the inner circle respectively.
+
+
+-----Output-----
+
+Output a single number $R$ — the radius of the outer circle required for building the required picture. 
+
+Your answer will be accepted if its relative or absolute error does not exceed $10^{-6}$.
+
+Formally, if your answer is $a$ and the jury's answer is $b$. Your answer is accepted if and only when $\frac{|a-b|}{max(1, |b|)} \le 10^{-6}$.
+
+
+-----Examples-----
+Input
+3 1
+
+Output
+6.4641016
+
+Input
+6 1
+
+Output
+1.0000000
+
+Input
+100 100
+
+Output
+3.2429391

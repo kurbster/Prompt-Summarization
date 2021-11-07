@@ -1,0 +1,25 @@
+Anthony has two multiple choice assignments to hand in today. The answer to each assignment is a string, where the $i^\textrm {th}$ letter represents the answer to the $i^\textrm {th}$ question.
+
+But instead of handing in two strings, Anthony only hands in a single string. He claims he answered every question correctly but his little sister Cora merged his two strings into a single string. Moreover, Cora merged his string in such a way that the following conditions are satisfied:
+ - For any two integers $0\leq i<j<|s_1|$ (where $|s_1|$ is the length of $s_1$), the index of $s_1[i]$ in $s$ is less than the index of $s_1[j]$ in $s$
+ - For any two integers $0\leq i<j<|s_2|$, the index of $s_2[i]$ in $s$ is less than the index of $s_2[j]$ in $s$
+
+Can you help Anthony’s teacher verify whether Anthony’s claim is possible?
+
+-----Input-----
+The first line contains a single string $s$. It is guaranteed that $2\leq |s|\leq 10000$.
+
+The next two lines contain strings $s_1$ and $s_2$ respectively. It is guaranteed that $1\leq |s_1|, |s_2|\leq 5000$ and $|s_1|+|s_2|=|s|$.
+
+All the strings consists of only lowercase English letters.
+
+-----Output-----
+If Anthony’s claim is possible, print “yes” (without quotes). Otherwise, print “no” (without quotes).
+
+-----Examples-----
+Sample Input:
+aabcad
+aba
+acd
+Sample Output:
+yes

@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "8 20\n apples are great!  \n++++++++++++++++++++\n+ oranges are      +\n+ way better!      +\n+ #oranges>apples  +\n++++++++++++++++++++\n check out our      \n fresh apples!      \n",
+        "7 7\n+++++++\n+  =  +\n+ +++ +\n+ + + +\n+ +++ +\n+     +\n+++++++\n",
+        "7 7\n+++++++\n+     +\n+ +++ +\n+ +=+ +\n+ +++ +\n+     +\n+++++++\n"
+    ],
+    "outputs": [
+        " apples are great!  \n                    \n                    \n                    \n                    \n                    \n check out our      \n fresh apples!      \n",
+        "       \n       \n       \n       \n       \n       \n       \n",
+        "+++++++\n+     +\n+     +\n+     +\n+     +\n+     +\n+++++++\n"
+    ]
+}

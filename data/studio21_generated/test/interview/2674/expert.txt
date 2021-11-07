@@ -1,0 +1,2 @@
+ you are presented with two prices $P$ and $Q$. You should determine if $P$ is inclusive of $Q$ (that is, if $P + Q = 1$) or exclusive of $Q$ (that is, if $P - Q = 1$). 
+-----Input:----- - First line will contain an integer $P$ -----Output:----- For each testcase, print either 'Inclusive' or 'Exclusive' without quotes. -----Constraints----- - $100 \leq P \leq 999$ -----Sample Input 1:----- 123 -----Sample Output 1:----- Exclusive -----Sample Input 2:----- 111 -----Sample Output 2:----- Inclusive

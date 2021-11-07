@@ -1,0 +1,39 @@
+Dima has a hamsters farm. Soon N hamsters will grow up on it and Dima will sell them in a city nearby.
+
+Hamsters should be transported in boxes. If some box is not completely full, the hamsters in it are bored, that's why each box should be completely full with hamsters.
+
+Dima can buy boxes at a factory. The factory produces boxes of K kinds, boxes of the i-th kind can contain in themselves a_{i} hamsters. Dima can buy any amount of boxes, but he should buy boxes of only one kind to get a wholesale discount.
+
+Of course, Dima would buy boxes in such a way that each box can be completely filled with hamsters and transported to the city. If there is no place for some hamsters, Dima will leave them on the farm.
+
+Find out how many boxes and of which type should Dima buy to transport maximum number of hamsters.
+
+
+-----Input-----
+
+The first line contains two integers N and K (0 ≤ N ≤ 10^18, 1 ≤ K ≤ 10^5) — the number of hamsters that will grow up on Dima's farm and the number of types of boxes that the factory produces.
+
+The second line contains K integers a_1, a_2, ..., a_{K} (1 ≤ a_{i} ≤ 10^18 for all i) — the capacities of boxes.
+
+
+-----Output-----
+
+Output two integers: the type of boxes that Dima should buy and the number of boxes of that type Dima should buy. Types of boxes are numbered from 1 to K in the order they are given in input.
+
+If there are many correct answers, output any of them.
+
+
+-----Examples-----
+Input
+19 3
+5 4 10
+
+Output
+2 4
+
+Input
+28 3
+5 6 30
+
+Output
+1 5

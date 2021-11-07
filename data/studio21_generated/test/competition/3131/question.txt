@@ -1,0 +1,26 @@
+—“I’m stopping by Žnidaršić’s house, you play the piano, Perica.”
+
+ —“Ok, dad, I will!”
+
+And so, Perica began playing the piano. His piano consists of $N$ keys. Each key has a value written on it, $a_ i$. When Perica plays the piano, he presses exactly $K$ different keys at the same time. The piano is a bit strange because, after pressing $K$ keys at the same time, it will play only the key with the largest value. Perica is going to play each combination of $K$ keys on the piano and he wants to know the sum of values of the keys that will be played.
+
+Help Perica determine the remainder of that number modulo $1000000007$.
+
+-----Input-----
+The first line of input contains two integers $N$ and $K$ ($1 \leq N \leq 100000$, $1 \leq K \leq 50$). The following line of input contains $N$ integers $a_ i$ ($0 \leq a_ i \leq 10^9$).
+
+-----Output-----
+The first and only line of output must contain the required number from the task.
+
+-----Examples-----
+Sample Input 1:
+5 3
+2 4 2 3 4
+Sample Output 1:
+39
+
+Sample Input 2:
+5 1
+1 0 1 1 1
+Sample Output 2:
+4

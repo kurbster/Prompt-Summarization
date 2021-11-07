@@ -1,0 +1,29 @@
+Little Mirko is studying the hash function which associates numerical values to words. The function is defined recursively in the following way:
+ - $f( \text {empty word} ) = 0$
+ - $f( \text {word} + \text {letter} ) = ( ( f( \text {word} ) \cdot 33 ) \oplus \mathrm{ord}( \text {letter} ) ) \mathbin {\% } \mathrm{MOD}$
+
+The function is defined for words that consist of only lowercase letters of the English alphabet. $\oplus $ stands for the bitwise exclusive or operator (i.e. $0110 \oplus 1010 = 1100$), $\mathrm{ord}(\text {letter})$ stands for the ordinal number of the letter in the alphabet ($\mathrm{ord}(\mathtt{a}) = 1$, $\mathrm{ord}(\mathtt{z}) = 26$) and $A \mathbin {\% } B$ stands for the remainder of the number $A$ when performing integer division with the number $B$. $\mathrm{MOD}$ will be an integer of the form $2^M$.
+
+Some values of the hash function when $M$ = 10:
+ - $f( \mathtt{a} ) = 1$
+ - $f ( \mathtt{aa} ) = 32$
+ - $f ( \mathtt{kit} ) = 438$
+
+Mirko wants to find out how many words of the length $N$ there are with the hash value $K$. Write a programme to help him calculate this number.
+
+-----Input-----
+The first line of input contains three integers $N$, $K$ and $M$ ($1 \leq N \leq 10$, $0 \leq K < 2^M$, $6 \leq M \leq 25$).
+
+-----Output-----
+The first and only line of output must consist of the required number from the task.
+
+-----Examples-----
+Sample Input 1:
+1 0 10
+Sample Output 1:
+0
+
+Sample Input 2:
+1 2 10
+Sample Output 2:
+1

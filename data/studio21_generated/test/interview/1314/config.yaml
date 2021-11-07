@@ -1,0 +1,19 @@
+model: large
+header: The following paragraphs contain computer science jargon. Rewrite them using
+  simple words.
+splitFile: split.txt
+promptFile: prompt.yaml
+numPrompts: 5
+summaryType: expert
+apiParams:
+  topP: 1.0
+  maxTokens: 200
+  numResults: 1
+  temperature: 0.5
+  topKReturn: 0
+  stopSequences:
+  - Jargon
+  - '
+
+
+    '

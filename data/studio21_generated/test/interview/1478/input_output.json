@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "hello,2,ok,0,bye,0,test,0,one,1,two,2,a,0,b,0\n",
+    "a,5,A,0,a,0,A,0,a,0,A,0\n",
+    "A,3,B,2,C,0,D,1,E,0,F,1,G,0,H,1,I,1,J,0,K,1,L,0,M,2,N,0,O,1,P,0\n",
+    "BA,0\n",
+    "Tu,1,dU,1,zncD,0\n",
+    "nwEwA,2,C,1,aG,0,xgv,0\n",
+    "aa,0\n",
+    "ab,0,ba,0\n",
+    "aa,0,ab,1,a,0\n",
+    "a,0,bb,1,a,1,bb,0\n",
+    "a,2,b,0,bb,1,a,1,a,0\n",
+    "bb,0,b,1,a,1,b,1,a,0,b,0\n",
+    "b,2,b,0,b,0,b,1,b,0,ba,1,b,0\n",
+    "bb,0,bb,0,b,1,ab,0,b,0,a,2,ab,0,bb,0\n",
+    "ba,0,aa,1,a,0,bb,1,a,0,a,0,a,0,a,1,a,0\n",
+    "a,3,aa,0,b,0,b,0,b,0,a,0,b,2,aa,1,a,0,ab,0\n"
+  ],
+  "outputs": [
+    "3\nhello test one \nok bye two \na b \n",
+    "2\na \nA a A a A \n",
+    "4\nA K M \nB F H L N O \nC D G I P \nE J \n",
+    "1\nBA \n",
+    "3\nTu \ndU \nzncD \n",
+    "3\nnwEwA \nC xgv \naG \n",
+    "1\naa \n",
+    "1\nab ba \n",
+    "2\naa ab \na \n",
+    "3\na bb \na \nbb \n",
+    "4\na \nb bb \na \na \n",
+    "4\nbb b b \na \nb \na \n",
+    "2\nb b ba \nb b b b \n",
+    "2\nbb bb b b a \nab ab bb \n",
+    "2\nba aa bb a a a \na a a \n",
+    "3\na b a b \naa b b aa ab \na \n"
+  ]
+}

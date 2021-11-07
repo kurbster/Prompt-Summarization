@@ -1,0 +1,31 @@
+[Image] 
+
+
+-----Input-----
+
+The input contains two integers a_1, a_2 (0 ≤ a_{i} ≤ 32), separated by a single space.
+
+
+-----Output-----
+
+Output a single integer.
+
+
+-----Examples-----
+Input
+1 1
+
+Output
+0
+
+Input
+3 7
+
+Output
+0
+
+Input
+13 10
+
+Output
+1

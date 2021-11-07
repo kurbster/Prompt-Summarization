@@ -1,0 +1,2 @@
+ Given an interval $[L, R]$, compute the sum. 
+-----Input----- The first and only line of input contains two integers $L$ and $R$ ($1 \leq L \leq R \leq 10^{18}$). -----Output----- Output the result $S$ modulo the prime $10^9+7$. -----Examples----- Sample Input: 1 127 Sample Output: 1083

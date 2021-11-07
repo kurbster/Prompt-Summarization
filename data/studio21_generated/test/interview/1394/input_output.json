@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "aaaaa\n",
+    "aacaababc\n",
+    "ababacacbbcc\n",
+    "baba\n",
+    "keke\n",
+    "aabbb\n",
+    "a\n",
+    "b\n",
+    "keumiataaaaaznatbaawaaahebaaftaakaammcaeaihadapagaaaabaaacaxaaauaahwlydqnacamhpitahaamamaazaiohaaaaakeumitzntbwhebftkmmceihdpgbcxuhwlydqncmhpithmmzioh\n",
+    "lywsaaaaauvranaraalaazeaaaaataapapmiabsqaajaaaaaakaagoaawsnanaaraaagataxmbatarkaahbgzmaavaaayjnxxraxlywsuvrnrlzetppmibsqjkgowsnnrgtxmbrkhbgzmvyjnxxrx\n",
+    "rafanhaaeaaxeuavbpaagaaaamdetmaoaaactaagacaaszzaaoaagaxaavaecaaasaaoagnaaxvfvvcaaaaakacaajaunarastdarfnhexeuvbpgmdetmoctgcszzogxvecsogxvfvvckcjunrstd\n",
+    "aaautkayaeaaatyogasaavnkkoaaaaoaaoipvaaaafamaajaaajmadagaaxaapoaaaiadvyvtpagbnacadtbamahwsaraaaaaaxautkyetyogsvnkkoooipvfmjjmgxpoidvhvtpgbncdtbmywsrx\n",
+    "zaaattaxfitaaaaolnaihkakrteiqaffaaaacalaaavyaaaqawalaakaiszazakaaawshuaaaaaaaamezsarhaaacaakajehadaazttxfitolnihkkrteiqffclvyqwlkiszzwshumezsrhckjehd\n",
+    "aeaaaaravazyzaadwaarzajaaawvcakaanbparauaoaaamsmjaaaayaylhaaaxegasgaaaipaakalaspkbaaaaazfacaaafzypraervzyzdwrzjwvcknbpruomsmjyylhxegsgipklspkbzfcfzypr\n",
+    "baaab\n",
+    "abbba\n",
+    "abbbb\n",
+    "abbaacdbbcd\n"
+  ],
+  "outputs": [
+    "aaaaa\n",
+    ":(\n",
+    "ababacac\n",
+    ":(\n",
+    "ke\n",
+    ":(\n",
+    "a\n",
+    ":(\n",
+    "keumiataaaaaznatbaawaaahebaaftaakaammcaeaihadapagaaaabaaacaxaaauaahwlydqnacamhpitahaamamaazaiohaaaaa\n",
+    ":(\n",
+    ":(\n",
+    ":(\n",
+    ":(\n",
+    "aeaaaaravazyzaadwaarzajaaawvcakaanbparauaoaaamsmjaaaayaylhaaaxegasgaaaipaakalaspkbaaaaazfacaaafzypra\n",
+    "baaa\n",
+    ":(\n",
+    "abb\n",
+    "abbaacd\n"
+  ]
+}

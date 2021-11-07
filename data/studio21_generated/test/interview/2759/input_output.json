@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "5\n1 1\n1 2\n1 3\n1 4\n1 5\n",
+        "5\n2 3\n3 2\n3 3\n3 4\n4 3\n",
+        "6\n1 1\n1 2\n2 1\n5 6\n6 5\n6 6\n"
+    ],
+    "outputs": [
+        "10\n1 D\n2 D\n3 D\n4 D\n1 D\n2 D\n3 D\n1 D\n2 D\n1 D\n",
+        "8\n1 R\n1 R\n2 U\n2 U\n4 D\n4 D\n5 L\n5 L\n",
+        "8\n2 R\n2 D\n3 D\n3 R\n4 U\n4 L\n5 L\n5 U\n"
+    ]
+}

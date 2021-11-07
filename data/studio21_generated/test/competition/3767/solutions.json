@@ -1,0 +1,1 @@
+["f = lambda: list(map(int, input().split()))\nn = int(input())\na, b = f(), f()\n\nd = [[None] * 10001 for i in range(n)]\n\ndef g(i, s):\n    if s <= 0: return (0, s)\n    if i == n: return (1e7, 0)\n\n    if not d[i][s]:\n        x, y = g(i + 1, s - b[i])\n        d[i][s] = min(g(i + 1, s), (x + 1, y + b[i] - a[i]))\n    return d[i][s]\n\nx, y = g(0, sum(a))\nprint(x, y)"]

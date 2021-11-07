@@ -1,0 +1,24 @@
+You are given a string S. Each character of S is uppercase or lowercase English letter.
+Determine if S satisfies all of the following conditions:
+ - The initial character of S is an uppercase A.
+ - There is exactly one occurrence of C between the third character from the beginning and the second to last character (inclusive).
+ - All letters except the A and C mentioned above are lowercase.
+
+-----Constraints-----
+ - 4 ≤ |S| ≤ 10 (|S| is the length of the string S.)
+ - Each character of S is uppercase or lowercase English letter.
+
+-----Input-----
+Input is given from Standard Input in the following format:
+S
+
+-----Output-----
+If S satisfies all of the conditions in the problem statement, print AC; otherwise, print WA.
+
+-----Sample Input-----
+AtCoder
+
+-----Sample Output-----
+AC
+
+The first letter is A, the third letter is C and the remaining letters are all lowercase, so all the conditions are satisfied.

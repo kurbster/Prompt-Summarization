@@ -1,0 +1,28 @@
+Yoshi is a frog. He lives in the ZOO under a log which was specially transported there from a distant equatorial rainforest. The log is big and wet and attracts the flies and that is what makes Yoshi satisfied.
+
+There is also a line of pebbles which runs through the wetland in front of the log. There are various dark spots on the pebbles and sometimes Yoshi likes to look at them and dream that they are not just spots but some really big flies instead.
+
+Yesterday, Yoshi’s friend camel Addawser came to see him and suggested to play a game.
+
+“Do you see those spots on the pebbles?” asked Addawser. “I challenge you to start on the leftmost pebble and then do some jumps from a pebble to another pebble but with some restrictions. You can jump from a pebble to another one only if the sum of numbers of spots on both pebbles is equal to the distance between the pebbles. And you have to get to as distant pebble as possible.”
+
+“All right, but you know that I can count at most to twenty three and no more,” hesitated Yoshi.
+
+“No problem, I will help you with the bigger numbers,” said Addawser.
+
+“Then, it’s easy,” said Yoshi, positioning himself on the first pebble and looking inquisitively over the rest of the line. “Although, one might not be quite so sure, after all,” he added after a while.
+
+You are given the sequence of numbers of dark spots on the pebbles in the line. You are asked to find the most distant pebble which can be reached by a sequence of jumps. The first jump starts at the first pebble in the line and a jump between two pebbles is possible if and only if the sum of numbers of spots on both pebbles is equal to the distance between them. You may suppose that the line of pebbles is straight and that the distance between each two neighboring pebbles is exactly one frog distance unit.
+
+-----Input-----
+Each case starts with a line containing one integer $N$ ($1 \leq N \leq 1000000$) representing the number of pebbles. The second line contains a list of $N$ integers. The order of the integers in the list is the same as the order of the pebbles in the wetland, each integer represents the number of spots on the corresponding pebble. No pebble contains more than $10^9$ spots. Suppose that Addawser knows all different pairs of pebbles where Yoshi can perform a jump from one pebble to another one during his sequence of jumps. You are guaranteed that the number of those pairs of pebbles never exceeds $1000000$.
+
+-----Output-----
+Print a single line with one integer denoting the distance of the pebble which can be reached by successive jumps according to the given rules and which is the most distant from the first pebble.
+
+-----Examples-----
+Sample Input:
+7
+2 1 0 1 2 3 3
+Sample Output:
+5

@@ -1,0 +1,55 @@
+While swimming at the beach, Mike has accidentally dropped his cellphone into the water. There was no worry as he bought a cheap replacement phone with an old-fashioned keyboard. The keyboard has only ten digital equal-sized keys, located in the following way: [Image] 
+
+Together with his old phone, he lost all his contacts and now he can only remember the way his fingers moved when he put some number in. One can formally consider finger movements as a sequence of vectors connecting centers of keys pressed consecutively to put in a number. For example, the finger movements for number "586" are the same as finger movements for number "253": [Image]  [Image] 
+
+Mike has already put in a number by his "finger memory" and started calling it, so he is now worrying, can he be sure that he is calling the correct number? In other words, is there any other number, that has the same finger movements?
+
+
+-----Input-----
+
+The first line of the input contains the only integer n (1 ≤ n ≤ 9) — the number of digits in the phone number that Mike put in.
+
+The second line contains the string consisting of n digits (characters from '0' to '9') representing the number that Mike put in.
+
+
+-----Output-----
+
+If there is no other phone number with the same finger movements and Mike can be sure he is calling the correct number, print "YES" (without quotes) in the only line.
+
+Otherwise print "NO" (without quotes) in the first line.
+
+
+-----Examples-----
+Input
+3
+586
+
+Output
+NO
+
+Input
+2
+09
+
+Output
+NO
+
+Input
+9
+123456789
+
+Output
+YES
+
+Input
+3
+911
+
+Output
+YES
+
+
+
+-----Note-----
+
+You can find the picture clarifying the first sample case in the statement above.

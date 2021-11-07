@@ -1,0 +1,41 @@
+A large banner with word CODEFORCES was ordered for the 1000-th onsite round of Codeforces^{ω} that takes place on the Miami beach. Unfortunately, the company that made the banner mixed up two orders and delivered somebody else's banner that contains someone else's word. The word on the banner consists only of upper-case English letters.
+
+There is very little time to correct the mistake. All that we can manage to do is to cut out some substring from the banner, i.e. several consecutive letters. After that all the resulting parts of the banner will be glued into a single piece (if the beginning or the end of the original banner was cut out, only one part remains); it is not allowed change the relative order of parts of the banner (i.e. after a substring is cut, several first and last letters are left, it is allowed only to glue the last letters to the right of the first letters). Thus, for example, for example, you can cut a substring out from string 'TEMPLATE' and get string 'TEMPLE' (if you cut out string AT), 'PLATE' (if you cut out TEM), 'T' (if you cut out EMPLATE), etc.
+
+Help the organizers of the round determine whether it is possible to cut out of the banner some substring in such a way that the remaining parts formed word CODEFORCES.
+
+
+-----Input-----
+
+The single line of the input contains the word written on the banner. The word only consists of upper-case English letters. The word is non-empty and its length doesn't exceed 100 characters. It is guaranteed that the word isn't word CODEFORCES.
+
+
+-----Output-----
+
+Print 'YES', if there exists a way to cut out the substring, and 'NO' otherwise (without the quotes).
+
+
+-----Examples-----
+Input
+CODEWAITFORITFORCES
+
+Output
+YES
+
+Input
+BOTTOMCODER
+
+Output
+NO
+
+Input
+DECODEFORCES
+
+Output
+YES
+
+Input
+DOGEFORCES
+
+Output
+NO

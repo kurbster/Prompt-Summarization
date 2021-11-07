@@ -1,0 +1,36 @@
+Luka found a very unusual game board in his attic. Surprisingly, it consists of $R \cdot C$ square cells. The rows are numbered $0$ to $R-1$ top to bottom and the columns $0$ to $C-1$ left to right.
+
+What makes the board unusual is the way in which the cells are coloured. Each cell is either grey or white:
+ - white, if the row and column numbers of the cell, when represented in binary, have at least one digit 1 in the same position. For example, the cell $(4, 5)$ would be white.
+ - grey, otherwise. For example, the cell $(2, 5)$ would be grey.
+
+The following image shows a board of size 10·10. 
+
+Luka’s hedgehog likes walking on this unusual board and does it in an unusual way. The hedgehog starts his walk in the cell $(0, 0)$ and continues in the zig-zag pattern as in the second image above. While the hedgehog is walking, Luka counts how many grey squares it visited.
+
+After visiting $K$ squares, the hedgehog gets tired and falls asleep. Luka then goes to bed too, happy that he was able count the grey squares.
+
+Knowing the dimensions of the board and the number $K$ beforehand, however, it is possible to write a program that calculates the result faster. This is your task.
+
+-----Input-----
+The first line contains two integers $R$ ($1 \le R \le 1000000$) and $C$ ($1 \le C \le 1000000$), the dimensions of the board.
+
+The second line contains the integer $K$ ($1 \le K \le R \cdot C$), the total number of squares the hedgehog visits.
+
+Note that this number may not fit in a 32-bit integer.
+
+-----Output-----
+Output the number of grey cells the hedgehog visits.
+
+-----Examples-----
+Sample Input 1:
+10 10
+6
+Sample Output 1:
+5
+
+Sample Input 2:
+3 5
+11
+Sample Output 2:
+8

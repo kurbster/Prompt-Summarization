@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    "ABRACADABRA\n",
+    "ABBBCBDB\n",
+    "AB\n",
+    "ABBCDEFB\n",
+    "THISISATEST\n",
+    "Z\n",
+    "ZZ\n",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n",
+    "ABACBCABACACB\n",
+    "LEHLLLLLLHAFGEGLLHAFDLHHLLLLLDGGEHGGHLLLLLLLLDFLCBLLEFLLCBLLCGLEDLGGLECLDGLEHLLLGELLLEGLLLLGDLLLDALD\n",
+    "THISISTHELASTTEST\n"
+  ],
+  "outputs": [
+    "3\n",
+    "3\n",
+    "1\n",
+    "3\n",
+    "3\n",
+    "1\n",
+    "2\n",
+    "1\n",
+    "4\n",
+    "49\n",
+    "3\n"
+  ]
+}

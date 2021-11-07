@@ -1,0 +1,13 @@
+You have a string $s$ and you may modify it by making long swaps of its letters. Two letters can be swapped if their positions differ by at least $k$. That is, you may swap the $i$-th letter with the $j$-th letter in $s$ if $|i - j| \geq k$. Is it possible to sort all the letters in $s$ increasingly, if you are allowed to swap any number of times (possibly zero)?
+
+-----Input-----
+The first line has a string $s$ ($2 \leq |s| \leq 100$) and an integer $k$ ($1 \leq k \leq |s| - 1$), separated by a single space. The string $s$ consists of only lowercase letters.
+
+-----Output-----
+If it is possible to sort the letters increasingly, output “Yes”. Otherwise output “No”.
+
+-----Examples-----
+Sample Input:
+prognova 4
+Sample Output:
+Yes

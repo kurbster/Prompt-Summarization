@@ -1,0 +1,2 @@
+ You are given an integer n, and your task is to determine the k-rounding of n. 
+-----Input----- The only line contains two integers n and k (1 ≤ n ≤ 10^9, 0 ≤ k ≤ 8). -----Output----- Print the k-rounding of n. -----Examples----- Input 375 4 Output 30000 Input 10000 1 Output 10000 Input 38101 0 Output 38101 Input 123456789 8 Output 12345678900000000

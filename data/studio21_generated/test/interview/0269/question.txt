@@ -1,0 +1,53 @@
+Nothing is eternal in the world, Kostya understood it on the 7-th of January when he saw partially dead four-color garland.
+
+Now he has a goal to replace dead light bulbs, however he doesn't know how many light bulbs for each color are required. It is guaranteed that for each of four colors at least one light is working.
+
+It is known that the garland contains light bulbs of four colors: red, blue, yellow and green. The garland is made as follows: if you take any four consecutive light bulbs then there will not be light bulbs with the same color among them. For example, the garland can look like "RYBGRYBGRY", "YBGRYBGRYBG", "BGRYB", but can not look like "BGRYG", "YBGRYBYGR" or "BGYBGY". Letters denote colors: 'R' — red, 'B' — blue, 'Y' — yellow, 'G' — green.
+
+Using the information that for each color at least one light bulb still works count the number of dead light bulbs of each four colors.
+
+
+-----Input-----
+
+The first and the only line contains the string s (4 ≤ |s| ≤ 100), which describes the garland, the i-th symbol of which describes the color of the i-th light bulb in the order from the beginning of garland:   'R' — the light bulb is red,  'B' — the light bulb is blue,  'Y' — the light bulb is yellow,  'G' — the light bulb is green,  '!' — the light bulb is dead. 
+
+The string s can not contain other symbols except those five which were described. 
+
+It is guaranteed that in the given string at least once there is each of four letters 'R', 'B', 'Y' and 'G'. 
+
+It is guaranteed that the string s is correct garland with some blown light bulbs, it means that for example the line "GRBY!!!B" can not be in the input data. 
+
+
+-----Output-----
+
+In the only line print four integers k_{r}, k_{b}, k_{y}, k_{g} — the number of dead light bulbs of red, blue, yellow and green colors accordingly.
+
+
+-----Examples-----
+Input
+RYBGRYBGR
+
+Output
+0 0 0 0
+Input
+!RGYB
+
+Output
+0 1 0 0
+Input
+!!!!YGRB
+
+Output
+1 1 1 1
+Input
+!GB!RG!Y!
+
+Output
+2 1 1 0
+
+
+-----Note-----
+
+In the first example there are no dead light bulbs.
+
+In the second example it is obvious that one blue bulb is blown, because it could not be light bulbs of other colors on its place according to the statements.

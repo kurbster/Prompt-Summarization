@@ -1,0 +1,46 @@
+One way to create a task is to learn from life. You can choose some experience in real life, formalize it and then you will get a new task.
+
+Let's think about a scene in real life: there are lots of people waiting in front of the elevator, each person wants to go to a certain floor. We can formalize it in the following way. We have n people standing on the first floor, the i-th person wants to go to the f_{i}-th floor. Unfortunately, there is only one elevator and its capacity equal to k (that is at most k people can use it simultaneously). Initially the elevator is located on the first floor. The elevator needs |a - b| seconds to move from the a-th floor to the b-th floor (we don't count the time the people need to get on and off the elevator).
+
+What is the minimal number of seconds that is needed to transport all the people to the corresponding floors and then return the elevator to the first floor?
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n, k ≤ 2000) — the number of people and the maximal capacity of the elevator.
+
+The next line contains n integers: f_1, f_2, ..., f_{n} (2 ≤ f_{i} ≤ 2000), where f_{i} denotes the target floor of the i-th person.
+
+
+-----Output-----
+
+Output a single integer — the minimal time needed to achieve the goal.
+
+
+-----Examples-----
+Input
+3 2
+2 3 4
+
+Output
+8
+
+Input
+4 2
+50 100 50 100
+
+Output
+296
+
+Input
+10 3
+2 2 2 2 2 2 2 2 2 2
+
+Output
+8
+
+
+
+-----Note-----
+
+In first sample, an optimal solution is:   The elevator takes up person #1 and person #2.  It goes to the 2nd floor.  Both people go out of the elevator.  The elevator goes back to the 1st floor.  Then the elevator takes up person #3.  And it goes to the 2nd floor.  It picks up person #2.  Then it goes to the 3rd floor.  Person #2 goes out.  Then it goes to the 4th floor, where person #3 goes out.  The elevator goes back to the 1st floor.

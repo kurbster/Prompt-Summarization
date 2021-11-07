@@ -1,0 +1,23 @@
+Given an grid with $N$ rows and $M$ columns, your task is to find a tour such that: 
+ - The tour has length at least two
+ - All squares in the grid are visited exactly once
+ - Let $a_1, \dots , a_{NM}$ be the sequence of visited squares. Then $d(a_ k$, $a_{k+1}) = 2$ or $3$ for every $1 \leq k < NM$. Also, $d(a_{NM}, a_1) = 2$ or $3$.
+
+Here, $d(p, q)$ denotes the Manhattan distance between $p$ and $q$. More precisely, if $p$ is the square on row $r_ p$ and column $c_ p$ and $q$ is the square on row $r_ q$ and column $c_ q$, then we write $p = (r_ p, c_ p), q = (r_ q, c_ q)$ and $d(p, q) = |r_ p - r_ q| + |c_ p - c_ q|$.
+
+-----Input-----
+The first and only line of input consists of two integers $N$ and $M$ ($1 \leq N, M \leq 200$).
+
+-----Output-----
+If there is no such tour, output -1. Otherwise, output $N \times M$ lines. The $i$th line contains two space-separated integers, denoting the row and column numbers of $a_ i$. If there is more than one such tour, any one will be accepted.
+
+-----Examples-----
+Sample Input:
+2 3
+Sample Output:
+1 1
+2 2
+1 3
+2 1
+1 2
+2 3

@@ -1,0 +1,33 @@
+You are given an array of integers of length $N$. Let $s_1, s_2, \ldots , s_ q$ be the lexicographically sorted array of all its non-empty subsequences. A subsequence of the array is an array obtained by removing zero or more elements from the initial array. Notice that some subsequences can be equal and that it holds $q = 2^N - 1$.
+
+An array $A$ is lexicographically smaller than array $B$ if $A_ i < B_ i$ where $i$ is the first position at which the arrays differ, or if $A$ is a strict prefix of array $B$.
+
+Let us define the hash of an array that consists of values $v_1, v_2, \ldots , v_ p$ as:\[ h(s) = (v_1 \cdot B^{p-1} + v_2 \cdot B^{p-2} + \ldots + v_{p-1} \cdot B + v_ p ) \bmod M \]
+
+where $B$, $M$ are given integers.
+
+Calculate $h(s_1) h(s_2), \ldots , h(s_ K)$ for a given $K$.
+
+-----Input-----
+The first line contains integers $N$, $K$, $B$, $M$ ($1 \leq N \leq 100000$, $1 \leq K \leq 100000$, $1 \leq B, M \leq 1000000$). The second line contains integers $a_1, a_2, a_3, \ldots , a_ N$ ($1 \leq a_ i \leq 100000$). In all test cases, it will hold $K \leq 2^N - 1$.
+
+-----Output-----
+Output $K$ lines, the $j$-th line containing $h(s_ j)$.
+
+-----Examples-----
+Sample Input 1:
+2 3 1 5
+1 2
+Sample Output 1:
+1
+3
+2
+
+Sample Input 2:
+3 4 2 3
+1 3 1
+Sample Output 2:
+1
+1
+0
+2

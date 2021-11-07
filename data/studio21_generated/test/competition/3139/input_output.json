@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "6\nD 3 1\nD 2 2\nD 1 3\nP 1\nP 2\nP 3\n",
+        "6\nD 8 8\nD 2 4\nD 5 6\nP 2\nD 6 2\nP 4\n",
+        "7\nD 5 2\nD 5 3\nP 1\nD 7 1\nD 8 7\nP 3\nP 2\n"
+    ],
+    "outputs": [
+        "NE\nNE\nNE\n",
+        "3\n1\n",
+        "2\n4\n4\n"
+    ]
+}

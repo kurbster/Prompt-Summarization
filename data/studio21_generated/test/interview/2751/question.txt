@@ -1,0 +1,27 @@
+Mirko’s great grandmother Katica is an avid mathematician. She likes to torment Mirko with math games. This time she wrote down a sequence of numbers on a piece of paper and told Mirko he may do the following:
+ - Choose any two numbers in the sequence (let’s call them $A$ and $B$) and a prime number $X$ such that $A$ is divisible by $X$. After that, Mirko erases $A$ and writes $A/X$ in its place. In the end he erases $B$ and writes $B\cdot X$ in its place.
+
+Mirko may perform this operation as many times he wants. His goal is to obtain the maximum possible score, because he gets candy from his great grandmother if he does so. The score for one sequence is the greatest common divisor of all the numbers in the sequence.
+
+He is not very good at this, and he likes his candy so he has asked you to help him. Write a program that will calculate the maximum possible score. Since you are such a nice person, you should also print the smallest number of times Mirko must perform the operation to obtain the maximum possible score.
+
+-----Input-----
+The first line of input contains one integer $N$, ($1 \leq N \leq 100$), the number of elements in the starting sequence.
+
+The second line of input contains $N$ positive integers smaller than or equal to $1000000$, the sequence Katica gave to Mirko.
+
+-----Output-----
+The one and only line of output should contain two integers. The first integer is the maximal possible score Mirko can obtain. The second integer is the smallest number of operations Mirko needs to perform to obtain it.
+
+-----Examples-----
+Sample Input 1:
+3
+4 4 1
+Sample Output 1:
+2 1
+
+Sample Input 2:
+3
+8 24 9
+Sample Output 2:
+12 3

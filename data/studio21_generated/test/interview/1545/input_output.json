@@ -1,0 +1,36 @@
+{
+  "inputs": [
+    "3\naab\n2 3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "10\nabcdeabcde\n5 5 5 5 4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "10\naaaaaaaaaa\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "55\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000 1000\n",
+    "99\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n96 12 22 33 50 96 95 25 34 40 61 37 54 12 46 84 62 17 35 38 76 47 85 85 9 61\n",
+    "100\nabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuv\n4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 3 3 3 3\n",
+    "8\naaaaaaab\n8 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "10\naabaaaaaba\n10 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "10\naabaabaaba\n3 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "10\naabaabaaba\n10 9 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "100\nygdbmqpyofbcoqomztbjkutjwkkxkkmoyjrqteikqxrkcgqcfrbujupiegumelsmqkdadtcfvyoywuhqthqlioxcveskifuormfo\n94 20 86 40 16 38 63 32 36 95 7 32 68 21 68 67 70 23 24 78 45 80 30 35 9 4\n",
+    "99\nnupctndqkhgouriwrrbhxwynnkclwtfrraontjuvjdumzigxyandxrsrmosvtbtropggtlkqjmrffgnacsafbulvbuxthjqhtxj\n61 1 47 67 64 66 44 39 55 23 68 94 47 2 50 26 92 31 93 6 92 67 41 12 15 91\n",
+    "1\na\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "7\nzzzxxyy\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 2\n",
+    "7\nbaaaccc\n6 4 6 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n"
+  ],
+  "outputs": [
+    "3\n2\n2\n",
+    "401\n4\n3\n",
+    "1\n1\n10\n",
+    "383381198\n55\n1\n",
+    "494092815\n96\n2\n",
+    "750728890\n4\n27\n",
+    "64\n7\n2\n",
+    "32\n5\n5\n",
+    "8\n2\n7\n",
+    "511\n9\n2\n",
+    "962845356\n16\n13\n",
+    "61873945\n12\n25\n",
+    "1\n1\n1\n",
+    "21\n2\n4\n",
+    "60\n6\n2\n"
+  ]
+}

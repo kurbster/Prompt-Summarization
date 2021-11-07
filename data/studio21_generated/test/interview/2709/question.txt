@@ -1,0 +1,115 @@
+You think you can code?
+
+ This problem will test you on various basic programming techniques.
+
+ You are given two integers $N$ and $t$; and then an array $A$ of $N$ integers ($0$-based indexing).
+
+ Based on the value of $t$, you will perform an action on $A$.
+
+$t$
+
+Action Needed
+
+$1$
+
+Print $7$, regardless of the content of $A$
+
+$2$
+
+Print “Bigger” if $A[0] > A[1]$, or 
+
+Print “Equal” if $A[0] == A[1]$, or 
+
+Print “Smaller” otherwise (without the quotes); 
+
+Ignore other indices of $A$, if any
+
+$3$
+
+Print the median of three integers {$A[0]$, $A[1]$, and $A[2]$}; 
+
+Ignore other indices of $A$, if any
+
+$4$
+
+Print the sum of all integers in $A$
+
+$5$
+
+Print the sum of all even integers in $A$
+
+$6$
+
+Apply modulo (%) $26$ to each integer in $A$, 
+
+Map integer $0$/$1$/$\ldots $/$25$ to character ‘a’/‘b’/$\ldots $/‘z’, 
+
+Finally, print the sequence of characters as a string (without the spaces)
+
+$7$
+
+a. Start from index $i = 0$; 
+
+b. Jump to index $i = A[i]$; 
+
+c. If the current index $i$ is outside the valid bound of [0..$N$-1], print “Out” and stop; 
+
+d. Else if the current index $i$ is index $N$-$1$, print “Done” and stop; 
+
+e1. Otherwise, repeat step b; 
+
+e2. If doing this leads to an infinite loop, print “Cyclic” and stop; 
+
+(all output are without the quotes)
+
+-----Input-----
+The first line of the input contains an integer $N$ and $t$ ($3 \leq N \leq 200000$; $1 \leq t \leq 7$).
+
+ The second line of the input contains $N$ non-negative $32$-bit signed integers.
+
+-----Output-----
+For each test case, output the required answer based on the value of $t$.
+
+-----Scoring-----
+There are $20$ hidden test cases that test various requirements of this problem.
+
+ All $20$ test cases will be tested.
+
+ Each hidden test case worth $5$ points (the $7$ sample test cases below worth $0$ point).
+
+-----Examples-----
+Sample Input 1:
+7 1
+1 2 3 4 5 6 7
+Sample Output 1:
+7
+
+Sample Input 2:
+7 2
+1 2 3 4 5 6 7
+Sample Output 2:
+Smaller
+
+Sample Input 3:
+7 3
+1 2 3 4 5 6 7
+Sample Output 3:
+2
+
+Sample Input 4:
+7 4
+1 2 3 4 5 6 7
+Sample Output 4:
+28
+
+Sample Input 5:
+7 5
+1 2 3 4 5 6 7
+Sample Output 5:
+12
+
+Sample Input 6:
+10 6
+7 4 11 37 14 22 40 17 11 3
+Sample Output 6:
+helloworld

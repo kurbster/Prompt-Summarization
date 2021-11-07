@@ -1,0 +1,40 @@
+The Bluewater Geocloud Organization (BGO) has recently developed brand new software able to predict with pinpoint precision at which second any particular cloud will start and stop raining, and with what intensity. There is, however, some uncertainty about how a cloud will move around; for each zip code, each cloud will be over that zip code with some probability.
+
+You have scraped some information about your zip code from the BGO website, and want to use it to plan your walk to the bus stop. You wish to minimize the expected amount of rain that would fall on you. To reach the bus you must get to the bus stop within $t$ seconds from now. You have timed your walking speed to be exactly $1 \frac{m}{s}$.
+
+To complicate matters, some parts of the walk to the bus are covered by roofs where it might be beneficial to make shorts breaks whilst waiting for the worst rain to pass. Your front door (at $d$ meters from the bus stop) is always under a roof – but the bus stop need not be.
+
+-----Input-----
+The first line of input is four space-separated integers: $d$ ($1 \leq d \leq 1000$), the distance to the bus stop in meters, $t$ ($d \leq t \leq 10000$) the time until the bus leaves, $c$ ($0 \leq c \leq 1000000$), the number of clouds tracked by BGO, and finally $r$ ($0 \leq r \leq d$), the number of roofs. The next $c$ lines describe the clouds; the $i$’th such line contains four numbers $s_ i$, $e_ i$, $p_ i$ and $a_ i$ describing the $i$’th cloud:
+ - $s_ i$ ($0 \leq s_ i < t$) is an integer giving the number of seconds until the cloud starts its raining period,
+ - $e_ i$ ($s_ i < e_ i \leq t$) is an integer giving the number of seconds until the cloud ends its raining period,
+ - $p_ i$ ($0 \leq p_ i \leq 1$) is a real number (with at most $6$ digits after the decimal point) giving the probability that the cloud is in your zip code during its raining period, and
+ - $a_ i$ ($0 \leq a_ i \leq 100$) is an integer indicating the amount of rain the cloud will release during its raining period, given as nm per second.
+
+Finally $r$ roof segments follow, each on its own line; the $j$’th such line contains two integers $x_ j$ and $y_ j$ ($0 \leq x_ j < y_ j \leq d+1$), indicating that there is a roof segment starting at distance $x_ j$ away from home, ending at distance $y_ j$ away from home along the route to the bus stop. Both your home, the bus stop an the entire route between them are in the same zip code. No two roofs overlap, however one roof may start at the same exact location as another ends.
+
+-----Output-----
+The output consists of single a real value, the minimum amount of rain in nm you can expect on your route if you reach the bus stop in time. Answers with absolute or relative precision $10^{-5}$ of the actual value will be accepted.
+
+-----Examples-----
+Sample Input 1:
+20 60 2 1
+5 15 0.33333 30
+22 60 0.66666 70
+0 10
+Sample Output 1:
+466.662
+
+Sample Input 2:
+3 4 2 1
+1 3 0.25 8
+2 4 0.66667 15
+1 2
+Sample Output 2:
+10.00005
+
+Sample Input 3:
+3 4 1 0
+0 2 0.25 8
+Sample Output 3:
+2.0

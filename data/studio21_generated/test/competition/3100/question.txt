@@ -1,0 +1,32 @@
+You are the boss of ACM (Apples, Cherries, and Mangos), an upstanding company with a single goal of world domination.
+
+ACM have provided lots of fruits for the last programming competition for minions in Helsinki. The leftovers should now be shipped to Singapore. There is, however, one constraint: In the case that one box of apples is infested with apple-eating insects and the next one in the line is also a box of apples, the insects might move on to the neighboring box and infect it as well. This constraint is applicable for boxes of cherries and boxes of mangos too.
+
+In order to avoid this, ACM decides that the boxes of fruits are to be sent in such a way that two consecutive boxes contain different types of fruits. The statistics department of ACM wants to know how many ways there are to arrange the shipments of $A$ boxes of apples, $C$ boxes of cherries and $M$ boxes of mangos under this constraint.
+
+Please provide a computer program to compute this for various choices of $A$, $C$, and $M$. Two arrangements are different if there exists $i$ such that the $i$-th box delivered in the two arrangements contain different types of fruits. Since the answer may be very big, output the answer modulo a prime number $10^9+7$.
+
+-----Input-----
+The input consists of a single line consisting of three single space separated integers $A$, $C$, and $M$, denoting the total number of boxes of apples, cherries, and mangos you need to ship to Singapore, respectively. All three integers will be between $1$ and $200000$, respectively.
+
+-----Output-----
+Output the number of different possible arrangements of delivery, modulo a prime number $10^9+7$. If there is no such order, output $0$.Sample Data Explanation
+
+In the first example, the $6$ possible ways are:
+ - Apple, Cherry, Mango, Cherry.
+ - Cherry, Apple, Cherry, Mango.
+ - Cherry, Apple, Mango, Cherry.
+ - Cherry, Mango, Apple, Cherry.
+ - Cherry, Mango, Cherry, Apple.
+ - Mango, Cherry, Apple, Cherry.
+
+-----Examples-----
+Sample Input 1:
+1 2 1
+Sample Output 1:
+6
+
+Sample Input 2:
+2 2 2
+Sample Output 2:
+30

@@ -1,0 +1,40 @@
+The grille cipher  is a technique that dates back to 1550 when it was first described by Girolamo Cardano. The version we’ll be dealing with comes from the late 1800’s and works as follows. The message to be encoded is written on an $n \times n$ grid row-wise, top to bottom, and is overlaid with a card with a set of holes punched out of it (this is the grille).
+
+The message is encrypted by writing down the letters that appear in the holes, row by row, then rotating the grille 90 degrees clockwise, writing the new letters that appear, and repeating this process two more times. Of course the holes in the grille must be chosen so that every letter in the message will eventually appear in a hole (this is actually not that hard to arrange).
+
+An example is shown below, where the message “Send more monkeys” is encrypted as “noeesrksdmnyemoj”, after adding a random letter to fill out the grid (this example corresponds to the first sample input.)
+
+ Figure I.1 
+
+If the message is larger than the $n \times n$ grid, then the first $n^2$ letters are written in the grid and encrypted, then the next $n^2$ are encrypted, and so on, always filling the last grid with random letters if needed. Here, we will only be dealing with messages of length $n^2$.
+
+Your job, should you choose to accept it, is to take an encrypted message and the corresponding grille and decrypt it. And we’ll add one additional twist: the grille given might be invalid, i.e., the holes used do not allow every location in the grid to be used during the encryption process. If this is the case, then you must indicate that you can’t decrypt the message.
+
+-----Input-----
+The input starts with a line containing a positive integer $n\le 10$ indicating the size of the grid and grille. The next $n$ lines will specify the grille, using ‘.’ for a hole and ‘X’ for a non-hole. Following this will be a line containing the encrypted message, consisting solely of lowercase alphabetic characters. The number of characters in this line will always be $n^2$.
+
+
+
+-----Output-----
+Output the decrypted text as a single string with no spaces, or the phrase “invalid grille” if the grille is invalid.
+
+-----Examples-----
+Sample Input 1:
+4
+XX.X
+X.X.
+XXXX
+.XXX
+noeesrksdmnyemoj
+Sample Output 1:
+sendmoremonkeysj
+
+Sample Input 2:
+4
+.XX.
+XXXX
+XXXX
+.XX.
+abcdefghijklmnop
+Sample Output 2:
+invalid grille

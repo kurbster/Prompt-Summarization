@@ -1,0 +1,47 @@
+Caisa is going to have a party and he needs to buy the ingredients for a big chocolate cake. For that he is going to the biggest supermarket in town.
+
+Unfortunately, he has just s dollars for sugar. But that's not a reason to be sad, because there are n types of sugar in the supermarket, maybe he able to buy one. But that's not all. The supermarket has very unusual exchange politics: instead of cents the sellers give sweets to a buyer as a change. Of course, the number of given sweets always doesn't exceed 99, because each seller maximizes the number of dollars in the change (100 cents can be replaced with a dollar).
+
+Caisa wants to buy only one type of sugar, also he wants to maximize the number of sweets in the change. What is the maximum number of sweets he can get? Note, that Caisa doesn't want to minimize the cost of the sugar, he only wants to get maximum number of sweets as change. 
+
+
+-----Input-----
+
+The first line contains two space-separated integers n, s (1 ≤ n, s ≤ 100).
+
+The i-th of the next n lines contains two integers x_{i}, y_{i} (1 ≤ x_{i} ≤ 100; 0 ≤ y_{i} < 100), where x_{i} represents the number of dollars and y_{i} the number of cents needed in order to buy the i-th type of sugar.
+
+
+-----Output-----
+
+Print a single integer representing the maximum number of sweets he can buy, or -1 if he can't buy any type of sugar.
+
+
+-----Examples-----
+Input
+5 10
+3 90
+12 0
+9 70
+5 50
+7 0
+
+Output
+50
+
+Input
+5 5
+10 10
+20 20
+30 30
+40 40
+50 50
+
+Output
+-1
+
+
+
+-----Note-----
+
+In the first test sample Caisa can buy the fourth type of sugar, in such a case he will take 50 sweets as a change.

@@ -1,0 +1,28 @@
+Apostrophes and double quotes tend to get badly encoded by systems, causing them to print back things like &#x27; or \". As a QA tester, Nova has seen lots of these issues. Today, she overheard that the Tweeper messaging app may have an issue with these symbols as well, and may encode them in strange ways. This was interesting, so she has written a Tweep to see if this is the case. Based on this Tweep, can you find out if Tweeper has an encoding issue, and if so, what the symbols are encoded into?
+
+-----Input-----
+The input is two strings separated by a line. The first string $I$ represents the input characters that was sent in, and the second string $O$ is how Tweeper presents the string. To avoid encoding troubles, apostrophes and double quotes have been replaced with + and -, respectively.
+
+-----Output-----
+The output should have $n$ lines of output, one for each possible encoding + and - may have. Each line must have two strings $a^{+}_ i$ and $a^{-}_ i$, representing what a + and a - can be encoded as, respectively.
+
+If the string is empty, print instead <empty>, and if the string can be anything, print <any>. If there are multiple answers, you can output them in any order.
+
+If there is no valid answer, write corrupted instead.
+
+-----Limits-----
+ - $1 \leq |I|, |O| \leq 280$
+ - $I$ and $O$ contain only the lowercase letters a-z, 0-9, + and -
+
+-----Examples-----
+Sample Input 1:
+a+b-c
+a-b+d-c
+Sample Output 1:
+- +d-
+
+Sample Input 2:
+knuth-morris-pratt
+knuthmorrispratt
+Sample Output 2:
+<any> <empty>

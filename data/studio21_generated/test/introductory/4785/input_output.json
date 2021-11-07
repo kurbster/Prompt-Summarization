@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "amiss\n",
+        "octopuses\n",
+        "hiss\n"
+    ],
+    "outputs": [
+        "hiss\n",
+        "no hiss\n",
+        "hiss\n"
+    ]
+}

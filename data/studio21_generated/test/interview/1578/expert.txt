@@ -1,0 +1,2 @@
+ You are given N and a set of permutations. For each permutation, find the maximum possible value of the sum of all remainders when dividing each integer by that permutation. 
+-----Input----- Input is given from Standard Input in the following format: N -----Output----- Print the maximum possible value of M_1 + M_2 + \cdots + M_N. -----Sample Input----- 2 -----Sample Output----- 1 When the permutation \{P_1, P_2\} = \{2, 1\} is chosen, M_1 + M_2 = 1 + 0 = 1.

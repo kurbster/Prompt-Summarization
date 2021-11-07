@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    "3 3 2\n1 2\n2 1\n3 3\n3 2\n",
+    "5 4 3\n3 4\n3 1\n3 3\n5 3\n1 3\n1 4\n",
+    "1 1 10\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n",
+    "10 10 20\n7 5\n4 5\n5 4\n7 4\n1 5\n6 7\n9 5\n8 4\n1 4\n2 10\n3 10\n4 10\n3 6\n5 7\n6 2\n1 1\n10 9\n7 6\n1 4\n6 4\n8 2\n8 3\n5 1\n10 4\n4 2\n1 9\n1 10\n9 5\n2 2\n6 7\n8 6\n8 9\n4 2\n7 8\n3 3\n4 2\n6 10\n9 4\n10 2\n7 7\n",
+    "2 5 2\n1 1\n1 1\n1 1\n1 1\n",
+    "2 2 2\n2 1\n2 1\n1 2\n1 1\n",
+    "2 2 1\n1 1\n1 1\n",
+    "2 2 1\n1 1\n2 2\n"
+  ],
+  "outputs": [
+    "12\nUULLRRDLLDRR",
+    "26\nUUUULLLRRRDLLLDRRRDLLLDRRR",
+    "0\n",
+    "117\nUUUUUUUUULLLLLLLLLRRRRRRRRRDLLLLLLLLLDRRRRRRRRRDLLLLLLLLLDRRRRRRRRRDLLLLLLLLLDRRRRRRRRRDLLLLLLLLLDRRRRRRRRRDLLLLLLLLL",
+    "14\nULLLLRRRRDLLLL",
+    "5\nULRDL",
+    "5\nULRDL",
+    "5\nULRDL"
+  ]
+}

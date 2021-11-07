@@ -1,0 +1,51 @@
+We define $x \bmod y$ as the remainder of division of $x$ by $y$ ($\%$ operator in C++ or Java, mod operator in Pascal).
+
+Let's call an array of positive integers $[a_1, a_2, \dots, a_k]$ stable if for every permutation $p$ of integers from $1$ to $k$, and for every non-negative integer $x$, the following condition is met:
+
+ $ (((x \bmod a_1) \bmod a_2) \dots \bmod a_{k - 1}) \bmod a_k = (((x \bmod a_{p_1}) \bmod a_{p_2}) \dots \bmod a_{p_{k - 1}}) \bmod a_{p_k} $ 
+
+That is, for each non-negative integer $x$, the value of $(((x \bmod a_1) \bmod a_2) \dots \bmod a_{k - 1}) \bmod a_k$ does not change if we reorder the elements of the array $a$.
+
+For two given integers $n$ and $k$, calculate the number of stable arrays $[a_1, a_2, \dots, a_k]$ such that $1 \le a_1 < a_2 < \dots < a_k \le n$.
+
+
+-----Input-----
+
+The only line contains two integers $n$ and $k$ ($1 \le n, k \le 5 \cdot 10^5$).
+
+
+-----Output-----
+
+Print one integer — the number of stable arrays $[a_1, a_2, \dots, a_k]$ such that $1 \le a_1 < a_2 < \dots < a_k \le n$. Since the answer may be large, print it modulo $998244353$.
+
+
+-----Examples-----
+Input
+7 3
+
+Output
+16
+
+Input
+3 7
+
+Output
+0
+
+Input
+1337 42
+
+Output
+95147305
+
+Input
+1 1
+
+Output
+1
+
+Input
+500000 1
+
+Output
+500000

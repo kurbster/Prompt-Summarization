@@ -1,0 +1,24 @@
+Your friend Edvin loves languages. A personal favourite of his is speaking the Robber Language. For those of you not familiar with it, it is a language transformation where every consonant is doubled, with an ’o’ put in-between. The rest is kept the same. For example, the word "car" would be transformed into "cocaror". 
+
+Your friend Edvin was going to tell you his password to his favourite website, so that you could check out how awesome it is. Edvin is sure that nobody but him and you speak the Robber Language, so he encrypted it using this simple technique, and wrote it down on a note. After trying the password and realising it does not work, you found out that Edvin was drunk during the transformation. Now you want to find out in how many ways the password might have looked originally.
+
+You are given an encrypted password which Edvin has attempted to translate into the Robber Language. Your task is to determine how many passwords might produce the encrypted password. You may assume that the only thing Edvin did wrong, was when scanning through the word with his eyes, he sometimes missed to transform some consonants using the rule above. Edvin is not deterministic in his failures, i.e. if he missed to transform a consonant once, it is not necessary that he would miss it if it occured again later in the string.
+
+A vowel is considered to be one of the letters "a", "e", "i", "o" and "u". A consonant is any other letter.
+
+-----Input-----
+Input consists of one encrypted password, the resulting word from Edvins translation. The word can be as long as $1000000$ characters. It will solely consist of lower case letters a-z.
+
+-----Output-----
+Output should consist of one number, the number of ways the password might have looked before Edvin translated it. Since this number may be huge, print the remainder modulo $1000009$.
+
+-----Examples-----
+Sample Input 1:
+car
+Sample Output 1:
+1
+
+Sample Input 2:
+cocar
+Sample Output 2:
+2

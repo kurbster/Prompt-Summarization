@@ -1,0 +1,32 @@
+Today everyone is talking about big data. As a renowned data provider in the area, you now have $N$ precious pieces of data. You want to sell all $N$ pieces of data to $N$ customers. You can sell multiple pieces of data (including all and none) to a single customer. However, each piece of data must be sold to exactly one customer (you cannot split a single piece of data and sell it to multiple customers).
+
+In your previous transactions you simply sold bigger data for higher prices. Unfortunately, that did not work quite well and your customers were a bit unsatisfied about the value of the data they got. Obviously, the value of data is not necessarily positively correlated with its volume.
+
+This time you decide to do something different. After many meetings you finally sign a new contract with your customers. You number the $N$ pieces of data from $1$ to $N$ and figure out that the $i^\textrm {th}$ piece of data has a special property $S_ i$. The new contract specifies that each customer shall pay you an amount of money that is equal to the number of distinct prime factors in the sum of $S_ i$’s of the data pieces sold to him/her.
+
+Based on the new contract, what is the maximum revenue you can achieve by selling all $N$ pieces of data?
+
+-----Input-----
+The first line has a single integer $N$ ($1 \leq N \leq 14$). The second line has $N$ positive integers, $S_1, S_2, \ldots , S_ N$. These integers are no larger than $1000$.
+
+-----Output-----
+Output the maximum revenue you can achieve by selling all $N$ pieces of data.
+
+-----Examples-----
+Sample Input 1:
+1
+1
+Sample Output 1:
+0
+
+Sample Input 2:
+3
+4 7 8
+Sample Output 2:
+3
+
+Sample Input 3:
+5
+2 3 4 5 8
+Sample Output 3:
+5

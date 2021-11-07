@@ -1,0 +1,2 @@
+ You are given two integers a and b, and the binary representation of a. Determine if b is divisible by a.
+-----Input----- The first line contains an integer n (1 ≤ n ≤ 3). The next line contains n integers a_1, a_2, ..., a_{n} (0 ≤ a_{i} < 300). -----Output----- Write the name of the winner (provided that both players play optimally well). Either "BitLGM" or "BitAryo" (without the quotes). -----Examples----- Input 2 1 1 Output BitLGM Input 2 1 2 Output BitAryo Input 3 1 2 1 Output BitLGM

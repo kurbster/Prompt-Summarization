@@ -1,0 +1,26 @@
+You are the boss of ACM (Association for the Country of Mububa), an upstanding company with a single goal of world domination.
+
+Today, you have conquered the unnamed country of Mububa (how an unnamed country has a name is, of course, outside the scope of this problem). Mububa is known for its great, great, bananas. In light of this monumental achievement, you have decided to reward your executives with Mububa’s greatest treasure (which is obviously, bananas). You have prepared $N$ briefcases, each contains a number of bananas. These briefcases are numbered from $1$ through $N$.
+
+You reward your executives one by one in order from the least evil executive, to the most evil executive (still not comparably evil to you, of course). No two executives are equally evil. For each executive, you first decide how many briefcases you want to give him. If you decide to give an executive $a$ briefcases, you give him the $a$ briefcases with lowest numbers that you still have. Each executive you reward must receive at least one briefcase.
+
+It is important to be fair when distributing rewards. You do not want your executives to stage a hunger strike, after all. Thus, the rewards the executives received must reflect how evil they are. More rigorously, if executive $A$ is more evil than executive $B$, then the total number of bananas received by executive $A$ must be at least as large as the total number of bananas received by executive $B$.
+
+You know the number of bananas inside all of the briefcases. You want to reward as many executives as possible, but wants the distribution to still be fair (i.e. following the previous requirement) amongst them. What is the maximum number of executives you can reward this way?
+
+-----Input-----
+The first line contains a non-negative integer $2 \leq N \leq 3000$, giving the number of briefcases you have. Then follows a line with $N$ integers, the $i$-th of which denotes the number of bananas in briefcase number $i$. Each briefcase contains between $1$ and $10^9$ bananas, inclusively.
+
+-----Output-----
+Print the maximum number of executives you can reward with bananas.Sample Data explanation
+
+In the first example, give briefcase $1$ to the least evil executive, briefcase $2$ to the second least evil executive, and briefcases $3$ and $4$ to the most evil executive.
+
+In the second example, give briefcase $1$ to the least evil executive, briefcases $2$ and $3$ to the second least evil executive, and briefcases $4$, $5$, and $6$ to the most evil executive.
+
+-----Examples-----
+Sample Input:
+4
+1 2 1 2
+Sample Output:
+3

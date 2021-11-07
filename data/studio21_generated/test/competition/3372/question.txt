@@ -1,0 +1,45 @@
+As you are probably aware, flight pricing can sometimes be surprisingly complex. For example, it can often be cheaper to take a much longer flight with several legs instead of flying directly between two airports. One of the reasons pricing seems to be complex is that airlines often try to obfuscate exactly how pricing works, in order to ensure that their customers choose more expensive flights.
+
+One particular airline has deciced to take this obfuscation to the next level; they do not even offer an automated search of their flights. Instead, they describe their flights in a very peculiar format. For every one of their $N$ airports (which are numbered between $0$ and $N - 1$), they list either:
+ - what airports they travel to from this airport, or
+ - what airports they do not travel to from this airport.
+
+.
+
+To compensate for this complexity, the airline sets the price of every direct flight between two airports to the same amount.
+
+Can you write a program that, given the descriptions of all the flights the airline provides, determine the minimum number of flights required to travel from airport $s$ to airport $t$?
+
+-----Input-----
+The first line of input contains an integer $1 \le N \le 10^5$, the number of airports, and the two integers $s$ and $t$ ($0 \le s, t < N$, $s \neq t$).
+
+The next $N$ lines each describe the outgoing flights of an airport, starting with airport $0$. The line starts with a letter. If this letter is N, you will get a list of all destination airports from this airport. If this letter is C, you will get a list of all airports that are not destinations from this airport.
+
+Following this letter is an integer $m$, the number of airports in the list. Finally, there will $m$ unique numbers $a_ i$ ($0 \le a_ i < N$) on the line, the airports in the list.
+
+The sum of $m$ over all airports is at most $2 \cdot 10^5$.
+
+-----Output-----
+Output a single integer, the minimum number of flights required to travel from airport $s$ to airport $t$.
+
+If there is no path, output “impossible”.
+
+-----Explanation of Sample Input 1-----
+The only flight from airport $0$ is to airport $2$. From airport $2$, there is also only a single flight going to airport $3$. From airport $3$, you can fly to any airport except airport $1$.
+
+Since no airport has a direct flight to airport $1$, there cannot be any possible flight plan from airport $0$ to $1$, so the answer is impossible
+
+-----Explanation of Sample Input 2-----
+The only flight from airport $0$ is to airport $2$. From airport $2$, there is also only a single flight going to airport $3$. From airport $3$, you can fly to any airport except airport $0$.
+
+Thus, there is a flight plan from $0$ to $1$ going from $0$ to $2$, to $3$, to $1$, which results in 3 flights. This is also the shortest flight plan.
+
+-----Examples-----
+Sample Input:
+4 0 1
+N 1 2
+C 1 2
+N 1 3
+C 1 1
+Sample Output:
+impossible

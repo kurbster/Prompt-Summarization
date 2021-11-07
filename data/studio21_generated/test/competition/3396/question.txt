@@ -1,0 +1,15 @@
+A farmer has $n$ goats. Coincidentally, he also has $n$ fixed posts in a field where he wants the goats to graze. He wants to tie each goat to a post with a length of rope. He wants to give each goat as much leeway as possible – but, goat ropes are notorious for getting tangled, so he cannot allow any goat to be able to wander into another goat’s territory. What is the maximum amount of rope he could possibly use?
+
+-----Input-----
+There will be a single test case in the input. This test case will begin with an integer $n$ ($2 \le n \le 50$), indicating the number of posts in the field. On each of the next $n$ lines will be a pair of integers, $x$ and $y$ ($0 \le x \le 1000$, $0 \le y \le 1000$) which indicate the cartesian coordinates (in meters) of that post in the field. No two posts will be in the same position. You may assume that the field is large enough that the goats will never encounter its border.
+
+-----Output-----
+Output a single floating point number, which indicates the maximum amount of rope that the farmer could possibly use, in meters. Output this value with exactly two decimal places, rounded to the nearest value.
+
+-----Examples-----
+Sample Input:
+2
+250 250
+250 750
+Sample Output:
+500.00

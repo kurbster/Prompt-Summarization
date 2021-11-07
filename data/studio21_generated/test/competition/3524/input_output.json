@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "aabcad\naba\nacd\n",
+        "aabcad\nacb\naad\n",
+        "aabcad\nacb\nacd\n"
+    ],
+    "outputs": [
+        "yes\n",
+        "no\n",
+        "no\n"
+    ]
+}

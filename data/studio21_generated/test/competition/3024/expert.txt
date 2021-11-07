@@ -1,0 +1,2 @@
+ You are given a string s of up to $10^6$ digits. Find the maximal $k$ for which it is possible to partition s into $k$ consecutive contiguous substrings, such that the $k$ parts form a palindrome. 
+-----Input-----  - A nonempty string of up to $10^6$ digits. -----Output-----  - Print the maximal value of $k$ on a single line. -----Examples----- Sample Input 1: 652526 Sample Output 1: 4 Sample Input 2: 12121131221 Sample Output 2: 7 Sample Input 3: 123456789 Sample Output 3: 1
