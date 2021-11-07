@@ -1,0 +1,24 @@
+version: 1
+formatters:
+  simple:
+    format: '%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)'
+    datefmt: '%x %I:%M:%S %p'
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: simple
+    mode: w
+loggers:
+  apiLogger:
+    level: DEBUG
+    handlers: [console, file]
+    propagate: no
+root:
+  level: DEBUG
+  handlers: [console, file]

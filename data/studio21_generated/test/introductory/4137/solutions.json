@@ -1,1 +1,0 @@
-["import re\n\ns = input()\nops = re.split('([+-])', s)\nassert len(ops) % 2 == 1\nops = ['+'] + ops\n\ntotal = 0\nfor i in range(0, len(ops), 2):\n    if ops[i] == '+':\n        total += int(ops[i+1])\n    elif ops[i] == '-':\n        total -= int(ops[i+1])\n    else:\n        assert False\n\nfor b in bytes(str(total), 'ascii'):\n    print('+' * b + '.>')\n"]

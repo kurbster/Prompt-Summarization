@@ -1,14 +1,16 @@
-token: YOUR-API-TOKEN-HERE
-model: jumbo # should be large or jumbo
+model: large # should be large or jumbo
 header: The following paragraphs contain computer science jargon. Rewrite them using simple words.
 splitFile: split.txt
 promptFile: prompt.yaml
 numPrompts: 5
 summaryType: expert
+ignoreIntro: False
+summaryPrefix: "Simple:"
+originalPrefix: "Jargon:"
 
 apiParams:
     topP: 1.0
-    maxTokens: 100
+    maxTokens: 200
     numResults: 1
     temperature: 0.5
     topKReturn: 0
