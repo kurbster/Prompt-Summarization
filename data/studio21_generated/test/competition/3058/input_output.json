@@ -1,0 +1,14 @@
+{
+    "inputs": [
+        "5\nAACCMMAA\nACA\nMM\nACMAA\nAA\nA\n",
+        "3\nACMA\nACM\nACA\nAMA\n",
+        "1\nAM\nMA\n",
+        "4\nAAAAAA\nAA\nAAA\nA\nAAAAA\n"
+    ],
+    "outputs": [
+        "1 4\nMM\nA\nAA\nACA\nACMAA\n",
+        "impossible\n",
+        "impossible\n",
+        "0 4\nA\nAA\nAAA\nAAAAA\n"
+    ]
+}

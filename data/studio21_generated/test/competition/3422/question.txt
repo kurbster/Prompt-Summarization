@@ -1,0 +1,36 @@
+You may be under the impression that treasure maps originate from pirates, who create maps after burying their treasure so that they will later have a way to retrieve their stolen fortunes. In reality, it is extremely rare for pirates to bury treasure; there are only a few such documented cases.
+
+As it turns out, the vast majority of treasure maps are published by the Mapping Association of Plunder and Spoils (MAPS), a secretive group of people responsible for curating reports of lost or stolen treasure and then making and selling corresponding treasure maps.
+
+Over the years, MAPS has become increasingly creative with the structure of its treasure maps, so these maps no longer resemble a stereotypical treasure map. In fact, they no longer come in one piece; treasure hunters must assemble a map from multiple pieces before being able to use it to locate buried treasure.
+
+Formally, an assembled treasure map is a rectangular grid of squares, where each square indicates the rectilinear distance (sum of horizontal distance and vertical distance) to the square containing the treasure, modulo $10$.
+
+Given a list of smaller rectangular map pieces, you must rearrange the pieces to reconstruct a valid rectangular map, rotating (but not flipping) the pieces as needed. Every map piece must be used exactly once in the reconstructed map, no two map pieces may overlap, and the reconstructed map must not contain any gaps.
+
+-----Input-----
+The first line contains an integer, $N$ ($2\leq N\leq 8$), indicating the number of rectangular map pieces. This is followed by a series of lines describing each map piece. The description of the $i$-th piece ($1\leq i\leq N$) begins with a line containing two space-separated integers, $W_ i$ and $H_ i$, giving the $i$-th piece’s width and height, respectively, where $1\leq W_ i, H_ i\leq 10$. This is followed by $H_ i$ lines of $W_ i$ characters each, where each character represents one square of the map piece (using a digit from $0$ to $9$, inclusive). It is guaranteed that one of the map pieces contains a square corresponding to the location of the treasure.
+
+-----Output-----
+Output a line containing $W$ and $H$, separated by a single space, where $W$ is the width and $H$ is the height of a valid reconstructed map (such a reconstruction will always be possible). Then output the reconstructed map as $H$ lines of $W$ characters each. (In the event that there are multiple possible maps that can be produced, it suffices to output any one of them, in any of the $4$ possible rotations.) On the following line, output $W$ hyphen (‘-’) characters. Then output $H$ lines of $W$ characters each, where each character is a digit between $1$ and $N$, inclusive, that is the ($1$-based) index of the map piece to which the corresponding square in the reconstructed map belongs. (For example, the digit in the bottom-left corner of the first sample output is $1$ because the corresponding digit in the reconstructed map (which happens to be $2$) belongs to the $1$st map piece.)
+
+-----Examples-----
+Sample Input:
+3
+4 1
+2123
+2 2
+21
+10
+2 2
+23
+12
+Sample Output:
+4 3
+2123
+1012
+2123
+----
+2233
+2233
+1111

@@ -1,0 +1,31 @@
+Each resident of a particular town is a member of zero or more clubs and also a member of exactly one political party. Each club is to appoint one of its members to represent it on the town council so that the number of council members belonging to any given party does not equal or exceed half the membership of the council. The same person may not represent two clubs; that is there must be a 1-1 relationship between clubs and council members. Your job is to select the council members subject to these constraints.
+
+-----Input-----
+In the first line of input there will be an integer $T \le 12$, giving the number of test cases.
+
+Each of the $T$ testcases begins with a line with the number of residents $n$, $1 \leq n \leq 1000$. The next $n$ lines each contain a resident, a party, the number of clubs the resident belongs to (at most $110$) and the names of such clubs. Each resident appears in exactly one input line.
+
+-----Output-----
+For each test case, follow the following format: Each line should name a council member followed by the club represented by the member. If several answers are possible, any will do. If no council can be formed, print “Impossible.” in a line. There will be a blank line in between two test cases.
+
+-----Examples-----
+Sample Input:
+2
+4
+fred dinosaur 2 jets jetsons
+john rhinocerous 2 jets rockets
+mary rhinocerous 2 jetsons rockets
+ruth platypus 1 rockets
+4
+fred dinosaur 2 jets jetsons
+john rhinocerous 2 jets rockets
+mary rhinocerous 2 jetsons rockets
+ruth platypus 1 rockets
+Sample Output:
+fred jetsons
+john jets
+ruth rockets
+
+fred jetsons
+john jets
+ruth rockets

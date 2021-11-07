@@ -1,0 +1,29 @@
+It is a well-known fact that if you mix up the letters of a word, while leaving the first and last letters in their places, words still remain readable. For example, the sentence “tihs snetncee mkaes prfecet sesne”, makes perfect sense to most people. If you remove all spaces from a sentence, it still remains perfectly readable, see for example: “thissentencemakesperfectsense”, however if you combine these two things, first shuffling, then removing spaces, things get hard. The following sentence is harder to decipher: “tihssnetnceemkaesprfecetsesne”. You are given a sentence in the last form, together with a dictionary of valid words and are asked to decipher the text.
+
+-----Input-----
+ - One line with a string $s$: the sentence to decipher. The sentence consists of lowercase letters and has a length of at least $1$ and at most $1000$ characters.
+ - One line with an integer $n$ with $1 \le n \le 10000$: the number of words in the dictionary.
+ - $n$ lines with one word each. A word consists of lowercase letters and has a length of at least $1$ and at most $100$ characters. All the words are unique.
+
+-----Output-----
+Output one line with the deciphered sentence, if it is possible to uniquely decipher it. Otherwise “impossible” or “ambiguous”, depending on which is the case.
+
+-----Examples-----
+Sample Input 1:
+tihssnetnceemkaesprfecetsesne
+5
+makes
+perfect
+sense
+sentence
+this
+Sample Output 1:
+this sentence makes perfect sense
+
+Sample Input 2:
+hitehre
+2
+there
+hello
+Sample Output 2:
+impossible

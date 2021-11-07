@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "6\n1\na\na\n2\nab\nba\n3\nabc\ncab\n3\nabc\ncba\n4\nabab\nbaba\n4\nabcc\naabc\n",
+    "1\n1\na\na\n",
+    "3\n2\naa\naa\n2\nab\nab\n2\nab\nba\n",
+    "16\n3\naaa\naaa\n3\naab\naab\n3\naab\nbaa\n3\naab\naba\n3\naba\naba\n3\naba\nbaa\n3\naba\naab\n3\nabb\nabb\n3\nabb\nbab\n3\nabb\nbba\n3\nabc\nabc\n3\nabc\nbac\n3\nabc\ncab\n3\nabc\nacb\n3\nabc\ncba\n3\nabc\nbca\n"
+  ],
+  "outputs": [
+    "0\n1\n1\n2\n1\n-1\n",
+    "0\n",
+    "0\n0\n1\n",
+    "0\n0\n1\n1\n0\n1\n1\n0\n1\n2\n0\n1\n1\n1\n2\n2\n"
+  ]
+}

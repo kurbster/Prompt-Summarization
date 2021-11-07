@@ -1,0 +1,22 @@
+There is an old adage about opening a can of worms. A lesser known adage is one about shooting a can of exploding worms with a BB gun.
+
+Imagine we place some cans of exploding worms on a long, straight fence. When a can is shot, all of the worms inside will explode. Different types of worms have different blast radii. Each can contains only one kind of worm.
+
+When a can explodes, if another can is in the blast radius, then that can will also explode, possibly creating a chain reaction. Each can explodes only once. This process continues until all explosions stop.
+
+For each can, suppose that it is the only can shot. How many cans in total will explode?
+
+-----Input-----
+There will be a single test case in the input. This test case will begin with a line with a single integer $n$ ($1 \le n \le 100000$) representing the number of cans on the fence. Each of the next $n$ lines will have two integers $x$ ($-10^9 \le x \le 10^9$) and $r$ ($1 \le r \le 10^9$), where $x$ is the location of the can on the fence and $r$ is the blast radius. No two cans will occupy the same location.
+
+-----Output-----
+Print $n$ integers on a single line separated by single spaces. The $i^{th}$ integer represents the number of cans that will explode if the $i^{th}$ can is the one that is shot.
+
+-----Examples-----
+Sample Input:
+3
+4 3
+-10 9
+-2 3
+Sample Output:
+1 2 1

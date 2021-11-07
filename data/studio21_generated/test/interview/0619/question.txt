@@ -1,0 +1,39 @@
+Soon after the Chunga-Changa island was discovered, it started to acquire some forms of civilization and even market economy. A new currency arose, colloquially called "chizhik". One has to pay in chizhiks to buy a coconut now.
+
+Sasha and Masha are about to buy some coconuts which are sold at price $z$ chizhiks per coconut. Sasha has $x$ chizhiks, Masha has $y$ chizhiks. Each girl will buy as many coconuts as she can using only her money. This way each girl will buy an integer non-negative number of coconuts.
+
+The girls discussed their plans and found that the total number of coconuts they buy can increase (or decrease) if one of them gives several chizhiks to the other girl. The chizhiks can't be split in parts, so the girls can only exchange with integer number of chizhiks.
+
+Consider the following example. Suppose Sasha has $5$ chizhiks, Masha has $4$ chizhiks, and the price for one coconut be $3$ chizhiks. If the girls don't exchange with chizhiks, they will buy $1 + 1 = 2$ coconuts. However, if, for example, Masha gives Sasha one chizhik, then Sasha will have $6$ chizhiks, Masha will have $3$ chizhiks, and the girls will buy $2 + 1 = 3$ coconuts. 
+
+It is not that easy to live on the island now, so Sasha and Mash want to exchange with chizhiks in such a way that they will buy the maximum possible number of coconuts. Nobody wants to have a debt, so among all possible ways to buy the maximum possible number of coconuts find such a way that minimizes the number of chizhiks one girl gives to the other (it is not important who will be the person giving the chizhiks).
+
+
+-----Input-----
+
+The first line contains three integers $x$, $y$ and $z$ ($0 \le x, y \le 10^{18}$, $1 \le z \le 10^{18}$) — the number of chizhics Sasha has, the number of chizhics Masha has and the price of a coconut. 
+
+
+-----Output-----
+
+Print two integers: the maximum possible number of coconuts the girls can buy and the minimum number of chizhiks one girl has to give to the other.
+
+
+-----Examples-----
+Input
+5 4 3
+
+Output
+3 1
+
+Input
+6 8 2
+
+Output
+7 0
+
+
+
+-----Note-----
+
+The first example is described in the statement. In the second example the optimal solution is to dot exchange any chizhiks. The girls will buy $3 + 4 = 7$ coconuts.

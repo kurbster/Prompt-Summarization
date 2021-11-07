@@ -1,0 +1,2 @@
+ Your task is to guess all integers A_1, A_2, ..., A_N correctly. 
+-----Input----- Input is given from Standard Input in the following format: N M X_1 Y_1 Z_1 X_2 Y_2 Z_2 \vdots X_M Y_M Z_M -----Output----- Print the minimum total cost required to determine all of A_1, A_2, ..., A_N. -----Sample Input----- 3 1 1 2 1 -----Sample Output----- 2 You can determine all of A_1, A_2, A_3 by using the magic for the first and third cards.

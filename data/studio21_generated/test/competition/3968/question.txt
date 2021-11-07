@@ -1,0 +1,67 @@
+A deadly virus is sweeping across the globe! You are part of an elite group of programmers tasked with tracking the spread of the virus. You have been given the timestamps of people entering and exiting a room. Now your job is to determine how the virus will spread. Hurry up, time is of the essence!
+
+There are $N$ people in this scenario, numbered from $1$ to $N$. Every day, the $i$th person enters and exits the room at time $s_ i$ and $t_ i$ respectively. At the beginning of the $1$st day, there are $C$ people infected with the virus, whose indices will be given in the input.
+
+When an infected person comes into contact with an uninfected person, the uninfected person will become infected at the start of the next day. Hence, they can only start spreading the infection from the next day onward. An infected person will always remain infected.
+
+Two people are in contact with each other if they are in the room at the same time. This includes cases where one person leaves and another person enters at the exact same time. Also, if a person enters and exits the room at the same time ($s_ i$ = $t_ i$), they are considered to be in contact with everyone in the room at that time. Due to safe-distancing requirements, no more than $50$ people can be in the room at one time.
+
+Your job is to print the indices of the people who will be infected after $D$ days. This includes people who came into contact with an infected person on the $D$th day but will only become infected at the start of the $D+1$th day.
+
+Given below are the visualizations for sample inputs $1$ and $2$.
+
+Note: In sample $2$, person $2$ and $4$ will get infected after day $1$. They can only spread the infection to person $3$ and $5$ on day $2$. For $D = 1$, the infected people are $1$, $2$, $4$. If $D$ had been $2$, person $3$ and $5$ would have also been infected.
+
+-----Input-----
+The first line contains two integers, $1 \le N \le 20000$, and $1 \le D \le 50000$, the number of people and number of days respectively.
+
+The second line contains an integer $1 \le C \le N$, the initial number of infected people, followed by $C$ integers, the indices of the infected people. Indices are from $1$ to $N$.
+
+The next $N$ lines describe the entry and exit times of the $N$ people, in order from $1$ to $N$. Each line contains two integers, $s_ i$ and $t_ i$, the entry and exit time respectively. $0 \le s_ i \le t_ i \le 10^9$.
+
+-----Output-----
+Print a list of indices of people infected after $D$ days, in ascending order. The indices should be all on one line, separated by a single space.
+
+-----Subtasks-----
+ - ($40$ Points): $N \le 5000$. $D = 1$, $C = 1$. Initially, only the person with index $1$ is infected.
+ - ($30$ Points): $N \le 5000$, $D \le 5$.
+ - ($20$ Points): $N \le 5000$.
+ - ($10$ Points): No additional constraint.
+
+-----Examples-----
+Sample Input 1:
+9 1
+1 1
+5 10
+1 3
+11 14
+5 5
+10 10
+3 6
+6 12
+7 7
+4 11
+Sample Output 1:
+1 4 5 6 7 8 9
+
+Sample Input 2:
+5 1
+1 1
+3 3
+2 3
+1 2
+3 4
+4 5
+Sample Output 2:
+1 2 4
+
+Sample Input 3:
+5 1
+1 1
+3 3
+3 3
+4 4
+4 4
+5 5
+Sample Output 3:
+1 2

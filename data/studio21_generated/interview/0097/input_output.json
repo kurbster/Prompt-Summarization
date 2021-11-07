@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "3\nAZAMON APPLE\nAZAMON AAAAAAAAAAALIBABA\nAPPLE BANANA\n"
+  ],
+  "outputs": [
+    "AAZMON\n---\nAEPLP\n"
+  ]
+}

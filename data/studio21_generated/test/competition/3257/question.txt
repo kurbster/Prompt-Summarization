@@ -1,0 +1,20 @@
+The Algebraist Carpet Manufacturing (ACM) group likes to produce area carpets based upon various geometric figures. The 2014 ACM carpets are all equilateral triangles. Unfortunately, due to a manufacturing defect, some of the carpets are not as stain-resistant as intended. The ACM group is offering to replace each defective carpet that contains a stain.
+
+The web form used to report the stained carpet requests the three distances that the stain is away from the corners of the rug. Based upon these three numbers, you need to compute the area of the rug that is to be sent to the customer, or indicate that the customer’s carpet doesn’t come from ACM.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. Each test case will consist of a single line with three floating point numbers $a$, $b$ and $c$ ($0 < a,b,c \le 100$, at most $10$ digits after the decimal point) representing the distances from the stain to each of the three corners of the carpet. There will be a single space between $a$ and $b$, and between $b$ and $c$.
+
+-----Output-----
+Output a single line with a single floating point number. If there is a carpet that satisfies the constraints, output the area of this carpet. If not, output -1. The output should have an absolute error of at most $10^{-3}$.
+
+-----Examples-----
+Sample Input 1:
+1 1 1.732050
+Sample Output 1:
+1.732050808
+
+Sample Input 2:
+1 1 3.0
+Sample Output 2:
+-1

@@ -1,0 +1,75 @@
+Alice got many presents these days. So she decided to pack them into boxes and send them to her friends.
+
+There are $n$ kinds of presents. Presents of one kind are identical (i.e. there is no way to distinguish two gifts of the same kind). Presents of different kinds are different (i.e. that is, two gifts of different kinds are distinguishable). The number of presents of each kind, that Alice has is very big, so we can consider Alice has an infinite number of gifts of each kind.
+
+Also, there are $m$ boxes. All of them are for different people, so they are pairwise distinct (consider that the names of $m$ friends are written on the boxes). For example, putting the first kind of present into the first box but not into the second box, is different from putting the first kind of present into the second box but not into the first box.
+
+Alice wants to pack presents with the following rules:  She won't pack more than one present of each kind into the same box, so each box should contain presents of different kinds (i.e. each box contains a subset of $n$ kinds, empty boxes are allowed);  For each kind at least one present should be packed into some box. 
+
+Now Alice wants to know how many different ways to pack the presents exists. Please, help her and calculate this number. Since the answer can be huge, output it by modulo $10^9+7$.
+
+See examples and their notes for clarification.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $m$, separated by spaces ($1 \leq n,m \leq 10^9$) — the number of kinds of presents and the number of boxes that Alice has.
+
+
+-----Output-----
+
+Print one integer  — the number of ways to pack the presents with Alice's rules, calculated by modulo $10^9+7$
+
+
+-----Examples-----
+Input
+1 3
+
+Output
+7
+Input
+2 2
+
+Output
+9
+
+
+-----Note-----
+
+In the first example, there are seven ways to pack presents:
+
+$\{1\}\{\}\{\}$
+
+$\{\}\{1\}\{\}$
+
+$\{\}\{\}\{1\}$
+
+$\{1\}\{1\}\{\}$
+
+$\{\}\{1\}\{1\}$
+
+$\{1\}\{\}\{1\}$
+
+$\{1\}\{1\}\{1\}$
+
+In the second example there are nine ways to pack presents:
+
+$\{\}\{1,2\}$
+
+$\{1\}\{2\}$
+
+$\{1\}\{1,2\}$
+
+$\{2\}\{1\}$
+
+$\{2\}\{1,2\}$
+
+$\{1,2\}\{\}$
+
+$\{1,2\}\{1\}$
+
+$\{1,2\}\{2\}$
+
+$\{1,2\}\{1,2\}$
+
+For example, the way $\{2\}\{2\}$ is wrong, because presents of the first kind should be used in the least one box.

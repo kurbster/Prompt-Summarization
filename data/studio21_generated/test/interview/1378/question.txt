@@ -1,0 +1,36 @@
+Bill is a famous mathematician in BubbleLand. Thanks to his revolutionary math discoveries he was able to make enough money to build a beautiful house. Unfortunately, for not paying property tax on time, court decided to punish Bill by making him lose a part of his property.
+
+Bill’s property can be observed as a convex regular 2n-sided polygon A_0 A_1... A_2n - 1 A_2n,  A_2n =  A_0, with sides of the exactly 1 meter in length. 
+
+Court rules for removing part of his property are as follows:  Split every edge A_{k} A_{k} + 1,  k = 0... 2n - 1 in n equal parts of size 1 / n with points P_0, P_1, ..., P_{n} - 1  On every edge A_2k A_2k + 1,  k = 0... n - 1 court will choose one point B_2k =  P_{i} for some i = 0, ...,  n - 1 such that $\cup_{i = 0}^{n - 1} B_{2i} = \cup_{i = 0}^{n - 1} P_{i}$  On every edge A_2k + 1A_2k + 2,  k = 0...n - 1 Bill will choose one point B_2k + 1 =  P_{i} for some i = 0, ...,  n - 1 such that $\cup_{i = 0}^{n - 1} B_{2 i + 1} = \cup_{i = 0}^{n - 1} P_{i}$  Bill gets to keep property inside of 2n-sided polygon B_0 B_1... B_2n - 1 
+
+Luckily, Bill found out which B_2k points the court chose. Even though he is a great mathematician, his house is very big and he has a hard time calculating. Therefore, he is asking you to help him choose points so he maximizes area of property he can keep.
+
+
+-----Input-----
+
+The first line contains one integer number n (2 ≤ n ≤ 50000), representing number of edges of 2n-sided polygon.
+
+The second line contains n distinct integer numbers B_2k (0 ≤ B_2k ≤ n - 1,  k = 0... n - 1) separated by a single space, representing points the court chose. If B_2k = i, the court chose point P_{i} on side A_2k A_2k + 1.
+
+
+-----Output-----
+
+Output contains n distinct integers separated by a single space representing points B_1, B_3, ..., B_2n - 1 Bill should choose in order to maximize the property area. If there are multiple solutions that maximize the area, return any of them.
+
+
+-----Example-----
+Input
+3
+0 1 2
+
+Output
+0 2 1
+
+
+
+-----Note-----
+
+To maximize area Bill should choose points: B_1 = P_0, B_3 = P_2, B_5 = P_1
+
+[Image]

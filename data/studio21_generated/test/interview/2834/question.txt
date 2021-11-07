@@ -1,0 +1,18 @@
+Digits $4$ and $7$ are lucky, while all others are unlucky. An integer is lucky if it contains only lucky digits in decimal notation. We would like to know the $K$-th lucky positive integer.
+
+-----Input-----
+The first and only line of input contains a positive integer $K$ ($1 \le K \le 10^9$).
+
+-----Output-----
+The first and only line of output must contain the $K$-th lucky positive integer.
+
+-----Examples-----
+Sample Input 1:
+1
+Sample Output 1:
+4
+
+Sample Input 2:
+2
+Sample Output 2:
+7

@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 2\nXO\nOX\nXO\nOX\nOX\nOO\nXO\nOO\n",
+        "2 4\nXXXX\nXXXX\nXOOO\nOOOO\n"
+    ],
+    "outputs": [
+        "1\n",
+        "0\n"
+    ]
+}

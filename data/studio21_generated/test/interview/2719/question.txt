@@ -1,0 +1,79 @@
+Joana Vasconcelos is a Portuguese artist who uses everyday objects in her creations, like electric irons or plastic cutlery. She is an inspiration to Ana, who wants to make ceiling hanging sculptures with straight knitting needles and balls of wool. For safety reasons, there will be a ball at each end of each needle. Knitting needles vary in colour, length and thickness (to allow intersections of needles).
+
+Sculptures are to be exhibited in room corners, which provide a 3D Cartesian coordinate system, with many lamps on the ceiling. Sculpture designs are made with the coordinates of the centres of the balls of wool in which knitting needles are stuck. That is, each needle $N$ is represented by a set of two different triples: $N=\{ (x,y,z),(x’,y’,z’)\} $.
+
+Ana dislikes closed chains. A true closed chain is a sequence of $k$ distinct needles, $N_1, N_2, \ldots , N_ k$ (for some $k\geq 3$), such that:
+ - $N_1 = \{ (x_1,y_1,z_1), (x_2,y_2,z_2)\} , \; N_2 = \{ (x_2,y_2,z_2), (x_3,y_3,z_3)\} , \; \ldots , \\ N_ k = \{ (x_ k,y_ k,z_ k), (x_{k+1},y_{k+1},z_{k+1})\} , \; \mbox{ and } \; (x_{k+1},y_{k+1},z_{k+1})=(x_1,y_1,z_1)$
+
+But her dislike of closed chains is so extreme that the shadow of the sculpture on the floor has to be free of “floor closed chains”. Given any needle $N=\{ (x,y,z),(x’,y’,z’)\} $, let $N^{\downarrow } = \{ (x,y),(x’,y’)\} $ denote the shadow of needle $N$ on the floor. For Ana (who is an artist), a floor closed chain is also a sequence of $k$ distinct needles, $N_1, N_2, \ldots , N_ k$ (for some $k\geq 3$), such that:
+ - $N^{\downarrow }_ i \neq N^{\downarrow }_ j$, for every $1 \leq i < j \leq k \; $ (the $k$ needle shadows are all distinct);
+ - $N^{\downarrow }_1 = \{ (x_1,y_1), (x_2,y_2)\} , \; N^{\downarrow }_2 = \{ (x_2,y_2), (x_3,y_3)\} , \; \ldots , \\ N^{\downarrow }_ k = \{ (x_ k,y_ k), (x_{k+1},y_{k+1})\} , \; \mbox{ and } \; (x_{k+1},y_{k+1})=(x_1,y_1)$
+
+Consider the sculpture depicted in the figure, which has the following four knitting needles:\[ \begin{array}{ll} A = \{ (12,12,8), (10,5,11)\} , & B = \{ (12,12,8), (4,14,21)\} , \\ C = \{ (12,12,8), (12,20,8)\} , & D = \{ (4,14,21), (10,5,21)\} . \end{array} \]
+
+This structure is not free of closed chains because, although there is no true closed chain, the sequence of needles $A, B, D$ is a floor closed chain.
+
+-----Task-----
+Write a program that, given the knitting needles of a sculpture, determines whether there is a true or a floor closed chain in the sculpture.
+
+-----Input-----
+The first line of the input has one integer, $K$, which is the number of knitting needles in the sculpture. Each of the following $K$ lines contains six integers, $x_1$, $y_1$, $z_1$, $x_2$, $y_2$, and $z_2$, which indicate that $\{ (x_1,y_1,z_1), (x_2,y_2,z_2)\} $ is the set of triples of a needle. Any two distinct needles are represented by different sets of triples.
+
+-----Constraints-----
+
+$1$
+
+$\leq $
+
+$K$
+
+$\leq $
+
+$50000$
+
+Number of knitting needles
+
+$1$
+
+$\leq $
+
+$x_ i, y_ i, z_ i$
+
+$<$
+
+$1000$
+
+Coordinates of each triple
+
+-----Output-----
+The output has two lines, each one with a string. The string in the first line is: True closed chains, if there is some true closed chain in the sculpture; No true closed chains, otherwise. The string in the second line is: Floor closed chains, if there is some floor closed chain in the sculpture; No floor closed chains, otherwise.
+
+-----Examples-----
+Sample Input 1:
+4
+12 12 8 10 5 11
+12 12 8 4 14 21
+12 12 8 12 20 8
+4 14 21 10 5 21
+Sample Output 1:
+No true closed chains
+Floor closed chains
+
+Sample Input 2:
+4
+1 1 1 2 2 2
+2 2 2 1 5 5
+9 4 4 9 4 2
+9 4 4 9 9 4
+Sample Output 2:
+No true closed chains
+No floor closed chains
+
+Sample Input 3:
+3
+50 50 50 100 100 100
+100 100 100 50 50 90
+50 50 90 50 50 50
+Sample Output 3:
+True closed chains
+No floor closed chains

@@ -1,0 +1,34 @@
+The Swedish Military Intelligence and Security Service (Militära underrättelse- och säkerhetstjänsten, MUST) is trying to locate a submarine in the Stockholm archipelago. They have been intercepting encrypted messages that they believe contain information on the location and route of the submarine. Now all that remains is to decrypt these messages. 
+
+From previous intelligence operations (the details of which we are not at liberty to reveal to you), it is known that the messages are likely encrypted with a simple substitution cipher. In other words, every letter is replaced with another letter from the alphabet (a letter could also remain unchanged). So for instance, it could be that every ‘a’ gets turned into a ‘k’, every ‘b’ remains a ‘b’, every ‘c’ becomes an ‘a’, and so on. Obviously, different letters in the original message become different letters in the encrypted one, otherwise decryption would not be unique.
+
+Alas it is not known which letters are substituted for which other letters. However, a suspicious person in scuba gear has been apprehended and was found carrying a note with what appears to be a fragment of a decrypted message. If this fragment could be matched to an encrypted message, the code can be broken!
+
+Can you help MUST find out if the message fragment could be part of a given encrypted message, and if so, in how many positions?
+
+-----Input-----
+The input consists of:
+ - one line with a string consisting of at least $1$ and at most $250000$ lowercase letters, the encrypted message;
+ - one line with a string consisting of at least $1$ and at most $250000$ lowercase letters, the decrypted fragment.
+
+-----Output-----
+If there is a unique position in the encrypted message where the message fragment could occur, output the substring of the encrypted message that could correspond to the fragment. Otherwise, output the number of positions in the encrypted message where the fragment could occur.
+
+-----Examples-----
+Sample Input 1:
+secretmessage
+boot
+Sample Output 1:
+essa
+
+Sample Input 2:
+treetreetreetree
+wood
+Sample Output 2:
+3
+
+Sample Input 3:
+oranges
+apples
+Sample Output 3:
+0

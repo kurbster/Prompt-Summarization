@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2\n4\nfred dinosaur 2 jets jetsons\njohn rhinocerous 2 jets rockets\nmary rhinocerous 2 jetsons rockets\nruth platypus 1 rockets\n4\nfred dinosaur 2 jets jetsons\njohn rhinocerous 2 jets rockets\nmary rhinocerous 2 jetsons rockets\nruth platypus 1 rockets\n",
+        "1\n1\nfred dinosaur 2 jets jetsons\n"
+    ],
+    "outputs": [
+        "fred jetsons\njohn jets\nruth rockets\n\nfred jetsons\njohn jets\nruth rockets\n",
+        "Impossible.\n"
+    ]
+}

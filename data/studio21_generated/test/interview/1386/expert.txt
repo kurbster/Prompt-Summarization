@@ -1,0 +1,2 @@
+ You are given $w \times h$ tiles. You need to  arrange them in a square. Each tile can be rotated in one of four ways. Each tile must be adjacent to another tile. No two tiles may share an edge. 
+-----Input----- The only line contains two space separated integers $w$, $h$ ($1 \leq w,h \leq 1\,000$) — the width and height of the kitchen, measured in tiles. -----Output----- Output a single integer $n$ — the remainder of the number of tilings when divided by $998244353$. -----Examples----- Input 2 2 Output 16 Input 2 4 Output 64

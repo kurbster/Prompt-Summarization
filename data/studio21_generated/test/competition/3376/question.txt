@@ -1,0 +1,48 @@
+Nudgémon GO is a game in which players should earn as much experience points (XP) as possible, by catching and evolving Nudgémon. You gain 100 XP for catching a Nudgémon and 500 XP for evolving a Nudgémon. Your friend has been playing this game a lot recently, but you believe that his strategy is not optimal.
+
+All Nudgémon are split into families, each of which has its own unique type of candy. The Nudgémon in a family are ranked from weakest to strongest and hence form a chain. Any Nudgémon that is not the strongest from its family can be evolved to the next ranked Nudgémon from the same family.
+
+Candies are a fundamental currency in the Nudgémon universe:
+ - When you catch a Nudgémon you earn 3 candies, all associated with the Nudgémon’s family.
+ - When you irreversibly transfer a Nudgémon away from your possession, you earn 1 candy associated with the Nudgémon’s family.
+
+Every evolution of a Nudgémon consumes a specific amount of its family’s kind of candy. Furthermore, the costs of evolutions along the family chain are non-decreasing, meaning that higher-ranked evolutions in the family will cost the same or more as lower ones.
+
+Here is an example of possible Nudgémon evolutions:
+
+
+Apart from making the developers money and nudging ’em all, the goal of this game is to earn as much XP as possible to level up the player’s character and be able to encounter stronger Nudgémon in the wild. As such, coinciding with the first goal, you can buy a Blessed Egg with real money in the game. This item allows you to double your earned XP for the next 30 minutes since activation, i.e. when the Egg is activated at time $e$ (in seconds since the start of the game), for any action taken on time $t$, you will earn double XP if and only if $e \leq t < e + 1800$.
+
+At the start of the game your friend received a single Blessed Egg. Unfortunately, he completely wasted it. You believe that it is better to only evolve Nudgémon while the Blessed Egg is active, otherwise it is a huge waste of resources! To prove your point to your friend, you took a log of all Nudgémon he caught with timestamps and decided to calculate the maximum amount of XP he could have had right now if he was strategic about when to activate his Blessed Egg and only evolved Nudgémon during the time it was active.
+
+-----Input-----
+The input consists of:
+ - one line containing an integer $f$ ($0 \leq f \leq 10^5$), the number of Nudgémon families;
+ - $f$ lines describing a family of Nudgémon, where each line consists of the following elements:
+ - an integer $s_ i$ ($1 \le s_ i \leq 10^5$), the number of Nudgémon in this family;
+ - $s_ i-1$ times the name of a Nudgémon, followed by an integer $c_ j$ ($1 \le c_ j \leq 10^5$), the amount of candies (of appropriate type) consumed by evolving this Nudgémon;
+ - the name of the strongest Nudgémon in this family;
+ - one line containing an integer $n$ ($0 \leq n \leq 4 \cdot 10^5$), the number of Nudgémon your friend caught;
+ - $n$ lines containing an integer $t_ i$ ($0 \leq t_ i \leq 10^9$) and a string $p_ i$, the time at which the Nudgémon was caught and the name of the caught Nudgémon.
+
+It is guaranteed that there are at most $10^5$ Nudgémon kinds ($\sum _{i} s_ i \leq 10^5$). The Nudgémon in each family are given in order of increasing rank, and thus the values of $c$ in one family are non-decreasing. Every Nudgémon name is a string of between $1$ and $20$ lowercase letters. The times $t_ i$ are non-decreasing (your friend is so quick he can catch multiple Nudgémon in a single second). No Nudgémon name appears more than once within a family or within more than one family, and all $n$ Nudgémon that are caught belong to one of the families.
+
+-----Output-----
+Output the maximum amount of XP your friend could have had at the current time had he activated his Blessed Egg at the optimal time and only evolved Nudgémon during the time it was active.
+
+-----Examples-----
+Sample Input:
+3
+3 caterpillar 3 pupa 7 butterfly
+3 dove 3 pigeon 7 aaabaaajss
+3 mouse 1 electromouse 5 rat
+7
+0 electromouse
+500 electromouse
+1000 electromouse
+1500 rat
+2000 aaabaaajss
+2500 pigeon
+3000 butterfly
+Sample Output:
+5100

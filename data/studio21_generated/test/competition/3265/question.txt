@@ -1,0 +1,33 @@
+Alice and Bob spend this summer planning next year’s summer vacation. They want to travel from the old city of A-town to the popular summer resort B-ville, but they haven’t yet decided which other places to visit en route. There are $N$ places to visit in total, numbered from $1$ to $N$. A-town is place number $1$ and B-ville is place number $N$. Some places are linked by one-directional connections; a pair of places can be linked by multiple such connections.
+
+Alice and Bob are currently in A-town. Each day they will decide where to travel next by choosing uniformly at random among the connections leaving their current place. Once they reach B-ville, they stop.
+
+Alice and Bob want to book their trip back on a day where they are in B-ville with $95\% $ probability. And they really mean exactly$95\% $ – no more, no less! There is a $10$ day window when train tickets are affordable; if their return trip does no occur within that window they might as well cancel the entire vacation.
+
+You are given a positive integer $L$ and have to find a number $T$ with $L \leq T \leq L + 9$ such that the probability of Alice and Bob being in B-ville after $T$ days is exactly $95\% $. If there is more than one valid $T$, report smallest one.
+
+-----Input-----
+The first line contains two integers $N$ and $L$, with $2 \leq N \leq 100$ and $1 \leq L \leq 10^6$. The following $N$ lines each contain $N$ integers. The $j$th integer on the $i$th line contains the number $a_{ij}$ of one-directional connections from place $i$ to place $j$, where $0 \leq a_{ij} \leq 10^9$.
+
+There are no connections from a place to itself. No connections leave B-ville (the $N$th place). All other places have at least one outgoing connection, so Alice and Bob will never be stuck.
+
+-----Output-----
+Print the integer $T$ as described above. If no solution exists, print $-1$.
+
+-----Examples-----
+Sample Input 1:
+3 1
+0 11 9
+1 0 10
+0 0 0
+Sample Output 1:
+2
+
+Sample Input 2:
+4 3
+0 1 0 19
+0 0 2 0
+0 5 0 3
+0 0 0 0
+Sample Output 2:
+-1

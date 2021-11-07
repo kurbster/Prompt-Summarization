@@ -1,0 +1,26 @@
+You are an experienced investor who is investing in multiple companies. At the end of the year you are expected to file your taxes, which requires you to track and report the total number of shares you held during any of your trading days during the year.
+
+The records you have kept are sorted by company: for each company, you have a list of notes stating how many shares of that company you owned on a given day.
+
+Your tax accountant has asked you to produce a list of the total number of shares across all companies you have held on each of the days on which you have traded and recorded your holdings.
+
+-----Input-----
+The first line of input contains an integer $C$ ($1 \le C \le 20$), the total number of companies of which you hold shares. Next will be $C$ blocks of records, one for each company.
+
+Each record block starts with an integer $K$ ($1 \le K \le 50$), which is the number of records you have kept for this company. This is followed by $K$ lines of input, each containing two integers $N$ ($1 \le N \le 1000$) and $D$ ($1 \le D \le 365$), denoting that you held $N$ shares of this company on day $D$. The days in the input may be specified in any order.
+
+-----Output-----
+Print, on a single line, for each day for which you have at least one record, the total number of shares held on that day. The share totals shall be printed in increasing order of trading days.
+
+-----Examples-----
+Sample Input:
+3
+2
+20 100
+100 10
+1
+150 50
+1
+150 100
+Sample Output:
+100 250 320

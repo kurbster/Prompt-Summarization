@@ -1,0 +1,78 @@
+The mayor of the Central Town wants to modernize Central Street, represented in this problem by the $(Ox)$ axis.
+
+On this street, there are $n$ antennas, numbered from $1$ to $n$. The $i$-th antenna lies on the position $x_i$ and has an initial scope of $s_i$: it covers all integer positions inside the interval $[x_i - s_i; x_i + s_i]$.
+
+It is possible to increment the scope of any antenna by $1$, this operation costs $1$ coin. We can do this operation as much as we want (multiple times on the same antenna if we want).
+
+To modernize the street, we need to make all integer positions from $1$ to $m$ inclusive covered by at least one antenna. Note that it is authorized to cover positions outside $[1; m]$, even if it's not required.
+
+What is the minimum amount of coins needed to achieve this modernization?
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $m$ ($1 \le n \le 80$ and $n \le m \le 100\ 000$).
+
+The $i$-th of the next $n$ lines contains two integers $x_i$ and $s_i$ ($1 \le x_i \le m$ and $0 \le s_i \le m$).
+
+On each position, there is at most one antenna (values $x_i$ are pairwise distinct).
+
+
+-----Output-----
+
+You have to output a single integer: the minimum amount of coins required to make all integer positions from $1$ to $m$ inclusive covered by at least one antenna.
+
+
+-----Examples-----
+Input
+3 595
+43 2
+300 4
+554 10
+
+Output
+281
+
+Input
+1 1
+1 1
+
+Output
+0
+
+Input
+2 50
+20 0
+3 1
+
+Output
+30
+
+Input
+5 240
+13 0
+50 25
+60 5
+155 70
+165 70
+
+Output
+26
+
+
+
+-----Note-----
+
+In the first example, here is a possible strategy:
+
+  Increase the scope of the first antenna by $40$, so that it becomes $2 + 40 = 42$. This antenna will cover interval $[43 - 42; 43 + 42]$ which is $[1; 85]$  Increase the scope of the second antenna by $210$, so that it becomes $4 + 210 = 214$. This antenna will cover interval $[300 - 214; 300 + 214]$, which is $[86; 514]$  Increase the scope of the third antenna by $31$, so that it becomes $10 + 31 = 41$. This antenna will cover interval $[554 - 41; 554 + 41]$, which is $[513; 595]$ 
+
+Total cost is $40 + 210 + 31 = 281$. We can prove that it's the minimum cost required to make all positions from $1$ to $595$ covered by at least one antenna.
+
+Note that positions $513$ and $514$ are in this solution covered by two different antennas, but it's not important.
+
+—
+
+In the second example, the first antenna already covers an interval $[0; 2]$ so we have nothing to do.
+
+Note that the only position that we needed to cover was position $1$; positions $0$ and $2$ are covered, but it's not important.

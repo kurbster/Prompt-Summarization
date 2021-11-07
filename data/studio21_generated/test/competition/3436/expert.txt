@@ -1,0 +1,2 @@
+ Given $x$ and $y$, calculate $F_{x, y}$. 
+-----Input----- The input consists of only a single line, containing $2$ integers $x$ and $y$ $(0 < x, y < 10^6)$. -----Output----- Print a single integer — the value of $F_{x, y}$, modulo $10^9 + 7$. -----Examples----- Sample Input: 2 2 Sample Output: 6

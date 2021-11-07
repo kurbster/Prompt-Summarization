@@ -1,0 +1,28 @@
+In a planet far far away, an intelligence agency plans to send some spies to the Earth to investigate the life there. In order to ensure the secret and secure of this scouting campaign, the agency gives a secret ID to each member.
+
+Each ID is a binary string of length $n$. To prevent enemies from infiltrating the agency, they choose a pattern $P$, which is a string of 1 and *, and decides that an ID is valid iff it satisfies this pattern $P$.
+
+A binary string $S = s_1 s_2 \ldots s_ n$ satisfies a pattern $P = p_1 p_2 \ldots p_ m$ iff any of these conditions holds:
+ - $m = n$, and for each valid index $i$, either $s_ i = 1$ or $p_ i = *$.
+ - $m < n$, and at least one substring of $S$ satisfies the pattern $P$.
+
+For example:
+ - Both strings 101 and 111 satisfy the pattern 1*1.
+ - These strings 0101110, 1110000 and 1010111 satisfy the pattern 1*1, since 101 and 111 are their substrings.
+ - The string 0100010 does not satisfy the pattern 1*1.
+
+The agency wants to know how many spies they can employ, if each member has a unique ID.
+
+-----Input-----
+ - The first line contains one integer $n$ $(1 \leq n \leq 50)$ — the length of a valid ID.
+ - The second line contains a string of at most $30$ characters 1 and *, where at least half of them are 1s — the pattern $P$ which all valid IDs must satisfy.
+
+-----Output-----
+Print a single integer — the maximum number of members in the agency, if each is assigned a unique valid ID.
+
+-----Examples-----
+Sample Input:
+10
+1
+Sample Output:
+1023

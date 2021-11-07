@@ -1,0 +1,10 @@
+{
+  "inputs": [
+    "6\n4 2\nbaba\n5 2\nbaacb\n5 3\nbaacb\n5 3\naaaaa\n6 4\naaxxzz\n7 1\nphoenix\n",
+    "9\n8 2\nchefspam\n11 7\nmonkeyeight\n8 2\nvcubingx\n6 1\namazed\n4 4\nhebs\n8 1\narolakiv\n9 7\nhidavidhu\n33 33\ngosubtovcubingxheneedssubscribers\n7 4\nhiimbad\n"
+  ],
+  "outputs": [
+    "ab\nabbc\nb\naa\nx\nehinopx\n",
+    "c\nm\nc\naademz\ns\naaiklorv\ni\nx\nh\n"
+  ]
+}

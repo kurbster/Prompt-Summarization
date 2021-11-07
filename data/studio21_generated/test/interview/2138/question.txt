@@ -1,0 +1,55 @@
+You are given a sequence of n positive integers d_1, d_2, ..., d_{n} (d_1 < d_2 < ... < d_{n}). Your task is to construct an undirected graph such that:
+
+  there are exactly d_{n} + 1 vertices;  there are no self-loops;  there are no multiple edges;  there are no more than 10^6 edges;  its degree set is equal to d. 
+
+Vertices should be numbered 1 through (d_{n} + 1).
+
+Degree sequence is an array a with length equal to the number of vertices in a graph such that a_{i} is the number of vertices adjacent to i-th vertex.
+
+Degree set is a sorted in increasing order sequence of all distinct values from the degree sequence.
+
+It is guaranteed that there exists such a graph that all the conditions hold, and it contains no more than 10^6 edges.
+
+Print the resulting graph.
+
+
+-----Input-----
+
+The first line contains one integer n (1 ≤ n ≤ 300) — the size of the degree set.
+
+The second line contains n integers d_1, d_2, ..., d_{n} (1 ≤ d_{i} ≤ 1000, d_1 < d_2 < ... < d_{n}) — the degree set.
+
+
+-----Output-----
+
+In the first line print one integer m (1 ≤ m ≤ 10^6) — the number of edges in the resulting graph. It is guaranteed that there exists such a graph that all the conditions hold and it contains no more than 10^6 edges.
+
+Each of the next m lines should contain two integers v_{i} and u_{i} (1 ≤ v_{i}, u_{i} ≤ d_{n} + 1) — the description of the i-th edge.
+
+
+-----Examples-----
+Input
+3
+2 3 4
+
+Output
+8
+3 1
+4 2
+4 5
+2 5
+5 1
+3 2
+2 1
+5 3
+
+Input
+3
+1 2 3
+
+Output
+4
+1 2
+1 3
+1 4
+2 3

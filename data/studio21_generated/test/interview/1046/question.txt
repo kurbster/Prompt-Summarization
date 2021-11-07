@@ -1,0 +1,50 @@
+Polycarpus is the director of a large corporation. There are n secretaries working for the corporation, each of them corresponds via the famous Spyke VoIP system during the day. We know that when two people call each other via Spyke, the Spyke network assigns a unique ID to this call, a positive integer session number.
+
+One day Polycarpus wondered which secretaries are talking via the Spyke and which are not. For each secretary, he wrote out either the session number of his call or a 0 if this secretary wasn't talking via Spyke at that moment.
+
+Help Polycarpus analyze these data and find out the number of pairs of secretaries that are talking. If Polycarpus has made a mistake in the data and the described situation could not have taken place, say so.
+
+Note that the secretaries can correspond via Spyke not only with each other, but also with the people from other places. Also, Spyke conferences aren't permitted — that is, one call connects exactly two people.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 10^3) — the number of secretaries in Polycarpus's corporation. The next line contains n space-separated integers: id_1, id_2, ..., id_{n} (0 ≤ id_{i} ≤ 10^9). Number id_{i} equals the number of the call session of the i-th secretary, if the secretary is talking via Spyke, or zero otherwise.
+
+Consider the secretaries indexed from 1 to n in some way.
+
+
+-----Output-----
+
+Print a single integer — the number of pairs of chatting secretaries, or -1 if Polycarpus's got a mistake in his records and the described situation could not have taken place.
+
+
+-----Examples-----
+Input
+6
+0 1 7 1 7 10
+
+Output
+2
+
+Input
+3
+1 1 1
+
+Output
+-1
+
+Input
+1
+0
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first test sample there are two Spyke calls between secretaries: secretary 2 and secretary 4, secretary 3 and secretary 5.
+
+In the second test sample the described situation is impossible as conferences aren't allowed.

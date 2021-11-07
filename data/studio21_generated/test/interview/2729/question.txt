@@ -1,0 +1,32 @@
+Dividing two numbers and computing the decimals is an extremely difficult task. Luckily, dividing a number by a “special” number is very easy (at least for us humans)!
+
+We will define the set of “special” numbers $S=\{ 10^K\} $ for all non-negative integers $K$, i.e. $\{ 1,10,100,\ldots \} $.
+
+Given a large numbers $N$ and a “special” large number $M$, what does the decimal representation of\[ \frac{N}{M} \]
+
+look like?
+
+-----Input-----
+The first line of input contains 2 integers $N$, $M$, where $1\leq N, M\leq 10^{10^6}$, and $M\in S$.
+
+-----Output-----
+Print the exact decimal preresentation of $\frac{N}{M}$, i.e. every digit, without trailing zeroes; if the quotient is less than $1$, print one leading zero (see sample input).
+
+-----Examples-----
+Sample Input 1:
+92746237
+100000
+Sample Output 1:
+927.46237
+
+Sample Input 2:
+100000
+100
+Sample Output 2:
+1000
+
+Sample Input 3:
+1234500
+10000
+Sample Output 3:
+123.45

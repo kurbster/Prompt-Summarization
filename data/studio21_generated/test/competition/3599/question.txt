@@ -1,0 +1,24 @@
+“The Drinking Musicians”, a widely known and popular folk group, are coming to your town. The musicians are known not only by their playing skills, but also their rough character. They never arrive on time, don’t know which town they’re in, and frequently have trouble finding the stage.
+
+Additionally, during the concert, each of the musicians at one point takes a break. If three or more of them are on a break at the same time, they start stirring trouble in town and the rest of the group start panicking and playing the wrong chords.
+
+The concert will be $T$ minutes long, during which each of the $N$ members will take a break. The length of the break is known for each member.
+
+Help the organizer of the concert by writing a program that determines how to schedule the breaks of the members so that, at any given moment, at most two are absent from the stage. All breaks must be entirely during the concert.
+
+-----Input-----
+The first line of input contains the integers $T$ and $N$ ($1 \le T \le 5000$, $1 \le N \le 500$), the length of the concert in minutes and the number of musicians in the group.
+
+The next line contains $N$ integers (each between $1$ and $T$ inclusive) separated by single spaces, the length of the break in minutes for each member.
+
+Note: The input data will be such that a solution, although not necessarily unique, will always exist.
+
+-----Output-----
+For each musician output one integer, the number of minutes the musician will spend on stage before going on the break. Output the musicians in the same order they were given in the input.
+
+-----Examples-----
+Sample Input:
+8 3
+4 4 4
+Sample Output:
+0 2 4

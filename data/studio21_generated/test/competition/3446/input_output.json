@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2\na b\n3-b 5-b\n6-a 2-b\n2\naba\nbba\n0\n",
+        "2\nm e\n5-e 4-m\n3-e 4-m\n1\neme\n0\n"
+    ],
+    "outputs": [
+        "9-b\n8-a\n",
+        "7-m\n"
+    ]
+}

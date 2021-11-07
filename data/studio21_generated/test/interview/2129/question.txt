@@ -1,0 +1,48 @@
+There are n cities and m two-way roads in Berland, each road connects two cities. It is known that there is no more than one road connecting each pair of cities, and there is no road which connects the city with itself. It is possible that there is no way to get from one city to some other city using only these roads.
+
+The road minister decided to make a reform in Berland and to orient all roads in the country, i.e. to make each road one-way. The minister wants to maximize the number of cities, for which the number of roads that begins in the city equals to the number of roads that ends in it.
+
+
+-----Input-----
+
+The first line contains a positive integer t (1 ≤ t ≤ 200) — the number of testsets in the input.
+
+Each of the testsets is given in the following way. The first line contains two integers n and m (1 ≤ n ≤ 200, 0 ≤ m ≤ n·(n - 1) / 2) — the number of cities and the number of roads in Berland. 
+
+The next m lines contain the description of roads in Berland. Each line contains two integers u and v (1 ≤ u, v ≤ n) — the cities the corresponding road connects. It's guaranteed that there are no self-loops and multiple roads. It is possible that there is no way along roads between a pair of cities.
+
+It is guaranteed that the total number of cities in all testset of input data doesn't exceed 200.
+
+Pay attention that for hacks, you can only use tests consisting of one testset, so t should be equal to one.
+
+
+-----Output-----
+
+For each testset print the maximum number of such cities that the number of roads that begins in the city, is equal to the number of roads that ends in it.
+
+In the next m lines print oriented roads. First print the number of the city where the road begins and then the number of the city where the road ends. If there are several answers, print any of them. It is allowed to print roads in each test in arbitrary order. Each road should be printed exactly once. 
+
+
+-----Example-----
+Input
+2
+5 5
+2 1
+4 5
+2 3
+1 3
+3 5
+7 2
+3 7
+4 2
+
+Output
+3
+1 3
+3 5
+5 4
+3 2
+2 1
+3
+2 4
+3 7

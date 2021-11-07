@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "2 2\n..\n..\n",
+        "4 4\nX.XX\nX..X\n..X.\n..XX\n",
+        "3 3\nX.X\n.X.\nX.X\n"
+    ],
+    "outputs": [
+        "7\n",
+        "9\n",
+        "3\n"
+    ]
+}

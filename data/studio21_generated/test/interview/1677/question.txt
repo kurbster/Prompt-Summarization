@@ -1,0 +1,39 @@
+Gena loves sequences of numbers. Recently, he has discovered a new type of sequences which he called an almost arithmetical progression. A sequence is an almost arithmetical progression, if its elements can be represented as:  a_1 = p, where p is some integer;  a_{i} = a_{i} - 1 + ( - 1)^{i} + 1·q (i > 1), where q is some integer. 
+
+Right now Gena has a piece of paper with sequence b, consisting of n integers. Help Gena, find there the longest subsequence of integers that is an almost arithmetical progression.
+
+Sequence s_1,  s_2,  ...,  s_{k} is a subsequence of sequence b_1,  b_2,  ...,  b_{n}, if there is such increasing sequence of indexes i_1, i_2, ..., i_{k} (1  ≤  i_1  <  i_2  < ...   <  i_{k}  ≤  n), that b_{i}_{j}  =  s_{j}. In other words, sequence s can be obtained from b by crossing out some elements.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 4000). The next line contains n integers b_1, b_2, ..., b_{n} (1 ≤ b_{i} ≤ 10^6).
+
+
+-----Output-----
+
+Print a single integer — the length of the required longest subsequence.
+
+
+-----Examples-----
+Input
+2
+3 5
+
+Output
+2
+
+Input
+4
+10 20 10 30
+
+Output
+3
+
+
+
+-----Note-----
+
+In the first test the sequence actually is the suitable subsequence. 
+
+In the second test the following subsequence fits: 10, 20, 10.

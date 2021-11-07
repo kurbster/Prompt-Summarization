@@ -1,0 +1,32 @@
+Young Luka is an art dealer. He has $N$ clients and sells artistic paintings to each client. Each client can purchase either colored paintings or black and white paintings, but not both. The client denoted with $i$ wants to purchase at most $a_ i$ colored paintings and at most $b_ i$ black and white paintings. The client will always purchase at least one paintings. Luka has an almost unlimited amount of paintings, so the number of paintings required from the clients is never a problem. Luka doesn’t like selling black and white paintings and knows that if less than $C$ people get colored paintings, it will make him feel sad.
+
+His clients constantly keep changing their requests or, in other words, the number of paintings they want to purchase. Because of this, Luka is often troubled by the question: “How many different purchases are there, so that at least $C$ clients get at least one colored painting?” Help Luka and save him from his worries.
+
+-----Input-----
+The first line of input contains two integers $N$, $C$ ($1 \leq N \leq 100\ 000$, $1 \leq C \leq 20$). The second line of input contains $N$ integers $a_ i$ ($1 \leq a_ i \leq 1\ 000\ 000\ 000$). The third line of input contains $N$ integers $b_ i$ ($1 \leq b_ i \leq 1\ 000\ 000\ 000$).
+
+The fourth line of input contains the number of requirement changes $Q$ ($1 \leq Q \leq 100\ 000$). Each of the following $Q$ lines contains three integers, the label of the person changing the requirements $P$ ($1 \leq P \leq N$), the maximal number of colored paintings they want to purchase $a_ P$ ($1 \leq a_ P \leq 1\ 000\ 000\ 000$) and the maximal number of black and white paintings they want to purchase $b_ P$ ($1 \leq b_ P \leq 1\ 000\ 000\ 000$).
+
+-----Output-----
+The output must consist of $Q$ lines where each line contains the number of different purchases modulo $10\ 007$.
+
+-----Examples-----
+Sample Input 1:
+2 2
+1 1
+1 1
+1
+1 1 1
+Sample Output 1:
+1
+
+Sample Input 2:
+2 2
+1 2
+2 3
+2
+1 2 2
+2 2 2
+Sample Output 2:
+4
+4

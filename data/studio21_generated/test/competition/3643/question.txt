@@ -1,0 +1,19 @@
+Oh no! As a result of recent elections the “Random Laws” party took control of the government. This is going to have bad consequences for Mr. Bourgeois’ company, which just approved the way new salaries will be calculated. The company has $N$ workers and the salary for worker $i$ is going to be determined as a number drawn uniformly from the range $[L_ i, R_ i]$. Since the company already figured out which workers are the most efficient ones, for each $i$ in $[2, N]$, we know that $L_{i-1} \leq L_ i$ and $R_{i-1} \leq R_ i$, but note that as a result of chance, worker $i-1$ might still end up with a larger salary than worker $i$.
+
+The new government introduced a law, where any worker who got a smaller salary than a coworker can sue the company for the amount of their difference. What’s even more atrocious is that they can do it for every worker who got a larger salary. So if there were three employees: Alice, Bob, and Charlie, who got salaries of $1$, $3$, and $7$ coins respectively, then employee Bob can sue with regards to Charlie for $4$ coins, while Alice can sue for $2$ coins because of Bob and for $6$ coins because of Charlie. The total amount of damages the company will have to pay is $12$.
+
+While the exact salary amounts are not known yet, Mr. Bourgeois would like to find out the expected amount of damages that his company will have to pay. Since the answer can be very big, output the answer divided by $N^2$.
+
+-----Input-----
+The first line contains $N$, ($1 \leq N \leq 100000$). The next $N$ lines each contain two real numbers $L_ i$ and $R_ i$ ($1 \leq L_ i \leq R_ i \leq 10^6$). All real numbers in the input have at most $6$ digits after the decimal point.
+
+-----Output-----
+Output one number: expected payment divided by $N^2$. Your answer will be considered correct if its absolute or relative error is less than $10^{-4}$.
+
+-----Examples-----
+Sample Input:
+2
+1.2 10.2
+2.2 15.2
+Sample Output:
+1.114672365

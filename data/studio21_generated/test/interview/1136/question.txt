@@ -1,0 +1,33 @@
+Calculate the value of the sum: n mod 1 + n mod 2 + n mod 3 + ... + n mod m. As the result can be very large, you should print the value modulo 10^9 + 7 (the remainder when divided by 10^9 + 7).
+
+The modulo operator a mod b stands for the remainder after dividing a by b. For example 10 mod 3 = 1.
+
+
+-----Input-----
+
+The only line contains two integers n, m (1 ≤ n, m ≤ 10^13) — the parameters of the sum.
+
+
+-----Output-----
+
+Print integer s — the value of the required sum modulo 10^9 + 7.
+
+
+-----Examples-----
+Input
+3 4
+
+Output
+4
+
+Input
+4 4
+
+Output
+1
+
+Input
+1 1
+
+Output
+0

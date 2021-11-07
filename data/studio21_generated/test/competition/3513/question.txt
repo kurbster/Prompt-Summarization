@@ -1,0 +1,17 @@
+You are playing the following simple game with a friend:
+ - The first player picks a positive integer $X$.
+ - The second player gives a list of $k$ distinct positive integers $Y_1, \ldots , Y_ k$ such that $(Y_1+1)(Y_2+1) \cdots (Y_ k+1) = X$, and gets $k$ points.
+
+Write a program that plays the second player.
+
+-----Input-----
+The input consists of a single integer $X$ satisfying $10^3 \le X \le 10^{15}$, giving the number picked by the first player.
+
+-----Output-----
+Write a single integer $k$, giving the number of points obtained by the second player, assuming she plays as good as possible.
+
+-----Examples-----
+Sample Input:
+1099511627776
+Sample Output:
+8

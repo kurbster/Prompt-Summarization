@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "6\n1 1\n.\n1 2\nG.\n2 2\n#B\nG.\n2 3\nG.#\nB#.\n3 3\n#B.\n#..\nGG.\n2 2\n#B\nB.\n",
+    "5\n2 5\nB.GGG\n.B.G.\n3 6\nBB#.GG\nB.#B.G\n.#.#G.\n3 2\n..\n..\n..\n1 4\nBBB.\n4 9\n###B##.B#\n.####.##G\n##.###.#.\n...B#.B#.\n",
+    "4\n1 2\nG.\n1 2\n#.\n1 2\n..\n1 2\nB.\n",
+    "1\n1 1\n.\n"
+  ],
+  "outputs": [
+    "Yes\nYes\nNo\nNo\nYes\nYes\n",
+    "Yes\nYes\nYes\nYes\nYes\n",
+    "Yes\nYes\nYes\nYes\n",
+    "Yes\n"
+  ]
+}

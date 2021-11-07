@@ -1,0 +1,26 @@
+You are a camp counselor at a summer camp and it is time to take some of the kids to lunch. There are $n$ groups of friends of different sizes who would like to be able to eat lunch together. There are $k$ bins that each hold exactly $x$ lunches. If one of the lunches in a bin is not used, then it must be thrown out due to health regulations.
+
+If you take fewer than $a$ students to lunch then your fellow counselors will get angry as they have to watch the remaining campers. However, due to child safety regulations, you can watch at most $b$ children at any given time.
+
+Is it possible to take a subset of the students to lunch such that the children get to eat with their friends, there are no wasted lunches, you take no more than the legal limit of campers, and you don’t anger your fellow counselors by taking too few?
+
+-----Input-----
+The first line contains one integer, $n$ ($1 \leq n \leq 1000$), the number of groups of friends. The next line contains $n$ space separated integers, $s_0, s_1, \ldots , s_{n-1}\ (0 < s_ i \leq 100)$, where $s_ i$ denotes the size of group $i$. The next line contains $4$ space separated integers: $k$ ($0 < k \leq 100$), $x$ ($0 < x \leq 100000$), $a$ and $b$ ($0 < a \leq b \leq 10000$) representing the number of bins, the number of lunches in each bin, the minimum number of campers you must watch, and the maximum number of campers you are allowed to watch, respectively.
+
+-----Output-----
+Output an integer denoting the maximum number of students you can take to lunch and satisfy the requirements, or, if it is not possible, output ‘impossible’.
+
+-----Examples-----
+Sample Input 1:
+7
+5 7 10 15 3 2 8
+20 3 30 40
+Sample Output 1:
+39
+
+Sample Input 2:
+7
+33 7 10 15 3 2 8
+20 3 30 40
+Sample Output 2:
+36

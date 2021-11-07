@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "4\nhello\nhello\nhello\nhelloo\nhello\nhlllloo\nhello\nhelo\n",
+    "5\naa\nbb\ncodeforces\ncodeforce\npolycarp\npoolycarpp\naaaa\naaaab\nabcdefghijklmnopqrstuvwxyz\nzabcdefghijklmnopqrstuvwxyz\n",
+    "10\naaaa\naaaab\naaaa\nbaaaa\na\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\na\nb\naaaaa\naaaa\nabcdefghijklmnopqrstuvwxyz\nzabcdefghijklmnopqrstuvwxyz\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaba\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\nzz\nz\naaaabbbbaaaa\naaaaabbbaaaa\n",
+    "10\nab\naaaaaaaaaaaaaaaaaaaab\nab\nabbbbbbbbbbbbbbbbbbbb\nabb\nabbbbbbbbbbbbbbbbbbbb\nabbbba\nabbbba\nqwertyuiopasdfghjklzxcvbnm\nqqwweerrttyyuuiiooppaassddffgghhjjkkllzzxxccvvbbnnmm\nababababababababababababab\naabbababababababababababab\nababababababababababababab\nabaabbabababababababababaabbab\na\naa\na\na\nabacabadabacaba\nabbacccabbaddddabbacccabba\n"
+  ],
+  "outputs": [
+    "YES\nYES\nNO\nNO\n",
+    "NO\nNO\nYES\nNO\nNO\n",
+    "NO\nNO\nYES\nNO\nNO\nNO\nNO\nNO\nNO\nNO\n",
+    "YES\nYES\nYES\nYES\nYES\nNO\nYES\nYES\nYES\nYES\n"
+  ]
+}

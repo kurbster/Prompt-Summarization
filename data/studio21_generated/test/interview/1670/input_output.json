@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "MC\nCSKA\n9\n28 a 3 y\n62 h 25 y\n66 h 42 y\n70 h 25 y\n77 a 4 y\n79 a 25 y\n82 h 42 r\n89 h 16 y\n90 a 13 r\n",
+    "REAL\nBARCA\n3\n27 h 7 y\n44 a 10 y\n87 h 3 r\n",
+    "MASFF\nSAFBDSRG\n5\n1 h 1 y\n15 h 1 r\n27 a 1 y\n58 a 1 y\n69 h 10 y\n",
+    "ARMENIA\nBULGARIA\n12\n33 h 17 y\n42 h 21 y\n56 a 17 y\n58 a 6 y\n61 a 7 y\n68 a 10 y\n72 h 13 y\n73 h 21 y\n74 a 8 r\n75 a 4 y\n77 a 10 y\n90 a 23 y\n",
+    "PORTUGAL\nNETHERLANDS\n16\n2 a 18 y\n7 a 3 y\n20 h 18 y\n31 h 6 y\n45 h 6 y\n50 h 8 y\n59 a 5 y\n60 h 7 y\n63 a 3 y\n72 a 20 y\n73 h 20 y\n74 a 10 y\n75 h 1 y\n76 h 14 y\n78 h 20 y\n90 a 5 y\n",
+    "TANC\nXNCOR\n2\n15 h 27 r\n28 h 27 r\n",
+    "ASGDFJH\nAHGRSDXGER\n3\n23 h 15 r\n68 h 15 y\n79 h 15 y\n",
+    "ASFSHDSG\nADGYRTJNG\n5\n1 h 1 y\n2 h 1 y\n3 h 1 y\n4 h 1 r\n5 h 1 y\n",
+    "A\nB\n42\n5 a 84 y\n8 h 28 r\n10 a 9 r\n11 h 93 y\n13 a 11 r\n15 h 3 r\n20 a 88 r\n23 a 41 y\n25 a 14 y\n27 a 38 r\n28 a 33 y\n29 h 66 r\n31 a 16 r\n32 a 80 y\n34 a 54 r\n35 a 50 y\n36 a 9 y\n39 a 22 y\n42 h 81 y\n43 a 10 y\n44 a 27 r\n47 h 39 y\n48 a 80 y\n50 h 5 y\n52 a 67 y\n54 h 63 y\n56 h 7 y\n57 h 44 y\n58 h 41 y\n61 h 32 y\n64 h 91 y\n67 a 56 y\n69 h 83 y\n71 h 59 y\n72 a 76 y\n75 h 41 y\n76 a 49 r\n77 a 4 r\n78 a 69 y\n79 a 96 r\n80 h 81 y\n86 h 85 r\n",
+    "ARM\nAZE\n45\n2 a 13 r\n3 a 73 r\n4 a 10 y\n5 h 42 y\n8 h 56 y\n10 h 15 y\n11 a 29 r\n13 a 79 y\n14 a 77 r\n18 h 7 y\n20 a 69 r\n22 h 19 y\n25 h 88 r\n26 a 78 y\n27 a 91 r\n28 h 10 r\n30 h 13 r\n31 a 26 r\n33 a 43 r\n34 a 91 y\n40 h 57 y\n44 h 18 y\n46 a 25 r\n48 a 29 y\n51 h 71 y\n57 a 16 r\n58 h 37 r\n59 h 92 y\n60 h 11 y\n61 a 88 y\n64 a 28 r\n65 h 71 r\n68 h 39 y\n70 h 8 r\n71 a 10 y\n72 a 32 y\n73 h 95 r\n74 a 33 y\n75 h 48 r\n78 a 44 y\n79 a 22 r\n80 h 50 r\n84 a 50 y\n88 a 90 y\n89 h 42 r\n",
+    "KASFLS\nASJBGGDLJFDDFHHTHJH\n42\n2 a 68 y\n4 h 64 r\n5 a 24 y\n6 h 20 r\n8 a 16 r\n9 a 96 y\n10 h 36 r\n12 a 44 y\n13 h 69 r\n16 a 62 r\n18 a 99 r\n20 h 12 r\n21 a 68 y\n25 h 40 y\n26 h 54 r\n28 h 91 r\n29 a 36 r\n33 a 91 y\n36 h 93 r\n37 h 60 r\n38 a 82 r\n41 a 85 y\n42 a 62 r\n46 a 22 r\n48 a 88 r\n49 a 8 r\n51 h 45 y\n54 a 84 y\n57 a 8 y\n59 h 24 y\n61 h 22 r\n64 h 11 r\n69 a 89 y\n72 h 44 r\n75 h 57 r\n76 h 80 y\n77 h 54 r\n79 a 1 y\n81 a 31 r\n82 h 8 y\n83 a 28 r\n86 h 56 y\n",
+    "A\nAA\n2\n1 a 1 y\n2 h 1 y\n",
+    "AB\nBC\n3\n1 h 1 y\n2 h 1 y\n3 h 1 r\n"
+  ],
+  "outputs": [
+    "MC 25 70\nMC 42 82\nCSKA 13 90\n",
+    "REAL 3 87\n",
+    "MASFF 1 15\nSAFBDSRG 1 58\n",
+    "ARMENIA 21 73\nBULGARIA 8 74\nBULGARIA 10 77\n",
+    "PORTUGAL 6 45\nNETHERLANDS 3 63\nPORTUGAL 20 78\nNETHERLANDS 5 90\n",
+    "TANC 27 15\n",
+    "ASGDFJH 15 23\n",
+    "ASFSHDSG 1 2\n",
+    "A 28 8\nB 9 10\nB 11 13\nA 3 15\nB 88 20\nB 38 27\nA 66 29\nB 16 31\nB 54 34\nB 27 44\nB 80 48\nA 41 75\nB 49 76\nB 4 77\nB 96 79\nA 81 80\nA 85 86\n",
+    "AZE 13 2\nAZE 73 3\nAZE 29 11\nAZE 77 14\nAZE 69 20\nARM 88 25\nAZE 91 27\nARM 10 28\nARM 13 30\nAZE 26 31\nAZE 43 33\nAZE 25 46\nAZE 16 57\nARM 37 58\nAZE 28 64\nARM 71 65\nARM 8 70\nAZE 10 71\nARM 95 73\nARM 48 75\nAZE 22 79\nARM 50 80\nARM 42 89\n",
+    "KASFLS 64 4\nKASFLS 20 6\nASJBGGDLJFDDFHHTHJH 16 8\nKASFLS 36 10\nKASFLS 69 13\nASJBGGDLJFDDFHHTHJH 62 16\nASJBGGDLJFDDFHHTHJH 99 18\nKASFLS 12 20\nASJBGGDLJFDDFHHTHJH 68 21\nKASFLS 54 26\nKASFLS 91 28\nASJBGGDLJFDDFHHTHJH 36 29\nKASFLS 93 36\nKASFLS 60 37\nASJBGGDLJFDDFHHTHJH 82 38\nASJBGGDLJFDDFHHTHJH 22 46\nASJBGGDLJFDDFHHTHJH 88 48\nASJBGGDLJFDDFHHTHJH 8 49\nKASFLS 22 61\nKASFLS 11 64\nKASFLS 44 72\nKASFLS 57 75\nASJBGGDLJFDDFHHTHJH 31 81\nASJBGGDLJFDDFHHTHJH 28 83\n",
+    "",
+    "AB 1 2\n"
+  ]
+}

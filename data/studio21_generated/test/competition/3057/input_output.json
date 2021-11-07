@@ -1,0 +1,14 @@
+{
+    "inputs": [
+        "4\nherp is derp\nderp is herp\nherp is herp\nderp is derp\n",
+        "3\noskar not lukas\noskar is poptart\nlukas is smart\n",
+        "1\nmoo not foo\n",
+        "2\nmoo not foo\noo is blah\n"
+    ],
+    "outputs": [
+        "yes\n",
+        "wait what?\n",
+        "yes\n",
+        "wait what?\n"
+    ]
+}

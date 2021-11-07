@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "1 2\nSP.-SS.S-S.S\n",
+    "4 9\nPP.-PPPS-S.S\nPSP-PPSP-.S.\n.S.-S..P-SS.\nP.S-P.PP-PSP\n",
+    "3 7\n.S.-SSSP-..S\nS..-.SPP-S.P\n.S.-PPPP-PSP\n",
+    "5 6\nPP.-PS.P-P..\nPPS-SP..-P.P\nP.P-....-S..\nSPP-.P.S-.S.\nSP.-S.PS-PPP\n",
+    "1 1\n..S-PS..-.PP\n",
+    "2 2\nPP.-S.SS-.S.\nSSP-SSSS-S.S\n",
+    "10 92\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n",
+    "30 1\nPPP-PPP.-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\n",
+    "1 1\nSPS-....-P.P\n",
+    "2 1\nSSS-S.S.-SSS\nSSP-.PP.-S.S\n",
+    "10 54\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n",
+    "30 1\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPP.-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\n"
+  ],
+  "outputs": [
+    "5\nSPx-SSxS-S.S\n",
+    "15\nPPx-PPPS-S.S\nPSP-PPSP-xSx\nxSx-SxxP-SSx\nP.S-PxPP-PSP\n",
+    "13\nxSx-SSSP-xxS\nSxx-xSPP-S.P\n.S.-PPPP-PSP\n",
+    "6\nPPx-PS.P-Pxx\nPPS-SPxx-PxP\nP.P-....-S..\nSPP-.P.S-.S.\nSP.-S.PS-PPP\n",
+    "1\nx.S-PS..-.PP\n",
+    "12\nPPx-S.SS-xS.\nSSP-SSSS-S.S\n",
+    "0\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxx.-....-...\n",
+    "0\nPPP-PPPx-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\n",
+    "2\nSPS-x...-P.P\n",
+    "11\nSSS-S.S.-SSS\nSSP-xPP.-S.S\n",
+    "0\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-xxxx-xxx\nxxx-x...-...\n...-....-...\n...-....-...\n...-....-...\n...-....-...\n",
+    "0\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPx-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\nPPP-PPPP-PPP\n"
+  ]
+}

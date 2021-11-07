@@ -1,0 +1,45 @@
+Our old friend Alexey has finally entered the University of City N — the Berland capital. Alexey expected his father to get him a place to live in but his father said it was high time for Alexey to practice some financial independence. So, Alexey is living in a dorm. 
+
+The dorm has exactly one straight dryer — a 100 centimeter long rope to hang clothes on. The dryer has got a coordinate system installed: the leftmost end of the dryer has coordinate 0, and the opposite end has coordinate 100. Overall, the university has n students. Dean's office allows i-th student to use the segment (l_{i}, r_{i}) of the dryer. However, the dean's office actions are contradictory and now one part of the dryer can belong to multiple students!
+
+Alexey don't like when someone touch his clothes. That's why he want make it impossible to someone clothes touch his ones. So Alexey wonders: what is the total length of the parts of the dryer that he may use in a such way that clothes of the others (n - 1) students aren't drying there. Help him! Note that Alexey, as the most respected student, has number 1.
+
+
+-----Input-----
+
+The first line contains a positive integer n (1 ≤ n ≤ 100). The (i + 1)-th line contains integers l_{i} and r_{i} (0 ≤ l_{i} < r_{i} ≤ 100) — the endpoints of the corresponding segment for the i-th student.
+
+
+-----Output-----
+
+On a single line print a single number k, equal to the sum of lengths of the parts of the dryer which are inside Alexey's segment and are outside all other segments.
+
+
+-----Examples-----
+Input
+3
+0 5
+2 8
+1 6
+
+Output
+1
+
+Input
+3
+0 10
+1 5
+7 15
+
+Output
+3
+
+
+
+-----Note-----
+
+Note that it's not important are clothes drying on the touching segments (e.g. (0, 1) and (1, 2)) considered to be touching or not because you need to find the length of segments.
+
+In the first test sample Alexey may use the only segment (0, 1). In such case his clothes will not touch clothes on the segments (1, 6) and (2, 8). The length of segment (0, 1) is 1.
+
+In the second test sample Alexey may dry his clothes on segments (0, 1) and (5, 7). Overall length of these segments is 3.

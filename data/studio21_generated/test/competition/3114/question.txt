@@ -1,0 +1,27 @@
+In the ACM kingdom, there are $N$ cities connected by $M$ two-way roads. These cities are connected, i.e., one can reach from any city $X$ to any other city $Y$ by going through some of these roads. One day, the government wishes to assign for each road a direction, such that one can still reach from any city to any other. You are asked to determine whether this task is possible.
+
+-----Input-----
+The first line of each test case consists of two integers, $N$ ($1 \leq N \leq 50$), and $M$ ($1 \leq M \leq N(N - 1)/2$). Each of the next $M$ lines describes a road, and consists of two integers, $X$ and $Y$, ($1 \leq X, Y \leq N$; $X \neq Y$), indicating that there is a road between city $X$ and $Y$. There is at most one road that directly connects each pair of cities.
+
+-----Output-----
+If it is impossible, output a single line NO. Otherwise, output YES on the first line, followed by $M$ lines describing one possible direction assignment to these $M$ roads. Each of these $M$ lines should consist of two integers, $X$, $Y$, indicating that there is a one-way road from city $X$ to city $Y$. These $M$ lines can be output in any order.
+
+-----Examples-----
+Sample Input 1:
+3 3
+1 2
+2 3
+1 3
+Sample Output 1:
+YES
+1 3
+2 1
+3 2
+
+Sample Input 2:
+4 3
+1 2
+1 3
+1 4
+Sample Output 2:
+NO

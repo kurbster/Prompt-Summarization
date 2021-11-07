@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1\nxabcab\n",
+    "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1\naaa\n",
+    "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1\naabbccdd\n",
+    "-3 4 -4 -1 3 5 -5 -3 3 2 1 4 5 -3 -1 4 2 -2 1 -1 1 5 -4 0 -5 4\nolspxykjqr\n",
+    "-2 -2 2 1 4 0 -2 4 5 4 -5 -5 2 1 1 -1 0 -5 -2 3 -2 4 5 2 3 -5\nqgzhbkitmqwttdyoyvcbxincwjryzknubpacsngorexaldfurondbednowemnnlphhboycfavsovisrmfaefusoobingjhsmrukx\n",
+    "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1\nbb\n",
+    "1 1 -1 1 1 1 1 1 1 1 1 1 1 1 1 7 1 1 1 8 1 1 1 1 1 1\na\n",
+    "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nhhhhhhhhhh\n"
+  ],
+  "outputs": [
+    "2\n",
+    "2\n",
+    "4\n",
+    "0\n",
+    "7\n",
+    "1\n",
+    "0\n",
+    "45\n"
+  ]
+}

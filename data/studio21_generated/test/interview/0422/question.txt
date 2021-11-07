@@ -1,0 +1,63 @@
+Vova has taken his summer practice this year and now he should write a report on how it went.
+
+Vova has already drawn all the tables and wrote down all the formulas. Moreover, he has already decided that the report will consist of exactly $n$ pages and the $i$-th page will include $x_i$ tables and $y_i$ formulas. The pages are numbered from $1$ to $n$.
+
+Vova fills the pages one after another, he can't go filling page $i + 1$ before finishing page $i$ and he can't skip pages. 
+
+However, if he draws strictly more than $k$ tables in a row or writes strictly more than $k$ formulas in a row then he will get bored. Vova wants to rearrange tables and formulas in each page in such a way that he doesn't get bored in the process. Vova can't move some table or some formula to another page.
+
+Note that the count doesn't reset on the start of the new page. For example, if the page ends with $3$ tables and the next page starts with $5$ tables, then it's counted as $8$ tables in a row.
+
+Help Vova to determine if he can rearrange tables and formulas on each page in such a way that there is no more than $k$ tables in a row and no more than $k$ formulas in a row.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $k$ ($1 \le n \le 3 \cdot 10^5$, $1 \le k \le 10^6$).
+
+The second line contains $n$ integers $x_1, x_2, \dots, x_n$ ($1 \le x_i \le 10^6$) — the number of tables on the $i$-th page.
+
+The third line contains $n$ integers $y_1, y_2, \dots, y_n$ ($1 \le y_i \le 10^6$) — the number of formulas on the $i$-th page.
+
+
+-----Output-----
+
+Print "YES" if Vova can rearrange tables and formulas on each page in such a way that there is no more than $k$ tables in a row and no more than $k$ formulas in a row.
+
+Otherwise print "NO".
+
+
+-----Examples-----
+Input
+2 2
+5 5
+2 2
+
+Output
+YES
+
+Input
+2 2
+5 6
+2 2
+
+Output
+NO
+
+Input
+4 1
+4 1 10 1
+3 2 10 1
+
+Output
+YES
+
+
+
+-----Note-----
+
+In the first example the only option to rearrange everything is the following (let table be 'T' and formula be 'F'):   page $1$: "TTFTTFT"  page $2$: "TFTTFTT" 
+
+That way all blocks of tables have length $2$.
+
+In the second example there is no way to fit everything in such a way that there are no more than $2$ tables in a row and $2$ formulas in a row.

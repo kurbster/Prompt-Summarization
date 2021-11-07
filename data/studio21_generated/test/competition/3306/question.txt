@@ -1,0 +1,33 @@
+Mirkos village has only one long street stretching from east to west with M houses. Each house has a unique house number, starting with $1$ and ending with $M$.
+
+Recent storm took out most phone lines so the mayor financed construction of a new one. Mirko is interested in the popularity of this new phone network, so he infiltrated its construction and placed special detectors on some points.
+
+Detector detects any phone call made between two houses, as long as one of them is eastward and the other westward from the point the detector is installed.
+
+At the end of the first month, Mirko removed all detectors and now wonders what is the smallest number of phone calls that could have been made during that month.
+
+-----Input-----
+The first line of input contains two integers $N$ ($1 \le N \le 100000$), the number of detectors, and $M$ ($N < M \le 1000000000$), the number of houses in the village. The houses are numbered from $1$ to $M$ (inclusive).
+
+The next $N$ lines contains two numbers each: $P_ i$ ($1 \le P_ i < M$), and $C_ i$ ($1 \le C_ i \le 1000000000$), the position and total number of phone calls detected by detector numbered $i$. We say that a detector is on position $P_ i$ if it is between houses numbered $P_ i$ and $P_ i +1$.
+
+There will never be more than one detector on the same position.
+
+-----Output-----
+Output a single integer, the minimal number of phone calls made.
+
+-----Examples-----
+Sample Input 1:
+3 4
+3 1
+2 2
+1 1
+Sample Output 1:
+2
+
+Sample Input 2:
+2 3
+1 23
+2 17
+Sample Output 2:
+23

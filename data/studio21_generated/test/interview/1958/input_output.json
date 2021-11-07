@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "2 10\nhalf\nhalfplus\n",
+    "3 10\nhalfplus\nhalfplus\nhalfplus\n",
+    "10 328\nhalf\nhalfplus\nhalfplus\nhalf\nhalfplus\nhalf\nhalf\nhalf\nhalfplus\nhalfplus\n",
+    "1 2\nhalfplus\n",
+    "5 6\nhalf\nhalf\nhalfplus\nhalf\nhalfplus\n",
+    "10 2\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\n",
+    "20 6\nhalf\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalf\nhalfplus\nhalfplus\nhalf\nhalfplus\nhalfplus\nhalfplus\nhalfplus\n",
+    "30 68\nhalf\nhalf\nhalf\nhalfplus\nhalfplus\nhalf\nhalf\nhalf\nhalf\nhalf\nhalf\nhalf\nhalf\nhalfplus\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalf\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\n",
+    "40 562\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalf\nhalf\nhalfplus\nhalf\nhalf\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalfplus\nhalf\nhalf\nhalfplus\nhalf\nhalfplus\nhalfplus\nhalf\nhalf\nhalfplus\nhalf\nhalf\nhalfplus\nhalfplus\n"
+  ],
+  "outputs": [
+    "15\n",
+    "55\n",
+    "258300\n",
+    "1\n",
+    "114\n",
+    "1703\n",
+    "6056877\n",
+    "59847312584\n",
+    "486750560068982\n"
+  ]
+}

@@ -1,0 +1,20 @@
+Donald is a fence builder. He wants to build a fence that is $N - 1$ meters long. He needs a fence post every meter along the fence, which means he needs $N$ fence posts. Donald has $K$ poles of varying lengths that he wants to use as fence posts. The fence posts must have the same lengths, and be as long as possible. Also, the parts of the poles that are not used for the posts must not be longer than the ones used for the posts. Donald can cut the poles as many times as he wants, and at any position he wants. However, cutting a pole takes time, so he wants to make as few cuts as possible while achieving his other goals.
+
+How many cuts does Donald have to make to get the fence posts for his fence?
+
+-----Input-----
+The first line has two space-separated integers, $K$ and $N$. The second line consists of $K$ space-separated integers $p_1$, $p_2$, …, $p_ K$, where $p_ i$ represents the length of the $i$th pole.
+
+-----Output-----
+Output the minimum number of cuts needed to build the fence.
+
+-----Limits-----
+ - $1 \leq K \leq N \leq 10000$
+ - $1 \leq p_ i \leq 10000$
+
+-----Examples-----
+Sample Input:
+1 2
+3
+Sample Output:
+1

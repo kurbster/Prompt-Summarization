@@ -1,0 +1,41 @@
+Scientists say a lot about the problems of global warming and cooling of the Earth. Indeed, such natural phenomena strongly influence all life on our planet.
+
+Our hero Vasya is quite concerned about the problems. He decided to try a little experiment and observe how outside daily temperature changes. He hung out a thermometer on the balcony every morning and recorded the temperature. He had been measuring the temperature for the last n days. Thus, he got a sequence of numbers t_1, t_2, ..., t_{n}, where the i-th number is the temperature on the i-th day.
+
+Vasya analyzed the temperature statistics in other cities, and came to the conclusion that the city has no environmental problems, if first the temperature outside is negative for some non-zero number of days, and then the temperature is positive for some non-zero number of days. More formally, there must be a positive integer k (1 ≤ k ≤ n - 1) such that t_1 < 0, t_2 < 0, ..., t_{k} < 0 and t_{k} + 1 > 0, t_{k} + 2 > 0, ..., t_{n} > 0. In particular, the temperature should never be zero. If this condition is not met, Vasya decides that his city has environmental problems, and gets upset.
+
+You do not want to upset Vasya. Therefore, you want to select multiple values of temperature and modify them to satisfy Vasya's condition. You need to know what the least number of temperature values needs to be changed for that.
+
+
+-----Input-----
+
+The first line contains a single integer n (2 ≤ n ≤ 10^5) — the number of days for which Vasya has been measuring the temperature. 
+
+The second line contains a sequence of n integers t_1, t_2, ..., t_{n} (|t_{i}| ≤ 10^9) — the sequence of temperature values. Numbers t_{i} are separated by single spaces.
+
+
+-----Output-----
+
+Print a single integer — the answer to the given task.
+
+
+-----Examples-----
+Input
+4
+-1 1 -2 1
+
+Output
+1
+
+Input
+5
+0 -1 1 2 -5
+
+Output
+2
+
+
+
+-----Note-----
+
+Note to the first sample: there are two ways to change exactly one number so that the sequence met Vasya's condition. You can either replace the first number 1 by any negative number or replace the number -2 by any positive number.

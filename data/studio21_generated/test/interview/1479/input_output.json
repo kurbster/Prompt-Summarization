@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "3 3 4\n...\nR.L\nR.U\n",
+    "2 2 2\n..\nRL\n",
+    "2 2 2\n..\nLR\n",
+    "3 4 8\n....\nRRLL\nUUUU\n",
+    "2 2 2\n..\nUU\n",
+    "2 2 0\n..\n..\n",
+    "5 5 10\n.....\nRU.D.\n..DLL\n.D...\nRL..L\n",
+    "5 6 20\n......\n.UURD.\nLUD.RR\nU.LDDD\nDDLDDU\n",
+    "4 5 15\n.....\nDRRLR\nULDLD\nDLRRL\n",
+    "3 7 14\n.......\nLDUDLLD\nDLRDDLD\n",
+    "5 7 19\n.......\nRDLLLRL\nUUR..U.\n.D.DLLL\n..R..UU\n",
+    "10 8 30\n........\n.L.LDRR.\nD.LDLR.U\n..RL.L..\nUR.UL...\n.D.....L\nR..UDULL\n........\nDD.U...D\n........\n",
+    "8 9 28\n.........\n.R.LDR.D.\n....UULU.\nR.D..DL.L\n.R..DLUDU\nR........\n.URU...UU\n.....D.L.\n",
+    "10 10 47\n..........\n.R.LLL.R.L\nR.ULUL.RUL\nRD..RL.L..\nRU.D....LU\n..RRR..DL.\n.DRUUD.ULD\n...D...LDD\n...UUU.U..\nR.....D...\n",
+    "2 100 59\n....................................................................................................\n.DR.D..DLLR.LDRR..L.LDRRRDLD.LDRR.LLR.R...DRLD.RRLL.L.D..R.LD.DL....LR.LR.DRLD.....L.D..RD...D.LL.R.\n",
+    "100 2 45\n..\n.D\nU.\n..\nU.\n..\n..\n..\nU.\n..\n..\nD.\nU.\n..\n..\n.D\nDU\n..\nUD\n..\n..\n..\n..\n..\n..\nD.\nU.\n..\n..\nD.\nU.\n..\n..\n..\nU.\n..\n..\n.D\n..\n..\n.D\n..\n..\n.D\n.U\nD.\n..\n.D\n..\n..\nUD\n..\nU.\n..\nU.\n..\nUD\n..\nU.\n..\nU.\n..\n..\n..\nU.\n..\n..\nD.\n..\n..\nU.\n..\nU.\n..\nUU\n..\nU.\n..\nU.\n..\n..\n..\n..\n..\n..\n..\n..\n..\n.D\n..\n..\nD.\nU.\n.D\n..\n..\nU.\n.D\nU.\n..\n"
+  ],
+  "outputs": [
+    "0 2 2 ",
+    "1 1 ",
+    "0 0 ",
+    "1 3 3 1 ",
+    "0 0 ",
+    "0 0 ",
+    "1 2 1 0 1 ",
+    "0 1 0 0 1 1 ",
+    "1 2 2 1 0 ",
+    "0 0 0 2 2 0 0 ",
+    "1 4 2 2 1 3 3 ",
+    "6 1 4 3 0 3 2 3 ",
+    "1 2 2 3 2 4 2 2 3 ",
+    "1 2 6 6 7 1 0 5 5 4 ",
+    "0 0 0 1 0 0 0 1 1 0 0 2 0 0 0 1 1 1 0 1 0 0 0 1 1 2 0 0 1 0 0 0 1 2 1 0 0 1 0 1 0 0 0 1 1 0 0 0 2 2 0 1 0 0 0 0 0 0 2 0 0 0 1 0 0 0 0 1 0 0 2 0 0 1 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 ",
+    "23 3 "
+  ]
+}

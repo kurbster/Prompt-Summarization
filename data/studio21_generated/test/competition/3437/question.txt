@@ -1,0 +1,23 @@
+In the X-ray lab at KTH some experiments require evacuated tubes between source and sample and between sample and detector so that the X-rays are not absorbed by the air. Since the positions of object and detector vary between different experiments, several tubes of different lengths are available. The tubes should be fixed together in pairs, since they have a vacuum window only in one end. Two such tube pairs should be chosen, one to place between the source and the object and one to place between the object and the detector. This, however, gives a large set of possible lengths and makes it difficult to figure out which tubes to use for an experiment. The length of the tubes used should be as long as possible to minimize air absorption, but there is a limited amount of space between source and object $L_1$ and between object and detector $L_2$. What is the maximum length of air that can be replaced by vacuum tubes in this way? 
+
+-----Task-----
+Given a set of tube lengths and the two distances $L_1$ and $L_2$, find four tubes with the total length being as long as possible under the constraint that the sum of the first two tube lengths is at most $L_1$ and the sum of the last two tube lengths is at most $L_2$.
+
+-----Input-----
+The first line of input contains three positive integers, $L_1$ and $L_2$, denoting the distances explained above in mm ($1 \leq L_1, L_2 \leq 10000$) and $N$, the number of available tubes ($4 \leq N \leq 2000$). The following $N$ lines each contain a single positive integer less than or equal to $10000$, the length of a tube in mm.
+
+-----Output-----
+Output one line containing the maximum total length of air that can be avoided, i.e., the sum of the four tubes chosen. If there are no two pairs of tubes fitting into the setup, output the single word “Impossible” instead.
+
+-----Examples-----
+Sample Input:
+1000 2000 7
+100
+480
+500
+550
+1000
+1400
+1500
+Sample Output:
+2930

@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "........\n........\n........\n...CC...\n..C.DC..\n.C..C...\nC.IC....\nT.C.....\nFLFRXFLFRFLFRF\n",
+        "........\n........\n........\n...CC...\n..C.DC..\n.C..C...\nC.IC....\nT.C.....\nFLFRFLFRFLFRF\n",
+        "........\n........\n........\n...CC...\n..C.DC..\n.C..C...\nC.IC....\nT.C.....\nFLFRXFLFRFLFFR\n"
+    ],
+    "outputs": [
+        "Diamond!\n",
+        "Bug!\n",
+        "Bug!\n"
+    ]
+}

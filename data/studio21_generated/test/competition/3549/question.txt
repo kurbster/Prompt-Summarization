@@ -1,0 +1,24 @@
+After your boat ran out of fuel in the middle of the ocean, you have been following the currents for 80 days. Today, you finally got your radar equipment working. And it’s receiving signals!
+
+Alas, the signals come from the “radar” station owned by the eccentric lighthouse keeper Hasse. Hasse’s radar station (which does not work quite like other radar stations) emits continuous signals of three different wave-lengths. Therefore, the only interesting thing you can measure is the phase of a signal as it reaches you. For example, if the signal you tuned on to has a wave-length of $100$ meters and you are $1456$ meters from the station, your equipment can only tell you that you are either $56$, or $156$, or $256$, or $\dots $ meters away from the lighthouse.
+
+So you reach for your last piece of paper to start calculating – but wait, there’s a catch! On the display you read: “ACCURACY: 3 METERS”. So, in fact, the information you get from this signal is that your distance from Hasse’s radar station is in the union of intervals $[53,59] \cup [153, 159] \cup [253, 259] \cup \dots $.
+
+What to do? Since the key to surviving at sea is to be optimistic, you are interested in what the smallest possible distance to the lighthouse could be, given the wavelengths, measurements and accuracies corresponding to the three signals.
+
+-----Task-----
+Given three positive prime numbers $m_1$, $m_2$, $m_3$ (the wavelengths), three nonnegative integers $x_1$, $x_2$, $x_3$ (the measurements), and three nonnegative integers $y_1$, $y_2$, $y_3$ (the accuracies), find the smallest nonnegative integer $z$ (the smallest possible distance) such that $z$ is within distance $y_ i$ from $x_ i$ modulo $m_ i$ for each $i = 1,2,3$. An integer $x’$ is within distance$y$ from $x$ modulo $m$ if there is some integer $t$ such that $x \equiv x’ + t \pmod{m}$ and $|t| \leq y$.
+
+-----Input-----
+There are three lines of input. The first line is $m_1$ $m_2$ $m_3$, the second is $x_1$ $x_2$ $x_3$ and the third is $y_1$ $y_2$ $y_3$. You may assume that $0 < m_ i \leq 10^6$, $0 \leq x_ i < m_ i$, and $0 \leq y_ i \leq 300$ for each $i$. The numbers $m_1$, $m_2$, $m_3$ are all primes and distinct.
+
+-----Output-----
+Print one line with the answer $z$. Note that the answer might not fit in a 32-bit integer.
+
+-----Examples-----
+Sample Input:
+11 13 17
+5 2 4
+0 0 0
+Sample Output:
+2095

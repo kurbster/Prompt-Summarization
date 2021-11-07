@@ -1,0 +1,57 @@
+Inna loves sleeping very much, so she needs n alarm clocks in total to wake up. Let's suppose that Inna's room is a 100 × 100 square with the lower left corner at point (0, 0) and with the upper right corner at point (100, 100). Then the alarm clocks are points with integer coordinates in this square.
+
+The morning has come. All n alarm clocks in Inna's room are ringing, so Inna wants to turn them off. For that Inna has come up with an amusing game:  First Inna chooses a type of segments that she will use throughout the game. The segments can be either vertical or horizontal.  Then Inna makes multiple moves. In a single move, Inna can paint a segment of any length on the plane, she chooses its type at the beginning of the game (either vertical or horizontal), then all alarm clocks that are on this segment switch off. The game ends when all the alarm clocks are switched off. 
+
+Inna is very sleepy, so she wants to get through the alarm clocks as soon as possible. Help her, find the minimum number of moves in the game that she needs to turn off all the alarm clocks!
+
+
+-----Input-----
+
+The first line of the input contains integer n (1 ≤ n ≤ 10^5) — the number of the alarm clocks. The next n lines describe the clocks: the i-th line contains two integers x_{i}, y_{i} — the coordinates of the i-th alarm clock (0 ≤ x_{i}, y_{i} ≤ 100).
+
+Note that a single point in the room can contain any number of alarm clocks and the alarm clocks can lie on the sides of the square that represents the room.
+
+
+-----Output-----
+
+In a single line print a single integer — the minimum number of segments Inna will have to draw if she acts optimally.
+
+
+-----Examples-----
+Input
+4
+0 0
+0 1
+0 2
+1 0
+
+Output
+2
+
+Input
+4
+0 0
+0 1
+1 0
+1 1
+
+Output
+2
+
+Input
+4
+1 1
+1 2
+2 3
+3 3
+
+Output
+3
+
+
+
+-----Note-----
+
+In the first sample, Inna first chooses type "vertical segments", and then she makes segments with ends at : (0, 0), (0, 2); and, for example, (1, 0), (1, 1). If she paints horizontal segments, she will need at least 3 segments.
+
+In the third sample it is important to note that Inna doesn't have the right to change the type of the segments during the game. That's why she will need 3 horizontal or 3 vertical segments to end the game.

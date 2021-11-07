@@ -1,0 +1,40 @@
+NVWLS, or “No Vowels” puzzles are popular among puzzle enthusiasts. For example, consider the following no-vowels message:
+
+BTWNSBTLSHDNGNDTHBSNCFLGHTLSTHNNCFQLSN
+
+which is inscribed on the famous “Kryptos” statue located at the CIA’s headquarters in Virginia. This message is derived from the following sentence by removing all vowels and spaces:
+
+BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT
+LIES THE NUANCE OF IQLUSION
+
+Given a dictionary (a set of words that can be used to construct a sentence) and a message (which comes from a sentence which uses only those words, but with all vowels and spaces removed), reconstruct the original sentence using the dictionary words!
+
+-----Input-----
+The first line contains an integer $n$ denoting the number of words in the dictionary. The next $n$ lines each contain a dictionary word using one or more uppercase English letters. Each word contains at least one consonant.
+
+For the purposes of this problem, the letters A, E, I, O, and U are vowels and all other letters are consonants.
+
+The dictionary is followed by a single non-empty line of uppercase consonants representing the no-vowels message. It is guaranteed that the no-vowels message can be constructed in at least one way using only the dictionary words.
+
+The total number of letters in all dictionary words is no greater than $100000$. The total number of letters in the no-vowels message does not exceed $300000$.
+
+-----Output-----
+Output a whitespace-separated sequence of dictionary words that yields the original no-vowels message when all spaces and vowels are removed. If there are multiple reconstructions, choose the one with the largest overall number of vowels. If there are still multiple reconstructions, you may output any one of them. No judge input will require your program to output more than $15000000$ characters.
+
+-----Examples-----
+Sample Input:
+11
+BETWEEN
+SUBTLE
+SHADING
+AND
+THE
+ABSENCE
+OF
+LIGHT
+LIES
+NUANCE
+IQLUSION
+BTWNSBTLSHDNGNDTHBSNCFLGHTLSTHNNCFQLSN
+Sample Output:
+BETWEEN SUBTLE SHADING AND THE ABSENCE OF LIGHT LIES THE NUANCE OF IQLUSION

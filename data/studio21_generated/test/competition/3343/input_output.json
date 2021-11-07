@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 3\n3 C\n2 C\n1 C\n",
+        "3 3\n1 C\n2 C\n3 C\n"
+    ],
+    "outputs": [
+        "GHOST\n",
+        "SAFE\n"
+    ]
+}

@@ -1,0 +1,43 @@
+'Jeopardy!' is an intellectual game where players answer questions and earn points. Company Q conducts a simplified 'Jeopardy!' tournament among the best IT companies. By a lucky coincidence, the old rivals made it to the finals: company R1 and company R2. 
+
+The finals will have n questions, m of them are auction questions and n - m of them are regular questions. Each question has a price. The price of the i-th question is a_{i} points. During the game the players chose the questions. At that, if the question is an auction, then the player who chose it can change the price if the number of his current points is strictly larger than the price of the question. The new price of the question cannot be less than the original price and cannot be greater than the current number of points of the player who chose the question. The correct answer brings the player the points equal to the price of the question. The wrong answer to the question reduces the number of the player's points by the value of the question price.
+
+The game will go as follows. First, the R2 company selects a question, then the questions are chosen by the one who answered the previous question correctly. If no one answered the question, then the person who chose last chooses again.
+
+All R2 employees support their team. They want to calculate what maximum possible number of points the R2 team can get if luck is on their side during the whole game (they will always be the first to correctly answer questions). Perhaps you are not going to be surprised, but this problem was again entrusted for you to solve.
+
+
+-----Input-----
+
+The first line contains two space-separated integers n and m (1 ≤ n, m ≤ 100; m ≤ min(n, 30)) — the total number of questions and the number of auction questions, correspondingly. The second line contains n space-separated integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^7) — the prices of the questions. The third line contains m distinct integers b_{i} (1 ≤ b_{i} ≤ n) — the numbers of auction questions. Assume that the questions are numbered from 1 to n.
+
+
+-----Output-----
+
+In the single line, print the answer to the problem — the maximum points the R2 company can get if it plays optimally well. It is guaranteed that the answer fits into the integer 64-bit signed type.
+
+
+-----Examples-----
+Input
+4 1
+1 3 7 5
+3
+
+Output
+18
+
+Input
+3 2
+10 3 8
+2 3
+
+Output
+40
+
+Input
+2 2
+100 200
+1 2
+
+Output
+400

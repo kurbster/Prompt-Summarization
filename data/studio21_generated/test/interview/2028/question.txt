@@ -1,0 +1,44 @@
+A new set of desks just arrived, and it's about time! Things were getting quite cramped in the office. You've been put in charge of creating a new seating chart for the engineers. The desks are numbered, and you sent out a survey to the engineering team asking each engineer the number of the desk they currently sit at, and the number of the desk they would like to sit at (which may be the same as their current desk). Each engineer must either remain where they sit, or move to the desired seat they indicated in the survey. No two engineers currently sit at the same desk, nor may any two engineers sit at the same desk in the new seating arrangement.
+
+How many seating arrangements can you create that meet the specified requirements? The answer may be very large, so compute it modulo 1000000007 = 10^9 + 7.
+
+
+-----Input-----
+
+Input will begin with a line containing N (1 ≤ N ≤ 100000), the number of engineers. 
+
+N lines follow, each containing exactly two integers. The i-th line contains the number of the current desk of the i-th engineer and the number of the desk the i-th engineer wants to move to. Desks are numbered from 1 to 2·N. It is guaranteed that no two engineers sit at the same desk.
+
+
+-----Output-----
+
+Print the number of possible assignments, modulo 1000000007 = 10^9 + 7.
+
+
+-----Examples-----
+Input
+4
+1 5
+5 2
+3 7
+7 3
+
+Output
+6
+
+Input
+5
+1 10
+2 10
+3 10
+4 10
+5 5
+
+Output
+5
+
+
+
+-----Note-----
+
+These are the possible assignments for the first example:   1 5 3 7  1 2 3 7  5 2 3 7  1 5 7 3  1 2 7 3  5 2 7 3

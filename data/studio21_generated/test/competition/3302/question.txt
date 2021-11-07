@@ -1,0 +1,35 @@
+Gray codes are a classic topic in information theory with a number of practical applications, none of which we are concerned with in this problem. An $n$-bit Gray code is an ordering $(x_1, x_2, \ldots , x_{2^n})$ of all $n$-bit binary strings, with the property that any consecutive pair of strings differ in exactly $1$ bit. More formally, for every $1 \le i < 2^n$, it holds that $d(x_{i}, x_{i+1}) = 1$, where $d(\cdot , \cdot )$ denotes the Hamming distance between two binary strings. For instance, for $n=3$, the sequence $(000, 001, 011, 010, 110, 111, 101, 100)$ is a Gray code. 
+
+While Gray codes are great, they are also a bit, well... gray1. In this problem, we look at a much more colorful variant.
+
+For an integer $n \ge 1$ and set of integers $P \subseteq \{ 1, \ldots , n\} $, we say that an ordering $(x_1, \ldots , x_{2^n})$ of all $n$-bit binary strings is an $n$-bit color code with palette $P$, if for all $1 \le i < 2^n$, it holds that $d(x_ i, x_{i+1}) \in P$, i.e., the number of bits by which any consecutive pair of strings differ is in $P$.
+
+Note that for some palettes, color codes do not exist. For instance, if $n = 6$ and $P = \{ 6\} $, the second string must be the binary negation of the first one, but then the third string must be the negation of the second one, i.e., equal to the first string.
+
+Given $n$ and $P$, can you construct an $n$-bit color code with palette $P$?
+
+-----Input-----
+The first line of input consists of two integers $n$ ($1 \le n \le 16$) and $p$ ($1 \le p \le n$). Then follow a line with $p$ distinct integers $s_1, \ldots , s_ p$ ($1 \leq s_ i \leq n$ for each $i$) – the elements of $P$.
+
+-----Output-----
+If there is an $n$-bit color code with palette $P$, output $2^n$ lines, containing the elements of such a code, in order. If there are many different codes, any one will be accepted. If no such code exists, output “impossible”.
+
+-----Examples-----
+Sample Input 1:
+6 1
+6
+Sample Output 1:
+impossible
+
+Sample Input 2:
+3 1
+1
+Sample Output 2:
+000
+001
+011
+010
+110
+111
+101
+100

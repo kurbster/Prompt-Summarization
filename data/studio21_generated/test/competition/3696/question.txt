@@ -1,0 +1,55 @@
+Suppose you have two polynomials $A(x) = \sum_{k = 0}^{n} a_{k} x^{k}$ and $B(x) = \sum_{k = 0}^{m} b_{k} x^{k}$. Then polynomial $A(x)$ can be uniquely represented in the following way:$A(x) = B(x) \cdot D(x) + R(x), \operatorname{deg} R(x) < \operatorname{deg} B(x)$
+
+This can be done using long division. Here, $\operatorname{deg} P(x)$ denotes the degree of polynomial P(x). $R(x)$ is called the remainder of division of polynomial $A(x)$ by polynomial $B(x)$, it is also denoted as $A \operatorname{mod} B$. 
+
+Since there is a way to divide polynomials with remainder, we can define Euclid's algorithm of finding the greatest common divisor of two polynomials. The algorithm takes two polynomials $(A, B)$. If the polynomial $B(x)$ is zero, the result is $A(x)$, otherwise the result is the value the algorithm returns for pair $(B, A \operatorname{mod} B)$. On each step the degree of the second argument decreases, so the algorithm works in finite number of steps. But how large that number could be? You are to answer this question. 
+
+You are given an integer n. You have to build two polynomials with degrees not greater than n, such that their coefficients are integers not exceeding 1 by their absolute value, the leading coefficients (ones with the greatest power of x) are equal to one, and the described Euclid's algorithm performs exactly n steps finding their greatest common divisor. Moreover, the degree of the first polynomial should be greater than the degree of the second. By a step of the algorithm we mean the transition from pair $(A, B)$ to pair $(B, A \operatorname{mod} B)$. 
+
+
+-----Input-----
+
+You are given a single integer n (1 ≤ n ≤ 150) — the number of steps of the algorithm you need to reach.
+
+
+-----Output-----
+
+Print two polynomials in the following format.
+
+In the first line print a single integer m (0 ≤ m ≤ n) — the degree of the polynomial. 
+
+In the second line print m + 1 integers between  - 1 and 1 — the coefficients of the polynomial, from constant to leading. 
+
+The degree of the first polynomial should be greater than the degree of the second polynomial, the leading coefficients should be equal to 1. Euclid's algorithm should perform exactly n steps when called using these polynomials.
+
+If there is no answer for the given n, print -1.
+
+If there are multiple answer, print any of them.
+
+
+-----Examples-----
+Input
+1
+
+Output
+1
+0 1
+0
+1
+
+Input
+2
+
+Output
+2
+-1 0 1
+1
+0 1
+
+
+
+-----Note-----
+
+In the second example you can print polynomials x^2 - 1 and x. The sequence of transitions is(x^2 - 1, x) → (x,  - 1) → ( - 1, 0).
+
+There are two steps in it.

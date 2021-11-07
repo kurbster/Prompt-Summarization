@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "4\nssh\nhs\ns\nhhhs\n",
+    "2\nh\ns\n",
+    "6\nh\ns\nhhh\nh\nssssss\ns\n",
+    "1\ns\n",
+    "10\nsshshss\nhssssssssh\nhhhhhh\nhhhs\nhshhh\nhhhhshsh\nhh\nh\nshs\nsshhshhss\n",
+    "100\nh\nshh\nh\nhs\nshh\nhh\nh\nssh\nhss\nh\nhh\nh\nh\nh\nh\nh\nh\nh\nh\nh\nhh\nh\nh\nh\nh\nhhh\nh\nh\nhhh\nsh\nhh\nhs\nh\nh\nshs\nh\nh\nh\nshh\nhs\nhs\nh\nh\nh\nhhh\nh\nhhs\nhh\nh\nssh\nh\nh\nhh\nsh\nh\nhss\nh\nhh\nsh\nhh\nhh\nhhh\nhs\nh\nh\nh\nshs\nhs\nshs\nsh\nh\nh\nhs\nh\nh\nh\nh\nsh\nssh\nh\nh\nhh\nhhh\nssh\nh\nssh\nhs\nhh\nh\nhss\nhhh\nh\nhhh\nhss\nhhh\nh\nhhh\nsh\nh\nh\n"
+  ],
+  "outputs": [
+    "18\n",
+    "1\n",
+    "40\n",
+    "0\n",
+    "613\n",
+    "5058\n"
+  ]
+}

@@ -1,0 +1,66 @@
+Phoenix has a string $s$ consisting of lowercase Latin letters. He wants to distribute all the letters of his string into $k$ non-empty strings $a_1, a_2, \dots, a_k$ such that every letter of $s$ goes to exactly one of the strings $a_i$. The strings $a_i$ do not need to be substrings of $s$. Phoenix can distribute letters of $s$ and rearrange the letters within each string $a_i$ however he wants.
+
+For example, if $s = $ baba and $k=2$, Phoenix may distribute the letters of his string in many ways, such as:   ba and ba  a and abb  ab and ab  aa and bb 
+
+But these ways are invalid:   baa and ba  b and ba  baba and empty string ($a_i$ should be non-empty) 
+
+Phoenix wants to distribute the letters of his string $s$ into $k$ strings $a_1, a_2, \dots, a_k$ to minimize the lexicographically maximum string among them, i. e. minimize $max(a_1, a_2, \dots, a_k)$. Help him find the optimal distribution and print the minimal possible value of $max(a_1, a_2, \dots, a_k)$.
+
+String $x$ is lexicographically less than string $y$ if either $x$ is a prefix of $y$ and $x \ne y$, or there exists an index $i$ ($1 \le i \le min(|x|, |y|))$ such that $x_i$ < $y_i$ and for every $j$ $(1 \le j < i)$ $x_j = y_j$. Here $|x|$ denotes the length of the string $x$.
+
+
+-----Input-----
+
+The input consists of multiple test cases. The first line contains an integer $t$ ($1 \le t \le 1000$) — the number of test cases. Each test case consists of two lines.
+
+The first line of each test case consists of two integers $n$ and $k$ ($1 \le k \le n \le 10^5$) — the length of string $s$ and the number of non-empty strings, into which Phoenix wants to distribute letters of $s$, respectively.
+
+The second line of each test case contains a string $s$ of length $n$ consisting only of lowercase Latin letters.
+
+It is guaranteed that the sum of $n$ over all test cases is $\le 10^5$.
+
+
+-----Output-----
+
+Print $t$ answers — one per test case. The $i$-th answer should be the minimal possible value of $max(a_1, a_2, \dots, a_k)$ in the $i$-th test case.
+
+
+-----Example-----
+Input
+6
+4 2
+baba
+5 2
+baacb
+5 3
+baacb
+5 3
+aaaaa
+6 4
+aaxxzz
+7 1
+phoenix
+
+Output
+ab
+abbc
+b
+aa
+x
+ehinopx
+
+
+
+-----Note-----
+
+In the first test case, one optimal solution is to distribute baba into ab and ab. 
+
+In the second test case, one optimal solution is to distribute baacb into abbc and a.
+
+In the third test case, one optimal solution is to distribute baacb into ac, ab, and b.
+
+In the fourth test case, one optimal solution is to distribute aaaaa into aa, aa, and a.
+
+In the fifth test case, one optimal solution is to distribute aaxxzz into az, az, x, and x.
+
+In the sixth test case, one optimal solution is to distribute phoenix into ehinopx.

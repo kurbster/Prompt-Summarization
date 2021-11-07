@@ -1,0 +1,41 @@
+Inna loves sweets very much. That's why she decided to play a game called "Sweet Matrix".
+
+Inna sees an n × m matrix and k candies. We'll index the matrix rows from 1 to n and the matrix columns from 1 to m. We'll represent the cell in the i-th row and j-th column as (i, j). Two cells (i, j) and (p, q) of the matrix are adjacent if |i - p| + |j - q| = 1. A path is a sequence of the matrix cells where each pair of neighbouring cells in the sequence is adjacent. We'll call the number of cells in the sequence the path's length.
+
+Each cell of the matrix can have at most one candy. Initiallly, all the cells are empty. Inna is trying to place each of the k candies in the matrix one by one. For each candy Inna chooses cell (i, j) that will contains the candy, and also chooses the path that starts in cell (1, 1) and ends in cell (i, j) and doesn't contain any candies. After that Inna moves the candy along the path from cell (1, 1) to cell (i, j), where the candy stays forever. If at some moment Inna can't choose a path for the candy, she loses. If Inna can place all the candies in the matrix in the described manner, then her penalty equals the sum of lengths of all the paths she has used.
+
+Help Inna to minimize the penalty in the game.
+
+
+-----Input-----
+
+The first line of the input contains three integers n, m and k (1 ≤ n, m ≤ 50, 1 ≤ k ≤ n·m).
+
+
+-----Output-----
+
+In the first line print an integer — Inna's minimum penalty in the game.
+
+In the next k lines print the description of the path for each candy. The description of the path of the candy that is placed i-th should follow on the i-th line. The description of a path is a sequence of cells. Each cell must be written in the format (i, j), where i is the number of the row and j is the number of the column. You are allowed to print extra whitespaces in the line. If there are multiple optimal solutions, print any of them.
+
+Please follow the output format strictly! If your program passes the first pretest, then the output format is correct.
+
+
+-----Examples-----
+Input
+4 4 4
+
+Output
+8
+(1,1) (2,1) (2,2)
+(1,1) (1,2)
+(1,1) (2,1)
+(1,1)
+
+
+
+-----Note-----
+
+Note to the sample. Initially the matrix is empty. Then Inna follows her first path, the path penalty equals the number of cells in it — 3. Note that now no path can go through cell (2, 2), as it now contains a candy. The next two candies go to cells (1, 2) and (2, 1). Inna simply leaves the last candy at cell (1, 1), the path contains only this cell. The total penalty is: 3 + 2 + 2 + 1 = 8.
+
+Note that Inna couldn't use cell (1, 1) to place, for instance, the third candy as in this case she couldn't have made the path for the fourth candy.

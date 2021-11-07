@@ -1,0 +1,16 @@
+{
+    "inputs": [
+        "D 1\nD 2\nE\nD 3\nD 1\nE\n",
+        "D 2\nD 1\nE\nD 1\nD 2\nE\n",
+        "I 1 X\nD 1\nE\nE\n",
+        "I 14 B\nI 14 A\nE\nI 14 A\nI 15 B\nE\n",
+        "I 14 A\nI 15 B\nE\nI 14 B\nI 15 A\nE\n"
+    ],
+    "outputs": [
+        "0\n",
+        "1\n",
+        "0\n",
+        "0\n",
+        "1\n"
+    ]
+}

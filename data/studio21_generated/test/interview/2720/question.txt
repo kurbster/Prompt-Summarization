@@ -1,0 +1,45 @@
+Given an orthogonal maze rotated $45$ degrees and drawn with forward and backward slash characters (see below), determine the minimum number of walls that need to be removed to ensure it is possible to escape outside of the maze from every region of the (possibly disconnected) maze.
+
+/\
+\/
+
+This maze has only a single region fully enclosed. Removing any wall connects it to the outside.
+
+/\..
+\.\.
+.\/\
+..\/
+
+This maze has two enclosed areas. Two walls need to be removed to connect all regions to the outside.
+
+-----Input-----
+The first line has two numbers, $R$ and $C$, giving the number of rows and columns in the maze’s input description. Following this are $R$ lines each with $C$ characters, consisting only of the characters ‘/’, ‘\’, and ‘.’. Both $R$ and $C$ are in the range $1\ldots 1000$.
+
+Define an odd (even) square as one where the sum of the $x$ and $y$ coordinates is odd (even). Either all forward slashes are in the odd squares and all backslashes in the even squares, or vice versa.
+
+-----Output-----
+Output on a single line an integer indicating how many walls need to be removed so escape is possible from every region in the maze.
+
+-----Examples-----
+Sample Input 1:
+2 2
+/\
+\/
+Sample Output 1:
+1
+
+Sample Input 2:
+4 4
+/\..
+\.\.
+.\/\
+..\/
+Sample Output 2:
+2
+
+Sample Input 3:
+2 2
+\/
+/\
+Sample Output 3:
+0

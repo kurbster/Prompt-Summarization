@@ -1,0 +1,31 @@
+Remember the busy boards for toddlers that have an array of holes into which to hammer pegs of various shapes? There’s a new, electronic version. The board consists of a 2D grid of pegs. Each peg on the board can be either up or down, but not both simultaneously. You can pick any peg that is currently up, and “hammer” it down. This will push that peg down, and also raise all of the other pegs in its row, and its column, regardless of their current state. You cannot “hammer” a peg that is down (well, maybe you can, but it will have no effect). Those poor kids will never get all the pegs down at one time!
+
+This example shows what happens when the top right peg is “hammered.” ($\circ =$ up, $\bullet =$ down)
+
+A substitute teacher wants to challenge her class. She uses the “Teacher Mode” to set up the board in a particular configuration, and then asks her students to see if they can get the board to a second configuration by hammering some (perhaps none) of the pegs.
+
+That may be too tough of a problem for toddlers, but maybe you can handle it.
+
+-----Input-----
+Each test case will begin with a line with two space-separated integers $r$ and $c$ ($1\! \le \! r,c\! \le \! 1000$), which are the dimensions of the board.
+
+Each of the next $r$ lines will have exactly $c$ characters, consisting only of capital ‘O’ (representing a peg that is up), capital ‘X’ (representing a peg that is down), and no spaces or other characters. This is the starting configuration.
+
+Following this, each of the next $r$ lines will have exactly $c$ characters, consisting only of capital ‘O’ (representing a peg that is up), capital ‘X’ (representing a peg that is down), and no spaces or other characters. This is the target configuration.
+
+-----Output-----
+Output a single integer, $1$ if it is possible to reach the target configuration from the starting configuration, and $0$ if it is impossible.
+
+-----Examples-----
+Sample Input:
+4 2
+XO
+OX
+XO
+OX
+OX
+OO
+XO
+OO
+Sample Output:
+1

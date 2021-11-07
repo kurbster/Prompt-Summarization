@@ -1,0 +1,2 @@
+ You are given n and m cards. 
+-----Input----- The first line contains two integers: n (1 ≤ n ≤ 10^6) — the number of cards containing number 0; m (1 ≤ m ≤ 10^6) — the number of cards containing number 1. -----Output----- In a single line print the required sequence of zeroes and ones without any spaces. If such sequence is impossible to obtain, print -1. -----Examples----- Input 1 2 Output 101 Input 4 8 Output 110110110101 Input 4 10 Output 11011011011011 Input 1 5 Output -1

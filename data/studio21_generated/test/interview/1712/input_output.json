@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "4 3 2\n1\n2\n3\n4\n",
+    "2 1 1\n1\n2\n",
+    "7 5 20\n26\n27\n28\n29\n30\n31\n32\n",
+    "10 10 1\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n",
+    "10 1 10\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n",
+    "1 999999 1000000\n1000000000\n",
+    "5 5 6\n999999999\n999999998\n999999997\n999999996\n999999995\n",
+    "10 13 27\n3\n21\n23\n17\n15\n23\n16\n7\n24\n20\n",
+    "1 1 1\n1\n",
+    "5 999999 1000000\n1999997\n1999998\n1999999\n2000000\n2000001\n",
+    "5 999998 1000000\n999997\n999998\n999999\n1000000\n1000001\n",
+    "20 5 15\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n32\n33\n34\n35\n36\n37\n38\n39\n",
+    "11 22 33\n55\n56\n57\n58\n59\n60\n61\n62\n63\n64\n65\n"
+  ],
+  "outputs": [
+    "Vanya\nVova\nVanya\nBoth\n",
+    "Both\nBoth\n",
+    "Vova\nVova\nVova\nBoth\nBoth\nVova\nVova\n",
+    "Vanya\nVanya\nVanya\nVanya\nVanya\nVanya\nVanya\nVanya\nVanya\nBoth\n",
+    "Vova\nVova\nVova\nVova\nVova\nVova\nVova\nVova\nVova\nBoth\n",
+    "Vanya\n",
+    "Vova\nVanya\nVova\nVanya\nVova\n",
+    "Vanya\nVanya\nVova\nVova\nVanya\nVova\nVova\nVova\nVanya\nVova\n",
+    "Both\n",
+    "Vova\nBoth\nBoth\nVova\nVanya\n",
+    "Vova\nBoth\nBoth\nVova\nVanya\n",
+    "Both\nVova\nVova\nBoth\nBoth\nVova\nVova\nBoth\nBoth\nVova\nVova\nBoth\nBoth\nVova\nVova\nBoth\nBoth\nVova\nVova\nBoth\n",
+    "Both\nVova\nVanya\nVova\nBoth\nBoth\nVova\nVanya\nVova\nBoth\nBoth\n"
+  ]
+}

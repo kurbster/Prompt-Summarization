@@ -1,0 +1,50 @@
+Mirko is trying to debug a piece of his code. First he creates an array of $N$ integers and fills it with zeros. Then he repeatedly calls the following C++ procedure:
+
+void something( int jump ) {
+  int i = 0;
+  while( i < N ) { seq[i] = seq[i] + 1; i = i + jump;
+  }
+}
+
+As you can see, this procedure increases by one all elements in the array whose indices are divisible by jump.
+
+Mirko calls the procedure exactly $K$ times, using the sequence $X_1,X_2,X_3, \ldots , X_ k$ as arguments.
+
+After this, Mirko has a list of $Q$ special parts of the array he needs to check to verify that his code is working as it should be. Each of these parts is defined by two numbers, $L$ and $R$ ($L \leq R$) the left and right bound of the special part. To check the code, Mirko must compute the sum of all elements of seq between and including $L$ and $R$. In other words $\mathtt{seq}[L] + \mathtt{seq}[L+1] + \mathtt{seq}[L+2] + \ldots + \mathtt{seq}[R]$. Since he needs to know the answer in advance in order to check it, he asked you to help him.
+
+-----Input-----
+The first line of input contains two integers, $N$ ($1 \leq N \leq 10^6$), the size of the array, and $K$ ($1 \leq K \leq 10^6$), the number of calls to something that Mirko makes.
+
+The second line contains $K$ integers: $X_1,X_2,X_3, \ldots ,X_ k$, the arguments passed to the procedure ($1 \leq X_ i < N$).
+
+The third line contains one integer $Q$ ($1 \leq Q \leq 10^6$), the number of special parts of the array Mirko needs to check.
+
+The next $Q$ lines contain two integers each $L_ i$ and $R_ i$ ($0 \leq L_ i \leq R_ i < N$), the bounds of each special part.
+
+-----Output-----
+The output should contain exactly $Q$ lines. The $i$-th line should contain the sum of elements $\mathtt{seq}[L_ i] + \mathtt{seq}[L_ i+1] + \mathtt{seq}[L_ i+2] + \ldots + \mathtt{seq}[R_ i]$.
+
+-----Examples-----
+Sample Input 1:
+10 4
+1 1 2 1
+3
+0 9
+2 6
+7 7
+Sample Output 1:
+35
+18
+3
+
+Sample Input 2:
+11 3
+3 7 10
+3
+0 10
+2 6
+7 7
+Sample Output 2:
+8
+2
+1

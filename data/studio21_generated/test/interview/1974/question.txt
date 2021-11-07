@@ -1,0 +1,83 @@
+There are $n$ robbers at coordinates $(a_1, b_1)$, $(a_2, b_2)$, ..., $(a_n, b_n)$ and $m$ searchlight at coordinates $(c_1, d_1)$, $(c_2, d_2)$, ..., $(c_m, d_m)$. 
+
+In one move you can move each robber to the right (increase $a_i$ of each robber by one) or move each robber up (increase $b_i$ of each robber by one). Note that you should either increase all $a_i$ or all $b_i$, you can't increase $a_i$ for some points and $b_i$ for some other points.
+
+Searchlight $j$ can see a robber $i$ if $a_i \leq c_j$ and $b_i \leq d_j$. 
+
+A configuration of robbers is safe if no searchlight can see a robber (i.e. if there is no pair $i,j$ such that searchlight $j$ can see a robber $i$).
+
+What is the minimum number of moves you need to perform to reach a safe configuration?
+
+
+-----Input-----
+
+The first line of input contains two integers $n$ and $m$ ($1 \leq n, m \leq 2000$): the number of robbers and the number of searchlight.
+
+Each of the next $n$ lines contains two integers $a_i$, $b_i$ ($0 \leq a_i, b_i \leq 10^6$), coordinates of robbers.
+
+Each of the next $m$ lines contains two integers $c_i$, $d_i$ ($0 \leq c_i, d_i \leq 10^6$), coordinates of searchlights.
+
+
+-----Output-----
+
+Print one integer: the minimum number of moves you need to perform to reach a safe configuration.
+
+
+-----Examples-----
+Input
+1 1
+0 0
+2 3
+
+Output
+3
+
+Input
+2 3
+1 6
+6 1
+10 1
+1 10
+7 7
+
+Output
+4
+
+Input
+1 2
+0 0
+0 0
+0 0
+
+Output
+1
+
+Input
+7 3
+0 8
+3 8
+2 7
+0 10
+5 5
+7 0
+3 5
+6 6
+3 11
+11 5
+
+Output
+6
+
+
+
+-----Note-----
+
+In the first test, you can move each robber to the right three times. After that there will be one robber in the coordinates $(3, 0)$.
+
+The configuration of the robbers is safe, because the only searchlight can't see the robber, because it is in the coordinates $(2, 3)$ and $3 > 2$.
+
+In the second test, you can move each robber to the right two times and two times up. After that robbers will be in the coordinates $(3, 8)$, $(8, 3)$.
+
+It's easy the see that the configuration of the robbers is safe.
+
+It can be proved that you can't reach a safe configuration using no more than $3$ moves.

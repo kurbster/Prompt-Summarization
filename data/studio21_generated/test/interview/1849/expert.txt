@@ -1,0 +1,2 @@
+ You are given a list of integers. You want to count the number of blocks of length $i$ among the integers. Since these integers may be too large, print them modulo $998244353$. 
+-----Input----- The only line contains one integer $n$ ($1 \le n \le 2 \cdot 10^5$). -----Output----- In the only line print $n$ integers. The $i$-th integer is equal to the number of blocks of length $i$. Since these integers may be too large, print them modulo $998244353$. -----Examples----- Input 1 Output 10 Input 2 Output 180 10

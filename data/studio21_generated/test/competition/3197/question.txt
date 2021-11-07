@@ -1,0 +1,27 @@
+Organising a group trip for the elderly can be a daunting task... Not least because of the fussy participants, each of whom will only make the trip on condition that some other participant also comes.
+
+After some effort, you have taken from each of your participants a number, indicating that this participant will refuse to join the excursion unless the participant with that number also joins– the less choosy simply give their own number. This would be easy enough to resolve (just send all of them) but the bus you are going to use during the trip has only a fixed number of places.
+
+-----Task-----
+Given the preferences of all participants, find the maximum number of participants that can join.
+
+-----Input-----
+The first line of input contains two integers $n$ and $k$ ($1 \leq k \leq n \leq 1000$), where $n$ denotes the total number of participants and $k$ denotes the number of places on the bus.
+
+The second line contains $n$ integers $x_{i}$ for $i=1,2,\ldots ,n$, where $1 \leq x_ i \leq n$. The meaning of $x_ i$ is that the $i$-th participant will refuse to join the excursion unless the $x_ i$-th participant also joins.
+
+-----Output-----
+Output one integer: the maximum number of participants that can join the excursion, so that all the participants’ preferences are obeyed and the capacity of the bus is not exceeded.
+
+-----Examples-----
+Sample Input 1:
+4 4
+1 2 3 4
+Sample Output 1:
+4
+
+Sample Input 2:
+12 3
+2 3 4 5 6 7 4 7 8 8 12 12
+Sample Output 2:
+2

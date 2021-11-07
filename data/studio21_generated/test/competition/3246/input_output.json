@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "tihssnetnceemkaesprfecetsesne\n5\nmakes\nperfect\nsense\nsentence\nthis\n",
+        "hitehre\n2\nthere\nhello\n",
+        "hitehre\n3\nhi\nthere\nthree\n"
+    ],
+    "outputs": [
+        "this sentence makes perfect sense\n",
+        "impossible\n",
+        "ambiguous\n"
+    ]
+}

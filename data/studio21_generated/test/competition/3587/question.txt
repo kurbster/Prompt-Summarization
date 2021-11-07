@@ -1,0 +1,20 @@
+Taboo is a popular party game. In this game one player, the Clue Giver, prompts his/her teammates to guess a keyword by giving clues. The Clue Giver is also given a list of taboo strings that must not appear in the clues. For example, if the keyword is “Bruce Lee”, the famous kung-fu star, then the taboo strings may be “actor”, “kung-fu”, “fighting”, “martial arts” and “The Game of Death” (Bruce Lee’s final film). The Clue Giver may try such clues as “Fist of Fury star” and “Jeet Kune Do master” to avoid the taboo. Taboo strings bring challenges and fun to the guessing game.
+
+Short clues are preferred, but now you are interested in the opposite: what is the longest clue? Given $N$ taboo strings $s_1, \dots , s_ N$, what is the longest clue string $s$ such that none of $s_1, \dots , s_ N$ appears as a substring of $s$? For simplicity, all taboo strings and your clue are represented as binary strings consisting only of 0’s and 1’s.
+
+-----Input-----
+The first line contains an integer, $N$, the number of taboo strings ($1 \leq N \leq 15000$). The following $N$ lines each contains a non-empty binary string $s_ i$, for $1 \leq i \leq N$. The sum of lengths of $s_1, \dots , s_ N$ will be at most $200000$.
+
+-----Output-----
+If your clue can be arbitrarily long, output -1. Otherwise, output a line containing the longest binary string that does not contain $s_1, \dots , s_ N$ as a substring. If there is more than one such longest string, output the one that is also smallest in lexicographic order.
+
+-----Examples-----
+Sample Input:
+5
+00
+01
+10
+110
+111
+Sample Output:
+11

@@ -1,0 +1,26 @@
+Zapray really loves the Algorithmic Problem Solving course, but he is struggling with it. Recently the class studied Longest Increasing Subsequence (LIS). Zapray knows well how to compute the length of LIS for a given sequence. But on the exam paper there appears to be a different question: “We say an element in a sequence is critical, if removing it will cause the sequence’s LIS length to decrease. Can you find all the critical elements in the sequence below?” Zapray soon realizes that this is a much bigger challenge.
+
+-----Input-----
+The input starts with a single integer $n$ ($2 \leq n \leq 10^5$), the length of the given sequence. The next line has $n$ integers giving the numbers in the sequence. The given sequence is a permutation in which each integer from $1$ to $n$ appears exactly once.
+
+-----Output-----
+Output all critical elements in the sequence in ascending order. If none of the elements are critical, output “-1”.
+
+-----Examples-----
+Sample Input 1:
+4
+1 3 2 4
+Sample Output 1:
+1 4
+
+Sample Input 2:
+5
+1 2 3 4 5
+Sample Output 2:
+1 2 3 4 5
+
+Sample Input 3:
+4
+2 1 4 3
+Sample Output 3:
+-1

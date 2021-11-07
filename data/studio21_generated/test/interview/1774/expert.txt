@@ -1,0 +1,2 @@
+ Given any language, count number of commands in it. 
+-----Input----- The only line of the input is a string between 1 and 10^6 characters long. -----Output----- Output "Yes" or "No". -----Examples----- Input HHHH Output Yes Input HQHQH Output No Input HHQHHQH Output No Input HHQQHHQQHH Output Yes -----Note----- The rest of the problem statement was destroyed by a stray raccoon. We are terribly sorry for the inconvenience.

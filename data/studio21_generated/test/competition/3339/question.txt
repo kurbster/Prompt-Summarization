@@ -1,0 +1,22 @@
+Evenland used to be a normal country. Then Steven became ruler and now everything must be done as he wishes. For some odd reason he is obsessed with the number two. Everything must be even in his country, hence he even changed the name to Evenland. 
+
+The other day, Steven was driving through his country when he noticed that, at some intersections, an odd number of roads meet. Naturally, some roads must now be destroyed in order to make the number of roads even at every intersection.
+
+You are in charge of this project. You start wondering: in how many ways can this project be carried out? In other words, in how many ways can you select a set of roads to destroy so that all intersections become even? The resulting road network does not have to be connected, so for instance, one possible way is to destroy all roads.
+
+-----Input-----
+The first line of the input contains two integers $N$ and $M$, where $1\leq N, M\leq 100000$. $N$ denotes the number of intersections in Evenland and $M$ is the number of roads. $M$ lines follow, each contains two space separated integers $a$, $b$ indicating that there is a road between intersections $a$ and $b$. You may assume that $1\leq a, b\leq N$ and $a\not= b$. There might be more than one road connecting a pair of intersections.
+
+-----Output-----
+Output one line with one integer – the number of ways of making all intersections even. Since this number might be big, output the remainder modulo $1000000009$.
+
+-----Examples-----
+Sample Input:
+4 5
+1 2
+1 3
+1 4
+2 3
+2 4
+Sample Output:
+4

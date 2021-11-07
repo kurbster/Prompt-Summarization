@@ -1,0 +1,27 @@
+In this economy, we all know how hard it is to get a job. Mirko, a recent college graduate, however, got lucky – he is now employed as a runeologist by the Language Institute of Croatia. His friend Slavko believes runeology isn’t a science and is hence angry at Mirko for believing the opposite. One foggy Christmas day, Mirko’s laptop broke. Since he isn’t great with computers, he gave it to Slavko to repair it. Slavko, feeling a little naughty, decided to mess up a particular file Mirko was working on.
+
+This file contains a matrix of $R$ rows and $C$ columns. Each element of the matrix is a single letter. No two columns of the matrix are equal. To have some fun with pseudo-scientist Mirko, Slavko decided he will delete as many rows as possible from the top of the table, without breaking the no-equal-column rule.
+
+-----Input-----
+The first line of input contains two integers $R$ and $C$ ($2 \le R, C \le 1000$), the number of rows and the number of columns, respectively.
+
+In each of the next $R$ lines there are $C$ small letters of the English alphabet. These $R \times C$ letters represent Mirko’s table (which does not have two equal columns).
+
+-----Output-----
+Output a single integer, the maximum number of rows which can be deleted from the top of the table so that no two columns are equal.
+
+-----Examples-----
+Sample Input 1:
+2 6
+dobarz
+adatak
+Sample Output 1:
+0
+
+Sample Input 2:
+3 4
+alfa
+beta
+zeta
+Sample Output 2:
+2

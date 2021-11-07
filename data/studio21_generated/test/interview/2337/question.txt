@@ -1,0 +1,53 @@
+George decided to prepare a Codesecrof round, so he has prepared m problems for the round. Let's number the problems with integers 1 through m. George estimates the i-th problem's complexity by integer b_{i}.
+
+To make the round good, he needs to put at least n problems there. Besides, he needs to have at least one problem with complexity exactly a_1, at least one with complexity exactly a_2, ..., and at least one with complexity exactly a_{n}. Of course, the round can also have problems with other complexities.
+
+George has a poor imagination. It's easier for him to make some already prepared problem simpler than to come up with a new one and prepare it. George is magnificent at simplifying problems. He can simplify any already prepared problem with complexity c to any positive integer complexity d (c ≥ d), by changing limits on the input data.
+
+However, nothing is so simple. George understood that even if he simplifies some problems, he can run out of problems for a good round. That's why he decided to find out the minimum number of problems he needs to come up with in addition to the m he's prepared in order to make a good round. Note that George can come up with a new problem of any complexity.
+
+
+-----Input-----
+
+The first line contains two integers n and m (1 ≤ n, m ≤ 3000) — the minimal number of problems in a good round and the number of problems George's prepared. The second line contains space-separated integers a_1, a_2, ..., a_{n} (1 ≤ a_1 < a_2 < ... < a_{n} ≤ 10^6) — the requirements for the complexity of the problems in a good round. The third line contains space-separated integers b_1, b_2, ..., b_{m} (1 ≤ b_1 ≤ b_2... ≤ b_{m} ≤ 10^6) — the complexities of the problems prepared by George. 
+
+
+-----Output-----
+
+Print a single integer — the answer to the problem.
+
+
+-----Examples-----
+Input
+3 5
+1 2 3
+1 2 2 3 3
+
+Output
+0
+
+Input
+3 5
+1 2 3
+1 1 1 1 1
+
+Output
+2
+
+Input
+3 1
+2 3 4
+1
+
+Output
+3
+
+
+
+-----Note-----
+
+In the first sample the set of the prepared problems meets the requirements for a good round.
+
+In the second sample, it is enough to come up with and prepare two problems with complexities 2 and 3 to get a good round.
+
+In the third sample it is very easy to get a good round if come up with and prepare extra problems with complexities: 2, 3, 4.

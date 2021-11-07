@@ -1,0 +1,40 @@
+You are the boss of Wi Know, an upstanding company in information theory, especially in message encryption.
+
+The counter-counter-intelligence branch of your upstanding company managed to intercept a message sent by the counter-intelligence agency of the local Helsinkian government. This message is, of course, of utmost importance, and its content can probably be used for the “greater good” later. The message is a sequence $S$ of $N$ positive integers not greater than $N$, indexed from $1$ to $N$. Let $S_ i$ be the $i^\textrm {th}$ integer of $S$.
+
+As the first step to mine useful information from this message, you first have to find patterns in it. At the moment, the pattern we’re interested in is whether there exists two different integers $A$ and $B$ such that the pattern $A, B, A, B$ appears as a (not necessarily contiguous) subsequence of the original message. That is, whether there exists four indices $1 \le c < d < e < f \le N$ such that $S_ c = S_ e$, $S_ d = S_ f$, and $S_ c \not= S_ d$.
+
+Your task is to find such a pattern, if any, and print both $A$ and $B$. If there are multiple such pairs $(A, B)$, find the lexicographically smallest one. That is, if there are multiple such pairs $(A, B)$, print the one whose $A$ is minimized. If there are still multiple such patterns, print the one whose $B$ is minimized.
+
+-----Input-----
+The first line contains a non-negative integer $4 \leq N \leq 400000$, giving the number of integers in $S$. Thereafter follow $N$ lines, the $i^\textrm {th}$ line contains a single integer $1 \le S_ i \le N$.
+
+-----Output-----
+If $A \not= B$ exists and the pattern $A, B, A, B$ appears as a subsequence of $S$, you should print two integers $A$ and $B$ on a single line separated by a single space, denoting the lexicographically smallest pair of $(A, B)$ as described in the problem statement. Otherwise, if there is no such pair, you should print a single integer $-1$.
+
+-----Examples-----
+Sample Input 1:
+8
+1
+3
+2
+4
+1
+5
+2
+4
+Sample Output 1:
+1 2
+
+Sample Input 2:
+8
+1
+2
+3
+4
+5
+6
+7
+1
+Sample Output 2:
+-1

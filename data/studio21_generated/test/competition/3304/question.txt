@@ -1,0 +1,38 @@
+Young ruler Mirko has declared himself king of dwarves. Upon hearing this, Slavko felt threatened and soon declared himself king of elves! As there cannot be more than one king in the land, they have decided to resolve the issue of power once and for all.
+
+Slavko will, along with the $N$ strongest elves of the kingdom, labeled with numbers from $1$ to $N$, go visit Mirko’s castle. In the castle hall, they will be greeted by the $N$ strongest dwarves sitting in a circle, labelled clockwise with numbers from $1$ to $N$.
+
+Mirko has, upon entering the castle, given a number $A_ i$ to each of Slavko’s elves – the label of the dwarf it will fight against. Unfortunately, he didn’t make sure that each elf should get a unique adversary, and soon a terrible fight broke out.
+
+They have decided to solve the problem in the following way:
+ - Slavko will send his elves to the hall one by one, in the order he chooses. The next elf can enter the hall only after the one before him found a place to sit.
+ - The elf labeled $k$ will first approach the dwarf labeled $A_ k$. If there isn’t an elf sitting beside the dwarf, he will sit there. Otherwise, he will continue walking, from dwarf to dwarf, clockwise, until he finds an unclaimed dwarf.
+
+Now the $N$ resulting pairs of elves and dwarves compete in armwrestling, and the stronger one always wins.
+
+Slavko is well prepared for this event. He has studied all the fighters and determined the strength of each one. Now he wants to send the elves to the hall in the order which, after they all sit down, will bring the most victories for him.
+
+Help him and calculate the highest number of victories in duels that can be achieved by elves!
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \leq N \leq 5\cdot 10^5$). The second line of input contains $N$ integers $A_ i$ ($1 \leq A_ i \leq N$), the adversaries chosen by Mirko. The third line of input contains $N$ integers $P_ i$ ($1 \leq P_ i \leq 10^9$), the dwarves’ strengths. The fourth line of input contains $N$ integers $V_ i$ ($1 \leq V_ i \leq 10^9$), the elves’ strengths. All strengths from the input will be mutually distinct.
+
+-----Output-----
+The first and only line of input must contain the maximum number of victories that can be achieved by elves.
+
+-----Examples-----
+Sample Input 1:
+3
+2 3 3
+4 1 10
+2 7 3
+Sample Output 1:
+2
+
+Sample Input 2:
+4
+3 1 3 3
+5 8 7 10
+4 1 2 6
+Sample Output 2:
+1

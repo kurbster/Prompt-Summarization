@@ -1,0 +1,2 @@
+ You are given two counters and $n$ customers. You need to assign each customer to either counter such that maximum number of customers can be served. 
+-----Input----- The first line has three positive integers $n$, $s_1$, and $s_2$ ($n \leq 1000, s_1 \cdot s_2 \leq 10^{7}$). The second line has $n$ integers. The $j$th integer is $t_ j$ ($1 \leq t_ j \leq 10^6$). -----Output----- Output the maximum number of customers that can be served today. -----Examples----- Sample Input: 5 20 20 7 11 9 12 2 Sample Output: 4

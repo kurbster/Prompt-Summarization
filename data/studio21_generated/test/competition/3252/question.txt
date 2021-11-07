@@ -1,0 +1,40 @@
+Your greeting card company makes unique greeting cards. The sizes of these greeting cards vary widely because of the whims of card designers. There are a lot of different types of cards, and each has a specific quantity that you need to manufacture.
+
+Your job is to determine what envelopes to order for these greeting cards. You have a strict limit on the different number of different sizes of envelopes, which may be less than the number of distinct sizes of cards. You need to have envelopes so that every card fits in some envelope, possibly with room to spare, and the amount of waste paper is minimized. Measure the waste paper by the area of the envelope that is in excess of the area of the card, for each card. For example, a $10 \times 4$ card in a $10 \times 4$ envelope has no wasted paper, but a $10 \times 4$ card in a $12 \times 5$ envelope has waste of $20$. You may not rotate the cards to fit them in the envelopes better.
+
+Suppose that you have $5$ types of cards: $10 \times 10$ ($5$ of these), $9 \times 8$ ($10$ of these), $4 \times 12$ ($20$ of these), $12 \times 4$ ($8$ of these), and $2 \times 3$ ($16$ of these).
+
+Now, suppose that you can only buy one type of envelope. Since all cards have to fit in that one envelope size, the smallest envelope size you can use is $12 \times 12$, with an area of $144$. The wastes by each type of card are $144 - 10 \cdot 10=44$, $144 - 9 \cdot 8=72$, $144 - 4 \cdot 12=96$, $144 - 12 \cdot 4=96$, and $144 - 2 \cdot 3=138$, respectively. The total waste is $44 \cdot 5 + 72 \cdot 10 + 96 \cdot 20 + 96 \cdot 8 + 138 \cdot 16=5836$.
+
+Suppose that you can buy $2$ types of envelopes. The best you can do is to put the $10 \times 10$, $9 \times 8$ and $12 \times 4$ cards in $12 \times 10$ envelopes, and the $4 \times 12$ and $2 \times 3$ cards in $4 \times 12$ envelopes. That adds up to waste of $1828$.
+
+If you can buy $5$ types of envelopes, then you can match one envelope type to each card type, and there’s no waste!
+
+Given a list of card types and the number of types of envelopes you can buy, what is the smallest amount of wasted paper you can achieve?
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The first line of the input will consist of two space-separated integers $n$ and $k$ ($1 \le n,k \le 15$), where $n$ is the number of different types of cards, and $k$ is the maximum number of types of envelopes you can order. Each of the following $n$ lines will consist of three integers, describing a type of card. The integers are $w$, $h$ and $q$ ($1 \le w,h,q \le 10000$), where $w$ is the width of the cards of this type, $h$ is the height of the cards, and $q$ is the quantity of cards of this type.
+
+-----Output-----
+Output a single integer, representing the smallest possible total amount of wasted paper.
+
+-----Examples-----
+Sample Input 1:
+5 1
+10 10 5
+9 8 10
+4 12 20
+12 4 8
+2 3 16
+Sample Output 1:
+5836
+
+Sample Input 2:
+5 2
+10 10 5
+9 8 10
+4 12 20
+12 4 8
+2 3 16
+Sample Output 2:
+1828

@@ -1,0 +1,45 @@
+You and your friend are participating in a TV show "Run For Your Prize".
+
+At the start of the show n prizes are located on a straight line. i-th prize is located at position a_{i}. Positions of all prizes are distinct. You start at position 1, your friend — at position 10^6 (and there is no prize in any of these two positions). You have to work as a team and collect all prizes in minimum possible time, in any order.
+
+You know that it takes exactly 1 second to move from position x to position x + 1 or x - 1, both for you and your friend. You also have trained enough to instantly pick up any prize, if its position is equal to your current position (and the same is true for your friend). Carrying prizes does not affect your speed (or your friend's speed) at all.
+
+Now you may discuss your strategy with your friend and decide who will pick up each prize. Remember that every prize must be picked up, either by you or by your friend.
+
+What is the minimum number of seconds it will take to pick up all the prizes?
+
+
+-----Input-----
+
+The first line contains one integer n (1 ≤ n ≤ 10^5) — the number of prizes.
+
+The second line contains n integers a_1, a_2, ..., a_{n} (2 ≤ a_{i} ≤ 10^6 - 1) — the positions of the prizes. No two prizes are located at the same position. Positions are given in ascending order.
+
+
+-----Output-----
+
+Print one integer — the minimum number of seconds it will take to collect all prizes.
+
+
+-----Examples-----
+Input
+3
+2 3 9
+
+Output
+8
+
+Input
+2
+2 999995
+
+Output
+5
+
+
+
+-----Note-----
+
+In the first example you take all the prizes: take the first at 1, the second at 2 and the third at 8.
+
+In the second example you take the first prize in 1 second and your friend takes the other in 5 seconds, you do this simultaneously, so the total time is 5.

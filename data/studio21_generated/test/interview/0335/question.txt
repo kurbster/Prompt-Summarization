@@ -1,0 +1,27 @@
+Little C loves number «3» very much. He loves all things about it.
+
+Now he has a positive integer $n$. He wants to split $n$ into $3$ positive integers $a,b,c$, such that $a+b+c=n$ and none of the $3$ integers is a multiple of $3$. Help him to find a solution.
+
+
+-----Input-----
+
+A single line containing one integer $n$ ($3 \leq n \leq 10^9$) — the integer Little C has.
+
+
+-----Output-----
+
+Print $3$ positive integers $a,b,c$ in a single line, such that $a+b+c=n$ and none of them is a multiple of $3$.
+
+It can be proved that there is at least one solution. If there are multiple solutions, print any of them.
+
+
+-----Examples-----
+Input
+3
+
+Output
+1 1 1
+Input
+233
+Output
+77 77 79
