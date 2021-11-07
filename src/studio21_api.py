@@ -19,8 +19,10 @@ def make_prompt(token, model):
     # An API error. The model can only take 2048 tokens.
     prompt_tokens = len(prompt.split())
     if prompt_tokens > 1800:
-        print(f'Our prompt was too long. Had {prompt_tokens} tokens.')
+        logger.warning(f'Our prompt was too long. Had {prompt_tokens} tokens.')
         return True
+    else:
+        logger.debug(f'Our prompt had {prompt_tokens} tokens.')
 
     with open('config.yaml') as f:
         cfg = yaml.safe_load(f)
@@ -28,17 +30,14 @@ def make_prompt(token, model):
 
     result = requests.post(url, headers=header, json=data)
     if result.status_code >= 400:
-        print('API request error!!!')
-        print(result.status_code)
-        print(result.text)
-        print(result.reason)
+        logger.critical(f'API request error!!! {result.status_code}: {result.text} {result.reason}')
         # A 429 status code means we have reached our quota. So we return false.
         # Any other code we ignore and continue.
         return result.status_code != 429
     else:
         text = result.json()['completions'][0]['data']['text']
         json.dump(result.json(), open(output_dir+'/output.json', 'w'), indent=4)
-        with open(f'{output_dir}/{cfg.summaryType}.txt', 'w') as f:
+        with open(f'{output_dir}/{cfg["summaryType"]}.txt', 'w') as f:
             f.write(text+'\n'+extra)
 
     return True
@@ -52,7 +51,7 @@ if __name__ == '__main__':
         keys = f.readlines()
     for key in keys:
         key = key.strip()
-        print(f'\n\n\nRUNNING WITH API KEY == {key}\n\n\n')
+        logger.info(f'Running with API key: {key}')
         if not key.startswith('#'):
             main(token=key, model='large')
             main(token=key, model='jumbo')

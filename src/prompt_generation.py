@@ -75,6 +75,9 @@ def get_completed_problems() -> tuple[list[int], list[int]]:
 
     model_probs = train_probs + test_probs
 
+    logger.debug(f'Found {len(human_probs)} human generated summaries.')
+    logger.debug(f'Found {len(model_probs)} model generated summaries.')
+
     return human_probs, model_probs
     
 def select_summary_prompt(probs: list[int], ignore_intro: bool = True) -> str:
@@ -93,12 +96,15 @@ def select_summary_prompt(probs: list[int], ignore_intro: bool = True) -> str:
     intro_probs = []
     if ignore_intro:
         intro_probs = list(range(2361, 5000)) + list(range(9000, 10000))
+        logger.info('Ignoring introductory problems.')
 
     completed_probs = set(probs + intro_probs)
-
+    
     available_probs = [i for i in range(10000) if i not in completed_probs]
 
+    logger.debug(f'There are {len(available_probs)} remaining problems to summarize.')
     assert len(available_probs) + len(completed_probs) == 10000, f'The total probs must add to 10000. It is {len(available_probs) + len(completed_probs)}'
+
     prob_to_summarize = random.choice(available_probs)
 
     if prob_to_summarize >= 5000:
@@ -127,6 +133,8 @@ def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str) -> str
     output_dir = prompt_dir.replace('APPS', 'data/studio21_generated')
     shutil.copytree(prompt_dir, output_dir)
 
+    logger.debug(f'Saved original prompt directory to {output_dir}')
+
     # Save config files in output dir
     shutil.copy(cfg_fname, output_dir)
     shutil.copy(prompt_cfg_fname, output_dir)
@@ -134,8 +142,7 @@ def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str) -> str
     return output_dir
 
 def detect_type(fname: str) -> str:
-    logger.info(f'I am the name of the file to summarize: {fname}')
-    logger.debug(f'I am a DEBUGG')
+    logger.info(f'Summarizing the file: {fname}')
     return 'general'
 
 def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
@@ -157,7 +164,7 @@ def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
 
     re_str = '|'.join(re_str)
     regex = re.compile(re_str)
-    
+
     # Only join non empty lines
     prompt = [t for t in prompt if t]
     prompt = ' '.join(prompt)
@@ -167,6 +174,8 @@ def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
     match = regex.search(prompt)
     if match:
         prompt_idx = match.span()[0]
+    else:
+        logger.error(f'A split was not found for file {fname}')
 
     return prompt[:prompt_idx], prompt[prompt_idx:]
 
@@ -196,14 +205,14 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: list[i
         # Get the original prompt and the summarized
         orig = glob.glob(f'../data/[ic]*/{ex}/question.txt')[0]
         summary = glob.glob(f'../data/[ic]*/{ex}/{cfg["summaryType"]}.txt')[0]
-        print(f'Using summary {summary} for priming model')
+        logger.debug(f'Using summary {summary} for priming model')
         orig, _ = split_prompt(orig, cfg['splitFile'])
         summary, _ = split_prompt(summary, cfg['splitFile'])
         output.append(f'{cfg["originalPrefix"]} {orig}\n{cfg["summaryPrefix"]} {summary}')
     
     for text, num in zip(output, example_prompts):
         if not check_ascii(text):
-            print(f'Problem {num} was not ascii.')
+            logger.warning(f'Problem {num} was not ascii.')
 
     output = '\n\n'.join(output)
     
@@ -225,7 +234,8 @@ def ensure_ascii(text: str) -> str:
     text = text.decode('ascii')
     text = text.replace('?', ' ')
     if not check_ascii(text):
-        print(f'THE FINAL PROMPT IS NOT ASCII!!!')
+        logger.error(f'THE FINAL PROMPT IS NOT ASCII!!!')
+
     return text
 
 def check_ascii(text: str) -> bool:

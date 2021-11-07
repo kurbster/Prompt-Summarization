@@ -4,7 +4,7 @@ splitFile: split.txt
 promptFile: prompt.yaml
 numPrompts: 5
 summaryType: expert
-ignoreIntro: False
+ignoreIntro: True
 summaryPrefix: "Simple:"
 originalPrefix: "Jargon:"
 
