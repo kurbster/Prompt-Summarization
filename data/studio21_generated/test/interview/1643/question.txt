@@ -1,0 +1,51 @@
+The only difference between easy and hard versions is the length of the string. You can hack this problem if you solve it. But you can hack the previous problem only if you solve both problems.
+
+Kirk has a binary string $s$ (a string which consists of zeroes and ones) of length $n$ and he is asking you to find a binary string $t$ of the same length which satisfies the following conditions: For any $l$ and $r$ ($1 \leq l \leq r \leq n$) the length of the longest non-decreasing subsequence of the substring $s_{l}s_{l+1} \ldots s_{r}$ is equal to the length of the longest non-decreasing subsequence of the substring $t_{l}t_{l+1} \ldots t_{r}$; The number of zeroes in $t$ is the maximum possible.
+
+A non-decreasing subsequence of a string $p$ is a sequence of indices $i_1, i_2, \ldots, i_k$ such that $i_1 < i_2 < \ldots < i_k$ and $p_{i_1} \leq p_{i_2} \leq \ldots \leq p_{i_k}$. The length of the subsequence is $k$.
+
+If there are multiple substrings which satisfy the conditions, output any.
+
+
+-----Input-----
+
+The first line contains a binary string of length not more than $10^5$.
+
+
+-----Output-----
+
+Output a binary string which satisfied the above conditions. If there are many such strings, output any of them.
+
+
+-----Examples-----
+Input
+110
+
+Output
+010
+
+Input
+010
+
+Output
+010
+
+Input
+0001111
+
+Output
+0000000
+
+Input
+0111001100111011101000
+
+Output
+0011001100001011101000
+
+
+
+-----Note-----
+
+In the first example:  For the substrings of the length $1$ the length of the longest non-decreasing subsequnce is $1$;  For $l = 1, r = 2$ the longest non-decreasing subsequnce of the substring $s_{1}s_{2}$ is $11$ and the longest non-decreasing subsequnce of the substring $t_{1}t_{2}$ is $01$;  For $l = 1, r = 3$ the longest non-decreasing subsequnce of the substring $s_{1}s_{3}$ is $11$ and the longest non-decreasing subsequnce of the substring $t_{1}t_{3}$ is $00$;  For $l = 2, r = 3$ the longest non-decreasing subsequnce of the substring $s_{2}s_{3}$ is $1$ and the longest non-decreasing subsequnce of the substring $t_{2}t_{3}$ is $1$; 
+
+The second example is similar to the first one.

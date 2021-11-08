@@ -1,0 +1,17 @@
+It is Catmas time again, and that means a lot of stress for everyone. In the Kattis family everyone used to buy gifts for everyone else, but this becomes more and more expensive every year, since our family keeps growing. 
+
+To make things easier, we decided that this year each person will buy just one gift. We will then put all the gifts in a big bag and choose an order among ourselves, with all orderings being equally likely. Then, in this order, each person picks a gift from the bag, where each gift is chosen with equal probability. If it is their own gift (which they can easily recognize since everyone in the Kattis family is a creative individual making completely unique Catmas gift wrapping), they put it back in the bag and pick another gift. This can take some time, since it might happen that somebody picks their own gift a few times in a row.
+
+This strategy is not perfect, because the last person might still end up with their own gift. When this happens, everyone has to put their gifts back in the bag, and then we restart the entire process all over from the beginning. Now the question is, how long will we have to wait until the process ends and we can start opening our Catmas gifts? Specifically, given the size $n$ of our family, what is the expected total number of gifts taken out of the bag until the process ends and everyone has gotten their gift?
+
+-----Input-----
+The input contains one line with one integer $n$ ($2\leq n\leq 1000$) – the current size of the Kattis family.
+
+-----Output-----
+Output the expected total number of gifts taken out of the bag, accurate to within an absolute error of at most $10^{-6}$.
+
+-----Examples-----
+Sample Input:
+2
+Sample Output:
+3.000000000

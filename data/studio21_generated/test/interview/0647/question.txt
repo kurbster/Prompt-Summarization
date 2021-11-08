@@ -1,0 +1,36 @@
+One fine October day a mathematics teacher Vasily Petrov went to a class and saw there n pupils who sat at the $\frac{n}{2}$ desks, two people at each desk. Vasily quickly realized that number n is even. Like all true mathematicians, Vasily has all students numbered from 1 to n.
+
+But Vasily Petrov did not like the way the children were seated at the desks. According to him, the students whose numbers differ by 1, can not sit together, as they talk to each other all the time, distract others and misbehave.
+
+On the other hand, if a righthanded student sits at the left end of the desk and a lefthanded student sits at the right end of the desk, they hit elbows all the time and distract each other. In other cases, the students who sit at the same desk, do not interfere with each other.
+
+Vasily knows very well which students are lefthanders and which ones are righthanders, and he asks you to come up with any order that meets these two uncomplicated conditions (students do not talk to each other and do not bump their elbows). It is guaranteed that the input is such that at least one way to seat the students always exists.
+
+
+-----Input-----
+
+The first input line contains a single even integer n (4 ≤ n ≤ 100) — the number of students in the class. The second line contains exactly n capital English letters "L" and "R". If the i-th letter at the second line equals "L", then the student number i is a lefthander, otherwise he is a righthander.
+
+
+-----Output-----
+
+Print $\frac{n}{2}$ integer pairs, one pair per line. In the i-th line print the numbers of students that will sit at the i-th desk. The first number in the pair stands for the student who is sitting to the left, and the second number stands for the student who is sitting to the right. Separate the numbers in the pairs by spaces. If there are multiple solutions, print any of them.
+
+
+-----Examples-----
+Input
+6
+LLRLLL
+
+Output
+1 4
+2 5
+6 3
+
+Input
+4
+RRLL
+
+Output
+3 1
+4 2

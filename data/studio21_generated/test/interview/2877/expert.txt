@@ -1,0 +1,2 @@
+ You are given an input string. You want to return the smallest lexicographically possible word. 
+-----Input----- The first and only line of input contains Mario’s chosen word, a string of lowercase letters of the English alphabet with no spaces. The input word will be between $3$ and $50$ characters long (inclusive). -----Output----- Output the best word on a single line. -----Examples----- Sample Input 1: dcbagfekjih Sample Output 1: abcdefghijk Sample Input 2: mobitel Sample Output 2: bometil

@@ -1,0 +1,45 @@
+XXI Berland Annual Fair is coming really soon! Traditionally fair consists of $n$ booths, arranged in a circle. The booths are numbered $1$ through $n$ clockwise with $n$ being adjacent to $1$. The $i$-th booths sells some candies for the price of $a_i$ burles per item. Each booth has an unlimited supply of candies.
+
+Polycarp has decided to spend at most $T$ burles at the fair. However, he has some plan in mind for his path across the booths:  at first, he visits booth number $1$;  if he has enough burles to buy exactly one candy from the current booth, then he buys it immediately;  then he proceeds to the next booth in the clockwise order (regardless of if he bought a candy or not). 
+
+Polycarp's money is finite, thus the process will end once he can no longer buy candy at any booth.
+
+Calculate the number of candies Polycarp will buy.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $T$ ($1 \le n \le 2 \cdot 10^5$, $1 \le T \le 10^{18}$) — the number of booths at the fair and the initial amount of burles Polycarp has.
+
+The second line contains $n$ integers $a_1, a_2, \dots, a_n$ ($1 \le a_i \le 10^9$) — the price of the single candy at booth number $i$.
+
+
+-----Output-----
+
+Print a single integer — the total number of candies Polycarp will buy.
+
+
+-----Examples-----
+Input
+3 38
+5 2 5
+
+Output
+10
+
+Input
+5 21
+2 4 100 2 6
+
+Output
+6
+
+
+
+-----Note-----
+
+Let's consider the first example. Here are Polycarp's moves until he runs out of money:  Booth $1$, buys candy for $5$, $T = 33$;  Booth $2$, buys candy for $2$, $T = 31$;  Booth $3$, buys candy for $5$, $T = 26$;  Booth $1$, buys candy for $5$, $T = 21$;  Booth $2$, buys candy for $2$, $T = 19$;  Booth $3$, buys candy for $5$, $T = 14$;  Booth $1$, buys candy for $5$, $T = 9$;  Booth $2$, buys candy for $2$, $T = 7$;  Booth $3$, buys candy for $5$, $T = 2$;  Booth $1$, buys no candy, not enough money;  Booth $2$, buys candy for $2$, $T = 0$. 
+
+No candy can be bought later. The total number of candies bought is $10$.
+
+In the second example he has $1$ burle left at the end of his path, no candy can be bought with this amount.

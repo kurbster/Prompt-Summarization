@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "4\n6\n654321\n4\n1337\n2\n33\n4\n2122\n",
+    "1\n4\n3333\n",
+    "21\n3\n123\n3\n123\n3\n123\n3\n123\n3\n123\n3\n213\n3\n123\n3\n123\n3\n123\n3\n321\n3\n123\n3\n321\n3\n132\n3\n322\n3\n321\n3\n341\n3\n123\n3\n421\n3\n421\n3\n421\n3\n421\n",
+    "1\n3\n333\n",
+    "1\n4\n5234\n",
+    "1\n4\n9999\n",
+    "2\n2\n45\n2\n67\n"
+  ],
+  "outputs": [
+    "YES\n2\n6 54321\nYES\n2\n1 337\nNO\nYES\n2\n2 122\n",
+    "YES\n2\n3 333\n",
+    "YES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n2 13\nYES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n1 23\nYES\n2\n3 21\nYES\n2\n1 23\nYES\n2\n3 21\nYES\n2\n1 32\nYES\n2\n3 22\nYES\n2\n3 21\nYES\n2\n3 41\nYES\n2\n1 23\nYES\n2\n4 21\nYES\n2\n4 21\nYES\n2\n4 21\nYES\n2\n4 21\n",
+    "YES\n2\n3 33\n",
+    "YES\n2\n5 234\n",
+    "YES\n2\n9 999\n",
+    "YES\n2\n4 5\nYES\n2\n6 7\n"
+  ]
+}

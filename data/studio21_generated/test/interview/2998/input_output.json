@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "uu Friends m Romans ummuuummmuuuuumm countrymen mmuummmuu\n",
+        "umm ummm uum umm um ummmm u?\n"
+    ],
+    "outputs": [
+        "icpc\n",
+        "Hi!\n"
+    ]
+}

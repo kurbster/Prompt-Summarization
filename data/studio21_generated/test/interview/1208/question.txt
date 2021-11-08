@@ -1,0 +1,54 @@
+Berland National Library has recently been built in the capital of Berland. In addition, in the library you can take any of the collected works of Berland leaders, the library has a reading room.
+
+Today was the pilot launch of an automated reading room visitors' accounting system! The scanner of the system is installed at the entrance to the reading room. It records the events of the form "reader entered room", "reader left room". Every reader is assigned a registration number during the registration procedure at the library — it's a unique integer from 1 to 10^6. Thus, the system logs events of two forms:  "+ r_{i}" — the reader with registration number r_{i} entered the room;  "- r_{i}" — the reader with registration number r_{i} left the room. 
+
+The first launch of the system was a success, it functioned for some period of time, and, at the time of its launch and at the time of its shutdown, the reading room may already have visitors.
+
+Significant funds of the budget of Berland have been spent on the design and installation of the system. Therefore, some of the citizens of the capital now demand to explain the need for this system and the benefits that its implementation will bring. Now, the developers of the system need to urgently come up with reasons for its existence.
+
+Help the system developers to find the minimum possible capacity of the reading room (in visitors) using the log of the system available to you.
+
+
+-----Input-----
+
+The first line contains a positive integer n (1 ≤ n ≤ 100) — the number of records in the system log. Next follow n events from the system journal in the order in which the were made. Each event was written on a single line and looks as "+ r_{i}" or "- r_{i}", where r_{i} is an integer from 1 to 10^6, the registration number of the visitor (that is, distinct visitors always have distinct registration numbers).
+
+It is guaranteed that the log is not contradictory, that is, for every visitor the types of any of his two consecutive events are distinct. Before starting the system, and after stopping the room may possibly contain visitors.
+
+
+-----Output-----
+
+Print a single integer — the minimum possible capacity of the reading room.
+
+
+-----Examples-----
+Input
+6
++ 12001
+- 12001
+- 1
+- 1200
++ 1
++ 7
+
+Output
+3
+Input
+2
+- 1
+- 2
+
+Output
+2
+Input
+2
++ 1
+- 1
+
+Output
+1
+
+
+-----Note-----
+
+In the first sample test, the system log will ensure that at some point in the reading room were visitors with registration numbers 1, 1200 and 12001. More people were not in the room at the same time based on the log. Therefore, the answer to the test is 3.

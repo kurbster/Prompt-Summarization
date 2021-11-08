@@ -1,0 +1,35 @@
+A number of regional Internet Service Providers (ISPs), both big and small have recently been forced into a merger by the government, in an effort to improve service for all. Of course this has been decided without consulting you, the chief network infrastructure officer, and a deadline for when the ISPs should be merged have already been set.
+
+You have a set of $n$ servers, each with a limited number of network sockets that can be used for connecting physically to other servers. Some servers are already linked up in the existing network architecture, and if server 0 is linked to server 2, then 2 is also linked to server 0 (as you use full duplex ethernet Cat6 cables). No server is directly connected to itself, and no two servers are directly linked with more than one connection.
+
+You want to connect the servers to form a single network, such that all servers can reach each other through some sequence of connections. To make the set deadline, you have estimated that you only have time to make $k$ edits to the existing network infrastructure. An edit is either to remove an existing connection between two servers, or to add a new connection between two servers.
+
+Can you connect all the servers to the same network using at most $k$ edits, within the limitations on the number of network sockets in each server?
+
+-----Input-----
+The first line of the input is three space separated integers $n$ ($1 \leq n \leq 100000$), the number of servers, $m$ ($0 \leq m \leq 200000$), the number of existing connections and $k$ ($0 \leq k \leq 50000$), the number of edits you have time to make. Then follows a line with $n$ integers $c_0, c_1, \ldots , c_ i, \ldots , c_{n-1}$, with the $i$’th number giving the number of network sockets for the $i$’th server (for all $i$ the capacity is bounded by $1 \leq c_ i < n$). Then $m$ lines follow, with two integers $u_ j$ and $v_ j$ each, giving the id’s of two servers that are connected in the old network architecture. Servers are $0$-indexed, i.e. for every $j$, it holds that $0 \leq u_ j, v_ j < n$. A server will never be connected to more servers than it has connection sockets.
+
+-----Output-----
+Output “yes” on a single line if the servers can be connected to one network by making $k$ or less edits, and “no” if it is not possible.
+
+-----Examples-----
+Sample Input 1:
+4 5 2
+3 3 3 3
+0 1
+0 3
+1 3
+1 2
+2 3
+Sample Output 1:
+yes
+
+Sample Input 2:
+5 4 4
+1 1 2 2 2
+0 1
+2 3
+3 4
+4 2
+Sample Output 2:
+yes

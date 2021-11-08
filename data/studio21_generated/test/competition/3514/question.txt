@@ -1,0 +1,40 @@
+You are a seasoned Fight Club member who recently stumbled upon the classified plans of Project Mayhem, a secret organization that the other members have created to bring down consumerism and corporate America. To completely destabilize modern civilization, Tyler Durden and his Project Mayhem trainees are making plans to take down the buildings of major banks that hold everybody’s credit information. If they succeed, then everybody is supposed to restart life with a blank slate, free of all debts ranging from mortgages to student loans.
+
+
+Tyler plans to do so by setting off pipe bombs under major financial buildings. His crew has mapped out the city’s financial district on a rectangular grid with $R$ rows and $C$ columns. Each grid cell either has a building armed with bombs to detonate (denoted by “x") or does not (denoted by “."). As a friend of Tyler’s, you know all too well that his plan is off the chains. Violence is never the solution. You want to do your best to thwart the plan by visiting the buildings one by one and disarming as many bombs as possible.
+
+
+You can disarm the buildings in any order, with only one catch. After you disarm a building, Tyler’s crew will find out, chase after you, and occupy that building indefinitely. To avoid getting caught, you must immediately find another (armed) building in the same street or avenue to take cover before disarming other buildings. After that however, you can go to any other armed building on the map to disarm it (provided the same condition is met). In other words, at any time you disarm a building, there must be at least one other armed building in either the same row or the same column.
+
+
+Take the following $3$ by $3$ map for example:
+
+     x.. .x. x.x
+
+You have a few ways to disarm up to $2$ buildings:
+ - You can first disarm the top-left one, followed by either of the bottom two buildings, for a total of $2$ buildings.
+ - You can first disarm the bottom-right one, followed by either of the remaining two leftmost buildings, for a total of $2$ buildings.
+ - However, note that if you choose to first disarm the bottom-left building, then none of the remaining buildings can be disarmed (since you won’t be able to take cover afterwards). So in this case, you would only be able to disarm a single building.
+
+In any of these cases, the center building can never be disarmed since there is no immediate neighboring building in its row or column to use for cover from Tyler’s henchmen.
+
+
+Given a map of the city, you would like to know the maximum number of buildings that can be disarmed.
+
+-----Input-----
+The first line of input consists of two space-separated integers $R$ and $C$ ($1 \le R, C \le 2000$).
+
+$R$ lines follow, each of which consists of $C$ characters (either “x" or “."), specifying the grid of the financial district.
+
+-----Output-----
+Print, on a single line, the maximum number of buildings that can be disarmed.
+
+
+-----Examples-----
+Sample Input:
+3 3
+x..
+.x.
+x.x
+Sample Output:
+2

@@ -1,0 +1,33 @@
+Jimmy and his friends like to visit large theme parks. In the current theme park there are many roller coasters which then are categorized by Jimmy. He assigns a fun value to each coaster; however, the fun decreases with each run.
+
+More formally: for a specific roller coaster $i$, Jimmy assigns two fun coefficients $a_ i$ and $b_ i$. While riding this roller coaster for the $k$-th time, Jimmy gains a fun value of $f(i,k) = a_ i - (k-1)^2 \cdot b_ i$. If $f(i,k)$ is non-positive, riding the roller coaster is no longer fun.
+
+Jimmy tries to maximize the total fun until he leaves the park. Can you tell Jimmy how much fun he can gain for a given time?
+
+-----Input-----
+The input consists of a single test case.
+
+The first line contains the integer $N$, where $N$ is the amount of different roller coasters in the theme park ($0< N\le 100$).
+
+The following $N$ lines contain the integers $a_ i$, $b_ i$ and $t_ i$ where $a_ i$ and $b_ i$ are the fun coefficients as specified above and $t_ i$ is the time for a single ride with the $i$-th roller coaster ($0\le a_ i \le 1000$; $0\le b_ i \le 1000$; $0 < t_ i \le 25000$).
+
+The next line contains a positive integer $Q$ denoting the number of times that Jimmy is visiting the park ($0\le Q \le 1000$). Each of the following $Q$ lines contains an integral time $T_ i$ that Jimmy spends during his $i$-th visit ($0\le T_ i \le 25000$).
+
+-----Output-----
+For each of the $Q$ possible times, print one line containing the maximal total fun value if Jimmy spends $T_ i$ minutes in the theme park.
+
+-----Examples-----
+Sample Input:
+2
+5 0 5
+7 0 7
+4
+88
+5
+6
+7
+Sample Output:
+88
+5
+5
+7

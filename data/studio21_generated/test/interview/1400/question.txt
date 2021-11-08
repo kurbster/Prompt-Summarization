@@ -1,0 +1,49 @@
+Today Adilbek is taking his probability theory test. Unfortunately, when Adilbek arrived at the university, there had already been a long queue of students wanting to take the same test. Adilbek has estimated that he will be able to start the test only $T$ seconds after coming. 
+
+Fortunately, Adilbek can spend time without revising any boring theorems or formulas. He has an app on this smartphone which contains $n$ Japanese crosswords to solve. Adilbek has decided to solve them all one by one in the order they are listed in the app, without skipping any crossword. For each crossword, a number $t_i$ is given that represents the time it takes an average crossword expert to solve this crossword (the time is given in seconds).
+
+Adilbek is a true crossword expert, but, unfortunately, he is sometimes unlucky in choosing the way to solve the crossword. So, it takes him either $t_i$ seconds or $t_i + 1$ seconds to solve the $i$-th crossword, equiprobably (with probability $\frac{1}{2}$ he solves the crossword in exactly $t_i$ seconds, and with probability $\frac{1}{2}$ he has to spend an additional second to finish the crossword). All these events are independent.
+
+After $T$ seconds pass (or after solving the last crossword, if he manages to do it in less than $T$ seconds), Adilbek closes the app (if he finishes some crossword at the same moment, that crossword is considered solved; otherwise Adilbek does not finish solving the current crossword at all). He thinks it would be an interesting probability theory problem to calculate $E$ — the expected number of crosswords he will be able to solve completely. Can you calculate it? 
+
+Recall that the expected value of a discrete random variable is the probability-weighted average of all possible values — in this problem it means that the expected value of the number of solved crosswords can be calculated as $E = \sum \limits_{i = 0}^{n} i p_i$, where $p_i$ is the probability that Adilbek will solve exactly $i$ crosswords. 
+
+We can represent $E$ as rational fraction $\frac{P}{Q}$ with $Q > 0$. To give the answer, you should print $P \cdot Q^{-1} \bmod (10^9 + 7)$.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $T$ ($1 \le n \le 2 \cdot 10^5$, $1 \le T \le 2 \cdot 10^{14}$) — the number of crosswords and the time Adilbek has to spend, respectively.
+
+The second line contains $n$ integers $t_1, t_2, \dots, t_n$ ($1 \le t_i \le 10^9$), where $t_i$ is the time it takes a crossword expert to solve the $i$-th crossword.
+
+Note that Adilbek solves the crosswords in the order they are given in the input without skipping any of them.
+
+
+-----Output-----
+
+Print one integer — the expected value of the number of crosswords Adilbek solves in $T$ seconds, expressed in the form of $P \cdot Q^{-1} \bmod (10^9 + 7)$.
+
+
+-----Examples-----
+Input
+3 5
+2 2 2
+
+Output
+750000007
+
+Input
+3 5
+2 1 2
+
+Output
+125000003
+
+
+
+-----Note-----
+
+The answer for the first sample is equal to $\frac{14}{8}$.
+
+The answer for the second sample is equal to $\frac{17}{8}$.

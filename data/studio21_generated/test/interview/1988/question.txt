@@ -1,0 +1,66 @@
+Vasya has a string $s$ of length $n$. He decides to make the following modification to the string:   Pick an integer $k$, ($1 \leq k \leq n$).  For $i$ from $1$ to $n-k+1$, reverse the substring $s[i:i+k-1]$ of $s$. For example, if string $s$ is qwer and $k = 2$, below is the series of transformations the string goes through:   qwer (original string)  wqer (after reversing the first substring of length $2$)  weqr (after reversing the second substring of length $2$)  werq (after reversing the last substring of length $2$)  Hence, the resulting string after modifying $s$ with $k = 2$ is werq. 
+
+Vasya wants to choose a $k$ such that the string obtained after the above-mentioned modification is lexicographically smallest possible among all choices of $k$. Among all such $k$, he wants to choose the smallest one. Since he is busy attending Felicity 2020, he asks for your help.
+
+A string $a$ is lexicographically smaller than a string $b$ if and only if one of the following holds:   $a$ is a prefix of $b$, but $a \ne b$;  in the first position where $a$ and $b$ differ, the string $a$ has a letter that appears earlier in the alphabet than the corresponding letter in $b$. 
+
+
+-----Input-----
+
+Each test contains multiple test cases. 
+
+The first line contains the number of test cases $t$ ($1 \le t \le 5000$). The description of the test cases follows.
+
+The first line of each test case contains a single integer $n$ ($1 \le n \le 5000$) — the length of the string $s$.
+
+The second line of each test case contains the string $s$ of $n$ lowercase latin letters.
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $5000$.
+
+
+-----Output-----
+
+For each testcase output two lines:
+
+In the first line output the lexicographically smallest string $s'$ achievable after the above-mentioned modification. 
+
+In the second line output the appropriate value of $k$ ($1 \leq k \leq n$) that you chose for performing the modification. If there are multiple values of $k$ that give the lexicographically smallest string, output the smallest value of $k$ among them.
+
+
+-----Example-----
+Input
+6
+4
+abab
+6
+qwerty
+5
+aaaaa
+6
+alaska
+9
+lfpbavjsm
+1
+p
+
+Output
+abab
+1
+ertyqw
+3
+aaaaa
+1
+aksala
+6
+avjsmbpfl
+5
+p
+1
+
+
+
+-----Note-----
+
+In the first testcase of the first sample, the string modification results for the sample abab are as follows :   for $k = 1$ : abab  for $k = 2$ : baba  for $k = 3$ : abab  for $k = 4$ : baba
+
+The lexicographically smallest string achievable through modification is abab for $k = 1$ and $3$. Smallest value of $k$ needed to achieve is hence $1$.

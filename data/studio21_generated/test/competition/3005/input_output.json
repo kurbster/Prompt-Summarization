@@ -1,0 +1,16 @@
+{
+    "inputs": [
+        "PRATTATTATTIC\n",
+        "GGGGGGGGG\n",
+        "PRIME\n",
+        "BABBABABBABBA\n",
+        "ARPARPARPARPAR\n"
+    ],
+    "outputs": [
+        "6\n",
+        "1\n",
+        "5\n",
+        "6\n",
+        "5\n"
+    ]
+}

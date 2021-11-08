@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "1\nthequickbrownfoxjumpedoverthelazydog\n10\n",
+        "4\nbanana\n3\n"
+    ],
+    "outputs": [
+        "Boris\n",
+        "Colleague\n"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5 2\n2 4 same\n3 5 same\n",
+        "5 3\n1 3 same\n2 5 same\n1 5 different\n"
+    ],
+    "outputs": [
+        "4\n",
+        "0\n"
+    ]
+}

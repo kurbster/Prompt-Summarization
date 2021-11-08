@@ -1,0 +1,34 @@
+Let us denote $A_{i,j}$ as the element from matrix $A$ located in the $i$-th row and $j$-th column. We say that the matrix $A$ is cool if this holds:
+ - $r, s > 1$
+ - $A_{1,1} + A_{r,s} \leq A_{1,s} + A_{r,1}$
+
+where $r$ denotes the number of rows, and $s$ the number of columns of matrix $A$.
+
+Additionally, we say that a matrix is extremely cool if each of its submatrices with at least two rows and two columns is cool.
+
+Your task is to determine the largest number of elements that are contained in an extremely cool submatrix of the given matrix.
+
+-----Input-----
+The first line of input contains two integers $R$, $S$ ($2 \leq R, S \leq 1000$) which represent the dimensions of the matrix.
+
+Each of the following $R$ lines contains $S$ integers that represent the elements in the matrix. The elements in the matrix will be integers from the interval $[-10^6, 10^6]$.
+
+-----Output-----
+The first and only line of output must contain the maximal number of elements that are contained in an extremely cool submatrix of the matrix from the input. If an extremely cool submatrix doesn’t exist, output $0$.
+
+-----Examples-----
+Sample Input 1:
+3 3
+1 4 10
+5 2 6
+11 1 3
+Sample Output 1:
+9
+
+Sample Input 2:
+3 3
+1 3 1
+2 1 2
+1 1 1
+Sample Output 2:
+4

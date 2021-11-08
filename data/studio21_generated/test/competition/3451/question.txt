@@ -1,0 +1,35 @@
+Barry and Bruce are twin brothers. Bruce likes keeping his parenthetical sequences balanced. Barry would like to mess with Bruce by performing some operations on the sequence. Each operation is one of the following:
+ - Change a single ‘(’ to a ‘)’ in the sequence.
+ - Change a single ‘)’ to a ‘(’ in the sequence.
+
+Bruce will attempt to rebalance the parenthetical sequence by performing the same operations. Bruce does not like tedium and will perform no more than $k$ operations to balance the sequence.
+
+A balanced parenthetical sequence is defined as:
+ - The empty string
+ - $AB$ where $A$ and $B$ are both balanced parenthetical sequences
+ - ($A$) where $A$ is a balanced parenthetical sequence
+
+Barry would like to disrupt the sequence to the point where it is impossible for Bruce to rebalance the sequence in $k$ moves. Changing some position in the sequence requires effort and the amount of effort varies by position. Some positions are even delightful to switch and require negative effort. Each position can be changed at most once.
+
+Barry hates effort and would like to compute the minimum sum of effort to ensure that Bruce cannot balance the sequence.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The first line of input will contain two integers $n$ and $k$, where $n$ ($1 \le n \le 10^5$) is the length of the sequence, and $k$ ($0 \le k \le n$) is the maximum number of moves for Bruce.
+
+The next line contains a single string of length $n$ consisting of only the characters ‘(’ and ‘)’. This string is NOT required to be balanced.
+
+The next $n$ lines will each contain a single integer $c$ ($-1000 \le c \le 1000$), which is the cost of changing each parenthesis in order.
+
+-----Output-----
+Output a single integer, which is the minimum sum of effort of moves required to make the string impossible to be balanced by Bruce. If Bruce can always rebalance the string regardless of Barry’s actions, print a single question mark (‘?’).
+
+-----Examples-----
+Sample Input:
+4 1
+((()
+480
+617
+-570
+928
+Sample Output:
+480

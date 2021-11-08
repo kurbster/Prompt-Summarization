@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "4\nabba\nabacaba\nbcd\ner\n",
+    "5\nx\nxx\nxxa\nxxaa\nxxaaa\n",
+    "3\nc\ncb\ncba\n",
+    "10\naba\nabaaca\naba\nacaaaabbac\nabaacac\nb\ncabbcccaab\nbaacbb\nbcab\ncc\n",
+    "13\nclgknjjojyuvdtv\nclgknjjojyuvdtvzxz\nclgknjjojyuvdtvzxzxradqhm\ngvzpnckalbaubfviyhijosiixvxaydxagvymq\nclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymt\nbvwzpuut\nclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymth\nclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymtlkdl\nrbwvaayhhunlvmwexvkmqbquypsnjbdkkeytthekttywypud\nqlvkfkshkxyrfefigtngifxsuhpjgkb\nlhxtkfjrrwcvzuamizotupjqckaq\nenngvhxvpaoiyhctddyscasyqtilvbvgfphayykjeoylcvmjz\nxkazwk\n"
+  ],
+  "outputs": [
+    "abacabaabbabcder\n",
+    "xxaaaxxaaxxaxxx\n",
+    "cbacbc\n",
+    "abaabaabaacaabaacacacaaaabbacbaacbbbbcabcabbcccaabcc\n",
+    "bvwzpuutclgknjjojyuvdtvclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymtclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymthclgknjjojyuvdtvjgcwarwvgilcctdiytmvmvfxxkezymtlkdlclgknjjojyuvdtvzxzclgknjjojyuvdtvzxzxradqhmenngvhxvpaoiyhctddyscasyqtilvbvgfphayykjeoylcvmjzgvzpnckalbaubfviyhijosiixvxaydxagvymqlhxtkfjrrwcvzuamizotupjqckaqqlvkfkshkxyrfefigtngifxsuhpjgkbrbwvaayhhunlvmwexvkmqbquypsnjbdkkeytthekttywypudxkazwk\n"
+  ]
+}

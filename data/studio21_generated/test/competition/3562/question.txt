@@ -1,0 +1,25 @@
+It is exam time! You have, of course, been spending too much time participating in various programming contests and have not done much studying. Now you have $N$ subjects to study for, but only a limited amount of time before the final exams. You have to decide how much time to allocate to studying each subject, so that your average grade over all $N$ subjects is maximized. 
+
+As a seasoned programming contest competitor, you recognize immediately that you can determine the optimal allocation with a computer program. Of course, you have decided to ignore the amount of time you spend solving this problem (i.e. procrastinating).
+
+You have a total of $T$ hours that you can split among different subjects. For each subject $i$, the expected grade with $t$ hours of studying is given by the function $f_ i(t) = a_ i t^2 + b_ i t + c_ i$, satisfying the following properties:
+ - $f_ i(0) \geq 0$;
+ - $f_ i(T) \leq 100$;
+ - $a_ i < 0$;
+ - $f_ i(t)$ is a non-decreasing function in the interval $[0,T]$.
+
+You may allocate any fraction of an hour to a subject, not just whole hours. What is the maximum average grade you can obtain over all $n$ subjects?
+
+-----Input-----
+The first line of each input contains the integers $N$ ($1 \leq N \le 10$) and $T$ ($1 \leq T \le 240$) separated by a space. This is followed by $N$ lines, each containing the three parameters $a_ i$, $b_ i$, and $c_ i$ describing the function $f_ i(t)$. The three parameters are separated by a space, and are given as real numbers with $4$ decimal places. Their absolute values are no more than $100$.
+
+-----Output-----
+Output in a single line the maximum average grade you can obtain. Answers within $0.01$ of the correct answer will be accepted.
+
+-----Examples-----
+Sample Input:
+2 96
+-0.0080 1.5417 25.0000
+-0.0080 1.5417 25.0000
+Sample Output:
+80.5696000000

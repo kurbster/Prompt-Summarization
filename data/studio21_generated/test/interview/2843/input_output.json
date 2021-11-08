@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "6\nabc\nacb\ncab\ncba\nbac\nbca\n",
+        "11\nalerts\nalters\nartels\nestral\nlaster\nratels\nsalter\nslater\nstaler\nstelar\ntalers\n",
+        "6\nates\neast\neats\netas\nsate\nteas\n"
+    ],
+    "outputs": [
+        "3\n",
+        "8\n",
+        "4\n"
+    ]
+}

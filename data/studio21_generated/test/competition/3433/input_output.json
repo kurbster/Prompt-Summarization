@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 4\n####\n#JF#\n#..#\n#..#\n",
+        "3 3\n###\n#J.\n#.F\n"
+    ],
+    "outputs": [
+        "3\n",
+        "IMPOSSIBLE\n"
+    ]
+}

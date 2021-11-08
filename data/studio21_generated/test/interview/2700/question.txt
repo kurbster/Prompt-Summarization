@@ -1,0 +1,28 @@
+Chef likes inequalities. Please help him to solve next one.
+Given four integers a, b, c, d. Find number of solutions x < y, where a ≤ x ≤ b and c ≤ y ≤ d and x, y integers.
+
+-----Input-----
+The first line contains an integer T denoting number of tests.
+First line of each test case contains four positive integer numbers a, b, c and d.
+
+-----Output-----
+For each test case, output a single number each in separate line denoting number of integer solutions as asked in the problem.
+
+-----Constraints-----
+- 1 ≤ T ≤ 20 
+- 1 ≤ a, b, c, d ≤ 106 
+
+-----Subtasks-----
+- Subtask #1: (30 points)  1 ≤ a, b, c, d ≤ 103.
+- Subtask #2: (70 points)  Original constraints.
+
+-----Example-----
+Input:1
+2 3 3 4
+
+Output:3
+
+Input:1
+2 999999 1 1000000
+
+Output:499998500001

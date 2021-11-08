@@ -1,0 +1,2 @@
+ You are given a string s. Check if the string is "s-palindrome". 
+-----Input----- The only line contains the string s (1 ≤ |s| ≤ 1000) which consists of only English letters. -----Output----- Print "TAK" if the string s is "s-palindrome" and "NIE" otherwise. -----Examples----- Input oXoxoXo Output TAK Input bod Output TAK Input ER Output NIE

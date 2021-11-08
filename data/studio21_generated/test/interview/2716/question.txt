@@ -1,0 +1,81 @@
+You think you can code?
+
+ This problem will test you on various basic programming techniques.
+
+ You are given two integers $N$ and $t$; and then an array $A$ of $N$ integers ($0$-based indexing).
+
+ Based on the value of $t$, you will perform an action on $A$.
+
+$t$
+
+Action Needed
+
+$1$
+
+Print “Yes” if there are two integers $x \in A$ and $y \in A$ such that $x \neq y$ and $x+y = 7777$, 
+
+or “No” otherwise (without the quotes)
+
+$2$
+
+Print “Unique” if all integers in $A$ are different; 
+
+or print “Contains duplicate” otherwise (without the quotes)
+
+$3$
+
+Find and print the integer that appears $> \frac{N}{2}$ times in $A$; 
+
+or print $-1$ if such integer cannot be found
+
+$4$
+
+Find and print the median integer of $A$ if $N$ is odd; 
+
+or print both median integers of $A$ if $N$ is even (separate them with a single space)
+
+$5$
+
+Print integers in $A$ that fall between a range [$100 \ldots 999$] in sorted order; 
+
+(print a single space between two integers)
+
+-----Input-----
+The first line of the input contains an integer $N$ and $t$ ($3 \leq N \leq 200000$; $1 \leq t \leq 5$).
+
+ The second line of the input contains $N$ non-negative $32$-bit signed integers.
+
+-----Output-----
+For each test case, output the required answer based on the value of $t$.
+
+-----Scoring-----
+There are $20$ hidden test cases that test various requirements of this problem.
+
+ All $20$ test cases will be tested.
+
+ Each hidden test case worth $5$ points (the $5$ sample test cases below worth $0$ point).
+
+-----Examples-----
+Sample Input 1:
+7 1
+1 7770 3 4 5 6 7
+Sample Output 1:
+Yes
+
+Sample Input 2:
+7 2
+1 2 3 4 5 6 7
+Sample Output 2:
+Unique
+
+Sample Input 3:
+7 3
+1 1 1 1 2 2 2
+Sample Output 3:
+1
+
+Sample Input 4:
+8 4
+8 1 4 3 6 7 5 2
+Sample Output 4:
+4 5

@@ -1,0 +1,61 @@
+Each evening after the dinner the SIS's students gather together to play the game of Sport Mafia. 
+
+For the tournament, Alya puts candies into the box, which will serve as a prize for a winner. To do that, she performs $n$ actions. The first action performed is to put a single candy into the box. For each of the remaining moves she can choose from two options:
+
+  the first option, in case the box contains at least one candy, is to take exactly one candy out and eat it. This way the number of candies in the box decreased by $1$;  the second option is to put candies in the box. In this case, Alya will put $1$ more candy, than she put in the previous time. 
+
+Thus, if the box is empty, then it can only use the second option.
+
+For example, one possible sequence of Alya's actions look as follows:
+
+  put one candy into the box;  put two candies into the box;  eat one candy from the box;  eat one candy from the box;  put three candies into the box;  eat one candy from the box;  put four candies into the box;  eat one candy from the box;  put five candies into the box; 
+
+This way she will perform $9$ actions, the number of candies at the end will be $11$, while Alya will eat $4$ candies in total.
+
+You know the total number of actions $n$ and the number of candies at the end $k$. You need to find the total number of sweets Alya ate. That is the number of moves of the first option. It's guaranteed, that for the given $n$ and $k$ the answer always exists.
+
+Please note, that during an action of the first option, Alya takes out and eats exactly one candy.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $k$ ($1 \le n \le 10^9$; $0 \le k \le 10^9$) — the total number of moves and the number of candies in the box at the end. 
+
+It's guaranteed, that for the given $n$ and $k$ the answer exists.
+
+
+-----Output-----
+
+Print a single integer — the number of candies, which Alya ate. Please note, that in this problem there aren't multiple possible answers — the answer is unique for any input data. 
+
+
+-----Examples-----
+Input
+1 1
+
+Output
+0
+Input
+9 11
+
+Output
+4
+Input
+5 0
+
+Output
+3
+Input
+3 2
+
+Output
+1
+
+
+-----Note-----
+
+In the first example, Alya has made one move only. According to the statement, the first move is always putting one candy in the box. Hence Alya ate $0$ candies.
+
+In the second example the possible sequence of Alya's actions looks as follows:   put $1$ candy,  put $2$ candies,  eat a candy,  eat a candy,  put $3$ candies,  eat a candy,  put $4$ candies,  eat a candy,  put $5$ candies.  
+
+This way, she will make exactly $n=9$ actions and in the end the box will contain $1+2-1-1+3-1+4-1+5=11$ candies. The answer is $4$, since she ate $4$ candies in total.

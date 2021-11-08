@@ -1,0 +1,28 @@
+The mayor has decided that it is high time to implement a new system of television transmitters. The city can be represented as a segment of the length $D$ on which there are buildings of different heights. The width of a building is negligible. On top of some buildings, television transmitters are set, their dimensions are also negligible.
+
+Television transmitters emit a television signal in all directions around them. The signal is spread through space in straight lines and cannot pass through buildings. A certain point in the city is considered covered if it is reached by a signal from an existing transmitter.
+
+
+Find the segment of the city covered by television signal and output its length.
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \leq N \leq 3 \cdot 10^5$), the number of buildings, and the integer $D$ ($1 \leq D \leq 10^9$), the city length.
+
+Each of the following N lines contains three numbers which describe the $i$-th building:
+ - a number which determines whether there is a transmitter on top of the building: 0 (no) or 1 (yes)
+ - an integer $X_ i$ ($0 \leq X_ i \leq D$), the distance between the building and the left end of the city
+ - an integer $H_ i$ ($1 \leq H_ i \leq 10^9$), the building height
+
+The buildings are sorted in ascending order by the distance from the left end of the city. No two buildings will be located on the same distance from the left end of the city.
+
+-----Output-----
+The first and only line of output must contain the required length from the text. Note: the maximum permissible deviation from the official solution is 10-3 in absolute value.
+
+-----Examples-----
+Sample Input:
+3 10
+1 2 6
+0 4 3
+0 8 2
+Sample Output:
+6.000000

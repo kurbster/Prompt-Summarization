@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "5\na\nabcdfdcecba\nabbaxyzyx\ncodeforces\nacbba\n",
+    "10\nu\nxqpczgnzazxyrvx\ncfjgfhxmzqmjgzzjthziuomldylspyfuxvjlgdc\nooydbldio\nyvaamavy\nrzjjebcgotjffuzr\nhtfkwvihzuwxczopzqujdnaorgxibjfcmlzntskawxhyoymwynitukttewfpajuph\nfactnjajntcaf\nywowyovhrgradhtrqkgurkjpudnrrqhmmwiaqicfxnoyejdsmmurusdzqgjjntocryhqsgr\nqq\n",
+    "1\nqjprjjjjrpjquiytxjjxtyiu\n",
+    "1\nzsrfqaaqfrszkgzgrxxrgzgk\n",
+    "1\nabczdunbqlckfpyktalxycba\n",
+    "1\ncaszenpxwt\n",
+    "1\ngsfhsddshfsgpxzaaffaazxp\n"
+  ],
+  "outputs": [
+    "a\nabcdfdcba\nxyzyx\nc\nabba\n",
+    "u\nxqx\ncfc\nooo\nyvaaavy\nrzjjzr\nhth\nfactnjajntcaf\nywowy\nqq\n",
+    "qjprjjjjrpjq\n",
+    "zsrfqaaqfrsz\n",
+    "abczcba\n",
+    "c\n",
+    "gsfhsddshfsg\n"
+  ]
+}

@@ -1,0 +1,45 @@
+Buses run between the cities A and B, the first one is at 05:00 AM and the last one departs not later than at 11:59 PM. A bus from the city A departs every a minutes and arrives to the city B in a t_{a} minutes, and a bus from the city B departs every b minutes and arrives to the city A in a t_{b} minutes.
+
+The driver Simion wants to make his job diverse, so he counts the buses going towards him. Simion doesn't count the buses he meet at the start and finish.
+
+You know the time when Simion departed from the city A to the city B. Calculate the number of buses Simion will meet to be sure in his counting.
+
+
+-----Input-----
+
+The first line contains two integers a, t_{a} (1 ≤ a, t_{a} ≤ 120) — the frequency of the buses from the city A to the city B and the travel time. Both values are given in minutes.
+
+The second line contains two integers b, t_{b} (1 ≤ b, t_{b} ≤ 120) — the frequency of the buses from the city B to the city A and the travel time. Both values are given in minutes.
+
+The last line contains the departure time of Simion from the city A in the format hh:mm. It is guaranteed that there are a bus from the city A at that time. Note that the hours and the minutes are given with exactly two digits.
+
+
+-----Output-----
+
+Print the only integer z — the number of buses Simion will meet on the way. Note that you should not count the encounters in cities A and B.
+
+
+-----Examples-----
+Input
+10 30
+10 35
+05:20
+
+Output
+5
+
+Input
+60 120
+24 100
+13:00
+
+Output
+9
+
+
+
+-----Note-----
+
+In the first example Simion departs form the city A at 05:20 AM and arrives to the city B at 05:50 AM. He will meet the first 5 buses from the city B that departed in the period [05:00 AM - 05:40 AM]. Also Simion will meet a bus in the city B at 05:50 AM, but he will not count it.
+
+Also note that the first encounter will be between 05:26 AM and 05:27 AM (if we suggest that the buses are go with the sustained speed).

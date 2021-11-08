@@ -1,0 +1,18 @@
+The Miniature Toy Association (or MTA for short) is releasing the latest edition of its brand of collectible figurines. MTA used to sell them individually, but now has decided to adopt a new business strategy that involves randomly choosing $4$ figurines from the entire collection to be packaged and sold together as a ‘$4$-pack’. Each figurine in a $4$-pack is chosen independently and randomly with uniform distribution. As such, it is possible that a $4$-pack may contain multiple copies of a particular figurine.
+
+Even though some figurines may be more valuable than others, every randomly assembled $4$-pack is sold at the same price. Customers buying a $4$-pack of figurines do not know ahead of time which figurines will be inside, and so it is a matter of chance whether they get the figurines that they want most. While the price is the same across all $4$-packs, the weight is not, as each figurine has a distinct integer weight in grams.
+
+Before MTA releases its new line of figurines, its Chief Financial Officer (CFO) would like an executive summary with information about the proposed $4$-packs. Specifically, the CFO wants to know: the greatest possible weight of a $4$-pack, the smallest possible weight of a $4$-pack, the number of distinct weights that a $4$-pack could have, and the expected weight of a $4$-pack. Note that the expected weight is the average (mean) weight across all possible distinct $4$-packs, where two $4$-packs are distinct if and only if one $4$-pack has a different number of figurines of any particular weight than the other $4$-pack. So, for example, a $4$-pack with weights $\{ 2,2,3,5\} $ is distinct from a $4$-pack with weights $\{ 2,3,3,4\} $ (even though they both have the same total weight). Also, a $4$-pack with weights $\{ 2,2,3,5\} $ is distinct from a 4-pack with weights $\{ 2,3,3,5\} $.
+
+-----Input-----
+The input consists of a single test case. The first line of the input contains a single integer $N$, the number of different figurines to be produced, where $1\leq N\leq 40000$. The next line contains $N$ space-separated integers representing the weight in grams of each of the figurines. Each weight, $k$, is an integer satisfying $1\leq k\leq 60000$, and all $N$ weights are distinct.
+
+-----Output-----
+The output should consist of a single line with $4$ space-separated values. The first value should be an integer, the maximum weight of a $4$-pack in grams for the given set of figurines. The second value should be an integer, the minimum weight of a $4$-pack in grams for the given set of figurines. The third value should be an integer, the number of distinct weights that the $4$-packs can have for the given set of figurines. The fourth value should be a floating-point value, the expected weight of a $4$-pack in grams for the given set of figurines, with an absolute or relative error of at most $10^{-4}$.
+
+-----Examples-----
+Sample Input:
+4
+1 2 4 7
+Sample Output:
+28 4 21 14.0

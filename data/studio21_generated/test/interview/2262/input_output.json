@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "5\na aa aaa ab abb\n",
+    "3\namer arem mrea\n",
+    "10\nbda bbb cda dca dda dcb bcd dcb ada ddd\n",
+    "2\nfhjlqs aceginpr\n",
+    "2\nbcdfghimn efghijlmo\n"
+  ],
+  "outputs": [
+    "2",
+    "1",
+    "6",
+    "2",
+    "2"
+  ]
+}

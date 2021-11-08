@@ -1,0 +1,71 @@
+Consider a sequence of digits of length $2^k$ $[a_1, a_2, \ldots, a_{2^k}]$. We perform the following operation with it: replace pairs $(a_{2i+1}, a_{2i+2})$ with $(a_{2i+1} + a_{2i+2})\bmod 10$ for $0\le i<2^{k-1}$. For every $i$ where $a_{2i+1} + a_{2i+2}\ge 10$ we get a candy! As a result, we will get a sequence of length $2^{k-1}$.
+
+Less formally, we partition sequence of length $2^k$ into $2^{k-1}$ pairs, each consisting of 2 numbers: the first pair consists of the first and second numbers, the second of the third and fourth $\ldots$, the last pair consists of the ($2^k-1$)-th and ($2^k$)-th numbers. For every pair such that sum of numbers in it is at least $10$, we get a candy. After that, we replace every pair of numbers with a remainder of the division of their sum by $10$ (and don't change the order of the numbers).
+
+Perform this operation with a resulting array until it becomes of length $1$. Let $f([a_1, a_2, \ldots, a_{2^k}])$ denote the number of candies we get in this process. 
+
+For example: if the starting sequence is $[8, 7, 3, 1, 7, 0, 9, 4]$ then:
+
+After the first operation the sequence becomes $[(8 + 7)\bmod 10, (3 + 1)\bmod 10, (7 + 0)\bmod 10, (9 + 4)\bmod 10]$ $=$ $[5, 4, 7, 3]$, and we get $2$ candies as $8 + 7 \ge 10$ and $9 + 4 \ge 10$.
+
+After the second operation the sequence becomes $[(5 + 4)\bmod 10, (7 + 3)\bmod 10]$ $=$ $[9, 0]$, and we get one more candy as $7 + 3 \ge 10$. 
+
+After the final operation sequence becomes $[(9 + 0) \bmod 10]$ $=$ $[9]$. 
+
+Therefore, $f([8, 7, 3, 1, 7, 0, 9, 4]) = 3$ as we got $3$ candies in total.
+
+You are given a sequence of digits of length $n$ $s_1, s_2, \ldots s_n$. You have to answer $q$ queries of the form $(l_i, r_i)$, where for $i$-th query you have to output $f([s_{l_i}, s_{l_i+1}, \ldots, s_{r_i}])$. It is guaranteed that $r_i-l_i+1$ is of form $2^k$ for some nonnegative integer $k$.
+
+
+-----Input-----
+
+The first line contains a single integer $n$ ($1 \le n \le 10^5$) — the length of the sequence.
+
+The second line contains $n$ digits $s_1, s_2, \ldots, s_n$ ($0 \le s_i \le 9$).
+
+The third line contains a single integer $q$ ($1 \le q \le 10^5$) — the number of queries.
+
+Each of the next $q$ lines contains two integers $l_i$, $r_i$ ($1 \le l_i \le r_i \le n$) — $i$-th query. It is guaranteed that $r_i-l_i+1$ is a nonnegative integer power of $2$.
+
+
+-----Output-----
+
+Output $q$ lines, in $i$-th line output single integer — $f([s_{l_i}, s_{l_i + 1}, \ldots, s_{r_i}])$, answer to the $i$-th query.
+
+
+-----Examples-----
+Input
+8
+8 7 3 1 7 0 9 4
+3
+1 8
+2 5
+7 7
+
+Output
+3
+1
+0
+
+Input
+6
+0 1 2 3 3 5
+3
+1 2
+1 4
+3 6
+
+Output
+0
+0
+1
+
+
+
+-----Note-----
+
+The first example illustrates an example from the statement.
+
+$f([7, 3, 1, 7]) = 1$: sequence of operations is $[7, 3, 1, 7] \to [(7 + 3)\bmod 10, (1 + 7)\bmod 10]$ $=$ $[0, 8]$ and one candy as $7 + 3 \ge 10$ $\to$ $[(0 + 8) \bmod 10]$ $=$ $[8]$, so we get only $1$ candy.
+
+$f([9]) = 0$ as we don't perform operations with it.

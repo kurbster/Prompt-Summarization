@@ -1,0 +1,31 @@
+One morning last summer, Charlotte was watching the moon and the sun and observed that the moon was full. As she lives along the Atlantic coast she knows that this means a larger variation in the tide compared to first and last quarter. With no rain in the air, it seemed like a perfect week for walks at the beach by the cliffs.
+
+The tide is dangerous when walking at the beach between the sea and the cliff wall. As the water rises, you may get trapped. Therefore it is important to plan the walk according to the behaviour of the tide.
+
+One simple way of cliff walk planning is just to start walking and turn around at low tide. The problem is that on a rocky beach, you want the rocks to dry for one hour before entering them. It could therefore actually be safe to continue the walk a bit further even after low tide. Note that the beach is mostly made of sand and the rocks have many cracks in them, so we assume that all areas are flooded or drained at the exact moment when the tide reaches their height, irrespective of the heights of the neighbouring areas.
+
+The beach has been surveyed and a map is available where each $10\times 10$m square has a certain height. Each square can only be entered from the four neighbouring squares to the north, south, east and west. It is only possible to pass between two squares of height $z_1, z_2$ if the absolute height difference $|z_1 - z_2|$ is at most $1$ meter. Charlotte walks in such a way that it takes a constant amount of time to pass from one square to another and during the whole time period both squares must be dry.
+
+The tide behaves differently at different places on the Earth depending on the sea bottom, coast line etc. Charlotte knows that it is possible to approximate the tide’s water level $v$ as $v = 0.5a\cdot (\cos (t\frac{2\pi }{12})+1)$, where $t$ is time in hours since the last high tide and $a$ is a number depending on the location, time of the year, etc.
+
+Charlotte will start and finish her walk at her home. She limits her time away from home to only one tide interval, so you may assume that $0.0 \leq t \leq 12.0$. How far from home is she able to get and still return safely back?
+
+-----Input-----
+The first line of the input contains two floating point numbers $a$, $0.0 < a < 15.0$, and $m$, $0.1 \leq m \leq 60.0$, the number of seconds it takes to pass one square on the map. The second line contains four integers $W$, $H$, $X$ and $Y$ where $1 \le W,H \le 200$, $0 \le X < W$ and $0 \le Y < H$. $W$ and $H$ are the width and height of the map of the coast, $X$ and $Y$ describes the coordinate $(X, Y)$ of Charlotte’s home.
+
+Then follow $H$ lines each containing $W$ space separated integers, describing the height in millimetres of each $10\times 10$m surveyed square compared to extreme low tide. You can assume that the height of each square will be at least $0$ and at most $20000$ milimetres. The first number on the first line corresponds to coordinate $(0, 0)$. Charlotte’s home will always be dry.
+
+-----Output-----
+Output one line with the maximum Euclidean distance that Charlotte can get from home. The distance between two squares should be measured between their centers. The answer is considered correct if it has an absolute or relative error of at most $10^{-6}$.
+
+To avoid problems with floating point numbers, the result is guaranteed to be the same for all walking speeds $m’$ where $0.999 m < m’ < 1.001 m$.
+
+-----Examples-----
+Sample Input:
+2.0 10.0
+3 3 0 0
+2001 1000 100
+1001 10000 200
+100 0 0
+Sample Output:
+20

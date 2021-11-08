@@ -1,0 +1,2 @@
+ You are given a number $n$. You need to write a method ```get_primes``` that accepts a number $k$ and returns the $k$th prime number. For example :      n = 10    k = 3    get_primes(3) should return 5
+4

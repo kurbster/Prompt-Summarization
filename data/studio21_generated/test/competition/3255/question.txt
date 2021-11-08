@@ -1,0 +1,28 @@
+A hopper is a virtual creature that visits Java programs and explores their arrays. Scientists observed a hopper and came to the following conclusions:
+ - a hopper only visits arrays with integer entries,
+ - a hopper always explores a sequence of array elements using the following rules:
+ - a hopper cannot jump too far, that is, the next element is always at most $D$ indices away (how far a hopper can jump depends on the length of its legs),
+ - a hopper doesn’t like big changes in values—the next element differs from the current element by at most $M$, more precisely the absolute value of the difference is at most $M$ (how big a change in values a hopper can handle depends on the length of its arms), and
+ - a hopper never visits the same element twice.
+ - a hopper will explore the array with the longest exploration sequence.
+
+The scientists now need to prepare arrays for further study of hoppers and they need your help. They want a program that given an array and values $D$ and $M$ computes the length of the longest exploration sequence in the array.
+
+-----Input-----
+The first line contains three numbers $n$, $D$, $M$, where $n$ is the length of the array (as described above, $D$ is the maximum length of a jump the hopper can make, and $M$ is the maximum difference in values a hopper can handle). The next line contains $n$ integers—the entries of the array. We have $1 \leq D \leq 7$, $1 \leq M \leq 10000$, $1 \leq n \leq 1000$ and the integers in the array are between $-1000000$ and $1000000$.
+
+-----Output-----
+The output contains one line—the length of the longest exploration sequence. The hopper can start and end at any location and the length is computed as the number of visited locations.
+
+-----Examples-----
+Sample Input 1:
+8 3 1
+1 7 8 2 6 4 3 5
+Sample Output 1:
+8
+
+Sample Input 2:
+8 2 1
+1 7 8 2 6 4 3 5
+Sample Output 2:
+3

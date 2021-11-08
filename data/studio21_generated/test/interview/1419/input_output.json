@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "4\ngarage for sa-le\n",
+    "4\nEdu-ca-tion-al Ro-unds are so fun\n",
+    "1\nj\n",
+    "10\nb\n",
+    "1\nQGVsfZevMD\n",
+    "1\nqUOYCytbKgoGRgaqhjrohVRxKTKjjOUPPnEjiXJWlvpCyqiRzbnpyNqDylWverSTrcgZpEoDKhJCrOOvsuXHzkPtbXeKCKMwUTVk\n",
+    "100000\nBGRHXGrqgjMxCBCdQTCpQyHNMkraTRxhyZBztkxXNFEKnCNjHWeCWmmrRjiczJAdfQqdQfnuupPqzRhEKnpuTCsVPNVTIMiuiQUJ\n",
+    "1\nrHPBSGKzxoSLerxkDVxJG PfUqVrdSdOgJBySsRHYryfLKOvIcU\n",
+    "2\nWDJDSbGZbGLcDB-GuDJxmjHEeruCdJNdr wnEbYVxUZbgfjEHlHx\n",
+    "2\nZeqxDLfPrSzHmZMjwSIoGeEdkWWmyvMqYkaXDzOeoFYRwFGamjYbjKYCIyMgjYoxhKnAQHmGAhkwIoySySumVOYmMDBYXDYkmwErqCrjZWkSisPtNczKRofaLOaJhgUbVOtZqjoJYpCILTmGkVpzCiYETFdgnTbTIVCqAoCZqRhJvWrBZjaMqicyLwZNRMfOFxjxDfNatDFmpmOyOQyGdiTvnprfkWGiaFdrwFVYKOrviRXdhYTdIfEjfzhb HrReddDwSntvOGtnNQFjoOnNDdAejrmNXxDmUdWTKTynngKTnHVSOiZZhggAbXaksqKyxuhhjisYDfzPLtTcKBZJCcuGLjhdZcgbrYQtqPnLoMmCKgusOmkLbBKGnKAEvgeLVmzwaYjvcyCZfngSJBlZwDimHsCctSkAhgqakEvXembgLVLbPfcQsmgxTCgCvSNliSyroTYpRmJGCwQlfcKXoptvkrYijULaUKWeVoaFTBFQvinGXGRj\n",
+    "2\nWjrWBWqKIeSndDHeiVmfChQNsoUiRQHVplnIWkwBtxAJhOdTigAAzKtbNEqcgvbWHOopfCNgWHfwXyzSCfNqGMLnmlIdKQonLsmGSJlPBcYfHNJJDGlKNnOGtrWUhaTWuilHWMUlFEzbJYbeAWvgnSOOOPLxX-eJEKRsKqSnMjrPbFDprCqgbTfwAnPjFapVKiTjCcWEzhahwPRHScfcLnUixnxckQJzuHzshyBFKPwVGzHeJWniiRKynDFQdaazmTZtDGnFVTmTUZCRCpUHFmUHAVtEdweCImRztqrkQInyCsnMnYBbjjAdKZjXzyPGS TUZjnPyjnjyRCxfKkvpNicAzGqKQgiRreJIMVZPuKyFptrqhgIeWwpZFYetHqvZKUIscYuQttIRNuklmgqRYhbCWPgXpEygxYWMggVbQbiWNNBFMxRoPIRxcBLhayOizbixIRgaXczSibmlTnnYsnlltfDDwPolEIsjPilMiQQjUGeEyAWES\n",
+    "10\nIBgDZeAHSUFhJxcZkQKqaTZT gqErHjXUahQpfDTcZZW nhLsPIrfflZWnwiQEWpt dcTGNMjzkuWNIVXrshBowdQ ugLvpovZZVWryM\n",
+    "10\nlELWTeKqHCohtEOB PLhjMMwfpFlcnfft nWGsnztStldkrbGkJZz EtSrgwffzJSspzWpoMXGK-jmbVygQC BoIwaGSYKRsgmxBVwkoa\n",
+    "100000\nBvbikpOjCTXWr-zqGzpEGswptPksN IsJVeilKfqoiicTMcmZeduDs KtZKEFZQztKq ynKDcPxbVfOKrjxAfQvKIIR HlsgVUeeGvfSc\n",
+    "10\nTQEKPQiFXCqY iugCuECYdemF RqdrrpurDgeYK-fLJIgvtgWkPHma-kqoGdxPXvloehNNire JShAkvoJxjDMEoHiOp nHgyCAQMfiQSz\n",
+    "4\na-aa\n",
+    "6\na aa-aaa-aa a-aaa-a\n",
+    "4\nasd asd asd asdf\n"
+  ],
+  "outputs": [
+    "7\n",
+    "10\n",
+    "1\n",
+    "1\n",
+    "10\n",
+    "100\n",
+    "100\n",
+    "51\n",
+    "34\n",
+    "253\n",
+    "322\n",
+    "25\n",
+    "22\n",
+    "25\n",
+    "19\n",
+    "2\n",
+    "5\n",
+    "4\n"
+  ]
+}

@@ -1,0 +1,2 @@
+ You are given a string $S$. You are asked to find the number of maximal factorizations of $S$. 
+-----Input----- The input consists of a single line, containing a string of at least one, but at most $200$ characters from the capital alphabet A-Z. -----Output----- Output the weight of a maximal factoring of the input string. -----Examples----- Sample Input 1: PRATTATTATTIC Sample Output 1: 6 Sample Input 2: GGGGGGGGG Sample Output 2: 1 Sample Input 3: PRIME Sample Output 3: 5 Sample Input 4: BABBABABBABBA Sample Output 4: 6

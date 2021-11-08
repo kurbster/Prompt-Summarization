@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "5 3\n1\n2 motarack\n2 mike\n1\n2 light\n",
+    "4 3\n1\n2 alice\n2 bob\n2 tanyaromanova\n",
+    "6 4\n1\n2 a\n2 b\n1\n2 c\n2 d\n",
+    "61 1\n1\n2 wrlcjfswnc\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n",
+    "2 1\n1\n2 cf\n",
+    "64 2\n1\n1\n2 csxom\n1\n2 csxom\n1\n1\n1\n1\n1\n2 yl\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n1\n",
+    "9 4\n1\n2 a\n2 b\n1\n2 a\n2 d\n1\n2 b\n2 c\n",
+    "18 6\n1\n2 a\n2 b\n1\n2 d\n2 c\n1\n2 d\n2 e\n1\n2 e\n2 f\n1\n2 b\n2 c\n1\n2 f\n2 a\n",
+    "24 7\n1\n2 e\n2 f\n2 g\n2 d\n1\n2 e\n2 f\n2 g\n2 c\n1\n2 e\n2 f\n2 g\n2 b\n1\n2 a\n2 b\n1\n2 a\n2 c\n1\n2 a\n2 d\n",
+    "21 6\n1\n2 d\n2 c\n1\n2 d\n2 e\n1\n2 a\n2 b\n1\n2 a\n2 f\n1\n2 b\n2 c\n1\n2 b\n2 f\n1\n2 f\n2 e\n"
+  ],
+  "outputs": [
+    "2\n",
+    "1\n",
+    "2\n",
+    "1\n",
+    "1\n",
+    "2\n",
+    "2\n",
+    "3\n",
+    "3\n",
+    "3\n"
+  ]
+}

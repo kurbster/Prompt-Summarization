@@ -1,0 +1,37 @@
+Friends are going to play console. They have two joysticks and only one charger for them. Initially first joystick is charged at a_1 percent and second one is charged at a_2 percent. You can connect charger to a joystick only at the beginning of each minute. In one minute joystick either discharges by 2 percent (if not connected to a charger) or charges by 1 percent (if connected to a charger).
+
+Game continues while both joysticks have a positive charge. Hence, if at the beginning of minute some joystick is charged by 1 percent, it has to be connected to a charger, otherwise the game stops. If some joystick completely discharges (its charge turns to 0), the game also stops.
+
+Determine the maximum number of minutes that game can last. It is prohibited to pause the game, i. e. at each moment both joysticks should be enabled. It is allowed for joystick to be charged by more than 100 percent.
+
+
+-----Input-----
+
+The first line of the input contains two positive integers a_1 and a_2 (1 ≤ a_1, a_2 ≤ 100), the initial charge level of first and second joystick respectively.
+
+
+-----Output-----
+
+Output the only integer, the maximum number of minutes that the game can last. Game continues until some joystick is discharged.
+
+
+-----Examples-----
+Input
+3 5
+
+Output
+6
+
+Input
+4 4
+
+Output
+5
+
+
+
+-----Note-----
+
+In the first sample game lasts for 6 minute by using the following algorithm:  at the beginning of the first minute connect first joystick to the charger, by the end of this minute first joystick is at 4%, second is at 3%;  continue the game without changing charger, by the end of the second minute the first joystick is at 5%, second is at 1%;  at the beginning of the third minute connect second joystick to the charger, after this minute the first joystick is at 3%, the second one is at 2%;  continue the game without changing charger, by the end of the fourth minute first joystick is at 1%, second one is at 3%;  at the beginning of the fifth minute connect first joystick to the charger, after this minute the first joystick is at 2%, the second one is at 1%;  at the beginning of the sixth minute connect second joystick to the charger, after this minute the first joystick is at 0%, the second one is at 2%. 
+
+After that the first joystick is completely discharged and the game is stopped.

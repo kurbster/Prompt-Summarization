@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "1\nmy ]]name]] is]] steva<en]<n halim]]]]]\n",
+        "1\n<<hate<<<<loves[steva<en ] cs2040c< and also cs2040c\n"
+    ],
+    "outputs": [
+        "my name is steven halim\n",
+        "steven loves cs2040 and also cs2040c\n"
+    ]
+}

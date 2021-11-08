@@ -1,0 +1,27 @@
+Topologically sorting the nodes of a directed graph (digraph) $G$ means putting the nodes in linear order\[ v_0, v_1, v_2, v_3, \ldots \]
+
+such that whenever there is an edge from node $x$ to node $y$ in $G$, $x$ always precedes $y$ in the linear ordering. It is not hard to show that the nodes of a digraph can be topologically sorted if and only if the graph is acyclic (does not contain any directed cycles).
+
+Kahn’s Algorithm is a well-known topological sorting algorithm. Beginning with a digraph $G$ and an empty list $L$, it repeatedly executes the following three steps:
+ - Let $S$ be the set of source nodes, i.e., the nodes with no incoming edges. If $S$ is empty, terminate the algorithm.
+ - Let $\alpha $ be any node in $S$. Remove $\alpha $ and all its outgoing edges from $G$. If this removal of edges creates new source nodes, add these to $S$.
+ - Insert $\alpha $ at the end of $L$.
+
+Once Kahn’s Algorithm terminates, if $G$ is now empty, then $L$ contains the nodes of the initial graph in topologically sorted order (such an ordering may not be unique). Otherwise, $G$ has one or more cycles, and therefore topological sorting is impossible.
+
+Regardless of the outcome of Kahn’s Algorithm, consider any iteration of Step $1$ above. If $S$ contains more than one node, then $\alpha $ can be any one of them, and the choice of $\alpha $ affects the composition of $S$ in later iterations, when further choices may be made that affect the composition of $S$ in yet later iterations, and so on. Taking into account all possible sequences of choices of $\alpha $ during the execution of Kahn’s Algorithm, what is the largest $S$ can ever be at the beginning of Step $1$?
+
+-----Input-----
+The input specifies a single directed graph. The first line of input contains two space-separated integers, $n$ and $m$ ($1 \leq n \leq 500$,  $0 \leq m \leq n(n-1)$), where $n$ is the number of nodes and $m$ is the number of edges. This is followed by $m$ lines, each containing two space-separated integers, $x$ and $y$ ($0 \leq x,y \leq (n-1)$, $x \neq y$), indicating that there is a directed edge from node $x$ to node $y$, where nodes are indexed $0, 1, 2, \ldots , (n-1)$. No edge will be listed more than once.
+
+-----Output-----
+Output a line containing a single integer: the largest possible size of $S$ at the beginning of any iteration of Step $1$ in the execution of Kahn’s Algorithm.
+
+-----Examples-----
+Sample Input:
+4 3
+0 1
+1 2
+2 3
+Sample Output:
+1

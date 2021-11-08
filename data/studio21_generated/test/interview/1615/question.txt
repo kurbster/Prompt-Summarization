@@ -1,0 +1,38 @@
+Little penguin Polo adores integer segments, that is, pairs of integers [l; r] (l ≤ r). 
+
+He has a set that consists of n integer segments: [l_1; r_1], [l_2; r_2], ..., [l_{n}; r_{n}]. We know that no two segments of this set intersect. In one move Polo can either widen any segment of the set 1 unit to the left or 1 unit to the right, that is transform [l; r] to either segment [l - 1; r], or to segment [l; r + 1].
+
+The value of a set of segments that consists of n segments [l_1; r_1], [l_2; r_2], ..., [l_{n}; r_{n}] is the number of integers x, such that there is integer j, for which the following inequality holds, l_{j} ≤ x ≤ r_{j}.
+
+Find the minimum number of moves needed to make the value of the set of Polo's segments divisible by k.
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n, k ≤ 10^5). Each of the following n lines contain a segment as a pair of integers l_{i} and r_{i} ( - 10^5 ≤ l_{i} ≤ r_{i} ≤ 10^5), separated by a space.
+
+It is guaranteed that no two segments intersect. In other words, for any two integers i, j (1 ≤ i < j ≤ n) the following inequality holds, min(r_{i}, r_{j}) < max(l_{i}, l_{j}).
+
+
+-----Output-----
+
+In a single line print a single integer — the answer to the problem.
+
+
+-----Examples-----
+Input
+2 3
+1 2
+3 4
+
+Output
+2
+
+Input
+3 7
+1 2
+3 3
+4 7
+
+Output
+0

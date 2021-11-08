@@ -1,0 +1,2 @@
+ You are given an array arr. Find the number of seconds it will take Mr. Bender to get happy. 
+-----Input----- The first line contains four space-separated integers n, x, y, c (1 ≤ n, c ≤ 10^9; 1 ≤ x, y ≤ n; c ≤ n^2). -----Output----- In a single line print a single integer — the answer to the problem. -----Examples----- Input 6 4 3 1 Output 0 Input 9 3 8 10 Output 2 -----Note----- Initially the first test has one painted cell, so the answer is 0. In the second test all events will go as is shown on the figure. [Image].

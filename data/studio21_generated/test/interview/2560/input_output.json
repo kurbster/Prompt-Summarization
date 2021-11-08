@@ -1,0 +1,10 @@
+{
+  "inputs": [
+    "2\n5 2 3\n6 4 5\n",
+    "50\n69 6 6\n22 1 1\n23 3 3\n60 13 13\n13 3 3\n7 4 7\n6 1 1\n49 7 9\n68 8 8\n20 2 2\n34 1 1\n79 5 5\n22 1 1\n77 58 65\n10 3 3\n72 5 5\n47 1 1\n82 3 3\n92 8 8\n34 1 1\n42 9 10\n63 14 14\n10 3 3\n38 2 2\n80 6 6\n79 5 5\n53 5 5\n44 7 7\n85 2 2\n24 2 2\n57 3 3\n95 29 81\n77 6 6\n24 1 1\n33 4 4\n93 6 6\n55 22 28\n91 14 14\n7 1 1\n16 1 1\n20 3 3\n43 3 3\n53 3 3\n49 3 3\n52 5 5\n2 1 1\n60 5 5\n76 57 68\n67 3 3\n61 52 61\n"
+  ],
+  "outputs": [
+    "Yes\nNo\n",
+    "No\nYes\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nYes\nYes\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nYes\nNo\nNo\nNo\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nYes\nNo\nYes\nNo\nNo\nYes\nNo\nYes\nYes\nNo\nNo\nNo\nNo\nNo\nYes\nYes\nNo\nNo\nYes\n"
+  ]
+}

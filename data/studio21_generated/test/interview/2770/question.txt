@@ -1,0 +1,42 @@
+-----Input-----
+The first line of input contains an integer $1 \le N \le 40$, the degree of the recurrence. The next line of input contains $N+1$ integers $a_0, a_1, \ldots , a_ N$ indicating that the linear recurrence is $x_{t} = a_0 + \sum _{i=1}^N a_ i x_{t-i}$. The next line contains $N$ integers $x_0, \ldots , x_{N-1}$ giving the initial values for the recursion. All the coefficients $a_0, \ldots , a_ N$ and initial values $x_0, \ldots , x_{N-1}$ are integers between $-10^9$ and $10^9$ (inclusive).
+
+The next line contains an integer $1 \le Q \le 10$, the number of queries. Then follow $Q$ lines of queries. Each query consists of two integers $T$, $M$ where $0 \le T \le 10^{18}$ gives the index and $1 \le M \le 10^{9}$ is a moduli.
+
+-----Output-----
+For each query $T$, $M$, output a line containing $x_ T \bmod M$.
+
+-----Examples-----
+Sample Input 1:
+2
+0 1 1
+0 1
+6
+1 100000
+2 100000
+3 100000
+4 100000
+5 100000
+6 100000
+Sample Output 1:
+1
+1
+2
+3
+5
+8
+
+Sample Input 2:
+2
+5 7 9
+36713 5637282
+4
+1 10000
+1375 1
+3781 23
+34683447233 1571385
+Sample Output 2:
+7282
+0
+16
+299255

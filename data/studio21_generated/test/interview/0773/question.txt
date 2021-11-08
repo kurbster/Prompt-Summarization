@@ -1,0 +1,52 @@
+Recently Ivan noticed an array a while debugging his code. Now Ivan can't remember this array, but the bug he was trying to fix didn't go away, so Ivan thinks that the data from this array might help him to reproduce the bug.
+
+Ivan clearly remembers that there were n elements in the array, and each element was not less than 1 and not greater than n. Also he remembers q facts about the array. There are two types of facts that Ivan remembers:  1 l_{i} r_{i} v_{i} — for each x such that l_{i} ≤ x ≤ r_{i} a_{x} ≥ v_{i};  2 l_{i} r_{i} v_{i} — for each x such that l_{i} ≤ x ≤ r_{i} a_{x} ≤ v_{i}. 
+
+Also Ivan thinks that this array was a permutation, but he is not so sure about it. He wants to restore some array that corresponds to the q facts that he remembers and is very similar to permutation. Formally, Ivan has denoted the cost of array as follows:
+
+$\operatorname{cos} t = \sum_{i = 1}^{n}(\operatorname{cnt}(i))^{2}$, where cnt(i) is the number of occurences of i in the array.
+
+Help Ivan to determine minimum possible cost of the array that corresponds to the facts!
+
+
+-----Input-----
+
+The first line contains two integer numbers n and q (1 ≤ n ≤ 50, 0 ≤ q ≤ 100).
+
+Then q lines follow, each representing a fact about the array. i-th line contains the numbers t_{i}, l_{i}, r_{i} and v_{i} for i-th fact (1 ≤ t_{i} ≤ 2, 1 ≤ l_{i} ≤ r_{i} ≤ n, 1 ≤ v_{i} ≤ n, t_{i} denotes the type of the fact).
+
+
+-----Output-----
+
+If the facts are controversial and there is no array that corresponds to them, print -1. Otherwise, print minimum possible cost of the array.
+
+
+-----Examples-----
+Input
+3 0
+
+Output
+3
+
+Input
+3 1
+1 1 3 2
+
+Output
+5
+
+Input
+3 2
+1 1 3 2
+2 1 3 2
+
+Output
+9
+
+Input
+3 2
+1 1 3 2
+2 1 3 1
+
+Output
+-1

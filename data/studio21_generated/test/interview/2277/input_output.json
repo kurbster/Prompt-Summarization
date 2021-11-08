@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "3\n1 2 3\n2\n1 2\n2 3\n",
+    "4\n1 2 4 3\n4\n1 1\n1 4\n1 4\n2 3\n",
+    "7\n2 6 1 7 4 5 3\n5\n4 5\n7 7\n5 6\n4 5\n4 5\n",
+    "3\n2 1 3\n3\n2 3\n1 1\n1 3\n",
+    "1\n1\n10\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n1 1\n"
+  ],
+  "outputs": [
+    "odd\neven\n",
+    "odd\nodd\nodd\neven\n",
+    "odd\nodd\neven\nodd\neven\n",
+    "even\neven\nodd\n",
+    "even\neven\neven\neven\neven\neven\neven\neven\neven\neven\n"
+  ]
+}

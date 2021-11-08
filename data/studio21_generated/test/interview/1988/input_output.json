@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "6\n4\nabab\n6\nqwerty\n5\naaaaa\n6\nalaska\n9\nlfpbavjsm\n1\np\n",
+    "1\n440\ntcjbjlbtjfmvzdqutuwzvmgqrqtrvxwrdacxcowbmbwvwssihttgdsjntiawqavwspzmybakxmwpbcgaffpyhvjrulqsorkcuozvtdbkkmasxtemrrbhqnmkpgewwphdvcyhxmatrfjkesacujihmtyqtqcjfqhpsjhgzimegvkjylapylqprykvkjavlmipewlzqsfefjzecadsqmfutgnegngmwchqttcyklocfcyuhghvtygdbsxaoxkvtgdcnsqddzzakhgrribwxkuakxkjneasowsadprpcusmbevudorsmfdjynazzyflfystiksncdgnyvelnwhcpbpdcsavmzvcwmelcruhjqktlzymndlcfshsmyfqfqejlenesnzxjqnzmwvjkwhoorczwqsglslsgrtoqcekryyghxfmzixbyjgecnfk\n",
+    "1\n9\njyiqoebcn\n",
+    "1\n9\nahqgpxbiw\n",
+    "1\n7\nydyamrb\n",
+    "1\n1\nk\n",
+    "1\n9\nbejrrlbci\n",
+    "1\n3\nraq\n",
+    "1\n369\nsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\n"
+  ],
+  "outputs": [
+    "abab\n1\nertyqw\n3\naaaaa\n1\naksala\n6\navjsmbpfl\n5\np\n1\n",
+    "acujihmtyqtqcjfqhpsjhgzimegvkjylapylqprykvkjavlmipewlzqsfefjzecadsqmfutgnegngmwchqttcyklocfcyuhghvtygdbsxaoxkvtgdcnsqddzzakhgrribwxkuakxkjneasowsadprpcusmbevudorsmfdjynazzyflfystiksncdgnyvelnwhcpbpdcsavmzvcwmelcruhjqktlzymndlcfshsmyfqfqejlenesnzxjqnzmwvjkwhoorczwqsglslsgrtoqcekryyghxfmzixbyjgecnfktcjbjlbtjfmvzdqutuwzvmgqrqtrvxwrdacxcowbmbwvwssihttgdsjntiawqavwspzmybakxmwpbcgaffpyhvjrulqsorkcuozvtdbkkmasxtemrrbhqnmkpgewwphdvcyhxmatrfjkes\n143\n",
+    "bcneoqiyj\n7\n",
+    "ahqgpxbiw\n1\n",
+    "amrbydy\n4\n",
+    "k\n1\n",
+    "bcilrrjeb\n7\n",
+    "aqr\n2\n",
+    "sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss\n1\n"
+  ]
+}

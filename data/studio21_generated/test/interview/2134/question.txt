@@ -1,0 +1,55 @@
+Marcin is a coach in his university. There are $n$ students who want to attend a training camp. Marcin is a smart coach, so he wants to send only the students that can work calmly with each other.
+
+Let's focus on the students. They are indexed with integers from $1$ to $n$. Each of them can be described with two integers $a_i$ and $b_i$; $b_i$ is equal to the skill level of the $i$-th student (the higher, the better). Also, there are $60$ known algorithms, which are numbered with integers from $0$ to $59$. If the $i$-th student knows the $j$-th algorithm, then the $j$-th bit ($2^j$) is set in the binary representation of $a_i$. Otherwise, this bit is not set.
+
+Student $x$ thinks that he is better than student $y$ if and only if $x$ knows some algorithm which $y$ doesn't know. Note that two students can think that they are better than each other. A group of students can work together calmly if no student in this group thinks that he is better than everyone else in this group.
+
+Marcin wants to send a group of at least two students which will work together calmly and will have the maximum possible sum of the skill levels. What is this sum?
+
+
+-----Input-----
+
+The first line contains one integer $n$ ($1 \leq n \leq 7000$) — the number of students interested in the camp.
+
+The second line contains $n$ integers. The $i$-th of them is $a_i$ ($0 \leq a_i < 2^{60}$).
+
+The third line contains $n$ integers. The $i$-th of them is $b_i$ ($1 \leq b_i \leq 10^9$).
+
+
+-----Output-----
+
+Output one integer which denotes the maximum sum of $b_i$ over the students in a group of students which can work together calmly. If no group of at least two students can work together calmly, print 0.
+
+
+-----Examples-----
+Input
+4
+3 2 3 6
+2 8 5 10
+
+Output
+15
+
+Input
+3
+1 2 3
+1 2 3
+
+Output
+0
+
+Input
+1
+0
+1
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first sample test, it's optimal to send the first, the second and the third student to the camp. It's also possible to send only the first and the third student, but they'd have a lower sum of $b_i$.
+
+In the second test, in each group of at least two students someone will always think that he is better than everyone else in the subset.

@@ -1,0 +1,51 @@
+It's a beautiful April day and Wallace is playing football with his friends. But his friends do not know that Wallace actually stayed home with Gromit and sent them his robotic self instead. Robo-Wallace has several advantages over the other guys. For example, he can hit the ball directly to the specified point. And yet, the notion of a giveaway is foreign to him. The combination of these features makes the Robo-Wallace the perfect footballer — as soon as the ball gets to him, he can just aim and hit the goal. He followed this tactics in the first half of the match, but he hit the goal rarely. The opposing team has a very good goalkeeper who catches most of the balls that fly directly into the goal. But Robo-Wallace is a quick thinker, he realized that he can cheat the goalkeeper. After all, they are playing in a football box with solid walls. Robo-Wallace can kick the ball to the other side, then the goalkeeper will not try to catch the ball. Then, if the ball bounces off the wall and flies into the goal, the goal will at last be scored.
+
+Your task is to help Robo-Wallace to detect a spot on the wall of the football box, to which the robot should kick the ball, so that the ball bounces once and only once off this wall and goes straight to the goal. In the first half of the match Robo-Wallace got a ball in the head and was severely hit. As a result, some of the schemes have been damaged. Because of the damage, Robo-Wallace can only aim to his right wall (Robo-Wallace is standing with his face to the opposing team's goal).
+
+The football box is rectangular. Let's introduce a two-dimensional coordinate system so that point (0, 0) lies in the lower left corner of the field, if you look at the box above. Robo-Wallace is playing for the team, whose goal is to the right. It is an improvised football field, so the gate of Robo-Wallace's rivals may be not in the middle of the left wall. [Image] 
+
+In the given coordinate system you are given:   y_1, y_2 — the y-coordinates of the side pillars of the goalposts of robo-Wallace's opponents;  y_{w} — the y-coordinate of the wall to which Robo-Wallace is aiming;  x_{b}, y_{b} — the coordinates of the ball's position when it is hit;  r — the radius of the ball. 
+
+A goal is scored when the center of the ball crosses the OY axis in the given coordinate system between (0, y_1) and (0, y_2). The ball moves along a straight line. The ball's hit on the wall is perfectly elastic (the ball does not shrink from the hit), the angle of incidence equals the angle of reflection. If the ball bounces off the wall not to the goal, that is, if it hits the other wall or the goal post, then the opposing team catches the ball and Robo-Wallace starts looking for miscalculation and gets dysfunctional. Such an outcome, if possible, should be avoided. We assume that the ball touches an object, if the distance from the center of the ball to the object is no greater than the ball radius r.
+
+
+-----Input-----
+
+The first and the single line contains integers y_1, y_2, y_{w}, x_{b}, y_{b}, r (1 ≤ y_1, y_2, y_{w}, x_{b}, y_{b} ≤ 10^6; y_1 < y_2 < y_{w}; y_{b} + r < y_{w}; 2·r < y_2 - y_1).
+
+It is guaranteed that the ball is positioned correctly in the field, doesn't cross any wall, doesn't touch the wall that Robo-Wallace is aiming at. The goal posts can't be located in the field corners.
+
+
+-----Output-----
+
+If Robo-Wallace can't score a goal in the described manner, print "-1" (without the quotes). Otherwise, print a single number x_{w} — the abscissa of his point of aiming. 
+
+If there are multiple points of aiming, print the abscissa of any of them. When checking the correctness of the answer, all comparisons are made with the permissible absolute error, equal to 10^{ - 8}. 
+
+It is recommended to print as many characters after the decimal point as possible.
+
+
+-----Examples-----
+Input
+4 10 13 10 3 1
+
+Output
+4.3750000000
+
+Input
+1 4 6 2 2 1
+
+Output
+-1
+
+Input
+3 10 15 17 9 2
+
+Output
+11.3333333333
+
+
+
+-----Note-----
+
+Note that in the first and third samples other correct values of abscissa x_{w} are also possible.

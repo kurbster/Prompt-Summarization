@@ -1,0 +1,16 @@
+People are going to the movies in groups (or alone), but normally only care to socialize within that group. Being Scandinavian, each group of people would like to sit at least one space apart from any other group of people to ensure their privacy, unless of course they sit at the end of a row. The number of seats per row in the cinema starts at $X$ and decreases with one seat per row (down to a number of $1$ seat per row). The number of groups of varying sizes is given as a vector $(N_1, \ldots , N_ n)$, where $N_1$ is the number of people going alone, $N_2$ is the number of people going as a pair etc. Calculate the seat-width, $X$, of the widest row, which will create a solution that seats all (groups of) visitors using as few rows of seats as possible. The cinema also has a limited capacity, so the widest row may not exceed $12$ seats.
+
+-----Input-----
+The first line of input contains a single integer $n$ ($1 \leq n \leq 12$), giving the size of the largest group in the test case.
+
+Then follows a line with $n$ non-negative integers, the $i$-th integer ($1$-indexed) denoting the number of groups of $i$ persons who need to be seated. Each such number is at most $30$, and not all of them are $0$.
+
+-----Output-----
+A single number; the size of the smallest widest row that will accommodate all the guests. If this number is greater than $12$, output impossible instead.
+
+-----Examples-----
+Sample Input:
+3
+0 1 1
+Sample Output:
+3

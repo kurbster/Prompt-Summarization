@@ -1,0 +1,2 @@
+ You are given a map of a m x n grid. You can disarm any building in any row or column. You would like to know the maximum number of buildings that can be disarmed. 
+-----Input----- The first line of input consists of two space-separated integers $R$ and $C$ ($1 \le R, C \le 2000$). $R$ lines follow, each of which consists of $C$ characters (either “x" or “."), specifying the grid of the financial district. -----Output----- Print, on a single line, the maximum number of buildings that can be disarmed. -----Examples----- Sample Input: 3 3 x.. .x. x.x Sample Output: 2

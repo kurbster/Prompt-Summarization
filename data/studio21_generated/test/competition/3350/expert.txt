@@ -1,0 +1,2 @@
+ Given a word, find and return the power of that word. 
+-----Input----- The input is a single line containing a word of length $3 \cdot 10^5$, consisting of (large or small) letters of the English alphabet. -----Output----- You should output one integer $k$, the power of the word. -----Examples----- Sample Input: abrahellehhelleh Sample Output: 12

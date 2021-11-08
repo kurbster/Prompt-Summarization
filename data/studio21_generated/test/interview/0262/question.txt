@@ -1,0 +1,72 @@
+ZS the Coder and Chris the Baboon arrived at the entrance of Udayland. There is a n × n magic grid on the entrance which is filled with integers. Chris noticed that exactly one of the cells in the grid is empty, and to enter Udayland, they need to fill a positive integer into the empty cell.
+
+Chris tried filling in random numbers but it didn't work. ZS the Coder realizes that they need to fill in a positive integer such that the numbers in the grid form a magic square. This means that he has to fill in a positive integer so that the sum of the numbers in each row of the grid ($\sum a_{r, i}$), each column of the grid ($\sum a_{i, c}$), and the two long diagonals of the grid (the main diagonal — $\sum a_{i, i}$ and the secondary diagonal — $\sum a_{i, n - i + 1}$) are equal. 
+
+Chris doesn't know what number to fill in. Can you help Chris find the correct positive integer to fill in or determine that it is impossible?
+
+
+-----Input-----
+
+The first line of the input contains a single integer n (1 ≤ n ≤ 500) — the number of rows and columns of the magic grid.
+
+n lines follow, each of them contains n integers. The j-th number in the i-th of them denotes a_{i}, j (1 ≤ a_{i}, j ≤ 10^9 or a_{i}, j = 0), the number in the i-th row and j-th column of the magic grid. If the corresponding cell is empty, a_{i}, j will be equal to 0. Otherwise, a_{i}, j is positive.
+
+It is guaranteed that there is exactly one pair of integers i, j (1 ≤ i, j ≤ n) such that a_{i}, j = 0.
+
+
+-----Output-----
+
+Output a single integer, the positive integer x (1 ≤ x ≤ 10^18) that should be filled in the empty cell so that the whole grid becomes a magic square. If such positive integer x does not exist, output  - 1 instead.
+
+If there are multiple solutions, you may print any of them.
+
+
+-----Examples-----
+Input
+3
+4 0 2
+3 5 7
+8 1 6
+
+Output
+9
+
+Input
+4
+1 1 1 1
+1 1 0 1
+1 1 1 1
+1 1 1 1
+
+Output
+1
+
+Input
+4
+1 1 1 1
+1 1 0 1
+1 1 2 1
+1 1 1 1
+
+Output
+-1
+
+
+
+-----Note-----
+
+In the first sample case, we can fill in 9 into the empty cell to make the resulting grid a magic square. Indeed, 
+
+The sum of numbers in each row is:
+
+4 + 9 + 2 = 3 + 5 + 7 = 8 + 1 + 6 = 15.
+
+The sum of numbers in each column is:
+
+4 + 3 + 8 = 9 + 5 + 1 = 2 + 7 + 6 = 15.
+
+The sum of numbers in the two diagonals is:
+
+4 + 5 + 6 = 2 + 5 + 8 = 15.
+
+In the third sample case, it is impossible to fill a number in the empty square such that the resulting grid is a magic square.

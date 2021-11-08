@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    "abc\n3\n1 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "mmzhr\n3\n443 497 867 471 195 670 453 413 579 466 553 881 847 642 269 996 666 702 487 209 257 741 974 133 519 453\n",
+    "ajeeseerqnpaujubmajpibxrccazaawetywxmifzehojf\n23\n359 813 772 413 733 654 33 87 890 433 395 311 801 852 376 148 914 420 636 695 583 733 664 394 407 314\n",
+    "uahngxejpomhbsebcxvelfsojbaouynnlsogjyvktpwwtcyddkcdqcqs\n34\n530 709 150 660 947 830 487 142 208 276 885 542 138 214 76 184 273 753 30 195 722 236 82 691 572 585\n",
+    "xnzeqmouqyzvblcidmhbkqmtusszuczadpooslqxegldanwopilmdwzbczvrwgnwaireykwpugvpnpafbxlyggkgawghysufuegvmzvpgcqyjkoadcreaguzepbendwnowsuekxxivkziibxvxfoilofxcgnxvfefyezfhevfvtetsuhwtyxdlkccdkvqjl\n282\n170 117 627 886 751 147 414 187 150 960 410 70 576 681 641 729 798 877 611 108 772 643 683 166 305 933\n",
+    "pplkqmluhfympkjfjnfdkwrkpumgdmbkfbbldpepicbbmdgafttpopzdxsevlqbtywzkoxyviglbbxsohycbdqksrhlumsldiwzjmednbkcjishkiekfrchzuztkcxnvuykhuenqojrmzaxlaoxnljnvqgnabtmcftisaazzgbmubmpsorygyusmeonrhrgphnfhlaxrvyhuxsnnezjxmdoklpquzpvjbxgbywppmegzxknhfzyygrmejleesoqfwheulmqhonqaukyuejtwxskjldplripyihbfpookxkuehiwqthbfafyrgmykuxglpplozycgydyecqkgfjljfqvigqhuxssqqtfanwszduwbsoytnrtgc\n464\n838 95 473 955 690 84 436 19 179 437 674 626 377 365 781 4 733 776 462 203 119 256 381 668 855 686\n",
+    "qkautnuilwlhjsldfcuwhiqtgtoihifszlyvfaygrnivzgvwthkrzzdtfjcirrjjlrmjtbjlzmjeqmuffsjorjyggzefwgvmblvotvzffnwjhqxorpowzdcnfksdibezdtfjjxfozaghieksbmowrbeehuxlesmvqjsphlvauxiijm\n98\n121 622 0 691 616 959 838 161 581 862 876 830 267 812 598 106 337 73 588 323 999 17 522 399 657 495\n",
+    "tghyxqfmhz\n8\n191 893 426 203 780 326 148 259 182 140 847 636 778 97 167 773 219 891 758 993 695 603 223 779 368 165\n",
+    "nyawbfjxnxjiyhwkydaruozobpphgjqdpfdqzezcsoyvurnapu\n30\n65 682 543 533 990 148 815 821 315 916 632 771 332 513 472 864 12 73 548 687 660 572 507 192 226 348\n",
+    "pylrnkrbcjgoytvdnhmlvnkknijkdgdhworlvtwuonrkhrilkewcnofodaumgvnsisxooswgrgtvdeauyxhkipfoxrrtysuepjcf\n60\n894 206 704 179 272 337 413 828 119 182 330 46 440 102 250 191 242 539 678 783 843 431 612 567 33 338\n",
+    "vhjnkrxbyhjhnjrxvwxmhxwoxttbtqosfxtcuvhfjlkyfspeypthsdkkwnqdpxdlnxsgtzvkrgqosgfjrwetqbxgoarkjhrjbspzgblsapifltkfxbfdbxqwoohlgyzijmiwnpmveybyzvasoctxsmgjehpyysmqblwnmkappbecklqjfmxhlyceordroflnposohfplrvijxbwvqdtvzhobtrumiujnyrfbwthvciinuveoizkccelxtaveiiagryqnyvsgfnipnavrtmdqlcnldepocbpzmqnarkdvykds\n276\n364 244 798 82 582 9 309 950 286 547 892 371 569 159 705 975 740 845 655 179 130 993 255 552 882 657\n",
+    "gsaddmezrnttfalbwlqbnedumvikplfosw\n12\n290 850 872 361 483 895 152 118 974 619 701 154 899 285 328 712 669 984 407 340 851 775 324 892 554 860\n",
+    "a\n0\n5 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n",
+    "lol\n3\n1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1\n"
+  ],
+  "outputs": [
+    "41\n",
+    "29978\n",
+    "1762894\n",
+    "2960349\n",
+    "99140444\n",
+    "301124161\n",
+    "30125295\n",
+    "136422\n",
+    "2578628\n",
+    "9168707\n",
+    "144901921\n",
+    "809931\n",
+    "5\n",
+    "21\n"
+  ]
+}

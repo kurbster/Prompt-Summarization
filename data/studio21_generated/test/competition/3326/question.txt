@@ -1,0 +1,33 @@
+You are given an $r\! \times \! c$ grid. Each cell of this grid is filled with a number between $1$ and $r{\cdot }c$ inclusive, and each cell’s number is distinct.
+
+Define a grid of numbers to be monotonic if each row and column is either increasing or decreasing (this can be different for each row or column).
+
+Define a subgrid of the grid as follows: First choose some nonempty subset of the rows and columns. Next, take elements that lie in both the chosen rows and columns in the same order.
+
+There are $(2^r{-}1)(2^c{-}1)$ nonempty subgrids of the given grid. Of these subgrids, count how many are monotonic.
+
+Consider this grid:$1$  $2$  $5$
+
+$7$  $6$  $4$
+
+$9$  $8$  $3$
+
+
+There are nine $1{\times }1$ subgrids, nine $1{\times }2$’s, three $1{\times }3$’s, nine $2{\times }1$’s, nine $2{\times }2$’s, three $2{\times }3$’s, three $3{\times }1$’s, three $3{\times }2$’s, and one $3{\times }3$. They are all monotonic, for $9{+}9{+}3{+}9{+}9{+}3{+}3{+}3{+}1=49$ monotonic subgrids.
+
+-----Input-----
+Each test case will begin with a line with two space-separated integers $r$ and $c$ ($1\! \le \! r,c\! \le \! 20$), which are the dimensions of the grid.
+
+Each of the next $r$ lines will contain $c$ space-separated integers $x$ ($1\! \le \! x\! \le \! r{\cdot }c$, all $x$’s are unique). This is the grid.
+
+-----Output-----
+Output a single integer, which is the number of monotonic subgrids in the given grid.
+
+-----Examples-----
+Sample Input:
+3 3
+1 2 5
+7 6 4
+9 8 3
+Sample Output:
+49

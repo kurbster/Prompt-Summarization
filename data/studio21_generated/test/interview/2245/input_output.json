@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "4\n0 3\n3 3\n3 4\n4 4\n",
+    "1\n73 18\n",
+    "1\n25 6\n",
+    "24\n19 9\n20 9\n21 9\n22 9\n23 9\n24 9\n25 9\n26 9\n27 9\n28 9\n29 9\n30 9\n31 9\n32 9\n1000000000 999999999\n999999996 999999999\n999999997 999999999\n1000000000 6\n1000000000 3\n1000000000 9\n999999999 6\n999999996 6\n999999992 6\n999999999 9\n",
+    "1\n24 6\n"
+  ],
+  "outputs": [
+    "Bob\nAlice\nBob\nAlice\n",
+    "Alice\n",
+    "Alice\n",
+    "Alice\nBob\nAlice\nAlice\nBob\nAlice\nAlice\nBob\nAlice\nAlice\nAlice\nBob\nAlice\nAlice\nBob\nBob\nAlice\nAlice\nBob\nBob\nAlice\nAlice\nAlice\nAlice\n",
+    "Bob\n"
+  ]
+}

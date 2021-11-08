@@ -1,0 +1,76 @@
+Hongcow likes solving puzzles.
+
+One day, Hongcow finds two identical puzzle pieces, with the instructions "make a rectangle" next to them. The pieces can be described by an n by m grid of characters, where the character 'X' denotes a part of the puzzle and '.' denotes an empty part of the grid. It is guaranteed that the puzzle pieces are one 4-connected piece. See the input format and samples for the exact details on how a jigsaw piece will be specified.
+
+The puzzle pieces are very heavy, so Hongcow cannot rotate or flip the puzzle pieces. However, he is allowed to move them in any directions. The puzzle pieces also cannot overlap.
+
+You are given as input the description of one of the pieces. Determine if it is possible to make a rectangle from two identical copies of the given input. The rectangle should be solid, i.e. there should be no empty holes inside it or on its border. Keep in mind that Hongcow is not allowed to flip or rotate pieces and they cannot overlap, i.e. no two 'X' from different pieces can share the same position.
+
+
+-----Input-----
+
+The first line of input will contain two integers n and m (1 ≤ n, m ≤ 500), the dimensions of the puzzle piece.
+
+The next n lines will describe the jigsaw piece. Each line will have length m and will consist of characters '.' and 'X' only. 'X' corresponds to a part of the puzzle piece, '.' is an empty space.
+
+It is guaranteed there is at least one 'X' character in the input and that the 'X' characters form a 4-connected region.
+
+
+-----Output-----
+
+Output "YES" if it is possible for Hongcow to make a rectangle. Output "NO" otherwise.
+
+
+-----Examples-----
+Input
+2 3
+XXX
+XXX
+
+Output
+YES
+
+Input
+2 2
+.X
+XX
+
+Output
+NO
+
+Input
+5 5
+.....
+..X..
+.....
+.....
+.....
+
+Output
+YES
+
+
+
+-----Note-----
+
+For the first sample, one example of a rectangle we can form is as follows 
+
+111222
+
+111222
+
+
+
+For the second sample, it is impossible to put two of those pieces without rotating or flipping to form a rectangle.
+
+In the third sample, we can shift the first tile by one to the right, and then compose the following rectangle: 
+
+.....
+
+..XX.
+
+.....
+
+.....
+
+.....

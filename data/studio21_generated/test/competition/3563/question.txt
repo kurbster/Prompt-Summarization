@@ -1,0 +1,13 @@
+Dezider is making a game board for the game of Convexity. He drilled a bunch of holes in a piece of wood. As the name of the game suggests the holes were on the boundary of a convex polygon. After turning over the piece of wood, Dezider froze—he had damaged the famous Picasso lithograph—The Bull No. 8. Now the question is: how to fix the damage? Drawing a bunch of straight lines to cover the holes seems like a good repair method but, of course, Dezider would like to draw as few lines as possible. He needs your help. Write a program that, given the positions of the holes, finds the smallest number of straight lines that can cover the holes.
+
+-----Input-----
+The only input line starts with $n$, the number of holes. Then $2n$ numbers, the coordinates of the holes, follow. You can assume that $3 \leq n \leq 1000$ and the coordinates are integers between $-1000000$ and $1000000$. The holes lie on the boundary of a convex polygon.
+
+-----Output-----
+The output contains one line with the smallest number $\ell $, such that $\ell $ straight lines can cover the holes.
+
+-----Examples-----
+Sample Input:
+4 0 0 1 1 1 0 0 1
+Sample Output:
+2

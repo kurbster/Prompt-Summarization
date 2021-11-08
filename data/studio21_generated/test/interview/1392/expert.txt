@@ -1,0 +1,2 @@
+ You are given an array a, and a number k (0, ..., k).    You need to count how many k-good numbers are in a. 
+-----Input----- The first line contains integers n and k (1 ≤ n ≤ 100, 0 ≤ k ≤ 9). The i-th of the following n lines contains integer a_{i} without leading zeroes (1 ≤ a_{i} ≤ 10^9). -----Output----- Print a single integer — the number of k-good numbers in a. -----Examples----- Input 10 6 1234560 1234560 1234560 1234560 1234560 1234560 1234560 1234560 1234560 1234560 Output 10 Input 2 1 1 10 Output 1

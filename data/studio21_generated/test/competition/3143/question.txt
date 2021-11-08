@@ -1,0 +1,38 @@
+It is the first day of school at Liking University, or “Lku” for short. Lku administration is very strict with attendance, especially on the first day. In order to verify everyone’s attendance, the Lku’s principal has made an attendance list. He then asked to all students to stand in line to his office in order to mark everyone’s attendance.
+
+The principal would go through the list, top-down and inspect if the person in front of him was the one currently on top the list. This inspection takes exactly one second. If it was, then the principal would strike the name from the list. Regardless of whether the student’s name would match or not with the one on top the list, the student in front of the queue would be asked to go somewhere somewhere else in the line. This implies going to an arbitrary position in the line, e.g. going to the back, somewhere in the middle or the front (continue standing on the same spot). The student can decide which position he or she wants to go to.
+
+The list itself was written hastily and had several flaws – some students could be left out from it and some students’ names could appear on the list more than once. Knowing the contents of the list and the position of each student within the initial line, what is the minimal time that it can take for every name to be stricken from the attendance list if the students choose their new positions in the queue optimally?
+
+-----Input-----
+The first line of input contains two integers $N$ and $M$ $(1 \leq N, M \leq 3 \cdot 10^5)$ – the total number of students in the line and the number of names on the list respectively.
+
+The second line contains $M$ integers $a_1, a_2, \dots , a_ M$ $(1 \leq a_ i \leq N)$ – the names of students as they appear in the list (top-down).
+
+The third line contains $N$ integers $b_1, b_2, \dots , b_ N$ $(1 \leq b_ i \leq N)$ – the initial order of the students as they appear in line, where $b_ i$ is the name of $i$:th student in the line ($b_1$ is the name of the first student in the line).
+
+The students are numbered between $1$ and $N$.
+
+-----Output-----
+The output consists of two lines:
+ - The first line of output is $K$ – the minimal number of inspections that the principal needs to do.
+ - The second line of the output consists of $K$ integers. For every inspection, output a number for which position in the line the student has to go back to after the inspection.
+
+If there are multiple solutions which result in minimal number of inspections, then output any of them.
+
+-----Examples-----
+Sample Input 1:
+1 1
+1
+1
+Sample Output 1:
+1
+1 
+
+Sample Input 2:
+4 5
+4 1 2 4 4
+4 3 2 1
+Sample Output 2:
+7
+4 4 2 4 4 1 4

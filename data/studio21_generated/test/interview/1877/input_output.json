@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "1\nU\n",
+    "6\nRURUUR\n",
+    "7\nURRRUUU\n",
+    "100\nRUURUURRUURUUUUURRUUURRRRUURRURRURRRRUUUUUURRUURRRRURUUURUURURRRRRURUURRUURUURRUUURUUUUUURRUUUURUUUR\n",
+    "7\nURURRUR\n",
+    "15\nRUURRRRURRUUUUU\n",
+    "6\nUURRRU\n",
+    "7\nRRRRRRR\n",
+    "2\nUR\n",
+    "2\nUU\n"
+  ],
+  "outputs": [
+    "0\n",
+    "1\n",
+    "2\n",
+    "3\n",
+    "1\n",
+    "3\n",
+    "1\n",
+    "0\n",
+    "0\n",
+    "0\n"
+  ]
+}

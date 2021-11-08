@@ -1,0 +1,69 @@
+The main city magazine offers its readers an opportunity to publish their ads. The format of the ad should be like this:
+
+There are space-separated non-empty words of lowercase and uppercase Latin letters.
+
+There are hyphen characters '-' in some words, their positions set word wrapping points. Word can include more than one hyphen. 
+
+It is guaranteed that there are no adjacent spaces and no adjacent hyphens. No hyphen is adjacent to space. There are no spaces and no hyphens before the first word and after the last word. 
+
+When the word is wrapped, the part of the word before hyphen and the hyphen itself stay on current line and the next part of the word is put on the next line. You can also put line break between two words, in that case the space stays on current line. Check notes for better understanding.
+
+The ad can occupy no more that k lines and should have minimal width. The width of the ad is the maximal length of string (letters, spaces and hyphens are counted) in it.
+
+You should write a program that will find minimal width of the ad.
+
+
+-----Input-----
+
+The first line contains number k (1 ≤ k ≤ 10^5).
+
+The second line contains the text of the ad — non-empty space-separated words of lowercase and uppercase Latin letters and hyphens. Total length of the ad don't exceed 10^6 characters.
+
+
+-----Output-----
+
+Output minimal width of the ad.
+
+
+-----Examples-----
+Input
+4
+garage for sa-le
+
+Output
+7
+
+Input
+4
+Edu-ca-tion-al Ro-unds are so fun
+
+Output
+10
+
+
+
+-----Note-----
+
+Here all spaces are replaced with dots.
+
+In the first example one of possible results after all word wraps looks like this:
+
+garage.
+
+for.
+
+sa-
+
+le
+
+
+
+The second example:
+
+Edu-ca-
+
+tion-al.
+
+Ro-unds.
+
+are.so.fun

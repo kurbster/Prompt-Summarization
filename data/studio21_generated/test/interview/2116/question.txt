@@ -1,0 +1,60 @@
+Ayush is a cashier at the shopping center. Recently his department has started a ''click and collect" service which allows users to shop online. 
+
+The store contains k items. n customers have already used the above service. Each user paid for m items. Let a_{ij} denote the j-th item in the i-th person's order.
+
+Due to the space limitations all the items are arranged in one single row. When Ayush receives the i-th order he will find one by one all the items a_{ij} (1 ≤ j ≤ m) in the row. Let pos(x) denote the position of the item x in the row at the moment of its collection. Then Ayush takes time equal to pos(a_{i}1) + pos(a_{i}2) + ... + pos(a_{im}) for the i-th customer.
+
+When Ayush accesses the x-th element he keeps a new stock in the front of the row and takes away the x-th element. Thus the values are updating.
+
+Your task is to calculate the total time it takes for Ayush to process all the orders.
+
+You can assume that the market has endless stock.
+
+
+-----Input-----
+
+The first line contains three integers n, m and k (1 ≤ n, k ≤ 100, 1 ≤ m ≤ k) — the number of users, the number of items each user wants to buy and the total number of items at the market.
+
+The next line contains k distinct integers p_{l} (1 ≤ p_{l} ≤ k) denoting the initial positions of the items in the store. The items are numbered with integers from 1 to k.
+
+Each of the next n lines contains m distinct integers a_{ij} (1 ≤ a_{ij} ≤ k) — the order of the i-th person.
+
+
+-----Output-----
+
+Print the only integer t — the total time needed for Ayush to process all the orders.
+
+
+-----Example-----
+Input
+2 2 5
+3 4 1 2 5
+1 5
+3 1
+
+Output
+14
+
+
+
+-----Note-----
+
+Customer 1 wants the items 1 and 5.
+
+pos(1) = 3, so the new positions are: [1, 3, 4, 2, 5].
+
+pos(5) = 5, so the new positions are: [5, 1, 3, 4, 2].
+
+Time taken for the first customer is 3 + 5 = 8.
+
+Customer 2 wants the items 3 and 1.
+
+pos(3) = 3, so the new positions are: [3, 5, 1, 4, 2].
+
+pos(1) = 3, so the new positions are: [1, 3, 5, 4, 2].
+
+Time taken for the second customer is 3 + 3 = 6.
+
+Total time is 8 + 6 = 14.
+
+Formally pos(x) is the index of x in the current row.

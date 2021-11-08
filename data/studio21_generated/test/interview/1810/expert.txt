@@ -1,0 +1,2 @@
+ You are given an integer $n$. You are asked to calculate a number of games in which Petya will get a bonus. 
+-----Input----- The only line of the input contains one integer n (1 ≤ n ≤ 10^18) — the prediction on the number of people who will buy the game. -----Output----- Output one integer showing how many numbers from 1 to n are divisible by all numbers from 2 to 10. -----Examples----- Input 3000 Output 1

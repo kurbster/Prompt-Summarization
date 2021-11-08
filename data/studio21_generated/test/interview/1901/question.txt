@@ -1,0 +1,63 @@
+Vova promised himself that he would never play computer games... But recently Firestorm — a well-known game developing company — published their newest game, World of Farcraft, and it became really popular. Of course, Vova started playing it.
+
+Now he tries to solve a quest. The task is to come to a settlement named Overcity and spread a rumor in it.
+
+Vova knows that there are n characters in Overcity. Some characters are friends to each other, and they share information they got. Also Vova knows that he can bribe each character so he or she starts spreading the rumor; i-th character wants c_{i} gold in exchange for spreading the rumor. When a character hears the rumor, he tells it to all his friends, and they start spreading the rumor to their friends (for free), and so on.
+
+The quest is finished when all n characters know the rumor. What is the minimum amount of gold Vova needs to spend in order to finish the quest?
+
+Take a look at the notes if you think you haven't understood the problem completely.
+
+
+-----Input-----
+
+The first line contains two integer numbers n and m (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5) — the number of characters in Overcity and the number of pairs of friends.
+
+The second line contains n integer numbers c_{i} (0 ≤ c_{i} ≤ 10^9) — the amount of gold i-th character asks to start spreading the rumor.
+
+Then m lines follow, each containing a pair of numbers (x_{i}, y_{i}) which represent that characters x_{i} and y_{i} are friends (1 ≤ x_{i}, y_{i} ≤ n, x_{i} ≠ y_{i}). It is guaranteed that each pair is listed at most once.
+
+
+-----Output-----
+
+Print one number — the minimum amount of gold Vova has to spend in order to finish the quest.
+
+
+-----Examples-----
+Input
+5 2
+2 5 3 4 8
+1 4
+4 5
+
+Output
+10
+
+Input
+10 0
+1 2 3 4 5 6 7 8 9 10
+
+Output
+55
+
+Input
+10 5
+1 6 2 7 3 8 4 9 5 10
+1 2
+3 4
+5 6
+7 8
+9 10
+
+Output
+15
+
+
+
+-----Note-----
+
+In the first example the best decision is to bribe the first character (he will spread the rumor to fourth character, and the fourth one will spread it to fifth). Also Vova has to bribe the second and the third characters, so they know the rumor.
+
+In the second example Vova has to bribe everyone.
+
+In the third example the optimal decision is to bribe the first, the third, the fifth, the seventh and the ninth characters.

@@ -1,0 +1,19 @@
+Alf and Beata were two kids who lived long ago, during the time before you could spend Halloween participating in programming competitions. As such, their lives were much more boring than the lives of kids today. How can you survive without programming competitions, you may ask yourself. The answer is easy: you go trick-or-treating!
+
+Every year Alf and Beata went out in their neighbourhood to go trick-or-treating. When they trick-or-treat a house, they get some amount of candy of various sorts. Once the kids have filled up their big bag of candy, they go back home.
+
+Since Alf and Beata are very nice siblings, they want to split all their candy evenly. The siblings have $N$ pieces of candy together. However, they each like every piece a bit differently. Alf hates liquorice, which Beata loves. On the other hand, Alf craves chocolate which Beata finds disgusting. More specifically, Alf assigns the $i$’th piece value $a_ i$ while Beata assigns it value $b_ i$. These values can be negative. They want the absolute difference between the sum of the value of all candy each sibling gets to be as small as possible. Note that each candy must be given to one of the siblings: they can’t throw any candy away.
+
+-----Input-----
+The first line of the input contains a single integer $N$ ($1 \le N \le 100$), the number of candies the siblings have collected. The next line contains the $N$ integers $a_1, a_2 \dots , a_ N$ ($-100 \le a_ i \le 100$). The third and final line contains the $N$ integers $b_1, b_2 \dots , b_ N$ ($-100 \le b_ i \le 100$).
+
+-----Output-----
+Output a string containing $N$ characters. The $i$’th character should be A if the candy should be given to Alf, and B if it should be given to Beata. If there are multiple solutions, output the lexicographically smallest one.
+
+-----Examples-----
+Sample Input:
+5
+-2 -1 0 1 2
+2 1 0 -1 -2
+Sample Output:
+AAAAA

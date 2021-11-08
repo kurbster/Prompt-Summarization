@@ -1,0 +1,2 @@
+ You are given an integer $d$. Your task is to determine if there exists a positive integer $m$ such that the $(b,d,m)$ divisibility hack is valid. 
+-----Input----- The input consists of two space-separated integers, $b$ and $d$, satisfying the bounds $1 < b,d < 2^{63}$. It is guaranteed that $d$ is a prime number. -----Output----- If there exists a positive integer $m$ such that the $(b,d,m)$ divisibility hack is valid, output “yes”. Otherwise, output “no”. -----Examples----- Sample Input 1: 10 11 Sample Output 1: yes Sample Input 2: 10 7 Sample Output 2: yes

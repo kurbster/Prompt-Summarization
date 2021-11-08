@@ -1,0 +1,28 @@
+-----Input-----
+
+The input contains a single integer a (1 ≤ a ≤ 40).
+
+
+-----Output-----
+
+Output a single string.
+
+
+-----Examples-----
+Input
+2
+
+Output
+Adams
+
+Input
+8
+
+Output
+Van Buren
+
+Input
+29
+
+Output
+Harding

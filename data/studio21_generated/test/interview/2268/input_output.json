@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "6 1\npolice\np m\n",
+    "11 6\nabacabadaba\na b\nb c\na d\ne g\nf a\nb b\n",
+    "1 1\nf\nz h\n",
+    "1 1\na\na b\n",
+    "10 10\nlellelleel\ne l\ne l\ne l\ne l\ne l\ne e\nl l\nl e\nl l\ne e\n"
+  ],
+  "outputs": [
+    "molice\n",
+    "cdcbcdcfcdc\n",
+    "f\n",
+    "b\n",
+    "lellelleel\n"
+  ]
+}

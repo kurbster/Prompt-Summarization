@@ -1,0 +1,2 @@
+ Given an integer N, find the number of trailing zeros in the decimal notation of f(N). 
+-----Input----- Input is given from Standard Input in the following format: N -----Output----- Print the number of trailing zeros in the decimal notation of f(N). -----Sample Input----- 12 -----Sample Output----- 1 f(12) = 12 × 10 × 8 × 6 × 4 × 2 = 46080, which has one trailing zero.
