@@ -40,7 +40,7 @@ def make_prompt(token, model):
         with open(f'{output_dir}/{cfg["summaryType"]}.txt', 'w') as f:
             f.write(text+'\n'+extra)
 
-    return True
+    return True 
 
 def main(*a, **kw):
     while make_prompt(*a, **kw):
