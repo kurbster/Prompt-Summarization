@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "2\nne\n",
+        "4\nkava\n",
+        "8\ncokolada\n"
+    ],
+    "outputs": [
+        "NE\nn\n",
+        "DA\nak\n",
+        "DA\nacko\n"
+    ]
+}

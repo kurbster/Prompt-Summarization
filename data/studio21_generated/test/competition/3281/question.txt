@@ -1,0 +1,48 @@
+My colleague Elisabeth is lazy, both at work and when going to work. She never wants to do more than necessary, which also applies to her journey to work. Her goal is to use a minimum amount of energy, which she achieves by braking and accelerating as little as possible. This method applies to all wheel-based transport means she owns.
+
+Elisabeth has earlier optimized her route by trial and error, but now wants your help to find the optimal path. She has provided a map with $N$ junctions and $R$ straight one-way roads between the junctions. If a road is dual way, it is represented as two one-way roads.
+
+Fortunately, Elisabeth often works night shifts, so braking and acceleration are only needed when turning in a junction, as there is no other traffic on the roads. Her goal is to find a route where the maximum turning angle in the junctions is minimized, as this means maximized speed. However, the route can not be too long.
+
+-----Input-----
+The first line of input contains three space separated integers $J, R, D$ ($2 \leq J \leq 200, 1 \leq R \leq 40000, 1 \leq D \leq 1000000$). $J$ is the number of junctions, $R$ is the number of one-way roads which are connecting two junctions, and $D$ is the maximum distance, in meters, that Elisabeth wants to travel. The road network is such that there is no path, that Elisabeth may want to use, which has the length $L$ such that $D < L < D (1 + 10^{-6})$.
+
+Then follow $J$ lines with two integers $x$ and $y$, ($-100000 \leq x, y \leq 100000$), the distinct coordinates in meters on a flat ground. Elisabeth lives at junction $1$ and her work is at junction $J$.
+
+After that, $R$ lines follow with two integers $a$ and $b$. This should be interpreted as the one-way road between the one-indexed source and destination junctions $a$ and $b$ ($1\leq a, b\leq J$).
+
+-----Output-----
+Output one line with the maximum turning angle of the route that thas the maximum turning angle as low as possible. The turning angle must be output in degrees and have an absolute or relative error at most $10^{-6}$. If there is no such route that is short enough, output “Impossible” on a single line.
+
+-----Examples-----
+Sample Input 1:
+5 6 500
+-100 0
+-100 100
+0 200
+100 100
+100 0
+1 2
+1 3
+2 3
+3 4
+3 5
+4 5
+Sample Output 1:
+90.00000000
+
+Sample Input 2:
+5 6 450
+-100 0
+-100 100
+0 200
+100 100
+100 0
+1 2
+1 3
+2 3
+3 4
+3 5
+4 5
+Sample Output 2:
+126.86989765

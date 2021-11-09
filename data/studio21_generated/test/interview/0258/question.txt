@@ -1,0 +1,57 @@
+Monocarp and Bicarp live in Berland, where every bus ticket consists of $n$ digits ($n$ is an even number). During the evening walk Monocarp and Bicarp found a ticket where some of the digits have been erased. The number of digits that have been erased is even.
+
+Monocarp and Bicarp have decided to play a game with this ticket. Monocarp hates happy tickets, while Bicarp collects them. A ticket is considered happy if the sum of the first $\frac{n}{2}$ digits of this ticket is equal to the sum of the last $\frac{n}{2}$ digits.
+
+Monocarp and Bicarp take turns (and Monocarp performs the first of them). During each turn, the current player must replace any erased digit with any digit from $0$ to $9$. The game ends when there are no erased digits in the ticket.
+
+If the ticket is happy after all erased digits are replaced with decimal digits, then Bicarp wins. Otherwise, Monocarp wins. You have to determine who will win if both players play optimally.
+
+
+-----Input-----
+
+The first line contains one even integer $n$ $(2 \le n \le 2 \cdot 10^{5})$ — the number of digits in the ticket.
+
+The second line contains a string of $n$ digits and "?" characters — the ticket which Monocarp and Bicarp have found. If the $i$-th character is "?", then the $i$-th digit is erased. Note that there may be leading zeroes. The number of "?" characters is even.
+
+
+-----Output-----
+
+If Monocarp wins, print "Monocarp" (without quotes). Otherwise print "Bicarp" (without quotes).
+
+
+-----Examples-----
+Input
+4
+0523
+
+Output
+Bicarp
+
+Input
+2
+??
+
+Output
+Bicarp
+
+Input
+8
+?054??0?
+
+Output
+Bicarp
+
+Input
+6
+???00?
+
+Output
+Monocarp
+
+
+
+-----Note-----
+
+Since there is no question mark in the ticket in the first example, the winner is determined before the game even starts, and it is Bicarp.
+
+In the second example, Bicarp also wins. After Monocarp chooses an erased digit and replaces it with a new one, Bicap can choose another position with an erased digit and replace it with the same digit, so the ticket is happy.

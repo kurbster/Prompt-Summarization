@@ -1,0 +1,2 @@
+ You are given a number $n$. Write a program to output the number on the laser display board. 
+-----Input-----  - One line containing an integer $N$ ($0 \le N \le 255$), the number to output. -----Output-----  - At most $40$ lines, each containing one valid instruction. When run in sequence the lines should output the number $N$. The last instruction should be a DI. -----Examples----- Sample Input: 2 Sample Output: ST A ST X PH A PH X AD PL Y DI Y

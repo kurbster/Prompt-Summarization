@@ -1,0 +1,60 @@
+Kostya is a genial sculptor, he has an idea: to carve a marble sculpture in the shape of a sphere. Kostya has a friend Zahar who works at a career. Zahar knows about Kostya's idea and wants to present him a rectangular parallelepiped of marble from which he can carve the sphere. 
+
+Zahar has n stones which are rectangular parallelepipeds. The edges sizes of the i-th of them are a_{i}, b_{i} and c_{i}. He can take no more than two stones and present them to Kostya. 
+
+If Zahar takes two stones, he should glue them together on one of the faces in order to get a new piece of rectangular parallelepiped of marble. Thus, it is possible to glue a pair of stones together if and only if two faces on which they are glued together match as rectangles. In such gluing it is allowed to rotate and flip the stones in any way. 
+
+Help Zahar choose such a present so that Kostya can carve a sphere of the maximum possible volume and present it to Zahar.
+
+
+-----Input-----
+
+The first line contains the integer n (1 ≤ n ≤ 10^5).
+
+n lines follow, in the i-th of which there are three integers a_{i}, b_{i} and c_{i} (1 ≤ a_{i}, b_{i}, c_{i} ≤ 10^9) — the lengths of edges of the i-th stone. Note, that two stones may have exactly the same sizes, but they still will be considered two different stones.
+
+
+-----Output-----
+
+In the first line print k (1 ≤ k ≤ 2) the number of stones which Zahar has chosen. In the second line print k distinct integers from 1 to n — the numbers of stones which Zahar needs to choose. Consider that stones are numbered from 1 to n in the order as they are given in the input data.
+
+You can print the stones in arbitrary order. If there are several answers print any of them. 
+
+
+-----Examples-----
+Input
+6
+5 5 5
+3 2 4
+1 4 1
+2 1 3
+3 2 4
+3 3 4
+
+Output
+1
+1
+
+Input
+7
+10 7 8
+5 10 3
+4 2 6
+5 5 5
+10 2 8
+4 2 1
+7 7 7
+
+Output
+2
+1 5
+
+
+
+-----Note-----
+
+In the first example we can connect the pairs of stones:  2 and 4, the size of the parallelepiped: 3 × 2 × 5, the radius of the inscribed sphere 1  2 and 5, the size of the parallelepiped: 3 × 2 × 8 or 6 × 2 × 4 or 3 × 4 × 4, the radius of the inscribed sphere 1, or 1, or 1.5 respectively.  2 and 6, the size of the parallelepiped: 3 × 5 × 4, the radius of the inscribed sphere 1.5  4 and 5, the size of the parallelepiped: 3 × 2 × 5, the radius of the inscribed sphere 1  5 and 6, the size of the parallelepiped: 3 × 4 × 5, the radius of the inscribed sphere 1.5 
+
+Or take only one stone:  1 the size of the parallelepiped: 5 × 5 × 5, the radius of the inscribed sphere 2.5  2 the size of the parallelepiped: 3 × 2 × 4, the radius of the inscribed sphere 1  3 the size of the parallelepiped: 1 × 4 × 1, the radius of the inscribed sphere 0.5  4 the size of the parallelepiped: 2 × 1 × 3, the radius of the inscribed sphere 0.5  5 the size of the parallelepiped: 3 × 2 × 4, the radius of the inscribed sphere 1  6 the size of the parallelepiped: 3 × 3 × 4, the radius of the inscribed sphere 1.5 
+
+It is most profitable to take only the first stone.

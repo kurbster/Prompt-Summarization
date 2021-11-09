@@ -1,0 +1,29 @@
+AcmeCorp is always looking to expand its drilling operations.
+
+Their latest target is a largely uninhabited area in the North of the country, known as Crossland. Since the pocket of oil is quite deep already, and new drill bits are expensive, Crossland’s oil company would like to minimise the distance drilled—which may not be vertical—to get to the valuable spot.
+
+The elevation-contoured survey map we have obtained marks the oil pocket at $(0,0)$, $0$ metres above sea level.
+
+-----Input-----
+ - One line containing one positive integer $N$, the number of polygon-shaped contour lines.
+ - $N$ more lines each containing two integers, $H_0$ and $H_1$ ($0 \le H_0, H_1 \le 10^6$), the height of land in metres above sea level outside and inside the contour respectively, followed by a positive integer $M_ i$ representing the number of vertices of this contour.
+ - The remaining $2 \cdot M_ i$ integers on each line are distinct coordinate pairs ($x_ j, y_ j$) ($-10^6 \le x,y \le 10^6$) denoting the $j^{th}$ point on the contour. No two contour lines touch, nor does a contour line touch the point $(0,0)$.
+
+The total number of points across all contours will not exceed $10^5$, and it is guaranteed that the outer height of a contour is always equal to the inner height of its containing contour, if one exists.
+
+-----Output-----
+The first and only line of output should contain one real number indicating the closest slanted distance from the surface to the target. Your answer should be correct up to an absolute or relative precision of $10^{-6}$.
+
+-----Examples-----
+Sample Input 1:
+2
+5 8 4 -2 0 0 -3 2 0 0 3
+8 10 4 -1 -1 1 -1 1 1 -1 1
+Sample Output 1:
+5.2696518641
+
+Sample Input 2:
+1
+8 9 3 -14 -14 14 -14 0 20
+Sample Output 2:
+9

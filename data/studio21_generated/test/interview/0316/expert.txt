@@ -1,0 +1,2 @@
+ 
+-----Input----- The first and only input line contains integer $n$ ($1 \leq n \leq 100$) — order of a rhombus whose numbers of cells should be computed. -----Output----- Print exactly one integer — the number of cells in a $n$-th order rhombus. -----Examples----- Input 1 Output 1 Input 2 Output 5 Input 3 Output 13 -----Note----- Images of rhombus corresponding to the examples are given in the statement.

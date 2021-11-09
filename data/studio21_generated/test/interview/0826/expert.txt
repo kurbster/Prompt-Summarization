@@ -1,0 +1,2 @@
+ Your task is to find the minimum amount of money needed to get n logs of length 1 to n. 
+-----Input----- Input is given from Standard Input in the following format: n -----Output----- Print the minimum amount of money needed to get n logs of length 1 to n. -----Sample Input----- 4 -----Sample Output----- 3 One way to get the logs he wants with 3 yen is:  - Buy logs of length 2, 4, and 5.  - Cut the log of length 5 into two logs of length 1 each and a log of length 3.  - Throw away one of the logs of length 1.

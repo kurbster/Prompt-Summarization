@@ -1,0 +1,2 @@
+ 
+-----Input----- Input is given from Standard Input in the following format: H W N a_1 a_2 ... a_N -----Output----- Print one way to paint the squares that satisfies the conditions. Output in the following format: c_{1 1} ... c_{1 W} : c_{H 1} ... c_{H W} Here, c_{i j} is the color of the square at the i-th row from the top and j-th column from the left. -----Sample Input----- 2 2 3 2 1 1 -----Sample Output----- 1 1 2 3 Below is an example of an invalid solution: 1 2 3 1 This is because the squares painted in Color 1 are not 4-connected.

@@ -1,0 +1,35 @@
+Somewhere in an animal kingdom far from here there is a large forest. Inside the forest live a large number of frogs. Every year the frogs gather along the big central road in the forest to show the other animals their unique ability during the Big Animal Prowess Conference (BAPC). 
+
+These frogs are experts in forming towers by climbing on top of each other. They are, however, not experts in gathering orderly on the road, so the frogs have arrived on different positions along the central road. The frogs are also notorious show offs: their every jump is as far as they can and always a prime distance. Not every frog is as strong as the others, so jumping distances may vary. Naturally, the frogs only jump to increase their position, never the other way!
+
+The frog king wants to invite all visitors of the BAPC to marvel at the most spectacular frog tower. Multiple frog towers can be created, but the king wants to show the largest tower at the smallest possible position. He doesn’t want anyone to miss the action because they were at the wrong spot! Can you help the frog king determine the position and size of the tower?
+
+-----Input-----
+ - On the first line one integer $n$, the number of frogs gathering on the central road, with $1 \leq n \leq 40$.
+ - Then follow $n$ lines with integers $x_ i$ and $d_ i$, the initial position and prime jumping distance of the $i^{th}$ frog. Here $0 \leq x_ i \leq 2^{60}$ and $2 \leq d_ i \leq 10^{8}$. It is given that the product of all unique jumping distances is less than $10^{9}$.
+
+-----Output-----
+Output a single line with two integers indicating:
+ - the smallest position of the highest frog tower,
+ - the size of the highest frog tower.
+
+Separate these integers by a space.
+
+-----Examples-----
+Sample Input 1:
+3
+0 2
+1 2
+3 3
+Sample Output 1:
+3 2
+
+Sample Input 2:
+5
+0 2
+1 3
+3 3
+7 5
+9 5
+Sample Output 2:
+12 3

@@ -1,0 +1,2 @@
+ Your task is to find the number of different values that the median of X_1, X_2, \cdots, X_N can take. 
+-----Input----- Input is given from Standard Input in the following format: N A_1 B_1 A_2 B_2 : A_N B_N -----Output----- Print the answer. -----Sample Input----- 2 1 2 2 3 -----Sample Output----- 3  - If X_1 = 1 and X_2 = 2, the median is \frac{3}{2};  - if X_1 = 1 and X_2 = 3, the median is 2;  - if X_1 = 2 and X_2 = 2, the median is 2;  - if X_1 = 2 and X_2 = 3, the median is \frac{5}{2}. Thus, the median can take three values: \frac{3}{2}, 2, and \frac{5}{2}.

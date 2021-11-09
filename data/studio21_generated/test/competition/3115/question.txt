@@ -1,0 +1,34 @@
+Your friend is an organizer of the International Chess Playing Championship. He is worried that some of the contestants may be cheating, and he has asked you to help out. The chess players are allowed to report matches to the jury themselves, and this is not checked with the reported opponent. So, it is possible for competitors to make up matches and falsely report themselves as the winners.
+
+Since chess is a game of skill, and not of chance, a player will always beat their opponent if their skill level is higher. A game will result in a draw if and only if the two players’ skills are exactly equal.
+
+However, the skill level of the players is not known. He has therefore asked you to write a program that, given a list of reported matches, determines whether this list is consistent or not. The list is inconsistent if we can determine that at least one reported match is falsely reported, otherwise it is consistent.
+
+-----Input-----
+The first line contains two integers $N$ ($2 \leq N \leq 50000$) and $M$ ($1 \leq M \leq 250000$), to describe a championship with $N$ players and $M$ reported matches.
+
+The following $M$ lines each consist of an integer $K$, a symbol which is either ‘=’ or ‘>’, and another integer $L$. The integers $K$ and $L$ each uniquely identify a player ($0 \leq K, L < N$). If the symbol is ‘=’, then the game between $K$ and $L$ was a draw. If the symbol is ‘>’, then $K$ beat $L$ in a match.
+
+You may assume that there is at most one reported match between any given pair of players. Also, each player takes part in at least one reported match.
+
+-----Output-----
+Output a single line containing a single word: “consistent” if the list of recorded matches is consistent, and “inconsistent” if it is not.
+
+-----Examples-----
+Sample Input 1:
+3 3
+0 > 1
+1 = 2
+0 = 2
+Sample Output 1:
+inconsistent
+
+Sample Input 2:
+5 5
+0 = 1
+1 = 2
+3 = 4
+0 > 3
+1 > 4
+Sample Output 2:
+consistent

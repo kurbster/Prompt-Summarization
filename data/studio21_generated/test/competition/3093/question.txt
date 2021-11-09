@@ -1,0 +1,24 @@
+Little Mirko spends his free time painting. For this hobby, he likes to use brushes and a palette containing $K$ colors overall. His friend Slavko decided to use Mirko’s talent and gave him his new coloring book for Mirko to color. The coloring book contains $N$ images numbered $1, 2, \ldots , N$.
+
+Mirko has decided to paint each image in exactly one color of the possible $K$ colors from his palette. However, he really likes colorful things. He chose $N$ numbers $f_ i$ and decided to paint the image numbered $i$ differently than the images numbered $f_ i$, except when $f_ i = i$. If $f_ i = i$, that means he can paint the image numbered $f_ i$ whichever color he likes, as long as all other conditions have been met.
+
+Mirko wants to know the number of possible ways to color Slavko’s coloring book and he desperately needs your help! Calculate the number of possible ways to color the book. Given the fact that the output can be very large, print the answer modulo $1000000007$.
+
+-----Input-----
+The first line of input contains positive integers $N$, $K$ ($1 \leq N, K \leq 1000000$). The following line contains N numbers $f_ i$ ($1 \leq f_ i \leq N$), as stated in the text.
+
+-----Output-----
+The first and only line must contain the number of possible ways to color Slavko’s book.
+
+-----Examples-----
+Sample Input 1:
+2 3
+2 1
+Sample Output 1:
+6
+
+Sample Input 2:
+3 4
+2 3 1
+Sample Output 2:
+24

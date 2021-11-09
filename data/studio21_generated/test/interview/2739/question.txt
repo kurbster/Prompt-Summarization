@@ -1,0 +1,34 @@
+A scientist, E. Collie, is going to do some experiments with bacteria. Right now, she has one bacterium. She already knows that this species of bacteria doubles itself every hour. Hence, after one hour there will be $2$ bacteria.
+
+E. Collie will do one experiment every hour, for $n$ consecutive hours. She starts the first experiment exactly one hour after the first bacterium starts growing. In experiment $i$ she will need $b_ i$ bacteria.
+
+How many bacteria will be left directly after starting the last experiment? If at any point there are not enough bacteria to do the experiment, print “error”.
+
+Since the answer may be very large, please print it modulo $10^9+7$.
+
+-----Input-----
+The input consists of two lines.
+ - The first line contains an integer $1\leq n\leq 10^5$, the number of experiments.
+ - The second line contains $n$ integers $b_1,\dots ,b_ n$, where $0\leq b_ i\leq 2^{60}$ is the number of bacteria used in the $i$th experiment.
+
+-----Output-----
+Output a single line containing the number of bacteria that remains after doing all the experiments, or “error”.
+
+-----Examples-----
+Sample Input 1:
+3
+0 0 0
+Sample Output 1:
+8
+
+Sample Input 2:
+5
+1 1 1 1 1
+Sample Output 2:
+1
+
+Sample Input 3:
+5
+0 2 2 4 0
+Sample Output 3:
+0

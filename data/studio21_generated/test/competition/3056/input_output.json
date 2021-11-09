@@ -1,0 +1,14 @@
+{
+    "inputs": [
+        "P*P\n",
+        "L*R\n",
+        "**\n",
+        "LLLLLRRRRRLLLLLRRRRRLLLLLRRRRRLLLLL\n"
+    ],
+    "outputs": [
+        "6\n",
+        "25\n",
+        "33\n",
+        "35400942560\n"
+    ]
+}

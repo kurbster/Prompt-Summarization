@@ -1,0 +1,2 @@
+ You are given a string. You need to split it using white spaces. 
+.

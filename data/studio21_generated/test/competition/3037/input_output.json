@@ -1,0 +1,14 @@
+{
+    "inputs": [
+        "6 8 5\n........\n...#....\n########\n#..#...#\n#..#####\n#.......\nup 3\nright 7\ndown 2\nleft 4\nup 3\n",
+        "6 8 5\n........\n........\n###.####\n#......#\n#..#####\n#.......\nup 3\nright 7\ndown 2\nleft 4\nup 3\n",
+        "3 3 2\n...\n.#.\n...\nup 2\nright 2\n",
+        "2 2 4\n..\n..\nup 1\nright 1\ndown 1\nleft 1\n"
+    ],
+    "outputs": [
+        "20 20\n",
+        "17 17\n",
+        "-1 -1\n",
+        "0 1\n"
+    ]
+}

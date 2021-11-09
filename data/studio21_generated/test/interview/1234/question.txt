@@ -1,0 +1,74 @@
+An array $b$ is called to be a subarray of $a$ if it forms a continuous subsequence of $a$, that is, if it is equal to $a_l$, $a_{l + 1}$, $\ldots$, $a_r$ for some $l, r$.
+
+Suppose $m$ is some known constant. For any array, having $m$ or more elements, let's define it's beauty as the sum of $m$ largest elements of that array. For example:   For array $x = [4, 3, 1, 5, 2]$ and $m = 3$, the $3$ largest elements of $x$ are $5$, $4$ and $3$, so the beauty of $x$ is $5 + 4 + 3 = 12$.
+
+ For array $x = [10, 10, 10]$ and $m = 2$, the beauty of $x$ is $10 + 10 = 20$.
+
+You are given an array $a_1, a_2, \ldots, a_n$, the value of the said constant $m$ and an integer $k$. Your need to split the array $a$ into exactly $k$ subarrays such that:
+
+  Each element from $a$ belongs to exactly one subarray.
+
+ Each subarray has at least $m$ elements.
+
+ The sum of all beauties of $k$ subarrays is maximum possible.
+
+
+-----Input-----
+
+The first line contains three integers $n$, $m$ and $k$ ($2 \le n \le 2 \cdot 10^5$, $1 \le m$, $2 \le k$, $m \cdot k \le n$) — the number of elements in $a$, the constant $m$ in the definition of beauty and the number of subarrays to split to.
+
+The second line contains $n$ integers $a_1, a_2, \ldots, a_n$ ($-10^9 \le a_i \le 10^9$).
+
+
+-----Output-----
+
+In the first line, print the maximum possible sum of the beauties of the subarrays in the optimal partition.
+
+In the second line, print $k-1$ integers $p_1, p_2, \ldots, p_{k-1}$ ($1 \le p_1 < p_2 < \ldots < p_{k-1} < n$) representing the partition of the array, in which:
+
+
+
+ All elements with indices from $1$ to $p_1$ belong to the first subarray.
+
+ All elements with indices from $p_1 + 1$ to $p_2$ belong to the second subarray.
+
+ $\ldots$.
+
+ All elements with indices from $p_{k-1} + 1$ to $n$ belong to the last, $k$-th subarray.
+
+If there are several optimal partitions, print any of them.
+
+
+-----Examples-----
+Input
+9 2 3
+5 2 5 2 4 1 1 3 2
+
+Output
+21
+3 5 
+Input
+6 1 4
+4 1 3 2 2 3
+
+Output
+12
+1 3 5 
+Input
+2 1 2
+-1000000000 1000000000
+
+Output
+0
+1 
+
+
+-----Note-----
+
+In the first example, one of the optimal partitions is $[5, 2, 5]$, $[2, 4]$, $[1, 1, 3, 2]$.
+
+  The beauty of the subarray $[5, 2, 5]$ is $5 + 5 = 10$.  The beauty of the subarray $[2, 4]$ is $2 + 4 = 6$.  The beauty of the subarray $[1, 1, 3, 2]$ is $3 + 2 = 5$. 
+
+The sum of their beauties is $10 + 6 + 5 = 21$.
+
+In the second example, one optimal partition is $[4]$, $[1, 3]$, $[2, 2]$, $[3]$.

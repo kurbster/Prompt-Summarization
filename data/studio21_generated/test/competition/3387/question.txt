@@ -1,0 +1,42 @@
+Dreaming of revolutionizing the tech industry and making the world a better place, Ging has recently moved to Silicon Valley to found his own startup, Katbook.
+
+Katbook allows users to download cat pictures. Katbook is capable of transferring $t$ bits per second.
+
+There are $n$ species of cats, numbered from $1$ to $n$. There is a demand ratio $d_ i$ for the pictures of the $i$-th species. This means, if there is no further restrictions, the $i$-th cat species should have a ‘fair share’ of $\frac{d_ i}{\sum _{j=1}^{n} d_ j}$ fraction of the total bandwidth $t$.
+
+However, because of infrastructure limitations, the bandwidth for the $i$-th species must be between $a_ i$ and $b_ i$.
+
+You are newly hired by Ging as a network engineer at Katbook. Your first task is to find the most ‘fair’ bandwidth allocation satisfying the above constraints. More formally, let $x_ i$ be the bandwidth allocated for downloading pictures of the $i$-th species. You must find $x_ i$ such that:
+ - $a_ i \le x_ i \le b_ i$,
+ - $\sum _{i=1}^{n} x_ i = t$,
+ - Let $y_ i = t \cdot \frac{d_ i}{\sum _{j=1}^{n} d_ j}$ ($y_ i$ is the ‘fair share’ bandwidth, if there was no constraints regarding $a_ i$ and $b_ i$), the value $\sum _{i=1}^{n} \frac{(x_ i - y_ i)^2}{y_ i}$ should be as small as possible.
+
+-----Input-----
+The first line of input contains $2$ integers $n$ and $t$ $(1 \le n \le 10^5, 1 \le t \le 10^6)$.
+
+In the next $n$ lines, the $i$-th line contains $3$ integers $a_ i$, $b_ i$ and $d_ i$ $(0 \le a_ i \le b_ i \le 10^6, 0 < b_ i, 1 \le d_ i \le 10^6)$.
+
+It is guaranteed that there exists at least one valid solution.
+
+It can be shown that under these constraints, the solution is unique.
+
+-----Output-----
+Output $n$ lines, each line contains the allocation for downloading pictures of the $i$-th species. The answer will be accepted if and only if its relative or absolute error to the optimal solution is at most $10^{-6}$.
+
+Formally, for each line, let your answer be $a$, and the jury’s answer be $b$. Your answer is accepted if and only if $\frac{|a - b|}{\max {(1, |b|)}} \le 10^{-6}$.
+
+-----Explanation of Sample input-----
+In the first sample, each cat species has its ‘fair share’ of $\frac{1}{3}$ of the whole bandwidth.
+
+In the second sample, note that the cat species $1$ has much more demand and could get almost all of the available bandwidth if not for its maximum to be capped at $1$. The rest is divided with ratio $2:1$, hence the cat species $2$ gets $6$ bits per second and the cat species $3$ gets $3$ bits per second.
+
+-----Examples-----
+Sample Input:
+3 10
+0 10 1
+0 10 1
+0 10 1
+Sample Output:
+3.33333333
+3.33333333
+3.33333333

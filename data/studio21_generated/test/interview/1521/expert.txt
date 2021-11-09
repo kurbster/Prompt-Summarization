@@ -1,0 +1,2 @@
+ 
+-----Input----- The first line contains two integers, p and n (2 ≤ p, n ≤ 300). Then n lines follow. The i-th of them contains an integer x_{i} (0 ≤ x_{i} ≤ 10^9). -----Output----- Output a single integer — the answer to the problem. -----Examples----- Input 10 5 0 21 53 41 53 Output 4 Input 5 5 0 1 2 3 4 Output -1

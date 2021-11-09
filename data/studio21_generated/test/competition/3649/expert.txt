@@ -1,0 +1,2 @@
+ Given two integers $a$ and $b$, return a string that has the same subsequences as  string ,  sing ,  i  and  sg . 
+-----Input----- The input consists of a single line with four integers $a$, $b$, $c$, and $d$ ($0 \leq a,b,c,d \leq 10^9$). -----Output----- Output a bit string that satisfies the given requirements. If there are several solutions, output any one of them. If there are no solutions, output “impossible”. -----Examples----- Sample Input: 3 4 2 1 Sample Output: 01001

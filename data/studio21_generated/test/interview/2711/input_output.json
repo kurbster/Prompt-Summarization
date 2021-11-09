@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "3 3\n2\nb\nb\nbbac\n0\na\naca\nacba\n1\nab\nc\nccb\n",
+    "5 5\n2\na\nabcbb\nabcaacac\naab\naaa\n0\nb\nb\nbb\nbbaaaabca\nbbcbbc\n4\ncbcb\ncbcbac\ncabbcbbca\ncaca\ncc\n1\nba\nbacbbabcc\nbaccac\nbccababc\na\n3\naaccacabac\nacbb\nacaaaac\nc\ncb\n",
+    "5 5\n4\nacxxay\nasuuswzxyzwvxvwcbuvtxw\nasxyabczbusyscuatbuzczx\nazvwtyvxcsbcwuyvbzyubz\naayxsvybzvzbsaxccwxwzbcuwcuy\n0\ncctzttazzwytuxzttxwbvzbsvy\ncbwzsbsb\nca\nucwzvwv\nuatxuabttcxcysvuzywwxa\n1\nbvyyusbcuwactubtasbcbbcvwsawt\nwwbyzza\nwacsuvyaxvvvx\nwawccbzxcybzwbavcs\nwvbycwsxccwccuzvccvytu\n2\nxcxvszczuxsawxzbv\nxcswywvuzawyavcaabbuxxzbuatsy\nxs\nxaatac\nxvtyttsvywactybvwt\n3\nscyssxttuyxwyxytbzs\nytwtabwxwuybuzcaczyzyt\nyywszswucsbwzcttwxvsyxwycwsx\nyzxua\nzatxayyuwxvwx\n",
+    "5 5\n4\nacxxay\nasuuswzxyzwvxvwcbuvtxw\nasxyabczbusyscuatbuzczx\nazvwtyvxcsbcwuyvbzyubz\naayxsvybzvzbsaxccwxwzbcuwcuy\n1\ncctzttazzwytuxzttxwbvzbsvy\ncbwzsbsb\nca\nucwzvwv\nuatxuabttcxcysvuzywwxa\n0\nbvyyusbcuwactubtasbcbbcvwsawt\nwwbyzza\nwacsuvyaxvvvx\nwawccbzxcybzwbavcs\nwvbycwsxccwccuzvccvytu\n2\nxcxvszczuxsawxzbv\nxcswywvuzawyavcaabbuxxzbuatsy\nxs\nxaatac\nxvtyttsvywactybvwt\n3\nscyssxttuyxwyxytbzs\nytwtabwxwuybuzcaczyzyt\nyywszswucsbwzcttwxvsyxwycwsx\nyzxua\nzatxayyuwxvwx\n",
+    "1 1\n0\nvrayfsuskpxfipfhtfcrgilazezpdycmpvoottxhvqaquwvkvy\n",
+    "2 2\n1\nbb\nb\n0\naa\na\n"
+  ],
+  "outputs": [
+    "acb\n",
+    "bac\n",
+    "ctubwxsyzav\n",
+    "IMPOSSIBLE\n",
+    "acdefghiklmopqrstuvwxyz\n",
+    "IMPOSSIBLE\n"
+  ]
+}

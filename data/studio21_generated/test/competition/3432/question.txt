@@ -1,0 +1,22 @@
+Mirko and Slavko are playing a new game. Again. Slavko starts each round by giving Mirko two numbers $A$ and $B$, both smaller than 100. Mirko then has to slove the following task for Slavko: how to pair all given $A$ numbers with all given $B$ numbers so that the maximal sum of such pairs is as small as possible.
+
+In other words, if during previous rounds Slavko gave numbers $a_1, a_2 ,a_3, \ldots , a_ n$ and $b_1, b_2, b_3, \ldots , b_ n$ , determine $n$ pairings $(a_ i, b_ j)$ such that each number in the $A$ sequence is used in exactly one pairing, each number in the $B$ sequence is used in exactly one pairing, and the maximum of all sums $a_ i + b_ j$ is minimal.
+
+-----Input-----
+The first line of input contains a single integer $N$ ($1 \leq N \leq 100000$), the number of rounds.
+
+The next $N$ lines contain two integers $A$ and $B$ ($1 \leq A, B \leq 100$), the numbers given by Slavko in that round.
+
+-----Output-----
+The output consists of $N$ lines, one for each round. Each line should contain the smallest maximal sum for that round.
+
+-----Examples-----
+Sample Input:
+3
+2 8
+3 1
+1 4
+Sample Output:
+10
+10
+9

@@ -1,0 +1,51 @@
+Little Rohu from Pluto is the best bomb defusor on the entire planet. She has saved the planet from getting destruced multiple times now. Of course, she's proud of her achievments. But, to prepare herself for more complicated situations, she keeps challenging herself to handle tricky tasks.
+Her current challenge involves the following things:
+- A square matrix of the form N*N.  
+- B bombs planted at various cells of the square matrix.
+- There can be multiple bombs at a given cell. 
+- Only the four corners of the square matrix have a bomb defusor, so if a bomb is moved to any one of the four corners, it will be defused.
+
+From a given cell, any bomb can be moved in all the four directions, North, South, East, West respectively.
+
+Rohu is given the number of bombs and the dimensions of the square matrix she's going to be dealing with, you've to help her figure out the minimum number of moves required to defuse all the bombs.
+
+Note-1: She's not going to enter the matrix, she's just going to move the bombs from outside. 
+Note-2: The matrix is 1-indexed. 
+
+-----Input-----
+- The first line of each test case contains two integers N, denoting the dimension of the square matrix, and B denoting the number of bombs. This will be followed by two lines, where the first line will denote the x-coordinate of all the bombs, and the second line will denote the y-coordinate of all the bombs. x[0], y[0] will be the position of the first bomb, ... , x[B-1], y[B-1] will be the position of the Bth bomb.
+
+-----Output-----
+- Output a single line containing the minimum number of moves required.
+
+-----Subtasks-----
+- 1 ≤ N, B ≤ 100000: 50 points
+
+- 1 ≤ N, B ≤ 1000: 30 points
+
+- 1 ≤ N, B ≤ 10: 20 points
+
+-----Constraints-----
+- 1 ≤ N, B ≤ 100000
+
+-----Example 1-----
+Input:
+3 3
+1 2 3
+3 2 1
+
+Output:
+2
+
+-----Example 2-----
+Input:
+2 1
+1
+1
+
+Output:
+0
+
+-----Explanation-----
+Example case 1:Only the bomb at {2,2} needs to be moved in two steps.
+Example case 2:No bomb needs to be moved anywhere.

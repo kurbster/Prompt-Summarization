@@ -1,0 +1,2 @@
+ You are given an integer $x$. You are interested what positive integer, which doesn't exceed $x$, has the maximum sum of digits. 
+-----Input----- The first line contains the positive integer x (1 ≤ x ≤ 10^18) — the integer which Anton has.  -----Output----- Print the positive integer which doesn't exceed x and has the maximum sum of digits. If there are several such integers, print the biggest of them. Printed integer must not contain leading zeros. -----Examples----- Input 100 Output 99 Input 48 Output 48 Input 521 Output 499

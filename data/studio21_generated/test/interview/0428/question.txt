@@ -1,0 +1,37 @@
+Our bear's forest has a checkered field. The checkered field is an n × n table, the rows are numbered from 1 to n from top to bottom, the columns are numbered from 1 to n from left to right. Let's denote a cell of the field on the intersection of row x and column y by record (x, y). Each cell of the field contains growing raspberry, at that, the cell (x, y) of the field contains x + y raspberry bushes.
+
+The bear came out to walk across the field. At the beginning of the walk his speed is (dx, dy). Then the bear spends exactly t seconds on the field. Each second the following takes place:  Let's suppose that at the current moment the bear is in cell (x, y).  First the bear eats the raspberry from all the bushes he has in the current cell. After the bear eats the raspberry from k bushes, he increases each component of his speed by k. In other words, if before eating the k bushes of raspberry his speed was (dx, dy), then after eating the berry his speed equals (dx + k, dy + k).  Let's denote the current speed of the bear (dx, dy) (it was increased after the previous step). Then the bear moves from cell (x, y) to cell (((x + dx - 1) mod n) + 1, ((y + dy - 1) mod n) + 1).  Then one additional raspberry bush grows in each cell of the field. 
+
+You task is to predict the bear's actions. Find the cell he ends up in if he starts from cell (sx, sy). Assume that each bush has infinitely much raspberry and the bear will never eat all of it.
+
+
+-----Input-----
+
+The first line of the input contains six space-separated integers: n, sx, sy, dx, dy, t (1 ≤ n ≤ 10^9; 1 ≤ sx, sy ≤ n;  - 100 ≤ dx, dy ≤ 100; 0 ≤ t ≤ 10^18).
+
+
+-----Output-----
+
+Print two integers — the coordinates of the cell the bear will end up in after t seconds.
+
+
+-----Examples-----
+Input
+5 1 2 0 1 2
+
+Output
+3 1
+Input
+1 1 1 -1 -1 2
+
+Output
+1 1
+
+
+-----Note-----
+
+Operation a mod b means taking the remainder after dividing a by b. Note that the result of the operation is always non-negative. For example, ( - 1) mod 3 = 2.
+
+In the first sample before the first move the speed vector will equal (3,4) and the bear will get to cell (4,1). Before the second move the speed vector will equal (9,10) and he bear will get to cell (3,1). Don't forget that at the second move, the number of berry bushes increased by 1.
+
+In the second sample before the first move the speed vector will equal (1,1) and the bear will get to cell (1,1). Before the second move, the speed vector will equal (4,4) and the bear will get to cell (1,1). Don't forget that at the second move, the number of berry bushes increased by 1.

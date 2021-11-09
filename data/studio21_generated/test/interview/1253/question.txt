@@ -1,0 +1,45 @@
+Roma works in a company that sells TVs. Now he has to prepare a report for the last year.
+
+Roma has got a list of the company's incomes. The list is a sequence that consists of n integers. The total income of the company is the sum of all integers in sequence. Roma decided to perform exactly k changes of signs of several numbers in the sequence. He can also change the sign of a number one, two or more times.
+
+The operation of changing a number's sign is the operation of multiplying this number by -1.
+
+Help Roma perform the changes so as to make the total income of the company (the sum of numbers in the resulting sequence) maximum. Note that Roma should perform exactly k changes.
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n, k ≤ 10^5), showing, how many numbers are in the sequence and how many swaps are to be made.
+
+The second line contains a non-decreasing sequence, consisting of n integers a_{i} (|a_{i}| ≤ 10^4).
+
+The numbers in the lines are separated by single spaces. Please note that the given sequence is sorted in non-decreasing order.
+
+
+-----Output-----
+
+In the single line print the answer to the problem — the maximum total income that we can obtain after exactly k changes.
+
+
+-----Examples-----
+Input
+3 2
+-1 -1 1
+
+Output
+3
+
+Input
+3 1
+-1 -1 1
+
+Output
+1
+
+
+
+-----Note-----
+
+In the first sample we can get sequence [1, 1, 1], thus the total income equals 3.
+
+In the second test, the optimal strategy is to get sequence [-1, 1, 1], thus the total income equals 1.

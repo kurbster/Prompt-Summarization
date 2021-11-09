@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    "5\n! abc\n. ad\n. b\n! cd\n? c\n",
+    "8\n! hello\n! codeforces\n? c\n. o\n? d\n? h\n. l\n? e\n",
+    "7\n! ababahalamaha\n? a\n? b\n? a\n? b\n? a\n? h\n",
+    "4\n! abcd\n! cdef\n? d\n? c\n",
+    "1\n? q\n",
+    "15\n. r\n? e\n. s\n. rw\n? y\n. fj\n. zftyd\n? r\n! wq\n? w\n? p\n. ours\n. dto\n. lbyfru\n? q\n",
+    "3\n. abcdefghijklmnopqrstuvwxy\n? a\n? z\n",
+    "3\n. abcdefghijklmnopqrstuvwxy\n! z\n? z\n"
+  ],
+  "outputs": [
+    "1\n",
+    "2\n",
+    "0\n",
+    "0\n",
+    "0\n",
+    "2\n",
+    "1\n",
+    "1\n"
+  ]
+}

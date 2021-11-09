@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "1 2\n1 charlatan 1\n1 not charlatan 1\n",
+        "2 1\n1 and fabulist 1 fabulist 2\n",
+        "3 2\n1 fabulist 3\n3 and truther 1 truther 2\n"
+    ],
+    "outputs": [
+        "charlatan\n",
+        "fabulist\ntruther\n",
+        "truther\nfabulist\nfabulist\n"
+    ]
+}

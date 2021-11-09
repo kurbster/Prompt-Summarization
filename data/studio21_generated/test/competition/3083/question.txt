@@ -1,0 +1,42 @@
+You have been invited to host a famous radio show to tell your fascinating life story and play some of your favorite songs. However, choosing which songs to play is turning out to be very tricky; there are just way too many good songs and you only have enough time to play a measly nine songs! 
+
+In order to give the show a sense of continuity, you have decided that consecutive songs you play should have some detail in common. For instance, if you start by playing Björk’s song “Pagan Poetry”, you could continue with next playing matmos’ track “Enigma Machine for Alan Turing” since matmos contributed to Björk’s Vespertine album (on which Pagan Poetry appears). Continuing, you might play a part of Prokofiev’s “Петя и волк”, as it was written in 1936, the same year as Alan Turing’s seminal paper on undecidability of the Halting Problem, and so on. The ordering of the songs is important, so just because you could play song X after song Y it will not necessarily be the case that you can play song Y after song X. At the same time as achieving this sense of continuity, you also want the playlist to have a bit of variation, so all nine songs must be by different artists.
+
+You have narrowed things down to a bunch of your favorite songs, but finding a list of nine songs with a common thread seems tricky. Maybe you could use your programming skills to find a good playlist?
+
+-----Input-----
+The first line of input consists of an integer $n$ ($9 \le n \le 100$), the number of songs. Then follow $n$ lines. Each line describes a song, starting with the name of the artist (as a string of ‘a’-‘z’ of at most $15$ characters), followed by an integer $t$ ($1 \le t \le 40$), the number of songs that can be played directly after this song. Then follows (on the same line) $t$ distinct integers $s_1, \ldots , s_ t$, each between $1$ and $n$, giving the numbers of the songs that can be played after the current song. The songs are numbered from $1$ to $n$, with song number $1$ being described on the first line, and so on.
+
+-----Output-----
+If there is a playlist of nine songs satisfying the requirements, output a list of nine integers giving the numbers of the songs (according to the same numbering as in the input), in the order they should be played. Otherwise, output a single line containing the word “fail”. If there is more than one valid playlist, any one of them will be accepted.
+
+-----Examples-----
+Sample Input 1:
+10
+a 2 10 3
+b 1 6
+c 2 1 5
+d 1 9
+e 1 4
+f 1 2
+g 2 6 8
+h 0
+i 1 3
+j 1 7
+Sample Output 1:
+5 4 9 3 1 10 7 6 2
+
+Sample Input 2:
+10
+a 2 10 3
+a 1 6
+c 2 1 5
+d 1 9
+e 1 4
+f 1 2
+g 2 6 8
+h 0
+i 1 3
+j 1 7
+Sample Output 2:
+fail

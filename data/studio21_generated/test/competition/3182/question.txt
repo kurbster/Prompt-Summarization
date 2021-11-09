@@ -1,0 +1,31 @@
+$N$ points are placed in the coordinate plane.
+
+Write a program which calculates in how many ways a right triangle can be formed by three of the given points. A right triangle is one in which one of the angles is $90$ degrees.
+
+-----Input-----
+The first line of input contains an integer $N$ ($3 \le N \le 1500$), the number of points.
+
+Each of the following $N$ lines contains the coordinates of one point, two integers separated by a space. The coordinates will be between $-10^9$ and $10^9$.
+
+No two points will be located at the same coordinates.
+
+-----Output-----
+Output the number of right triangles.
+
+-----Examples-----
+Sample Input 1:
+3
+4 2
+2 1
+1 3
+Sample Output 1:
+1
+
+Sample Input 2:
+4
+5 0
+2 6
+8 6
+5 7
+Sample Output 2:
+0

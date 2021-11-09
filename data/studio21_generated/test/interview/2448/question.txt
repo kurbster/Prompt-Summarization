@@ -1,0 +1,51 @@
+Let $n$ be a positive integer. Let $a, b, c$ be nonnegative integers such that $a + b + c = n$.
+
+Alice and Bob are gonna play rock-paper-scissors $n$ times. Alice knows the sequences of hands that Bob will play. However, Alice has to play rock $a$ times, paper $b$ times, and scissors $c$ times.
+
+Alice wins if she beats Bob in at least $\lceil \frac{n}{2} \rceil$ ($\frac{n}{2}$ rounded up to the nearest integer) hands, otherwise Alice loses.
+
+Note that in rock-paper-scissors:
+
+  rock beats scissors;  paper beats rock;  scissors beat paper. 
+
+The task is, given the sequence of hands that Bob will play, and the numbers $a, b, c$, determine whether or not Alice can win. And if so, find any possible sequence of hands that Alice can use to win.
+
+If there are multiple answers, print any of them.
+
+
+-----Input-----
+
+The first line contains a single integer $t$ ($1 \le t \le 100$) — the number of test cases.
+
+Then, $t$ testcases follow, each consisting of three lines:   The first line contains a single integer $n$ ($1 \le n \le 100$).  The second line contains three integers, $a, b, c$ ($0 \le a, b, c \le n$). It is guaranteed that $a + b + c = n$.  The third line contains a string $s$ of length $n$. $s$ is made up of only 'R', 'P', and 'S'. The $i$-th character is 'R' if for his $i$-th Bob plays rock, 'P' if paper, and 'S' if scissors. 
+
+
+-----Output-----
+
+For each testcase:   If Alice cannot win, print "NO" (without the quotes).  Otherwise, print "YES" (without the quotes). Also, print a string $t$ of length $n$ made up of only 'R', 'P', and 'S' — a sequence of hands that Alice can use to win. $t$ must contain exactly $a$ 'R's, $b$ 'P's, and $c$ 'S's.  If there are multiple answers, print any of them. 
+
+The "YES" / "NO" part of the output is case-insensitive (i.e. "yEs", "no" or "YEs" are all valid answers). Note that 'R', 'P' and 'S' are case-sensitive.
+
+
+-----Example-----
+Input
+2
+3
+1 1 1
+RPS
+3
+3 0 0
+RPS
+
+Output
+YES
+PSR
+NO
+
+
+
+-----Note-----
+
+In the first testcase, in the first hand, Alice plays paper and Bob plays rock, so Alice beats Bob. In the second hand, Alice plays scissors and Bob plays paper, so Alice beats Bob. In the third hand, Alice plays rock and Bob plays scissors, so Alice beats Bob. Alice beat Bob 3 times, and $3 \ge \lceil \frac{3}{2} \rceil = 2$, so Alice wins.
+
+In the second testcase, the only sequence of hands that Alice can play is "RRR". Alice beats Bob only in the last hand, so Alice can't win. $1 < \lceil \frac{3}{2} \rceil = 2$.

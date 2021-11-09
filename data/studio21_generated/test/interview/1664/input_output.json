@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "4\nc=aa#bb\nd12=c\nres=c^d12\ntmp=aa$c\n",
+    "2\nmax=aaaa$bbbb\nmin=bbbb^aaaa\n",
+    "6\nres=res\nb=a\nc=b\nd=c\nres=d\nres=res\n",
+    "4\nc=a\na=b\nb=c\nres=a&b\n",
+    "1\nres=res\n",
+    "6\na=b\nb=c\nc=a\nres=res&a\nres=res#b\nres=res^c\n",
+    "3\na=res\nres=x^y\nres=a\n",
+    "9\nc=a$b\ne=c#c\nf=c$c\nh=a$b\nx=h$h\ny=h#h\nz=x^y\ng=f^e\nres=z&g\n",
+    "3\nd=a$b\nres=d^c\nddd=c#b\n",
+    "5\nres=a\nb=c&d\ne=res&a\nx=y\nres=c$x\n",
+    "9\nc111=a&b\nd=b^a\ne=c111#d\nd=d\nf=f\nf=c111$d\ng=e$f\nh=e#f\nres=g^h\n",
+    "7\na=b&c\nw=r#e\nx=b^c\nz=a&b\nt=w^x\nz=x&b\nres=x$w\n",
+    "2\np1=p2^p2\nres=p1^p0\n"
+  ],
+  "outputs": [
+    "2\naaaa=aa#bb\nres=aaaa^aaaa\n",
+    "0",
+    "1\nres=a\n",
+    "1\nres=b&a\n",
+    "0\n",
+    "3\naaaa=res&b\naaab=aaaa#c\nres=aaab^b\n",
+    "0\n",
+    "5\naaaa=a$b\naaab=aaaa$aaaa\naaac=aaaa#aaaa\naaad=aaab^aaac\nres=aaad&aaad\n",
+    "2\naaaa=a$b\nres=aaaa^c\n",
+    "1\nres=c$y\n",
+    "7\naaaa=a&b\naaab=b^a\naaac=aaaa#aaab\naaad=aaaa$aaab\naaae=aaac$aaad\naaaf=aaac#aaad\nres=aaae^aaaf\n",
+    "3\naaaa=b^c\naaab=r#e\nres=aaaa$aaab\n",
+    "2\naaaa=p2^p2\nres=aaaa^p0\n"
+  ]
+}

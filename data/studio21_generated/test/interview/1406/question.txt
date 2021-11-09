@@ -1,0 +1,34 @@
+Recently Pashmak has been employed in a transportation company. The company has k buses and has a contract with a school which has n students. The school planned to take the students to d different places for d days (each day in one place). Each day the company provides all the buses for the trip. Pashmak has to arrange the students in the buses. He wants to arrange the students in a way that no two students become close friends. In his ridiculous idea, two students will become close friends if and only if they are in the same buses for all d days.
+
+Please help Pashmak with his weird idea. Assume that each bus has an unlimited capacity.
+
+
+-----Input-----
+
+The first line of input contains three space-separated integers n, k, d (1 ≤ n, d ≤ 1000; 1 ≤ k ≤ 10^9).
+
+
+-----Output-----
+
+If there is no valid arrangement just print -1. Otherwise print d lines, in each of them print n integers. The j-th integer of the i-th line shows which bus the j-th student has to take on the i-th day. You can assume that the buses are numbered from 1 to k.
+
+
+-----Examples-----
+Input
+3 2 2
+
+Output
+1 1 2 
+1 2 1 
+
+Input
+3 2 1
+
+Output
+-1
+
+
+
+-----Note-----
+
+Note that two students become close friends only if they share a bus each day. But the bus they share can differ from day to day.

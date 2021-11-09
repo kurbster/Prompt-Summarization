@@ -1,0 +1,45 @@
+Nowadays, most of the internet advertisements are not statically linked to a web page. Instead, what will be shown to the person opening a web page is determined within 100 milliseconds after the web page is opened. Usually, multiple companies compete for each ad slot on the web page in an auction. Each of them receives a request with details about the user, web page and ad slot and they have to respond within those 100 milliseconds with a bid they would pay for putting an advertisement on that ad slot. The company that suggests the highest bid wins the auction and gets to place its advertisement. If there are several companies tied for the highest bid, the winner gets picked at random.
+
+However, the company that won the auction does not have to pay the exact amount of its bid. In most of the cases, a second-price auction is used. This means that the amount paid by the company is equal to the maximum of all the other bids placed for this ad slot.
+
+Let's consider one such bidding. There are n companies competing for placing an ad. The i-th of these companies will bid an integer number of microdollars equiprobably randomly chosen from the range between L_{i} and R_{i}, inclusive. In the other words, the value of the i-th company bid can be any integer from the range [L_{i}, R_{i}] with the same probability. 
+
+Determine the expected value that the winner will have to pay in a second-price auction.
+
+
+-----Input-----
+
+The first line of input contains an integer number n (2 ≤ n ≤ 5). n lines follow, the i-th of them containing two numbers L_{i} and R_{i} (1 ≤ L_{i} ≤ R_{i} ≤ 10000) describing the i-th company's bid preferences.
+
+This problem doesn't have subproblems. You will get 8 points for the correct submission.
+
+
+-----Output-----
+
+Output the answer with absolute or relative error no more than 1e - 9.
+
+
+-----Examples-----
+Input
+3
+4 7
+8 10
+5 5
+
+Output
+5.7500000000
+
+Input
+3
+2 5
+3 4
+1 6
+
+Output
+3.5000000000
+
+
+
+-----Note-----
+
+Consider the first example. The first company bids a random integer number of microdollars in range [4, 7]; the second company bids between 8 and 10, and the third company bids 5 microdollars. The second company will win regardless of the exact value it bids, however the price it will pay depends on the value of first company's bid. With probability 0.5 the first company will bid at most 5 microdollars, and the second-highest price of the whole auction will be 5. With probability 0.25 it will bid 6 microdollars, and with probability 0.25 it will bid 7 microdollars. Thus, the expected value the second company will have to pay is 0.5·5 + 0.25·6 + 0.25·7 = 5.75.

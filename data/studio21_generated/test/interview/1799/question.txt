@@ -1,0 +1,73 @@
+One tradition of ACM-ICPC contests is that a team gets a balloon for every solved problem. We assume that the submission time doesn't matter and teams are sorted only by the number of balloons they have. It means that one's place is equal to the number of teams with more balloons, increased by 1. For example, if there are seven teams with more balloons, you get the eight place. Ties are allowed.
+
+You should know that it's important to eat before a contest. If the number of balloons of a team is greater than the weight of this team, the team starts to float in the air together with their workstation. They eventually touch the ceiling, what is strictly forbidden by the rules. The team is then disqualified and isn't considered in the standings.
+
+A contest has just finished. There are n teams, numbered 1 through n. The i-th team has t_{i} balloons and weight w_{i}. It's guaranteed that t_{i} doesn't exceed w_{i} so nobody floats initially.
+
+Limak is a member of the first team. He doesn't like cheating and he would never steal balloons from other teams. Instead, he can give his balloons away to other teams, possibly making them float. Limak can give away zero or more balloons of his team. Obviously, he can't give away more balloons than his team initially has.
+
+What is the best place Limak can get?
+
+
+-----Input-----
+
+The first line of the standard input contains one integer n (2 ≤ n ≤ 300 000) — the number of teams.
+
+The i-th of n following lines contains two integers t_{i} and w_{i} (0 ≤ t_{i} ≤ w_{i} ≤ 10^18) — respectively the number of balloons and the weight of the i-th team. Limak is a member of the first team.
+
+
+-----Output-----
+
+Print one integer denoting the best place Limak can get.
+
+
+-----Examples-----
+Input
+8
+20 1000
+32 37
+40 1000
+45 50
+16 16
+16 16
+14 1000
+2 1000
+
+Output
+3
+
+Input
+7
+4 4
+4 4
+4 4
+4 4
+4 4
+4 4
+5 5
+
+Output
+2
+
+Input
+7
+14000000003 1000000000000000000
+81000000000 88000000000
+5000000000 7000000000
+15000000000 39000000000
+46000000000 51000000000
+0 1000000000
+0 0
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first sample, Limak has 20 balloons initially. There are three teams with more balloons (32, 40 and 45 balloons), so Limak has the fourth place initially. One optimal strategy is: Limak gives 6 balloons away to a team with 32 balloons and weight 37, which is just enough to make them fly. Unfortunately, Limak has only 14 balloons now and he would get the fifth place. Limak gives 6 balloons away to a team with 45 balloons. Now they have 51 balloons and weight 50 so they fly and get disqualified. Limak gives 1 balloon to each of two teams with 16 balloons initially. Limak has 20 - 6 - 6 - 1 - 1 = 6 balloons. There are three other teams left and their numbers of balloons are 40, 14 and 2. Limak gets the third place because there are two teams with more balloons. 
+
+In the second sample, Limak has the second place and he can't improve it.
+
+In the third sample, Limak has just enough balloons to get rid of teams 2, 3 and 5 (the teams with 81 000 000 000, 5 000 000 000 and 46 000 000 000 balloons respectively). With zero balloons left, he will get the second place (ex-aequo with team 6 and team 7).

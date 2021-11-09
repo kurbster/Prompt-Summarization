@@ -1,0 +1,1 @@
+{"inputs": ["2\n0 3 D\n3 0 L\n", "5\n-7 -10 U\n7 -6 U\n-8 7 D\n-3 3 D\n0 -6 R\n", "20\n6 -10 R\n-4 -9 U\n9 6 D\n-3 -2 R\n0 7 D\n4 5 D\n10 -10 U\n-1 -8 U\n10 -6 D\n8 -5 U\n6 4 D\n0 3 D\n7 9 R\n9 -4 R\n3 10 D\n1 9 U\n1 -6 U\n9 -8 R\n6 7 D\n7 -3 D\n"], "outputs": ["0\n", "97.5\n", "273\n"]}

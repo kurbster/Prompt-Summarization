@@ -1,0 +1,2 @@
+ You are given an array. Return maximum length of good segment in array  
+-----Input----- The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of elements in the array. The second line contains integers: a_1, a_2, ..., a_{n} (0 ≤ a_{i} ≤ 10^9). -----Output----- Print the length of the longest good segment in array a. -----Examples----- Input 10 1 2 3 5 8 13 21 34 55 89 Output 10 Input 5 1 1 1 1 1 Output 2

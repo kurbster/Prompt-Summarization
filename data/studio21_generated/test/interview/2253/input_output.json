@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "8\nkamusta_po\ngenki_desu\nohayou_gozaimasu\nannyeong_hashimnida\nhajime_no_ippo\nbensamu_no_sentou_houhou_ga_okama_kenpo\nang_halaman_doon_ay_sarisari_singkamasu\nsi_roy_mustang_ay_namamasu\n",
+    "30\nopo\np_po\npopo\ndesu\npo\nudesu\npodesu\ndesupo\nsddesu\nmumasu\nmmnida\nmmasu\nmasu\ndesu_po\npomnida\nmasumasu\npppo\nmnida\nmasu_po\ndesu_masu\na_masu\npo_po\nmasupo\nmasu_masu\nmnidamasu\npomasu\nmnida_po\nmnida_desu\nnakupo\npo_masu\n",
+    "30\npo\nppo\nop_po\nmnida\nmasu\ndesu\npopo\nmsmasu\npomasu\npo_po\nusedpo\nmasu_po\nopmasu\nopo\nua_masu\nop_masu\nmnidapo\ndmnida\nopdesu\nadinmpo\npodesu\nnakupo\noppo\nmmasu\np_po\nadinm_po\nused_po\nusedmasu\nm_umasu\no_ppo\n",
+    "30\nimamnida\nusamdesu\npomnida\ndesudesu\nop_desu\ndesumnida\npo_desu\npo_mnida\na_mnida\ndesu_po\nmnidamasu\nmasupo\ndesumasu\nudesu\ndesupo\ne_desu\npo_masu\nuudesu\nusedmnida\nusampo\nmasu_masu\nmnida_masu\nkamusta_po\nmasudesu\nu_masu\nds_desu\nu_edesu\ndesu_masu\nmasumasu\nmasu_mnida\n",
+    "30\nmnidamnida\nopmnida\nadinm_masu\nusam_masu\nuseddesu\nadinmmasu\nmnida_po\ndnmnida\nmasumnida\nusam_po\nmnidadesu\nused_masu\nmnida_mnida\nadinm_mnida\nusammasu\nmasu_desu\nusammnida\ngenki_desu\nmm_mnida\nadinmmnida\nop_mnida\nadinm_desu\nused_desu\nusam_desu\nadinmdesu\nsaranghamnida\ndesu_desu\ntang_na_moo_po\nused_mnida\nusam_mnida\n"
+  ],
+  "outputs": [
+    "FILIPINO\nJAPANESE\nJAPANESE\nKOREAN\nFILIPINO\nFILIPINO\nJAPANESE\nJAPANESE\n",
+    "FILIPINO\nFILIPINO\nFILIPINO\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nKOREAN\nJAPANESE\nJAPANESE\nFILIPINO\nKOREAN\nJAPANESE\nFILIPINO\nKOREAN\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nFILIPINO\nJAPANESE\nJAPANESE\nJAPANESE\nFILIPINO\nJAPANESE\nFILIPINO\nJAPANESE\n",
+    "FILIPINO\nFILIPINO\nFILIPINO\nKOREAN\nJAPANESE\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nFILIPINO\nFILIPINO\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nKOREAN\nJAPANESE\nFILIPINO\nJAPANESE\nFILIPINO\nFILIPINO\nJAPANESE\nFILIPINO\nFILIPINO\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\n",
+    "KOREAN\nJAPANESE\nKOREAN\nJAPANESE\nJAPANESE\nKOREAN\nJAPANESE\nKOREAN\nKOREAN\nFILIPINO\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nJAPANESE\nKOREAN\nFILIPINO\nJAPANESE\nJAPANESE\nFILIPINO\nJAPANESE\nJAPANESE\nJAPANESE\nJAPANESE\nJAPANESE\nJAPANESE\nKOREAN\n",
+    "KOREAN\nKOREAN\nJAPANESE\nJAPANESE\nJAPANESE\nJAPANESE\nFILIPINO\nKOREAN\nKOREAN\nFILIPINO\nJAPANESE\nJAPANESE\nKOREAN\nKOREAN\nJAPANESE\nJAPANESE\nKOREAN\nJAPANESE\nKOREAN\nKOREAN\nKOREAN\nJAPANESE\nJAPANESE\nJAPANESE\nJAPANESE\nKOREAN\nJAPANESE\nFILIPINO\nKOREAN\nKOREAN\n"
+  ]
+}

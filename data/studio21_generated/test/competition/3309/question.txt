@@ -1,0 +1,30 @@
+The great Equestria Games are coming!
+
+As you know, the Equestria Games is the biggest sports event in Equestria, where ponies from all around the land come and compete. Of course, such a huge event requires months of planning, lots of money, and, most importantly, kingdom-wide media coverage.
+
+The stadium can be considered as a ring partitioned into $N$ sectors. Due to the intense and bitter rivalry between the fans of different teams, every sector seats only fans of a certain team; the $i^\text {th}$ sector clockwise from the northernmost sector accommodates only the fans of team $A_ i$. Every team has a different distinguishing color, and every fan of course wears a t-shirt with the color of their team.
+
+Now, broadcasting rights of the event are being sold to media companies. Media companies are fussy about getting the perfect coverage, and so each of them wants an exclusive, consecutive range of at least $K$ sectors. Additionally, since they want their coverage to look interesting, they also want that range of sectors to have fans wearing at least $C$ distinct colors.
+
+Obviously, the logistics is a nightmare, so naturally the work has been passed on to you. Can you help determine the maximum number of media companies that can be sold broadcasting rights, if all constraints must be satisfied?
+
+-----Input-----
+The first line of input contains three integers, $N$ ($2 \leq N \leq 200000$), $K$ ($1 \leq K \leq N$) and $C$ ($1 \leq C \leq N$), the number of sectors in the stadium, the minimum number of consecutive sectors each media company wants, and the minimum number of distinct colors each media company wants, respectively.
+
+The second line of input contains $N$ integers, $A_1, A_2, \dots , A_ N$ ($1 \leq A_ i \leq 10^9$), the teams the fans assigned to each sector of the stadium support.
+
+-----Output-----
+Output a single integer on a line by itself, the maximum number of media companies that can be sold broadcasting rights.
+
+-----Examples-----
+Sample Input 1:
+9 4 3
+1 1 9 9 1 6 6 39 9
+Sample Output 1:
+2
+
+Sample Input 2:
+10 2 2
+1 1 1 1 1 2 2 2 2 2
+Sample Output 2:
+2

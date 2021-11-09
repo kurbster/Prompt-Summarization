@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "()))\n",
+        ")))(\n",
+        "()\n"
+    ],
+    "outputs": [
+        "possible\n",
+        "impossible\n",
+        "possible\n"
+    ]
+}

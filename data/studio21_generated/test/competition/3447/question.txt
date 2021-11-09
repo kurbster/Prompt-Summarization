@@ -1,0 +1,49 @@
+- Percent sign sand dollar sign! And colon semicolon, too!
+
+ - You Asterisk-mouth! – Sam & Max: Hit the Road 
+
+When typing SMS messages on a mobile phone, each of the ten digit buttons represent several alphabetic characters. On my phone (an ancient Ericsson T65, in case anyone was wondering), I have the following mapping (1 is used for space, and 0 for some common non-alphabetic symbols):
+
+2 $\rightarrow $ ABC
+
+3 $\rightarrow $ DEF
+
+4 $\rightarrow $ GHI
+
+5 $\rightarrow $ JKL
+
+6 $\rightarrow $ MNO
+
+7 $\rightarrow $ PQRS
+
+8 $\rightarrow $ TUV
+
+9 $\rightarrow $ WXYZ
+
+As you’ve probably experienced, this makes the typing quite cumbersome. The phones usually try to compensate this by making use of a dictionary – basically, the idea is that there will typically be relatively few actual words having the same button combination. The way this works is that when you have typed a certain digit sequence, you can cycle through the words in the dictionary that map to this digit sequence using the “up” and “down” buttons. Pressing “up” gives you the next word, and pressing “down” gives you the previous word. Words are ordered by how common they are, most common words first and least common words last. This wraps, so that pressing “up” at the last word gives you the first word and similarly for “down”. Initially after having pressed a digit sequence, you will get the first (most common) word that maps to this sequence.
+
+This usually works quite well, but if you’re trying to type a word that does not exist in the dictionary, you have to write it by separating it into several parts, where each part is a word in the dictionary. In order to start writing a new part, you have to press the “right” button on the keypad.
+
+Obviously, the number of keys needed to type a word depends on how (and if) we divide it into parts. Now, I would like to know how to type a word (that may or may not be from the dictionary) using as few key presses as possible (it’s not that I’m lazy, I just want to decrease the wear and tear of my keypad).
+
+-----Input-----
+The input begins with an integer $1 \le N \le 200000$ giving the size of the dictionary, followed by $N$ lines, giving the words of the dictionary from most common to least common. Words consist solely of lower case ’a’-’z’ and are at most 10 characters long.
+
+Then follows an integer $1 \le Q \le 1000$ giving the number of words to type. This is followed by $Q$ lines, each containing a nonempty word to type. It will always be possible to type the given words using the given dictionary. The total length of all $Q$ words to type will be at most $500000$.
+
+-----Output-----
+For each query, output a line containing any optimal keypress solution in the following format.
+ - For pressing any of the digits 2-9, simply output that digit.
+ - For pressing right, output ’R’.
+ - For pressing up or down $x > 0$ times, output “U($x$)” or “D($x$)”, respectively.
+
+Note that the minimum number of keypresses may be very big: it can exceed $2^{32}$.
+
+-----Examples-----
+Sample Input:
+1
+echo
+1
+echoecho
+Sample Output:
+3246R3246

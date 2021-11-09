@@ -1,0 +1,17 @@
+Alice has an $n\! \times \! m$ grid and a $2\! \times \! 2$ block. She would like to place her block in the grid. She must place it so that the block is axis-aligned and covers exactly $4$ grid cells.
+
+Bob wants to prevent Alice from doing that. To do this, he places obstacles in some of the grid cells. After Bob places his obstacles, all $2\! \times \! 2$ subgrids of the grid should contain at least one obstacle. Bob wants to minimize the number of grid cells where he places obstacles.
+
+Help Bob count the number of ways he can place the minimum number obstacles to prevent Alice from placing her block. Output this number modulo a prime number $p$. Note that the answer is not the minimum number of obstacles, but rather the count of the number of ways Bob can place the minimum number of obstacles. For example, if $n=m=2$ for a $2\! \times \! 2$ grid, Bob only has to place $1$ obstacle, but there are $4$ ways to place it, so the answer in this case is $4$.
+
+-----Input-----
+The single line of input contains three space-separated integers $n$ ($2 \leq n \leq 25$), $m$ ($2 \leq m \leq 10^3$) and $p$ ($10^8 \leq p \leq 10^9+7$, $p$ is a prime number), where Alice’s grid is of size $n\! \times \! m$, and $p$ is a large prime modulus.
+
+-----Output-----
+Output a single integer, which is the number of ways Bob can place the minimum number of obstacles in the $n\! \times \! m$ grid to prevent Alice from placing her $2 \! \times \! 2$ block. Since this may be very large, output it modulo $p$.
+
+-----Examples-----
+Sample Input:
+4 4 999999937
+Sample Output:
+79

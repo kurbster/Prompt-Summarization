@@ -1,0 +1,41 @@
+Excitement is rapidly increasing in anticipation of the concluding debate at the 0x7E4 Undemocratic Inclinational Unconvention, where the party’s candidate for the office of Student Assistant to the Old Chemistry Building Assistant Printer Service Technician’s Assistant will be elected. To secure a revered lifetime appointment as antenna calibrator for the dank.nt.nu pirate radio station (broadcasted live from the Gløshaugen catacombs every night at 00:13:37 CET), you have been challenged to produce a $256$-minute feature revealing the character type of each candidate.
+
+It is well known any candidate is either a truther, who always tells the truth, a fabulist, who never tells the truth, or a charlatan, who starts any debate speaking truthfully, but eventually switches to uttering only falsehoods. (Precisely, a charlatan first utters one or more true statements, then she utters one or more false statements, and that is all.)
+
+Now, as should be expected candidates talk nothing about printer maintenance policy, but about only each other’s character types. In particular, candidates utter propositions using the following language:
+ - truther <n>, where <n> is a name of a candidate, which is true if <n> is the name of a truther
+ - fabulist <n>, where <n> is a name of a candidate, which is true if <n> is the name of a fabulist
+ - charlatan <n>, where <n> is a name of a candidate, which is true if <n> is the name of a charlatan
+ - not <p>, where <p> is a proposition, which is true if <p> is false
+ - and <p> <q>, where <p> and <q> are propositions, which is true if both <p> and <q> are true
+ - xor <p> <q>, where <p> and <q> are propositions, which is true if one of <p> or <q> is false and the other one is true
+
+It is somewhat strange the relatively brainy electorate has not been able to determine the correct character types of the candidates, as that is indeed always possible given the transcript of a debate. The devoted patrons of dank.nt.nu, however, believe you’ll prove equal to the task.
+
+-----Input-----
+Input describes one full debate transcript. The first line of input contains two integers $N$ and $K$, denoting the number of candidates and the total number of utterances in the debate. The candidates are named by the integers $1$ to $N$. The next $K$ lines describe the utterances in the debate, sorted by time; the first such line describes the first utterance of the debate. Each such line consists of an integer, denoting the name of the speaker of the utterance, and the uttered statement, expressed in the language described above. Adjacent tokens on the same line will be separated by exactly one space character.
+
+-----Output-----
+Output $N$ lines. On the $i$th line, name the character type (truther, fabulist, or charlatan) of the candidate whose name is $i$.
+
+-----Limits and additional notes-----
+ - $1 \leq N \leq 7$
+ - $1 \leq K \leq 100$
+ - No line of input will be longer than $2049$ characters (including the line-feed character).
+ - All candidates know each other’s character types.
+ - Character type claims will only be about persons in a debate. I.e. for the propositions truther <n>, fabulist <n>, and charlatan <n>, one will always have $1 \leq \texttt{n} \leq N$.
+
+-----Examples-----
+Sample Input 1:
+1 2
+1 charlatan 1
+1 not charlatan 1
+Sample Output 1:
+charlatan
+
+Sample Input 2:
+2 1
+1 and fabulist 1 fabulist 2
+Sample Output 2:
+fabulist
+truther

@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "4\n10 10\n1 10\n6 9\n7 3\n",
+    "1\n863 863\n",
+    "1\n8831 8831\n",
+    "1\n1489 1489\n"
+  ],
+  "outputs": [
+    "Infinite\nFinite\nInfinite\nFinite\n",
+    "Infinite\n",
+    "Infinite\n",
+    "Infinite\n"
+  ]
+}

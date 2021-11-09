@@ -1,0 +1,2 @@
+ You are given an integer n. You need to find k such that n   2 for all k from 1 to k. 
+-----Input----- The first line of the input contains a single integer n (2 ≤ n ≤ 2·10^9) — the total year income of mr. Funt. -----Output----- Print one integer — minimum possible number of burles that mr. Funt has to pay as a tax. -----Examples----- Input 4 Output 2 Input 27 Output 3

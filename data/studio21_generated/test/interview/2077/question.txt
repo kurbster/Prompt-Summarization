@@ -1,0 +1,63 @@
+Today Johnny wants to increase his contribution. His plan assumes writing $n$ blogs. One blog covers one topic, but one topic can be covered by many blogs. Moreover, some blogs have references to each other. Each pair of blogs that are connected by a reference has to cover different topics because otherwise, the readers can notice that they are split just for more contribution. Set of blogs and bidirectional references between some pairs of them is called blogs network.
+
+There are $n$ different topics, numbered from $1$ to $n$ sorted by Johnny's knowledge. The structure of the blogs network is already prepared. Now Johnny has to write the blogs in some order. He is lazy, so each time before writing a blog, he looks at it's already written neighbors (the blogs referenced to current one) and chooses the topic with the smallest number which is not covered by neighbors. It's easy to see that this strategy will always allow him to choose a topic because there are at most $n - 1$ neighbors.
+
+For example, if already written neighbors of the current blog have topics number $1$, $3$, $1$, $5$, and $2$, Johnny will choose the topic number $4$ for the current blog, because topics number $1$, $2$ and $3$ are already covered by neighbors and topic number $4$ isn't covered.
+
+As a good friend, you have done some research and predicted the best topic for each blog. Can you tell Johnny, in which order he has to write the blogs, so that his strategy produces the topic assignment chosen by you?
+
+
+-----Input-----
+
+The first line contains two integers $n$ $(1 \leq n \leq 5 \cdot 10^5)$ and $m$ $(0 \leq m \leq 5 \cdot 10^5)$ — the number of blogs and references, respectively.
+
+Each of the following $m$ lines contains two integers $a$ and $b$ ($a \neq b$; $1 \leq a, b \leq n$), which mean that there is a reference between blogs $a$ and $b$. It's guaranteed that the graph doesn't contain multiple edges.
+
+The last line contains $n$ integers $t_1, t_2, \ldots, t_n$, $i$-th of them denotes desired topic number of the $i$-th blog ($1 \le t_i \le n$).
+
+
+-----Output-----
+
+If the solution does not exist, then write $-1$. Otherwise, output $n$ distinct integers $p_1, p_2, \ldots, p_n$ $(1 \leq p_i \leq n)$, which describe the numbers of blogs in order which Johnny should write them. If there are multiple answers, print any.
+
+
+-----Examples-----
+Input
+3 3
+1 2
+2 3
+3 1
+2 1 3
+
+Output
+2 1 3
+
+Input
+3 3
+1 2
+2 3
+3 1
+1 1 1
+
+Output
+-1
+
+Input
+5 3
+1 2
+2 3
+4 5
+2 1 2 2 1
+
+Output
+2 5 1 3 4
+
+
+
+-----Note-----
+
+In the first example, Johnny starts with writing blog number $2$, there are no already written neighbors yet, so it receives the first topic. Later he writes blog number $1$, it has reference to the already written second blog, so it receives the second topic. In the end, he writes blog number $3$, it has references to blogs number $1$ and $2$ so it receives the third topic.
+
+Second example: There does not exist any permutation fulfilling given conditions.
+
+Third example: First Johnny writes blog $2$, it receives the topic $1$. Then he writes blog $5$, it receives the topic $1$ too because it doesn't have reference to single already written blog $2$. Then he writes blog number $1$, it has reference to blog number $2$ with topic $1$, so it receives the topic $2$. Then he writes blog number $3$ which has reference to blog $2$, so it receives the topic $2$. Then he ends with writing blog number $4$ which has reference to blog $5$ and receives the topic $2$.

@@ -1,0 +1,23 @@
+David is writing an article for the Bulletin of the Association of Proof Completions. In his article, he proves several theorems. For every theorem, David came up with a proof. Since David is a very eager student, he even came up with multiple proofs for some of the theorems. As usual, a proof for a theorem may depend on a number of other theorems.
+
+The article has to be as short as possible to publish it, and David only really cares about the main theorem, Theorem $0$. In order to achieve this, he has estimated the number of words he will need for every proof. Can you help David find the shortest possible length of his article?
+
+-----Input-----
+ - A single line containing $1\leq n\leq 20$, the number of theorems.
+ - For each theorem:
+ - A single line containing $1\leq p_ i\leq 10$, the number of proofs for the $i$th theorem.
+ - $p_ i$ lines, each of the form $l$, $k$, $d_0,\dots ,d_{k-1}$, where $0\leq l\leq 10^6$ is the length of the proof, $0\leq k\leq n-1$ is the number of theorems the proof depends on, and the $0\leq d_ i\leq n-1$ are the numbers of the theorems the proof depends on.
+
+-----Output-----
+Print one line with a single integer, the shortest possible length of David’s article.
+
+-----Examples-----
+Sample Input:
+2
+2
+10 0
+3 1 1
+1
+4 1 0
+Sample Output:
+10

@@ -1,0 +1,59 @@
+When new students come to the Specialized Educational and Scientific Centre (SESC) they need to start many things from the beginning. Sometimes the teachers say (not always unfairly) that we cannot even count. So our teachers decided to teach us arithmetics from the start. And what is the best way to teach students add and subtract? — That's right, using counting sticks! An here's our new task: 
+
+An expression of counting sticks is an expression of type:[ A sticks][sign +][B sticks][sign =][C sticks] (1 ≤ A, B, C).  
+
+Sign + consists of two crossed sticks: one vertical and one horizontal. Sign = consists of two horizontal sticks. The expression is arithmetically correct if A + B = C.
+
+We've got an expression that looks like A + B = C given by counting sticks. Our task is to shift at most one stick (or we can shift nothing) so that the expression became arithmetically correct. Note that we cannot remove the sticks from the expression, also we cannot shift the sticks from the signs + and =.
+
+We really aren't fabulous at arithmetics. Can you help us?
+
+
+-----Input-----
+
+The single line contains the initial expression. It is guaranteed that the expression looks like A + B = C, where 1 ≤ A, B, C ≤ 100.
+
+
+-----Output-----
+
+If there isn't a way to shift the stick so the expression becomes correct, print on a single line "Impossible" (without the quotes). If there is a way, print the resulting expression. Follow the format of the output from the test samples. Don't print extra space characters.
+
+If there are multiple correct answers, print any of them. For clarifications, you are recommended to see the test samples.
+
+
+-----Examples-----
+Input
+||+|=|||||
+
+Output
+|||+|=||||
+
+Input
+|||||+||=||
+
+Output
+Impossible
+
+Input
+|+|=||||||
+
+Output
+Impossible
+
+Input
+||||+||=||||||
+
+Output
+||||+||=||||||
+
+
+
+-----Note-----
+
+In the first sample we can shift stick from the third group of sticks to the first one.
+
+In the second sample we cannot shift vertical stick from + sign to the second group of sticks. So we cannot make a - sign.
+
+There is no answer in the third sample because we cannot remove sticks from the expression.
+
+In the forth sample the initial expression is already arithmetically correct and that is why we don't have to shift sticks.

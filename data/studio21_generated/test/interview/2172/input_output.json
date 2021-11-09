@@ -1,0 +1,18 @@
+{
+  "inputs": [
+    "4 3\ncodeforces codesecrof\ncontest round\nletter message\ncodeforces contest letter contest\n",
+    "5 3\njoll wuqrd\neuzf un\nhbnyiyc rsoqqveh\nhbnyiyc joll joll euzf joll\n",
+    "5 5\nqueyqj f\nb vn\ntabzvk qpfzoqx\nytnyonoc hnxsd\njpggvr lchinjmt\nqueyqj jpggvr b ytnyonoc b\n",
+    "10 22\nazbrll oen\ngh vdyayei\njphveblohx vfglv\nmfyxib jepnvhcuwo\nrpikazqj uam\nl rx\nokjenof qpnyi\nj tixqrno\nod itozmfct\nikkdxmirx ev\nqexftojc p\nkdazb zjs\nmbk ykvqjrxaxu\nhbcwhouzq pwt\nmirpsz zfaegpl\nuhkkvcj rlvwj\nef iqnnwtolrc\npjzfcpmeag ecdayth\nsa qcthz\ncbfhfxi qrnbvdryz\nwqel tj\natx smkbid\nef hbcwhouzq cbfhfxi hbcwhouzq mirpsz cbfhfxi cbfhfxi okjenof pjzfcpmeag kdazb\n",
+    "1 1\namit am\namit\n",
+    "1 1\na c\na\n"
+  ],
+  "outputs": [
+    "codeforces round letter round\n",
+    "hbnyiyc joll joll un joll\n",
+    "f jpggvr b hnxsd b\n",
+    "ef pwt cbfhfxi pwt mirpsz cbfhfxi cbfhfxi qpnyi ecdayth zjs\n",
+    "am\n",
+    "a\n"
+  ]
+}

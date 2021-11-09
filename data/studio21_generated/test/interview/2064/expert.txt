@@ -1,0 +1,2 @@
+ You are given an integer number $n$. Your task is to determine the maximum possible integer number which can be shown on the display of your newest device. Note that this number must not contain leading zeros. Assume that the size of the display is enough to show any integer. 
+-----Input----- The first line contains the integer n (2 ≤ n ≤ 100 000) — the maximum number of sections which can be highlighted on the display. -----Output----- Print the maximum integer which can be shown on the display of Stepan's newest device. -----Examples----- Input 2 Output 1 Input 3 Output 7

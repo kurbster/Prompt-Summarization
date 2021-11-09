@@ -1,0 +1,79 @@
+Innokenty is a president of a new football league in Byteland. The first task he should do is to assign short names to all clubs to be shown on TV next to the score. Of course, the short names should be distinct, and Innokenty wants that all short names consist of three letters.
+
+Each club's full name consist of two words: the team's name and the hometown's name, for example, "DINAMO BYTECITY". Innokenty doesn't want to assign strange short names, so he wants to choose such short names for each club that:   the short name is the same as three first letters of the team's name, for example, for the mentioned club it is "DIN",  or, the first two letters of the short name should be the same as the first two letters of the team's name, while the third letter is the same as the first letter in the hometown's name. For the mentioned club it is "DIB". 
+
+Apart from this, there is a rule that if for some club x the second option of short name is chosen, then there should be no club, for which the first option is chosen which is the same as the first option for the club x. For example, if the above mentioned club has short name "DIB", then no club for which the first option is chosen can have short name equal to "DIN". However, it is possible that some club have short name "DIN", where "DI" are the first two letters of the team's name, and "N" is the first letter of hometown's name. Of course, no two teams can have the same short name.
+
+Help Innokenty to choose a short name for each of the teams. If this is impossible, report that. If there are multiple answer, any of them will suit Innokenty. If for some team the two options of short name are equal, then Innokenty will formally think that only one of these options is chosen. 
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 1000) — the number of clubs in the league.
+
+Each of the next n lines contains two words — the team's name and the hometown's name for some club. Both team's name and hometown's name consist of uppercase English letters and have length at least 3 and at most 20.
+
+
+-----Output-----
+
+It it is not possible to choose short names and satisfy all constraints, print a single line "NO".
+
+Otherwise, in the first line print "YES". Then print n lines, in each line print the chosen short name for the corresponding club. Print the clubs in the same order as they appeared in input.
+
+If there are multiple answers, print any of them.
+
+
+-----Examples-----
+Input
+2
+DINAMO BYTECITY
+FOOTBALL MOSCOW
+
+Output
+YES
+DIN
+FOO
+
+Input
+2
+DINAMO BYTECITY
+DINAMO BITECITY
+
+Output
+NO
+
+Input
+3
+PLAYFOOTBALL MOSCOW
+PLAYVOLLEYBALL SPB
+GOGO TECHNOCUP
+
+Output
+YES
+PLM
+PLS
+GOG
+
+Input
+3
+ABC DEF
+ABC EFG
+ABD OOO
+
+Output
+YES
+ABD
+ABE
+ABO
+
+
+
+-----Note-----
+
+In the first sample Innokenty can choose first option for both clubs.
+
+In the second example it is not possible to choose short names, because it is not possible that one club has first option, and the other has second option if the first options are equal for both clubs.
+
+In the third example Innokenty can choose the second options for the first two clubs, and the first option for the third club.
+
+In the fourth example note that it is possible that the chosen short name for some club x is the same as the first option of another club y if the first options of x and y are different.

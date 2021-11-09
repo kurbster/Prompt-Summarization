@@ -1,0 +1,48 @@
+Kevin Sun wants to move his precious collection of n cowbells from Naperthrill to Exeter, where there is actually grass instead of corn. Before moving, he must pack his cowbells into k boxes of a fixed size. In order to keep his collection safe during transportation, he won't place more than two cowbells into a single box. Since Kevin wishes to minimize expenses, he is curious about the smallest size box he can use to pack his entire collection. 
+
+Kevin is a meticulous cowbell collector and knows that the size of his i-th (1 ≤ i ≤ n) cowbell is an integer s_{i}. In fact, he keeps his cowbells sorted by size, so s_{i} - 1 ≤ s_{i} for any i > 1. Also an expert packer, Kevin can fit one or two cowbells into a box of size s if and only if the sum of their sizes does not exceed s. Given this information, help Kevin determine the smallest s for which it is possible to put all of his cowbells into k boxes of size s.
+
+
+-----Input-----
+
+The first line of the input contains two space-separated integers n and k (1 ≤ n ≤ 2·k ≤ 100 000), denoting the number of cowbells and the number of boxes, respectively.
+
+The next line contains n space-separated integers s_1, s_2, ..., s_{n} (1 ≤ s_1 ≤ s_2 ≤ ... ≤ s_{n} ≤ 1 000 000), the sizes of Kevin's cowbells. It is guaranteed that the sizes s_{i} are given in non-decreasing order.
+
+
+-----Output-----
+
+Print a single integer, the smallest s for which it is possible for Kevin to put all of his cowbells into k boxes of size s.
+
+
+-----Examples-----
+Input
+2 1
+2 5
+
+Output
+7
+
+Input
+4 3
+2 3 5 9
+
+Output
+9
+
+Input
+3 2
+3 5 7
+
+Output
+8
+
+
+
+-----Note-----
+
+In the first sample, Kevin must pack his two cowbells into the same box. 
+
+In the second sample, Kevin can pack together the following sets of cowbells: {2, 3}, {5} and {9}.
+
+In the third sample, the optimal solution is {3, 5} and {7}.

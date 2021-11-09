@@ -1,0 +1,45 @@
+Every superhero has been given a power value by the Felicity Committee. The avengers crew wants to maximize the average power of the superheroes in their team by performing certain operations.
+
+Initially, there are $n$ superheroes in avengers team having powers $a_1, a_2, \ldots, a_n$, respectively. In one operation, they can remove one superhero from their team (if there are at least two) or they can increase the power of a superhero by $1$. They can do at most $m$ operations. Also, on a particular superhero at most $k$ operations can be done.
+
+Can you help the avengers team to maximize the average power of their crew?
+
+
+-----Input-----
+
+The first line contains three integers $n$, $k$ and $m$ ($1 \le n \le 10^{5}$, $1 \le k \le 10^{5}$, $1 \le m \le 10^{7}$) — the number of superheroes, the maximum number of times you can increase power of a particular superhero, and the total maximum number of operations.
+
+The second line contains $n$ integers $a_1, a_2, \ldots, a_n$ ($1 \le a_i \le 10^{6}$) — the initial powers of the superheroes in the cast of avengers.
+
+
+-----Output-----
+
+Output a single number — the maximum final average power.
+
+Your answer is considered correct if its absolute or relative error does not exceed $10^{-6}$.
+
+Formally, let your answer be $a$, and the jury's answer be $b$. Your answer is accepted if and only if $\frac{|a - b|}{\max{(1, |b|)}} \le 10^{-6}$.
+
+
+-----Examples-----
+Input
+2 4 6
+4 7
+
+Output
+11.00000000000000000000
+
+Input
+4 2 6
+1 3 2 3
+
+Output
+5.00000000000000000000
+
+
+
+-----Note-----
+
+In the first example, the maximum average is obtained by deleting the first element and increasing the second element four times.
+
+In the second sample, one of the ways to achieve maximum average is to delete the first and the third element and increase the second and the fourth elements by $2$ each.

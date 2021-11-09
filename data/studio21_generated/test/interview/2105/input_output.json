@@ -1,0 +1,20 @@
+{
+  "inputs": [
+    "10 12\nsin im gye gap eul byeong jeong mu gi gyeong\nyu sul hae ja chuk in myo jin sa o mi sin\n14\n1\n2\n3\n4\n10\n11\n12\n13\n73\n2016\n2017\n2018\n2019\n2020\n",
+    "1 1\na\na\n1\n1\n",
+    "10 12\nsin im gye gap eul byeong jeong mu gi gyeong\nyu sul hae ja chuk in myo jin sa o mi sin\n1\n2016\n",
+    "5 2\na b c d e\nhola mundo\n1\n5\n",
+    "4 4\na b c b\na b c b\n1\n3\n",
+    "12 10\nyu sul hae ja chuk in myo jin sa o mi sin\nsin im gye gap eul byeong jeong mu gi gyeong\n14\n1\n2\n3\n4\n10\n11\n12\n13\n73\n2016\n2017\n2018\n2019\n2020\n",
+    "2 6\na a\nb b c d e f\n1\n3\n"
+  ],
+  "outputs": [
+    "sinyu\nimsul\ngyehae\ngapja\ngyeongo\nsinmi\nimsin\ngyeyu\ngyeyu\nbyeongsin\njeongyu\nmusul\ngihae\ngyeongja\n",
+    "aa\n",
+    "byeongsin\n",
+    "ehola\n",
+    "cc\n",
+    "yusin\nsulim\nhaegye\njagap\nogyeong\nmisin\nsinim\nyugye\nyugye\nsinbyeong\nyujeong\nsulmu\nhaegi\njagyeong\n",
+    "ac\n"
+  ]
+}

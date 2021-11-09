@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "3\naAbB\n",
+    "4\naBaCaB\n",
+    "5\nxYyXzZaZ\n",
+    "26\naAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyY\n",
+    "26\nzAyBxCwDvEuFtGsHrIqJpKoLnMmNlOkPjQiRhSgTfUeVdWcXbY\n",
+    "5\naArRaRaR\n",
+    "2\ndA\n",
+    "2\ncB\n",
+    "10\nhNcMeXsSlHsUwYeMcA\n",
+    "100\nqDpInBmCrFwXpDbFgOzVvOcEmJrUcToAdEwEgTvBvBfWwRpGyEaXgDdRwVlQnYgWmWhMrHaIzPyXvGaFlRsVzHhZrOuVpXrKxFzAmWwPlFtNfPtJxVmLuHjKfYyArHrEnSwSzOvDpQhCgCqLlAcNpGhXrEeFuCmAqIkXyYtSsQwIxJzNiIuTgEbVuWrMwPrAlLyKaZ\n",
+    "2\ndD\n",
+    "2\ndE\n",
+    "3\ndDdD\n",
+    "3\ndEdD\n",
+    "3\ndEeD\n",
+    "3\ndEeF\n"
+  ],
+  "outputs": [
+    "0\n",
+    "3\n",
+    "2\n",
+    "0\n",
+    "13\n",
+    "2\n",
+    "1\n",
+    "1\n",
+    "7\n",
+    "42\n",
+    "0\n",
+    "1\n",
+    "0\n",
+    "1\n",
+    "1\n",
+    "2\n"
+  ]
+}

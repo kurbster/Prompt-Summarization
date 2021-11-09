@@ -1,0 +1,43 @@
+A group of n schoolboys decided to ride bikes. As nobody of them has a bike, the boys need to rent them.
+
+The renting site offered them m bikes. The renting price is different for different bikes, renting the j-th bike costs p_{j} rubles.
+
+In total, the boys' shared budget is a rubles. Besides, each of them has his own personal money, the i-th boy has b_{i} personal rubles. The shared budget can be spent on any schoolchildren arbitrarily, but each boy's personal money can be spent on renting only this boy's bike.
+
+Each boy can rent at most one bike, one cannot give his bike to somebody else.
+
+What maximum number of schoolboys will be able to ride bikes? What minimum sum of personal money will they have to spend in total to let as many schoolchildren ride bikes as possible?
+
+
+-----Input-----
+
+The first line of the input contains three integers n, m and a (1 ≤ n, m ≤ 10^5; 0 ≤ a ≤ 10^9). The second line contains the sequence of integers b_1, b_2, ..., b_{n} (1 ≤ b_{i} ≤ 10^4), where b_{i} is the amount of the i-th boy's personal money. The third line contains the sequence of integers p_1, p_2, ..., p_{m} (1 ≤ p_{j} ≤ 10^9), where p_{j} is the price for renting the j-th bike.
+
+
+-----Output-----
+
+Print two integers r and s, where r is the maximum number of schoolboys that can rent a bike and s is the minimum total personal money needed to rent r bikes. If the schoolchildren cannot rent any bikes, then r = s = 0.
+
+
+-----Examples-----
+Input
+2 2 10
+5 5
+7 6
+
+Output
+2 3
+
+Input
+4 5 2
+8 1 1 2
+6 3 7 5 2
+
+Output
+3 8
+
+
+
+-----Note-----
+
+In the first sample both schoolchildren can rent a bike. For instance, they can split the shared budget in half (5 rubles each). In this case one of them will have to pay 1 ruble from the personal money and the other one will have to pay 2 rubles from the personal money. In total, they spend 3 rubles of their personal money. This way of distribution of money minimizes the amount of spent personal money.

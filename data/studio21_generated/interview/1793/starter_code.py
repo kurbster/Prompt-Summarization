@@ -1,0 +1,2 @@
+def encode(self, message):
+	

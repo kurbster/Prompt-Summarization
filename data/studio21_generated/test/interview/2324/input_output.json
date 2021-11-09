@@ -1,0 +1,14 @@
+{
+  "inputs": [
+    "abba\n",
+    "abacaba\n",
+    "qqqpvmgd\n",
+    "wyemcafatp\n"
+  ],
+  "outputs": [
+    "6 1 0 0 \n",
+    "12 4 1 0 0 0 0 \n",
+    "11 3 0 0 0 0 0 0 \n",
+    "11 1 0 0 0 0 0 0 0 0 \n"
+  ]
+}

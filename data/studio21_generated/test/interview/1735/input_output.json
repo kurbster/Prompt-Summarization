@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "abacaba\n",
+    "iiq\n",
+    "abba\n",
+    "a\n",
+    "abbbbbabba\n",
+    "pogfjssywv\n",
+    "aa\n",
+    "caabbc\n",
+    "caabbcd\n",
+    "cxxbbc\n",
+    "baaaab\n",
+    "axxxxbbaaa\n"
+  ],
+  "outputs": [
+    "No\n",
+    "Yes\n",
+    "No\n",
+    "No\n",
+    "No\n",
+    "Yes\n",
+    "Yes\n",
+    "Yes\n",
+    "Yes\n",
+    "Yes\n",
+    "Yes\n",
+    "Yes\n"
+  ]
+}

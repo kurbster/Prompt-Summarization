@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "vvvovvv\n",
+    "vvovooovovvovoovoovvvvovovvvov\n",
+    "v\n",
+    "vvovv\n",
+    "vo\n",
+    "vvoovv\n",
+    "vvovvovvovvovv\n",
+    "ovvo\n",
+    "vovvv\n",
+    "voovovvvoo\n",
+    "vovoovovvoovvvvvvovo\n",
+    "ovvvvovovvvvovoovovovovvvvvvvoovoovvovvoooooovo\n",
+    "o\n"
+  ],
+  "outputs": [
+    "4\n",
+    "100\n",
+    "0\n",
+    "1\n",
+    "0\n",
+    "2\n",
+    "20\n",
+    "0\n",
+    "0\n",
+    "0\n",
+    "10\n",
+    "463\n",
+    "0\n"
+  ]
+}

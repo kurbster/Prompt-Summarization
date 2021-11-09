@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "1 1\n.\n",
+    "2 2\n..\n..\n",
+    "3 3\n.-.\n---\n--.\n",
+    "4 4\n....\n....\n....\n....\n",
+    "3 1\n-\n.\n.\n",
+    "8 35\n......................-............\n...-..........-........-...........\n...........-.......................\n-..................................\n...................................\n...........-............-.........-\n.........-.........-.--............\n.........................-.........\n",
+    "11 11\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n",
+    "1 20\n-..-----...---.-....\n",
+    "1 1\n-\n",
+    "2 5\n.....\n.....\n",
+    "2 3\n...\n...\n",
+    "3 5\n.....\n.....\n.....\n",
+    "3 3\n...\n...\n...\n",
+    "4 3\n...\n...\n...\n...\n",
+    "4 2\n..\n..\n..\n..\n",
+    "5 1\n.\n.\n.\n.\n.\n"
+  ],
+  "outputs": [
+    "B\n",
+    "BW\nWB\n",
+    "B-B\n---\n--B\n",
+    "BWBW\nWBWB\nBWBW\nWBWB\n",
+    "-\nW\nB\n",
+    "BWBWBWBWBWBWBWBWBWBWBW-WBWBWBWBWBWB\nWBW-WBWBWBWBWB-BWBWBWBW-WBWBWBWBWBW\nBWBWBWBWBWB-BWBWBWBWBWBWBWBWBWBWBWB\n-BWBWBWBWBWBWBWBWBWBWBWBWBWBWBWBWBW\nBWBWBWBWBWBWBWBWBWBWBWBWBWBWBWBWBWB\nWBWBWBWBWBW-WBWBWBWBWBWB-BWBWBWBWB-\nBWBWBWBWB-BWBWBWBWB-B--WBWBWBWBWBWB\nWBWBWBWBWBWBWBWBWBWBWBWBW-WBWBWBWBW\n",
+    "-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n-----------\n",
+    "-WB-----BWB---B-BWBW\n",
+    "-\n",
+    "BWBWB\nWBWBW\n",
+    "BWB\nWBW\n",
+    "BWBWB\nWBWBW\nBWBWB\n",
+    "BWB\nWBW\nBWB\n",
+    "BWB\nWBW\nBWB\nWBW\n",
+    "BW\nWB\nBW\nWB\n",
+    "B\nW\nB\nW\nB\n"
+  ]
+}

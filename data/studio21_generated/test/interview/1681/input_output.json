@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "aaabbac\naabbccac\n",
+    "a\nz\n",
+    "r\nr\n",
+    "stnsdn\nndnndsn\n",
+    "yqfqfp\ntttwtqq\n",
+    "zzbbrrtrtzr\ntbbtrrrzr\n",
+    "ivvfisvsvii\npaihjinno\n",
+    "zbvwnlgkshqerxptyod\nz\n",
+    "xlktwjymocqrahnbesf\nfoo\n",
+    "bbzmzqazmbambnmzaabznmbabzqnaabmabmnnabbmnzaanzzezebzabqaabzqaemeqqammmbazmmz\naznnbbmeebmanbeemzmemqbaeebnqenqzzbanebmnzqqebqmmnmqqzmmeqqqaaezemmazqqmqaqnnqqzbzeeazammmenbbamzbmnaenemenaaaebnmanebqmqnznqbenmqqnnnaeaebqmamennmqqeaaqqbammnzqmnmqnqbbezmemznqmanzmmqzzzzembqnzqbanamezqaqbazenenqqznqaebzaeezbqqbmeeaqnmmbnqbbnmaqqemaeaezaabmbnbzzaae\n",
+    "lccfdfnfflncddlksndcwnfcllnnaswcdnldafcalssfcdnkkaklwnnacsncfwanwnwfadawcsdcfwflnnlfsfclkfknlaldna\nuaaldlllhedgugugueahddhedbuddaedhaaeugdubaealbgbagedldbl\n",
+    "hvewdvwdwudrwarwmddwnazmwauzatrmwptwwevavpmwrtruwnpwantewrnwmepdwvtmnveanunrvrtwpvhhnuhnmpptdttzmmndtvudmzhhannmmnahdpzamuvhzaavnhtnumwrwvttdetvuewaaennddwuvzvaptdzrzhtetwwzmzedrwuvrwznprhdvnavrruvvhzuwpdtmpwmzrwvermrhdamv\nuvzhwtpuputnahwwarduzddhpnwwvettprwavdmnztdnrddmarmvuevtdezndnezvarhmppwwnmvnrtddzhhnzrwuhvpwmezuurundarwdazwptrpeurrnwautddnhdmhtwhwvvtavdzezumetzezpazndhuentmrhamutrtttpevtuutemdnvwnwnmnvmznatneweuaahdavmaddhnrdenwwztrwh\n",
+    "aaccddff\nabcdf\n"
+  ],
+  "outputs": [
+    "6\n",
+    "-1",
+    "1\n",
+    "4\n",
+    "-1",
+    "9\n",
+    "-1",
+    "1\n",
+    "2\n",
+    "77\n",
+    "-1",
+    "199\n",
+    "-1"
+  ]
+}

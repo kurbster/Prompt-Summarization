@@ -1,0 +1,45 @@
+There are n cities in the country where the Old Peykan lives. These cities are located on a straight line, we'll denote them from left to right as c_1, c_2, ..., c_{n}. The Old Peykan wants to travel from city c_1 to c_{n} using roads. There are (n - 1) one way roads, the i-th road goes from city c_{i} to city c_{i} + 1 and is d_{i} kilometers long.
+
+The Old Peykan travels 1 kilometer in 1 hour and consumes 1 liter of fuel during this time.
+
+Each city c_{i} (except for the last city c_{n}) has a supply of s_{i} liters of fuel which immediately transfers to the Old Peykan if it passes the city or stays in it. This supply refreshes instantly k hours after it transfers. The Old Peykan can stay in a city for a while and fill its fuel tank many times. 
+
+Initially (at time zero) the Old Peykan is at city c_1 and s_1 liters of fuel is transferred to it's empty tank from c_1's supply. The Old Peykan's fuel tank capacity is unlimited. Old Peykan can not continue its travel if its tank is emptied strictly between two cities.
+
+Find the minimum time the Old Peykan needs to reach city c_{n}.
+
+
+-----Input-----
+
+The first line of the input contains two space-separated integers m and k (1 ≤ m, k ≤ 1000). The value m specifies the number of roads between cities which is equal to n - 1.
+
+The next line contains m space-separated integers d_1, d_2, ..., d_{m} (1 ≤ d_{i} ≤ 1000) and the following line contains m space-separated integers s_1, s_2, ..., s_{m} (1 ≤ s_{i} ≤ 1000).
+
+
+-----Output-----
+
+In the only line of the output print a single integer — the minimum time required for The Old Peykan to reach city c_{n} from city c_1.
+
+
+-----Examples-----
+Input
+4 6
+1 2 5 2
+2 3 3 4
+
+Output
+10
+
+Input
+2 3
+5 6
+5 5
+
+Output
+14
+
+
+
+-----Note-----
+
+In the second sample above, the Old Peykan stays in c_1 for 3 hours.

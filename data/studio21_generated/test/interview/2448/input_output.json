@@ -1,0 +1,12 @@
+{
+  "inputs": [
+    "2\n3\n1 1 1\nRPS\n3\n3 0 0\nRPS\n",
+    "7\n2\n1 1 0\nRR\n2\n2 0 0\nSS\n2\n2 0 0\nRR\n3\n1 2 0\nRRR\n3\n2 1 0\nRRR\n1\n1 0 0\nP\n1\n1 0 0\nS\n",
+    "1\n19\n2 8 9\nRRPPPPPPPPSSSSSSSSS\n"
+  ],
+  "outputs": [
+    "YES\nPSR\nNO\n",
+    "YES\nPR\nYES\nRR\nNO\nYES\nPPR\nNO\nNO\nYES\nR\n",
+    "YES\nPPSSSSSSSSRRPPPPPPS\n"
+  ]
+}

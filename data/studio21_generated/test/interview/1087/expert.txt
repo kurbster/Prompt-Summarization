@@ -1,0 +1,2 @@
+ 
+-----Input----- Input is given from Standard Input in the following format: N K A_1 A_2 ... A_N -----Output----- Print the maximum value of f. -----Sample Input----- 3 7 1 6 3 -----Sample Output----- 14 The maximum value is: f(4) = (4 XOR 1) + (4 XOR 6) + (4 XOR 3) = 5 + 2 + 7 = 14.

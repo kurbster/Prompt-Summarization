@@ -1,0 +1,52 @@
+There are times you recall a good old friend and everything you've come through together. Luckily there are social networks — they store all your message history making it easy to know what you argued over 10 years ago.
+
+More formal, your message history is a sequence of messages ordered by time sent numbered from 1 to n where n is the total number of messages in the chat.
+
+Each message might contain a link to an earlier message which it is a reply to. When opening a message x or getting a link to it, the dialogue is shown in such a way that k previous messages, message x and k next messages are visible (with respect to message x). In case there are less than k messages somewhere, they are yet all shown.
+
+Digging deep into your message history, you always read all visible messages and then go by the link in the current message x (if there is one) and continue reading in the same manner.
+
+Determine the number of messages you'll read if your start from message number t for all t from 1 to n. Calculate these numbers independently. If you start with message x, the initial configuration is x itself, k previous and k next messages. Messages read multiple times are considered as one.
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n ≤ 10^5, 0 ≤ k ≤ n) — the total amount of messages and the number of previous and next messages visible.
+
+The second line features a sequence of integers a_1, a_2, ..., a_{n} (0 ≤ a_{i} < i), where a_{i} denotes the i-th message link destination or zero, if there's no link from i. All messages are listed in chronological order. It's guaranteed that the link from message x goes to message with number strictly less than x.
+
+
+-----Output-----
+
+Print n integers with i-th denoting the number of distinct messages you can read starting from message i and traversing the links while possible.
+
+
+-----Examples-----
+Input
+6 0
+0 1 1 2 3 2
+
+Output
+1 2 2 3 3 3 
+
+Input
+10 1
+0 1 0 3 4 5 2 3 7 0
+
+Output
+2 3 3 4 5 6 6 6 8 2 
+
+Input
+2 2
+0 1
+
+Output
+2 2 
+
+
+
+-----Note-----
+
+Consider i = 6 in sample case one. You will read message 6, then 2, then 1 and then there will be no link to go.
+
+In the second sample case i = 6 gives you messages 5, 6, 7 since k = 1, then 4, 5, 6, then 2, 3, 4 and then the link sequence breaks. The number of distinct messages here is equal to 6.

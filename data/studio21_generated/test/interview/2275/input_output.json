@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "1\n4\nPPAP\n",
+    "3\n12\nAPPAPPPAPPPP\n3\nAAP\n3\nPPA\n",
+    "10\n1\nA\n1\nP\n2\nAP\n2\nPA\n8\nPPPPAPPP\n8\nPPPPPPPA\n8\nAPPPPPPP\n8\nPPPPPPAP\n8\nPPPPPAPP\n8\nPPPAPPPP\n",
+    "16\n4\nPPPP\n4\nAPPP\n4\nPAPP\n4\nAAPP\n4\nPPAP\n4\nAPAP\n4\nPAAP\n4\nAAAP\n4\nPPPA\n4\nAPPA\n4\nPAPA\n4\nAAPA\n4\nPPAA\n4\nAPAA\n4\nPAAA\n4\nAAAA\n",
+    "1\n100\nPAPPPAPAAPAAPAAPPAAAPPAPPAPAAAAPPAPPAPPPAAAAAAPPAAAPAAAAAPAPAPAAAAPPAPAAAAPPAPPPPPAAAAAAAPAAAAPAPPAP\n"
+  ],
+  "outputs": [
+    "1\n",
+    "4\n1\n0\n",
+    "0\n0\n1\n0\n3\n0\n7\n1\n2\n4\n",
+    "0\n3\n2\n2\n1\n1\n1\n1\n0\n2\n1\n1\n0\n1\n0\n0\n",
+    "5\n"
+  ]
+}

@@ -1,0 +1,56 @@
+You've got a robot, its task is destroying bombs on a square plane. Specifically, the square plane contains n bombs, the i-th bomb is at point with coordinates (x_{i}, y_{i}). We know that no two bombs are at the same point and that no bomb is at point with coordinates (0, 0). Initially, the robot is at point with coordinates (0, 0). Also, let's mark the robot's current position as (x, y). In order to destroy all the bombs, the robot can perform three types of operations:  Operation has format "1 k dir". To perform the operation robot have to move in direction dir k (k ≥ 1) times. There are only 4 directions the robot can move in: "R", "L", "U", "D". During one move the robot can move from the current point to one of following points: (x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1) (corresponding to directions). It is forbidden to move from point (x, y), if at least one point on the path (besides the destination point) contains a bomb.  Operation has format "2". To perform the operation robot have to pick a bomb at point (x, y) and put it in a special container. Thus, the robot can carry the bomb from any point to any other point. The operation cannot be performed if point (x, y) has no bomb. It is forbidden to pick a bomb if the robot already has a bomb in its container.  Operation has format "3". To perform the operation robot have to take a bomb out of the container and destroy it. You are allowed to perform this operation only if the robot is at point (0, 0). It is forbidden to perform the operation if the container has no bomb. 
+
+Help the robot and find the shortest possible sequence of operations he can perform to destroy all bombs on the coordinate plane.
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of bombs on the coordinate plane. Next n lines contain two integers each. The i-th line contains numbers (x_{i}, y_{i}) ( - 10^9 ≤ x_{i}, y_{i} ≤ 10^9) — the coordinates of the i-th bomb. It is guaranteed that no two bombs are located at the same point and no bomb is at point (0, 0). 
+
+
+-----Output-----
+
+In a single line print a single integer k — the minimum number of operations needed to destroy all bombs. On the next lines print the descriptions of these k operations. If there are multiple sequences, you can print any of them. It is guaranteed that there is the solution where k ≤ 10^6.
+
+
+-----Examples-----
+Input
+2
+1 1
+-1 -1
+
+Output
+12
+1 1 R
+1 1 U
+2
+1 1 L
+1 1 D
+3
+1 1 L
+1 1 D
+2
+1 1 R
+1 1 U
+3
+
+Input
+3
+5 0
+0 5
+1 0
+
+Output
+12
+1 1 R
+2
+1 1 L
+3
+1 5 R
+2
+1 5 L
+3
+1 5 U
+2
+1 5 D
+3

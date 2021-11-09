@@ -1,0 +1,34 @@
+You have been captured by an evil organization which seeks to exploit your algorithm skills to improve their weapons. The first task they forced you to work on was to program guided torpedoes. Naturally, your goal is to instead make the torpedoes miss every ship whenever possible. 
+
+A typical scenario where the torpedoes will be used is a 2D plane, where the torpedo is fired from $(0,0)$ towards $m$ ships in the positive $y$-direction. Every ship has the form of a line segment parallel to the $x$-axis, with integer coordinate endpoints. The torpedo is shaped like a single point, and every second it will travel from $(x,y)$ to either $(x-1,y+1)$, $(x,y+1)$, or $(x+1,y+1)$. In other words, it will always go one unit forward, but your program decides how much sideways it should go. If the torpedo hits one of the ships (including one of the endpoints of a ship) it will explode, destroying the ship. On the other hand, if the torpedo stays in one piece for $n$ seconds, its fuel will run out and it will harmlessly sink to the ocean floor.
+
+Write a program which, given the position of the $m$ ships, finds out whether it is possible to avoid them all, and if so, outputs instructions to do it.
+
+-----Input-----
+The first line of input contains two integers $n$ and $m$ ($2 \leq n \leq 500000$ and $0 \leq m \leq 200000$), the number of seconds until the torpedo runs out of fuel, and the number of ships.
+
+Then follow $m$ lines, each containing three integers $x_1, x_2, y$ ($-n \leq x_1 \leq x_2 \leq n$ and $1 \leq y < n$), indicating a ship with endpoints $(x_1, y)$ and $(x_2, y)$.
+
+You may assume that no pair of ships touch each other.
+
+-----Output-----
+If it is possible to dodge all the ships, output a string of length $n$ containing the characters $-$, $0$, and $+$. This string represents how the torpedo should turn in each of the $n$ time steps. For example, if the first character is $+$, then the torpedo will start by going from $(0,0)$ to $(1,1)$. If there are multiple solutions, output any one of them. If it is impossible to avoid all the ships, output “impossible”.
+
+-----Examples-----
+Sample Input 1:
+5 6
+-3 -2 3
+-2 -2 4
+2 3 3
+-1 1 2
+0 1 4
+2 5 1
+Sample Output 1:
+--+0-
+
+Sample Input 2:
+3 2
+1 2 1
+-2 0 2
+Sample Output 2:
+0+-

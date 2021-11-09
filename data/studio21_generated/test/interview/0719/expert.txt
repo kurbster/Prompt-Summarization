@@ -1,0 +1,2 @@
+ You are given an integer $k$. Your task is to find the $k$-th smallest perfect positive integer.
+-----Input----- A single line with a positive integer $k$ ($1 \leq k \leq 10\,000$). -----Output----- A single number, denoting the $k$-th smallest perfect integer. -----Examples----- Input 1 Output 19 Input 2 Output 28 -----Note----- The first perfect integer is $19$ and the second one is $28$.

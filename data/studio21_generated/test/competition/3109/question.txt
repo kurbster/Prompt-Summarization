@@ -1,0 +1,45 @@
+At art shows, it is very common to have booths where children can create their very own sand art. This art is typically made by taking a jar or bottle and filling it with layers of different colors of sand. Instead of a bottle, this year a new container is being used for decorating! The container is a glass box!
+
+The box has a 2D rectangular face and a thickness of exactly 1 unit. Inside the glass box, $n-1$ vertical dividers are placed to separate it into $n$ sections. In the example below, the box is divided into 4 sections using 3 dividers:
+
+Sometimes the children want certain amounts of each color to be in each section of their work of art. They specify a minimum and maximum for each combination of section and sand color. Your task is to help them find how balanced they can make the artwork. This is done by minimizing the difference between the sand heights in the section with the highest overall sand level and the section with the lowest overall sand level.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. Each input begins with a single line with 4 space-separated integers, $n\ m\ w\ h$, where:
+ - $n$ ($2 \le n \le 200$) is the number of sections
+ - $m$ ($1 \le m \le 200$) is the number of colors of sand
+ - $w,h$ ($1 \le w,h \le 5000$) are the width and height of the box (it always has a depth of 1)
+
+The next line will contain $m$ space-separated real numbers (with at most 3 decimal places) $v$ ($0<v\le w\cdot h$), which represent the volumes of each color of sand. It is not necessary to use all of the sand, but the minimums for each section must be satisfied.
+
+The next line will have $n-1$ space-separated real numbers with at most 3 decimal places) $x$ ($0< x < w$) which represent the distance from the left wall of each divider. The $x$s are guaranteed to be sorted in increasing order.
+
+The next $n$ lines will each have $m$ space-separated real numbers (with at most 3 decimal places) $min$ ($0 \le min \le w\cdot h$). The $j$th element of the $i$th row is the minimum amount of sand color $j$ to be put in section $i$.
+
+The next $n$ lines will each have $m$ space-separated real numbers (with at most 3 decimal places) $max$ ($0 \le max \le w\cdot h$). The $j$th element of the $i$th row is the maximum amount of sand color $j$ to be put in section $i$, and $min_{ij} \le max_{ij}$.
+
+-----Output-----
+Output a real number rounded to exactly 3 decimal places representing the minimum difference possible between the maximum and minimum heights of sand in the sections. A distribution of sand will always be possible that satisfies the constraints in the input.
+
+-----Examples-----
+Sample Input 1:
+2 2 5 5
+2.0 2.0
+4.0
+1.0 0.0
+0.0 1.0
+1.0 0.0
+0.0 2.0
+Sample Output 1:
+0.750
+
+Sample Input 2:
+2 2 5 5
+2.0 2.0
+4.0
+1.0 0.0
+0.0 1.0
+1.5 0.0
+0.0 2.0
+Sample Output 2:
+0.625

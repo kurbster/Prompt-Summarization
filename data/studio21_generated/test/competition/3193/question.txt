@@ -1,0 +1,28 @@
+A student called Slon is very mischievous in school. He is always bored in class and he is always making a mess. The teacher wanted to calm him down and “tame” him, so he has given him a difficult mathematical problem.
+
+The teacher gives Slon an arithmetic expression $A$, the integer $P$ and $M$. Slon has to answer the following question: “What is the minimal non-negative value of variable x in expression $A$ so that the remainder of dividing $A$ with $M$ is equal to $P$?”. The solution will always exist.
+
+Additionally, it will hold that, if we apply the laws of distribution on expression $A$, variable $x$ will not multiply variable $x$ (formally, the expression is a polynomial of the first degree in variable $x$).
+
+Examples of valid expressions: $5 + x \cdot (3 + 2)$, $x + 3 \cdot x + 4 \cdot (5 + 3 \cdot (2 + x - 2 \cdot x))$.
+
+Examples of invalid expressions: $5 \cdot (3 + x \cdot (3 + x))$, $x \cdot (x + x \cdot (1 + x))$.
+
+-----Input-----
+The first line of input contains the expression $A$ ($1 \leq \lvert A\rvert \leq 100000$). The second line of input contains two integers $P$ ($0 \leq P \leq M - 1$) and $M$ ($1 \leq M \leq 1000000$). The arithmetic expression $A$ will only consists of characters +, -, *, (, ), x and digits from 0 to 9. The brackets will always be paired, the operators +, - and * will always be applied to exactly two values (there will not be an expression $(-5)$ or $(4+-5)$) and all multiplications will be explicit (there will not be an expression $4(5)$ or $2(x)$).
+
+-----Output-----
+The first and only line of output must contain the minimal non-negative value of variable $x$.
+
+-----Examples-----
+Sample Input 1:
+5+3+x
+9 10
+Sample Output 1:
+1
+
+Sample Input 2:
+20+3+x
+0 5
+Sample Output 2:
+2

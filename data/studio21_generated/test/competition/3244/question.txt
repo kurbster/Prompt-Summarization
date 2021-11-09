@@ -1,0 +1,42 @@
+Instead of paying attention in class, Luka is killing time playing with numbers again. This time, he wrote $N$ non-negative integers so that they form a ring (circle). After that he formed a new ring by adding to each number its two neighbours.
+
+The teacher noticed this and took away the first piece of paper, with the original ring. This did not trouble Luka much because he knows he can use the other ring to reconstruct the original.
+
+Write a program that solves Luka’s problem.
+
+-----Input-----
+The first line contains the integer $N$ $(3 \le N \le 10000)$, the number of integers in the ring.
+
+Each of the following lines contains an integer less than $10^9$ (one billion). These numbers, in order, form the second ring.
+
+The input will be such that a solution, although not necesarily unique, will always exist.
+
+-----Output-----
+Output the original ring on $N$ lines. The numbers must be non-negative.
+
+Rotating the ring is not allowed. For example, the sum of the first three output numbers must be equal to the second number in the input ring.
+
+Note: the solution need not be unique.
+
+-----Examples-----
+Sample Input 1:
+3
+5
+5
+5
+Sample Output 1:
+2
+1
+2
+
+Sample Input 2:
+4
+20
+15
+17
+14
+Sample Output 2:
+5
+8
+2
+7

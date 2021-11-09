@@ -1,0 +1,48 @@
+Dima liked the present he got from Inna very much. He liked the present he got from Seryozha even more. 
+
+Dima felt so grateful to Inna about the present that he decided to buy her n hares. Inna was very happy. She lined up the hares in a row, numbered them from 1 to n from left to right and started feeding them with carrots. Inna was determined to feed each hare exactly once. But in what order should she feed them?
+
+Inna noticed that each hare radiates joy when she feeds it. And the joy of the specific hare depends on whether Inna fed its adjacent hares before feeding it. Inna knows how much joy a hare radiates if it eats when either both of his adjacent hares are hungry, or one of the adjacent hares is full (that is, has been fed), or both of the adjacent hares are full. Please note that hares number 1 and n don't have a left and a right-adjacent hare correspondingly, so they can never have two full adjacent hares.
+
+Help Inna maximize the total joy the hares radiate. :)
+
+
+-----Input-----
+
+The first line of the input contains integer n (1 ≤ n ≤ 3000) — the number of hares. Then three lines follow, each line has n integers. The first line contains integers a_1 a_2 ... a_{n}. The second line contains b_1, b_2, ..., b_{n}. The third line contains c_1, c_2, ..., c_{n}. The following limits are fulfilled: 0 ≤ a_{i}, b_{i}, c_{i} ≤ 10^5.
+
+Number a_{i} in the first line shows the joy that hare number i gets if his adjacent hares are both hungry. Number b_{i} in the second line shows the joy that hare number i radiates if he has exactly one full adjacent hare. Number с_{i} in the third line shows the joy that hare number i radiates if both his adjacent hares are full.
+
+
+-----Output-----
+
+In a single line, print the maximum possible total joy of the hares Inna can get by feeding them.
+
+
+-----Examples-----
+Input
+4
+1 2 3 4
+4 3 2 1
+0 1 1 0
+
+Output
+13
+
+Input
+7
+8 5 7 6 1 8 9
+2 7 9 5 4 3 1
+2 3 3 4 1 1 3
+
+Output
+44
+
+Input
+3
+1 1 1
+1 2 1
+1 1 1
+
+Output
+4

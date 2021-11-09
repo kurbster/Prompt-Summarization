@@ -1,0 +1,2 @@
+ You are given an integer $n$. For each integer $i$ from 1 to $k$, check if $n \operatorname{mod} i$ is distinct. 
+-----Input----- The only line contains two integers n, k (1 ≤ n, k ≤ 10^18). -----Output----- Print "Yes", if all the remainders are distinct, and "No" otherwise. You can print each letter in arbitrary case (lower or upper). -----Examples----- Input 4 4 Output No Input 5 3 Output Yes -----Note----- In the first sample remainders modulo 1 and 4 coincide.

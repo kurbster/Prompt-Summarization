@@ -1,0 +1,28 @@
+Weenesia is an archipelago of perfectly circular islands in the 2D plane. Many islands have palm trees growing in them, perfectly straight up, so we can represent a tree by a 2D point and a height.
+
+We want to build a courier system in the islands, i.e., we want to be able to move any object from any land point to any other land point. It is possible to move an object within an island without restrictions. It is also possible to climb to a palm tree and throw the object to a distance proportional to the height of the palm tree (or less), and possibly in a different island.
+
+Unfortunately, this may not be enough to reach our goal, so we might want to build a tunnel between two islands. The tunnel connects two points on two islands and may cross under both the sea and other islands. Each of the two entrances of a tunnel must be at least $1$ meter away from the sea to avoid flooding.
+
+Your task is to find the minimum length of a tunnel such that a courier system is possible.
+
+-----Input-----
+The first line contains three integers $n$, $m$, and $k$ ($1 \leq n \leq 5000$, $0 \leq m \leq 10000$, $1 \leq k \leq 1000$), the number of islands and palm trees respectively, and the ratio between object throwing range and palm height.
+
+Each of the next $n$ lines contains three integers $x$, $y$, and $r$ ($|x|,|y|\leq 10^6$, $100 \leq r \leq 10^6$), the center and radius of an island, in centimetres. Each of the next $m$ lines contains three integers $x$, $y$, $h$ ($|x|,|y|\leq 10^6$, $1 \leq h \leq 10^4$), the center and height of a palm tree, in centimetres.
+
+No two islands intersect. Each palm tree lies strictly inside an island. No two palm trees grow in the same spot.
+
+-----Output-----
+Output the minimum length of a tunnel in centimetres, $0$ if no tunnel is needed, or “impossible” if no such tunnel exists. Answers with an absolute or relative precision up to $10^{-6}$ will be accepted.
+
+-----Examples-----
+Sample Input:
+3 2 3
+0 0 400
+1000 0 400
+2000 0 400
+300 0 150
+1300 0 150
+Sample Output:
+1400

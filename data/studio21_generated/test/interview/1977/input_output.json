@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "4 2\nabcd\nbcde\nbcad\nbcde\n",
+    "5 3\nbwwwz\nhrhdh\nsepsp\nsqfaf\najbvw\n",
+    "7 6\nypnxnnp\npnxonpm\nnxanpou\nxnnpmud\nnhtdudu\nnpmuduh\npmutsnz\n",
+    "1 0\ng\n",
+    "1 1\ng\n",
+    "1 0\na\n",
+    "1 1\nz\n",
+    "4 16\ndfhs\nvgca\ndfgd\nvscd\n",
+    "1 0\nz\n"
+  ],
+  "outputs": [
+    "aaabcde\n",
+    "aaaepfafw\n",
+    "aaaaaaadudsnz\n",
+    "g\n",
+    "a\n",
+    "a\n",
+    "a\n",
+    "aaaaaaa\n",
+    "z\n"
+  ]
+}

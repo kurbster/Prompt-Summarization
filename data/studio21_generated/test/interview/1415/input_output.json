@@ -1,0 +1,42 @@
+{
+  "inputs": [
+    "3 4 2 2\nUURDRDRL\n",
+    "2 2 2 2\nULD\n",
+    "1 1 1 1\nURDLUURRDDLLURDL\n",
+    "15 17 8 9\nURRDLUULLDD\n",
+    "15 17 8 9\nURRDLUULLDDDRRUR\n",
+    "15 17 8 9\nURRDLUULLDDDRRURR\n",
+    "1 2 1 1\nR\n",
+    "2 1 1 1\nD\n",
+    "1 2 1 2\nLR\n",
+    "2 1 2 1\nUD\n",
+    "4 4 2 2\nDRUL\n",
+    "4 4 3 3\nLUDRUL\n",
+    "15 17 8 9\nURRDLU\n",
+    "15 17 8 9\nURRDLUULLDDR\n",
+    "15 17 8 9\nURRDLUULLDDRR\n",
+    "15 17 8 9\nURRDLUULLDDRRR\n",
+    "15 17 8 9\nURRDLUULLDDRRRR\n",
+    "15 17 8 9\nURRDLUULLDDRRRRU\n"
+  ],
+  "outputs": [
+    "1 1 0 1 1 1 1 0 6\n",
+    "1 1 1 1\n",
+    "1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\n",
+    "1 1 1 1 1 1 0 1 1 1 1 245\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 0 241\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 0 0 241\n",
+    "1 1\n",
+    "1 1\n",
+    "1 1 0\n",
+    "1 1 0\n",
+    "1 1 1 1 12\n",
+    "1 1 1 0 0 1 12\n",
+    "1 1 1 1 1 1 249\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 244\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 0 244\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 0 0 244\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 0 0 0 244\n",
+    "1 1 1 1 1 1 0 1 1 1 1 1 0 0 0 1 243\n"
+  ]
+}

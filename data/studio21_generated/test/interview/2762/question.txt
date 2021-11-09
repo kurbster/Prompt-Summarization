@@ -1,0 +1,27 @@
+In order to build a staircase to a famous pagoda on top of a mountain, the local authority has identified $N$ positions along the mountain slope $a_1, a_2, \ldots , a_ N$ where $a_ i$ is the height of the $i$-th position and $a_ i \leq a_{i+1}$ for all $0<i<N$.
+
+The cost to build a staircase from position $i$ to position $j$ is$\min _{v \in \mathbb {Z}}{\sum _{s=i}^{j}{|a_ s-v|^k}}$
+
+To speed up the process of building the staircase from position $1$ to position $N$, the local authority has decided to give the job to $G$ builders to build the staircase in parallel. The sequence of $N$ positions will be divided into $G$ segments of consecutive positions where every position belongs to exactly one segment and each segment is managed by exactly one builder.
+
+Given an integer $G$ ($1 \leq G \leq N$), your task is to identify a way to allocate jobs to $G$ builders to minimize their total building costs.
+
+-----Input-----
+ - The first line contains $3$ integers $N$, $G$, $k$ $(1 \leq N \leq 2000, \; 1 \leq G \leq N, \; 1 \leq k \leq 2)$.
+ - The second line contains $N$ integers $a_1, a_2, \ldots , a_ N$$(1 \leq a_ i \leq 10^6, \; a_ i \leq a_{i+1} \; \forall \; 0<i<N)$.
+
+-----Output-----
+Print the minimum building cost required.
+
+-----Examples-----
+Sample Input 1:
+5 1 1
+1 2 3 4 5
+Sample Output 1:
+6
+
+Sample Input 2:
+5 1 2
+1 2 3 4 5
+Sample Output 2:
+10

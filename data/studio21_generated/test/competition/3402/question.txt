@@ -1,0 +1,37 @@
+Kang the Penguin has forgotten some letters of his password, help him figure them out!
+
+Of course, Kang knows that something as important as a password should be easy to remember, but it also cannot be too short. Thus, he knows that he originally decided to generate his password in the following manner. First, he starts with some non-empty string $S$, consisting of lowercase letters only. Then, he chooses $26$ non-empty strings $T_ a, T_ b, \dots , T_ z$, each consisting of at least two lowercase English letters. He defines a function $f$, which converts each character $i$ to its corresponding string $T_ i$ and concatenates the results. For example, if $T_ a$ was “abc” and $T_ b$ was “cba”, applying $f$ to “aba” would result in the string “abccbaabc”.
+
+Now, he applies $f$ repeatedly to $S$, applying it $K$ times in total. The final result is his password $P = f^K (S)$.
+
+While he remembers most of his password, he has forgotten $M$ of the letters. The $i^\textrm {th}$ letter that he has forgotten is in position $m_ i$ in the string $P$. It is guaranteed that each $m_ i$ will be less than or equal to the final length of the password $|P|$. Help Kang to figure out what the forgotten letters are!
+
+-----Input-----
+The $1^\textrm {st}$ line of the input contains a single lowercase string $S$, where $1 \leq |S| \leq 1000000$.
+
+The $2^\textrm {nd}$ line of the input contains $13$ strings $T_ a, T_ b, \dots , T_ m$, separated by spaces, where $2 \leq |T_ a|, |T_ b|, \dots , |T_ m| \leq 50$.
+
+The $3^\textrm {rd}$ line of the input contains $13$ strings $T_ n, T_ o, \dots , T_ z$, separated by spaces, where $2 \leq |T_ n|, |T_ o|, \dots , |T_ z| \leq 50$.
+
+The strings $T_ a, T_ b, \dots , T_ z$ each contains only lowercase English characters (a–z).
+
+The $4^\textrm {th}$ line of the input contains a single integer $K$, where $1 \leq K \leq 10^{15}$.
+
+The $5^\textrm {th}$ line of the input contains a single integer $M$, where $1 \leq M \leq 1000$.
+
+The $6^\textrm {th}$ line of the input contains $M$ integers, the $i^\textrm {th}$ of which is the integer $m_ i$, where $1 \leq m_ i \leq \min (|f^K(S)|,10^{15})$.
+
+-----Output-----
+Output $M$ lines, each containing a single lowercase character. The $i^\textrm {th}$ line of the output should contain the letter in the $m_ i^\textrm {th}$ position of the password $P$.
+
+-----Examples-----
+Sample Input:
+abca
+bc cd da dd ee ff gg hh ii jj kk ll mm
+nn oo pp qq rr ss tt uu vv ww xx yy zz
+1
+2
+1 8
+Sample Output:
+b
+c

@@ -1,0 +1,24 @@
+{
+  "inputs": [
+    "abacaba\n2\n3 6 1\n1 4 2\n",
+    "u\n1\n1 1 1\n",
+    "p\n5\n1 1 5\n1 1 9\n1 1 10\n1 1 10\n1 1 4\n",
+    "ssssssssss\n5\n5 7 9\n3 9 3\n2 7 1\n7 7 10\n1 9 6\n",
+    "tcpyzttcpo\n10\n2 3 6\n2 4 1\n2 6 9\n7 10 5\n2 3 5\n4 5 6\n3 4 5\n7 9 4\n9 10 7\n1 10 8\n",
+    "yywlblbblw\n10\n4 7 2\n3 8 2\n4 10 6\n4 7 1\n3 9 6\n1 7 3\n3 7 3\n3 7 1\n1 8 7\n2 7 5\n",
+    "thisisahacktest\n1\n1 2 1\n",
+    "ozozumuhackleyan\n1\n1 4 1\n",
+    "lacongaithattuyet\n1\n1 1 1\n"
+  ],
+  "outputs": [
+    "baabcaa\n",
+    "u\n",
+    "p\n",
+    "ssssssssss\n",
+    "zctycopttp\n",
+    "bylwlwylbb\n",
+    "htisisahacktest\n",
+    "zozoumuhackleyan\n",
+    "lacongaithattuyet\n"
+  ]
+}

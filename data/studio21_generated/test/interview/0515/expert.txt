@@ -1,0 +1,2 @@
+ 
+-----Input----- The first and only line contains an integer k (1 ≤ k ≤ 10^6) — the desired number of loops. -----Output----- Output an integer — if no such n exists, output -1; otherwise output any such n. In the latter case, your output should be a positive decimal integer not exceeding 10^18. -----Examples----- Input 2 Output 462 Input 6 Output 8080

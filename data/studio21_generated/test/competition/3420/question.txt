@@ -1,0 +1,23 @@
+A couple of computer science students have decided to start a book circle, in which they will be able to share the passion of their lives, namely reading. Finally, the first season of reading is coming to its end, and the students in the book circle are going to present their fantastic books to the rest of the computer science students. However, there is a problem. To attract audience to the presentation, one of the book circle members (without mentioning any names) has promised the audience that a book circle member will sing in between each two presentations. The person who made this promise doesn’t know how to sing, so he or she must have been thinking that someone else in the group could do the singing. But in fact, no one in the group wants to sing. The book circle always sticks to its promises, which means there is some singing to do. However, they have also promised to present all of the books that they have read. Someone in the group has figured out that if they minimize the number of presentations – they will minimize the number of times they have to sing, since if a student has read several books, he or she can present a bunch of them in the same presentation. But how should this be carried out?
+
+Your task is to help the book circle calculate the minimum number of presentations needed such that all books that have been read will be presented. You will be given the number of boys in the group, and the number of girls in the group. You will also be given the book titles read by each student. Each book that was read was read by exactly one girl and one boy.
+
+Students always present books alone, and they can present only the books that they have read.
+
+-----Input-----
+The first line consists of two integers $1 \le B,G \le 1000$, the number of boys and girls respectively. Then follow $B$ lines, each starting with the name of the $i$:th boy. Then follows an integer $N_ i$, the number of books that the $i$:th boy has read. Then follow $N_ i$ book titles on the same line. Then follow $G$ lines, each starting with the name of the $i$:th girl. Then follows an integer $N_ i$, the number of books that the $i$-th girl has read. Then follow $N_ i$ book titles on the same line.
+
+The book titles and student names consist solely of alphanumeric characters, and they don’t have spaces in them. They both have between $1$ and $20$ characters. Also, no two students will share names.
+
+-----Output-----
+Output should start with a single number $P$, the minimum number of presentations needed.
+
+-----Examples-----
+Sample Input:
+2 2
+kenny 1 harrypotter1
+charlie 1 lordoftherings
+jenny 1 harrypotter1
+laura 1 lordoftherings
+Sample Output:
+2

@@ -1,0 +1,35 @@
+You have k pieces of laundry, each of which you want to wash, dry and fold. You are at a laundromat that has n_1 washing machines, n_2 drying machines and n_3 folding machines. Each machine can process only one piece of laundry at a time. You can't dry a piece of laundry before it is washed, and you can't fold it before it is dried. Moreover, after a piece of laundry is washed, it needs to be immediately moved into a drying machine, and after it is dried, it needs to be immediately moved into a folding machine.
+
+It takes t_1 minutes to wash one piece of laundry in a washing machine, t_2 minutes to dry it in a drying machine, and t_3 minutes to fold it in a folding machine. Find the smallest number of minutes that is enough to wash, dry and fold all the laundry you have.
+
+
+-----Input-----
+
+The only line of the input contains seven integers: k, n_1, n_2, n_3, t_1, t_2, t_3 (1 ≤ k ≤ 10^4; 1 ≤ n_1, n_2, n_3, t_1, t_2, t_3 ≤ 1000).
+
+
+-----Output-----
+
+Print one integer — smallest number of minutes to do all your laundry.
+
+
+-----Examples-----
+Input
+1 1 1 1 5 5 5
+
+Output
+15
+
+Input
+8 4 3 2 10 5 2
+
+Output
+32
+
+
+
+-----Note-----
+
+In the first example there's one instance of each machine, each taking 5 minutes to complete. You have only one piece of laundry, so it takes 15 minutes to process it.
+
+In the second example you start washing first two pieces at moment 0. If you start the third piece of laundry immediately, then by the time it is dried, there will be no folding machine available, so you have to wait, and start washing third piece at moment 2. Similarly, you can't start washing next piece until moment 5, since otherwise there will be no dryer available, when it is washed. Start time for each of the eight pieces of laundry is 0, 0, 2, 5, 10, 10, 12 and 15 minutes respectively. The last piece of laundry will be ready after 15 + 10 + 5 + 2 = 32 minutes.

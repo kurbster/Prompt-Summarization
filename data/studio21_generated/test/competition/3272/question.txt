@@ -1,0 +1,50 @@
+Hu the Tomb Raider has entered a new tomb! It is full of gargoyles, mirrors, and obstacles. There is a door, with treasure beyond. Hu must unlock the door guarding the treasure. On that door is written, in an ancient tongue, the secret to opening the door:Every face of every gargoyle shall see a face of a gargoyle.
+
+This means that the gargoyles must be rotated in such a way that there is a path for a beam of light to connect each gargoyle’s face to another gargoyle’s face (possibly its own). The beam of light is reflected by mirrors.
+
+The floorplan of the tomb can be described as a rectangular $n \! \times \! m$ grid of cells:
+ - A dot (‘.’) represents an empty cell.
+ - A hash (‘#’) represents an obstacle.
+ - A slash (‘/’) represents a double-sided mirror, as does a Backslash (‘\’) .
+ - A character ‘V’ represents a gargoyle with two faces facing top and bottom.
+ - A character ‘H’ represents a gargoyle with two faces facing left and right.
+
+In addition to the ‘\’ and ‘/’ mirrors, the tomb is surrounded by walls of mirrors. The following common sense about light is assumed:
+ - Light travels in a straight line through empty cells.
+ - Two beams of light can intersect without interfering with each other.
+ - A ‘\’ mirror reflects light coming from the top/bottom/left/right to the right/left/bottom/top. A ‘/’ mirror reflects light coming from the top/bottom/left/right to the left/right/top/bottom.
+ - Light is reflected by $180$ degrees when it hits a wall (walls are all mirrors).
+ - Light is blocked by obstacles and gargoyles.
+
+Hu may rotate any gargoyle by $90$ degrees. As time is running short, he wants to know the minimum number of gargoyles that have to be rotated in order to unlock the treasure door.
+
+-----Input-----
+The first line of input contains two space-separated integers $n$ and $m$ ($1 \leq n, m \leq 500$), which are the dimensions of the tomb.
+
+Each of the next $n$ lines contains a string $s$ ($|s|=m$) with the characters described above. This is the floorplan of the tomb.
+
+-----Output-----
+Output a single integer, which is the minimum number of gargoyles that have to be rotated in order to unlock the treasure door. If the puzzle has no solution, output $-1$.
+
+-----Sample Explanation-----
+
+
+The above are illustrations of Sample Input/Output $1$ with the initial configuration on the left and the solution of the puzzle on the right. Three gargoyles are rotated to solve the puzzle.
+
+-----Examples-----
+Sample Input 1:
+5 5
+/.V.\
+./.V.
+..#..
+.V.#.
+\.V./
+Sample Output 1:
+3
+
+Sample Input 2:
+2 5
+V...\
+H...V
+Sample Output 2:
+-1

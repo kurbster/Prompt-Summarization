@@ -1,0 +1,31 @@
+Note that this is a bit harder version of the problem foodreview.
+
+Frida is a writer for Cosmopolitan who writes restaurant reviews. She enjoys it a lot, but it seems that, throughout the years, she has reviewed all the restaurants on Earth. It’s now time to move one level up; she is going to review the food served by the airlines, so that the readers can make better decisions on which flights to take.
+
+Her boss gave her a list of flight connections that she needs to review for the upcoming issue of Cosmopolitan. She knows that they serve the same food in both directions of every flight, so she only needs to take it once. She realized that she will need to take some additional flights, because she can not make all reviews using only flights in the list from her boss. Therefore she did some quick research and made a list of additional flights which she might take. She will not review the food on these flights; they will only be used so that she can make all the reviews.
+
+Frida’s goal is to make all the reviews while spending the least money on flight tickets. Her office is in Stockholm, so she starts and ends her journey there. Each flight is both ways between two cities and has a fixed price in both directions. You can assume that it is possible to make all the reviews using some of the additional flights.
+
+For the purposes of this problem we ignore the price Frida has to pay for accommodation and we also ignore the departure and arrival times of flights by assuming that every flight is very often and reasonably short. We only focus on the total price of the flights.
+
+-----Input-----
+The first line contains $2$ space separated integers $N, R, (2\leq N\leq 15, 0\leq R\leq 105)$, where $N$ is the number of airports mentioned in the input and $R$ is the number of flights to review. The airports are numbered $1, \dots , N$ and Stockholm has number $1$.
+
+The next $R$ lines describe the $R$ flights to review. Each line contains 3 space separated integers $a, b, c, (1\leq a, b\leq N, 1\leq c\leq 10000)$, where $a, b$ denote 2 distinct airports and $c$ is the cost of the flight in Swedish kronor in both directions. No pair of $2$ cities is listed twice.
+
+The next line contains an integer $F$, $(0\leq F\leq 250)$, the number of additional flights available. The next $F$ lines contain descriptions of flights in the same format as above. There may be more flights between a pair of cities. You may assume that it is possible to make all the reviews using some of these additional flights.
+
+-----Output-----
+Output one line with one integer – the lowest total cost of flight tickets, such that Frida can make all the reviews and return back to Stockholm.
+
+-----Examples-----
+Sample Input:
+5 3
+1 2 1000
+2 3 1000
+4 5 500
+2
+1 4 300
+3 5 300
+Sample Output:
+3100

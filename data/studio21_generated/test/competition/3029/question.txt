@@ -1,0 +1,58 @@
+You are given a rooted tree of $N$ vertices where each vertex $v_1$ through $v_ N$ is labeled with a non-negative integer $u_1$ through $u_ N$. The vertex $v_1$ is the root.
+
+Define a “jumping path” within the tree to be a sequence $a_1, a_2, \ldots , a_ k$ of length $k$ where $v_{a_ i}$ is an ancestor of $v_{a_ j}$ for all $1 \le i < j \le k$.
+
+Compute two quantities for the given tree:
+ - The length $L$ of the longest jumping path where the labels of the vertices are nondecreasing. That is, $u_{a_ i} \le u_{a_ j}$ for all $1 \le i < j \le L$.
+ - The number $M$ of jumping paths of length $L$ where the labels of the vertices are nondecreasing. Since this number may be large, give the remainder of $M$ when divided by the prime $11092019$.
+
+-----Input-----
+The first line of input contains an integer $N$ denoting the number of vertices in the tree ($1 \leq N \leq 10^6$).
+
+This is followed by $N$ lines of input indicating the labels $u_1$ through $u_ N$. Each label is an integer in the range $[0, 10^6]$.
+
+The remaining $N-1$ lines describe the tree structure. Skipping the root (which has no parent) and starting with $i=2$, line $i$ gives the parent $p_ i < i$ of vertex $v_ i$.
+
+-----Output-----
+Print a single line of output with two integers separated by a space. The first integer is $L$, and the second integer is $M$ modulo the prime $11092019$.
+
+-----Examples-----
+Sample Input 1:
+5
+3
+3
+3
+3
+3
+1
+2
+3
+4
+Sample Output 1:
+5 1
+
+Sample Input 2:
+5
+4
+3
+2
+1
+0
+1
+2
+3
+4
+Sample Output 2:
+1 5
+
+Sample Input 3:
+4
+1
+5
+3
+6
+1
+2
+3
+Sample Output 3:
+3 2

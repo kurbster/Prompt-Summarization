@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2 2\nkenny 1 harrypotter1\ncharlie 1 lordoftherings\njenny 1 harrypotter1\nlaura 1 lordoftherings\n",
+        "1 2\nkenny 2 harrypotter1 lordoftherings\nemma 1 lordoftherings\njenny 1 harrypotter1\n"
+    ],
+    "outputs": [
+        "2\n",
+        "1\n"
+    ]
+}

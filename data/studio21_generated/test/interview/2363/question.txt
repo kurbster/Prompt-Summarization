@@ -1,0 +1,24 @@
+You've got two numbers. As long as they are both larger than zero, they go through the same operation: subtract the lesser number from the larger one. If they equal substract one number from the another. For example, one operation transforms pair (4,17) to pair (4,13), it transforms (5,5) to (0,5).
+
+You've got some number of pairs (a_{i}, b_{i}). How many operations will be performed for each of them?
+
+
+-----Input-----
+
+The first line contains the number of pairs n (1  ≤  n  ≤  1000). Then follow n lines, each line contains a pair of positive integers a_{i}, b_{i} (1  ≤  a_{i},  b_{i}  ≤  10^9).
+
+
+-----Output-----
+
+Print the sought number of operations for each pair on a single line.
+
+
+-----Examples-----
+Input
+2
+4 17
+7 987654321
+
+Output
+8
+141093479

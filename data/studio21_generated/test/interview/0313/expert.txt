@@ -1,0 +1,13 @@
+ You are given n pairs. For each pair, you are given the following information: 
+1. The start time of the first pair. 
+2. The end time of the last pair. 
+3. The number of free pairs in the pair. 
+4. The number of free pairs in the pair, which Alena can return home. 
+5. The number of free pairs in the pair, which Alena can return home, but which Alena does not return home. 
+6. The number of free pairs in the pair, which Alena does not return home. 
+7. The number of free pairs in the pair, which Alena does not return home, but which Alena can return home. 
+8. The number of free pairs in the pair, which Alena does not return home, but which Alena cannot return home. 
+9. The number of free pairs in the pair, which Alena cannot return home. 
+10. The number of free pairs in the pair, which Alena cannot return home, but which Alena can return home. 
+11. The number of free pairs in the
+-----Input----- The first line of the input contains a positive integer n (1 ≤ n ≤ 100) — the number of lessons at the university.  The second line contains n numbers a_{i} (0 ≤ a_{i} ≤ 1). Number a_{i} equals 0, if Alena doesn't have the i-th pairs, otherwise it is equal to 1. Numbers a_1, a_2, ..., a_{n} are separated by spaces. -----Output----- Print a single number — the number of pairs during which Alena stays at the university. -----Examples----- Input 5 0 1 0 1 1 Output 4 Input 7 1 0 1 0 0 1 0 Output 4 Input 1 0 Output 0 -----Note----- In the first sample Alena stays at the university from the second to the fifth pair, inclusive, during the third pair she will be it the university waiting for the next pair.  In the last sample Alena doesn't have a single pair, so she spends all the time at home.

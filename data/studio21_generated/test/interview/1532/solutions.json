@@ -1,0 +1,1 @@
+["n = int(input())\nl = []\nfor i in range(n + 1):\n    l.append(0)\nfor i in range(2, n + 1):\n    for j in range(i * 2, n + 1, i):\n        l[j] = i\nl.sort()\nfor i in range(2, n + 1):\n    if l[i] == 0:\n        print(1, end=\" \")\n    else:\n        print(l[i], end=\" \")\n"]

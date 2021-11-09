@@ -1,0 +1,57 @@
+Sasha lives in a big happy family. At the Man's Day all the men of the family gather to celebrate it following their own traditions. There are n men in Sasha's family, so let's number them with integers from 1 to n.
+
+Each man has at most one father but may have arbitrary number of sons.
+
+Man number A is considered to be the ancestor of the man number B if at least one of the following conditions is satisfied:   A = B;  the man number A is the father of the man number B;  there is a man number C, such that the man number A is his ancestor and the man number C is the father of the man number B. 
+
+Of course, if the man number A is an ancestor of the man number B and A ≠ B, then the man number B is not an ancestor of the man number A.
+
+The tradition of the Sasha's family is to give gifts at the Man's Day. Because giving gifts in a normal way is boring, each year the following happens.  A list of candidates is prepared, containing some (possibly all) of the n men in some order.  Each of the n men decides to give a gift.  In order to choose a person to give a gift to, man A looks through the list and picks the first man B in the list, such that B is an ancestor of A and gives him a gift. Note that according to definition it may happen that a person gives a gift to himself.  If there is no ancestor of a person in the list, he becomes sad and leaves the celebration without giving a gift to anyone. 
+
+This year you have decided to help in organizing celebration and asked each of the n men, who do they want to give presents to (this person is chosen only among ancestors). Are you able to make a list of candidates, such that all the wishes will be satisfied if they give gifts according to the process described above?
+
+
+-----Input-----
+
+In the first line of the input two integers n and m (0 ≤ m < n ≤ 100 000) are given — the number of the men in the Sasha's family and the number of family relations in it respectively.
+
+The next m lines describe family relations: the (i + 1)^{th} line consists of pair of integers p_{i} and q_{i} (1 ≤ p_{i}, q_{i} ≤ n, p_{i} ≠ q_{i}) meaning that the man numbered p_{i} is the father of the man numbered q_{i}. It is guaranteed that every pair of numbers appears at most once, that among every pair of two different men at least one of them is not an ancestor of another and that every man has at most one father.
+
+The next line contains n integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ n), i^{th} of which means that the man numbered i wants to give a gift to the man numbered a_{i}. It is guaranteed that for every 1 ≤ i ≤ n the man numbered a_{i} is an ancestor of the man numbered i.
+
+
+-----Output-----
+
+Print an integer k (1 ≤ k ≤ n) — the number of the men in the list of candidates, in the first line.
+
+Print then k pairwise different positive integers not exceeding n — the numbers of the men in the list in an order satisfying every of the men's wishes, one per line.
+
+If there are more than one appropriate lists, print any of them. If there is no appropriate list print  - 1 in the only line.
+
+
+-----Examples-----
+Input
+3 2
+1 2
+2 3
+1 2 1
+
+Output
+-1
+Input
+4 2
+1 2
+3 4
+1 2 3 3
+
+Output
+3
+2
+1
+3
+
+
+
+-----Note-----
+
+The first sample explanation:   if there would be no 1 in the list then the first and the third man's wishes would not be satisfied (a_1 = a_3 = 1);  if there would be no 2 in the list then the second man wish would not be satisfied (a_2 = 2);  if 1 would stay before 2 in the answer then the second man would have to give his gift to the first man, but he wants to give it to himself (a_2 = 2).  if, at the other hand, the man numbered 2 would stay before the man numbered 1, then the third man would have to give his gift to the second man, but not to the first (a_3 = 1).

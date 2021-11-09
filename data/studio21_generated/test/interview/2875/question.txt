@@ -1,0 +1,24 @@
+As a huge fan of the popular collectible card game Numinous Wilds: the Elven Reign Chronicles (NWERC), you have a large collection of cards which you carefully organise by their rarity. One day you notice that someone has touched your collection, and that some of the cards are now out of order. The most natural suspect, of course, is your little brother Billy, who was absolutely $100\% $ forbidden from playing with your cards. After a few minutes of interrogation Billy confesses that he indeed took a few consecutive cards from the middle of the stack, but he swears that he put them back in exactly the same order as they were. You suspect that Billy, being so young, may have simply mistakenly reversed the order of the cards that he took. Now you want to check your theory and decide if you can find the batch of cards that Billy took to play with. 
+
+Is it possible to restore the order of the cards into non-decreasing order of their rarity by reversing just one contiguous batch of cards?
+
+-----Input-----
+The input consists of:
+ - One line containing an integer $n$ ($1 \le n \le 10^6$), the number of cards in your collection.
+ - One line containing $n$ integers $v_1, \ldots , v_ n$ ($1 \le v_{i} \le 10^9$ for all $i$), the current order of the cards’ rarity values.
+
+-----Output-----
+If the cards can be sorted by reversing exactly one contiguous subsequence of the list, then output the $1$-based start and end indices of such a subsequence. Otherwise, output “impossible”. If there are multiple valid solutions you may output any one of them.
+
+-----Examples-----
+Sample Input 1:
+7
+10 13 19 19 15 14 20
+Sample Output 1:
+3 6
+
+Sample Input 2:
+6
+9 1 8 2 7 3
+Sample Output 2:
+impossible

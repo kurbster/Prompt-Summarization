@@ -1,0 +1,39 @@
+A sportsman starts from point x_{start} = 0 and runs to point with coordinate x_{finish} = m (on a straight line). Also, the sportsman can jump — to jump, he should first take a run of length of not less than s meters (in this case for these s meters his path should have no obstacles), and after that he can jump over a length of not more than d meters. Running and jumping is permitted only in the direction from left to right. He can start andfinish a jump only at the points with integer coordinates in which there are no obstacles. To overcome some obstacle, it is necessary to land at a point which is strictly to the right of this obstacle.
+
+On the way of an athlete are n obstacles at coordinates x_1, x_2, ..., x_{n}. He cannot go over the obstacles, he can only jump over them. Your task is to determine whether the athlete will be able to get to the finish point.
+
+
+-----Input-----
+
+The first line of the input containsd four integers n, m, s and d (1 ≤ n ≤ 200 000, 2 ≤ m ≤ 10^9, 1 ≤ s, d ≤ 10^9) — the number of obstacles on the runner's way, the coordinate of the finishing point, the length of running before the jump and the maximum length of the jump, correspondingly.
+
+The second line contains a sequence of n integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ m - 1) — the coordinates of the obstacles. It is guaranteed that the starting and finishing point have no obstacles, also no point can have more than one obstacle, The coordinates of the obstacles are given in an arbitrary order.
+
+
+-----Output-----
+
+If the runner cannot reach the finishing point, print in the first line of the output "IMPOSSIBLE" (without the quotes).
+
+If the athlete can get from start to finish, print any way to do this in the following format:  print a line of form "RUN X>" (where "X" should be a positive integer), if the athlete should run for "X" more meters;  print a line of form "JUMP Y" (where "Y" should be a positive integer), if the sportsman starts a jump and should remain in air for "Y" more meters. 
+
+All commands "RUN" and "JUMP" should strictly alternate, starting with "RUN", besides, they should be printed chronologically. It is not allowed to jump over the finishing point but it is allowed to land there after a jump. The athlete should stop as soon as he reaches finish.
+
+
+-----Examples-----
+Input
+3 10 1 3
+3 4 7
+
+Output
+RUN 2
+JUMP 3
+RUN 1
+JUMP 2
+RUN 2
+
+Input
+2 9 2 3
+6 4
+
+Output
+IMPOSSIBLE
