@@ -9,19 +9,24 @@ make_dirs() {
 }
 
 find_difficulty() {
-    for fname in $(find $1 -mindepth 1 -type d); do
-        level=$(awk -F[:,\"] '{print $5}' "$fname/metadata.json")
+    for fname in $(find $1 -not -path train -type d); do
+        trimmed=$(tr '\n' ' ' < "$fname/metadata.json")
+        level=$(awk -F\" '{
+            if ($2 == "url") { print $8 }
+            else if ($2 == "difficulty") { print $4 }
+            else { print ERROR }
+        }' <<< $trimmed)
         mv $fname $level
     done
 }
 
 pushd "../apps_dataset/APPS" > /dev/null
 
-make_dirs && find_difficulty 'train'
+make_dirs && find_difficulty "train"
 
-pushd 'test' > /dev/null
+pushd "test" > /dev/null
 
-make_dirs && find_difficulty '.'
+make_dirs && find_difficulty "[0-9]*"
 
 popd > /dev/null
 

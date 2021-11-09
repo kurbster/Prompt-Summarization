@@ -252,4 +252,7 @@ def check_ascii(text: str) -> bool:
     return True
 
 if __name__ == '__main__':
-    generate_prompt()
+    prompt, extra, output_dir = generate_prompt()
+    print(prompt)
+    print(extra)
+    print(output_dir)
