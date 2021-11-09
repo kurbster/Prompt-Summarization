@@ -13,7 +13,7 @@ clean_problem() {
     }
 }
 
-for problem in $(find ../[ic]* -mindepth 1 -type d); do
+for problem in $(find ../data/[ic]* -mindepth 1 -type d); do
     for file in "${files[@]}"; do
         ! [[ -f $problem/clean-$file ]] \
             && echo "Problem $problem/$file needs to be cleaned." \

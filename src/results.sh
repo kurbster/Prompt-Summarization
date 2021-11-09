@@ -33,7 +33,7 @@ report_problem() {
         report_problem $problem
     done
 } || {
-    problem=$(find ../*/$1 -type d)
+    problem=$(find ../data/[ic]*/$1 -type d)
     [[ -z $problem ]] && echo "$1 is not a valid problem. It has not been summarized." || \
     report_problem $problem
 }
