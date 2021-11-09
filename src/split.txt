@@ -9,6 +9,7 @@ Notes:
 Hint
 # Notes
 Constraints:
+For example :
 \*\*Note on numerical stability:\*\*
 ~~~if:java
 NOTE:
