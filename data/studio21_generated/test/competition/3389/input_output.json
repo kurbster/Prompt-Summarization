@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 2\nabba\n",
+        "4 2\nrtrt\n"
+    ],
+    "outputs": [
+        "2\n",
+        "3\n"
+    ]
+}

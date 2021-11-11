@@ -1,0 +1,62 @@
+The government of Berland decided to improve network coverage in his country. Berland has a unique structure: the capital in the center and $n$ cities in a circle around the capital. The capital already has a good network coverage (so the government ignores it), but the $i$-th city contains $a_i$ households that require a connection.
+
+The government designed a plan to build $n$ network stations between all pairs of neighboring cities which will maintain connections only for these cities. In other words, the $i$-th network station will provide service only for the $i$-th and the $(i + 1)$-th city (the $n$-th station is connected to the $n$-th and the $1$-st city).
+
+All network stations have capacities: the $i$-th station can provide the connection to at most $b_i$ households.
+
+Now the government asks you to check can the designed stations meet the needs of all cities or not — that is, is it possible to assign each household a network station so that each network station $i$ provides the connection to at most $b_i$ households.
+
+
+-----Input-----
+
+The first line contains a single integer $t$ ($1 \le t \le 10^4$) — the number of test cases.
+
+The first line of each test case contains the single integer $n$ ($2 \le n \le 10^6$) — the number of cities and stations.
+
+The second line of each test case contains $n$ integers ($1 \le a_i \le 10^9$) — the number of households in the $i$-th city.
+
+The third line of each test case contains $n$ integers ($1 \le b_i \le 10^9$) — the capacities of the designed stations.
+
+It's guaranteed that the sum of $n$ over test cases doesn't exceed $10^6$.
+
+
+-----Output-----
+
+For each test case, print YES, if the designed stations can meet the needs of all cities, or NO otherwise (case insensitive).
+
+
+-----Example-----
+Input
+5
+3
+2 3 4
+3 3 3
+3
+3 3 3
+2 3 4
+4
+2 3 4 5
+3 7 2 2
+4
+4 5 2 3
+2 3 2 7
+2
+1 1
+10 10
+
+Output
+YES
+YES
+NO
+YES
+YES
+
+
+
+-----Note-----
+
+In the first test case:   the first network station can provide $2$ connections to the first city and $1$ connection to the second city;  the second station can provide $2$ connections to the second city and $1$ connection to the third city;  the third station can provide $3$ connections to the third city. 
+
+In the second test case:   the $1$-st station can provide $2$ connections to the $1$-st city;  the $2$-nd station can provide $3$ connections to the $2$-nd city;  the $3$-rd station can provide $3$ connections to the $3$-rd city and $1$ connection to the $1$-st station. 
+
+In the third test case, the fourth city needs $5$ connections, but the third and the fourth station has $4$ connections in total.

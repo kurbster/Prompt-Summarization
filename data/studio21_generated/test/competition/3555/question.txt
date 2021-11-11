@@ -1,0 +1,21 @@
+Your dog Spot is let loose in the park. Well, relatively loose – he is tied to a post with a leash, limiting his movements. Spread around the park are various squeaky toys and other dog paraphernalia, which Spot happily goes after when he sees them. When he gets to a toy he will chew at it for a while until it has become defunct, at which point he will go after the next toy, which looks much squeakier.
+
+This is all very well, but there are obstacles to Spot’s joyful canine play: trees. In the park there are several trees, and if Spot walks around a tree his leash gets wrapped around the tree, making his movements more limited. Being a dog, with pressing squeaky matters to attend to, Spot does not really have time to take things such as trees into account, and always goes directly in a straight line for his next toy. If he can’t get to his next toy because he has run out of leash, Spot will start barking uncontrollably (as no doubt any of us would) and you have to help him. How long would Spot’s leash have to be in order for him to run out of toys before he runs out of leash?
+
+For practical purposes, you may assume that (when seen from above) Spot, his toys, and the trees are points, and that the post that the leash is tied to will not hinder Spot’s movements in any way. After having finished chewing a toy, Spot always goes for the most shiny unchewed toy. The post to which Spot’s leash is tied is located at coordinates $(0,0)$, and this is also where Spot is initially located.
+
+-----Input-----
+The first line of input consists of two integers $n$ and $m$, where $1 \le n \le 50$ is the number of toys in the park and $0 \le m \le 50$ is the number of trees in the park. Then follow $n$ lines, each containing two integers $x$, $y$ giving the coordinates of a toy. The toys are listed in decreasing order of shininess. This is followed by $m$ lines, each containing two integers $x$, $y$, indicating that there is a tree at those coordinates.
+
+Each coordinate is bounded by 10000 in absolute value. The toys, the trees and the post are all in different positions, and Spot’s route will never take him within distance 0.001 of any tree.
+
+-----Output-----
+Write a single line containing the length needed for the leash in order for Spot to be able to get to all his toys, rounded to two decimal digits.
+
+-----Examples-----
+Sample Input:
+2 0
+10 0
+10 10
+Sample Output:
+14.14

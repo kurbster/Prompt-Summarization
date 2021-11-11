@@ -1,0 +1,28 @@
+{
+  "inputs": [
+    "3 3 4\nhate love like\n1 love like\n2 love hate\n1 hate like\nlove like\nlove hate\nlike hate\nhate like\n",
+    "8 6 5\nhi welcome hello ihateyou goaway dog cat rat\n1 hi welcome\n1 ihateyou goaway\n2 hello ihateyou\n2 hi goaway\n2 hi hello\n1 hi hello\ndog cat\ndog hi\nhi hello\nihateyou goaway\nwelcome ihateyou\n",
+    "5 4 5\nhello hi welcome ihateyou goaway\n1 hello hi\n1 hi welcome\n2 ihateyou hi\n2 goaway hi\nwelcome hello\nihateyou welcome\nwelcome goaway\ngoaway ihateyou\nwelcome hi\n",
+    "2 1 1\na b\n1 a b\na b\n",
+    "5 5 5\nhello hi welcome hallo ahlan\n1 hello hi\n1 hi welcome\n1 welcome hallo\n1 hallo ahlan\n2 ahlan hello\nhello hi\nahlan welcome\nhi welcome\nhi ahlan\nhallo hello\n",
+    "6 2 6\nhello hi welcome dog cat lion\n1 hello hi\n1 hi welcome\nhi dog\ndog cat\nhello hi\nhi hello\nwelcome cat\nlion cat\n",
+    "2 1 1\nhi hello\n1 hi hello\nhi hello\n",
+    "8 4 12\nhello hi welcome goaway hateyou mmmm momo mana\n1 hello hi\n1 hi welcome\n2 goaway welcome\n2 hateyou hi\nhateyou goaway\nhateyou hi\nhateyou hi\nhateyou welcome\nmmmm momo\nwelcome hi\nwelcome hateyou\nhateyou goaway\nhello goaway\nhello goaway\nhello hateyou\ngoaway mmmm\n",
+    "12 9 16\na b c d e f g h i j k l\n1 a b\n2 a c\n2 a d\n2 b e\n2 b f\n2 e g\n2 f h\n2 g i\n2 h j\ni j\ne i\nc d\ne f\nc f\nd e\nb c\nb c\nb f\nb f\nk a\nk b\nk l\nk l\nj e\nh g\n",
+    "10 5 10\na b c d e f g h i j\n1 f j\n2 a e\n2 b g\n2 f e\n2 j g\na b\nb c\na b\nb c\nh j\nh j\na f\ne g\nb e\na g\n",
+    "10 7 10\na b c d e f g h i j\n1 h j\n2 a e\n2 b g\n2 g c\n2 e d\n2 d f\n2 c f\na b\nb c\na b\nb c\nh j\nh j\na f\ne g\nb e\na g\n"
+  ],
+  "outputs": [
+    "YES\nYES\nNO\n1\n2\n2\n2\n",
+    "YES\nYES\nYES\nYES\nNO\nYES\n3\n3\n1\n1\n2\n",
+    "YES\nYES\nYES\nYES\n1\n2\n2\n1\n1\n",
+    "YES\n1\n",
+    "YES\nYES\nYES\nYES\nNO\n1\n1\n1\n1\n1\n",
+    "YES\nYES\n3\n3\n1\n1\n3\n3\n",
+    "YES\n1\n",
+    "YES\nYES\nYES\nYES\n1\n2\n2\n2\n3\n1\n2\n1\n2\n2\n2\n3\n",
+    "YES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\nYES\n1\n1\n1\n1\n1\n1\n2\n2\n2\n2\n3\n3\n3\n3\n1\n1\n",
+    "YES\nYES\nYES\nYES\nYES\n1\n3\n1\n3\n3\n3\n1\n1\n2\n2\n",
+    "YES\nYES\nYES\nYES\nYES\nYES\nYES\n1\n1\n1\n1\n1\n1\n2\n1\n2\n2\n"
+  ]
+}

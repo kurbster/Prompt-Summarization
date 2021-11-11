@@ -1,0 +1,35 @@
+As a Hunter, you will undoubtedly face difficult obstacles during your journey. At such time, a Hunter is expected to model the situation using Mathematical models, and apply probability and statistics knowledge to overcome the situation.
+
+Thus, the third round of the Hunter Exam is based on the following game with coins:
+ - Before the game starts, Gon selects a string $g$ and Killua selects a string $k$. The two strings must contain only characters ‘H’ and ‘T’.
+ - A game master will flip a coin an infinite number of times. After each flip, the result (either ‘H’ or ‘T’ — representing head or tail) is appended into a string $s$. The string $s$ is empty at the beginning of the game.
+ - After some coin flip:
+ - If both $g$ and $k$ become a substring of $s$, the game ends in a draw.
+ - If only $g$ becomes a substring of $s$, Gon wins, and the game ends.
+ - If only $k$ becomes a substring of $s$, Killua wins, and the game ends.
+ - Gon and Killua only have finite amount of time. They will stop the game in a draw after $10^{100}$ turns.
+
+Please calculate the probability that Gon wins.
+
+-----Input-----
+The input contains exactly three lines:
+ - The first line contains the string $g$.
+ - The second line contains the string $k$.
+ - The third line contains a real number $p$ with exactly one digit after the decimal point — the probability that a coin flip will result in head $(0 < p < 1)$.
+
+The length of $g$ and $k$ are at most $20$. $g$ and $k$ are non-empty, and contain only characters ‘H’ and ‘T’.
+
+-----Output-----
+The output must contain a single number — the probability that Gon wins.
+
+Your answer will be considered correct if its relative or absolute error doesn’t exceed $10^{-6}$.
+
+Namely: let’s assume that your answer is $a$, and the answer of the jury is $b$. The checker program will consider your answer correct, if $\frac{|a-b|}{max(1,b)} \leq 10^{-6}$.
+
+-----Examples-----
+Sample Input:
+H
+T
+0.5
+Sample Output:
+0.5

@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    "5\n4\nRLRL\n6\nLRRRRL\n8\nRLLRRRLL\n12\nLLLLRRLRRRLL\n5\nRRRRR\n",
+    "1\n27\nLLLLRRLRLRRRRLRLLLLLLLLLLLL\n",
+    "1\n31\nLLLLRRLRLRRRRLRLLLLLLRRRRLLLLLL\n",
+    "1\n27\nLLLLRRLRRLRLLLLLLRRRRLLLLLL\n",
+    "1\n28\nLLLLLLLLLLLLLLLRRRRLRRLLRLRL\n"
+  ],
+  "outputs": [
+    "0\n1\n1\n3\n2\n",
+    "6\n",
+    "7\n",
+    "6\n",
+    "6\n"
+  ]
+}

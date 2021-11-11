@@ -1,0 +1,38 @@
+We have N locked treasure boxes, numbered 1 to N.
+A shop sells M keys. The i-th key is sold for a_i yen (the currency of Japan), and it can unlock b_i of the boxes: Box c_{i1}, c_{i2}, ..., c_{i{b_i}}. Each key purchased can be used any number of times.
+Find the minimum cost required to unlock all the treasure boxes. If it is impossible to unlock all of them, print -1.
+
+-----Constraints-----
+ - All values in input are integers.
+ - 1 \leq N \leq 12
+ - 1 \leq M \leq 10^3
+ - 1 \leq a_i \leq 10^5
+ - 1 \leq b_i \leq N
+ - 1 \leq c_{i1} < c_{i2} < ... < c_{i{b_i}} \leq N
+
+-----Input-----
+Input is given from Standard Input in the following format:
+N M
+a_1 b_1
+c_{11} c_{12} ... c_{1{b_1}}
+:
+a_M b_M
+c_{M1} c_{M2} ... c_{M{b_M}}
+
+-----Output-----
+Print the minimum cost required to unlock all the treasure boxes.
+If it is impossible to unlock all of them, print -1.
+
+-----Sample Input-----
+2 3
+10 1
+1
+15 1
+2
+30 2
+1 2
+
+-----Sample Output-----
+25
+
+We can unlock all the boxes by purchasing the first and second keys, at the cost of 25 yen, which is the minimum cost required.

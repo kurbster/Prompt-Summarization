@@ -1,0 +1,23 @@
+Pokemon Go has become a recent trend. Zapray becomes immediately addicted to the game after it comes out. Zapray’s Pokemon journey begins with a bag of $100$ Pokeballs. Each time he encounters a Pokemon, he keeps throwing Pokeballs to the Pokemon until he either catches the Pokemon or runs out of Pokeballs. Each Pokeball Zapray throws succeeds in catching the Pokemon with a constant probability $P$. If Zapray finds that he has no Pokeballs when he tries to catch a Pokemon, he gives up on that Pokemon (not catching it) and heads to the Pokeshop to buy a new bag of $100$ Pokeballs for $5$ dollars. Zapray moves on to search for his next Pokemon after he refills the Pokeballs. In particular, if Zapray successfully catches a Pokemon with his last Pokeball, he does not refill his Pokeballs until he encounters the next Pokemon and realizes that he has run out of Pokeballs.
+
+Suppose Zapray encounters $N$ Pokemons in the next few days, what is the expected amount of money he would spend on Pokeballs?
+
+-----Input-----
+The input has an integer $N$ ($1\leq N\leq 10^9$) and a real number $P$ ($0 \leq P\leq 1$). $P$ is given with exactly three digits after the decimal point.
+
+-----Output-----
+Output the expected amount of money Zapray would spend on Pokeballs. Your answer is considered correct if it has an absolute or relative error of no more than $10^{-6}$ from the correct answer.
+
+-----Note-----
+Pokemon Go was developed by Niantic, Inc. Niantic does not endorse and has no involvement with the ProgNova contest.
+
+-----Examples-----
+Sample Input 1:
+50 0.125
+Sample Output 1:
+16.339203308
+
+Sample Input 2:
+201 1.000
+Sample Output 2:
+5.000000000

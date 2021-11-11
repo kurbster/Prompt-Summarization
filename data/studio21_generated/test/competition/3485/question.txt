@@ -1,0 +1,27 @@
+The Martingale casino is creating new games to lure in new gamblers who tire of the standard fare. Their latest invention is a fast-paced game of chance called Stop Counting!, where a single customer plays with a dealer who has a deck of cards. Each card has some integer value.
+
+One by one, the dealer reveals the cards in the deck in order, and keeps track of the sum of the played cards and the number of cards shown. At some point before a card is dealt, the player can call “Stop Counting!” After this, the dealer continues displaying cards in order, but does not include them in the running sums. At some point after calling “Stop Counting!”, and just before another card is dealt, the player can also call “Start Counting!” and the dealer then includes subsequent cards in the totals. The player can only call “Stop Counting!” and “Start Counting!” at most once each, and they must call “Stop Counting!” before they can call “Start Counting!”. A card is “counted” if it is dealt before the player calls “Stop Counting!” or is dealt after the player calls “Start Counting!”
+
+The payout of the game is then the average value of the counted cards. That is, it is the sum of the counted cards divided by the number of counted cards. If there are no counted cards, the payout is $0$.
+
+You have an ‘in’ with the dealer, and you know the full deck in order ahead of time. What is the maximum payout you can achieve?
+
+-----Input-----
+The first line of the input contains a single integer $1 \leq N \leq 1000000$, the number of cards in the deck.
+
+The second line of input contains $N$ space-separated integers, the values on the cards. The value of each card is in the range $[-10^{9}, 10^{9}]$. The cards are dealt in the same order they are given in the input.
+
+-----Output-----
+Output the largest attainable payout. The answer is considered correct if the absolute error is less than $10^{-6}$, or the relative error is less than $10^{-9}$.
+
+-----Sample Explanation-----
+In the first sample, by calling “Stop Counting!” before the $-10$ and “Start Counting!” before the final $10$, we can achieve an average of $10.0$ with the cards that are counted.
+
+In the second sample, all values are negative, so the best strategy is to call “Stop Counting!” before the first card is dealt and call “Start Counting!” after the last card is dealt. Since no cards were counted, the average of the counted cards is $0.0$.
+
+-----Examples-----
+Sample Input:
+5
+10 10 -10 -4 10
+Sample Output:
+10.000000000

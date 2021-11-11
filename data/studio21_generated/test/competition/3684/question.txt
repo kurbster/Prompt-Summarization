@@ -1,0 +1,26 @@
+You are developing software to stream music to users over the Interwebs. In order to reduce network traffic for your servers, you plan to do this in a peer-to-peer way: a user who has listened to a given song for a while longer than some other user will have parts of the song that the second user needs and can send them to her directly. 
+
+It is now time to develop the logic to decide which users should send which data to which other users. At a high level, the logic works as follows. Each second, the data available at the different users listening to a song is examined. Based on this, the system decides what data users should transmit, and to whom.
+
+To be specific, suppose there are $n$ users currently listening to the song. The $i$’th user’s playback is currently at the $p_ i$’th byte of the song, and has already received the first $b_ i \ge p_ i$ bytes of the song, and no other parts of the song. Furthermore, each user has a bandwidth $u_ i$ bounding how many bytes she can upload in total to other users during the one second interval. After one second, each user’s playback will be $C$ bytes further, i.e., the $i$’th user will be at byte $p_ i + C$. Each user now has the first $b_ i’$ bytes of the song, where $b_ i’$ depends exactly on what data was received from other users during the second. Thus, after the one second interval, the buffer that the $i$’th user has is $b_ i’ - (p_ i + C)$ bytes. During the one second interval, a user can only upload data that she had before the interval started (i.e., from the first $b_ i$ bytes of the song). A user can send data to any number of other users, but in order to send a piece of data to several users it needs to be sent to each user individually.
+
+In order to minimize the risk for jitter, the system should make sure that each user’s buffer is as large as possible. Specifically, the goal is to make sure that after the second has passed, the minimum buffer size $b_ i’-(p_ i+C)$ is as large as possible. Note that it may be the case that this value is negative, indicating that it is impossible to avoid that some user runs out of buffer during the one second interval.
+
+For simplicity, we’ll assume that this takes place on the Interwebs of an alternate reality where upload speeds are completely captured by the $u_ i$ parameters (e.g., they do not depend on where the data is being uploaded to), and there are no such things as packet losses, slow ping times, or anything else that might make the idealized situation described here unrealistic.
+
+-----Input-----
+The first line of input contains two integers $n$ ($1 \le n \le 50000$) and $C$ ($1 \le C \le 10^9$). Then follow $n$ lines. The $i$’th of these lines contains the three integers $p_ i$, $b_ i$, $u_ i$ with meanings as described above. You may assume that $0 \le p_ i \le b_ i \le 10^9$, and $0 \le u_ i \le 10^9$.Warning
+
+This problem has somewhat large amounts of input. We recommend you to make sure that your input is properly buffered in order to make the most of the few seconds of execution time that we give you.
+
+-----Output-----
+Output a single line containing an integer $B$, the maximum possible smallest buffer size after one second.
+
+-----Examples-----
+Sample Input:
+3 20
+50 70 10
+100 110 4
+150 190 16
+Sample Output:
+5

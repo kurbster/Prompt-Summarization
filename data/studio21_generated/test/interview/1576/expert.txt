@@ -1,0 +1,2 @@
+ You are given string $t$   the result of encryption of some string $s$. Your task is to decrypt it, i.e. find the string $s$. 
+-----Input----- The only line of the input contains $t$ — the result of encryption of some string $s$. It contains only lowercase Latin letters. The length of $t$ is between $1$ and $50$, inclusive. -----Output----- Print such string $s$ that after encryption it equals $t$. -----Examples----- Input ncteho Output techno Input erfdcoeocs Output codeforces Input z Output z

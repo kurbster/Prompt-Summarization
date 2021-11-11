@@ -1,0 +1,22 @@
+{
+  "inputs": [
+    "aba\nbaobababbah\n",
+    "mars\nsunvenusearthmarsjupitersaturnuranusneptune\n",
+    "rry\nsorrymercuryismissedabove\n",
+    "a\naaaaaaaaaaaaaa\n",
+    "abcaba\nabcabaabcabaabcabaabcaba\n",
+    "lol\nlol\n",
+    "aaaaaaaaaaaa\naaaaaa\n",
+    "a\na\n"
+  ],
+  "outputs": [
+    "2\n",
+    "0\n",
+    "3\n",
+    "13\n",
+    "13\n",
+    "0\n",
+    "0\n",
+    "0\n"
+  ]
+}

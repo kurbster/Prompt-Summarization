@@ -1,0 +1,63 @@
+Peter Parker wants to play a game with Dr. Octopus. The game is about cycles. Cycle is a sequence of vertices, such that first one is connected with the second, second is connected with third and so on, while the last one is connected with the first one again. Cycle may consist of a single isolated vertex.
+
+Initially there are k cycles, i-th of them consisting of exactly v_{i} vertices. Players play alternatively. Peter goes first. On each turn a player must choose a cycle with at least 2 vertices (for example, x vertices) among all available cycles and replace it by two cycles with p and x - p vertices where 1 ≤ p < x is chosen by the player. The player who cannot make a move loses the game (and his life!).
+
+Peter wants to test some configurations of initial cycle sets before he actually plays with Dr. Octopus. Initially he has an empty set. In the i-th test he adds a cycle with a_{i} vertices to the set (this is actually a multiset because it can contain two or more identical cycles). After each test, Peter wants to know that if the players begin the game with the current set of cycles, who wins? 
+
+Peter is pretty good at math, but now he asks you to help.
+
+
+-----Input-----
+
+The first line of the input contains a single integer n (1 ≤ n ≤ 100 000) — the number of tests Peter is about to make.
+
+The second line contains n space separated integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^9), i-th of them stands for the number of vertices in the cycle added before the i-th test.
+
+
+-----Output-----
+
+Print the result of all tests in order they are performed. Print 1 if the player who moves first wins or 2 otherwise.
+
+
+-----Examples-----
+Input
+3
+1 2 3
+
+Output
+2
+1
+1
+
+Input
+5
+1 1 5 1 1
+
+Output
+2
+2
+2
+2
+2
+
+
+
+-----Note-----
+
+In the first sample test:
+
+In Peter's first test, there's only one cycle with 1 vertex. First player cannot make a move and loses.
+
+In his second test, there's one cycle with 1 vertex and one with 2. No one can make a move on the cycle with 1 vertex. First player can replace the second cycle with two cycles of 1 vertex and second player can't make any move and loses.
+
+In his third test, cycles have 1, 2 and 3 vertices. Like last test, no one can make a move on the first cycle. First player can replace the third cycle with one cycle with size 1 and one with size 2. Now cycles have 1, 1, 2, 2 vertices. Second player's only move is to replace a cycle of size 2 with 2 cycles of size 1. And cycles are 1, 1, 1, 1, 2. First player replaces the last cycle with 2 cycles with size 1 and wins.
+
+In the second sample test:
+
+Having cycles of size 1 is like not having them (because no one can make a move on them). 
+
+In Peter's third test: There a cycle of size 5 (others don't matter). First player has two options: replace it with cycles of sizes 1 and 4 or 2 and 3.
+
+  If he replaces it with cycles of sizes 1 and 4: Only second cycle matters. Second player will replace it with 2 cycles of sizes 2. First player's only option to replace one of them with two cycles of size 1. Second player does the same thing with the other cycle. First player can't make any move and loses.  If he replaces it with cycles of sizes 2 and 3: Second player will replace the cycle of size 3 with two of sizes 1 and 2. Now only cycles with more than one vertex are two cycles of size 2. As shown in previous case, with 2 cycles of size 2 second player wins. 
+
+So, either way first player loses.

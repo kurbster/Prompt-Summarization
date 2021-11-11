@@ -1,0 +1,50 @@
+Devu being a small kid, likes to play a lot, but he only likes to play with arrays. While playing he came up with an interesting question which he could not solve, can you please solve it for him?
+
+Given an array consisting of distinct integers. Is it possible to partition the whole array into k disjoint non-empty parts such that p of the parts have even sum (each of them must have even sum) and remaining k - p have odd sum? (note that parts need not to be continuous).
+
+If it is possible to partition the array, also give any possible way of valid partitioning.
+
+
+-----Input-----
+
+The first line will contain three space separated integers n, k, p (1 ≤ k ≤ n ≤ 10^5; 0 ≤ p ≤ k). The next line will contain n space-separated distinct integers representing the content of array a: a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^9).
+
+
+-----Output-----
+
+In the first line print "YES" (without the quotes) if it is possible to partition the array in the required way. Otherwise print "NO" (without the quotes).
+
+If the required partition exists, print k lines after the first line. The i^{th} of them should contain the content of the i^{th} part. Print the content of the part in the line in the following way: firstly print the number of elements of the part, then print all the elements of the part in arbitrary order. There must be exactly p parts with even sum, each of the remaining k - p parts must have odd sum.
+
+As there can be multiple partitions, you are allowed to print any valid partition.
+
+
+-----Examples-----
+Input
+5 5 3
+2 6 10 5 9
+
+Output
+YES
+1 9
+1 5
+1 10
+1 6
+1 2
+
+Input
+5 5 3
+7 14 2 9 5
+
+Output
+NO
+
+Input
+5 3 1
+1 2 3 7 5
+
+Output
+YES
+3 5 1 3
+1 7
+1 2

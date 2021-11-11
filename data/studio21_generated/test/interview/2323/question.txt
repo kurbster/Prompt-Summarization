@@ -1,0 +1,62 @@
+Miyako came to the flea kingdom with a ukulele. She became good friends with local flea residents and played beautiful music for them every day.
+
+In return, the fleas made a bigger ukulele for her: it has $n$ strings, and each string has $(10^{18} + 1)$ frets numerated from $0$ to $10^{18}$. The fleas use the array $s_1, s_2, \ldots, s_n$ to describe the ukulele's tuning, that is, the pitch of the $j$-th fret on the $i$-th string is the integer $s_i + j$.
+
+Miyako is about to leave the kingdom, but the fleas hope that Miyako will answer some last questions for them.
+
+Each question is in the form of: "How many different pitches are there, if we consider frets between $l$ and $r$ (inclusive) on all strings?"
+
+Miyako is about to visit the cricket kingdom and has no time to answer all the questions. Please help her with this task!
+
+Formally, you are given a matrix with $n$ rows and $(10^{18}+1)$ columns, where the cell in the $i$-th row and $j$-th column ($0 \le j \le 10^{18}$) contains the integer $s_i + j$. You are to answer $q$ queries, in the $k$-th query you have to answer the number of distinct integers in the matrix from the $l_k$-th to the $r_k$-th columns, inclusive.
+
+
+-----Input-----
+
+The first line contains an integer $n$ ($1 \leq n \leq 100\,000$) — the number of strings.
+
+The second line contains $n$ integers $s_1, s_2, \ldots, s_n$ ($0 \leq s_i \leq 10^{18}$) — the tuning of the ukulele.
+
+The third line contains an integer $q$ ($1 \leq q \leq 100\,000$) — the number of questions.
+
+The $k$-th among the following $q$ lines contains two integers $l_k$，$r_k$ ($0 \leq l_k \leq r_k \leq 10^{18}$) — a question from the fleas.
+
+
+-----Output-----
+
+Output one number for each question, separated by spaces — the number of different pitches.
+
+
+-----Examples-----
+Input
+6
+3 1 4 1 5 9
+3
+7 7
+0 2
+8 17
+
+Output
+5 10 18
+
+Input
+2
+1 500000000000000000
+2
+1000000000000000000 1000000000000000000
+0 1000000000000000000
+
+Output
+2 1500000000000000000
+
+
+
+-----Note-----
+
+For the first example, the pitches on the $6$ strings are as follows.
+
+$$ \begin{matrix} \textbf{Fret} & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \ldots \\ s_1: & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & \dots \\ s_2: & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & \dots \\ s_3: & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & \dots \\ s_4: & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & \dots \\ s_5: & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & \dots \\ s_6: & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & \dots \end{matrix} $$
+
+There are $5$ different pitches on fret $7$ — $8, 10, 11, 12, 16$.
+
+There are $10$ different pitches on frets $0, 1, 2$ — $1, 2, 3, 4, 5, 6, 7, 9, 10, 11$.

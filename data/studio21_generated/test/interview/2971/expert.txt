@@ -1,0 +1,2 @@
+ Given a list of $N$ words, find the maximum possible value of $r(S, T)$ over all pairs of words. 
+-----Input----- The first line contains an integer $N$ with $2 \leq N \leq 10^5$, the number of words. The following $N$ lines each contain a string $S_ i$, where $1 \leq |S_ i| \leq 10^6$. The sum of all string lengths $|S_ i|$ is at most $10^6$. -----Output----- An integer, the maximal rhyme power. -----Examples----- Sample Input: 4 spaghetti already confetti serengeti Sample Output: 4

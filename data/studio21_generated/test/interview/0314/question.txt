@@ -1,0 +1,51 @@
+Bran and his older sister Arya are from the same house. Bran like candies so much, so Arya is going to give him some Candies.
+
+At first, Arya and Bran have 0 Candies. There are n days, at the i-th day, Arya finds a_{i} candies in a box, that is given by the Many-Faced God. Every day she can give Bran at most 8 of her candies. If she don't give him the candies at the same day, they are saved for her and she can give them to him later.
+
+Your task is to find the minimum number of days Arya needs to give Bran k candies before the end of the n-th day. Formally, you need to output the minimum day index to the end of which k candies will be given out (the days are indexed from 1 to n).
+
+Print -1 if she can't give him k candies during n given days.
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n ≤ 100, 1 ≤ k ≤ 10000).
+
+The second line contains n integers a_1, a_2, a_3, ..., a_{n} (1 ≤ a_{i} ≤ 100).
+
+
+-----Output-----
+
+If it is impossible for Arya to give Bran k candies within n days, print -1.
+
+Otherwise print a single integer — the minimum number of days Arya needs to give Bran k candies before the end of the n-th day.
+
+
+-----Examples-----
+Input
+2 3
+1 2
+
+Output
+2
+Input
+3 17
+10 10 10
+
+Output
+3
+Input
+1 9
+10
+
+Output
+-1
+
+
+-----Note-----
+
+In the first sample, Arya can give Bran 3 candies in 2 days.
+
+In the second sample, Arya can give Bran 17 candies in 3 days, because she can give him at most 8 candies per day.
+
+In the third sample, Arya can't give Bran 9 candies, because she can give him at most 8 candies per day and she must give him the candies within 1 day.

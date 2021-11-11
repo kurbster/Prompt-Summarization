@@ -1,0 +1,40 @@
+Librarian Jurica has $N$ shelves in his library, and each shelf can contain $M$ books. Jurica is a good librarian so he decided to make an inventory in the library and, if it’s necessary, return the books that aren’t in their place to their right place. He moves the books in the following way:
+ - moving the books one place to the left or to the right on a shelf if the place to the left or to the right is available,
+ - taking a book from a shelf and placing it to an available place on that or any other shelf.
+
+Careful Jurica can’t move books if he has a book in his hands. Additionally, he can’t take more than one book at once.
+
+Jurica has been having back pains ever since he had to move all the volumes of the printed edition of Wikipedia from the first to the second floor so now he wants to put all the books in place with as little lifting as possible because his back is hurting. What is the minimal number of lifting he needs?
+
+-----Input-----
+The first line of input contains the integers $N$ and $M$ ($1 \leq N \leq 1000$, $1 \leq M \leq 1000$).
+
+Each of the following $N$ lines contains $M$ integers, the $i$-th line describing the current state of the $i$-th shelf.
+
+Number $0$ denotes an empty place on the shelf, and a number different than $0$ denotes that there is a book in that place denoted with that number. All books are denoted with different numbers from $1$ to $K$, where $K$ is the total number of books on the shelves. After that, an additional $N$ lines follow, each containing $M$ integers, the $i$-th line describing the wanted state of the $i$-th shelf.
+
+In the initial and final state of the shelves, the same books will appear.
+
+-----Output-----
+The first and only line of output must contain the required minimal number of lifting or $-1$ if it is impossible to arrange the books in the aforementioned way.
+
+-----Examples-----
+Sample Input 1:
+2 4
+1 0 2 0
+3 5 4 0
+2 1 0 0
+3 0 4 5
+Sample Output 1:
+2
+
+Sample Input 2:
+3 3
+1 2 3
+4 5 6
+7 8 0
+4 2 3
+6 5 1
+0 7 8
+Sample Output 2:
+4

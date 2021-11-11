@@ -1,0 +1,2 @@
+ You are given an integer n and an integer m. You need to find an integer n such that among numbers n + 1, n + 2, ..., 2 n there are exactly m numbers which binary representation contains exactly k digits one. 
+-----Input----- The first line contains two space-separated integers, m and k (0 ≤ m ≤ 10^18; 1 ≤ k ≤ 64). -----Output----- Print the required number n (1 ≤ n ≤ 10^18). If there are multiple answers, print any of them. -----Examples----- Input 1 1 Output 1 Input 3 2 Output 5

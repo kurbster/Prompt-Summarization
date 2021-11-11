@@ -1,0 +1,31 @@
+The gear ratio designers ate BikeCo need your help! They have designed a new set of gear ratios $n_1/d_1, n_2/d_2, \cdots , n_{12}/d_{12}$ for a bicycle with front and rear derailleurs having two and six sprockets respectively. Your task is to figure out, if possible, the sprocket sizes needed to achieve the required gear ratios. 
+
+The sprockets of the front derailleur are connected to the pedals and drive the rear sprockets by chain. You recall from Sprocket Science $101$ that a cyclist uses derailleurs to select any combination of front and rear sprocket. The resulting gear ratio is $u/v$ where $u$ is the front sprocket sprocket size and $v$ is the rear sprocket size.
+
+You are constrained to exactly two sprockets on the front derailleur and six on the rear derailleur, leading to at most $12$ possible gear ratios. Note that the resulting gear ratios are not necessarily unique.
+
+-----Input-----
+Twelve lines with two integers $n_ i, d_ i$ ($1 \le n_ i, d_ i \le 100$) separated by forward slash, where $n_ i/d_ i$ is the $i$th gear ratio.
+
+-----Output-----
+If the specified gear ratios can be achieved, output the required sprocket sizes on two lines with space-separated integers. The first line has the two sprocket sizes for the front derailleur, and the second line gives the six sprocket sizes needed for the rear derailleur. Due to engineering limitations no sprocket size may exceed $10000$. If there are multiple such sets of sprocket sizes that generate the specified gear ratios, output any one of them.
+
+If no solution exists, print impossible.
+
+-----Examples-----
+Sample Input:
+19/13
+10/1
+19/14
+4/3
+20/7
+19/7
+20/13
+19/15
+10/7
+20/17
+19/2
+19/17
+Sample Output:
+19 20
+17 15 14 13 7 2

@@ -1,0 +1,25 @@
+Consider a string of $N$ letters, where $N$ is an even number. Rearrange the letters such that all $N/2+1$ substrings of length $N/2$ are different.
+
+-----Input-----
+A single line containing string $S$ of length $N$, where $2 \leq N \leq 10^5$ and $N$ is even. The string consists of lower-case letters from the English alphabet, “a” to “z”.
+
+-----Output-----
+If possible, print a string of length $N$ that is a rearrangement of the letters in $S$ such that all substrings of length $N/2$ are different. If this is impossible, print $-1$.
+
+If there is more than one solution, any one will do.
+
+-----Explanation of Sample Inputs-----
+In the first example, the substrings before rearrangement are “tral”, “rala”, “alal”, “lala”, and “alal”. Note that “alal” appears twice. After the rearrangement, all substrings are different.
+
+In the third example, all substrings are different already in the input, so it suffices to print the original string.
+
+-----Examples-----
+Sample Input 1:
+tralalal
+Sample Output 1:
+allatral
+
+Sample Input 2:
+zzzz
+Sample Output 2:
+-1

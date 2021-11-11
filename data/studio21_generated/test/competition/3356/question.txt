@@ -1,0 +1,33 @@
+Moles are tidy and hard-working animals. Our mole likes to keep its underground residence in utmost order, so that everyone living there knows where to find things.
+
+To achieve this, the mole connected rooms with tunnels so that there is a single unique way to get from one room to any other room. The distance between two rooms is the number of halls passed on the way from one to the other.
+
+Despite all the effort, some of the mole’s guests are complaining that it takes too long to walk between certain pairs of rooms.
+
+The mole decided to reconstruct her residence, closing one tunnel and opening a new one, so that the distance between the farthest two rooms is the smallest possible, but so that it is still possible to reach every room from every other room.
+
+Write a program which determines the distance between the farthest two rooms after reconstruction, which tunnel to close and which to open. It is allowed to reopen the same tunnel that is closed, if this results in the minimum farthest distance.
+
+-----Input-----
+The first line contains an integer $N$ ($2 \le N \le 300000$), the number of rooms. The rooms are numbered $1$ to $N$.
+
+Each of the next $N-1$ lines contains two integers, the numbers of rooms a tunnel connects.
+
+-----Output-----
+Output on separate lines, in order:
+ - The distance between the two farthest rooms after reconstruction.
+ - A pair of integers representing a previously existing tunnel, which should be closed.
+ - A pair of integers, the rooms between which a new tunnel should be opened.
+
+Note: The solution will not necessarily be unique. Output any reconstruction plan which achieves the smallest distance between the farthest two rooms.
+
+-----Examples-----
+Sample Input:
+4
+1 2
+2 3
+3 4
+Sample Output:
+2
+3 4
+4 2

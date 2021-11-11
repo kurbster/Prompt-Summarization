@@ -1,0 +1,32 @@
+An airline called Divided Airlines has recently made the news due to their tendency to overbook their flights rather aggressively. For some flights, they even resorted to dragging passengers out from the plane! This was of course not very popular, so they decided to “resolve” the issue by making the seating assignments very chaotic (airlines do like unnecessary complexity). 
+
+A particular flights has $n$ passengers. The seats are divided into $r$ rows each containing $c$ seats. Every passenger $i$ is assigned to some particular seat located at row $a_ i$ and column $b_ i$. However, some passengers may be assigned to the same seat.
+
+Of course, passengers are usually okay with sitting somewhere else than their assigned seat, but they may still want to be somewhat close to their original seat. Perhaps they want to be able to speak to their friends, or sit close to their overhead luggage. More specifically, passenger $i$ accepts sitting at most $s_ i$ rows away from the row on their ticket.
+
+Due to budget reasons, you decided to travel on a Divided flight. As expected, all the passengers assigned to an overbooked seat started to fight with each other, moving around in complex ways and causing a long delay. You proposed a fair resolution: you will construct a seat assignment which takes into account how far the passengers accepts to sit from their assigned seats so that as many passengers as possible get a seat. Now, all that remains is to actually find this assignment.
+
+-----Input-----
+The input consists of:
+ - one line with the integers $n$, $r$ and $c$ ($1 \le n, r, c \le 10^5$), the number of passengers, rows and columns in the flight.
+ - $n$ lines with the integers $a_ i, b_ i$ and $s_ i$ ($1 \le a_ i \le r$, $1 \le b_ i \le c$, $0 \le s_ i \le r$). The $i$’th line has the assigned row $a_ i$ and column $b_ i$, and maximum distance $s_ i$ of the $i$’th passenger. The maximum distance is given in rows.
+
+-----Output-----
+Output the maximum number of passengers that can be assigned a seat in an optimal assignment.
+
+-----Examples-----
+Sample Input 1:
+3 2 1
+1 1 0
+1 1 1
+2 1 0
+Sample Output 1:
+2
+
+Sample Input 2:
+3 3 1
+1 1 0
+1 1 1
+1 1 2
+Sample Output 2:
+3

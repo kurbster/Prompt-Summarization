@@ -1,0 +1,24 @@
+Luka is slacking again during chemistry class, while the teacher is explaining Avogadro’s law.
+
+Luka first drew a table consisting of $3$ rows and $N$ columns. Then he wrote the numbers $1$ to $N$ into the first row in arbitrary order, each number appearing exactly once. In the other two rows he also wrote integers between $1$ and $N$, but didn’t care how many times a number appeared.
+
+Luka can now delete any set of columns from the table. After doing so, he sorts the numbers in each row in ascending order.
+
+He wants to obtain a table in which all three rows are identical after sorting. Write a program that determines the smallest number of columns he must delete.
+
+For instance, in the first sample input below, Luka can delete the second, fourth, sixth and seventh columns. After deleting these and sorting each row, all three rows contain the numbers 1, 3 and 5.
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \le N \le 100000$), the number of columns in the table. The following three lines contain $N$ integers each, separated by single spaces. The numbers will be between $1$ and $N$, and there will be no duplicates in the first row.
+
+-----Output-----
+Output the smallest number of columns Luka must delete.
+
+-----Examples-----
+Sample Input:
+7
+5 4 3 2 1 6 7
+5 5 1 1 3 4 7
+3 7 1 4 5 6 2
+Sample Output:
+4

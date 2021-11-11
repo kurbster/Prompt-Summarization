@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "3\na\nbc\nabc\n3\n1 abca\n2 1\n2 3\n",
+        "7\nabba\nbbaa\nb\nbbaa\nabba\na\nba\n7\n1 aaabbabbaab\n2 7\n1 baabaaa\n1 aabbbab\n2 3\n1 aabba\n2 3\n"
+    ],
+    "outputs": [
+        "1\n1\n",
+        "1\n3\n4\n"
+    ]
+}

@@ -1,0 +1,31 @@
+In a fishing contest, the participants fish in a lake, represented as a 2D grid of dimension $r \times c$. Each integer point in the grid contains fish. 
+
+At point $(x, y)$, fish first appear at second $t_{x, y}$ and disappear just before time $t_{x, y} + k$ seconds. Outside of this time, no fish can be caught at this position. It takes no time to catch all the fish at a point, and all points contain the same amount of fish. Furthermore, moving to the point immediately north, west, south or east from the point you are currently at takes exactly $1$ second (though you are not required to move).
+
+Assume that you start at some position $(x_0, y_0)$ at second $1$, and can catch fish until (and including) second $l$. From how many points in the lake can you catch fish, if you travel optimally on the lake?
+
+-----Input-----
+The input consists of:
+ - one line with the integers $r$, $c$, $k$ and $l$ ($1 \le r, c \le 100$, $1 \le k \le 5$, $1 \le l \le 10^5$), the dimensions of the lake, the number of seconds fish stays at a point, and the number of seconds you can catch fish.
+ - one line with the integers $x_0$ and $y_0$ ($0 \le x_0 < r$, $0 \le y_0 < c$), your original position.
+ - $r$ lines, the $x$’th of which contains $c$ integers $t_{x, 0}, \dots , t_{x, c - 1}$ (each between $1$ and $l$, inclusive), the times at which fish appears on points in the $x$’th row.
+
+-----Output-----
+Output the maximum number of points you could catch fish from.
+
+-----Examples-----
+Sample Input 1:
+2 2 1 10
+0 0
+1 4
+3 2
+Sample Output 1:
+2
+
+Sample Input 2:
+2 3 5 6
+1 1
+1 1 6
+1 2 2
+Sample Output 2:
+5

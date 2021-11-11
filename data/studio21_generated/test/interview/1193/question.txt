@@ -1,0 +1,37 @@
+The R1 company wants to hold a web search championship. There were n computers given for the competition, each of them is connected to the Internet. The organizers believe that the data transfer speed directly affects the result. The higher the speed of the Internet is, the faster the participant will find the necessary information. Therefore, before the competition started, each computer had its maximum possible data transfer speed measured. On the i-th computer it was a_{i} kilobits per second.
+
+There will be k participants competing in the championship, each should get a separate computer. The organizing company does not want any of the participants to have an advantage over the others, so they want to provide the same data transfer speed to each participant's computer. Also, the organizers want to create the most comfortable conditions for the participants, so the data transfer speed on the participants' computers should be as large as possible.
+
+The network settings of the R1 company has a special option that lets you to cut the initial maximum data transfer speed of any computer to any lower speed. How should the R1 company configure the network using the described option so that at least k of n computers had the same data transfer speed and the data transfer speed on these computers was as large as possible?
+
+
+-----Input-----
+
+The first line contains two space-separated integers n and k (1 ≤ k ≤ n ≤ 100) — the number of computers and the number of participants, respectively. In the second line you have a space-separated sequence consisting of n integers: a_1, a_2, ..., a_{n} (16 ≤ a_{i} ≤ 32768); number a_{i} denotes the maximum data transfer speed on the i-th computer.
+
+
+-----Output-----
+
+Print a single integer — the maximum Internet speed value. It is guaranteed that the answer to the problem is always an integer.
+
+
+-----Examples-----
+Input
+3 2
+40 20 30
+
+Output
+30
+
+Input
+6 4
+100 20 40 20 50 50
+
+Output
+40
+
+
+
+-----Note-----
+
+In the first test case the organizers can cut the first computer's speed to 30 kilobits. Then two computers (the first and the third one) will have the same speed of 30 kilobits. They should be used as the participants' computers. This answer is optimal.

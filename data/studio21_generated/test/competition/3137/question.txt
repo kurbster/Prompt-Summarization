@@ -1,0 +1,48 @@
+Luka is bored in chemistry class yet again. This time, he’s playing with intelligent bacteria. He has arranged his $K$ bacteria on a rectangular board divided in $N$ rows, labelled with numbers from $1$ to $N$ starting from the top, and $M$ columns, labelled with numbers from $1$ to $M$ starting from the left.
+
+Each bacterium begins its adventure in a certain cell, facing one of the four neighbouring cells, and carries out the following actions every second:
+ - Reads the number $X$ dedicated to that bacterium in the current cell.
+ - Turns $90$ degrees clockwise, $X$ times.
+ - If it is facing a cell outside the board, it turns $180$ degrees.
+ - Finally, it moves to the cell that it is facing.
+
+Luka has placed a trap in one cell. The trap will activate and kill the bacteria as soon as they all step on that cell in the same second.
+
+Since Luka only has two hours of chemistry class today, help him determine how long the game will last, in seconds.
+
+-----Input-----
+The first line of input contains the positive integers $N$ ($3 \leq N \leq 50$), $M$ ($3 \leq M \leq 50$), and $K$ ($1 \leq K \leq 5$).
+
+The second line of input contains the positive integers $X$ and $Y$, the row and column where Luka has placed the trap.
+
+The remainder of the input consists of bacteria descriptions, for each bacterium $i$ from $1$ to $K$:
+ - two positive integers $X_ i$, $Y_ i$ – the row and column of the starting cell of bacterium $i$, and the character $C_ i$ representing the starting direction that the bacterium is facing ($U$ – up, $R$ – right, $D$ – down, $L$ – left).
+ - $N$ by $M$ matrix of digits between $0$ and $9$, inclusive; the digit in row $x$ and column $y$ represents the number in cell $(x, y)$ dedicated to bacterium $i$.
+
+-----Output-----
+The first and only line of output must contain the total duration of Luka’s game, in seconds. If the game will never end, output -1.
+
+-----Examples-----
+Sample Input 1:
+3 3 1
+2 2
+1 1 R
+010
+000
+000
+Sample Output 1:
+2
+
+Sample Input 2:
+3 4 2
+2 2
+3 4 R
+2327
+6009
+2112
+3 2 R
+1310
+2101
+1301
+Sample Output 2:
+7

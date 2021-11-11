@@ -1,0 +1,18 @@
+You are given an undirected tree1 with each of its node assigned a magic $X_ i$. The magic of a path2 is defined as the product of the magic of the nodes on that path divided by the number of the nodes on the path. For example, the magic of a path that consists of nodes with magic $3$ and $5$ is $7.5$ ($3\cdot 5 / 2$). In the given tree, find the path with the minimal magic and output the magic of that path.
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \leq N \leq 10^6$), the number of nodes in the tree. Each of the following $N - 1$ lines contains two integers, $A_ i$ and $B_ i$ ($1 \leq A_ i, B_ i \leq N$), the labels of nodes connected with an edge. The $i$-th of the following $N$ lines contains the integer $X_ i$ ($1 \leq X_ i \leq 10^9$), magic of the $i$-th node.
+
+-----Output-----
+Output the magic of the path with minimal magic in the form of a completely reduced fraction $P/Q$ ($P$ and $Q$ are relatively prime integers).
+
+In all test cases, it will hold that the required $P$ and $Q$ are smaller than $10^{18}$.
+
+-----Examples-----
+Sample Input:
+2
+1 2
+3
+4
+Sample Output:
+3/1

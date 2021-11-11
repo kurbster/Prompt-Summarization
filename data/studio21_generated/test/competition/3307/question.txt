@@ -1,0 +1,49 @@
+Alob and Bice inherited from their parents a piece of land represented by a simple polygon. There is a canal represented by a straight line. Each brother inherited the lands on one side of the canal. It is possible that the land of each person consists of several disconnected pieces of land. It is also possible that one person does not inherit any land at all.
+
+Alob decided to grow corn fields on his land while Bice decided to grow rice fields. However, they both agree that their fields are symmetrical about the canal.
+
+Your task is to help Alob identify the largest possible area of land to grow corn fields.
+
+Note that a simple polygon is a non-intersecting polygon, and does not have any $3$ consecutive vertices that are collinear.
+
+-----Input-----
+ - The first line contains $N$ - the number of vertices representing the simple polygon land ($3 \leq N \leq 100$).
+ - In the next $N$ lines, the $i^\textrm {th}$ one contains two integers $x_ i$, $y_ i$ - the coordinate of the $i^\textrm {th}$ vertex ($-1000 \leq x_ i, y_ i \leq 1000$).
+ - The last line contains four space-separated integers $x_ a$, $y_ a$, $x_ b$, $y_ b$ representing the coordinates of two distinct points in the straight line canal ($-1000 \leq x_ a, y_ a, x_ b, y_ b \leq 1000$).
+
+-----Output-----
+Output a single real number - the largest possible area of land to grow corn fields for Alob. Your answer will be considered correct if its relative or absolute error doesn’t exceed $10^{-6}$.
+
+Namely: let’s assume that your answer is $a$, and the answer of the jury is $b$. The checker program will consider your answer correct, if $\frac{|a-b|}{max(1,b)} \leq 10^{-6}$.
+
+-----Sample Clarification-----
+These are visualization of the samples below:
+
+First sample:
+
+Second sample:
+
+Third sample:
+
+-----Examples-----
+Sample Input 1:
+4
+0 0
+2 0
+2 2
+0 2
+0 -1 0 3
+Sample Output 1:
+0.0000000000
+
+Sample Input 2:
+6
+0 1
+0 4
+3 6
+7 5
+4 2
+7 0
+5 7 2 0
+Sample Output 2:
+9.476048311178

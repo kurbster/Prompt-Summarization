@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    "3\nabb\ndad\n",
+    "8\ndrpepper\ncocacola\n",
+    "1\nh\np\n",
+    "2\nxc\nda\n",
+    "3\nbab\naab\n",
+    "15\nxrezbaoiksvhuww\ndcgcjrkafntbpbl\n",
+    "3\nbaa\nbba\n",
+    "10\ndaefcecfae\nccdaceefca\n",
+    "10\nfdfbffedbc\ncfcdddfbed\n",
+    "100\nbltlukvrharrgytdxnbjailgafwdmeowqvwwsadryzquqzvfhjnpkwvgpwvohvjwzafcxqmisgyyuidvvjqljqshflzywmcccksk\njmgilzxkrvntkvqpsemrmyrasfqrofkwjwfznctwrmegghlhbbomjlojyapmrpkowqhsvwmrccfbnictnntjevynqilptaoharqv\n",
+    "100\npfkskdknmbxxslokqdliigxyvntsmaziljamlflwllvbhqnzpyvvzirhhhglsskiuogfoytcxjmospipybckwmkjhnfjddweyqqi\nakvzmboxlcfwccaoknrzrhvqcdqkqnywstmxinqbkftnbjmahrvexoipikkqfjjmasnxofhklxappvufpsyujdtrpjeejhznoeai\n",
+    "3\nwhw\nuuh\n",
+    "242\nrrrrrrrrrrrrrmmmmmmmmmmmmmgggggggggggggwwwwwwwwwwwwwyyyyyyyyyyyyyhhhhhhhhhhhhhoooooooooooooqqqqqqqqqqqqqjjjjjjjjjjjjjvvvvvvvvvvvvvlllllllllllllnnnnnnnnnnnnnfffffffffffffeeeeeeeeaaaaaaaaiiiiiiiiuuuuuuuuzzzzzzzzbbbbbbbbxxxxxxxxttttttttsscckppdd\nrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfrmgwyhoqjvlnfeaiuzbxteaiuzbxteaiuzbxteaiuzbxteaiuzbxteaiuzbxteaiuzbxteaiuzbxtscsckpdpd\n",
+    "1\nw\nl\n"
+  ],
+  "outputs": [
+    "2\nb d\nd a\n",
+    "7\nl e\ne d\nd c\nc p\np o\no r\nr a\n",
+    "1\np h\n",
+    "2\nc a\nx d\n",
+    "1\nb a\n",
+    "15\nz c\nc r\nr i\ni a\nj h\nh l\nl w\nw b\nx d\ng e\no k\nk f\ns n\nu p\nv t\n",
+    "1\nb a\n",
+    "4\ne d\nd c\nc f\nf a\n",
+    "4\nc e\ne f\nf d\nd b\n",
+    "25\ni y\ny p\np d\nd o\no c\nc h\nh f\nf e\ne j\nj b\nb m\nm l\nl u\nu g\ng t\nt q\nq w\nw z\nz k\nk r\nr n\nn s\ns x\nx v\nv a\n",
+    "25\no y\ny w\nw v\nv e\ne j\nj t\nt q\nq m\nm l\nl r\nr u\nu i\ni z\nz s\ns c\nc b\nb d\nd n\nn x\nx f\nf k\nk g\ng h\nh p\np a\n",
+    "2\nw u\nu h\n",
+    "21\nt x\nx b\nb z\nz u\nu i\ni e\ne a\ns c\np d\nn l\nl v\nv j\nj q\nq o\no h\nh y\ny w\nw g\ng m\nm r\nr f\n",
+    "1\nw l\n"
+  ]
+}

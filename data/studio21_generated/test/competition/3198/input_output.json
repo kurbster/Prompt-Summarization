@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "5\nhoose\nhose\nnose\nnoises\nnoise\n",
+        "4\nhose\nhoose\noose\nmoose\n",
+        "5\nbanana\nbananana\nbannanaa\norange\norangers\n"
+    ],
+    "outputs": [
+        "hoose\nnoises\nnoise\n",
+        "hoose\nmoose\n",
+        "NO TYPOS\n"
+    ]
+}

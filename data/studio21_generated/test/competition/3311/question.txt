@@ -1,0 +1,26 @@
+Everybody loves big numbers (if you do not, you might want to stop reading at this point). There are many ways of constructing really big numbers known to humankind, for instance: 
+ - Exponentiation: $42^{2016} = \underbrace{42 \cdot 42 \cdot \ldots \cdot 42}_{2016\text { times}}$.
+ - Factorials: $2016! = 2016 \cdot 2015 \cdot \ldots \cdot 2 \cdot 1$.
+
+In this problem we look at their lesser-known love-child the exponial, which is an operation defined for all positive integers $n$ as\[ \operatorname {exponial}(n) = n^{(n-1)^{(n-2)^{\cdots ^{2^{1}}}}}. \]
+
+For example, $\operatorname {exponial}(1) = 1$ and $\operatorname {exponial}(5) = 5^{4^{3^{2^1}}} \approx 6.206 \cdot 10^{183230}$ which is already pretty big. Note that exponentiation is right-associative: $a^{b^c} = a^{(b^c)}$.
+
+Since the exponials are really big, they can be a bit unwieldy to work with. Therefore we would like you to write a program which computes $\operatorname {exponial}(n) \bmod m$ (the remainder of $\operatorname {exponial}(n)$ when dividing by $m$).
+
+-----Input-----
+The input consists of two integers $n$ ($1 \le n \le 10^9$) and $m$ ($1 \le m \le 10^9$).
+
+-----Output-----
+Output a single integer, the value of $\operatorname {exponial}(n) \bmod m$.
+
+-----Examples-----
+Sample Input 1:
+2 42
+Sample Output 1:
+2
+
+Sample Input 2:
+5 123456789
+Sample Output 2:
+16317634

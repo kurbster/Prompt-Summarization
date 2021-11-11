@@ -1,0 +1,30 @@
+Tourists in the numerous Welsh valleys are in need of an IT solution to their transportation troubles. They want to see all the local Points of interest (POIs) in a specific order already set out by their trusty tour guides.
+
+Visitors have to rely on various types of transportation: car, rickshaw, donkey cart, etc. These are only available on call, which is unfortunate as the poor mobile reception in the depths of the idyllic valleys means transportation type can only change at a POI.
+
+Further, a driver will only offer tourists transportation between points $p_ i$, $p_{i+1}$, …, $p_{j-1}$, $p_ j$ under the following conditions:
+ - Minimum distance: If the distance is less than a given threshold $d_{\mathrm{min}}$, the itinerary wouldn’t be worth the time of the driver. That is, the total distance of the itinerary: $d_ i + d_{i+1} + \ldots + d_{j-1}$, with $d_ m$ the distance between $p_ m$ and $p_{m+1}$, has to be at least $d_{\mathrm{min}}$.
+ - Maximum heading range: Not going straight is perceived as annoying by the cabbies, so the directions traveled can only vary within at most a certain integer amount of $r_{\mathrm{max}}$ degrees.
+
+What the tourists want is a transportation switching scheme, which is a list of increasing indices $s_0$ …$s_{k}$ where points $p_{s_ i}$ are the locations to switch the type of transportation (the same transportation type can be used more than once, but another instance of the same type will need to be hailed once the original driver has had enough).
+
+-----Input-----
+ - One line containing the number of modes of transportation $t$ ($1 \le t \leq 200$) followed by the number $n$ ($1 \le n \leq 5 \cdot 10^4$) of points we visit.
+ - The next $t$ lines each describe the $i^{\text {th}}$ transportation type with two non-negative integers. The first integer $d_{\mathrm{min}}$ ($0 \leq d_{\mathrm{min}} \le 10^6$) is the minimal distance of each itinerary of this type. The second integer $a$ ($0 \leq a \leq 3.6 \cdot 10^5$) is the maximal heading range in thousandths of a degree.
+ - The next $n-1$ lines each contain two integers $d_ i$ and $h_ i$ ($0 \leq d_ i \leq 10^6; -1.8 \cdot 10^5 < h_ i < 1.8 \cdot 10^5$), relative distance and angle from the ${i-1}^{\text {th}}$ point in thousandths of a degree respectively.
+
+-----Output-----
+Write one line containing one number $k$: the minimal number of times we have to call for a new type of transportation to visit all $n$ points in the given order, if this is possible. If not, output IMPOSSIBLE.
+
+-----Examples-----
+Sample Input:
+4 4
+100 30000
+200 20000
+300 10000
+400 0
+50 10000
+75 20000
+400 -40000
+Sample Output:
+2

@@ -1,0 +1,34 @@
+When it comes to trams, a lot of people are civilized individuals who know how to behave in one. However, there are always those few who upon spotting a place to sit will run towards it in supersonic speeds. If they spot more than one place, they always try the closest one first.
+
+Problems arise when two or more such individuals aim for the same spot. If one of them is the closest, he or she will sit, and others won’t even attempt to move in and instead turn their attention to the next closest spot. If however they are all equally close, they will all run to the seat resulting in a massive explosion that usually ends with complete destruction of both them and the seat.
+
+You are given a description of one tram. It is represented as a table with $R$ rows and $C$ columns. The rude passengers are marked with the letter ‘X’. Empty seats are marked with ‘L’ and the tram floor is marked with ‘.’. Note that although there are other passengers, the force projected by these idiots is more than enough to simply walk through them.
+
+Distance between two cells is the Euclid distance between their centers. Write a program that will determine the number of explosions which will take place before all people are seated, or destroyed, or they run out of chairs.
+
+-----Input-----
+The first line of input contains two integers, $R$ $(1 \leq R \leq 100)$ and $C$ $(1 \leq C \leq 100)$, number of rows and columns.
+
+The next $R$ lines contain $C$ characters each. ‘.’, ‘X’ or ‘L’. There will always be at least one character ‘X’ and at least one ‘L’ in the input. Also, there will be no two ‘L’ characters such that they are both equally distant to some ‘X’.
+
+-----Output-----
+The first and only line of input should contain the number of explosion for the given layout.
+
+-----Examples-----
+Sample Input 1:
+4 4
+.LX.
+.X..
+....
+.L..
+Sample Output 1:
+1
+
+Sample Input 2:
+4 4
+.XLX
+.X..
+...L
+.X..
+Sample Output 2:
+2

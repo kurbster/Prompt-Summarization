@@ -1,0 +1,34 @@
+{
+  "inputs": [
+    "x\n",
+    "yxyxy\n",
+    "xxxxxy\n",
+    "yxyyxyyx\n",
+    "yxxyxyx\n",
+    "xxx\n",
+    "xxyxx\n",
+    "xxxyx\n",
+    "yxxxx\n",
+    "xyyxyyyyyxxxxxxxyxyxyyxyyxyyxxyxyxyxxxyxxy\n",
+    "xyyxyyyyyxxxxxxxyxyxyyxyyxyyxxyxyxyxxxyxxy\n",
+    "xxxxxxxxxxxyxyyxxxxyxxxxxyxxxxxyxxxxxxxxyx\n",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n",
+    "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\n"
+  ],
+  "outputs": [
+    "x\n",
+    "y\n",
+    "xxxx\n",
+    "yy\n",
+    "x\n",
+    "xxx\n",
+    "xxx\n",
+    "xxx\n",
+    "xxx\n",
+    "xx\n",
+    "xx\n",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxx\n",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n",
+    "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\n"
+  ]
+}

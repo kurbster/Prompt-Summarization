@@ -1,0 +1,30 @@
+On a faraway planet, strange plants with two stems can be found. Every plant on the planet can be described by three numbers: the $x$-coordinates $L$ and $R$ of the two stems, and the height $H$ at which the stems are connected. The following image depicts a plant with $L=2$, $R=5$ and $H=4$.
+
+Every day a new plant grows on the planet. The plant that grows on day $1$ is of height $1$, and every subsequent plant is one higher than the previous one.
+
+When a stem of a new plant intersects the horizontal segment of another plant, a small flower grows (if one was not there already). If segments merely touch in a point, a flower will not grow there.
+
+The following images are a visualization of the first sample input.         
+
+Write a program that, given the coordinates of all plants, calculates the number of new flower every day.
+
+-----Input-----
+The first line contains an integer $N$ ($1 \le N \le 100000$), the number of days.
+
+Each of the following $N$ lines contains two integers $L$ and $R$ ($1 \le L < R \le 100000$). The $i$’th of these lines describes the coordinates of the plant that grows on day $i$.
+
+-----Output-----
+Output $N$ lines, the number of new flowers after each plant grows.
+
+-----Examples-----
+Sample Input:
+4
+1 4
+3 7
+1 6
+2 6
+Sample Output:
+0
+1
+1
+2

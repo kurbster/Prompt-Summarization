@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "tralalal\n",
+        "zzzz\n",
+        "annorlunda\n"
+    ],
+    "outputs": [
+        "allatral\n",
+        "-1\n",
+        "annorlunda\n"
+    ]
+}

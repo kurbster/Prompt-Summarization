@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4\nspaghetti\nalready\nconfetti\nserengeti\n",
+        "8\nits\nnot\nimpossible\ncuz\ni\nknow\nits\npossible\n"
+    ],
+    "outputs": [
+        "4\n",
+        "0\n"
+    ]
+}

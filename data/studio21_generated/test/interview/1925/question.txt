@@ -1,0 +1,24 @@
+Given are integers A, B, and N.
+Find the maximum possible value of floor(Ax/B) - A × floor(x/B) for a non-negative integer x not greater than N.
+Here floor(t) denotes the greatest integer not greater than the real number t.
+
+-----Constraints-----
+ - 1 ≤ A ≤ 10^{6}
+ - 1 ≤ B ≤ 10^{12}
+ - 1 ≤ N ≤ 10^{12}
+ - All values in input are integers.
+
+-----Input-----
+Input is given from Standard Input in the following format:
+A B N
+
+-----Output-----
+Print the maximum possible value of floor(Ax/B) - A × floor(x/B) for a non-negative integer x not greater than N, as an integer.
+
+-----Sample Input-----
+5 7 4
+
+-----Sample Output-----
+2
+
+When x=3, floor(Ax/B)-A×floor(x/B) = floor(15/7) - 5×floor(3/7) = 2. This is the maximum value possible.

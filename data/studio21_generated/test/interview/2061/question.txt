@@ -1,0 +1,59 @@
+The map of Berland is a rectangle of the size n × m, which consists of cells of size 1 × 1. Each cell is either land or water. The map is surrounded by the ocean. 
+
+Lakes are the maximal regions of water cells, connected by sides, which are not connected with the ocean. Formally, lake is a set of water cells, such that it's possible to get from any cell of the set to any other without leaving the set and moving only to cells adjacent by the side, none of them is located on the border of the rectangle, and it's impossible to add one more water cell to the set such that it will be connected with any other cell.
+
+You task is to fill up with the earth the minimum number of water cells so that there will be exactly k lakes in Berland. Note that the initial number of lakes on the map is not less than k. 
+
+
+-----Input-----
+
+The first line of the input contains three integers n, m and k (1 ≤ n, m ≤ 50, 0 ≤ k ≤ 50) — the sizes of the map and the number of lakes which should be left on the map.
+
+The next n lines contain m characters each — the description of the map. Each of the characters is either '.' (it means that the corresponding cell is water) or '*' (it means that the corresponding cell is land).
+
+It is guaranteed that the map contain at least k lakes.
+
+
+-----Output-----
+
+In the first line print the minimum number of cells which should be transformed from water to land. 
+
+In the next n lines print m symbols — the map after the changes. The format must strictly follow the format of the map in the input data (there is no need to print the size of the map). If there are several answers, print any of them. 
+
+It is guaranteed that the answer exists on the given data.
+
+
+-----Examples-----
+Input
+5 4 1
+****
+*..*
+****
+**.*
+..**
+
+Output
+1
+****
+*..*
+****
+****
+..**
+
+Input
+3 3 0
+***
+*.*
+***
+
+Output
+1
+***
+***
+***
+
+
+
+-----Note-----
+
+In the first example there are only two lakes — the first consists of the cells (2, 2) and (2, 3), the second consists of the cell (4, 3). It is profitable to cover the second lake because it is smaller. Pay attention that the area of water in the lower left corner is not a lake because this area share a border with the ocean.

@@ -1,0 +1,31 @@
+Mirko likes to play with strings of characters, but this time he has taken it too far – he put an “explosion” in the string! An explosion is a series of characters which, if found in the vicinity of fire, explodes and starts a chain reaction.
+
+Mirko, being as negligent as he usually is, forgot that his string contained an explosion and placed it near a candlelight. Thus the chain reaction began.
+
+The chain reaction takes place in the following way:
+ - if a string contains explosions, they all explode and a new string is formed by concatenating the pieces without the exploding parts
+ - this concatenation could possibly create new explosions
+ - the chain reaction repeats while there are explosions in the string
+
+Now Mirko wants to know whether anything will be left after this series of chain reactions. If nothing remains, output “FRULA” (without quotes). If, by any chance, something is left, output the final string remaining after all the reactions.
+
+Please note: The explosion will not contain two equal characters.
+
+-----Input-----
+The first line of input contains Mirko’s string, ($1 \leq |\text {Mirko’s string}| \leq 1\ 000\ 000$).
+
+The second line of input contains the explosion string, ($1 \leq |\text {explosion}| \leq 36$).
+
+Both Mirko’s string and the explosion string consist of uppercase and lowercase letters of the English alphabet and digits 0, 1, …, 9. The characters in the explosion string are all different.
+
+-----Output-----
+The first and only line of output must contain the final string remaining after all the reactions as stated in the task.
+
+Clarification of the second example: Firstly, the bombs on positions $1$ and $6$ explode. Then we are left with ****1****2ab (where * marks the character that exploded) and when that string is put together, we get 12ab. Sadly, that is an explosion all over again so it disappears.
+
+-----Examples-----
+Sample Input:
+mirkovC4nizCC44
+C4
+Sample Output:
+mirkovniz

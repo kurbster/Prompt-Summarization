@@ -1,0 +1,94 @@
+You are the owner of IKEA, and you need to order a large number of bolts $B$. There is a single bolt manufacturer, but there are multiple companies reselling these bolts in packs (e.g. boxes, pallets). These companies form a directed chain, where each company buys packs from the previous company and combines these into new packs (with, of course, the logo of the company displayed brilliantly).
+
+At first glance, it might seem that these intermediate companies offer no advantage, as they just repack the packs of the previous company into larger packs. However, every company has their own target audience, so they want to sell packs with a specific amount of bolts. Because every company only uses the packs of the previous company, it might not be possible to create a pack that has the exact number of bolts specified. Instead, if a company wants to create a pack which is guaranteed to contain $X$ bolts, it bundles various packs from the previous company where the displayed amount of bolts on these packs sums to no less than $X$. If there are multiple such combinations it picks any from those whose displayed sum is minimal. For a better understanding, see the example below. Note that individual companies have no knowledge of the supply chain other than the pack sizes the previous company offers them.
+
+You realise you can take advantage of this: when a company specifies that a pack has a certain number of bolts, it might in practice contain more! Therefore you start a quest of figuring out which pack has the lowest advertised amount, while still containing at least the number of bolts you need. Thanks to your business relations, you can freely choose the company to buy a pack from, including the manufacturer.
+
+Explanation of first sample
+
+Suppose that we would like to buy $B=310$ bolts, and that there are three companies. The manufacturer (company one) sells packs of $40$ and $65$ bolts. Company two sells packs of $100$ and $150$ bolts. It cannot get these exact amounts from company one, and instead composes them as $100 \leq 40+65$ and $150 \leq 40+40+40+40$.
+
+Next comes company three, offering packs of $300$ and $320$ bolts. It can assemble its $300$-pack using three $100$-packs (which we know actually contains $105+105+105 = 315$ bolts) or using two $150$-packs (which we know actually contains $160+160 = 320$ bolts). However, for company three either combination is fine, so you do not know how many bolts a pack actually contains. In this case you assume the worst, i.e. that this pack contains $315$ bolts.
+
+For its second pack of $320$ bolts, company three uses $100+100+150 \geq 320$ (which we know really contains $105+105+160=370$ bolts). There are other combinations adding up to more than $320$, but none achieve the minimum of $350$, so we know company three picks that combination.
+
+Note in particular, that company three does not know that the $150$-packs of company two actually contain $160$ bolts (otherwise it could compose its $320$-pack out of two of these). It only knows the amounts advertised by company two.
+
+The packet of size $300$ sold by company three is the smallest advertised packet that contains at least $B=310$ bolts, so this is the packet we should buy. 
+
+Pack one
+
+Pack two 
+
+Advertised amount
+
+Real amount
+
+Advertised amount
+
+Real amount
+
+Company one
+
+$40$
+
+$40$
+
+$65$
+
+$65$
+
+Company two
+
+$100$
+
+$105$
+
+$150$
+
+$160$
+
+Company three
+
+$300$
+
+$315$ or $320$
+
+$320$
+
+$370$
+
+-----Input-----
+ - The first line of the input contains an integer $1 \leq B \leq 10^3$ giving the number of bolts that you need.
+ - The second line of the input contains an integer $1 \leq k \leq 10$ giving the number of companies.
+ - The next $k$ lines each describe a company. Each line consists of the integers $l_ i, n_1, n_2, \ldots , n_{l_ i}$ meaning that the company $i$ produces $1\leq l_ i\leq 10$ types of packages of sizes $0 < n_1< n_2< \ldots < n_{l_ i} \leq 10^3$, respectively.
+
+-----Output-----
+ - A single integer giving the smallest size of a package that you can buy which contains at least $B$ bolts no matter how the companies build their packages, or impossible if this cannot be achieved.
+
+-----Examples-----
+Sample Input 1:
+371
+3
+2 40 65
+2 100 150
+2 300 320
+Sample Output 1:
+impossible
+
+Sample Input 2:
+310
+3
+2 40 65
+2 100 150
+2 300 320
+Sample Output 2:
+300
+
+Sample Input 3:
+90
+2
+2 20 35
+2 88 200
+Sample Output 3:
+88

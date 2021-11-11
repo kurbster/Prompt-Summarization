@@ -1,0 +1,24 @@
+Micah lives a peaceful life with his family in one of Canada’s most beautiful provinces. The vast wealth he has accumulated allows him to indulge in an extravagant hobby: collecting vintage automobiles. On Sunday afternoons, Micah and his family enjoy taking long, leisurely drives in these classic cars. Because of the unusual road system in the province, they have made something of a game out of planning their weekly outings.
+
+Micah’s province contains $n$ towns that are connected by a network of roads. Every road joins some town $x$ to a different town $y$, and all roads are one-way (!) There is never more than one road from any town $x$ to any other town $y$ (although there may be a road going in the reverse direction), and other than the fact that roads may meet at their endpoints (towns), no two roads intersect (this is facilitated by an elaborate system of overpasses and underpasses).
+
+Each Sunday after lunch, Micah and his family plan and then embark on what they call a round trip. This involves first going to one of the $n$ towns (via helicopter, of course; driving there would detract from the graph theoretic purity of the entire excursion), getting into one of Micah’s fine cars (also transported there by helicopter), and then driving from town to town along the various one-way roads in such a way that they always end up back at the town where they started (whereupon helicopters transport everyone/everything back home). There is one family cardinal rule: during one of these round trips, they can never drive along the same road twice. Overall, a round trip can be represented as a sequence of towns\[ x_0 \ \ \ x_1 \ \ \ x_2 \ \ \ \ldots \ \ \ x_{T-1} \ \ \ x_ T \]
+
+where (a) $T \geq 2$, (b) $x_0 = x_ T$ is the starting town, (c) there is a (one-way) road from $x_ i$ to $x_{i+1}$ for $0 \leq i < T$, and (d) no road is repeated. Note that $x_0, x_1, \ldots , x_{T-1}$ are not necessarily all distinct.
+
+In their endless quest for adventure, Micah and his family have decided that they never want to take the same round trip twice, so Micah has designed a simple algorithm to count exactly how many round trips are possible. It saddens them, though, when this algorithm reveals that this number is in fact finite, which means that one day they will have used up all the possible round trips. However, there is hope! From time to time, the province constructs a new road, which is very exciting because a new road may mean new round trips. Unfortunately, Micah’s evil twin, Hacim (separated at birth), has recently been appointed Director of the Inter-County Paving Commission (ICPC), and he is determined to use his new power to minimize all this vexing family-oriented fun. Hacim cannot prevent the construction of new roads altogether, of course (that would eventually get him fired), but he can influence which new roads get constructed. For Hacim, “fun” means approving the construction of a new road that does not create any new round trips for Micah and his family. Hacim wonders how long he can continue doing this, i.e., how many new roads can be constructed without creating any new round trips. Since he is not as good as Micah at designing counting algorithms, he needs your help to figure this out.
+
+Note that a new road, like an existing road, can meet other roads at its endpoints, but otherwise it cannot intersect any other road. Also, the construction of new roads is, of course, cumulative (roads never get removed).
+
+-----Input-----
+The first line of input contains two space-separated integers, $n$ and $m$ ($1 \leq n \leq 100000$, $0 \leq m \leq 200000$), where $n$ is the number of towns (indexed $0, 1, \ldots , n-1$) and $m$ is the number of one-way roads. This is followed by $m$ lines, each containing two space-separated integers, $x$ and $y$ ($0 \leq x,y \leq (n-1)$, $x \neq y$), indicating that there is a one-way road from town $x$ to town $y$. No road will be specified more than once.
+
+-----Output-----
+Output a single integer, the maximum number of one-way roads that can be constructed without creating any new round trips.
+
+-----Examples-----
+Sample Input:
+2 1
+0 1
+Sample Output:
+0

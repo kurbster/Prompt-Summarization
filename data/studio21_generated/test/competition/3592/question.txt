@@ -1,0 +1,13 @@
+Peter is co-owner of the incredibly successful Pete and Pat’s Pitas and Pizzas and his sales are on fire! But unfortunately, so is his building, due to carelessly laid delivery boxes placed too close to Pete’s famous wood burning pizza oven. After sifting though the remnants, one of the few things Pete is able to salvage is a ledger book, but the only thing he can make out on the charred pages is the profit he made during the last month. The insurance company would like to know how many pitas and how many pizzas Pete actually delivered over that period. Pete does recall how much profit he makes on each of these products, so he’s pretty confident that he can determine how many of each were sold during the last month given the total profit. Well perhaps “confident” is not the exact word Peter is looking for – it’s more like clueless. Can you help Pete out? I’m sure there are some discount coupons in it for you, or at least a really cheap price on a used pizza oven.
+
+-----Input-----
+Input consists of a single line containing $3$ values $p_ t$ $p_1$ $p_2$, where $0 \leq p_ t \leq 10000.00$ is the profit for the month and $0 < p_1, p_2 \leq 100.00$ are the profits Pete makes on a pita ($p_1$) and on a pizza ($p_2$). All values are in dollars and cents.
+
+-----Output-----
+Display two integers: the number of pitas sold and the number of pizzas sold so that the total profit equals the value given. If there is more than one combination of pitas and pizzas that give the specified profit, list them all, one combination per line, listing the combination with the smallest number of pitas first, then the combination with the second smallest number of pitas, and so on. If there are no combinations of pizza and pita sales that realize the profit, output none.
+
+-----Examples-----
+Sample Input:
+725.85 1.71 2.38
+Sample Output:
+199 162

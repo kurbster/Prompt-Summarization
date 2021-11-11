@@ -1,0 +1,2 @@
+ You are given an integer $n$. You need to compute the remainder $r$ of $\operatorname {exponial}(n)$ when dividing by $m$. 
+-----Input----- The input consists of two integers $n$ ($1 \le n \le 10^9$) and $m$ ($1 \le m \le 10^9$). -----Output----- Output a single integer, the value of $\operatorname {exponial}(n) \bmod m$. -----Examples----- Sample Input 1: 2 42 Sample Output 1: 2 Sample Input 2: 5 123456789 Sample Output 2: 16317634

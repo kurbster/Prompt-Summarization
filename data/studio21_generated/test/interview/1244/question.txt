@@ -1,0 +1,46 @@
+Yaroslav has an array that consists of n integers. In one second Yaroslav can swap two neighboring array elements. Now Yaroslav is wondering if he can obtain an array where any two neighboring elements would be distinct in a finite time.
+
+Help Yaroslav.
+
+
+-----Input-----
+
+The first line contains integer n (1 ≤ n ≤ 100) — the number of elements in the array. The second line contains n integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 1000) — the array elements.
+
+
+-----Output-----
+
+In the single line print "YES" (without the quotes) if Yaroslav can obtain the array he needs, and "NO" (without the quotes) otherwise.
+
+
+-----Examples-----
+Input
+1
+1
+
+Output
+YES
+
+Input
+3
+1 1 2
+
+Output
+YES
+
+Input
+4
+7 7 7 7
+
+Output
+NO
+
+
+
+-----Note-----
+
+In the first sample the initial array fits well.
+
+In the second sample Yaroslav can get array: 1, 2, 1. He can swap the last and the second last elements to obtain it.
+
+In the third sample Yarosav can't get the array he needs.

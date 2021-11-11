@@ -1,0 +1,58 @@
+There are n types of coins in Byteland. Conveniently, the denomination of the coin type k divides the denomination of the coin type k + 1, the denomination of the coin type 1 equals 1 tugrick. The ratio of the denominations of coin types k + 1 and k equals a_{k}. It is known that for each x there are at most 20 coin types of denomination x.
+
+Byteasar has b_{k} coins of type k with him, and he needs to pay exactly m tugricks. It is known that Byteasar never has more than 3·10^5 coins with him. Byteasar want to know how many ways there are to pay exactly m tugricks. Two ways are different if there is an integer k such that the amount of coins of type k differs in these two ways. As all Byteland citizens, Byteasar wants to know the number of ways modulo 10^9 + 7.
+
+
+-----Input-----
+
+The first line contains single integer n (1 ≤ n ≤ 3·10^5) — the number of coin types.
+
+The second line contains n - 1 integers a_1, a_2, ..., a_{n} - 1 (1 ≤ a_{k} ≤ 10^9) — the ratios between the coin types denominations. It is guaranteed that for each x there are at most 20 coin types of denomination x.
+
+The third line contains n non-negative integers b_1, b_2, ..., b_{n} — the number of coins of each type Byteasar has. It is guaranteed that the sum of these integers doesn't exceed 3·10^5.
+
+The fourth line contains single integer m (0 ≤ m < 10^10000) — the amount in tugricks Byteasar needs to pay.
+
+
+-----Output-----
+
+Print single integer — the number of ways to pay exactly m tugricks modulo 10^9 + 7.
+
+
+-----Examples-----
+Input
+1
+
+4
+2
+
+Output
+1
+
+Input
+2
+1
+4 4
+2
+
+Output
+3
+
+Input
+3
+3 3
+10 10 10
+17
+
+Output
+6
+
+
+
+-----Note-----
+
+In the first example Byteasar has 4 coins of denomination 1, and he has to pay 2 tugricks. There is only one way.
+
+In the second example Byteasar has 4 coins of each of two different types of denomination 1, he has to pay 2 tugricks. There are 3 ways: pay one coin of the first type and one coin of the other, pay two coins of the first type, and pay two coins of the second type.
+
+In the third example the denominations are equal to 1, 3, 9.

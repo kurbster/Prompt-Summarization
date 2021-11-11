@@ -1,0 +1,63 @@
+Two participants are each given a pair of distinct numbers from 1 to 9 such that there's exactly one number that is present in both pairs. They want to figure out the number that matches by using a communication channel you have access to without revealing it to you.
+
+Both participants communicated to each other a set of pairs of numbers, that includes the pair given to them. Each pair in the communicated sets comprises two different numbers.
+
+Determine if you can with certainty deduce the common number, or if you can determine with certainty that both participants know the number but you do not.
+
+
+-----Input-----
+
+The first line contains two integers $n$ and $m$ ($1 \le n, m \le 12$) — the number of pairs the first participant communicated to the second and vice versa.
+
+The second line contains $n$ pairs of integers, each between $1$ and $9$, — pairs of numbers communicated from first participant to the second.
+
+The third line contains $m$ pairs of integers, each between $1$ and $9$, — pairs of numbers communicated from the second participant to the first.
+
+All pairs within each set are distinct (in particular, if there is a pair $(1,2)$, there will be no pair $(2,1)$ within the same set), and no pair contains the same number twice.
+
+It is guaranteed that the two sets do not contradict the statements, in other words, there is pair from the first set and a pair from the second set that share exactly one number.
+
+
+-----Output-----
+
+If you can deduce the shared number with certainty, print that number.
+
+If you can with certainty deduce that both participants know the shared number, but you do not know it, print $0$.
+
+Otherwise print $-1$.
+
+
+-----Examples-----
+Input
+2 2
+1 2 3 4
+1 5 3 4
+
+Output
+1
+
+Input
+2 2
+1 2 3 4
+1 5 6 4
+
+Output
+0
+
+Input
+2 3
+1 2 4 5
+1 2 1 3 2 3
+
+Output
+-1
+
+
+
+-----Note-----
+
+In the first example the first participant communicated pairs $(1,2)$ and $(3,4)$, and the second communicated $(1,5)$, $(3,4)$. Since we know that the actual pairs they received share exactly one number, it can't be that they both have $(3,4)$. Thus, the first participant has $(1,2)$ and the second has $(1,5)$, and at this point you already know the shared number is $1$.
+
+In the second example either the first participant has $(1,2)$ and the second has $(1,5)$, or the first has $(3,4)$ and the second has $(6,4)$. In the first case both of them know the shared number is $1$, in the second case both of them know the shared number is $4$. You don't have enough information to tell $1$ and $4$ apart.
+
+In the third case if the first participant was given $(1,2)$, they don't know what the shared number is, since from their perspective the second participant might have been given either $(1,3)$, in which case the shared number is $1$, or $(2,3)$, in which case the shared number is $2$. While the second participant does know the number with certainty, neither you nor the first participant do, so the output is $-1$.

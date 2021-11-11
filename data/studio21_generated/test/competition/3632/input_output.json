@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5 3\na\nb\nc\nd\ne\ncad\n",
+        "8 8\nfont\nlewin\ndarko\ndeon\nvanb\njohnb\nchuckr\ntgr\ndeonjohnbdarkotgrvanbchuckrfontlewin\n"
+    ],
+    "outputs": [
+        "26\n",
+        "12451\n"
+    ]
+}

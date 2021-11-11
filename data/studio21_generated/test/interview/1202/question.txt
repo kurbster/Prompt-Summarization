@@ -1,0 +1,45 @@
+Two semifinals have just been in the running tournament. Each semifinal had n participants. There are n participants advancing to the finals, they are chosen as follows: from each semifinal, we choose k people (0 ≤ 2k ≤ n) who showed the best result in their semifinals and all other places in the finals go to the people who haven't ranked in the top k in their semifinal but got to the n - 2k of the best among the others.
+
+The tournament organizers hasn't yet determined the k value, so the participants want to know who else has any chance to get to the finals and who can go home.
+
+
+-----Input-----
+
+The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of participants in each semifinal.
+
+Each of the next n lines contains two integers a_{i} and b_{i} (1 ≤ a_{i}, b_{i} ≤ 10^9) — the results of the i-th participant (the number of milliseconds he needs to cover the semifinals distance) of the first and second semifinals, correspondingly. All results are distinct. Sequences a_1, a_2, ..., a_{n} and b_1, b_2, ..., b_{n} are sorted in ascending order, i.e. in the order the participants finished in the corresponding semifinal.
+
+
+-----Output-----
+
+Print two strings consisting of n characters, each equals either "0" or "1". The first line should correspond to the participants of the first semifinal, the second line should correspond to the participants of the second semifinal. The i-th character in the j-th line should equal "1" if the i-th participant of the j-th semifinal has any chances to advance to the finals, otherwise it should equal a "0".
+
+
+-----Examples-----
+Input
+4
+9840 9920
+9860 9980
+9930 10020
+10040 10090
+
+Output
+1110
+1100
+
+Input
+4
+9900 9850
+9940 9930
+10000 10020
+10060 10110
+
+Output
+1100
+1100
+
+
+
+-----Note-----
+
+Consider the first sample. Each semifinal has 4 participants. The results of the first semifinal are 9840, 9860, 9930, 10040. The results of the second semifinal are 9920, 9980, 10020, 10090.  If k = 0, the finalists are determined by the time only, so players 9840, 9860, 9920 and 9930 advance to the finals.  If k = 1, the winners from both semifinals move to the finals (with results 9840 and 9920), and the other places are determined by the time (these places go to the sportsmen who run the distance in 9860 and 9930 milliseconds).  If k = 2, then first and second places advance from each seminfial, these are participants with results 9840, 9860, 9920 and 9980 milliseconds.

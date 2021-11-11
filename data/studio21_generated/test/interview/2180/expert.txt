@@ -1,0 +1,2 @@
+ You are given an n   n chessboard. You need to place n Coders. No Coder can attack any other Coder. 
+-----Input----- The first line contains an integer n (1 ≤ n ≤ 1000). -----Output----- On the first line print an integer, the maximum number of Coders that can be placed on the chessboard. On each of the next n lines print n characters, describing the configuration of the Coders. For an empty cell print an '.', and for a Coder print a 'C'. If there are multiple correct answers, you can print any. -----Examples----- Input 2 Output 2 C. .C

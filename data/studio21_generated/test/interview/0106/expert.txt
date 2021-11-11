@@ -1,0 +1,2 @@
+ You are given an array of integers. Return the minimum and maximum salary.   
+.

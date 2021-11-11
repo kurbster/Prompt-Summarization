@@ -1,0 +1,27 @@
+The game of Memory is played with $N$ pairs of cards where each pair has the same picture, i.e. there are $N$ different pictures, and each of them appear on exactly two cards.
+
+The cards are shuffled and placed face down on a large table. On each turn you flip two cards of your choice face up. If they match you remove them from the game, and if they don’t match, you turn them face down. The goal of the game is to remove all cards from the game.
+
+Your strategy is simple:
+ - If you know of two face-down cards which have the same picture, choose both of them.
+ - Otherwise,
+ - Turn a random card that you have not looked at before face up.
+ - If it matches a card you have seen, turn the matching card face up (you have excellent memory).
+ - If the first card did not match a card you had seen before, turn another random unknown card face up.
+
+Given this strategy, what is the expected number of turns you have to play in order to finish the game?
+
+-----Input-----
+Input is a single integer $N$ indicating the number of pairs of cards.
+
+-----Output-----
+Output the expected number of turns needed to finish the game. This number must have an absolute or relative error of at most $10^{-6}$.
+
+-----Limits-----
+ - $1 \leq N \leq 1000$
+
+-----Examples-----
+Sample Input:
+1
+Sample Output:
+1.000000000

@@ -1,0 +1,41 @@
+As an employee of the world’s most respected political polling corporation, you must take complex, real-world issues and simplify them down to a few numbers. It isn’t always easy. A big election is coming up and, at the request of Candidate X, you have just finished polling $n$ people. You have gathered three pieces of information from each person, with the values for the $i^\text {th}$ person recorded as:
+ - $a_ i$ – the number of digits of $\pi $ they have memorized
+ - $b_ i$ – the number of hairs on their head
+ - $c_ i$ – whether they will vote for Candidate X
+
+Unfortunately, you are beginning to wonder if these are really the most relevant questions to ask. In fact, you cannot see any correlation between $a$, $b$, and $c$ in the data. Of course, you cannot just contradict your customer – that is a good way to lose your job!
+
+Perhaps the answer is to find some weighting formula to make the results look meaningful. You will pick two real values $S$ and $T$, and sort the poll results $(a_ i, b_ i, c_ i)$ by the measure $a_ i \cdot S + b_ i \cdot T$. The sort will look best if the results having $c_ i$ true are clustered as close to each other as possible. More precisely, if $j$ and $k$ are the indices of the first and last results with $c_ i$ true, you want to minimize the cluster size which is $k-j+1$. Note that some choices of $S$ and $T$ will result in ties among the $(a_ i,b_ i,c_ i)$ triples. When this happens, you should assume the worst possible ordering occurs (that which maximizes the cluster size for this $(S, T)$ pair).
+
+-----Input-----
+The input starts with a line containing $n$ ($1 \leq n \leq 250000$), which is the number of people polled. This is followed by one line for each person polled. Each of those lines contains integers $a_ i$ ($0 \leq a_ i \leq 2000000$), $b_ i$ ($0 \leq b_ i \leq 2000000$), and $c_ i$, where $c_ i$ is $1$ if the person will vote for Candidate X and $0$ otherwise. The input is guaranteed to contain at least one person who will vote for Candidate X.
+
+-----Output-----
+Display the smallest possible cluster size over all possible $(S, T)$ pairs.
+
+-----Examples-----
+Sample Input 1:
+6
+0 10 0
+10 0 1
+12 8 1
+5 5 0
+11 2 1
+11 3 0
+Sample Output 1:
+4
+
+Sample Input 2:
+10
+6 1 1
+0 2 0
+2 1 1
+6 1 1
+8 2 0
+4 4 0
+4 0 0
+2 3 1
+6 1 0
+6 3 1
+Sample Output 2:
+8

@@ -1,0 +1,38 @@
+{
+  "inputs": [
+    "aaaaa\naa\n",
+    "axbaxxb\nab\n",
+    "aabb\nab\n",
+    "aaaaaaaaaaaaaaa\na\n",
+    "aaaaaaaaaaa\nb\n",
+    "ababababababababa\naba\n",
+    "axxbaxxbaxxb\nab\n",
+    "axaxxbaxabxbaxxbxb\nab\n",
+    "ababcc\nabc\n",
+    "a\na\n",
+    "a\nb\n",
+    "a\naa\n",
+    "a\nab\n",
+    "a\nbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n",
+    "a\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "abxxxaxbxaxxxba\naba\n"
+  ],
+  "outputs": [
+    "2 2 1 1 0 0\n",
+    "0 1 1 2 1 1 0 0\n",
+    "1 1 1 0 0\n",
+    "15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 0\n",
+    "0 0 0 0 0 0 0 0 0 0 0 0\n",
+    "4 4 4 4 4 4 3 3 3 2 2 2 1 1 1 0 0 0\n",
+    "0 0 1 1 2 2 3 2 2 1 1 0 0\n",
+    "1 1 2 2 3 3 3 3 3 3 3 3 3 2 2 1 1 0 0\n",
+    "1 1 1 1 0 0 0\n",
+    "1 0\n",
+    "0 0\n",
+    "0 0\n",
+    "0 0\n",
+    "0 0\n",
+    "0 0\n",
+    "0 0 1 1 1 1 2 2 2 2 1 1 1 0 0 0\n"
+  ]
+}

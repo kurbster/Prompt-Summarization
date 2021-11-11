@@ -1,0 +1,29 @@
+Frank N. Stein is a very conservative high-school teacher. He wants to take some of his students on an excursion, but he is afraid that some of them might become couples. While you can never exclude this possibility, he has made some rules that he thinks indicates a low probability two persons will become a couple:
+ - Their height differs by more than $40$ cm.
+ - They are of the same sex.
+ - Their preferred music style is different.
+ - Their favourite sport is the same (they are likely to be fans of different teams and that would result in fighting).
+
+So, for any two persons that he brings on the excursion, they must satisfy at least one of the requirements above. Help him find the maximum number of persons he can take, given their vital information.
+
+-----Input-----
+The first line of input consists of an integer $1 \le N \le 1000$ giving the number of pupils. Next there will be one line for each pupil consisting of four space-separated data items:
+ - an integer $h$ ($0 \le h \le 3000$) giving the height in cm;
+ - a character ‘F’ for female or ‘M’ for male;
+ - a string describing the preferred music style;
+ - a string with the name of the favourite sport.
+
+The strings in the input are of length at at least $1$ and at most $20$ characters, and contain only upper and lower case letters, digits, and dashes.
+
+-----Output-----
+For each test case in the input there should be one line with an integer giving the maximum number of eligible pupils.
+
+-----Examples-----
+Sample Input:
+4
+35 M classicism programming
+0 M baroque skiing
+43 M baroque chess
+30 F baroque soccer
+Sample Output:
+3

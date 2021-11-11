@@ -1,0 +1,44 @@
+High school is all about being in the coolest group of friends. Headmistress Umbridge knows this, and she also knows that knowledge is power. She has collected data on all of the $n$ students at the school, asking each of them who they are friends with. Now she has a list of responses, but she is suspicious that some of the students might not have been entirely truthful during the questioning.
+
+From anonymous (but highly reliable) sources, Headmistress Umbridge knows that the friendships at her school satisfy the following properties:
+ - If $a$ is friends with $b$ then $b$ is also friends with $a$.
+ - The set of students can be partitioned into groups, such that every student participates in exactly one group, where
+ - each group has at least one and at most $p$ students, and
+ - for each group there are at most $q$ pairs of friends with the first one in the group, and the second one outside of it.
+
+Note that two students in the same group do not have to be friends.
+
+Umbridge has hired you to figure out whether it is possible that all students are telling the truth, or whether she can be sure that at least one student is lying, and that she therefore should put everyone in detention. Is this morally questionable? Probably.
+
+(In case the students may be telling the truth, you are worried that her suspicion might fall on you instead; thus you will also want to provide evidence of a valid partition if there is one.)
+
+-----Input-----
+First a single line with three non-negative integers $n$, $p$ and $q$ as described above. Next follow $n$ lines, one for each student, starting with student $i=0$. Each such line starts with an integer $m_ i$, denoting the number of friends student number $i$ claims that she has. Then follow $m_ i$ distinct integers between $0$ and $n-1$, indicating who those friends are (the students are numbered from $0$ to $n-1$).
+
+We always have $1 \leq n \leq 2500$, and $p + q \leq 15$. Furthermore, it is guaranteed that $m_0 + m_1 + \ldots + m_{n-1} \leq 30000$. A student never lists herself as one of her friends.
+
+-----Output-----
+If Dolores can be certain someone did’t tell the truth, output “detention”. Otherwise, output “home”. If you output home on the first line, then you should prove your claim by outputting a partition of the students into groups such that the requirements above hold (if there are several, any one will do): The second line should then contain a positive integer $G$, the number of groups. The following $G$ lines should each begin with a positive integer $g_ i$, the number of students in the $i$-th group. Then on the same line, $g_ i$ integers indicating the students in this group.
+
+-----Examples-----
+Sample Input 1:
+4 2 1
+1 1
+2 0 2
+2 1 3
+1 2
+Sample Output 1:
+home
+2
+2 0 1
+2 2 3
+
+Sample Input 2:
+5 2 1
+1 1
+2 0 2
+2 1 3
+2 2 4
+1 3
+Sample Output 2:
+detention

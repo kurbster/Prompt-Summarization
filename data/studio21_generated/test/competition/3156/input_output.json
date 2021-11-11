@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "3\n3\n0 chocolate\n1 icecream\n2 cookies\n3\nchocolate\ncookies\nicecream\n",
+        "3\n4\n0 chocolate\n1 icecream\n2 cookies\n2 chocolate\n3\nchocolate\nicecream\ncookies\n",
+        "3\n10\n0 tomatoes\n0 cucumber\n1 tomatoes\n2 tomatoes\n2 cucumber\n1 mustard\n0 salt\n2 salad\n2 salt\n2 mustard\n5\ntomatoes\ncucumber\nsalad\nmustard\nsalt\n"
+    ],
+    "outputs": [
+        "impossible\n",
+        "unique\n",
+        "ambiguous\n"
+    ]
+}

@@ -1,0 +1,59 @@
+Andrey received a postcard from Irina. It contained only the words "Hello, Andrey!", and a strange string consisting of lowercase Latin letters, snowflakes and candy canes. Andrey thought that this string is an encrypted message, and decided to decrypt it.
+
+Andrey noticed that snowflakes and candy canes always stand after the letters, so he supposed that the message was encrypted as follows. Candy cane means that the letter before it can be removed, or can be left. A snowflake means that the letter before it can be removed, left, or repeated several times.
+
+For example, consider the following string:  [Image] 
+
+This string can encode the message «happynewyear». For this, candy canes and snowflakes should be used as follows:   candy cane 1: remove the letter w,  snowflake 1: repeat the letter p twice,  candy cane 2: leave the letter n,  snowflake 2: remove the letter w,  snowflake 3: leave the letter e. 
+
+ [Image] 
+
+Please note that the same string can encode different messages. For example, the string above can encode «hayewyar», «happpppynewwwwwyear», and other messages.
+
+Andrey knows that messages from Irina usually have a length of $k$ letters. Help him to find out if a given string can encode a message of $k$ letters, and if so, give an example of such a message.
+
+
+-----Input-----
+
+The first line contains the string received in the postcard. The string consists only of lowercase Latin letters, as well as the characters «*» and «?», meaning snowflake and candy cone, respectively. These characters can only appear immediately after the letter. The length of the string does not exceed $200$.
+
+The second line contains an integer number $k$ ($1 \leq k \leq 200$), the required message length.
+
+
+-----Output-----
+
+Print any message of length $k$ that the given string can encode, or «Impossible» if such a message does not exist.
+
+
+-----Examples-----
+Input
+hw?ap*yn?eww*ye*ar
+12
+
+Output
+happynewyear
+
+Input
+ab?a
+2
+
+Output
+aa
+Input
+ab?a
+3
+
+Output
+aba
+Input
+ababb
+5
+
+Output
+ababb
+Input
+ab?a
+1
+
+Output
+Impossible

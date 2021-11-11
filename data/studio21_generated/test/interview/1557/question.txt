@@ -1,0 +1,59 @@
+Vova is again playing some computer game, now an RPG. In the game Vova's character received a quest: to slay the fearsome monster called Modcrab.
+
+After two hours of playing the game Vova has tracked the monster and analyzed its tactics. The Modcrab has h_2 health points and an attack power of a_2. Knowing that, Vova has decided to buy a lot of strong healing potions and to prepare for battle.
+
+Vova's character has h_1 health points and an attack power of a_1. Also he has a large supply of healing potions, each of which increases his current amount of health points by c_1 when Vova drinks a potion. All potions are identical to each other. It is guaranteed that c_1 > a_2.
+
+The battle consists of multiple phases. In the beginning of each phase, Vova can either attack the monster (thus reducing its health by a_1) or drink a healing potion (it increases Vova's health by c_1; Vova's health can exceed h_1). Then, if the battle is not over yet, the Modcrab attacks Vova, reducing his health by a_2. The battle ends when Vova's (or Modcrab's) health drops to 0 or lower. It is possible that the battle ends in a middle of a phase after Vova's attack.
+
+Of course, Vova wants to win the fight. But also he wants to do it as fast as possible. So he wants to make up a strategy that will allow him to win the fight after the minimum possible number of phases.
+
+Help Vova to make up a strategy! You may assume that Vova never runs out of healing potions, and that he can always win.
+
+
+-----Input-----
+
+The first line contains three integers h_1, a_1, c_1 (1 ≤ h_1, a_1 ≤ 100, 2 ≤ c_1 ≤ 100) — Vova's health, Vova's attack power and the healing power of a potion.
+
+The second line contains two integers h_2, a_2 (1 ≤ h_2 ≤ 100, 1 ≤ a_2 < c_1) — the Modcrab's health and his attack power.
+
+
+-----Output-----
+
+In the first line print one integer n denoting the minimum number of phases required to win the battle.
+
+Then print n lines. i-th line must be equal to HEAL if Vova drinks a potion in i-th phase, or STRIKE if he attacks the Modcrab.
+
+The strategy must be valid: Vova's character must not be defeated before slaying the Modcrab, and the monster's health must be 0 or lower after Vova's last action.
+
+If there are multiple optimal solutions, print any of them.
+
+
+-----Examples-----
+Input
+10 6 100
+17 5
+
+Output
+4
+STRIKE
+HEAL
+STRIKE
+STRIKE
+
+Input
+11 6 100
+12 5
+
+Output
+2
+STRIKE
+STRIKE
+
+
+
+-----Note-----
+
+In the first example Vova's character must heal before or after his first attack. Otherwise his health will drop to zero in 2 phases while he needs 3 strikes to win.
+
+In the second example no healing needed, two strikes are enough to get monster to zero health and win with 6 health left.

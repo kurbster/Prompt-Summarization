@@ -1,0 +1,45 @@
+King of Berland Berl IV has recently died. Hail Berl V! As a sign of the highest achievements of the deceased king the new king decided to build a mausoleum with Berl IV's body on the main square of the capital.
+
+The mausoleum will be constructed from 2n blocks, each of them has the shape of a cuboid. Each block has the bottom base of a 1 × 1 meter square. Among the blocks, exactly two of them have the height of one meter, exactly two have the height of two meters, ..., exactly two have the height of n meters.
+
+The blocks are arranged in a row without spacing one after the other. Of course, not every arrangement of blocks has the form of a mausoleum. In order to make the given arrangement in the form of the mausoleum, it is necessary that when you pass along the mausoleum, from one end to the other, the heights of the blocks first were non-decreasing (i.e., increasing or remained the same), and then — non-increasing (decrease or remained unchanged). It is possible that any of these two areas will be omitted. For example, the following sequences of block height meet this requirement:
+
+  [1, 2, 2, 3, 4, 4, 3, 1];  [1, 1];  [2, 2, 1, 1];  [1, 2, 3, 3, 2, 1]. 
+
+Suddenly, k more requirements appeared. Each of the requirements has the form: "h[x_{i}] sign_{i} h[y_{i}]", where h[t] is the height of the t-th block, and a sign_{i} is one of the five possible signs: '=' (equals), '<' (less than), '>' (more than), '<=' (less than or equals), '>=' (more than or equals). Thus, each of the k additional requirements is given by a pair of indexes x_{i}, y_{i} (1 ≤ x_{i}, y_{i} ≤ 2n) and sign sign_{i}.
+
+Find the number of possible ways to rearrange the blocks so that both the requirement about the shape of the mausoleum (see paragraph 3) and the k additional requirements were met.
+
+
+-----Input-----
+
+The first line of the input contains integers n and k (1 ≤ n ≤ 35, 0 ≤ k ≤ 100) — the number of pairs of blocks and the number of additional requirements.
+
+Next k lines contain listed additional requirements, one per line in the format "x_{i} sign_{i} y_{i}" (1 ≤ x_{i}, y_{i} ≤ 2n), and the sign is on of the list of the five possible signs.
+
+
+-----Output-----
+
+Print the sought number of ways.
+
+
+-----Examples-----
+Input
+3 0
+
+Output
+9
+
+Input
+3 1
+2 > 3
+
+Output
+1
+
+Input
+4 1
+3 = 6
+
+Output
+3

@@ -1,0 +1,34 @@
+You are a rebel leader and you are planning to start a revolution in your country. But the evil Government found out about your plans and set your punishment in the form of correctional labor.
+
+You must paint a fence which consists of $10^{100}$ planks in two colors in the following way (suppose planks are numbered from left to right from $0$):   if the index of the plank is divisible by $r$ (such planks have indices $0$, $r$, $2r$ and so on) then you must paint it red;  if the index of the plank is divisible by $b$ (such planks have indices $0$, $b$, $2b$ and so on) then you must paint it blue;  if the index is divisible both by $r$ and $b$ you can choose the color to paint the plank;  otherwise, you don't need to paint the plank at all (and it is forbidden to spent paint on it). 
+
+Furthermore, the Government added one additional restriction to make your punishment worse. Let's list all painted planks of the fence in ascending order: if there are $k$ consecutive planks with the same color in this list, then the Government will state that you failed the labor and execute you immediately. If you don't paint the fence according to the four aforementioned conditions, you will also be executed.
+
+The question is: will you be able to accomplish the labor (the time is not important) or the execution is unavoidable and you need to escape at all costs.
+
+
+-----Input-----
+
+The first line contains single integer $T$ ($1 \le T \le 1000$) — the number of test cases.
+
+The next $T$ lines contain descriptions of test cases — one per line. Each test case contains three integers $r$, $b$, $k$ ($1 \le r, b \le 10^9$, $2 \le k \le 10^9$) — the corresponding coefficients.
+
+
+-----Output-----
+
+Print $T$ words — one per line. For each test case print REBEL (case insensitive) if the execution is unavoidable or OBEY (case insensitive) otherwise.
+
+
+-----Example-----
+Input
+4
+1 1 2
+2 10 4
+5 2 3
+3 2 2
+
+Output
+OBEY
+REBEL
+OBEY
+OBEY

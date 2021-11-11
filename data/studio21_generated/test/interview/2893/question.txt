@@ -1,0 +1,26 @@
+In this problem, you have to analyze a particular sorting algorithm. The algorithm processes a sequence of $n$ distinct integers by swapping two adjacent sequence elements until the sequence is sorted in ascending order. For the input sequence
+
+9 1 0 5 4 ,
+
+Ultra-QuickSort produces the output
+
+0 1 4 5 9 .
+
+Your task is to determine how many swap operations Ultra-QuickSort needs to perform in order to sort a given input sequence.
+
+-----Input-----
+Input begins with a line that contains a single integer $1 \le n \le 500000$ – the length of the input sequence. Each of the the following $n$ lines contains a single integer $0 \le a[i] \le 999999999$, the $i$-th input sequence element.
+
+-----Output-----
+Prints a single line containing an integer number op, the minimum number of swap operations necessary to sort the given input sequence.
+
+-----Examples-----
+Sample Input:
+5
+9
+1
+0
+5
+4
+Sample Output:
+6

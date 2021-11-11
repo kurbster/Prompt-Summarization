@@ -1,0 +1,2 @@
+ Given N strings S_i. Can a bracket sequence be formed by concatenating all the N strings in some order
+-----Input----- Input is given from Standard Input in the following format: N S_1 : S_N -----Output----- If a bracket sequence can be formed by concatenating all the N strings in some order, print Yes; otherwise, print No. -----Sample Input----- 2 ) (() -----Sample Output----- Yes Concatenating (() and ) in this order forms a bracket sequence.

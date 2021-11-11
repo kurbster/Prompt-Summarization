@@ -1,0 +1,26 @@
+{
+  "inputs": [
+    "snow affects sports such as skiing, snowboarding, and snowmachine travel.\nsnowboarding is a recreational activity and olympic and paralympic sport.\n",
+    "'co-co-co, codeforces?!'\n",
+    "thun-thun-thunder, thunder, thunder\nthunder, thun-, thunder\nthun-thun-thunder, thunder\nthunder, feel the thunder\nlightning then the thunder\nthunder, feel the thunder\nlightning then the thunder\nthunder, thunder\n",
+    "a'b-c-aa'ab.ac.ba!bb-bc-ca?cb-cc.aaa,aab'aac'aba-abb'abc-aca.acb!acc?baa'bab'bac!bba-bbb.bbc.bca\n",
+    "aaa!bbb'ccc?aaaaaa,aaabbb.aaaccc,bbbaaa-bbbbbb-bbbccc,cccaaa,cccbbb.cccccc'aaaaaaaaa-aaaaaabbb\n",
+    "bca'bbc,bbb!bba!bac'bab.baa,acc?acb.aca'abc?abb?aba?aac,aab?aaa?cc?cb'ca'bc!bb.ba-ac!ab.aa!c,b.a\n",
+    "a'aa!aaa.aab,aac,ab!aba,abb.abc'ac.aca'acb,acc!b'ba.baa.bab,bac!bb.bba,bbb,bbc,bc,bca'c?ca.cb,cc\n",
+    "aaa?c?ba,ac?cc?b.abb-bab.cb-a'aac'bb'aab-bbc'bca.ca.acb-baa.acc-aba?aa-bbb.bac?bc,aca-bba!abc!ab\n",
+    "baacbcaac-bcaabbaabaacccacc'acbb.b!-ababcab!b'a'aacaccaacbab!c\nb\nbca'bbcc!!\n",
+    "aaa aaaaaa\n"
+  ],
+  "outputs": [
+    "141\n",
+    "25\n",
+    "183\n",
+    "97\n",
+    "91\n",
+    "97\n",
+    "97\n",
+    "97\n",
+    "76\n",
+    "10\n"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "var a = \"Gon\";\nvar b = a;\nvar c = `My name is ${a}`;\nprint c;\nprint `My name is ${b}`;\nend.\n",
+        "var one = \"1\";\nvar two = \"2\";\nvar three = \"3\";\nprint `${one} + ${two} = ${three}`;\nprint `1${`2${three}2`}1`;\nend.\n"
+    ],
+    "outputs": [
+        "My name is Gon\nMy name is Gon\n",
+        "1 + 2 = 3\n12321\n"
+    ]
+}

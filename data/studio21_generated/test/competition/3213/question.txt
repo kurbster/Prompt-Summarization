@@ -1,0 +1,38 @@
+Sweet Apple Acres has been infested by evil fruit-hungry bats! The Apple family has called for Twilight Sparkle’s help to get rid of them.
+
+Twilight needs to use a powerful spell to eliminate the threat the bats pose. Poring through the volumes of magic books, she found an ancient spell by the legendary Star Swirl the Bearded that, if executed, can increase her power enough to drive the bats out.
+
+This spell has $M$ steps, which must be performed in order. Each step is either:
+ - a + step, which adds $1$ to the power of the caster, or
+ - a x step, which multiplies the power of the caster by $2$.
+
+Twilight starts with power $1$.
+
+Unfortunately, since Twilight is not very strong, the power that she can actually discharge is limited by her strength $S$. If she has power $p$, the amount of power she can discharge is equal to the remainder after dividing $p$ by $2^S$.
+
+It is therefore clear that the amount of power she has is not necessarily equal to the amount of power she can actually discharge. She wants to maximize the amount of power she can discharge; to this end, she realized that she can transform some—possibly none, possibly all—of the steps in the spell into no-op o steps, which do not affect her power.
+
+Which steps should she turn into no-op steps to maximize the amount of power she can discharge?
+
+-----Input-----
+The first line of input contains two integers, $M$ ($1 \leq M \leq 10^6$) and $S$ ($1 \leq S \leq 10^9$), the number of steps in the spells and Twilight’s strength.
+
+The second line of input contains a string of $M$ characters. In particular, the $i^\text {th}$ of these characters is either + or x, the type of the $i^\text {th}$ step.
+
+-----Output-----
+Output on a line by itself the same string with some—possibly none, possibly all—of the characters replaced with o, representing a way of replacing some steps with no-ops that maximizes the amount of power she can discharge.
+
+If there are multiple correct answers, you can output any of them.
+
+-----Examples-----
+Sample Input 1:
+8 3
+++xx+x++
+Sample Output 1:
+++xx+o++
+
+Sample Input 2:
+8 3
+xxxxxxxx
+Sample Output 2:
+xxoooooo

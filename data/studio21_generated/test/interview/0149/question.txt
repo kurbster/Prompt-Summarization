@@ -1,0 +1,47 @@
+Unlucky year in Berland is such a year that its number n can be represented as n = x^{a} + y^{b}, where a and b are non-negative integer numbers. 
+
+For example, if x = 2 and y = 3 then the years 4 and 17 are unlucky (4 = 2^0 + 3^1, 17 = 2^3 + 3^2 = 2^4 + 3^0) and year 18 isn't unlucky as there is no such representation for it.
+
+Such interval of years that there are no unlucky years in it is called The Golden Age.
+
+You should write a program which will find maximum length of The Golden Age which starts no earlier than the year l and ends no later than the year r. If all years in the interval [l, r] are unlucky then the answer is 0.
+
+
+-----Input-----
+
+The first line contains four integer numbers x, y, l and r (2 ≤ x, y ≤ 10^18, 1 ≤ l ≤ r ≤ 10^18).
+
+
+-----Output-----
+
+Print the maximum length of The Golden Age within the interval [l, r].
+
+If all years in the interval [l, r] are unlucky then print 0.
+
+
+-----Examples-----
+Input
+2 3 1 10
+
+Output
+1
+
+Input
+3 5 10 22
+
+Output
+8
+
+Input
+2 3 3 5
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first example the unlucky years are 2, 3, 4, 5, 7, 9 and 10. So maximum length of The Golden Age is achived in the intervals [1, 1], [6, 6] and [8, 8].
+
+In the second example the longest Golden Age is the interval [15, 22].

@@ -1,0 +1,50 @@
+The year is 2312, and Humanity’s Rush to the Stars is now $200$ years old. The problem of real-time communication between star systems remains, however, and the key is the unterwave.
+
+Unterwave (UW) communication works as follows: direct UW links have been set up between certain pairs of star systems, and two systems without a direct link communicate by hopping along existing links through intermediary systems. Although no system has more than $20$ direct links to other systems, any two systems can communicate, either directly or indirectly.
+
+You have been asked to select two star systems for your company’s new home offices—one in a human system, and one in an alien system. (Oh yeah, there are aliens.) You are to select them so that the UW distance (a measure of communication latency) is minimized.
+
+Every star system has a gravity value that affects UW communication. Just as no two snowflakes on earth have the same crystalline structure, no two star systems in the universe have the same gravity. If a communication path from from one system to another encounters the sequence $G = g_1, g_2, \ldots , g_ n$ of gravity values, including the source and destination of the message, then three sequences of $n-1$ terms each may be defined, relating to physical characteristics of UW communication:\begin{align*} \operatorname {cap}(G) & = g_2+g_1,\ g_3+g_2,\ \ldots ,\ g_ n+g_{n-1} & \textrm{(Capacitance)} \\ \operatorname {pot}(G) & = g_2-g_1,\ g_3-g_2,\ \ldots ,\ g_ n-g_{n-1} & \textrm{(Potential)} \\ \operatorname {ind}(G) & = g_2\cdot g_1,\ g_3\cdot g_2,\ \ldots ,\ g_ n\cdot g_{n-1} & \textrm{(Inductance)} \end{align*}
+
+For two sequences $A=a_1,\ a_2,\ \ldots ,\ a_ m$ and $B=b_1,\ b_2,\ \ldots ,\ b_ m$ we define:\begin{align*} A\cdot B & = a_1\cdot b_1,\ a_2\cdot b_2,\ \ldots ,\ a_ m\cdot b_ m & A-B & = a_1- b_1,\ a_2- b_2,\ \ldots ,\ a_ m- b_ m \end{align*}
+
+Finally, the UW distance is given by the absolute value of the sum of the values of the sequence\[ \operatorname {pot}(G)\cdot \left(\left[\operatorname {cap}(G)\cdot \operatorname {cap}(G)\right]-\operatorname {ind}(G)\right). \]
+
+The UW distance can be quite large. Fortunately, your company has a gravity dispersal device, which may be placed in any single system (and remain there). It reduces by $1$ the gravity of that system, but increases by $1$ the gravities of all systems directly linked to it. Use of this device is optional.
+
+-----Input-----
+The first line has a single integer $2\leq n\leq 50000$, giving the number of star systems. The next $n$ lines describe the star systems, numbered $1$ to $n$. Each line has the form $g\ d$ where $g$ is the gravity value of that system ($1\leq g\leq 1000000$) and $d$ is either ‘h’ or ‘a’, designating the system as human or alien (there is at least one system of each type). All values of $g$ are distinct. The next line has a positive integer $e$ giving the number of direct links between systems. Each of the next $e$ lines contains two integers separated by a single space, which are the numbers of two systems that are directly linked. Links are bidirectional, and no link appears more than once in the input. No system links directly to more than $20$ other systems.
+
+-----Output-----
+Output the minimum UW distance that can be achieved between an alien and human system.
+
+-----Examples-----
+Sample Input:
+9
+377 a
+455 h
+180 a
+211 a
+134 a
+46 h
+111 h
+213 h
+17 a
+15
+1 2
+1 4
+1 6
+2 3
+2 4
+2 5
+3 5
+4 6
+4 7
+4 9
+5 7
+5 8
+6 9
+7 9
+7 8
+Sample Output:
+85293

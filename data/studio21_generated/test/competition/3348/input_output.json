@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4 4\n10 3 3\n",
+        "4 4\n6 5 5\n"
+    ],
+    "outputs": [
+        "impossible\n",
+        "ABCA\nBCAB\nCABC\nABCA\n"
+    ]
+}

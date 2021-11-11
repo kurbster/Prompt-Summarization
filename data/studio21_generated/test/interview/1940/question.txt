@@ -1,0 +1,41 @@
+Anastasia loves going for a walk in Central Uzhlyandian Park. But she became uninterested in simple walking, so she began to collect Uzhlyandian pebbles. At first, she decided to collect all the pebbles she could find in the park.
+
+She has only two pockets. She can put at most k pebbles in each pocket at the same time. There are n different pebble types in the park, and there are w_{i} pebbles of the i-th type. Anastasia is very responsible, so she never mixes pebbles of different types in same pocket. However, she can put different kinds of pebbles in different pockets at the same time. Unfortunately, she can't spend all her time collecting pebbles, so she can collect pebbles from the park only once a day.
+
+Help her to find the minimum number of days needed to collect all the pebbles of Uzhlyandian Central Park, taking into consideration that Anastasia can't place pebbles of different types in same pocket.
+
+
+-----Input-----
+
+The first line contains two integers n and k (1 ≤ n ≤ 10^5, 1 ≤ k ≤ 10^9) — the number of different pebble types and number of pebbles Anastasia can place in one pocket.
+
+The second line contains n integers w_1, w_2, ..., w_{n} (1 ≤ w_{i} ≤ 10^4) — number of pebbles of each type. 
+
+
+-----Output-----
+
+The only line of output contains one integer — the minimum number of days Anastasia needs to collect all the pebbles.
+
+
+-----Examples-----
+Input
+3 2
+2 3 4
+
+Output
+3
+
+Input
+5 4
+3 1 8 9 7
+
+Output
+5
+
+
+
+-----Note-----
+
+In the first sample case, Anastasia can collect all pebbles of the first type on the first day, of second type — on the second day, and of third type — on the third day.
+
+Optimal sequence of actions in the second sample case:   In the first day Anastasia collects 8 pebbles of the third type.  In the second day she collects 8 pebbles of the fourth type.  In the third day she collects 3 pebbles of the first type and 1 pebble of the fourth type.  In the fourth day she collects 7 pebbles of the fifth type.  In the fifth day she collects 1 pebble of the second type.

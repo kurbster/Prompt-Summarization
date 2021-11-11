@@ -1,0 +1,46 @@
+We have a tree with N vertices numbered 1 to N.
+The i-th edge in this tree connects Vertex a_i and Vertex b_i.
+
+Consider painting each of these edges white or black. There are 2^{N-1} such ways to paint the edges. Among them, how many satisfy all of the following M restrictions?  
+ - The i-th (1 \leq i \leq M) restriction is represented by two integers u_i and v_i, which mean that the path connecting Vertex u_i and Vertex v_i must contain at least one edge painted black.
+
+-----Constraints-----
+ - 2 \leq N \leq 50
+ - 1 \leq a_i,b_i \leq N
+ - The graph given in input is a tree.
+ - 1 \leq M \leq \min(20,\frac{N(N-1)}{2})
+ - 1 \leq u_i < v_i \leq N
+ - If i \not= j, either u_i \not=u_j or v_i\not=v_j
+ - All values in input are integers.
+
+-----Input-----
+Input is given from Standard Input in the following format:
+N
+a_1 b_1
+:
+a_{N-1} b_{N-1}
+M
+u_1 v_1
+:
+u_M v_M
+
+-----Output-----
+Print the number of ways to paint the edges that satisfy all of the M conditions.
+
+-----Sample Input-----
+3
+1 2
+2 3
+1
+1 3
+
+-----Sample Output-----
+3
+
+The tree in this input is shown below:
+
+
+
+
+
+All of the M restrictions will be satisfied if Edge 1 and 2 are respectively painted (white, black), (black, white), or (black, black), so the answer is 3.

@@ -1,0 +1,55 @@
+Omkar is playing his favorite pixelated video game, Bed Wars! In Bed Wars, there are $n$ players arranged in a circle, so that for all $j$ such that $2 \leq j \leq n$, player $j - 1$ is to the left of the player $j$, and player $j$ is to the right of player $j - 1$. Additionally, player $n$ is to the left of player $1$, and player $1$ is to the right of player $n$.
+
+Currently, each player is attacking either the player to their left or the player to their right. This means that each player is currently being attacked by either $0$, $1$, or $2$ other players. A key element of Bed Wars strategy is that if a player is being attacked by exactly $1$ other player, then they should logically attack that player in response. If instead a player is being attacked by $0$ or $2$ other players, then Bed Wars strategy says that the player can logically attack either of the adjacent players.
+
+Unfortunately, it might be that some players in this game are not following Bed Wars strategy correctly. Omkar is aware of whom each player is currently attacking, and he can talk to any amount of the $n$ players in the game to make them instead attack another player  — i. e. if they are currently attacking the player to their left, Omkar can convince them to instead attack the player to their right; if they are currently attacking the player to their right, Omkar can convince them to instead attack the player to their left. 
+
+Omkar would like all players to be acting logically. Calculate the minimum amount of players that Omkar needs to talk to so that after all players he talked to (if any) have changed which player they are attacking, all players are acting logically according to Bed Wars strategy.
+
+
+-----Input-----
+
+Each test contains multiple test cases. The first line contains the number of test cases $t$ ($1 \le t \le 10^4$). The descriptions of the test cases follows.
+
+The first line of each test case contains one integer $n$ ($3 \leq n \leq 2 \cdot 10^5$)  — the amount of players (and therefore beds) in this game of Bed Wars.
+
+The second line of each test case contains a string $s$ of length $n$. The $j$-th character of $s$ is equal to L if the $j$-th player is attacking the player to their left, and R if the $j$-th player is attacking the player to their right.
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $2 \cdot 10^5$.
+
+
+-----Output-----
+
+For each test case, output one integer: the minimum number of players Omkar needs to talk to to make it so that all players are acting logically according to Bed Wars strategy.
+
+It can be proven that it is always possible for Omkar to achieve this under the given constraints.
+
+
+-----Example-----
+Input
+5
+4
+RLRL
+6
+LRRRRL
+8
+RLLRRRLL
+12
+LLLLRRLRRRLL
+5
+RRRRR
+
+Output
+0
+1
+1
+3
+2
+
+
+
+-----Note-----
+
+In the first test case, players $1$ and $2$ are attacking each other, and players $3$ and $4$ are attacking each other. Each player is being attacked by exactly $1$ other player, and each player is attacking the player that is attacking them, so all players are already being logical according to Bed Wars strategy and Omkar does not need to talk to any of them, making the answer $0$.
+
+In the second test case, not every player acts logically: for example, player $3$ is attacked only by player $2$, but doesn't attack him in response. Omkar can talk to player $3$ to convert the attack arrangement to LRLRRL, in which you can see that all players are being logical according to Bed Wars strategy, making the answer $1$.

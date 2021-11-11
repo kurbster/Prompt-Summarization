@@ -1,0 +1,18 @@
+Given intervals $[a, b]$ and $[c, d]$, count the number of ordered pairs of co-prime integers $(x, y)$ such that $a \le x \le b$ and $c \le y \le d$. Coprime integers have no common factor greater than $1$.
+
+-----Input-----
+The input consists of a single line of four space-separated integers $a$, $b$, $c$, and $d$. These integers satisfy the bounds ($1 \le a \le b \le 10^7$, $1 \le c \le d \le 10^7$).
+
+-----Output-----
+Print a single integer: the number of coprime pairs $(x,y)$ with $a \le x \le b, c\le y \le d$.
+
+-----Examples-----
+Sample Input 1:
+1 5 1 5
+Sample Output 1:
+19
+
+Sample Input 2:
+12 12 1 12
+Sample Output 2:
+4

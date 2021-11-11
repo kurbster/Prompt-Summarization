@@ -1,0 +1,31 @@
+It's that time of the year when the Russians flood their countryside summer cottages (dachas) and the bus stop has a lot of people. People rarely go to the dacha on their own, it's usually a group, so the people stand in queue by groups.
+
+The bus stop queue has n groups of people. The i-th group from the beginning has a_{i} people. Every 30 minutes an empty bus arrives at the bus stop, it can carry at most m people. Naturally, the people from the first group enter the bus first. Then go the people from the second group and so on. Note that the order of groups in the queue never changes. Moreover, if some group cannot fit all of its members into the current bus, it waits for the next bus together with other groups standing after it in the queue.
+
+Your task is to determine how many buses is needed to transport all n groups to the dacha countryside.
+
+
+-----Input-----
+
+The first line contains two integers n and m (1 ≤ n, m ≤ 100). The next line contains n integers: a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ m).
+
+
+-----Output-----
+
+Print a single integer — the number of buses that is needed to transport all n groups to the dacha countryside.
+
+
+-----Examples-----
+Input
+4 3
+2 3 2 1
+
+Output
+3
+
+Input
+3 4
+1 2 1
+
+Output
+1

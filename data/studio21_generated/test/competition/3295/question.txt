@@ -1,0 +1,34 @@
+Mirko and his older brother Slavko are playing a game. At the beginning of the game, they pick three numbers $K$, $L$, $M$. In the first and only step of the game, each of them picks their own $K$ consecutive integers.
+
+Slavko always picks the first $K$ integers (numbers $1, 2, \ldots , K$). Mirko has a special demand—he wants to choose his numbers in a way that there are exactly $L$ happy numbers among them. He considers a number happy if it meets at least one of the following requirements:
+ - the number is smaller than or equal to $M$
+ - the number is prime
+
+Out of respect to his older brother, $L$ will be smaller than or equal to the total number of happy numbers in Slavko’s array of numbers. They will play a total of $Q$ games with different values $K$, $L$, $M$. For each game, help Mirko find an array that meets his demand.
+
+-----Input-----
+The first line of input contains $Q$ ($1 \leq Q \leq 100000$). Each of the following $Q$ lines contains three integers, the $i$-th line containing integers $K_ i$, $L_ i$, $M_ i$ ($1 \leq K_ i, M_ i \leq 150$, $0 \leq L_ i \leq K_ i$) that determine the values $K$, $L$, $M$ that will be used in the $i$-th game.
+
+-----Output-----
+Output $Q$ lines, the $i$-th line containing an integer, the initial number of Mirko’s array in the $i$-th game. If an array with the initial number being smaller than or equal to $10000000$ does not exist, output $-1$. If there are multiple possible solutions, output any.
+
+-----Examples-----
+Sample Input 1:
+3
+1 1 1
+2 0 2
+3 1 1
+Sample Output 1:
+1
+8
+4
+
+Sample Input 2:
+3
+4 1 1
+5 2 3
+5 0 3
+Sample Output 2:
+6
+4
+24

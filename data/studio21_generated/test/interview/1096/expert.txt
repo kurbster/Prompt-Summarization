@@ -1,0 +1,2 @@
+ You are given the king's position. Find the number of moves permitted for the king. Check the king's moves here https://en.wikipedia.org/wiki/King_(chess). 
+-----Input----- The only line contains the king's position in the format "cd", where 'c' is the column from 'a' to 'h' and 'd' is the row from '1' to '8'. -----Output----- Print the only integer x — the number of moves permitted for the king. -----Example----- Input e4 Output 8

@@ -1,0 +1,2 @@
+ You are given $y$ and $\ell$. Find the largest base $b$ such that $y$ written in base $b$ contains only decimal digits, and is at least $\ell $ when interpreted as a number in base $10$. 
+-----Input----- The input consists of a single line containing two base 10 integers $y$ ($10 \le y \le 10^{18}$ – yes, I am very old) and $\ell $ ($10 \le \ell \le y$). -----Output----- Display the largest base $b$ as described above. -----Examples----- Sample Input: 32 20 Sample Output: 16

@@ -1,0 +1,53 @@
+Chef loves cooking. Also, he is very hygienic. Hence, Chef grows his own vegetables in his mini kitchen garden. He has $M$ lanes in which he grows vegetables. The $ith$  lane has $Ai$ vegetables growing in it.
+
+Vegetables in $ith$ lane become edible on day $Di$ and day $Di+1$(that is, the vegetables are edible only on days $Di$ and $Di+1$,where $Di+1$ is the next day of $Di$).   For Example, if $Di$ is 2, then vegetable is edible on day 2 and day 3 only.   If not collected in these days, they cannot be cooked.
+
+Also, Chef is a lone worker. Hence, with respect to his capacity, he can collect only $V$ vegetables per day.
+But, Chef is a hard worker, and is willing to work every day, starting from day 1.
+
+Chef is busy sowing the seeds. So, he assigns you the task to find out the maximum number of vegetables he can collect, provided that he collects optimally.
+
+-----Input:-----
+- First line contains of 2 space separated integers $M$ and $V$, number of lanes and capacity of Chef.
+- Next $M$ lines follow
+- Each $ith$ line contains 2 space separated integers, $Di$ and $Ai$, the day when the vegetable of the $ith$ lane become edible and the number of vegetables in that lane.
+
+-----Output:-----
+For each testcase, output in a single integer, that is the maximum number of vegetables that can be cooked
+
+-----Constraints-----
+- $1 \leq M,V \leq 3000$
+- $1 \leq Di,Ai \leq 3000$
+
+-----Subtasks-----
+- 20 points : $1 \leq M \leq 100$
+- 30 points : $1 \leq M \leq 1000$
+- 50 points : $Original  Constraints$
+
+-----Sample Input 1:-----
+2 4
+1 6
+2 5
+
+-----Sample Output 1:-----
+11
+
+-----Sample Input 2:-----
+3 3
+1 4
+6 2
+5 3
+
+-----Sample Output 2:-----
+9
+
+-----EXPLANATION:-----
+In the first sample, in order to obtain the optimal answer, you should do the following:-
+- On day 1, collect 4 vegetables from lane 1
+- On day 2, collect 2 vegetables from lane 1 and 2 vegetables from lane 2
+- On day 3, collect 3 vegetables from lane 2
+In the first sample, in order to obtain the optimal answer, you should do the following:-
+- On day 1, collect 3 vegetables from lane 1
+- On day 2, collect 1 vegetable from lane 1
+- On day 5, collect 3 vegetables from lane 3
+- On day 6, collect 2 vegetables from lane 2

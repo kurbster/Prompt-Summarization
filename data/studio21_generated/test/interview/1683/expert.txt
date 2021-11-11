@@ -1,0 +1,2 @@
+ Given an array of integers $a_1, a_2, \dots, a_n$, your task is to help students to calculate $\sum_{i = 1}^{n}\sum_{j = 1}^{n} f(a_i, a_j)$ modulo $998\,244\,353$. 
+-----Input----- The first line of the input contains a single integer $n$ ($1 \le n \le 100\,000$) — the number of elements in the array. The second line of the input contains $n$ integers $a_1, a_2, \dots, a_n$ ($1 \le a_i \le 10^9$) — the elements of the array. -----Output----- Print the answer modulo $998\,244\,353$. -----Examples----- Input 3 12 3 45 Output 12330 Input 2 123 456 Output 1115598

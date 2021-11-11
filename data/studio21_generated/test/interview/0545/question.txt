@@ -1,0 +1,34 @@
+Marina loves strings of the same length and Vasya loves when there is a third string, different from them in exactly t characters. Help Vasya find at least one such string.
+
+More formally, you are given two strings s_1, s_2 of length n and number t. Let's denote as f(a, b) the number of characters in which strings a and b are different. Then your task will be to find any string s_3 of length n, such that f(s_1, s_3) = f(s_2, s_3) = t. If there is no such string, print  - 1.
+
+
+-----Input-----
+
+The first line contains two integers n and t (1 ≤ n ≤ 10^5, 0 ≤ t ≤ n).
+
+The second line contains string s_1 of length n, consisting of lowercase English letters.
+
+The third line contain string s_2 of length n, consisting of lowercase English letters.
+
+
+-----Output-----
+
+Print a string of length n, differing from string s_1 and from s_2 in exactly t characters. Your string should consist only from lowercase English letters. If such string doesn't exist, print -1.
+
+
+-----Examples-----
+Input
+3 2
+abc
+xyc
+
+Output
+ayd
+Input
+1 0
+c
+b
+
+Output
+-1

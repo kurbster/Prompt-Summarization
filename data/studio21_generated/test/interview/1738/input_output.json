@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "aaaaaaaaaa\n",
+    "abcab\n",
+    "cczabababab\n",
+    "kbyjorwqjk\n",
+    "baaabbbaba\n",
+    "aaaaaaaaaa\n",
+    "cbbbcccbbc\n",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "hltcdvuobkormkxkbmpfjniilublkrckmvvxemcyietgxcyjgrjwsdsgsfmoqnmbxozfavxopklhldhnsjpxhejxaxuctxeifglx\n",
+    "agdmdjkbfnleldamiiedfheefgaimecnllgkjdkdcfejainklmhaklcjkgkimgfiiajiiihhdngjedgmefnjmbglghjjejfjkaha\n",
+    "aaaaaaabaaaabbbbaaaaaaabbaaaaaaaaaabbabaaaaaabaaaaabaaaaaaaabaaaaaaaaaaaaaaaabaaaaaabaaaaaaaaabbaaabaaaaabbaaabaaaaabaaabaaaaaabaaaaaaaaaaabaabaaabaaaaabbbbaaaaaaaaaaaaaaabaaaaaaaaababaaabaaaaaaaaaabaaaaaaaabaaaabbbbaaaaaaabbaaaaaaaaaabbabaaaaaabaaaaabaaaaaaaabaaaaaaaaaaaaaaaabaaaaaabaaaaaaaaabbaaabaaaaabbaaabaaaaabaaabaaaaaabaaaaaaaaaaabaabaaabaaaaabbbbaaaaaaaaaaaaaaabaaaaaaaaababaaabaaaaaaaaaaba\n",
+    "mulzibhhlxawrjqunzww\n"
+  ],
+  "outputs": [
+    "3\n",
+    "6\n",
+    "7\n",
+    "11\n",
+    "9\n",
+    "3\n",
+    "10\n",
+    "4\n",
+    "101\n",
+    "101\n",
+    "191\n",
+    "21\n"
+  ]
+}

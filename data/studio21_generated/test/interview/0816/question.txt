@@ -1,0 +1,45 @@
+There are some beautiful girls in Arpa’s land as mentioned before.
+
+Once Arpa came up with an obvious problem:
+
+Given an array and a number x, count the number of pairs of indices i, j (1 ≤ i < j ≤ n) such that $a_{i} \oplus a_{j} = x$, where $\oplus$ is bitwise xor operation (see notes for explanation).
+
+ [Image] 
+
+Immediately, Mehrdad discovered a terrible solution that nobody trusted. Now Arpa needs your help to implement the solution to that problem.
+
+
+-----Input-----
+
+First line contains two integers n and x (1 ≤ n ≤ 10^5, 0 ≤ x ≤ 10^5) — the number of elements in the array and the integer x.
+
+Second line contains n integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^5) — the elements of the array.
+
+
+-----Output-----
+
+Print a single integer: the answer to the problem.
+
+
+-----Examples-----
+Input
+2 3
+1 2
+
+Output
+1
+Input
+6 1
+5 1 2 3 4 1
+
+Output
+2
+
+
+-----Note-----
+
+In the first sample there is only one pair of i = 1 and j = 2. $a_{1} \oplus a_{2} = 3 = x$ so the answer is 1.
+
+In the second sample the only two pairs are i = 3, j = 4 (since $2 \oplus 3 = 1$) and i = 1, j = 5 (since $5 \oplus 4 = 1$).
+
+A bitwise xor takes two bit integers of equal length and performs the logical xor operation on each pair of corresponding bits. The result in each position is 1 if only the first bit is 1 or only the second bit is 1, but will be 0 if both are 0 or both are 1. You can read more about bitwise xor operation here: https://en.wikipedia.org/wiki/Bitwise_operation#XOR.

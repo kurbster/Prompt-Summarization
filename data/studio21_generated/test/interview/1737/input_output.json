@@ -1,0 +1,30 @@
+{
+  "inputs": [
+    "4\na 3\n2\nb 1\nc 1\n\nb 2\n0\n\nb 1\n1\nb 2\n\nc 1\n1\nb 2\n",
+    "9\ncodehorses 5\n3\nwebfrmk 6\nmashadb 1\nmashadb 2\n\ncommons 2\n0\n\nmashadb 3\n0\n\nwebfrmk 6\n2\nmashadb 3\ncommons 2\n\nextra 4\n1\nextra 3\n\nextra 3\n0\n\nextra 1\n0\n\nmashadb 1\n1\nextra 3\n\nmashadb 2\n1\nextra 1\n",
+    "3\nabc 1\n2\nabc 3\ncba 2\n\nabc 3\n0\n\ncba 2\n0\n",
+    "1\nabc 1000000\n0\n",
+    "3\nppdpd 283157\n1\npddpdpp 424025\n\nppdpd 529292\n1\nppdpd 283157\n\npddpdpp 424025\n0\n",
+    "5\nabbzzz 646068\n0\n\nzabza 468048\n2\nbb 902619\nzabza 550912\n\nzabza 217401\n2\nabbzzz 646068\nbb 902619\n\nzabza 550912\n1\nzabza 217401\n\nbb 902619\n1\nabbzzz 646068\n",
+    "5\nyyyy 223967\n1\nyyyyyyy 254197\n\nyyyyyyy 254197\n0\n\ny 442213\n0\n\ny 965022\n1\nyyyyyyy 254197\n\nyyyy 766922\n4\nyyyyyyy 254197\ny 442213\nyyyy 223967\ny 965022\n",
+    "3\nvvgvvgv 991444\n1\ngvgvgvgvgg 206648\n\nvvgvvgv 296188\n0\n\ngvgvgvgvgg 206648\n1\nvvgvvgv 296188\n",
+    "5\ntctocototo 984516\n1\ncttocottt 486791\n\ntctocototo 688522\n2\ncttocottt 486791\ntctocototo 984516\n\ncttocottt 486791\n0\n\ntctocototo 676435\n1\ntctocototo 394244\n\ntctocototo 394244\n2\ntctocototo 688522\ncttocottt 486791\n",
+    "5\nggggggggg 202537\n4\ngggggggg 868552\ngggg 234633\ngggg 402994\ngggggggg 86863\n\ngggg 402994\n0\n\ngggggggg 868552\n1\ngggg 234633\n\ngggg 234633\n1\ngggg 402994\n\ngggggggg 86863\n0\n",
+    "4\ncf 1\n2\ndb 1\ndb 2\n\ndb 2\n0\n\ndb 1\n1\nold 1\n\nold 1\n0\n",
+    "5\ncf 1\n2\ndb 1\ndb 2\n\ndb 2\n1\nold 1\n\ndb 1\n1\nold 2\n\nold 1\n0\n\nold 2\n0\n"
+  ],
+  "outputs": [
+    "2\nb 1\nc 1\n",
+    "4\ncommons 2\nextra 1\nmashadb 2\nwebfrmk 6\n",
+    "1\ncba 2\n",
+    "0\n",
+    "1\npddpdpp 424025\n",
+    "0\n",
+    "1\nyyyyyyy 254197\n",
+    "1\ngvgvgvgvgg 206648\n",
+    "1\ncttocottt 486791\n",
+    "2\ngggg 402994\ngggggggg 868552\n",
+    "1\ndb 2\n",
+    "2\ndb 2\nold 1\n"
+  ]
+}

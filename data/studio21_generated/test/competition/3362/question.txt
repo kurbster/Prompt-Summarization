@@ -1,0 +1,34 @@
+While walking in grand malls little Elsa likes to play a game she calls “Lava”. This is a simple game using the different colors of the floor tiles as markers for where it is safe to walk and where it is not. The rules of the game say that you’re allowed to walk on white tiles, but not on black tiles. The tiles are square.
+
+Elsa typically plays this game together with her father. As he is an adult and (sometimes) can move over tiles that Elsa cannot, Elsa has decided that she is allowed to move in all directions while her father is only allowed to move along the $2$ axes of the floor tiles, and they are only allowed to take steps up to a certain length. This means in particular that Elsa can move to any tile within the radius of her step length (measured in the usual Euclidean distance).
+
+The goal of this game is to get from store $A$ to store $B$ as quickly as possible. Both players move at the same time and they are not allowed to do the next move until they are both finished with the first move. As both the father and Elsa hate to lose, the best outcome is to end up with them getting to the finish at the same time. The father would not like to participate in a game where Elsa will lose, or a game where her father can be seen as trying to lose on purpose (Elsa always knows). A player who can’t reach the goal obviously loses.
+
+-----Input-----
+The fist line of the input is a line consisting of $2$ integers $A$ and $F$ indicating the maximum step length of Elsa and the maximum step length of the father respectively. The step lengths are given as multiples of a tile width.
+
+ Then follows a line with $2$ integers $L$ and $W$ indicating the length and width of the map of their possible Lava game.
+
+ Then follow $L$ lines each consisting of a string of length $W$, indicating the tiles of the map. Here ‘S’ denotes the start tile, ‘G’ denotes the goal tile, ‘W’ denotes a safe tile and ‘B’ denotes a lava tile.
+
+-----Output-----
+Output a line with the word “SUCCESS” if they both reach the goal at the same time, “GO FOR IT” if Elsa wins and “NO CHANCE” if the father would win. If neither Elsa nor her father is able to reach the goal, output “NO WAY”.
+
+-----Limits-----
+ - $1 \leq A \leq 1000$
+ - $1 \leq F \leq 1000$
+ - $1 \leq L \leq 1000$
+ - $1 \leq W \leq 1000$
+ - The number of ‘W’ tiles will be at most $1000$.
+ - The map will only contain the characters ’S’, ’G’, ’W’ and ’B’ and there will only be one ’S’ character and one ’G’ character per map.
+
+-----Examples-----
+Sample Input:
+2 3
+4 4
+WWWW
+WSBB
+WWWW
+WBWG
+Sample Output:
+GO FOR IT

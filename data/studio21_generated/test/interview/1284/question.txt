@@ -1,0 +1,43 @@
+Danny, the local Math Maniac, is fascinated by circles, Omkar's most recent creation. Help him solve this circle problem!
+
+You are given $n$ nonnegative integers $a_1, a_2, \dots, a_n$ arranged in a circle, where $n$ must be odd (ie. $n-1$ is divisible by $2$). Formally, for all $i$ such that $2 \leq i \leq n$, the elements $a_{i - 1}$ and $a_i$ are considered to be adjacent, and $a_n$ and $a_1$ are also considered to be adjacent. In one operation, you pick a number on the circle, replace it with the sum of the two elements adjacent to it, and then delete the two adjacent elements from the circle. This is repeated until only one number remains in the circle, which we call the circular value.
+
+Help Danny find the maximum possible circular value after some sequences of operations. 
+
+
+-----Input-----
+
+The first line contains one odd integer $n$ ($1 \leq n < 2 \cdot 10^5$, $n$ is odd)  — the initial size of the circle.
+
+The second line contains $n$ integers $a_{1},a_{2},\dots,a_{n}$ ($0 \leq a_{i} \leq 10^9$)  — the initial numbers in the circle.
+
+
+-----Output-----
+
+Output the maximum possible circular value after applying some sequence of operations to the given circle.
+
+
+-----Examples-----
+Input
+3
+7 10 2
+
+Output
+17
+
+Input
+1
+4
+
+Output
+4
+
+
+
+-----Note-----
+
+For the first test case, here's how a circular value of $17$ is obtained:
+
+Pick the number at index $3$. The sum of adjacent elements equals $17$. Delete $7$ and $10$ from the circle and replace $2$ with $17$.
+
+Note that the answer may not fit in a $32$-bit integer.
