@@ -2,9 +2,10 @@ header: The following paragraphs contain computer science jargon. Rewrite them u
 humanOnly: False
 pathToData: "../../data"
 promptFile: prompts.txt
+summaryType: expert
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile
-numPrompts: 5
+numPrompts: 3
 # numExamples is the number of examples prepended to each example
 numExamples: 0
 summaryType: expert

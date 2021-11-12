@@ -23,8 +23,7 @@ def get_summary(prompt, settings_file, fine_tuned_model=None):
     #    **GPT_settings
     #)
     #return [val["text"] for val in response["choices"]]
-    generate_code_prompt()
-    return "I am summary"
+    return generate_code_prompt()
 
 def save_code(responses, destinations):
     for res, dst in zip(responses, destinations):

@@ -16,9 +16,14 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[str, str]:
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
-    prompts, num_remaining = validate_prompts()
+    prompts, num_remaining = validate_prompts(cfg)
 
+    # These are the prompt we want to summarize
     prompts = select_code_prompts(prompts, num_remaining, cfg)
+
+    generate_example_code(prompts, cfg)
+
+    return 'Hello World'
 
 def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, str]:
     """This will generate a prompt for summarization based on the
@@ -36,11 +41,11 @@ def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, st
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
-    human_probs, model_probs = get_completed_problems()
+    human_probs, model_probs = get_completed_problems(cfg['pathToData'])
 
     # Select a summary prompt that hasn't been summarized
     original_prompt_fname = select_summary_prompt(
-                    human_probs+model_probs, ignore_intro=cfg['ignoreIntro'])
+                    human_probs | model_probs, ignore_intro=cfg['ignoreIntro'])
 
     output_dir = save_config(original_prompt_fname, config, cfg['promptFile'], f'data/{api}_generated')
 
@@ -92,17 +97,25 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
     # introductory problems in the train set are from 2361 - 4999. 
     # In the test set are 4000 - 4999, which count as 9000 - 9999.
     intro_probs = []
+    available_probs = set(range(10000))
+
     if ignore_intro:
-        intro_probs = set(range(2361, 5000)) + set(range(9000, 10000))
+        available_probs -= set(range(2361, 5000))
+        available_probs -= set(range(9000, 10000))
         logger.info('Ignoring introductory problems.')
 
-    completed_probs = set(probs + intro_probs)
-    
-    available_probs = [i for i in range(10000) if i not in completed_probs]
+    def get_num(x):
+        num = int(os.path.basename(x))
+        if 'test' in x:
+            num += 5000
+        return num
+
+    probs = set(map(get_num, probs))
+    available_probs -= probs
 
     logger.debug(f'There are {len(available_probs)} remaining problems to summarize.')
-    assert len(available_probs) + len(completed_probs) == 10000, f'The total probs must add to 10000. It is {len(available_probs) + len(completed_probs)}'
 
+    available_probs = list(available_probs)
     prob_to_summarize = random.choice(available_probs)
 
     if prob_to_summarize >= 5000:
@@ -122,7 +135,7 @@ def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str, output
         prompt_fname (str): Name of the file we are summarizing.
         cfg_fname (str): Name of the config file.
         prompt_cfg_fname (str): Name of the prompt categories config file.
-        output_path (str): Prefix of the path to save to
+        output_path (str): Prefix of the path to save to.
 
     Returns:
         str: The path to where the example was saved.
@@ -295,11 +308,29 @@ def select_code_prompts(prompts: set[str], num_remaining: int, cfg: dict[str, an
 
         # Only select from prompts not already chosen
         remaining_prompts = probs - prompts
-        extra_prompts = random.sample(remaining_prompts, num_remaining)
+        extra_prompts = set(random.sample(remaining_prompts, num_remaining))
         prompts |= extra_prompts
     return prompts
 
-def generate_example_code():
+def generate_example_code(prompts: set[str], cfg: dict[str, any]) -> str:
+    """Generate the prompt to pass to the API from the prompts selected.
+
+    Args:
+        prompts (set[str]): The filenames of the prompts to generate code for.
+        cfg (dict[str, any]): The configuration dict.
+
+    Returns:
+        str: The string to pass to a model.
+    """
+    codes = []
+    for prompt in prompts:
+        prompt_str = ''
+        prompt_type = cfg['summaryType'] + '.txt'
+        prompt_file = os.path.join(prompt, prompt_type)
+        logging.info(f'Generating code for file: {prompt_file}')
+        #codes.append(prompt_str)
+
+def add_few_shot(prompt: str, num_shots: int) -> str:
     pass
 
 if __name__ == '__main__':

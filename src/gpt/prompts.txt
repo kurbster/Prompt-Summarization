@@ -1,3 +1,2 @@
 competition/2000
-competition/2021
 studio21_generated/competition/2002

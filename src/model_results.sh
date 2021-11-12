@@ -27,7 +27,7 @@ report_problem() {
 }
 
 [[ -z $1 ]] && echo "report all problems" && {
-    for problem in $(find ../data/studio21_generated/[ic]* -mindepth 1 -type d); do
+    for problem in $(find ../data/*generated/[ic]* -mindepth 1 -type d); do
         ! [[ -f "$problem/report.txt" ]] && report_problem $problem
     done
     for problem in $(find ../data/studio21_generated/ -mindepth 3 -type d); do

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-wget 'https://people.eecs.berkeley.edu/~hendrycks/APPS.tar.gz'
+#wget 'https://people.eecs.berkeley.edu/~hendrycks/APPS.tar.gz'
+curl 'https://people.eecs.berkeley.edu/~hendrycks/APPS.tar.gz' -o "APPS.tar.gz"
 
 echo "Extracting dataset to parent directory ..."
 tar -xzf 'APPS.tar.gz' -C ..

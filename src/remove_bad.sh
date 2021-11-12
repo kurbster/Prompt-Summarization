@@ -1,6 +1,6 @@
 #!/bin/bash
 i=0
-for problem in $(find ../data/studio21_generated/[ic]* -mindepth 1 -type d); do
+for problem in $(find ../data/*generated/[ic]* -mindepth 1 -type d); do
     ! [[ -f "$problem/output.json" ]] && echo $problem && rm -r $problem && i=$((i+1)) || :
 done
 
