@@ -5,7 +5,7 @@ sys.path.append('..')
 import yaml
 import openai
 
-#from prompt_generation import generate_prompt
+from prompt_generation import generate_code_prompt
 
 def get_summary(prompt, settings_file, fine_tuned_model=None):
     openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -23,6 +23,7 @@ def get_summary(prompt, settings_file, fine_tuned_model=None):
     #    **GPT_settings
     #)
     #return [val["text"] for val in response["choices"]]
+    generate_code_prompt()
     return "I am summary"
 
 def save_code(responses, destinations):
@@ -36,8 +37,8 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         model = sys.argv[1]
         print(f'Using fine tuned model: {model}')
-        summaries = get_summary(prompt, "./settings.yaml", fine_tuned_model=model)
+        summaries = get_summary(prompt, "./api_settings.yaml", fine_tuned_model=model)
     else:
         print(f'Using pretrained model defined in settings.yaml')
-        summaries = get_summary(prompt, "./settings.yaml")
-    print(summaries)
+        summaries = get_summary(prompt, "./api_settings.yaml")
+    #print(summaries)

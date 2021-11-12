@@ -1,28 +1,31 @@
 #!/usr/bin/env python3
 import re
 import os
+import sys
 import yaml
 import glob
 import shutil
 import random
 import logging
-import logging.config
 
-from datetime import datetime
+import my_logger
 
-with open('logging.yaml') as f:
-    cfg = yaml.safe_load(f)
-
-fname = 'logs/' + datetime.now().strftime('%m-%d-%Y_%H:%M:%S') + '.log'
-cfg['handlers']['file']['filename'] = fname
-logging.config.dictConfig(cfg)
 logger = logging.getLogger('apiLogger')
 
-def generate_prompt(config: str = 'config.yaml') -> tuple[str, str, str]:
+def generate_code_prompt(config: str = 'config.yaml') -> tuple[str, str]:
+    with open(config) as f:
+        cfg = yaml.safe_load(f)
+
+    prompts, num_remaining = validate_prompts()
+
+    prompts = select_code_prompts(prompts, num_remaining, cfg)
+
+def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, str]:
     """This will generate a prompt for summarization based on the
     configuration file passed in.
 
     Args:
+        api (str): The api calling this function.
         cfg (str, optional): The name of the config file to use.
         Defaults to 'config.yaml'.
 
@@ -39,7 +42,7 @@ def generate_prompt(config: str = 'config.yaml') -> tuple[str, str, str]:
     original_prompt_fname = select_summary_prompt(
                     human_probs+model_probs, ignore_intro=cfg['ignoreIntro'])
 
-    output_dir = save_config(original_prompt_fname, config, cfg['promptFile'])
+    output_dir = save_config(original_prompt_fname, config, cfg['promptFile'], f'data/{api}_generated')
 
     prompt_type = detect_type(original_prompt_fname)
 
@@ -53,38 +56,33 @@ def generate_prompt(config: str = 'config.yaml') -> tuple[str, str, str]:
     
     return full_example, remainder, output_dir
     
-def get_completed_problems() -> tuple[list[int], list[int]]:
+def get_completed_problems(path_to_data: str) -> tuple[set[str], set[str]]:
     """Get the problems that have already been summarized.
 
+    Args:
+        path_to_data (str): Path to the data directory.
+
     Returns:
-        tuple(list[int], list[int]): The first list is the problems that
-        a human has summarized. The second list is the problems that a
+        tuple(set[str], set[str]): The first set is the problems that
+        a human has summarized. The second set is the problems that a
         model has summarized.
     """
-    human_probs = glob.glob('../data/[ic]*/*')
-    train_probs = glob.glob('../data/studio21_generated/[ic]*/*')
-    test_probs  = glob.glob('../data/studio21_generated/test/[ic]*/*')
+    human_probs = set(glob.glob(f'{path_to_data}/[ic]*/*'))
+    train_probs = set(glob.glob(f'{path_to_data}/*generated/[ic]*/*'))
+    test_probs  = set(glob.glob(f'{path_to_data}/*generated/test/[ic]*/*'))
 
-    get_num = lambda x: int(os.path.basename(x))
-
-    human_probs = list(map(get_num, human_probs))
-    train_probs = list(map(get_num, train_probs))
-    test_probs  = list(map(get_num, test_probs))
-    
-    test_probs = list(map(lambda x: x + 5000, test_probs))
-
-    model_probs = train_probs + test_probs
+    model_probs = train_probs | test_probs
 
     logger.debug(f'Found {len(human_probs)} human generated summaries.')
     logger.debug(f'Found {len(model_probs)} model generated summaries.')
 
     return human_probs, model_probs
     
-def select_summary_prompt(probs: list[int], ignore_intro: bool = True) -> str:
+def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
     """Select a random problem to be summarized by the model.
 
     Args:
-        probs (list[int]): A list of problems we have already done.
+        probs (set[str]): A set of problems we have already done.
         ignore_intro (bool, optional): If you want to avoid summarizing
         introductory problems. Defaults to True.
 
@@ -95,7 +93,7 @@ def select_summary_prompt(probs: list[int], ignore_intro: bool = True) -> str:
     # In the test set are 4000 - 4999, which count as 9000 - 9999.
     intro_probs = []
     if ignore_intro:
-        intro_probs = list(range(2361, 5000)) + list(range(9000, 10000))
+        intro_probs = set(range(2361, 5000)) + set(range(9000, 10000))
         logger.info('Ignoring introductory problems.')
 
     completed_probs = set(probs + intro_probs)
@@ -117,20 +115,21 @@ def select_summary_prompt(probs: list[int], ignore_intro: bool = True) -> str:
 
     return original_prompt
 
-def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str) -> str:
+def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str, output_path: str) -> str:
     """We will copy the original files and config used for this generation.
 
     Args:
         prompt_fname (str): Name of the file we are summarizing.
         cfg_fname (str): Name of the config file.
         prompt_cfg_fname (str): Name of the prompt categories config file.
+        output_path (str): Prefix of the path to save to
 
     Returns:
         str: The path to where the example was saved.
     """
     # Copy the original directory to the output directory
     prompt_dir = os.path.split(prompt_fname)[0]
-    output_dir = prompt_dir.replace('APPS', 'data/studio21_generated')
+    output_dir = prompt_dir.replace('APPS', output_path)
     shutil.copytree(prompt_dir, output_dir)
 
     logger.debug(f'Saved original prompt directory to {output_dir}')
@@ -179,13 +178,13 @@ def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
 
     return prompt[:prompt_idx], prompt[prompt_idx:]
 
-def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: list[int]) -> str:
+def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[int]) -> str:
     """Generating the examples that will be passed to the model before the new summary.
 
     Args:
         prompt_type (str): The determined type of the problem.
         cfg (dict[str, any]): The configuration for this generation.
-        probs (list[int]): The human problems to choose from.
+        probs (set[int]): The human problems to choose from.
 
     Returns:
         str: The formatted examples for this generation.
@@ -251,8 +250,60 @@ def check_ascii(text: str) -> bool:
         return False
     return True
 
+def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
+    prompts = {}
+    num_prompts = cfg['numPrompts']
+    if 'promptFile' not in cfg:
+        return prompts, num_prompts
+    
+    # Read the lines from the prompt file
+    with open(cfg['promptFile']) as f:
+        prompts = f.read().splitlines()
+
+    add_data_dir = lambda x: os.path.join(cfg['pathToData'], x)
+
+    prompts = set(map(add_data_dir, prompts))
+    remaining_prompts = num_prompts - len(prompts)
+
+    # We provide every example to use
+    if num_prompts == -1 or remaining_prompts == 0:
+        return prompts, 0
+
+    # We provided too many examples
+    if remaining_prompts < 0:
+        err_str = f'You provided {len(prompts)} prompts in the promptFile.'
+        err_str += f'But only specified {cfg["numPrompts"]} in your config file. Exiting.'
+        logger.critical(err_str)
+        sys.exit(1)
+
+    return prompts, remaining_prompts
+
+def select_code_prompts(prompts: set[str], num_remaining: int, cfg: dict[str, any]) -> set[str]:
+    """Select prompts to generate code for.
+
+    Args:
+        prompts (set[str]): Prompts already selected.
+        num_remaining (int): Number of prompts to select.
+        cfg (dict[str, any]): Our configuration dictionary.
+
+    Returns:
+        set[str]: The problems to generate code for.
+    """
+    if num_remaining:
+        human_probs, model_probs = get_completed_problems(cfg['pathToData'])
+        probs = human_probs if cfg['humanOnly'] else human_probs | model_probs
+
+        # Only select from prompts not already chosen
+        remaining_prompts = probs - prompts
+        extra_prompts = random.sample(remaining_prompts, num_remaining)
+        prompts |= extra_prompts
+    return prompts
+
+def generate_example_code():
+    pass
+
 if __name__ == '__main__':
-    prompt, extra, output_dir = generate_prompt()
+    prompt, extra, output_dir = generate_prompt('studio21')
     print(prompt)
     print(extra)
     print(output_dir)

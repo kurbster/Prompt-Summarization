@@ -3,6 +3,7 @@ header: The following paragraphs contain computer science jargon. Rewrite them u
 splitFile: split.txt
 promptFile: prompt.yaml
 numPrompts: 5
+pathToData: "../../data"
 summaryType: expert
 ignoreIntro: True
 summaryPrefix: "Simple:"
