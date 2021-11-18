@@ -2,6 +2,7 @@
 import re
 import os
 import sys
+import json
 import yaml
 import glob
 import shutil
@@ -12,18 +13,31 @@ import my_logger
 
 logger = logging.getLogger('apiLogger')
 
-def generate_code_prompt(config: str = 'config.yaml') -> tuple[str, str]:
+def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[str]]:
+    """This will generate code generation prompts according to the config file passed in.
+
+    Args:
+        config (str, optional): The yaml file holding the generation config.
+        Defaults to 'config.yaml'.
+
+    Returns:
+        tuple[list[str], list[str]]: The first is the list of prompt strings to pass to the model.
+        The second is the output dir for each problem.
+    """
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
     prompts, num_remaining = validate_prompts(cfg)
 
+    human_probs, model_probs = get_completed_problems(cfg['pathToData'])
+    available_prompts = human_probs if cfg['humanOnly'] else human_probs | model_probs
+    
     # These are the prompt we want to summarize
-    prompts = select_code_prompts(prompts, num_remaining, cfg)
+    prompts = select_code_prompts(prompts, num_remaining, available_prompts, cfg)
 
-    generate_example_code(prompts, cfg)
+    prompt_texts = generate_example_code(prompts, available_prompts, cfg)
 
-    return 'Hello World'
+    return prompt_texts, prompts
 
 def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, str]:
     """This will generate a prompt for summarization based on the
@@ -55,7 +69,7 @@ def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, st
 
     priming_examples = generate_example_prompt(prompt_type, cfg, human_probs)
 
-    full_example = priming_examples + f'\n\n{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
+    full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
 
     full_example = ensure_ascii(full_example)
     
@@ -208,15 +222,15 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
     
     output = [cfg['header']]
     
+    probs = list(probs)
     # If it's a general problem choose any examples
     if prompt_type == 'general':
         example_prompts = random.sample(probs, cfg['numPrompts'])
 
     for ex in example_prompts:
-        ex = str(ex).zfill(4)
         # Get the original prompt and the summarized
-        orig = glob.glob(f'../data/[ic]*/{ex}/question.txt')[0]
-        summary = glob.glob(f'../data/[ic]*/{ex}/{cfg["summaryType"]}.txt')[0]
+        orig = os.path.join(ex, 'question.txt')
+        summary = os.path.join(ex, f'{cfg["summaryType"]}.txt')
         logger.debug(f'Using summary {summary} for priming model')
         orig, _ = split_prompt(orig, cfg['splitFile'])
         summary, _ = split_prompt(summary, cfg['splitFile'])
@@ -226,7 +240,7 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
         if not check_ascii(text):
             logger.warning(f'Problem {num} was not ascii.')
 
-    output = '\n\n'.join(output)
+    output = cfg["fewShotSuffix"].join(output)
     
     return output
 
@@ -280,6 +294,7 @@ def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
 
     # We provide every example to use
     if num_prompts == -1 or remaining_prompts == 0:
+        logger.info(f'Only using prompts specified in {cfg["promptFile"]}')
         return prompts, 0
 
     # We provided too many examples
@@ -291,50 +306,108 @@ def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
 
     return prompts, remaining_prompts
 
-def select_code_prompts(prompts: set[str], num_remaining: int, cfg: dict[str, any]) -> set[str]:
+def select_code_prompts(prompts: set[str], num_remaining: int, available_prompts: set[str], cfg: dict[str, any]) -> set[str]:
     """Select prompts to generate code for.
 
     Args:
         prompts (set[str]): Prompts already selected.
         num_remaining (int): Number of prompts to select.
+        available_prompts (set[str]): Completed problems to choose from.
         cfg (dict[str, any]): Our configuration dictionary.
 
     Returns:
         set[str]: The problems to generate code for.
     """
     if num_remaining:
-        human_probs, model_probs = get_completed_problems(cfg['pathToData'])
-        probs = human_probs if cfg['humanOnly'] else human_probs | model_probs
-
         # Only select from prompts not already chosen
-        remaining_prompts = probs - prompts
+        remaining_prompts = available_prompts - prompts
+        logger.debug(f'Choosing {num_remaining} prompts from {len(remaining_prompts)} remaining prompts.')
         extra_prompts = set(random.sample(remaining_prompts, num_remaining))
         prompts |= extra_prompts
     return prompts
 
-def generate_example_code(prompts: set[str], cfg: dict[str, any]) -> str:
+def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
     """Generate the prompt to pass to the API from the prompts selected.
 
     Args:
         prompts (set[str]): The filenames of the prompts to generate code for.
+        available_prompts (set[str]): The prompts available to select for few shot.
         cfg (dict[str, any]): The configuration dict.
 
     Returns:
-        str: The string to pass to a model.
+        list[str]: The list of string prompts to be passed to the model.
     """
-    codes = []
+    code_prompts = []
     for prompt in prompts:
-        prompt_str = ''
-        prompt_type = cfg['summaryType'] + '.txt'
-        prompt_file = os.path.join(prompt, prompt_type)
-        logging.info(f'Generating code for file: {prompt_file}')
-        #codes.append(prompt_str)
+        logging.info(f'Generating code for prompt: {prompt}')
 
-def add_few_shot(prompt: str, num_shots: int) -> str:
-    pass
+        # Remove current prob from few shot pool
+        # TODO: Should we remove from the available prompts if we are using that prompt?
+        # currenty we do not.
+        few_shot_list = generate_few_shot(available_prompts - {prompt}, cfg)
+        few_shot_str = cfg['fewShotSuffix'].join(few_shot_list)
+
+        question = read_code_files(prompt, cfg, read_solution=False)
+
+        prompt_str = cfg['header'] + cfg['fewShotSuffix'] + few_shot_str + question
+        code_prompts.append(prompt_str)
+    
+    return code_prompts
+
+def generate_few_shot(available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
+    """Generating few shot examples.
+
+    Args:
+        available_prompts (set[str]): Set of prompts to choose from.
+        cfg (dict[str, any]): The configuration dict.
+
+    Returns:
+        list[str]: The list of few shot prompts.
+    """
+    if cfg['numExamples'] == 0:
+        return []
+    
+    available_prompts = list(available_prompts)
+    few_shot_examples = random.sample(available_prompts, cfg["numExamples"])
+    
+    examples = [read_code_files(ex, cfg) for ex in few_shot_examples]
+    
+    return examples
+
+def read_code_files(prompt: str, cfg: dict[str, any], read_solution: bool=True) -> str:
+    """Read the appropriate files from the prompt dir and format into string.
+
+    Args:
+        prompt (str): The directory to read from.
+        cfg (dict[str, any]): The configuration dict.
+        read_solution (bool, optional): Whether or not to read solutions.json. Defaults to True.
+
+    Returns:
+        str: The str to be passed as input.
+    """
+    question_fname = os.path.join(prompt, cfg['summaryType']+'.txt')
+    logging.info(f'Generating prompt for file: {question_fname}')
+    with open(question_fname) as f:
+        question = f.read()
+
+    prompt_str  = f'{cfg["promptPrefix"]} {question}\n{cfg["codePrefix"]}'
+    
+    prompt = '../../data/studio_generated/test/competition/3326'
+    if read_solution:
+        code_fname = os.path.join(prompt, 'solutions.json')
+        try:
+            code = json.load(open(code_fname))[0]
+            prompt_str += '\n' + code
+        except FileNotFoundError:
+            logger.error(f'The code solution for prompt {prompt} does not exist. Not including it in few shot examples.')
+        
+    return prompt_str
 
 if __name__ == '__main__':
     prompt, extra, output_dir = generate_prompt('studio21')
+    print('PROMPT:\n', '='*50)
     print(prompt)
+    print('EXTRA:\n', '='*50)
     print(extra)
+    print('OUTPUT DIR:\n', '='*50)
     print(output_dir)

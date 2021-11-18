@@ -5,10 +5,11 @@ promptFile: prompts.txt
 summaryType: expert
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile
-numPrompts: 3
+numPrompts: -1
 # numExamples is the number of examples prepended to each example
 numExamples: 0
 summaryType: expert
 includeOrig: False  # If True then we will test every prompt as well
-promptPrefix: "### Prompt:"
-codePrefix:   "### Code:"
+promptPrefix: "\"\"\""
+codePrefix:   "Code:"
+fewShotSuffix: "\n\n"
