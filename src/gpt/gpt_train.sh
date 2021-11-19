@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. gpt.cfg
+. training.cfg
 
 # Read the training params into this var
 args=$(<$TRAINING_PARAMS)
