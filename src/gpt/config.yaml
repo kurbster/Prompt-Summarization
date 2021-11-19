@@ -1,4 +1,4 @@
-header: The following paragraphs contain computer science jargon. Rewrite them using simple words.
+header: "Python 3\n"
 humanOnly: False
 pathToData: "../../data"
 promptFile: prompts.txt
@@ -9,7 +9,9 @@ numPrompts: -1
 # numExamples is the number of examples prepended to each example
 numExamples: 0
 summaryType: expert
-includeOrig: False  # If True then we will test every prompt as well
+includeOrig: True  # If True then we will test the original prompt as well
+# Codex achieves better results when formatting prompt as docstring
 promptPrefix: "\"\"\""
+promptSuffix: "\"\"\""
 codePrefix:   "Code:"
 fewShotSuffix: "\n\n"
