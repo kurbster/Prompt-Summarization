@@ -10,6 +10,7 @@ import numpy as np
 import os
 import pprint
 import sys
+sys.path.append('..')
 import testing_util as test_util
 import time
 
@@ -18,6 +19,10 @@ from datetime import datetime, date
 from tqdm import tqdm
 
 from typing import List
+
+import my_logger
+
+logger = logging.getLogger('testLogger')
 
 def print_results(results, args):
     res = []
@@ -49,8 +54,6 @@ def eval_and_save_problems(args):
 
     print(len(problems))
     gpt_codes = {}
-    gpt_bleu = {}
-    gpt_codebleu = {}
     results = {}
     codes_loc = os.path.join(args.save, f"all_codes.json")
     if not os.path.exists(codes_loc):
@@ -83,51 +86,42 @@ def eval_and_save_problems(args):
 
     # main eval loop
     for index, problem in enumerate(tqdm(problems)):
-        try:
-            if args.debug:
-                print(f"\n\nproblem path = {problem}")
-            output_str = gpt_codes[str(index+args.start)]
-        except:
-            print("CANNOT FIND OUTPUT_STR FOR", problem)
-            continue
-        prob_path = os.path.join(args.root, problem)
+        if args.debug:
+            print(f"\n\nproblem path = {problem}")
+        output_str = gpt_codes[str(index+args.start)]
 
-        with open(os.path.join(prob_path, "solutions.json"), "r") as f:
-            sols = json.load(f)
+        problem_dir = os.path.dirname(problem)
+        prob_path = os.path.join(args.root, problem_dir)
         
         if not os.path.exists(args.save):
             os.makedirs(args.save)
 
         res = []
-        for o_idx, o in enumerate(output_str):
-            if args.debug:
-                print(f"\nTesting solution {o_idx}")
-                print(f"\nI should be testing this code\n{output_str}")
-                #print(f'\nTesting this code\n{o}')
-            curr_res = [-2]
-            try:
-                curr_res = test_util.run_test(prob_path=prob_path, test=o, debug=args.debug)
-                fixed = []
-                for e in curr_res:
-                    if isinstance(e, np.ndarray):
-                       e = e.item(0)
-                    if isinstance(e, np.bool_):
-                        e = bool(e)
-                    fixed.append(e)
-                curr_res = fixed
-                if not np.all(curr_res):
-                    print(f"Results were not all True: {curr_res}")
-            except Exception as e:
-                print(f"test framework exception = {repr(e)}{e}\n")
-                break
-            finally:
-                assert isinstance(curr_res, list)
-                res.append(curr_res)
-
         if args.debug:
-            print(f"\nHow to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
-            #print(f"results = {res}")
- 
+            print(f"\nTesting this code\n{output_str}")
+        curr_res = [-2]
+        try:
+            curr_res = test_util.run_test(prob_path=prob_path, test=output_str, debug=args.debug)
+            fixed = []
+            for e in curr_res:
+                if isinstance(e, np.ndarray):
+                   e = e.item(0)
+                if isinstance(e, np.bool_):
+                    e = bool(e)
+                fixed.append(e)
+            curr_res = fixed
+            if not np.all(curr_res):
+                print(f"Results were not all True: {curr_res}")
+        except Exception as e:
+            print(f"test framework exception = {repr(e)}{e}\n")
+            break
+        finally:
+            assert isinstance(curr_res, list)
+            res.append(curr_res)
+
+        print(f"\nHow to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
+        print(f"results = {res}")
+
         results[index+args.start+args.index] = res
         
         with open(results_loc, "w") as f:
@@ -165,13 +159,12 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Testing a Language Model on Python Code")
     parser.add_argument("-t","--test_loc", default="../data_split/test.json", type=str, help="path to the json containing problem paths to be evaluated.")
-    parser.add_argument("-r","--root", default="../", type=str, help="where the data is stored.")
+    parser.add_argument("-r","--root", default="./", type=str, help="where the data is stored.")
     parser.add_argument("-s","--start", default=0, type=int)
     parser.add_argument("-e","--end", default=None, type=int, help="If you want to evaluate a subset of problems specify start and ending index. File with start and ending prefix must exist typically used with batch evaluation.")
     parser.add_argument("-i", "--index", default=0, type=int)
     parser.add_argument("-p", "--print_results", action="store_true", help="If you have already evaluated the results and only want to print them.")
     parser.add_argument("-d", "--debug", action="store_true")
-    parser.add_argument("-z", "--prompt", default="clean-question", type=str)
     parser.add_argument("--save", type=str, default="./results", help="Where the evaluated data is loaded from and results saved to.")
     parser.add_argument("--stop-early", default=None, type=int)
  

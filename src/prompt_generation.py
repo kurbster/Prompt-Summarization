@@ -35,7 +35,8 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[s
     # These are the prompt we want to summarize
     prompts = select_code_prompts(prompts, num_remaining, available_prompts, cfg)
 
-    prompt_texts = generate_example_code(prompts, available_prompts, cfg)
+    # If we include original we return a new set of prompts
+    prompt_texts, prompts = generate_example_code(prompts, available_prompts, cfg)
 
     return prompt_texts, prompts
 
@@ -336,7 +337,7 @@ def select_code_prompts(prompts: set[str], num_remaining: int, available_prompts
 
     return prompts
 
-def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
+def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: dict[str, any]) -> tuple[list[str], list[str]]:
     """Generate the prompt to pass to the API from the prompts selected.
 
     Args:
@@ -345,9 +346,11 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         cfg (dict[str, any]): The configuration dict.
 
     Returns:
-        list[str]: The list of string prompts to be passed to the model.
+        tuple[list[str], list[str]]: The list of string prompts to be passed to the model.
+        The list of prompts used to generate the strings.
     """
     code_prompts = []
+    prompt_paths = []
     for prompt in prompts:
         logger.info(f'Generating code for prompt: {prompt}')
 
@@ -361,13 +364,19 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
 
         prompt_str = cfg['header'] + few_shot_str + summary
         code_prompts.append(prompt_str)
+        
+        prompt_name = os.path.join(prompt, cfg['summaryType']+'.txt')
+        prompt_paths.append(prompt_name)
 
         if cfg['includeOrig']:
             original = read_code_files(prompt, cfg, read_original=True, read_solution=False)
             prompt_str = cfg['header'] + few_shot_str + original
             code_prompts.append(prompt_str)
+            
+            prompt_name = os.path.join(prompt, 'question.txt')
+            prompt_paths.append(prompt_name)
     
-    return code_prompts
+    return code_prompts, prompt_paths
 
 def generate_few_shot(available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
     """Generating few shot examples.

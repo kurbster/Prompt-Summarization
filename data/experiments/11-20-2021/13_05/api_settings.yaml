@@ -1,4 +1,4 @@
-engine: "davinci-codex"
+engine: "cushman-codex"
 temperature: 0.25
 max_tokens: 500
 top_p: 1.0

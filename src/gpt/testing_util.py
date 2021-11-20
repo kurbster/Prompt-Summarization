@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import sys
+sys.path.append('..')
 import io
 import faulthandler
 
@@ -12,6 +13,11 @@ from datetime import datetime
 import signal
 
 import numpy as np
+
+import logging
+import my_logger
+logger = logging.getLogger('testLogger')
+
 # for capturing the stdout
 from io import StringIO
 from typing import get_type_hints
@@ -193,6 +199,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             
             new_test = ""
             started = False
+            # TODO: Should we define starting code here or not?
             for i in tmp_test:
                 if i.startswith("\t") and not started:
                     new_test += "stdin = sys.stdin\nstdout = sys.stdout\n"
