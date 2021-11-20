@@ -4,6 +4,7 @@ import yaml
 import requests
 import logging
 
+import my_logger
 from prompt_generation import generate_prompt
 
 logger = logging.getLogger('apiLogger')

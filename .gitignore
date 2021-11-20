@@ -1,5 +1,6 @@
 APPS/
 src/logs/
+src/gpt/logs/
 .vscode/
 *.pyc
 environ/*

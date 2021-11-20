@@ -35,7 +35,8 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[s
     # These are the prompt we want to summarize
     prompts = select_code_prompts(prompts, num_remaining, available_prompts, cfg)
 
-    prompt_texts = generate_example_code(prompts, available_prompts, cfg)
+    # If we include original we return a new set of prompts
+    prompt_texts, prompts = generate_example_code(prompts, available_prompts, cfg)
 
     return prompt_texts, prompts
 
@@ -278,6 +279,15 @@ def check_ascii(text: str) -> bool:
     return True
 
 def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
+    """Read the specified prompts and determine how many more we need to choose.
+
+    Args:
+        cfg (dict[str, any]): The configuration dict.
+
+    Returns:
+        tuple[set[str], int]: The set of paths to the problems we want to generate for,
+        and the number of remaining prompts we have to choose.
+    """
     prompts = {}
     num_prompts = cfg['numPrompts']
     if 'promptFile' not in cfg:
@@ -324,9 +334,10 @@ def select_code_prompts(prompts: set[str], num_remaining: int, available_prompts
         logger.debug(f'Choosing {num_remaining} prompts from {len(remaining_prompts)} remaining prompts.')
         extra_prompts = set(random.sample(remaining_prompts, num_remaining))
         prompts |= extra_prompts
+
     return prompts
 
-def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
+def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: dict[str, any]) -> tuple[list[str], list[str]]:
     """Generate the prompt to pass to the API from the prompts selected.
 
     Args:
@@ -335,11 +346,13 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         cfg (dict[str, any]): The configuration dict.
 
     Returns:
-        list[str]: The list of string prompts to be passed to the model.
+        tuple[list[str], list[str]]: The list of string prompts to be passed to the model.
+        The list of prompts used to generate the strings.
     """
     code_prompts = []
+    prompt_paths = []
     for prompt in prompts:
-        logging.info(f'Generating code for prompt: {prompt}')
+        logger.info(f'Generating code for prompt: {prompt}')
 
         # Remove current prob from few shot pool
         # TODO: Should we remove from the available prompts if we are using that prompt?
@@ -347,12 +360,23 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         few_shot_list = generate_few_shot(available_prompts - {prompt}, cfg)
         few_shot_str = cfg['fewShotSuffix'].join(few_shot_list)
 
-        question = read_code_files(prompt, cfg, read_solution=False)
+        summary = read_code_files(prompt, cfg, read_solution=False)
 
-        prompt_str = cfg['header'] + cfg['fewShotSuffix'] + few_shot_str + question
+        prompt_str = cfg['header'] + few_shot_str + summary
         code_prompts.append(prompt_str)
+        
+        prompt_name = os.path.join(prompt, cfg['summaryType']+'.txt')
+        prompt_paths.append(prompt_name)
+
+        if cfg['includeOrig']:
+            original = read_code_files(prompt, cfg, read_original=True, read_solution=False)
+            prompt_str = cfg['header'] + few_shot_str + original
+            code_prompts.append(prompt_str)
+            
+            prompt_name = os.path.join(prompt, 'question.txt')
+            prompt_paths.append(prompt_name)
     
-    return code_prompts
+    return code_prompts, prompt_paths
 
 def generate_few_shot(available_prompts: set[str], cfg: dict[str, any]) -> list[str]:
     """Generating few shot examples.
@@ -370,29 +394,35 @@ def generate_few_shot(available_prompts: set[str], cfg: dict[str, any]) -> list[
     available_prompts = list(available_prompts)
     few_shot_examples = random.sample(available_prompts, cfg["numExamples"])
     
+    # TODO: Currently we generate few shot examples by reading the summaries.
+    # The summary type is defined in the config file. Should we change this
+    # to have different few shot examples if we are using the original question?
     examples = [read_code_files(ex, cfg) for ex in few_shot_examples]
     
     return examples
 
-def read_code_files(prompt: str, cfg: dict[str, any], read_solution: bool=True) -> str:
+def read_code_files(prompt: str, cfg: dict[str, any], read_original: bool=False, read_solution: bool=True) -> str:
     """Read the appropriate files from the prompt dir and format into string.
 
     Args:
         prompt (str): The directory to read from.
         cfg (dict[str, any]): The configuration dict.
+        read_original (bool, optional): Whether or not to read the orginal question. Defaults to False.
         read_solution (bool, optional): Whether or not to read solutions.json. Defaults to True.
 
     Returns:
         str: The str to be passed as input.
     """
-    question_fname = os.path.join(prompt, cfg['summaryType']+'.txt')
-    logging.info(f'Generating prompt for file: {question_fname}')
+    fname = 'question.txt' if read_original else f'{cfg["summaryType"]}.txt'
+    question_fname = os.path.join(prompt, fname)
+    logger.info(f'Generating prompt for file: {question_fname}')
     with open(question_fname) as f:
         question = f.read()
 
-    prompt_str  = f'{cfg["promptPrefix"]} {question}\n{cfg["codePrefix"]}'
+    code_prefix = get_code_prefix(prompt, cfg["codePrefix"])
+
+    prompt_str  = f'{cfg["promptPrefix"]}\n{question}\n{cfg["promptSuffix"]}\n{code_prefix}'
     
-    prompt = '../../data/studio_generated/test/competition/3326'
     if read_solution:
         code_fname = os.path.join(prompt, 'solutions.json')
         try:
@@ -402,6 +432,25 @@ def read_code_files(prompt: str, cfg: dict[str, any], read_solution: bool=True) 
             logger.error(f'The code solution for prompt {prompt} does not exist. Not including it in few shot examples.')
         
     return prompt_str
+
+def get_code_prefix(prompt: str, default: str) -> str:
+    """Return the prefix for code generation.
+
+    Args:
+        prompt (str): The problem directory to read from.
+        default (str): The default prefix to use if the starter code doesn't exist.
+
+    Returns:
+        str: The code prefix used for code generation.
+    """
+    starter_code = os.path.join(prompt, 'starter_code.py')
+    prefix = default
+    if os.path.exists(starter_code):
+        with open(starter_code) as f:
+            prefix = f.read().strip()
+    else:
+        logger.warning(f'The problem {prompt} did not have starter_code.py!')
+    return prefix
 
 if __name__ == '__main__':
     prompt, extra, output_dir = generate_prompt('studio21')

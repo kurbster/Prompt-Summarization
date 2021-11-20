@@ -29,7 +29,7 @@ report_problem() {
 }
 
 [[ -z $1 ]] && echo "report all problems" && {
-    for problem in $(find ../[ic]* -mindepth 1 -type d); do
+    for problem in $(find ../data/[ic]* -mindepth 1 -type d); do
         report_problem $problem
     done
 } || {
