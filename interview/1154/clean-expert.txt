@@ -1,0 +1,1 @@
+Given two unordered lists of Size N and N+1 find and return the additional element in the second list. Input : First line contains the value of N. Second line contains list of size N. Third line contains list of size N+1. Output : Print the extra number in new line. Constraints : 1 ≤ Elements ≤ 1,000 1 ≤ N ≤ 1,000,000 Sample Input : 3 4 2 5 4 2 3 5 Sample Output : 3
