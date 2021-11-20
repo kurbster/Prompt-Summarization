@@ -6,11 +6,11 @@ Example
 Follow up:
 Note:
 Notes:
+NOTE:
 Hint
 # Notes
 Constraints:
 For example :
 \*\*Note on numerical stability:\*\*
 ~~~if:java
-NOTE:
 ### Detailed rules

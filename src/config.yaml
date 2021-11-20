@@ -8,6 +8,7 @@ summaryType: expert
 ignoreIntro: True
 summaryPrefix: "Simple:"
 originalPrefix: "Jargon:"
+fewShotSuffix: "\n\n"
 
 apiParams:
     topP: 1.0
