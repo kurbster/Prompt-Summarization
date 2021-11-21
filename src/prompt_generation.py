@@ -40,6 +40,59 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[s
 
     return prompt_texts, prompts
 
+
+def get_input_format_for_api(api, cfg, human_probs, prompt_type, prompt):
+    if api == "studio21":
+        priming_examples = generate_example_prompt(prompt_type, cfg, human_probs)
+        full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
+    elif api == "gpt":
+        priming_examples = generate_example_prompt_gpt(prompt_type, cfg, human_probs)
+        full_example = priming_examples + f'{cfg["originalPrefixStart"]}{prompt}{cfg["originalPrefixEnd"]}{cfg["summaryPrefixStart"]}'
+    return full_example
+
+def generate_example_prompt_gpt(prompt_type: str, cfg: dict[str, any], probs: set[int]) -> str:
+    """Generating the examples that will be passed to the model before the new summary.
+
+    Args:
+        prompt_type (str): The determined type of the problem.
+        cfg (dict[str, any]): The configuration for this generation.
+        probs (set[int]): The human problems to choose from.
+
+    Returns:
+        str: The formatted examples for this generation.
+    """
+    # TODO: Implement the problem categories
+    with open(cfg['promptFile']) as f:
+        prompt_cfg = yaml.safe_load(f)
+    
+    output = [cfg['header']]
+    
+    probs = list(probs)
+    # If it's a general problem choose any examples
+    if prompt_type == 'general':
+        example_prompts = random.sample(probs, cfg['numPrompts'])
+
+    for ex in example_prompts:
+        # Get the original prompt and the summarized
+        orig = os.path.join(ex, 'question.txt')
+        summary = os.path.join(ex, f'{cfg["summaryType"]}.txt')
+        logger.debug(f'Using summary {summary} for priming model')
+        orig, _ = split_prompt(orig, cfg['splitFile'])
+        summary, _ = split_prompt(summary, cfg['splitFile'])
+        
+        output.append(join_input_output_gpt(orig, summary, cfg))
+    
+    for text, num in zip(output, example_prompts):
+        if not check_ascii(text):
+            logger.warning(f'Problem {num} was not ascii.')
+
+    output = cfg["fewShotSuffix"].join(output)
+    
+    return output
+
+def join_input_output_gpt(input, output, cfg):
+    return cfg["originalPrefixStart"] + input + cfg["originalPrefixEnd"]+ cfg["summaryPrefixStart"] + output + cfg["summaryPrefixStart"]
+
 def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, str]:
     """This will generate a prompt for summarization based on the
     configuration file passed in.
@@ -68,14 +121,14 @@ def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, st
 
     prompt, remainder = split_prompt(original_prompt_fname, cfg['splitFile'])
 
-    priming_examples = generate_example_prompt(prompt_type, cfg, human_probs)
-
-    full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
-
+    full_example = get_input_format_for_api(api, cfg, human_probs, prompt_type, prompt)
+    
     full_example = ensure_ascii(full_example)
     
     return full_example, remainder, output_dir
-    
+
+
+
 def get_completed_problems(path_to_data: str) -> tuple[set[str], set[str]]:
     """Get the problems that have already been summarized.
 
@@ -453,7 +506,7 @@ def get_code_prefix(prompt: str, default: str) -> str:
     return prefix
 
 if __name__ == '__main__':
-    prompt, extra, output_dir = generate_prompt('studio21')
+    prompt, extra, output_dir = generate_prompt('gpt', config = "config_gpt.yaml")
     print('PROMPT:\n', '='*50)
     print(prompt)
     print('EXTRA:\n', '='*50)

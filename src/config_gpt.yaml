@@ -1,0 +1,23 @@
+model: large # should be large or jumbo
+header: ""
+splitFile: split.txt
+promptFile: prompt.yaml
+numPrompts: 5
+pathToData: "../data"
+summaryType: expert
+ignoreIntro: True
+summaryPrefixStart: 'I have rephrased the programming question into simpler terms after removing jargon like this \n"""'
+summaryPrefixEnd: '\n"""\n'
+originalPrefixStart: 'I was given a computer science programming question like this \n"""\n'
+originalPrefixEnd: '\n"""\n'
+fewShotSuffix: "\n"
+
+apiParams:
+    topP: 1.0
+    maxTokens: 200
+    numResults: 1
+    temperature: 0.5
+    topKReturn: 0
+    stopSequences:
+        - Jargon
+        - "\n\n"
