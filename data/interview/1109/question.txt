@@ -1,0 +1,37 @@
+Sumit and Dhiraj are roommates in a hostel of NIT Jamshedpur,One day after completing there boring assignments of Artificial Intelligence, they decided to play a game as it was dhiraj,s idea to play a game so he started explaining the rules of the game to sumit.
+So the game was as follows-They randomly took a number N after that they find all its divisors.Suppose first sumit took a divisor then dhiraj and so on.The player who will be having the last divisor with him will win the game.Rohit their mutual friend,was observing them play. Can you help Rohit predict the outcome of game? If Sumit wins print "YES" without quotes and "NO" without quotes, if Dhiraj wins
+the game.
+
+-----Input-----
+Input starts with an integer T denoting the number of test cases Each test case starts with a line containing an integer N the number.
+
+-----Output-----
+Outcome of each game in a separate line
+
+-----Constraints-----
+- 1 ≤ T ≤ 10^3
+- 1 ≤ N ≤ 10^18
+
+-----Sub tasks-----
+- Subtask #1:(10 points)
+
+- 1 ≤ T ≤ 10
+- 1 ≤ N ≤ 103
+- Subtask #2:(25 points)
+
+- 1 ≤ T ≤ 50
+- 1 ≤ N ≤ 1016
+- Subtask #3:(65 points)
+
+- 1 ≤ T ≤ 103
+- 1 ≤ N ≤ 1018
+
+-----Example-----
+Input:
+2
+4
+5
+
+Output:
+YES
+NO
