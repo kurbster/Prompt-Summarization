@@ -11,11 +11,13 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-import my_logger
+import lib.my_logger
+
+from lib.prompt_generation import generate_code_prompt
 
 logger = logging.getLogger('apiLogger')
 
-from prompt_generation import generate_code_prompt
+path_to_src = Path(__file__, '..')
 
 def get_summary(prompts: list[str], GPT_settings: dict[str, any]) -> dict[str, any]:
     """Call the OpenAI API with the prompts given.
@@ -44,9 +46,8 @@ def create_experiment_dir() -> str:
     Returns:
         str: The path to the new dir.
     """
-    root = '../../data/experiments'
     fname = datetime.now().strftime('%m-%d-%Y/%H_%M')
-    dir_path = Path(root).joinpath(fname)
+    dir_path = path_to_src.joinpath('../data/experiments', fname).resolve()
     dir_path.mkdir(parents=True, exist_ok=False)
     return dir_path
 
@@ -64,23 +65,16 @@ def save_json(dir_name: str, obj_to_save: any, fname: str, indent: int = 4) -> N
         json.dump(obj_to_save, f, indent=indent)
 
 if __name__ == "__main__":
-    generation_config = 'config.yaml'
+    path_to_cfg = path_to_src.joinpath('configs').resolve()
+    generation_config = path_to_cfg.joinpath('codex_config.yaml')
     prompts, output_dirs = generate_code_prompt(config=generation_config)
 
-    api_config = 'api_settings.yaml'
+    api_config = path_to_cfg.joinpath('codex_api_settings.yaml')
     with open(api_config) as file:
         GPT_settings = yaml.safe_load(file)
 
-    if len(sys.argv) > 1:
-        model = sys.argv[1]
-        logger.info(f'Using fine tuned model: {model}')
-        # Use our model instead of the pretrained ones
-        GPT_settings.pop('engine')
-        GPT_settings['model'] = model
-        response = get_summary(prompts, GPT_settings)
-    else:
-        logger.info(f'Using pretrained model: {GPT_settings["engine"]}')
-        response = get_summary(prompts, GPT_settings)
+    logger.info(f'Using codex model: {GPT_settings["engine"]}')
+    response = get_summary(prompts, GPT_settings)
 
     dirname = create_experiment_dir()
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}

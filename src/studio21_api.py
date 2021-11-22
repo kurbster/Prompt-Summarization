@@ -63,8 +63,8 @@ def main(argv):
 
     args = parser.parse_args(argv)
     
-    path_to_src = Path(__file__)
-    path_to_cfg = path_to_src.joinpath('../configs/studio21_config.yaml').resolve()
+    path_to_src = Path(__file__, '..')
+    path_to_cfg = path_to_src.joinpath('configs/studio21_config.yaml').resolve()
 
     if args.single:
         logger.info('Running in single mode. Only using 1 api key.')
