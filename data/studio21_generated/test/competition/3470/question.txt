@@ -1,0 +1,22 @@
+During a game of Minesweeper you have arrived in the situation shown in the image, with an $n\times n$ square surrounded by $1$s, themselves surrounded by unknown cells. Your task is to determine which of the $4n+4$ surrounding $1$-cells is guaranteed to not contain a mine. 
+
+If you are unfamiliar with the rules of Minesweeper, here is a description:
+ - Each of the red-labelled cells is either empty or contains a mine. All other cells are empty.
+ - Each cell with a blue $1$ is adjacent to exactly one mine. Two cells are said to be adjacent if they share an edge or a corner. Thus, except at the border, every cell is adjacent to $8$ other cells.
+
+Determine which of the red-labelled cells are safe, i.e., guaranteed to not contain a mine.
+
+-----Input-----
+An integer $n$ with $1 \leq n \leq 1000$, the side length of the square. The image corresponds to $n = 6$.
+
+It can be shown that there exists at least one valid placement of mines for each $n$.
+
+-----Output-----
+First print the number $m$ of safe cells. Then print a line with $m$ integers, the indices of the safe cells in increasing order. The cells are indexed clockwise from $1$ to $4n+4$, starting at the bottom left corner, as shown in the image.
+
+-----Examples-----
+Sample Input:
+3
+Sample Output:
+8
+1 3 5 7 9 11 13 15

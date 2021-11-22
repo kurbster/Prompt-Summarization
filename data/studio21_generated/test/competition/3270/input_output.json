@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "3\nCAT\nDOG\nCOT\n",
+        "2\nCAT\nDOG\n",
+        "4\nCAT\nDOG\nCOT\nCOG\n"
+    ],
+    "outputs": [
+        "COG\n3\n",
+        "0\n-1\n",
+        "0\n3\n"
+    ]
+}
