@@ -506,7 +506,9 @@ def get_code_prefix(prompt: str, default: str) -> str:
     return prefix
 
 if __name__ == '__main__':
-    prompt, extra, output_dir = generate_prompt('gpt', config = "config_gpt.yaml")
+    # prompt, extra, output_dir = generate_prompt('gpt', config = "config_gpt.yaml")
+    prompt, extra, output_dir = generate_prompt('studio21', config = "config.yaml")
+
     print('PROMPT:\n', '='*50)
     print(prompt)
     print('EXTRA:\n', '='*50)
