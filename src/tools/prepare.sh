@@ -20,7 +20,7 @@ find_difficulty() {
     done
 }
 
-pushd "../apps_dataset/APPS" > /dev/null
+pushd "../../apps_dataset/APPS" > /dev/null
 
 make_dirs && find_difficulty "train"
 

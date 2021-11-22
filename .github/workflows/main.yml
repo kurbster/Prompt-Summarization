@@ -34,5 +34,5 @@ jobs:
       # in the parent directory
       - name: test task formats. 
         run: |
-            cd src
+            cd src/tools
             ./test.sh

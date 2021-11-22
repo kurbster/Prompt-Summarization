@@ -9,16 +9,38 @@ import shutil
 import random
 import logging
 
+from pathlib import Path
+
 import my_logger
 
 logger = logging.getLogger('apiLogger')
 
-def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[str]]:
+path_to_src = Path(__file__, '../..').resolve()
+path_to_cfg = path_to_src.joinpath('configs')
+path_to_data = path_to_src.joinpath('../data').resolve()
+
+def find_path_to_cfg(func):
+    def wrapper(*a, **kw):
+        config = kw.pop('config', None)
+        # If config was not specified in kwargs
+        if config is None:
+            # Then it must be declared in args
+            if len(a) == 0:
+                logger.critical('YOU NEED TO PASS THE NAME OF THE CONFIG FILE!!!')
+                raise BaseException
+            else:
+                config = a[-1]
+                a = a[:-1]
+        path_to_cfg_file = path_to_src.joinpath('configs', config)
+        return func(*a, config=path_to_cfg_file, **kw)
+    return wrapper
+
+@find_path_to_cfg
+def generate_code_prompt(config: str) -> tuple[list[str], list[str]]:
     """This will generate code generation prompts according to the config file passed in.
 
     Args:
-        config (str, optional): The yaml file holding the generation config.
-        Defaults to 'config.yaml'.
+        config (str): The yaml file holding the generation config.
 
     Returns:
         tuple[list[str], list[str]]: The first is the list of prompt strings to pass to the model.
@@ -27,9 +49,9 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[s
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
-    prompts, num_remaining = validate_prompts(cfg)
+    prompts, num_remaining = validate_prompts(cfg, cfg['promptFile'])
 
-    human_probs, model_probs = get_completed_problems(cfg['pathToData'])
+    human_probs, model_probs = get_completed_problems()
     available_prompts = human_probs if cfg['humanOnly'] else human_probs | model_probs
     
     # These are the prompt we want to summarize
@@ -40,14 +62,14 @@ def generate_code_prompt(config: str = 'config.yaml') -> tuple[list[str], list[s
 
     return prompt_texts, prompts
 
-def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, str]:
+@find_path_to_cfg
+def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
     """This will generate a prompt for summarization based on the
     configuration file passed in.
 
     Args:
         api (str): The api calling this function.
-        cfg (str, optional): The name of the config file to use.
-        Defaults to 'config.yaml'.
+        cfg (str): The name of the config file to use.
 
     Returns:
         tuple[str, str, str]: The full prompt, the remaining section to be
@@ -56,31 +78,28 @@ def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, st
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
-    human_probs, model_probs = get_completed_problems(cfg['pathToData'])
+    human_probs, model_probs = get_completed_problems()
 
     # Select a summary prompt that hasn't been summarized
     original_prompt_fname = select_summary_prompt(
                     human_probs | model_probs, ignore_intro=cfg['ignoreIntro'])
 
-    output_dir = save_config(original_prompt_fname, config, cfg['promptFile'], f'data/{api}_generated')
+    output_dir = save_config(original_prompt_fname, config, f'data/{api}_generated', cfg['promptFile'])
 
     prompt_type = detect_type(original_prompt_fname)
 
     prompt, remainder = split_prompt(original_prompt_fname, cfg['splitFile'])
 
-    priming_examples = generate_example_prompt(prompt_type, cfg, human_probs)
+    priming_examples = generate_example_prompt(prompt_type, cfg, human_probs, cfg['promptFile'])
 
     full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
 
     full_example = ensure_ascii(full_example)
     
     return full_example, remainder, output_dir
-    
-def get_completed_problems(path_to_data: str) -> tuple[set[str], set[str]]:
-    """Get the problems that have already been summarized.
 
-    Args:
-        path_to_data (str): Path to the data directory.
+def get_completed_problems() -> tuple[set[str], set[str]]:
+    """Get the problems that have already been summarized.
 
     Returns:
         tuple(set[str], set[str]): The first set is the problems that
@@ -111,7 +130,6 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
     """
     # introductory problems in the train set are from 2361 - 4999. 
     # In the test set are 4000 - 4999, which count as 9000 - 9999.
-    intro_probs = []
     available_probs = set(range(10000))
 
     if ignore_intro:
@@ -133,24 +151,27 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
     available_probs = list(available_probs)
     prob_to_summarize = random.choice(available_probs)
 
+    path_to_apps = path_to_src.joinpath('../APPS').resolve()
+
     if prob_to_summarize >= 5000:
         prob_to_summarize -= 5000
-        fname = f'../APPS/test/*/{str(prob_to_summarize).zfill(4)}/question.txt'
+        fname = f'{path_to_apps}/test/*/{str(prob_to_summarize).zfill(4)}/question.txt'
     else:
-        fname = f'../APPS/*/{str(prob_to_summarize).zfill(4)}/question.txt'
+        fname = f'{path_to_apps}/*/{str(prob_to_summarize).zfill(4)}/question.txt'
 
     original_prompt = glob.glob(fname)[0]
 
     return original_prompt
 
-def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str, output_path: str) -> str:
+@find_path_to_cfg
+def save_config(prompt_fname: str, cfg_fname: str, output_path: str, config: str) -> str:
     """We will copy the original files and config used for this generation.
 
     Args:
         prompt_fname (str): Name of the file we are summarizing.
         cfg_fname (str): Name of the config file.
-        prompt_cfg_fname (str): Name of the prompt categories config file.
         output_path (str): Prefix of the path to save to.
+        config (str): Name of the prompt categories config file.
 
     Returns:
         str: The path to where the example was saved.
@@ -164,7 +185,7 @@ def save_config(prompt_fname: str, cfg_fname: str, prompt_cfg_fname: str, output
 
     # Save config files in output dir
     shutil.copy(cfg_fname, output_dir)
-    shutil.copy(prompt_cfg_fname, output_dir)
+    shutil.copy(config, output_dir)
 
     return output_dir
 
@@ -172,13 +193,14 @@ def detect_type(fname: str) -> str:
     logger.info(f'Summarizing the file: {fname}')
     return 'general'
 
-def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
+@find_path_to_cfg
+def split_prompt(fname: str, config: str) -> tuple[str, str]:
     """This will split the original prompt into the question and
     the information section.
 
     Args:
         fname (str): The file we want to split.
-        split_file (str): The file that defines the different splits.
+        config (str): The file that defines the different splits.
 
     Returns:
         tuple(str, str): The question and the information section.
@@ -186,7 +208,7 @@ def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
     with open(fname) as f:
         prompt = f.read().splitlines()
 
-    with open(split_file) as f:
+    with open(config) as f:
         re_str = f.read().splitlines()
 
     re_str = '|'.join(re_str)
@@ -206,19 +228,21 @@ def split_prompt(fname: str, split_file: str) -> tuple[str, str]:
 
     return prompt[:prompt_idx], prompt[prompt_idx:]
 
-def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[int]) -> str:
+@find_path_to_cfg
+def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[int], config: str) -> str:
     """Generating the examples that will be passed to the model before the new summary.
 
     Args:
         prompt_type (str): The determined type of the problem.
         cfg (dict[str, any]): The configuration for this generation.
         probs (set[int]): The human problems to choose from.
+        config (str): The prompt category config file.
 
     Returns:
         str: The formatted examples for this generation.
     """
     # TODO: Implement the problem categories
-    with open(cfg['promptFile']) as f:
+    with open(config) as f:
         prompt_cfg = yaml.safe_load(f)
     
     output = [cfg['header']]
@@ -278,11 +302,14 @@ def check_ascii(text: str) -> bool:
         return False
     return True
 
-def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
+@find_path_to_cfg
+def validate_prompts(cfg: dict[str, any], config: str) -> tuple[set[str], int]:
     """Read the specified prompts and determine how many more we need to choose.
 
     Args:
         cfg (dict[str, any]): The configuration dict.
+        config (str): The path to the prompt config file, that is
+        specified in the codex config file.
 
     Returns:
         tuple[set[str], int]: The set of paths to the problems we want to generate for,
@@ -290,14 +317,12 @@ def validate_prompts(cfg: dict[str, any]) -> tuple[set[str], int]:
     """
     prompts = {}
     num_prompts = cfg['numPrompts']
-    if 'promptFile' not in cfg:
-        return prompts, num_prompts
     
     # Read the lines from the prompt file
-    with open(cfg['promptFile']) as f:
+    with open(config) as f:
         prompts = f.read().splitlines()
 
-    add_data_dir = lambda x: os.path.join(cfg['pathToData'], x)
+    add_data_dir = lambda x: os.path.join(path_to_data, x)
 
     prompts = set(map(add_data_dir, prompts))
     remaining_prompts = num_prompts - len(prompts)
@@ -453,10 +478,21 @@ def get_code_prefix(prompt: str, default: str) -> str:
     return prefix
 
 if __name__ == '__main__':
-    prompt, extra, output_dir = generate_prompt('studio21')
+    prompt, extra, output_dir = generate_summary_prompt('studio21', config='studio21_config.yaml')
     print('PROMPT:\n', '='*50)
     print(prompt)
     print('EXTRA:\n', '='*50)
     print(extra)
     print('OUTPUT DIR:\n', '='*50)
     print(output_dir)
+    prompt, extra, output_dir = generate_summary_prompt('studio21', 'studio21_config.yaml')
+    print('PROMPT:\n', '='*50)
+    print(prompt)
+    print('EXTRA:\n', '='*50)
+    print(extra)
+    print('OUTPUT DIR:\n', '='*50)
+    print(output_dir)
+    prompts, output_dirs = generate_code_prompt('codex_config.yaml')
+    for p in prompts:
+        print(p)
+    print(output_dirs)

@@ -9,4 +9,4 @@ echo "Done. Now separating the problems according to difficulty"
 
 rm APPS.tar.gz
 
-bash prepare.sh
+bash tools/prepare.sh

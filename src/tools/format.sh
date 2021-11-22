@@ -1,5 +1,7 @@
 #!/bin/bash
 
+. find_files.sh
+
 files=(question.txt summary.txt expert.txt)
 
 clean_problem() {
@@ -13,7 +15,9 @@ clean_problem() {
     }
 }
 
-for problem in $(find ../data/[ic]* -mindepth 1 -type d); do
+get_generated_human
+
+for problem in $problems; do
     for file in "${files[@]}"; do
         ! [[ -f $problem/clean-$file ]] \
             && echo "Problem $problem/$file needs to be cleaned." \

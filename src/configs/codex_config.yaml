@@ -1,7 +1,6 @@
 header: "Python 3\n"
 humanOnly: False
-pathToData: "../../data"
-promptFile: prompts.txt
+promptFile: codex_prompts.txt
 summaryType: expert
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile

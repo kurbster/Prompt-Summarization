@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+. find_files.sh
+
 files=(question.txt summary.txt expert.txt)
 outfile="report.txt"
 
@@ -29,11 +32,13 @@ report_problem() {
 }
 
 [[ -z $1 ]] && echo "report all problems" && {
-    for problem in $(find ../data/[ic]* -mindepth 1 -type d); do
+    get_generated_human
+    for problem in $problems; do
         report_problem $problem
     done
 } || {
-    problem=$(find ../data/[ic]*/$1 -type d)
+    get_generated_human $1
+    problem=$problems
     [[ -z $problem ]] && echo "$1 is not a valid problem. It has not been summarized." || \
     report_problem $problem
 }

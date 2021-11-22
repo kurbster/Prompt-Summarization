@@ -1,9 +1,8 @@
 model: large # should be large or jumbo
 header: The following paragraphs contain computer science jargon. Rewrite them using simple words.
-splitFile: split.txt
-promptFile: prompt.yaml
-numPrompts: 5
-pathToData: "../data"
+splitFile: prompt_split.txt
+promptFile: prompt_category.yaml
+numPrompts: 2
 summaryType: expert
 ignoreIntro: True
 summaryPrefix: "Simple:"

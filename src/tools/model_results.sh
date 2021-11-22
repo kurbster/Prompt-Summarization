@@ -1,4 +1,7 @@
 #!/bin/bash
+
+. find_files.sh
+
 files=(question.txt expert.txt)
 outfile="report.txt"
 
@@ -26,11 +29,7 @@ report_problem() {
     popd > /dev/null
 }
 
-[[ -z $1 ]] && echo "report all problems" && {
-    for problem in $(find ../data/*generated/[ic]* -mindepth 1 -type d); do
-        ! [[ -f "$problem/report.txt" ]] && report_problem $problem
-    done
-    for problem in $(find ../data/studio21_generated/ -mindepth 3 -type d); do
-        ! [[ -f "$problem/report.txt" ]] && report_problem $problem
-    done
-}
+get_generated_model
+for problem in $problems; do
+    ! [[ -f "$problem/report.txt" ]] && report_problem $problem
+done
