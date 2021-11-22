@@ -11,7 +11,7 @@ import logging
 
 from pathlib import Path
 
-import my_logger
+from . import my_logger
 
 logger = logging.getLogger('apiLogger')
 

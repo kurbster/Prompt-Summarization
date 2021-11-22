@@ -1,20 +1,35 @@
 #!/usr/bin/env python3
+import os
+import sys
 import json
 import yaml
 import requests
 import logging
+import argparse
 
-import my_logger
-from prompt_generation import generate_prompt
+from pathlib import Path
+
+import lib.my_logger
+from lib.prompt_generation import generate_summary_prompt
 
 logger = logging.getLogger('apiLogger')
 
-def make_prompt(token, model):
+def make_prompt(token: str, cfg_file: str, model: str = ''):
     header = {'Authorization': f'Bearer {token}'}
     
+    with open(cfg_file) as f:
+        cfg = yaml.safe_load(f)
+
+    if not model:
+        model = cfg['model']
+    # If model was passed, set in the config for saving later.
+    else:
+        cfg['model'] = model
+
+    logger.debug(f'Using model {model} for generation.')
     url = f'https://api.ai21.com/studio/v1/j1-{model}/complete'
 
-    prompt, extra, output_dir = generate_prompt('config.yaml')
+    prompt, extra, output_dir = generate_summary_prompt('studio21', config=cfg_file)
 
     # If the prompt is over 1900 tokens we will most likely get
     # An API error. The model can only take 2048 tokens.
@@ -25,8 +40,6 @@ def make_prompt(token, model):
     else:
         logger.debug(f'Our prompt had {prompt_tokens} tokens.')
 
-    with open('config.yaml') as f:
-        cfg = yaml.safe_load(f)
     data = {'prompt': prompt, **cfg['apiParams']}
 
     result = requests.post(url, headers=header, json=data)
@@ -43,16 +56,33 @@ def make_prompt(token, model):
 
     return True 
 
-def main(*a, **kw):
-    while make_prompt(*a, **kw):
-        pass
+def main(argv):
+    parser = argparse.ArgumentParser(description="Choose how to run the Studio21 API")
+    parser.add_argument('-s', '--single', action='store_true', help="""If included then
+    only read 1 api from os.getenv""")
+
+    args = parser.parse_args(argv)
+    
+    path_to_src = Path(__file__)
+    path_to_cfg = path_to_src.joinpath('../configs/studio21_config.yaml').resolve()
+
+    if args.single:
+        logger.info('Running in single mode. Only using 1 api key.')
+        key = os.getenv('STUDIO21_API_KEY')
+        logger.info(f'Running with API key: {key}')
+        while make_prompt(token=key, cfg_file=path_to_cfg):
+            pass
+    else:
+        logger.info('Running in multiple mode. Using all api keys in .env/studio21_api_keys')
+        path_to_env = path_to_src.joinpath('.env/studio21_api_keys')
+        with open(path_to_env) as f:
+            keys = f.readlines()
+        for key in keys:
+            key = key.strip()
+            logger.info(f'Running with API key: {key}')
+            if not key.startswith('#'):
+                main(token=key, cfg_file=path_to_cfg, model='large')
+                main(token=key, cfg_file=path_to_cfg, model='jumbo')
 
 if __name__ == '__main__':
-    with open('./api_keys') as f:
-        keys = f.readlines()
-    for key in keys:
-        key = key.strip()
-        logger.info(f'Running with API key: {key}')
-        if not key.startswith('#'):
-            main(token=key, model='large')
-            main(token=key, model='jumbo')
+    main(sys.argv[1:])
