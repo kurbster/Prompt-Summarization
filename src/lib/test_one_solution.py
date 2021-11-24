@@ -9,9 +9,9 @@ import math
 import numpy as np
 import os
 import pprint
-import sys
-sys.path.append('..')
-import testing_util as test_util
+#import sys
+#sys.path.append('..')
+import argparse
 import time
 
 # for timing debugging
@@ -20,9 +20,7 @@ from tqdm import tqdm
 
 from typing import List
 
-import my_logger
-
-logger = logging.getLogger('testLogger')
+logger = logging.getLogger('apiLogger')
 
 def print_results(results, args):
     res = []
@@ -41,18 +39,18 @@ def print_results(results, args):
     successes = np.count_nonzero(np.where(res==1, 1, 0))
     failures = total_testcases - compile_errors - runtime_errors - successes
 
-    print(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
-    print(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
-    print(f"number of test cases run = {total_testcases}")
+    logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
+    logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
+    logger.info(f"number of test cases run = {total_testcases}")
 
-    print(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
-    print(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
+    logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
+    logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
 
 def eval_and_save_problems(args):
     with open(args.test_loc, "r") as f:
         problems = json.load(f)
 
-    print(len(problems))
+    logger.info(f'Testing {len(problems)} problems')
     gpt_codes = {}
     results = {}
     codes_loc = os.path.join(args.save, f"all_codes.json")
@@ -63,7 +61,8 @@ def eval_and_save_problems(args):
         results_loc = os.path.join(args.save, f"all_results.json") 
     else:
         results_loc = os.path.join(args.save, f"{args.start}-{args.end}_results.json") 
-    print(codes_loc, results_loc)
+    logger.debug(f'Codes location {codes_loc}')
+    logger.debug(f'Results save location {results_loc}')
 
     with open(codes_loc, "r") as f: 
         gpt_codes = json.load(f)
@@ -72,7 +71,7 @@ def eval_and_save_problems(args):
         problems = [problems[args.index]]
     else:
         if args.start > len(problems) or args.start < 0:
-            print(f"start index {args.start} > number of problems {len(problems)}")
+            logger.critical(f"start index {args.start} > number of problems {len(problems)}")
             return
         start = args.start
         if args.end is None or args.end > len(problems):
@@ -87,7 +86,7 @@ def eval_and_save_problems(args):
     # main eval loop
     for index, problem in enumerate(tqdm(problems)):
         if args.debug:
-            print(f"\n\nproblem path = {problem}")
+            logger.debug(f"\n\nproblem path = {problem}")
         output_str = gpt_codes[str(index+args.start)]
 
         problem_dir = os.path.dirname(problem)
@@ -98,7 +97,7 @@ def eval_and_save_problems(args):
 
         res = []
         if args.debug:
-            print(f"\nTesting this code\n{output_str}")
+            logger.debug(f"\nTesting this code\n{output_str}")
         curr_res = [-2]
         try:
             curr_res = test_util.run_test(prob_path=prob_path, test=output_str, debug=args.debug)
@@ -111,16 +110,16 @@ def eval_and_save_problems(args):
                 fixed.append(e)
             curr_res = fixed
             if not np.all(curr_res):
-                print(f"Results were not all True: {curr_res}")
+                logger.info(f"Results were not all True: {curr_res}")
         except Exception as e:
-            print(f"test framework exception = {repr(e)}{e}\n")
+            logger.debug(f"test framework exception = {repr(e)}{e}\n")
             break
         finally:
             assert isinstance(curr_res, list)
             res.append(curr_res)
 
-        print(f"\nHow to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
-        print(f"results = {res}")
+        logger.info(f"\nHow to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
+        logger.info(f"results = {res}")
 
         results[index+args.start+args.index] = res
         
@@ -129,15 +128,14 @@ def eval_and_save_problems(args):
                 f.write(json.dumps(results))
             except Exception as e:
                 import pdb; pdb.set_trace()
-                print("didn't save problem due to {e}")
+                logger.error("didn't save problem due to {e}")
 
     return results
 
 
 def main(args):
-
     argsdict = vars(args)
-    print(pprint.pformat(argsdict))
+    logger.info(pprint.pformat(argsdict))
 
     if args.print_results:
         results = {}
@@ -154,9 +152,7 @@ def main(args):
     print_results(results, args)
 
 
-if __name__ == "__main__":
-    import argparse
-
+def parse_args(arg_str: str = None):
     parser = argparse.ArgumentParser(description="Testing a Language Model on Python Code")
     parser.add_argument("-t","--test_loc", default="../data_split/test.json", type=str, help="path to the json containing problem paths to be evaluated.")
     parser.add_argument("-r","--root", default="./", type=str, help="where the data is stored.")
@@ -167,7 +163,15 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--debug", action="store_true")
     parser.add_argument("--save", type=str, default="./results", help="Where the evaluated data is loaded from and results saved to.")
     parser.add_argument("--stop-early", default=None, type=int)
- 
-    args = parser.parse_args()
 
+    args = parser.parse_args(arg_str)
+    return args
+
+if __name__ == "__main__":
+    import testing_util as test_util
+    import my_logger
+    args = parse_args()
     main(args)
+else:
+    from . import my_logger
+    from . import testing_util as test_util

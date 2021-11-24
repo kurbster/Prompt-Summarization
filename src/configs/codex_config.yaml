@@ -6,7 +6,7 @@ summaryType: expert
 # if numPrompts == -1 then we use all prompts in promptFile
 numPrompts: -1
 # numExamples is the number of examples prepended to each example
-numExamples: 0
+numExamples: 2
 summaryType: expert
 includeOrig: True  # If True then we will test the original prompt as well
 # Codex achieves better results when formatting prompt as docstring

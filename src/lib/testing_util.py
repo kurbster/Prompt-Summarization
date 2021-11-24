@@ -2,7 +2,7 @@ import argparse
 import json
 import os
 import sys
-sys.path.append('..')
+#sys.path.append('..')
 import io
 import faulthandler
 
@@ -15,8 +15,7 @@ import signal
 import numpy as np
 
 import logging
-import my_logger
-logger = logging.getLogger('testLogger')
+logger = logging.getLogger('apiLogger')
 
 # for capturing the stdout
 from io import StringIO
@@ -36,7 +35,7 @@ class CODE_TYPE(Enum):
 class TimeoutException(Exception):
     pass
 def timeout_handler(signum, frame):
-    print("alarm went off")
+    logger.debug("alarm went off")
     #return
     raise TimeoutException
 signal.signal(signal.SIGALRM, timeout_handler)
@@ -110,7 +109,7 @@ def get_question(problem_list, prob_index):
         with open(os.path.join(root, "question.txt")) as f:
             question = f.readlines()
     else:
-        print("question prompt not found")
+        logger.error(f"question prompt not found. root = {root}")
         question = ""
     question = "".join(question)
     return question
@@ -131,11 +130,11 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
     otherwise it'll just return an input and output pair.
     """
     if prob_path is None and problem_list is None:
-        print("please provide either prob_path or problem_list")
+        logger.critical("please provide either prob_path or problem_list")
         exit()
 
     if debug:
-        print(f"start = {datetime.now().time()}")
+        logger.debug(f"start testing = {datetime.now().time()}")
     if prob_path is not None:
         root = prob_path
     elif problem_list is not None:
@@ -145,7 +144,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
         with open(os.path.join(root, "input_output.json")) as f:
             in_outs = json.load(f)
             if debug:
-                print(f"test cases json = {in_outs['inputs']} {in_outs['outputs']}")
+                logger.debug(f"test cases json = {in_outs['inputs']} {in_outs['outputs']}")
             
             if in_outs.get("fn_name") is None:
                 which_type = CODE_TYPE.standard_input  # Standard input
@@ -154,7 +153,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 which_type = CODE_TYPE.call_based  # Call-based
                 method_name = in_outs["fn_name"]
     if debug:
-        print(f"loaded json = {datetime.now().time()}")
+        logger.debug(f"loaded json = {datetime.now().time()}")
  
     #else:
     #    continue
@@ -164,12 +163,12 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
         results = []
         sol = "import sys\nimport time\nimport itertools\nfrom itertools import accumulate, product, permutations, combinations\nimport collections\nfrom collections import Counter, OrderedDict, deque, defaultdict, ChainMap\nfrom functools import lru_cache\nimport math\nfrom math import sqrt, sin, cos, tan, ceil, fabs, floor, gcd, exp, log, log2\nimport fractions\nfrom typing import List, Tuple\nimport numpy as np\nimport random\nimport heapq\nfrom heapq import *\n"
         if debug:
-            print(f"loading test code = {datetime.now().time()}")
+            logger.debug(f"loading test code = {datetime.now().time()}")
  
         if which_type == CODE_TYPE.call_based:
             sol += test
             if debug: # or True:
-                print(f"sol = {sol}")
+                logger.debug(f"sol = {sol}")
             signal.alarm(timeout)
             try:
                 tmp_sol = RuntimeModule.from_string("tmp_sol", "", sol)
@@ -180,7 +179,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 signal.alarm(0)
             except Exception as e:
                 signal.alarm(0)
-                print(f"type 0 compilation error = {e}")
+                logger.debug(f"type 0 compilation error = {e}")
                 results.append(-2)
                 return results
             signal.alarm(0)
@@ -214,7 +213,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
 
             sol += tmp_test
             if debug:
-                print(f"sol = {sol}")
+                logger.debug(f"sol = {sol}")
                 # print(f"{o}") 
             method_name = "code"
             signal.alarm(timeout)
@@ -224,19 +223,19 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 signal.alarm(0)
             except Exception as e:
                 signal.alarm(0)
-                print(f"type 1 compilation error = {e}")
+                logger.info(f"type 1 compilation error = {e}")
                 results.append(-2)
                 return results
             signal.alarm(0)
         if debug:
-            print(f"get method = {datetime.now().time()}")
+            logger.info(f"get method = {datetime.now().time()}")
  
         try:
             method = getattr(tmp, method_name)  # get_attr second arg must be str
         except:
             signal.alarm(0)
             e = sys.exc_info()
-            print(f"unable to get function error = {e}")
+            logger.error(f"unable to get function error = {e}")
             return results
 
         for index, inputs in enumerate(in_outs["inputs"]):
@@ -258,7 +257,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 True
 
             if debug:
-                print(f"time: {datetime.now().time()} testing index = {index}  inputs = {inputs}, {type(inputs)}. type = {which_type}")
+                logger.debug(f"time: {datetime.now().time()} testing index = {index}  inputs = {inputs}, {type(inputs)}. type = {which_type}")
             if which_type == CODE_TYPE.call_based:  # Call-based
                 signal.alarm(timeout)
                 faulthandler.enable()
@@ -288,13 +287,13 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 except Exception as e:
                     signal.alarm(0)
                     faulthandler.disable()
-                    print(f"Standard input runtime error or time limit exceeded error = {e}")
+                    logger.info(f"Standard input runtime error or time limit exceeded error = {e}")
                     results.append(-1)
                     continue
                 faulthandler.disable()
                 signal.alarm(0)
                 if debug:
-                    print(f"outputs = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
+                    logger.debug(f"outputs = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
             elif which_type == CODE_TYPE.standard_input:  # Standard input
                 faulthandler.enable()
                 signal.alarm(timeout)
@@ -314,7 +313,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                     except Exception as e:
                         # runtime error or took too long
                         signal.alarm(0)
-                        print(f"Call-based runtime error or time limit exceeded error = {repr(e)}{e}")
+                        logger.info(f"Call-based runtime error or time limit exceeded error = {repr(e)}{e}")
                         results.append(-1)
                     signal.alarm(0)
 
@@ -322,13 +321,13 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                     if debug:
                         nl = "\n"
                         if not isinstance(inputs, list):
-                            print(f"not passed output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
+                            logger.debug(f"not passed output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
                         else:
-                            print(f"not passed output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
+                            logger.debug(f"not passed output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
                     continue
 
                 if passed and debug:
-                    print(f"==> output = {output}, test outputs = {in_outs['outputs'][index]}")
+                    logger.debug(f"==> output = {output}, test outputs = {in_outs['outputs'][index]}")
 
                 if custom_compare_(output, in_outs['outputs'][index]):
                     tmp_result = True
@@ -347,7 +346,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                         if isinstance(output[0], str):
                             tmp_result = tmp_result or ([e.strip() for e in output] == in_outs["outputs"][index])
                 except Exception as e:
-                    print(f"Failed check1 exception = {e}")
+                    logger.warning(f"Failed check1 exception = {e}")
                     pass
 
                 if tmp_result == True:  
@@ -369,7 +368,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                     if isinstance(in_outs["outputs"][index], list):
                         tmp_result = tmp_result or (output == in_outs["outputs"][index])
                 except Exception as e:
-                    print(f"Failed check2 exception = {e}")
+                    logger.warning(f"Failed check2 exception = {e}")
                     pass
 
                 if tmp_result == True:
@@ -383,9 +382,9 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 if debug:
                     nl = "\n"
                     if not isinstance(inputs, list):
-                        print(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
+                        logger.debug(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
                     else:
-                        print(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
+                        logger.debug(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
                 
                 if tmp_result == True:
                     results.append(tmp_result)
@@ -396,7 +395,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                     if isinstance(in_outs["outputs"][index], list):
                         tmp_result = tmp_result or (output == in_outs["outputs"][index])
                 except Exception as e:
-                    print(f"Failed check3 exception = {e}")
+                    logger.warning(f"Failed check3 exception = {e}")
                     pass
 
                 try:
@@ -427,7 +426,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 try:
                     tmp_result = (output == in_outs["outputs"][index])
                 except Exception as e:
-                    print(f"Failed check4 exception = {e}")
+                    logger.warning(f"Failed check4 exception = {e}")
                     continue
 
                 if tmp_result == True:
@@ -449,7 +448,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                 try:
                     tmp_result = (set(frozenset(s) for s in output) == set(frozenset(s) for s in in_outs["outputs"][index]))
                 except Exception as e:
-                    print(f"Failed check5 exception = {e}")
+                    logger.warning(f"Failed check5 exception = {e}")
 
 
                 # if they are all numbers, round so that similar numbers are treated as identical
@@ -457,19 +456,19 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
                     tmp_result = tmp_result or (set(frozenset(round(float(t),3) for t in s) for s in output) ==\
                         set(frozenset(round(float(t),3) for t in s) for s in in_outs["outputs"][index]))
                 except Exception as e:
-                    print(f"Failed check6 exception = {e}")
+                    logger.warning(f"Failed check6 exception = {e}")
                 
                 if tmp_result == True and debug:
-                    print("PASSED")
+                    logger.debug("PASSED")
  
                 results.append(tmp_result)
                 
                 if debug:
                     nl = "\n"
                     if not isinstance(inputs, list):
-                        print(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
+                        logger.debug(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs.replace(nl,' new-line ')}, {type(inputs)}, {output == [in_outs['outputs'][index]]}")
                     else:
-                        print(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
+                        logger.debug(f"output = {output}, test outputs = {in_outs['outputs'][index]}, inputs = {inputs}, {type(inputs)}, {output == [in_outs['outputs'][index]]}") 
 
 
     return results
@@ -520,31 +519,31 @@ def call_method(method, inputs):
     return _inner_call_method(method) 
 
 def main(args):
-    print(args)
+    logger.info(args)
     problem_list = sorted(get_valid_problems(args.source))
-    print(f"number of problems = {len(problem_list)}")
+    logger.info(f"number of problems = {len(problem_list)}")
     prob_index = args.number
-    print(f"problem is {problem_list[prob_index]}")
+    logger.info(f"problem is {problem_list[prob_index]}")
 
     # This checks it correctly loaded. remove this later
     assert prob_index < len(problem_list)
 
     if args.data == "q" or args.data == "question":
         tmp = get_question(problem_list, prob_index)
-        print("q", tmp)
+        logger.info("q", tmp)
     elif args.data in ["solutions", "sol", "s",]:
         tmp = get_solutions(problem_list, prob_index)
-        print("sol", tmp)
+        logger.info("sol", tmp)
     elif args.data == "starter":
         tmp = get_starter(problem_list, prob_index)
-        print("starter", tmp)
+        logger.info("starter", tmp)
     elif args.data in ["test", "t"]:
         # test it with sols
         sols = get_solutions(problem_list, prob_index)
         tmp = run_test(problem_list, prob_index, test=sols[0])
 
-        print("results = ", tmp)
-        print("-2 = compile error, -1 is runtime error, False failed test, True passed test")
+        logger.info("results = ", tmp)
+        logger.info("-2 = compile error, -1 is runtime error, False failed test, True passed test")
 
 if __name__ == "__main__":
     args = parse_args()

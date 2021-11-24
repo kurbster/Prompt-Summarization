@@ -74,13 +74,15 @@ def main(argv):
             pass
     else:
         logger.info('Running in multiple mode. Using all api keys in .env/studio21_api_keys')
-        path_to_env = path_to_src.joinpath('.env/studio21_api_keys')
+        path_to_env = path_to_src.joinpath('.env/studio21_api_keys').resolve()
         with open(path_to_env) as f:
             keys = f.readlines()
         for key in keys:
             key = key.strip()
-            logger.info(f'Running with API key: {key}')
             if not key.startswith('#'):
+                if key.startswith('export'):
+                    key = key.split('=')[1]
+                logger.info(f'Running with API key: {key}')
                 main(token=key, cfg_file=path_to_cfg, model='large')
                 main(token=key, cfg_file=path_to_cfg, model='jumbo')
 

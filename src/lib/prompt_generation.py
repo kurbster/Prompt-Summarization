@@ -394,6 +394,7 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         prompt_paths.append(prompt_name)
 
         if cfg['includeOrig']:
+            logger.info(f'Generating code with original prompt for problem: {prompt}')
             original = read_code_files(prompt, cfg, read_original=True, read_solution=False)
             prompt_str = cfg['header'] + few_shot_str + original
             code_prompts.append(prompt_str)
