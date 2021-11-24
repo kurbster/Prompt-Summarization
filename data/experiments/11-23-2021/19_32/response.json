@@ -1,0 +1,44 @@
+{
+    "id": "cmpl-47cN4P9XjcYlfhIqUx4iIyLg9nYuI",
+    "object": "text_completion",
+    "created": 1637721142,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    s,k = input().strip(),int(input())\n    print(s[k:]+s[:k])\n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    l = len(s)\n    count = 0\n    for i in range(l):\n        if s[i] == s[(i + 1) % l]:\n            count += 1\n    print(count / l)\n\n",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = list(map (int, input().split())) #scott\n\n#for i in arr:\n#    print (i)\n\ncnt = 0 \nclast, llast = -1, -1 #scott wait we need to sort\n\narr = sorted(arr)\n\nbad = False #scott so now we just count # of pairs and make sure there's not 3 in a row right?ok\n#so a neat thing you can do is just for x in arr\nfor i in arr:\n    #print (i)\n    if i > 0: #scott so last was the last one, llast was the second last one\n        if i == clast :\n            cnt += 1 #scott\n            if clast == llast :\n                bad = True #scott your turn\n        llast = clast\n        clast = i #scott\nif bad == False:\n    print (cnt) #scott\nelse:\n    print(-1) #scott\n\n#darn ii'm getting RTE test 1\n\n\n",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = list(map (int, input().split())) #scott\n\n#for i in arr:\n#    print (i)\n\ncnt = 0 \nclast, llast = -1, -1 #scott wait we need to sort\n\narr = sorted(arr)\n\nbad = False #scott so now we just count # of pairs and make sure there's not 3 in a row right?ok\n#so a neat thing you can do is just for x in arr\nfor i in arr:\n    #print (i)\n    if i > 0: #scott so last was the last one, llast was the second last one\n        if i == clast :\n            cnt += 1 #scott\n            if clast == llast :\n                bad = True #scott your turn\n        llast = clast\n        clast = i #scott\nif bad == False:\n    print (cnt) #scott\nelse:\n    print(-1) #scott\n\n#darn ii'm getting RTE test 1\n\n\n",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, a, b = map(int, input().split())\n    graph = [[] for _ in range(n)]\n    for _ in range(m):\n        u, v, c = map(int, input().split())\n        graph[u-1].append((v-1, c))\n        graph[v-1].append((u-1, c))\n    print(graph)\n    for i in range(n):\n        print(i)\n\n",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, a, b = map(int, input().split())\n    graph = [[] for _ in range(n)]\n    for _ in range(m):\n        u, v, c = map(int, input().split())\n        graph[u-1].append((v-1, c))\n        graph[v-1].append((u-1, c))\n    p = int(input())\n    res = [0] * n\n    for _ in range(p):\n        res[int(input())-1] = 1\n    for i in range(n):\n        if res[i] == 1:\n            for j in range(len(graph[i])):\n                if graph[i][j][1] == a:\n                    res[graph[i][j][0]] = 1\n    for i in range(n):\n        if res[i] == 1:\n            for j in range(len(graph[i])):\n                if graph[i][j][1] == b:\n                    res[graph[i][j][0]] = 1\n    print(*res)\n\n",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
