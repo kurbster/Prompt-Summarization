@@ -1,0 +1,32 @@
+{
+  "inputs": [
+    "16\nfun while return var { } ( ) , ; > = + ++ - --\n9\nfun fib(num) { # compute fibs\n  var return_value = 1, prev = 0, temp;\n  while (num > 0) {\n    temp = return_value; return_value = return_value + prev;\n    prev = temp;\n    num--;\n  }\n  return return_value;\n}\n",
+    "10\n( ) + ++ : -> >> >>: b c)\n2\n($val1++ + +4 kb) >> :out\nb-> + 10 >>: t # using >>: \n",
+    "0\n\n2\none two three four five seven\none two three four five seven\n",
+    "3\n1 8 21\n2\n0 1 1 2 3 5 8 13 21\n0 1 1 2 3 5 8 13 21\n",
+    "4\n+ ++ +++ ++++\n2\n+ ++ +++ ++++ ++ + +++ ++++ + ++++ ++ +\n+ ++ +++ ++++ ++ + +++ ++++ + ++++ ++ +\n",
+    "2\nz 05c\n2\n01 x 02 y 03 z 05 xx 06 yy 07 zz 08 xxx 09 yyy 10 zzzz                       \n11 x 12 y 13 z 15 xx 16 yy 17 zz 18 xxx 19 yyy 20 zzzz  # ^^^ trailing spaces!\n",
+    "7\n! + = ( ) fun foo+bar\n7\n# Such comments!\n# Much nothing!\nfoo! bar+# but...\n# Here's more foo bar\nfoo+bar!\nfun(foo)=bar\n# how's that? that was sneaky!\n",
+    "10\n+ - * / ^ a+ b- c* 1/ 01^\n5\nx + y + z + 1 + 01 + 001\nx - y - z - 1 - 01 - 001\nx * y * z * 1 * 01 * 001\nx / y / z / 1 / 01 / 001\nx ^ y ^ z ^ 1 ^ 01 ^ 001\n",
+    "8\n< > << >> in out fun in>>out\n6\n# let's rock\nin>>out in >> out inout>>outin bin>>out # yay!\nfun>>in>>out funin>>out out>>in <in> > <out>\nin> >> >>> >>>> >>>>>out\n# what's going on here?\n<> <> <> <> <fun> <funfun> <not so fun>\n",
+    "2\n! 123!!456\n4\n1112233334447777778888999000001111  222233444455566677778889991 # quite a long!\n123!!456789 # ho-ho! what a catch!\n123!!456abc # a variant of that\n0123!!456789 # that is not going to work\n",
+    "4\n+ = +=+ =+=\n1\n+ = + =\n",
+    "3\n+ = =+=\n1\n+ = + =\n",
+    "6\n+=-; =- + = - ;\n1\n+ = - ;\n"
+  ],
+  "outputs": [
+    "fun a(b){var c=1,d=0,e;while(b>0){e=c;c=c+d;d=e;b--;}return c;}\n",
+    "(a+++ +4c )>> :d b->+10>>:e\n",
+    "a b c d e f a b c d e f\n",
+    "0 1 1 2 3 5 8 13 21 0 1 1 2 3 5 8 13 21\n",
+    "+ ++ +++ ++++++ + +++ +++++ ++++++ + + ++ +++ ++++++ + +++ +++++ ++++++ +\n",
+    "01a 02b 03z 05 c 06d 07e 08f 09g 10h 11a 12b 13z 15c 16d 17e 18f 19g 20h\n",
+    "a!b+foo+bar!fun(a)=b\n",
+    "a +b+c+1+01+001a-b -c-1-01-001a*b*c *1*01*001a/b/c/1 /01/001a^b^c^1^01 ^001\n",
+    "in>>outin>> out a>>b c>>out fun>>in>>outd>>out out>>in<in> ><out>in> >>>>> >>>>>>>>>out<><><><><fun><e><f g fun>\n",
+    "1112233334447777778888999000001111 222233444455566677778889991 123!!456789 123!!456a 0123!!456789\n",
+    "+= +=\n",
+    "+=+ =\n",
+    "+= -;\n"
+  ]
+}

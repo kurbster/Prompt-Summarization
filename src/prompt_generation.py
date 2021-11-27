@@ -75,7 +75,9 @@ def generate_prompt(api: str, config: str = 'config.yaml') -> tuple[str, str, st
     full_example = ensure_ascii(full_example)
     
     return full_example, remainder, output_dir
-    
+
+
+
 def get_completed_problems(path_to_data: str) -> tuple[set[str], set[str]]:
     """Get the problems that have already been summarized.
 
@@ -221,7 +223,9 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
     with open(cfg['promptFile']) as f:
         prompt_cfg = yaml.safe_load(f)
     
-    output = [cfg['header']]
+    output = []
+    if cfg['header']:
+        output = [cfg['header']]
     
     probs = list(probs)
     # If it's a general problem choose any examples
@@ -453,7 +457,9 @@ def get_code_prefix(prompt: str, default: str) -> str:
     return prefix
 
 if __name__ == '__main__':
-    prompt, extra, output_dir = generate_prompt('studio21')
+    prompt, extra, output_dir = generate_prompt('gpt', config = "new_config_gpt.yaml")
+    # prompt, extra, output_dir = generate_prompt('studio21', config = "config.yaml")
+
     print('PROMPT:\n', '='*50)
     print(prompt)
     print('EXTRA:\n', '='*50)

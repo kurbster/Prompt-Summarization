@@ -1,0 +1,20 @@
+header: ""
+splitFile: split.txt
+promptFile: prompt.yaml
+numPrompts: 3
+pathToData: "../data"
+summaryType: expert
+ignoreIntro: True
+originalPrefix: "I was given a computer science programming question like this\n\"\"\"\n"
+summaryPrefix: "\"\"\"\nI have rephrased the programming question into simpler terms after removing jargon like this \n\"\"\"\n"
+fewShotSuffix: "\n\"\"\"\n"
+
+apiParams:
+    engine: "ada"
+    temperature: 0.25
+    max_tokens: 500
+    top_p: 1.0
+    frequency_penalty: 0.0
+    presence_penalty: 0.0
+    stop:
+        - "\"\"\""
