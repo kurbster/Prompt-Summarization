@@ -1,0 +1,36 @@
+{
+  "inputs": [
+    "4\nabab\naabb\n",
+    "1\na\nb\n",
+    "8\nbabbaabb\nabababaa\n",
+    "2\nbb\nbb\n",
+    "10\naaaaabbbbb\nababaaaaab\n",
+    "10\nbbbbbbbbbb\naaaaaaaaaa\n",
+    "6\naaaaaa\naabaaa\n",
+    "1\nb\nb\n",
+    "5\nbaaaa\nabaaa\n",
+    "10\naabaaaaaab\nbaaaaaabbb\n",
+    "100\nbbbabbababbbbbbabbbbbbbbabbbbbbbbbbbbbbbaabbbbbbbbbbbbbabbabaababbaabbbbbbbbbbaabbbbbbaabbbbbaabbbbb\nbabababbbbbbabaaabbbbbbbaabbbbaabbbbbbabbbbbbbbababbbbabbbbbbbbbbbabbbbbbbbabbbbbbbbbbbbbbbbabbbbaab\n",
+    "101\nbabbbbabbbbaabbbbbbbabbbababababbbbbbbbabaababbababbaaabbababbbbbbbbbaabbbababbbbbabbbbbabbbaabbbaabb\nbbabbbbbbabbbbbbbbbbbabbbbbbbbbbabbabbbbbbbbbbbabbababbbabbabbbbbbbbbbbbbaabbbabbbbabbabbbbababbbbbab\n",
+    "100\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n",
+    "10\naaaaaaaaaa\nbbbbbbbbbb\n",
+    "2\nab\nba\n"
+  ],
+  "outputs": [
+    "2\n3 3\n3 2\n",
+    "-1\n",
+    "3\n2 6\n1 3\n7 8\n",
+    "0\n",
+    "3\n2 4\n6 7\n8 9\n",
+    "5\n1 2\n3 4\n5 6\n7 8\n9 10\n",
+    "-1\n",
+    "0\n",
+    "2\n2 2\n2 1\n",
+    "3\n1 8\n9 9\n9 3\n",
+    "16\n7 9\n41 42\n56 59\n61 62\n64 68\n79 80\n87 88\n94 95\n2 6\n13 15\n17 26\n31 32\n39 48\n50 55\n76 93\n98 99\n",
+    "20\n2 7\n12 13\n21 25\n27 29\n31 40\n42 43\n45 50\n54 55\n58 70\n71 77\n83 89\n93 98\n3 10\n22 33\n36 51\n57 74\n79 84\n87 92\n99 99\n99 100\n",
+    "-1\n",
+    "5\n1 2\n3 4\n5 6\n7 8\n9 10\n",
+    "2\n1 1\n1 2\n"
+  ]
+}

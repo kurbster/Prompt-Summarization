@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "14 4\nJQ IRKEYFG EXQ\n",
+        "43 100000\nBLNAMOTPRRNIXRNMPIWHXDZTRQJXRKIAIEEIIPJLGZP\n"
+    ],
+    "outputs": [
+        "THIS IS A TEST\n",
+        "FRIENDS ROMANS COUNTRYMEN LEND ME YOUR EARS\n"
+    ]
+}

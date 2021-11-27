@@ -1,0 +1,14 @@
+{
+    "inputs": [
+        "3\nblue pink 1.0\nred pink 1.5\nblue red 1.0\n",
+        "2\nblue red 1.0\nred pink 1.5\n",
+        "4\norange pink 1.9\nyellow orange 1.9\ngreen yellow 1.9\nblue green 1.9\n",
+        "8\nred pink 1.9\norange red 1.9\nyellow orange 1.9\ngreen yellow 1.9\nindigo green 0.6\nviolet indigo 0.6\npurple violet 0.6\nblue purple 0.6\n"
+    ],
+    "outputs": [
+        "1.500000000000000\n",
+        "0.000000000000000\n",
+        "10.000000000000000\n",
+        "1.688960160000000\n"
+    ]
+}

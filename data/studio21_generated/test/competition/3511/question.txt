@@ -1,0 +1,34 @@
+The game Pokenom Go has just been released. Pokenom trainers can now travel the world, capture Pokenom in the wild and battle each other! Bash — the Pokenom trainer — has decided to drop out of his university to pursue his childhood dream of becoming the best Pokenom trainer!
+
+However, Linux — Bash’s university headmaster — does not allow his students to drop out so easily …
+
+Linux puts $N$ black boxes on a straight line. The black boxes are numbered from $1$ to $N$ from left to right. Initially, all black boxes are empty. Then Linux gives Bash $Q$ queries. Each query can be one of the following $2$ types:
+ - Linux puts exactly one stone inside exactly one box between $u$-th box and $v$-th box, inclusive, with equal probability. $(1 \le u \le v \le N)$.
+ - Let $a_ i$ be the number of stones in black box numbered $i$. Let $A = \sum _{i=1}^{N}{a_ i^2}$. Bash has to calculate the expected value $E(A)$.
+
+Bash can only drop out of his university if he is able to answer all queries correctly. But now all Bash can think of is Pokenom. Please help him!
+
+-----Input-----
+The first line of input contains exactly $2$ positive integers $N$ and $Q$. $(1 \le N, Q \le 10^5)$.
+
+$Q$ lines follow, each line contains exactly one query. As explained, a query can be one of the following $2$ types:
+ - $1 \; u \; v$: Linux puts a stone inside one of the boxes between $u$ and $v$.
+ - $2$: Linux asks Bash to compute $E(A)$.
+
+-----Output-----
+It can be proved that the expected value can be represented as an irreducible fraction $\dfrac {A}{B}$. For each query of type $2$, print one line containing the value $A \times B^{-1}$ modulo $10^{9} + 7$. The given input guarantees that $B$ is not a multiple of $10^{9} + 7$.
+
+-----Explanation for examples-----
+ - In the first example: With a probability of $0.5$, two stones are in different squares. Hence, the answer to the fourth query is $0.5 \times (1^{2} + 1^{2}) + 0.5 \times 2^{2} = 3$.
+ - In the second example: With a probability of $\frac{2}{3}$, two stones are in different squares. Hence, the answer to the fourth query is $\frac{2}{3} \times 2 + \frac{1}{3} \times 4 = \frac{8}{3}$.
+
+-----Examples-----
+Sample Input:
+2 4
+1 1 2
+2
+1 1 2
+2
+Sample Output:
+1
+3

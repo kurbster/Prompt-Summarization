@@ -1,6 +1,6 @@
 APPS/
-src/logs/
-src/gpt/logs/
+logs/
+.env/
 .vscode/
 *.pyc
-environ/*
+environ/

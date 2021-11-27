@@ -1,0 +1,33 @@
+After seeing all the beautiful landscaping around Cossin, Yraglac is inspired to work on his own gardening. Since food is such a scarce commodity on Mars, he decides it would be nice to plant an agricultural crop: Martian rice. The unique thing about Martian rice is that it will only grow in flat areas where water can pool, which makes it important to terrace the garden carefully. Given a height profile of Yraglac’s garden, can you help him determine how much of the land can grow rice on?
+
+Yraglac’s garden is divided into a regular grid of perfectly square $1 \textrm{ m } \times 1 \textrm{ m}$ cells, and he provides you a map indicating the exact height of the land within each cell. The entire garden is surrounded by a wall that is higher than the highest cell. In our model of the Mars world, rain water (real or artificial) can flow from a cell to any of its four adjacent cells (north, east, south, or west), provided the adjacent cell’s height is lower than or equal to the cell’s height. A cell is said to be able to collect or pool water if any water landing in the cell cannot flow to another cell of lower height, either directly or through any of its neighbouring cells. Arrows in the diagram below illustrate possible directions of water flow between cells, and circles indicate the four cells that can collect water.
+
+-----Input-----
+The input begins with two integers, $x \; y$, which indicate the dimensions of Yraglac’s garden, in metres ($1 \le x, y \le 500$). Then following $y$ lines containing $x$ integers, $h_{ij}$, each which indicate the heights of each cell in Yraglac’s garden ($0 \le h_{ij} \le 999$).
+
+-----Output-----
+Output the number of square metres of land that Yraglac can grow his rice crop on.
+
+-----Examples-----
+Sample Input 1:
+4 3
+0 0 4 3
+0 2 2 3
+2 1 4 3
+Sample Output 1:
+4
+
+Sample Input 2:
+7 2
+0 4 1 4 2 4 3
+0 4 1 4 2 4 3
+Sample Output 2:
+8
+
+Sample Input 3:
+5 3
+1 1 1 1 1
+3 3 3 3 3
+5 5 5 5 5
+Sample Output 3:
+5
