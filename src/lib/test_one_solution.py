@@ -9,8 +9,6 @@ import math
 import numpy as np
 import os
 import pprint
-#import sys
-#sys.path.append('..')
 import argparse
 import time
 

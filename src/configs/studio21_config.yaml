@@ -5,13 +5,13 @@ promptFile: prompt_category.yaml
 numPrompts: 5
 summaryType: expert
 ignoreIntro: True
-summaryPrefix: "Simple:"
-originalPrefix: "Jargon:"
+summaryPrefix: "Simple: "
+originalPrefix: "Jargon: "
 fewShotSuffix: "\n\n"
 
 apiParams:
     topP: 1.0
-    maxTokens: 250
+    maxTokens: 500
     numResults: 1
     temperature: 0.3
     topKReturn: 0

@@ -1,6 +1,7 @@
 header: "Python 3\n"
 humanOnly: False
-promptFile: codex_prompts.txt
+pathToData: "../../data"
+promptFile: prompts.txt
 summaryType: expert
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile
@@ -14,13 +15,3 @@ promptPrefix: "\"\"\""
 promptSuffix: "\"\"\""
 codePrefix:   "def code():"
 fewShotSuffix: "\n\n"
-
-apiParams:
-  engine: "davinci-codex"
-  temperature: 0.0
-  max_tokens: 500
-  top_p: 1.0
-  frequency_penalty: 0.0
-  presence_penalty: 0.0
-  stop:
-      - "\"\"\""

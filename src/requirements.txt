@@ -1,3 +1,4 @@
+python>=3.9
 pyext
 numpy
 openai

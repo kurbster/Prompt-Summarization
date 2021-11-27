@@ -3,3 +3,4 @@ logs/
 .env/
 .vscode/
 *.pyc
+environ/

@@ -191,7 +191,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             new_test = []
             for x in tmp_test:
                 if (not x.startswith("from ")) and (not x.startswith("import ")):
-                    new_test.append("\t" + x + "\n")
+                    new_test.append(x + "\n")
                 else:
                     new_test.append(x + "\n")
             tmp_test = new_test
@@ -200,21 +200,20 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             started = False
             # TODO: Should we define starting code here or not?
             for i in tmp_test:
-                if i.startswith("\t") and not started:
+                if i.startswith("    ") and not started:
                     new_test += "stdin = sys.stdin\nstdout = sys.stdout\n"
                     new_test += "def code():\n"
                     new_test += i
                     started = True
                 elif started and ((i.startswith("from ")) or (i.startswith("import "))): 
-                    new_test += "\t" + i
+                    new_test += i
                 else:
                     new_test += i
             tmp_test = new_test
 
             sol += tmp_test
             if debug:
-                logger.debug(f"sol = {sol}")
-                # print(f"{o}") 
+                logger.debug(f"Code being tested:\n{sol}")
             method_name = "code"
             signal.alarm(timeout)
             try:

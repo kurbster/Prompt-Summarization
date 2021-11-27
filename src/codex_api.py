@@ -18,22 +18,20 @@ from lib.prompt_generation import generate_code_prompt, find_path_to_cfg
 
 logger = logging.getLogger('apiLogger')
 
-path_to_src = Path(__file__, '..')
-
 @find_path_to_cfg
-def get_summary(prompts: list[str], config: str) -> dict[str, any]:
+def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
     """Call the OpenAI API with the prompts given.
 
     Args:
         prompts (list[str]): The prompts to send to the API.
-        codex_cfg (str): The config file for the API.
+        codex_cfg (Path): The config file for the API.
 
     Returns:
         dict[str, any]: The response object.
     """
     with open(config) as f:
         cfg = yaml.safe_load(f)
-    api_settings = cfg['apiSettings']
+    api_settings = cfg['apiParams']
     logger.info(f'Using codex model: {api_settings["engine"]}')
     
     API_KEY = os.getenv("OPENAI_API_KEY")
@@ -53,6 +51,7 @@ def create_experiment_dir() -> Path:
     Returns:
         Path: The path to the new dir.
     """
+    path_to_src = Path(__file__, '..')
     fname = datetime.now().strftime('%m-%d-%Y/%H_%M')
     dir_path = path_to_src.joinpath('../data/experiments', fname).resolve()
     dir_path.mkdir(parents=True, exist_ok=False)
@@ -70,6 +69,29 @@ def save_json(dirname: Path, obj_to_save: any, fname: str, indent: int = 4) -> N
     dir_name = os.path.join(dirname, fname)
     with open(dir_name, 'w') as f:
         json.dump(obj_to_save, f, indent=indent)
+
+def clean_codes(codes: dict[str, str]) -> dict[str, str]:
+    """We need to remove any call codex makes to the function
+    it created. If not the testing module breaks.
+
+    Args:
+        codes (dict[str, str]): The codes produced by Codex.
+
+    Returns:
+        dict[str, str]: The cleaned codes.
+    """
+    result = {}
+    for idx, code in codes.items():
+        # if name main isn't causing issues. Only if
+        # The function created is called. So only remove
+        # The last function call if it is not inside if name main
+        main_idx = code.find('if __name__')
+        if main_idx == -1 and code.endswith('()'):
+            # remove last line
+            code_arr = code.split('\n')[:-1]
+            code = '\n'.join(code_arr)
+        result[idx] = code
+    return result
 
 def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
     """Create args to pass to test_one_solution.py
@@ -89,25 +111,32 @@ def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
         arg_arr.append('--debug')
     return arg_arr
 
+@find_path_to_cfg
+def save_config(dirname: Path, config: Path) -> None:
+    shutil.copy(config, dirname)
+
 if __name__ == "__main__":
     cfg_file = 'codex_config.yaml'
-    prompts, output_dirs = generate_code_prompt(config=cfg_file)
+    prompts, prompt_files = generate_code_prompt(config=cfg_file)
 
-    response = get_summary(prompts, cfg_file)
+    response = get_codes(prompts, cfg_file)
 
     dirname = create_experiment_dir()
+
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
+    codes = clean_codes(codes)
+
     prompt_json = {str(k): v for k, v in enumerate(prompts)}
 
-    logger.info(f'Created dir {dirname} for saving results.')
-    save_json(dirname, output_dirs, 'test.json')    # List of problems
+    save_json(dirname, prompt_files, 'test.json')   # List of problems
     save_json(dirname, response, 'response.json')   # Full GPT response
     save_json(dirname, codes, 'all_codes.json')     # Code dict 
     save_json(dirname, prompt_json, 'prompts.json') # Prompts given
-
-    shutil.copy(cfg_file, dirname)
+    save_config(dirname, cfg_file)                  # Config file
 
     test_arg_arr = create_test_args(dirname)
 
     test_args = test_one_solution.parse_args(test_arg_arr)
     test_one_solution.main(test_args)
+
+    logger.info(f'Saved results here: {dirname}')

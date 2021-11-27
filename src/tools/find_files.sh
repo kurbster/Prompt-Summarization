@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 get_generated_train() {
     problems=$(find ../../data/*generated/[ic]* -mindepth 1 -type d)
 }

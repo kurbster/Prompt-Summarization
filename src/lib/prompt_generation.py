@@ -11,12 +11,9 @@ import logging
 
 from pathlib import Path
 
-from . import my_logger
-
 logger = logging.getLogger('apiLogger')
 
 path_to_src = Path(__file__, '../..').resolve()
-path_to_cfg = path_to_src.joinpath('configs')
 path_to_data = path_to_src.joinpath('../data').resolve()
 
 def find_path_to_cfg(func):
@@ -27,7 +24,7 @@ def find_path_to_cfg(func):
             # Then it must be declared in args
             if len(a) == 0:
                 logger.critical('YOU NEED TO PASS THE NAME OF THE CONFIG FILE!!!')
-                raise BaseException
+                raise Exception('You must pass the name of the config to a function with this decerator.')
             else:
                 config = a[-1]
                 a = a[:-1]
@@ -92,7 +89,10 @@ def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
 
     priming_examples = generate_example_prompt(prompt_type, cfg, human_probs, cfg['promptFile'])
 
-    full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]} {prompt}\n{cfg["summaryPrefix"]}'
+    full_example = priming_examples + f'{cfg["fewShotSuffix"]}{cfg["originalPrefix"]}{prompt}\n{cfg["summaryPrefix"]}'
+
+    # Remove ending whitespace to increase accuracy
+    full_example = remove_ending_whitespace(full_example)
 
     full_example = ensure_ascii(full_example)
     
@@ -245,7 +245,9 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
     with open(config) as f:
         prompt_cfg = yaml.safe_load(f)
     
-    output = [cfg['header']]
+    output = []
+    if cfg['header']:
+        output = [cfg['header']]
     
     probs = list(probs)
     # If it's a general problem choose any examples
@@ -259,7 +261,7 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
         logger.debug(f'Using summary {summary} for priming model')
         orig, _ = split_prompt(orig, cfg['splitFile'])
         summary, _ = split_prompt(summary, cfg['splitFile'])
-        output.append(f'{cfg["originalPrefix"]} {orig}\n{cfg["summaryPrefix"]} {summary}')
+        output.append(f'{cfg["originalPrefix"]}{orig}\n{cfg["summaryPrefix"]}{summary}')
     
     for text, num in zip(output, example_prompts):
         if not check_ascii(text):
@@ -268,6 +270,17 @@ def generate_example_prompt(prompt_type: str, cfg: dict[str, any], probs: set[in
     output = cfg["fewShotSuffix"].join(output)
     
     return output
+
+def remove_ending_whitespace(prompt: str) -> str:
+    """Remove ending whitespace from string.
+
+    Args:
+        prompt (str): prompt to remove from
+
+    Returns:
+        str: The resulting string
+    """
+    return prompt.rstrip()
 
 def ensure_ascii(text: str) -> str:
     """Convert the text into ASCII.
@@ -388,6 +401,7 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         summary = read_code_files(prompt, cfg, read_solution=False)
 
         prompt_str = cfg['header'] + few_shot_str + summary
+        prompt_str = remove_ending_whitespace(prompt_str)
         code_prompts.append(prompt_str)
         
         prompt_name = os.path.join(prompt, cfg['summaryType']+'.txt')
@@ -396,7 +410,9 @@ def generate_example_code(prompts: set[str], available_prompts: set[str], cfg: d
         if cfg['includeOrig']:
             logger.info(f'Generating code with original prompt for problem: {prompt}')
             original = read_code_files(prompt, cfg, read_original=True, read_solution=False)
+            
             prompt_str = cfg['header'] + few_shot_str + original
+            prompt_str = remove_ending_whitespace(prompt_str)
             code_prompts.append(prompt_str)
             
             prompt_name = os.path.join(prompt, 'question.txt')
@@ -452,7 +468,7 @@ def read_code_files(prompt: str, cfg: dict[str, any], read_original: bool=False,
     if read_solution:
         code_fname = os.path.join(prompt, 'solutions.json')
         try:
-            code = json.load(open(code_fname))[0]
+            code = json.load(open(code_fname))[0]   
             prompt_str += '\n' + code
         except FileNotFoundError:
             logger.error(f'The code solution for prompt {prompt} does not exist. Not including it in few shot examples.')
@@ -478,22 +494,34 @@ def get_code_prefix(prompt: str, default: str) -> str:
         logger.warning(f'The problem {prompt} did not have starter_code.py!')
     return prefix
 
+def log_summary(prompt, extra, output_dir):
+    logger.debug(f'PROMPT:\n{prompt}')
+    logger.debug(f'EXTRA:\n{extra}')
+    logger.debug(f'OUTPUT DIR: {output_dir}')
+
+def log_codes(prompts, output_dirs):
+    for p, out in zip(prompts, output_dirs):
+        logger.debug(f'Prompt for output {out}')
+        logger.debug('='*50)
+        logger.debug(p)
+
 if __name__ == '__main__':
+    import my_logger
     prompt, extra, output_dir = generate_summary_prompt('studio21', config='studio21_config.yaml')
-    print('PROMPT:\n', '='*50)
-    print(prompt)
-    print('EXTRA:\n', '='*50)
-    print(extra)
-    print('OUTPUT DIR:\n', '='*50)
-    print(output_dir)
-    prompt, extra, output_dir = generate_summary_prompt('studio21', 'studio21_config.yaml')
-    print('PROMPT:\n', '='*50)
-    print(prompt)
-    print('EXTRA:\n', '='*50)
-    print(extra)
-    print('OUTPUT DIR:\n', '='*50)
-    print(output_dir)
+    logger.info('BEGIN STUDIO21 TEST')
+    log_summary(prompt, extra, output_dir)
+    logger.info('END STUDIO21 TEST')
+
+    prompt, extra, output_dir = generate_summary_prompt('gpt', 'gpt_config.yaml')
+    logger.info('BEGIN GPT TEST')
+    log_summary(prompt, extra, output_dir)
+    logger.info('END GPT TEST')
+
     prompts, output_dirs = generate_code_prompt('codex_config.yaml')
-    for p in prompts:
-        print(p)
-    print(output_dirs)
+    logger.info('BEGIN CODEX TEST')
+    log_codes(prompts, output_dirs)
+    logger.info('END CODEX TEST')
+    logger.info('Test results logged as level DEBUG. Look in latest log file. \
+Or use level DEBUG for the console logger.')
+else:
+    from . import my_logger
