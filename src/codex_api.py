@@ -14,29 +14,35 @@ from pathlib import Path
 import lib.my_logger
 
 from lib import test_one_solution
-from lib.prompt_generation import generate_code_prompt
+from lib.prompt_generation import generate_code_prompt, find_path_to_cfg
 
 logger = logging.getLogger('apiLogger')
 
 path_to_src = Path(__file__, '..')
 
-def get_summary(prompts: list[str], GPT_settings: dict[str, any]) -> dict[str, any]:
+@find_path_to_cfg
+def get_summary(prompts: list[str], config: str) -> dict[str, any]:
     """Call the OpenAI API with the prompts given.
 
     Args:
         prompts (list[str]): The prompts to send to the API.
-        GPT_settings (dict[str, any]): The setting for the API.
+        codex_cfg (str): The config file for the API.
 
     Returns:
         dict[str, any]: The response object.
     """
+    with open(config) as f:
+        cfg = yaml.safe_load(f)
+    api_settings = cfg['apiSettings']
+    logger.info(f'Using codex model: {api_settings["engine"]}')
+    
     API_KEY = os.getenv("OPENAI_API_KEY")
     logger.info(f'using apikey: {API_KEY}')
     openai.api_key = API_KEY
 
     response = openai.Completion.create(
         prompt=prompts,
-        **GPT_settings
+        **api_settings
     )
     
     return response
@@ -66,6 +72,15 @@ def save_json(dirname: Path, obj_to_save: any, fname: str, indent: int = 4) -> N
         json.dump(obj_to_save, f, indent=indent)
 
 def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
+    """Create args to pass to test_one_solution.py
+
+    Args:
+        dirname (Path): Path to our output dir.
+        debug (bool, optional): To include the debug flag or not. Defaults to True.
+
+    Returns:
+        list[str]: List of args to be passed.
+    """
     arg_arr = [
         '--save', str(dirname),
         '--test_loc', str(dirname / "test.json")
@@ -75,16 +90,10 @@ def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
     return arg_arr
 
 if __name__ == "__main__":
-    path_to_cfg = path_to_src.joinpath('configs').resolve()
-    generation_config = path_to_cfg.joinpath('codex_config.yaml')
-    prompts, output_dirs = generate_code_prompt(config=generation_config)
+    cfg_file = 'codex_config.yaml'
+    prompts, output_dirs = generate_code_prompt(config=cfg_file)
 
-    api_config = path_to_cfg.joinpath('codex_api_settings.yaml')
-    with open(api_config) as file:
-        GPT_settings = yaml.safe_load(file)
-
-    logger.info(f'Using codex model: {GPT_settings["engine"]}')
-    response = get_summary(prompts, GPT_settings)
+    response = get_summary(prompts, cfg_file)
 
     dirname = create_experiment_dir()
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
@@ -96,8 +105,7 @@ if __name__ == "__main__":
     save_json(dirname, codes, 'all_codes.json')     # Code dict 
     save_json(dirname, prompt_json, 'prompts.json') # Prompts given
 
-    shutil.copy(api_config, dirname)
-    shutil.copy(generation_config, dirname)
+    shutil.copy(cfg_file, dirname)
 
     test_arg_arr = create_test_args(dirname)
 
