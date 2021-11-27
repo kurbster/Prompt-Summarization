@@ -1,0 +1,2 @@
+ You are given a binary number. Find complexity of this assignment modulo 1000000007 (10^9 + 7). 
+-----Input----- The first line of input contains a binary number x of lenght n, (1 ≤ n ≤ 100). This number may contain leading zeros. -----Output----- Print the complexity of the given dance assignent modulo 1000000007 (10^9 + 7). -----Examples----- Input 11 Output 6 Input 01 Output 2 Input 1 Output 1

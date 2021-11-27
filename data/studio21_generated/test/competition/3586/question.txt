@@ -1,0 +1,18 @@
+Given $S$, a set of integers, find the largest $d$ such that $a + b + c = d$ where $a, b, c$ and $d$ are distinct elements of $S$.
+
+-----Input-----
+The input starts with an integer $1 \le N \le 4000$, the number of elements in $S$. It is followed by $N$ lines containing the elements of $s$, one per line. Each element of $S$ is a distinct integer between $-536870912$ and $+536870911$, inclusive.
+
+-----Output-----
+Output a single line containing the maximum $d$ as described in the statement. If no such $d$ exists, output a single line containing no solution.
+
+-----Examples-----
+Sample Input:
+5
+2
+3
+5
+7
+12
+Sample Output:
+12

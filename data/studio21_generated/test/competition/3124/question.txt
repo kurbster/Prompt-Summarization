@@ -1,0 +1,31 @@
+Even though she saw Zvonko steal Mirko’s microprocessor in the second task, Mirko’s sister Ivana did not tell Mirko because she likes Zvonko. She suggested to him that they go see a movie together so that she would “forget” about the incident.
+
+Zvonko does not care much for girls because they take away precious time he usually spends practicing his math-fu. He suggested that the two of them play a game and, if Ivana wins, they will go see a movie together. Ivana agreed, being good at jump rope and she sometimes even kicks a football around with her two brothers.
+
+Zvonko laid $N$ positive integers in a circle on the floor and explained the rules:
+ - The first player takes any number.
+ - The second player takes either of the two numbers adjacent to the one the first player took.
+ - The next player takes a number adjacent to any of the numbers taken so far, and so on until they run out of numbers. The player to take more odd numbers (not divisible by 2) wins.
+
+Zvonko plays optimally; he always looks for a strategy that leads to certain victory or a draw. Zvonko does not know how well Ivana plays. Being a true cavalier, he let Ivana have the first move. But Ivana only cares about sitting next to Zvonko in front of the big screen so she seeks help playing.
+
+Write a program that finds how many different first moves Ivana can make, so that she has a chance of winning afterwards.
+
+-----Input-----
+The first line of input contains an integer $N$ $(1 \leq N \leq 100)$, how many numbers there are in the circle. The second line contains $N$ integers separated by single spaces. All numbers will be between $1$ and $1000$ (inclusive). No two numbers will be the same.
+
+-----Output-----
+Output the desired number on a single line.
+
+-----Examples-----
+Sample Input 1:
+3
+3 1 5
+Sample Output 1:
+3
+
+Sample Input 2:
+4
+1 2 3 4
+Sample Output 2:
+2

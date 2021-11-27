@@ -1,0 +1,60 @@
+Some people leave the lights at their workplaces on when they leave that is a waste of resources. As a hausmeister of DHBW, Sagheer waits till all students and professors leave the university building, then goes and turns all the lights off.
+
+The building consists of n floors with stairs at the left and the right sides. Each floor has m rooms on the same line with a corridor that connects the left and right stairs passing by all the rooms. In other words, the building can be represented as a rectangle with n rows and m + 2 columns, where the first and the last columns represent the stairs, and the m columns in the middle represent rooms.
+
+Sagheer is standing at the ground floor at the left stairs. He wants to turn all the lights off in such a way that he will not go upstairs until all lights in the floor he is standing at are off. Of course, Sagheer must visit a room to turn the light there off. It takes one minute for Sagheer to go to the next floor using stairs or to move from the current room/stairs to a neighboring room/stairs on the same floor. It takes no time for him to switch the light off in the room he is currently standing in. Help Sagheer find the minimum total time to turn off all the lights.
+
+Note that Sagheer does not have to go back to his starting position, and he does not have to visit rooms where the light is already switched off.
+
+
+-----Input-----
+
+The first line contains two integers n and m (1 ≤ n ≤ 15 and 1 ≤ m ≤ 100) — the number of floors and the number of rooms in each floor, respectively.
+
+The next n lines contains the building description. Each line contains a binary string of length m + 2 representing a floor (the left stairs, then m rooms, then the right stairs) where 0 indicates that the light is off and 1 indicates that the light is on. The floors are listed from top to bottom, so that the last line represents the ground floor.
+
+The first and last characters of each string represent the left and the right stairs, respectively, so they are always 0.
+
+
+-----Output-----
+
+Print a single integer — the minimum total time needed to turn off all the lights.
+
+
+-----Examples-----
+Input
+2 2
+0010
+0100
+
+Output
+5
+
+Input
+3 4
+001000
+000010
+000010
+
+Output
+12
+
+Input
+4 3
+01110
+01110
+01110
+01110
+
+Output
+18
+
+
+
+-----Note-----
+
+In the first example, Sagheer will go to room 1 in the ground floor, then he will go to room 2 in the second floor using the left or right stairs.
+
+In the second example, he will go to the fourth room in the ground floor, use right stairs, go to the fourth room in the second floor, use right stairs again, then go to the second room in the last floor.
+
+In the third example, he will walk through the whole corridor alternating between the left and right stairs at each floor.

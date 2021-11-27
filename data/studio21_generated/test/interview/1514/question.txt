@@ -1,0 +1,65 @@
+A permutation of length $k$ is a sequence of $k$ integers from $1$ to $k$ containing each integer exactly once. For example, the sequence $[3, 1, 2]$ is a permutation of length $3$.
+
+When Neko was five, he thought of an array $a$ of $n$ positive integers and a permutation $p$ of length $n - 1$. Then, he performed the following:
+
+  Constructed an array $b$ of length $n-1$, where $b_i = \min(a_i, a_{i+1})$.  Constructed an array $c$ of length $n-1$, where $c_i = \max(a_i, a_{i+1})$.  Constructed an array $b'$ of length $n-1$, where $b'_i = b_{p_i}$.  Constructed an array $c'$ of length $n-1$, where $c'_i = c_{p_i}$. 
+
+For example, if the array $a$ was $[3, 4, 6, 5, 7]$ and permutation $p$ was $[2, 4, 1, 3]$, then Neko would have constructed the following arrays:
+
+  $b = [3, 4, 5, 5]$  $c = [4, 6, 6, 7]$  $b' = [4, 5, 3, 5]$  $c' = [6, 7, 4, 6]$ 
+
+Then, he wrote two arrays $b'$ and $c'$ on a piece of paper and forgot about it. 14 years later, when he was cleaning up his room, he discovered this old piece of paper with two arrays $b'$ and $c'$ written on it. However he can't remember the array $a$ and permutation $p$ he used.
+
+In case Neko made a mistake and there is no array $a$ and permutation $p$ resulting in such $b'$ and $c'$, print -1. Otherwise, help him recover any possible array $a$. 
+
+
+-----Input-----
+
+The first line contains an integer $n$ ($2 \leq n \leq 10^5$) — the number of elements in array $a$.
+
+The second line contains $n-1$ integers $b'_1, b'_2, \ldots, b'_{n-1}$ ($1 \leq b'_i \leq 10^9$).
+
+The third line contains $n-1$ integers $c'_1, c'_2, \ldots, c'_{n-1}$ ($1 \leq c'_i \leq 10^9$).
+
+
+-----Output-----
+
+If Neko made a mistake and there is no array $a$ and a permutation $p$ leading to the $b'$ and $c'$, print -1. Otherwise, print $n$ positive integers $a_i$ ($1 \le a_i \le 10^9$), denoting the elements of the array $a$.
+
+If there are multiple possible solutions, print any of them. 
+
+
+-----Examples-----
+Input
+5
+4 5 3 5
+6 7 4 6
+
+Output
+3 4 6 5 7 
+
+Input
+3
+2 4
+3 2
+
+Output
+-1
+
+Input
+8
+2 3 1 1 2 4 3
+3 4 4 2 5 5 4
+
+Output
+3 4 5 2 1 4 3 2 
+
+
+
+-----Note-----
+
+The first example is explained is the problem statement.
+
+In the third example, for $a = [3, 4, 5, 2, 1, 4, 3, 2]$, a possible permutation $p$ is $[7, 1, 5, 4, 3, 2, 6]$. In that case, Neko would have constructed the following arrays:
+
+  $b = [3, 4, 2, 1, 1, 3, 2]$  $c = [4, 5, 5, 2, 4, 4, 3]$  $b' = [2, 3, 1, 1, 2, 4, 3]$  $c' = [3, 4, 4, 2, 5, 5, 4]$
