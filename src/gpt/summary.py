@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import os
 import sys
+
+from test_one_solution import main
 sys.path.append('..')
 import yaml
 import json
@@ -63,7 +65,27 @@ def save_json(dir_name: str, obj_to_save: any, fname: str, indent: int = 4) -> N
     with open(dir_name, 'w') as f:
         json.dump(obj_to_save, f, indent=indent)
 
+def clean_codes(codes):
+    result = {}
+    for idx, code in codes.items():
+        # if name main isn't causing issues. Only if
+        # The function created is called. So only remove
+        # The last function call if it is not inside if name main
+        main_idx = code.find('if __name__')
+        if main_idx == -1 and code.endswith('()'):
+            # remove last line
+            code_arr = code.split('\n')[:-1]
+            code = '\n'.join(code_arr)
+        result[idx] = code
+    return result
+
 if __name__ == "__main__":
+    import sys
+    fname = '../../data/experiments/11-27-2021/12_04/all_codes.json'
+    codes = json.load(open(fname))
+    codes = clean_codes(codes)
+    json.dump(codes, open(fname, 'w'))
+    sys.exit()
     generation_config = 'config.yaml'
     prompts, output_dirs = generate_code_prompt(config=generation_config)
 
@@ -83,12 +105,17 @@ if __name__ == "__main__":
         response = get_summary(prompts, GPT_settings)
 
     dirname = create_experiment_dir()
+
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
+    codes = clean_codes(codes)
+
+    prompt_json = {str(k): v for k, v in enumerate(prompts)}
 
     logger.info(f'Created dir {dirname} for saving results.')
     save_json(dirname, output_dirs, 'test.json')    # List of problems
     save_json(dirname, response, 'response.json')   # Full GPT response
-    save_json(dirname, codes, 'all_codes.json')   # Code dict 
+    save_json(dirname, codes, 'all_codes.json')     # Code dict
+    save_json(dirname, prompt_json, 'prompts.json') # Prompts given
 
     shutil.copy(api_config, dirname)
     shutil.copy(generation_config, dirname)

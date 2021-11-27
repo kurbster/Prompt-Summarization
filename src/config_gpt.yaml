@@ -1,16 +1,13 @@
-model: large # should be large or jumbo
 header: ""
 splitFile: split.txt
 promptFile: prompt.yaml
-numPrompts: 1
+numPrompts: 3
 pathToData: "../data"
 summaryType: expert
 ignoreIntro: True
-summaryPrefixStart: 'I have rephrased the programming question into simpler terms after removing jargon like this \n"""'
-summaryPrefixEnd: '\n"""\n'
-originalPrefixStart: 'I was given a computer science programming question like this \n"""\n'
-originalPrefixEnd: '\n"""\n'
-fewShotSuffix: "\n"
+originalPrefix: "I was given a computer science programming question like this\n\"\"\"\n"
+summaryPrefix: "\"\"\"\nI have rephrased the programming question into simpler terms after removing jargon like this \n\"\"\"\n"
+fewShotSuffix: "\n\"\"\"\n"
 
 apiParams:
     engine: "ada"
