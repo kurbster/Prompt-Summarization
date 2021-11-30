@@ -3,3 +3,4 @@ pyext
 numpy
 openai
 pyyaml
+inquirer
