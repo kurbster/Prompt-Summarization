@@ -132,6 +132,7 @@ def generateResultsDictionary(filePath):
       })
 
   f = open("integrated_results.txt", "a+")
+  f.write(f"\nTotal Questions are {len(testData)/2}")
   if(len(strictAccuracy) == 0):
     f.write("\nStrict Accuracy is 0\n")
   else:
@@ -157,12 +158,12 @@ def returnBetterResults(values,level,problem,trainortest):
   if(values["question.txt"]["-1"] and values["expert.txt"]["False"]):
     checkIfBetter = True
     better["-1=>False"] = f"{values['question.txt']['-1']} => {values['expert.txt']['False']}"
-  if(values["question.txt"]["-1"] and values["expert.txt"]["False"]):
+  if(values["question.txt"]["-1"] and values["expert.txt"]["True"]):
     checkIfBetter = True
     better["-1=>True"] = f"{values['question.txt']['-1']} => {values['expert.txt']['True']}"
   if(values["question.txt"]["False"] and values["expert.txt"]["True"]):
     checkIfBetter = True
-    better["False=>True"] = f"{values['question.txt']['-2']} => {values['expert.txt']['False']}"
+    better["False=>True"] = f"{values['question.txt']['False']} => {values['expert.txt']['True']}"
   
   a=[]
   if(checkIfBetter):
@@ -223,7 +224,7 @@ def returnSameResults(val2,level,problem, trainortest):
   return a
 
 def printResults(array, level, header):
-  if(len(array) > 1):
+  if(len(array) > 0):
     f = open("integrated_results.txt", "a+")
     f.write(f"\n{level} performance \n")
     f.write(header)
@@ -231,9 +232,8 @@ def printResults(array, level, header):
       f.write(i)
     f.close()
 
-def printSummaries(competition,introductory,interview,train,test,totalSummaries):
+def printSummaries(competition,introductory,interview,train,test):
   f = open("integrated_results.txt", "a+")
-  f.write(f"\nTotal Summaries are {totalSummaries}")
   f.write(f"\nCompetition level have {competition['same']} same, {competition['better']} better and {competition['worse']} worse results")
   f.write(f"\nIntroductory level have {introductory['same']} same, {introductory['better']} better and {introductory['worse']} worse results")
   f.write(f"\nInterview level have {interview['same']} same, {interview['better']} better and {interview['worse']} worse results")
@@ -267,7 +267,7 @@ def getAccuracy(dictionary):
         if(len(returnSameResults(val2,k,i,key1)) != 0):
           same.append(returnSameResults(val2,k,i,key1)[0])
   
-  printSummaries(competition,introductory,interview,train,test,len(same)+len(worse)+len(better))
+  printSummaries(competition,introductory,interview,train,test)
   printResults(better,'better','{:30s} {:15s} {:15s} {:15s} {:15s} {:15s} {:15s} \n'.format("Problem Name", "-2=>-1", "-2=>False", "-2=>True", "-1=>False", "-1=>True", "False=>True"))
   printResults(same,'same','{:30s} {:15s} {:15s} {:15s} {:15s} \n'.format("Problem Name", "True=>True", "False=>False", "-1=>-1", "-2=>-2"))
   printResults(worse,'worse','{:30s} {:15s} {:15s} {:15s} {:15s} {:15s} {:15s} \n'.format("Problem Name", "True=>False", "True=>-1", "True=>-2", "False=>-1", "False=>-2", "-1=>-2"))
