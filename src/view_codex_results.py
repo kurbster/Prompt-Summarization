@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import inquirer
 import os
 import sys
@@ -276,7 +277,3 @@ def getAccuracy(dictionary):
 files = getExperimentFiles()
 
 getAccuracy(generateResultsDictionary(getFileInputPath(files)))
-
-
-
-

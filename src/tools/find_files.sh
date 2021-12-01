@@ -9,8 +9,8 @@ get_generated_test() {
 }
 
 get_generated_human() {
-    [[ -z $1 ]] && depth=1 || depth=0 
-    problems=$(find ../../data/[ic]*/$1 -mindepth $depth -type d)
+    [[ -z $1 ]] && problems=$(find ../../data/[ic]* -mindepth 1 -type d) ||\
+    problems=$(find ../../data/[ic]*/$1 -type d)
 }
 
 get_generated_model() {
