@@ -1,0 +1,28 @@
+You are given a string s.Your task is to determine whether you can make a palindrome of a given string by deleting only one character from it.
+
+-----Input-----
+First line of the input contains a single integer T denoting number of test cases.
+For each test case, you are given a single line containing string  s. 
+
+-----Output-----
+For each test case, print YES or NO depending on the answer of the problem. 
+
+-----Constraints-----
+Subtask 1, 35 points 
+-  1 ≤ T ≤ 100
+- 2 ≤  size of string s ≤ 1000
+-  String s contains lowercase English alphabets (ie. from 'a' to 'z').
+
+-----Example-----
+Input:
+4
+aaa
+abc
+abdbca
+abba
+
+Output:
+YES
+NO
+YES
+YES

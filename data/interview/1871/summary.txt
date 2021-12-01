@@ -1,0 +1,13 @@
+Given the root of a binary tree, find the maximum value V for which there exists different nodes A and B where V = |A.val - B.val| and A is an ancestor of B.
+
+ 
+Example 1:
+
+Input: [8,3,10,1,6,null,14,null,null,4,7,13]
+Output: 7
+
+ 
+Note:
+
+The number of nodes in the tree is between 2 and 5000.
+Each node will have value between 0 and 100000.

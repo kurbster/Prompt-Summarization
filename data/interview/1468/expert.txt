@@ -1,0 +1,28 @@
+Write the code to convert the hexadecimal number into its corresponding decimal value.
+Input:
+
+First line of code contain T test cases.
+
+every line of text case contain a Hex-value 
+
+Output:
+
+Every line of output contain a decimal conversion of given number
+
+Sample Input:
+
+3
+
+A
+
+1A23
+
+2C2A
+
+Sample Output:
+
+10
+
+6691
+
+11306

@@ -1,0 +1,26 @@
+
+You are given a string, if it contains the word berhampore , print GCETTB or if it contains serampore print GCETTS. If the string contains neither print Others. If it contains both Berhampore and Serampore print Both.Ignore the case.
+ 
+Input 
+- First line contains single integer T, No. of test case  
+- Next line for every test contain case a string S 
+Output
+
+Print GCETTB or GCETTS or Others or Both on a new line
+Constraints 
+- 1 <= T <= 10 
+- 0 <= len(S) <= 100  
+- S contain a-z and A-Z and space only
+Sample Input
+3
+Government clg Berhampore
+SeRaMporE textile college 
+Girls college Kolkata
+
+Sample Output
+
+GCETTB
+
+GCETTS
+
+Others       

@@ -1,0 +1,22 @@
+You are given a N integer.Your task is to convert each integer in the binary representation and print the total number of 1's for the given number.
+.
+
+-----Input:-----
+- First-line will contain $T$, the number of test cases. Then the test cases follow. 
+- Each test case contains a single line of input, $N$. 
+
+-----Output:-----
+For each test case, output in a single line answer.
+
+-----Constraints-----
+- $1 \leq T \leq 10^6$
+- $1 \leq N \leq 10^6$
+
+-----Sample Input:-----
+2
+2
+5
+
+-----Sample Output:-----
+1
+2

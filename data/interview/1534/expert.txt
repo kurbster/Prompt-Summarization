@@ -1,0 +1,26 @@
+You are given two positive integers — A and B — in 7-ary system such that B * C = A and  B is a divisor of A. Calculate the number C modulo 7L.
+
+-----Input-----
+
+First line of input contains an integer T — the number of test cases. T tests follow.
+
+For each test case, the first line contains the integer A, and the second line contains the integer B, and the third line contains the integer L. A and B are given in 7-ary system.
+
+-----Output-----
+Output the answer in 7-ary system.
+
+-----Example-----
+Input:3
+21
+5
+10
+202
+13
+1
+202
+13
+2
+
+Output:3
+3
+13

@@ -1,0 +1,42 @@
+There are n clicks in a game. For each click there are two outcomes: correct or bad. Let us denote correct as "O", bad as "X", then the whole play can be encoded as a sequence of n characters "O" and "X".
+
+Using the play sequence you can calculate the score for the play as follows: for every maximal consecutive "O"s block, add the square of its length (the number of characters "O") to the score. If there are no correct clicks in a play then the score for the play equals to 0.
+
+You know that the probability to click the i-th (1 ≤ i ≤ n) click correctly is p_{i}. In other words, the i-th character in the play sequence has p_{i} probability to be "O", 1 - p_{i} to be "X". You task is to calculate the expected score for your play.
+
+
+-----Input-----
+
+The first line contains an integer n (1 ≤ n ≤ 10^5) — the number of clicks. The second line contains n space-separated real numbers p_1, p_2, ..., p_{n} (0 ≤ p_{i} ≤ 1).
+
+There will be at most six digits after the decimal point in the given p_{i}.
+
+
+-----Output-----
+
+Print a single real number — the expected score for your play. Your answer will be considered correct if its absolute or relative error does not exceed 10^{ - 6}.
+
+
+-----Examples-----
+Input
+3
+0.5 0.5 0.5
+
+Output
+2.750000000000000
+
+Input
+4
+0.7 0.2 0.1 0.9
+
+Output
+2.489200000000000
+
+Input
+5
+1 1 1 1 1
+
+Output
+25.000000000000000
+
+

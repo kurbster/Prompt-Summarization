@@ -1,0 +1,1 @@
+You are given a number n. Generate the solutions to 2^n and find their sum of digits. Input: N : number of inputs N<=100 then N lines with input T<=2000 Output: The output for the corresponding input T Example: Input: 3 5 10 4 Output: 5 7 7

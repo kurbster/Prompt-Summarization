@@ -1,0 +1,18 @@
+
+You are given four numbers x, y, z, w which make a proportion if ratio of x : y is same as that of z : w. You have to check that if it is possible to shuffle x, y, z, w to make  some proportion or not.
+
+-----Input-----
+Only line of the input contains four space separated positive integers - a, b, c, d.
+
+-----Output-----
+Print "Possible" if it is possible to shuffle a, b, c, d to make proportion, otherwise "Impossible" (without quotes).
+
+-----Constraints-----
+- 1 ≤ a, b, c, d  ≤ 1000
+
+-----Example-----
+Input:
+1 2 4 2
+
+Output:
+Possible

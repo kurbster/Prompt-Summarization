@@ -1,0 +1,36 @@
+{
+  "inputs": [
+    "ab\n",
+    "aab\n",
+    "aaaaabaabababaaaaaba\n",
+    "abaabaaabbabaabab\n",
+    "abbaa\n",
+    "abbaaabaabaaaaabbbbaababaaaaabaabbaaaaabbaabbaaaabbbabbbabb\n",
+    "aababbaaaabbaabbbbbbbbabbababbbaaabbaaabbabbba\n",
+    "aabbaababbabbbaabbaababaaaabbaaaabaaaaaababbaaaabaababbabbbb\n",
+    "aaabaaaabbababbaabbababbbbaaaaaaabbabbba\n",
+    "abbbbababbabbbbbabaabbbaabbbbbbbaaab\n",
+    "bbababbbaabaaaaaaaabbabbbb\n",
+    "abbbaaabbbbbabaabbaaabbbababbbaabaabababababa\n",
+    "abaaaaaabaaaabbabbaaabbbbabababaaaaabbaabbaaaaabbbaababaaaaaaabbbbbaaaaabaababbabababbabbbbaabbaabbabbbabaabbaabbaaaaaab\n",
+    "abbbbbbbbbbbbbbbbbbbbbbbbbbaababaaaaaaabaabaaababaabaababaaabababaababab\n",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbaaaaaaaaabaabaaababaabaababaaabababaabbbbbbb\n"
+  ],
+  "outputs": [
+    "1\n",
+    "3\n",
+    "17307\n",
+    "1795\n",
+    "2\n",
+    "690283580\n",
+    "2183418\n",
+    "436420225\n",
+    "8431094\n",
+    "8180\n",
+    "40979\n",
+    "2065758\n",
+    "235606597\n",
+    "7\n",
+    "557763786\n"
+  ]
+}

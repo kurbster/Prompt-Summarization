@@ -1,0 +1,30 @@
+
+Given $t$ pairs of integers $p_i$ and $q_i$ and for each pair decided to find the greatest integer $x_i$, such that:   $p_i$ is divisible by $x_i$;  $x_i$ is not divisible by $q_i$.
+
+
+-----Input-----
+
+The first line contains an integer $t$ ($1 \le t \le 50$) — the number of pairs.
+
+Each of the following $t$ lines contains two integers $p_i$ and $q_i$ ($1 \le p_i \le 10^{18}$; $2 \le q_i \le 10^{9}$) — the $i$-th pair of integers.
+
+
+-----Output-----
+
+Print $t$ integers: the $i$-th integer is the largest $x_i$ such that $p_i$ is divisible by $x_i$, but $x_i$ is not divisible by $q_i$.
+
+One can show that there is always at least one value of $x_i$ satisfying the divisibility conditions for the given constraints.
+
+
+-----Example-----
+Input
+3
+10 4
+12 6
+179 822
+
+Output
+10
+4
+179
+

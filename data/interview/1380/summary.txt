@@ -1,0 +1,27 @@
+
+You are given a integer N as an input. Write a code to print the average of the multiplication of the given number N with N-1 integer.
+
+Example:
+Input                            Output
+9                                   36
+5                                   10
+1                                    0
+2                                    1
+
+-----Input:-----
+- First-line will contain $T$, the number of test cases. Then the test cases follow. 
+- Each test case contains a single line of input, $N$. 
+
+-----Output:-----
+For each test case, output in a single line answer as displayed on the screen.
+
+-----Constraints-----
+- $1 \leq T \leq 10^6$
+- $1 \leq N \leq 10^6$
+
+-----Sample Input:-----
+1
+7
+
+-----Sample Output:-----
+21
