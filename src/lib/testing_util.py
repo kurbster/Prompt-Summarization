@@ -152,6 +152,8 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             else:
                 which_type = CODE_TYPE.call_based  # Call-based
                 method_name = in_outs["fn_name"]
+    else:
+        raise BaseException(f"There is no input_output.json in the {root} dir to test.")
     if debug:
         logger.debug(f"loaded json = {datetime.now().time()}")
  

@@ -5,6 +5,7 @@ import itertools
 import pandas as pd
 
 from pathlib import Path
+from typing import TextIO, Callable
 
 def split_prob(prob, keep_filename=True):
     tmp = prob.split('Prompt-Summarization/data/')[-1]
@@ -12,16 +13,23 @@ def split_prob(prob, keep_filename=True):
         return tmp
     return os.path.split(tmp)[0]
 
+def detect_summary(prompt):
+    summary = os.path.split(prompt)[-1]
+    summary = os.path.splitext(summary)[0]
+    return summary
+
 def detect_difficulty(prompt):
-    difficulty = ['introductory', 'interview', 'competition']
+    difficulty = ['competition', 'interview', 'introductory']
+    summary = detect_summary(prompt)
     for d in difficulty:
         if d in prompt:
-            return d
+            return f'{d}-{summary}'
 
 def detect_test(prompt):
+    summary = detect_summary(prompt)
     if 'test' in prompt:
-        return 'test'
-    return 'train'
+        return f'test-{summary}'
+    return f'train-{summary}'
     
 def count_results(results: dict[str, dict[str, list[any]]]) -> pd.DataFrame:
     df = pd.DataFrame(0, index=results.keys(), columns=[-2, -1, False, True])
@@ -83,39 +91,78 @@ def compare_results(results):
     same = same.loc[:, ~(same==0).all()]
     return better, worse, same
 
-def main():
-    out_file = open('outfile', 'w')
-    results = json.load(open('./meta.json'))
-    acc = count_results(results)
-    print(acc)
+def agg_results(df: pd.DataFrame, func: Callable, out_file: TextIO, msg: str = '', new_file: Path = None):
+    # Get the scrict accuracy before adding the real accuracy
+    strict_acc = df.copy(deep=False)
+    get_accuracy(strict_acc)
+    strict_acc = strict_acc['acc'] >= 100
+    strict_acc = 100 * strict_acc.groupby(func).mean()
 
+    df = df.groupby(func).sum()
+    get_accuracy(df)
+    df['strict acc'] = strict_acc
+    write_df(df, out_file, msg=msg, new_file=new_file)
+
+def write_df(df: pd.DataFrame, out_file: TextIO, msg: str = '', new_file: Path = None):
+    write_msg(out_file, msg)
+    df.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
+    if new_file:
+        with open(new_file, 'w') as f:
+            df.to_csv(f, index_label='Problem Names', float_format='%.2f')
+
+def write_msg(out_file, msg):
+    if msg:
+        out_file.write(msg)
+        out_file.write('\n')
+
+def main(results: dict[str, list[any]], out_dir: Path):
+    out_fname = out_dir.joinpath('codex_results.txt')
+    out_file = open(out_fname, 'w')
+
+    acc = count_results(results)
     acc_df = acc.copy(deep=False)
+
     total_acc, strict = get_accuracy(acc_df)
-    acc_df.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
+    write_df(acc_df, out_file, new_file=out_dir.joinpath('original_df.csv'))
+
     out_file.write(f'\nTotal Accuracy: {total_acc:.2f}%\n')
     out_file.write(f'Strict Accuracy: {strict:.2f}%\n\n')
 
-    out_file.write('Accuracy when grouped by difficulty.\n')
-    difficulty = acc.groupby(detect_difficulty).sum()
-    total_acc, strict = get_accuracy(difficulty)
-    difficulty.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
+    agg_results(
+        acc, detect_summary, out_file,
+        msg='Accuracy when grouped by original and summary.',
+        new_file=out_dir.joinpath('summary_vs_orig_df.csv'))
 
-    out_file.write('\nAccuracy when grouped by the test/train split.\n')
-    test_df = acc.groupby(detect_test).sum()
-    total_acc, strict = get_accuracy(test_df)
-    test_df.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
+    agg_results(
+        acc, detect_difficulty, out_file,
+        msg='\nAccuracy when grouped by difficulty.',
+        new_file=out_dir.joinpath('difficulty_df.csv'))
+
+    agg_results(
+        acc, detect_test, out_file,
+        msg='\nAccuracy when grouped by the test/train split.',
+        new_file=out_dir.joinpath('train_test_df.csv'))
 
     better, worse, same = compare_results(results)
-    out_file.write('\nProblems that performed better\n')
-    better.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
-    
-    out_file.write('\nProblems that performed worse\n')
-    worse.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
-    
-    out_file.write('\nProblems that performed the same\n')
-    same.to_csv(out_file, index_label='Problem Names', float_format='%.2f')
+
+    write_df(
+        better, out_file,
+        msg='\nProblems that performed better',
+        new_file=out_dir.joinpath('better_df.csv'))
+    write_df(
+        worse, out_file,
+        msg='\nProblems that performed worse',
+        new_file=out_dir.joinpath('worse_df.csv'))
+    write_df(
+        same, out_file,
+        msg='\nProblems that performed the same',
+        new_file=out_dir.joinpath('same_df.csv'))
 
     out_file.close()
 
 if __name__ == '__main__':
-    main()
+    import sys
+    input_file, output_file = sys.argv[1:3]
+    res = json.load(open(input_file))
+    out_fpath = Path(output_file)
+    main(res, out_fpath)

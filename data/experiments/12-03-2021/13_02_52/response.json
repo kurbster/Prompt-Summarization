@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4B93NqweF9PFiiYzJZkCEGKLf4h3O",
+    "object": "text_completion",
+    "created": 1638561757,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    s = list(map(int, input().split()))\n    s.sort()\n    s.reverse()\n    max_lucky = 0\n    for i in range(n-1):\n        max_lucky = max_lucky | max(s[i], s[i+1])\n    print(max_lucky)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = list(map(int, input().split()))\n    s.sort()\n    ans = 0\n    for i in range(n-1):\n        ans = max(ans, s[i]^s[i+1])\n    print(ans)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    arr = list(map(int, input().split()))\n    arr.sort()\n    ans = 0\n    for i in range(n):\n        if arr[i] <= k:\n            k -= arr[i]\n            ans += 1\n        else:\n            break\n    print(ans)\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    prices = list(map(int, input().split()))\n    prices.sort()\n    i = 0\n    count = 0\n    while k > 0 and i < n:\n        if k - prices[i] >= 0:\n            k -= prices[i]\n            count += 1\n        else:\n            break\n        i += 1\n    print(count)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        if \"berhampore\" in s.lower():\n            if \"serampore\" in s.lower():\n                print(\"Both\")\n            else:\n                print(\"GCETTB\")\n        elif \"serampore\" in s.lower():\n            print(\"GCETTS\")\n        else:\n            print(\"Others\")\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        if \"berhampore\" in s.lower():\n            if \"serampore\" in s.lower():\n                print(\"Both\")\n            else:\n                print(\"GCETTB\")\n        elif \"serampore\" in s.lower():\n            print(\"GCETTS\")\n        else:\n            print(\"Others\")\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        R, C = map(int, input().split())\n        matrix = []\n        for j in range(R):\n            matrix.append(input())\n        if \"spoon\" in matrix or \"SPOON\" in matrix:\n            print(\"There is a spoon!\")\n        else:\n            print(\"There is indeed no spoon!\")\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        R, C = map(int, input().split())\n        M = []\n        for j in range(R):\n            M.append(input())\n        if \"spoon\" in M or \"SPOON\" in M:\n            print(\"There is a spoon!\")\n        else:\n            print(\"There is indeed no spoon!\")\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x, r, a, b = map(int, input().split())\n        if (a-b)%(2*r) == 0:\n            print(int((a-b)/(2*r)))\n        else:\n            print(0)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    k = int(input())\n    n = int(input())\n    G = [[0 for i in range(n)] for j in range(n)]\n    for i in range(n):\n        G[i] = list(input())\n    print(G)\n    print(k)\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    k = int(input())\n    n = int(input())\n    G = [['N' for i in range(n)] for j in range(n)]\n    for i in range(n):\n        G[i][i] = 'Y'\n    for i in range(k):\n        a, b = map(int, input().split())\n        G[a-1][b-1] = 'Y'\n        G[b-1][a-1] = 'Y'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'Y' and G[j][i] == 'N':\n                G[i][j] = 'N'\n                G[j][i] = 'N'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'N' and G[j][i] == 'N':\n                G[i][j] = 'Y'\n                G[j][i] = 'Y'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'Y' and G[j][i] == 'Y':\n                G[i][j] = 'N'\n                G[j][i] = 'N'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'N' and G[j][i] == 'Y':\n                G[i][j] = 'Y'\n                G[j][i] = 'Y'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'Y' and G[j][i] == 'N':\n                G[i][j] = 'N'\n                G[j][i] = 'N'\n    for i in range(n):\n        for j in range(n):\n            if G[i][j] == 'N' and G[j][i] == 'N':\n                G[i][j] = 'Y'\n               ",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    b = list(map(int, input().split()))\n    g = list(map(int, input().split()))\n    if min(b) > max(g):\n        print(-1)\n    else:\n        print(sum(b) + sum(g) - min(b) - max(g))\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    b = list(map(int, input().split()))\n    g = list(map(int, input().split()))\n    if min(b) > max(g):\n        print(-1)\n    else:\n        print(min(b) * m + sum(b))\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    string = input()\n    if len(string)%2 == 0:\n        print(string[:len(string)//2] + string[:len(string)//2][::-1])\n    else:\n        print(string[:len(string)//2] + string[len(string)//2] + string[:len(string)//2][::-1])\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    A = input()\n    B = A[::-1]\n    print(B)\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(0)\n    else:\n        print(n//2)\n        for i in range(n//2):\n            print(2*i+1, 2*i+2)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(0)\n    else:\n        print(n//2)\n        for i in range(n//2):\n            print(2*i+1, 2*i+2)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        \n        pass\n\n\nif __name__ == '__main__':\n    assert Solution().minCameraCover(0) == 0",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # return self.dfs(root)\n        return self.bfs(root)\n        # return self.dfs_optimized(root)\n\n    def dfs(self, root):\n        ",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

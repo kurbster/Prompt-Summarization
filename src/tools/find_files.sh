@@ -28,4 +28,6 @@ get_generated_model() {
     echo "$(wc -l <<< $problems) model problems generated."
     get_generated_human
     echo "$(wc -l <<< $problems) human problems generated."
+    echo -e "$problems\n" | awk -F"data/" '{print $2}' > ../configs/human_probs.txt
+    sed -i '/^[[:space:]]*$/d' ../configs/human_probs.txt
 }

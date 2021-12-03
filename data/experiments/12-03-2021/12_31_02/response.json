@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4B8YWW4ujspGfeAA9mqBAeDU30rj1",
+    "object": "text_completion",
+    "created": 1638559844,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = input()\n        sum = 0\n        for i in n:\n            sum += int(i)\n        print(sum)\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = input()\n        sum = 0\n        for i in n:\n            sum += int(i)\n        print(sum)\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    q = int(input())\n    for i in range(q):\n        c, m, x = map(int, input().split())\n        print(min(c, m, x))\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    q = int(input())\n    for i in range(q):\n        c, m, x = map(int, input().split())\n        if c == 0 and m == 0 and x == 0:\n            print(0)\n        elif c == 0 and m == 0:\n            print(0)\n        elif c == 0 and x == 0:\n            print(m)\n        elif m == 0 and x == 0:\n            print(c)\n        elif c == 0:\n            print(m*x)\n        elif m == 0:\n            print(c*x)\n        elif x == 0:\n            print(c*m)\n        else:\n            print(c*m*x)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N, M = map(int, input().split())\n    graph = {}\n    for i in range(1, N+1):\n        graph[i] = []\n    for i in range(M):\n        u, v = map(int, input().split())\n        graph[u].append(v)\n        graph[v].append(u)\n    visited = [False] * (N+1)\n    visited[1] = True\n    queue = [1]\n    while queue:\n        u = queue.pop(0)\n        for v in graph[u]:\n            if not visited[v]:\n                visited[v] = True\n                queue.append(v)\n    if sum(visited) == N:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N, M = map(int, input().split())\n    graph = {}\n    for i in range(1, N+1):\n        graph[i] = []\n    for i in range(M):\n        u, v = map(int, input().split())\n        graph[u].append(v)\n        graph[v].append(u)\n    visited = [False] * (N+1)\n    if dfs(graph, visited, 1):\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\ndef dfs(graph, visited, node):\n    visited[node] = True\n    for i in graph[node]:\n        if not visited[i]:\n            if not dfs(graph, visited, i):\n                return False\n        else:\n            return False\n    return True\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        s = input()\n        if n == 1:\n            print(s)\n        elif n == 2:\n            if s[0] == s[1]:\n                print('-')\n            else:\n                print(s)\n        else:\n            if s[0] == '0':\n                print('-')\n            else:\n                if s[0] == s[1]:\n                    if s[1] == s[2]:\n                        print(s[0] + s[2] * (n - 2))\n                    else:\n                        print(s[0] + s[1] * (n - 2))\n                else:\n                    if s[1] == s[2]:\n                        print(s[0] + s[1] * (n - 2))\n                    else:\n                        print(s[0] + s[2] * (n - 2))\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        d = input()\n        if n == 1:\n            if d == '0':\n                print('1')\n            else:\n                print('2')\n        else:\n            if d[0] == '0':\n                print('-')\n            else:\n                if d[-1] == '0':\n                    print('-')\n                else:\n                    if d == d[::-1]:\n                        print('-')\n                    else:\n                        print(d[::-1])\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][j], dp[i-1][j-rods[i]] + rods[i])\n        # dp[i][j] = max(dp[i-1][",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        ",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    a.reverse()\n    ans = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if a[i]%a[j] > ans:\n                ans = a[i]%a[j]\n    print(ans)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    ans = 0\n    for i in range(n-1):\n        ans = max(ans, a[i]%a[i+1])\n    print(ans)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for i in range(test_cases):\n        n = int(input())\n        arr = list(map(int, input().split()))\n        arr.sort()\n        print(arr[0] + arr[1])\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        arr = list(map(int, input().split()))\n        arr.sort()\n        print(arr[0] + arr[1])\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        count = 0\n        for j in range(n-1):\n            if a[j] > a[j+1]:\n                count += 1\n        print(count)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        bad = 0\n        for j in range(n-1):\n            if a[j] > a[j+1]:\n                bad += 1\n        print(bad)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\nimport re\n\ndef is_valid(s):\n    if len(s) != 10:\n        return False\n    if not re.search(r'[A-Z]{2}', s):\n        return False\n    if not re.search(r'\\d{3}', s):\n        return False\n    if re.search(r'[^a-zA-Z0-9]', s):\n        return False\n    if re.search(r'(.)\\1', s):\n        return False\n    return True\n\nfor _ in range(int(input())):\n    s = input()\n    if is_valid(s):\n        print('Valid')\n    else:\n        print('Invalid')",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\nimport re\n\ndef check_uid(uid):\n    if len(uid) == 10 and re.search(r'[A-Z]{2,}', uid) and re.search(r'\\d{3,}', uid) and re.search(r'[a-zA-Z0-9]{10}', uid) and not re.search(r'(.)\\1', uid):\n        return 'Valid'\n    else:\n        return 'Invalid'\n\nif __name__ == '__main__':\n    n = int(input())\n    for i in range(n):\n        uid = input()\n        print(check_uid(uid))",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 2:\n        print(-1)\n        return\n    d = [int(x) for x in input().split()]\n    d.sort()\n    if d[0] != 1:\n        print(-1)\n        return\n    if d[n-1] != n:\n        print(-1)\n        return\n    for i in range(1, n):\n        if d[i] != d[i-1] + 1:\n            print(-1)\n            return\n    for i in range(1, n-1):\n        print(i, i+1)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    d = [int(x) for x in input().split()]\n    d.sort()\n    if n == 2:\n        print(1, 2)\n        print(2, 1)\n    elif n == 3:\n        print(1, 2)\n        print(1, 3)\n        print(2, 3)\n    elif n == 4:\n        print(1, 2)\n        print(1, 3)\n        print(1, 4)\n        print(2, 3)\n        print(2, 4)\n        print(3, 4)\n    elif n == 5:\n        print(1, 2)\n        print(1, 3)\n        print(1, 4)\n        print(1, 5)\n        print(2, 3)\n        print(2, 4)\n        print(2, 5)\n        print(3, 4)\n        print(3, 5)\n        print(4, 5)\n    elif n == 6:\n        print(1, 2)\n        print(1, 3)\n        print(1, 4)\n        print(1, 5)\n        print(1, 6)\n        print(2, 3)\n        print(2, 4)\n        print(2, 5)\n        print(2, 6)\n        print(3, 4)\n        print(3, 5)\n        print(3, 6)\n        print(4, 5)\n        print(4, 6)\n        print(5, 6)\n    elif n == 7:\n        print(1, 2)\n        print(1, 3)\n        print(1, 4)\n        print(1, 5)\n        print(1, 6)\n        print(1, 7)\n        print(2, 3)\n        print(2, 4)\n        print(2, 5)\n        print(2, 6)\n        print(2, 7)\n        print(3, 4)\n        print(3, 5)\n        print(3, 6)\n        print(3, 7)\n        print(4, 5)\n        print(4,",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

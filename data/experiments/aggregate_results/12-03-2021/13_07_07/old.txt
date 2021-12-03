@@ -1,0 +1,75 @@
+Problem Names,-2,-1,False,True,acc
+competition/2073/expert.txt,0,0,12,2,14.29
+competition/2073/question.txt,0,0,4,10,71.43
+interview/1401/expert.txt,0,0,0,1,100.00
+interview/1401/question.txt,0,0,0,1,100.00
+interview/1462/expert.txt,0,0,0,1,100.00
+interview/1462/question.txt,0,0,0,1,100.00
+interview/1312/expert.txt,0,0,1,0,0.00
+interview/1312/question.txt,0,0,1,0,0.00
+interview/1411/expert.txt,0,0,1,0,0.00
+interview/1411/question.txt,1,0,0,0,0.00
+competition/2360/expert.txt,0,0,0,0,
+competition/2360/question.txt,0,0,0,0,
+competition/2053/expert.txt,0,0,13,2,13.33
+competition/2053/question.txt,0,0,12,3,20.00
+competition/2197/expert.txt,0,0,7,0,0.00
+competition/2197/question.txt,0,0,7,0,0.00
+competition/2187/expert.txt,0,0,7,1,12.50
+competition/2187/question.txt,0,0,7,1,12.50
+interview/1922/expert.txt,0,0,0,0,
+interview/1922/question.txt,0,0,0,0,
+
+Total Accuracy: 23.96%
+Strict Accuracy: 20.00%
+
+Accuracy when grouped by difficulty.
+Problem Names,-2,-1,False,True,acc,strict acc
+competition-expert,0,0,39,5,11.36,0.00
+competition-question,0,0,30,14,31.82,0.00
+interview-expert,0,0,2,2,50.00,40.00
+interview-question,1,0,1,2,50.00,40.00
+
+Accuracy when grouped by the test/train split.
+Problem Names,-2,-1,False,True,acc,strict acc
+train-expert,0,0,41,7,14.58,20.00
+train-question,1,0,31,16,33.33,20.00
+
+Problems that performed better
+Problem Names,-2=>False
+competition/2360,0
+competition/2073,0
+interview/1401,0
+interview/1462,0
+competition/2187,0
+competition/2053,0
+competition/2197,0
+interview/1922,0
+interview/1411,1
+interview/1312,0
+
+Problems that performed worse
+Problem Names,True=>False
+competition/2360,0
+competition/2073,8
+interview/1401,0
+interview/1462,0
+competition/2187,0
+competition/2053,1
+competition/2197,0
+interview/1922,0
+interview/1411,0
+interview/1312,0
+
+Problems that performed the same
+Problem Names,False=>False,True=>True
+competition/2360,0,0
+competition/2073,4,2
+interview/1401,0,1
+interview/1462,0,1
+competition/2187,7,1
+competition/2053,12,2
+competition/2197,7,0
+interview/1922,0,0
+interview/1411,0,0
+interview/1312,1,0
