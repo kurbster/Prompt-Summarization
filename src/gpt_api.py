@@ -30,10 +30,15 @@ def make_prompt_gpt(config: Path):
     prompt, extra, output_dir = generate_summary_prompt("gpt",config=cfg_name)
     logger.info(f'Saving gpt response in {output_dir}')
 
-    if len(prompt.split(" ")) > 2049:
-        raise Exception("prompt length is too long please reduce it")
+    prompt_tokens = len(prompt.split())
+    if prompt_tokens > 2049 :
+        logger.warning(f'Our prompt was too long. Had {prompt_tokens} tokens.')
+        return True
+    else:
+        logger.debug(f'Our prompt had {prompt_tokens} tokens.')
 
     API_KEY = os.getenv("OPENAI_API_KEY")
+    logger.info(f'using apikey: {API_KEY}')
     openai.api_key = API_KEY
     result = openai.Completion.create(
         prompt=[prompt],
@@ -49,4 +54,4 @@ def make_prompt_gpt(config: Path):
         f.write(prompt)
     
 if __name__ == '__main__':
-    make_prompt_gpt("gpt_config.yaml")
+    make_prompt_gpt("best_gpt_config.yaml")

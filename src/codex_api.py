@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 import os
 import sys
-sys.path.append('..')
 import yaml
 import json
+import time
 import shutil
 import openai
 import logging
 
 from datetime import datetime
 from pathlib import Path
+from openai.error import RateLimitError
 
 import lib.my_logger
 
@@ -40,21 +41,34 @@ def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
     logger.info(f'using apikey: {API_KEY}')
     openai.api_key = API_KEY
 
-    response = openai.Completion.create(
-        prompt=prompts,
-        **api_settings
-    )
-    
+    try:
+        response = openai.Completion.create(
+            prompt=prompts,
+            **api_settings
+        )
+    # We have exceeded OpenAIs rate limit of 150,000 tokens/min
+    # We need to cleep for a minute then try again
+    except RateLimitError:
+        logger.error('We have hit our rate limit. Sleeping for a minute...')
+        time.sleep(60)
+        response = openai.Completion.create(
+            prompt=prompts,
+            **api_settings
+        )
+        
     return response
 
-def create_experiment_dir() -> Path:
+def create_experiment_dir(path_to_exp: Path) -> Path:
     """Create a experiment dir to save results.
 
+    Args:
+        path_to_exp (Path): Path to the experiments dir.
+    
     Returns:
         Path: The path to the new dir.
     """
     fname = datetime.now().strftime('%m-%d-%Y/%H_%M_%S')
-    dir_path = PATH_TO_EXP.joinpath(fname)
+    dir_path = path_to_exp.joinpath(fname)
     dir_path.mkdir(parents=True, exist_ok=False)
     return dir_path
 
@@ -119,7 +133,7 @@ def save_config(dirname: Path, config: Path) -> None:
 def main(prompts: list[str], prompt_files: list[str], cfg_file: str):
     response = get_codes(prompts, cfg_file)
 
-    dirname = create_experiment_dir()
+    dirname = create_experiment_dir(PATH_TO_EXP)
 
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
     codes = clean_codes(codes)
@@ -156,13 +170,13 @@ if __name__ == "__main__":
 
     results = file_reading_utils.main(experiments_list)
     
-    exp_dir = create_experiment_dir()
-    save_dir = PATH_TO_EXP.joinpath('aggregate_results', exp_dir)
-    json_file = save_dir.joinpath('all_results.json')
+    path_to_exp_agg = PATH_TO_EXP.joinpath('aggregate_results')
+    exp_dir = create_experiment_dir(path_to_exp_agg)
+    json_file = exp_dir.joinpath('all_results.json')
 
     with open(json_file, 'w') as f:
         json.dump(results, f)
 
-    codex_results.main(results, save_dir)
+    codex_results.main(results, exp_dir)
 
     logger.info(f'Saved final results here {exp_dir}')

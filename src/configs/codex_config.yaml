@@ -1,6 +1,9 @@
 header: "Python 3\n"
+# If true then we could select model generated problems to generate code for
+# Only used if numPrompts < len(promptFile)
+# Also, allows only human generated problems for few shotting.
 humanOnly: True
-promptFile: human_probs.txt
+promptFile: human_prompts.txt
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile
 numPrompts: -1

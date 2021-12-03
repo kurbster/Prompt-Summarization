@@ -75,11 +75,15 @@ def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
     with open(config) as f:
         cfg = yaml.safe_load(f)
 
-    human_probs, model_probs = get_completed_problems()
+    human_probs, model_probs = get_completed_problems(api=api)
 
     # Select a summary prompt that hasn't been summarized
+    ignore_intro = cfg.get('ignoreIntro', True)
+    ignore_train  = cfg.get('ignoreTrain', True) 
     original_prompt_fname = select_summary_prompt(
-                    human_probs | model_probs, ignore_intro=cfg['ignoreIntro'])
+                    human_probs | model_probs,
+                    ignore_intro=ignore_intro,
+                    ignore_train=ignore_train)
 
     output_dir = save_config(original_prompt_fname, config, f'data/{api}_generated', cfg['promptFile'])
 
@@ -98,17 +102,21 @@ def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
     
     return full_example, remainder, output_dir
 
-def get_completed_problems() -> tuple[set[str], set[str]]:
+def get_completed_problems(api: str = '*') -> tuple[set[str], set[str]]:
     """Get the problems that have already been summarized.
 
+    Args:
+        api (str, optional): Allows us to select specific model probs. 
+        Defaults to '*' which gets all model generated problems.
+    
     Returns:
         tuple(set[str], set[str]): The first set is the problems that
         a human has summarized. The second set is the problems that a
         model has summarized.
     """
     human_probs = set(glob.glob(f'{path_to_data}/[ic]*/*'))
-    train_probs = set(glob.glob(f'{path_to_data}/*generated/[ic]*/*'))
-    test_probs  = set(glob.glob(f'{path_to_data}/*generated/test/[ic]*/*'))
+    train_probs = set(glob.glob(f'{path_to_data}/{api}_generated/[ic]*/*'))
+    test_probs  = set(glob.glob(f'{path_to_data}/{api}_generated/test/[ic]*/*'))
 
     model_probs = train_probs | test_probs
 
@@ -117,13 +125,15 @@ def get_completed_problems() -> tuple[set[str], set[str]]:
 
     return human_probs, model_probs
     
-def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
+def select_summary_prompt(probs: set[str], ignore_intro: bool = True, ignore_train: bool = True) -> str:
     """Select a random problem to be summarized by the model.
 
     Args:
         probs (set[str]): A set of problems we have already done.
         ignore_intro (bool, optional): If you want to avoid summarizing
         introductory problems. Defaults to True.
+        ignore_train (bool, optional): If you want to avoid summarizing
+        problems from the training set. Defaults to True.
 
     Returns:
         str: The path to the question we are summarizing.
@@ -133,9 +143,12 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True) -> str:
     available_probs = set(range(10000))
 
     if ignore_intro:
-        available_probs -= set(range(2361, 5000))
         available_probs -= set(range(9000, 10000))
+        available_probs -= set(range(2361, 5000))
         logger.info('Ignoring introductory problems.')
+    if ignore_train:
+        available_probs -= set(range(5000))
+        logger.info('Ignoring training problems.')
 
     def get_num(x):
         num = int(os.path.basename(x))
