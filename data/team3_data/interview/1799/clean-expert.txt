@@ -1,0 +1,1 @@
+You are given a chessboard of any size from 1 to 10, where columns are marked with letters a-j and rows with 1-0 (tenth row is marked with 0). The input given is the position of one queen on the chess board. Your need to return remaining queens positions such that none of the queens are attacking each other.

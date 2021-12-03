@@ -1,0 +1,22 @@
+Every uppercase letter is Father, The corresponding lowercase letters is the Son. Given a string s, if the father and son both exist, keep them. If it is a separate existence, delete them. Return the result.
+    
+Examples:
+Input:
+sc("Aab")
+Output:
+"Aa"
+
+Input:
+sc("AabBc")
+Output:
+"AabB"
+
+Input:
+sc("AaaaAaab")
+Output:
+"AaaaAaa"
+
+Input:
+sc("aAAAaAAb")
+Output:
+"aAAAaAA"

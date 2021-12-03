@@ -1,0 +1,1 @@
+{"fn_name": "learn_charitable_game", "inputs": [[[100, 100, 100, 90, 1, 0, 0]], [[0, 0, 0, 0]], [[0, 56, 100]], [[33, 19, 38, 87, 93, 4]], [[11]]], "outputs": [[false], [false], [true], [false], [true]]}

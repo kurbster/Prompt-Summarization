@@ -1,0 +1,2 @@
+def kontti(s):
+	

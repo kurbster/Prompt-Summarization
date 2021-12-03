@@ -1,0 +1,1 @@
+Create a method `fouriest` that takes a number and makes it the fouriest, telling us in which base this happened. Examples: Input: fouriest(42) Output: "30 is the fouriest(42) in base 7" Input: fouriest(14) Output: "15 is the fouriest(14) in base 11"

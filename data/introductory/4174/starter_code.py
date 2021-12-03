@@ -1,0 +1,2 @@
+def smallest(n):
+	

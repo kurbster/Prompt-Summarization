@@ -1,0 +1,19 @@
+Write a function encode that takes in a string str and replaces all the letters with their respective positions in the English alphabet. String are case sensitive.
+
+Examples:
+Input:
+encode('abc')
+Output:
+'123'
+Explanation:
+a is 1st in English alpabet, b is 2nd and c is 3rd.
+
+Input:
+encode('codewars')
+Output:
+'315452311819'
+
+Input:
+encode('abc-#@5')
+Output:
+'123-#@5'

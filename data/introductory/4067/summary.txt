@@ -1,0 +1,16 @@
+Write a function that among the given numbers finds one that is different in evenness, and return a position of this number.
+
+Examples:
+Input:
+iq_test("2 4 7 8 10")
+Output:
+3
+Explanation:
+Third number is odd, while the rest of the numbers are even.
+
+Input:
+iq_test("1 2 1 1")
+Output:
+2
+Explanation:
+Second number is even, while the rest of the numbers are odd.

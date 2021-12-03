@@ -1,0 +1,1 @@
+{"fn_name": "find_outlier", "inputs": [[[0, 1, 2]], [[1, 2, 3]]], "outputs": [[1], [2]]}

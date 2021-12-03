@@ -1,0 +1,7 @@
+You have the radius of a circle with the center in point (0,0). Write a function that calculates the number of points in the circle where (x,y) are integers.  0 <= radius <= 1000.
+
+Example: 
+Input:
+radius = 2
+Output:
+13

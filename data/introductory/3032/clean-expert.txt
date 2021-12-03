@@ -1,0 +1,1 @@
+Given starting number and the ending number, creates a dictionary of factors for all numbers. If a number possesses no factors , the list for the key should be `['None']` For example: All factors for 2 (`n`) through to 6 (`m`) with the number being the key in the dictionary: ```python {2: ['None'], 3: ['None'], 4: [2], 5: ['None'], 6: [2, 3]} ```

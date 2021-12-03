@@ -1,0 +1,1 @@
+{"fn_name": "word_count", "inputs": [["hello there"], ["hello there and a hi"], ["I'd like to say goodbye"], ["Slow-moving user6463 has been here"], ["%^&abc!@# wer45tre"], ["abc123abc123abc"], ["Really2374239847 long ^&#$&(*@# sequence"], ["Hello there, little user5453 374 ())$."]], "outputs": [[2], [4], [6], [6], [3], [3], [3], [4]]}

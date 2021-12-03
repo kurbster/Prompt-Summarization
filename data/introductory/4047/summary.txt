@@ -1,0 +1,43 @@
+Your task is to write a function `toLeetSpeak` that converts a regular english sentence to Leetspeak. Consider only uppercase letters and spaces.
+
+In this task we use a simple LeetSpeak dialect. Use this alphabet:
+{
+  A : '@',
+  B : '8',
+  C : '(',
+  D : 'D',
+  E : '3',
+  F : 'F',
+  G : '6',
+  H : '#',
+  I : '!',
+  J : 'J',
+  K : 'K',
+  L : '1',
+  M : 'M',
+  N : 'N',
+  O : '0',
+  P : 'P',
+  Q : 'Q',
+  R : 'R',
+  S : '$',
+  T : '7',
+  U : 'U',
+  V : 'V',
+  W : 'W',
+  X : 'X',
+  Y : 'Y',
+  Z : '2'
+}
+
+
+Examples:
+Input:
+toLeetSpeak("LEET")
+Output:
+"1337"
+
+Input:
+to_leet_speak("LEET")
+Output:
+"1337"

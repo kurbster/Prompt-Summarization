@@ -1,0 +1,61 @@
+There were $2n$ values of A and B arranged in a list. You should start at the middle of the list. $n$ values to the left and $n$ values to the right.
+
+You can choose to make a value zero from either the first non-zero value to left or the first non-zero value to right.
+
+Finally, at the end the number of A's and B's should become the same.
+
+For example, this might be the result: [Image] He has eaten $1$ jar to his left and then $5$ jars to his right. There remained exactly $3$ full jars of both strawberry and blueberry jam. 
+
+Jars are numbered from $1$ to $2n$ from left to right, so Karlsson initially stands between jars $n$ and $n+1$.
+
+What is the minimum number of jars Karlsson is required to empty so that an equal number of full strawberry and blueberry jam jars is left?
+
+Your program should answer $t$ independent test cases.
+
+
+
+-----Input-----
+
+The first line contains one integer $t$ ($1 \le t \le 1000$) — the number of test cases.
+
+The first line of each test case contains a single integer $n$ ($1 \le n \le 10^5$).
+
+The second line of each test case contains $2n$ integers $a_1, a_2, \dots, a_{2n}$ ($1 \le a_i \le 2$) — $a_i=1$ means that the $i$-th value from the left is A and $a_i=2$ means that it is B.
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $10^5$.
+
+
+-----Output-----
+
+For each test case print the answer to it — the minimum number of jars Karlsson is required to empty so that an equal number of A and B is left.
+
+
+-----Example-----
+Input
+4
+6
+1 1 1 2 2 1 2 1 2 1 1 2
+2
+1 2 1 2
+3
+1 1 1 1 1 1
+2
+2 1 1 1
+
+Output
+6
+0
+6
+2
+
+
+
+-----Note-----
+
+The picture from the statement describes the first test case.
+
+In the second test case the number of A and B is already equal.
+
+In the third test you are required to convert all $6$ values so that there remain $0$ vaues of both types.
+
+In the fourth test case you can make zero either the second and the third values or the third and the fourth values. The both scenarios will leave $1$ jar of both types.

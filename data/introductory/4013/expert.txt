@@ -1,0 +1,5 @@
+Your task is to create a function that takes a string of two words separated by a space, and returns a spoonerism of those words in a string.
+
+Example:
+Input: "not picking"
+Output: "pot nicking"

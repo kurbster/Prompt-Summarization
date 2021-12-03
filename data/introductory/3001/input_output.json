@@ -1,0 +1,1 @@
+{"fn_name": "validate", "inputs": [["Timmy", "password"], ["Timmy", "h4x0r"], ["Alice", "alice"], ["Timmy", "password\"||\"\"==\""], ["Admin", "gs5bw\"||1==1//"]], "outputs": [["Successfully Logged in!"], ["Wrong username or password!"], ["Successfully Logged in!"], ["Wrong username or password!"], ["Wrong username or password!"]]}

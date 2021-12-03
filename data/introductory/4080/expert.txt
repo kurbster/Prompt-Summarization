@@ -1,0 +1,17 @@
+Given an array, check whether every value in the array is an array. This should only test the second array dimension of the array. The values of the nested arrays don't have to be arrays. 
+
+Examples:
+Input:
+[[1],[2]]
+Output:
+true
+
+Input:
+['1','2']
+Output:
+false
+
+Input:
+[{1:1},{2:2}]
+Output:
+false

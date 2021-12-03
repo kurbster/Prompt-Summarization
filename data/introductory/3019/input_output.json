@@ -1,0 +1,1 @@
+{"fn_name": "str_count", "inputs": [["hello", "l"], ["hello", "e"], ["codewars", "c"], ["ggggg", "g"], ["hello world", "o"]], "outputs": [[2], [1], [1], [5], [2]]}
