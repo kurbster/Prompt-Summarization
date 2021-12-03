@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAep2UEa86ERib7T7WQhGJgRfqd3",
+    "object": "text_completion",
+    "created": 1638567923,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    return int(n**2*3.14)\n\nprint(points(2))",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return int(n**2*3.14)\n\nprint(points(2))",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(arr)[:n]",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(arr)[:n]",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in string:\n        if string.count(i) == 1:\n            return i\n\nprint(no_repeat(\"aabbccdde\"))\nprint(no_repeat(\"wxyz\"))\nprint(no_repeat(\"testing\"))",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in string:\n        if string.count(i) == 1:\n            return i\n\nprint(no_repeat(\"aabbccdde\"))\nprint(no_repeat(\"wxyz\"))\nprint(no_repeat(\"testing\"))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            m_i, p_i = map(int, input().split())\n            m.append(m_i)\n            p.append(p_i)\n        m.sort()\n        p.sort()\n        cost = 0\n        for j in range(n):\n            cost += m[j] * p[j]\n        print(cost)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    def min_coins(m, p):\n        m.sort()\n        p.sort()\n        i = 0\n        j = 0\n        coins = 0\n        while i < len(m) and j < len(p):\n            if m[i] < p[j]:\n                coins += m[i]\n                i += 1\n            else:\n                coins += p[j]\n                j += 1\n        while i < len(m):\n            coins += m[i]\n            i += 1\n        while j < len(p):\n            coins += p[j]\n            j += 1\n        return coins\n\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            m_i, p_i = map(int, input().split())\n            m.append(m_i)\n            p.append(p_i)\n        print(min_coins(m, p))\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(1, n):\n        if a[i] < a[i-1]:\n            count += 1\n            if a[i] < 0:\n                a[i] = 0\n    print(count)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n-1):\n        if a[i] > a[i+1]:\n            count += 1\n            a[i+1] = (a[i+1]+1) % m\n    print(count)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = [0]*n\n        for j in range(n):\n            l, r = map(int, input().split())\n            if (r-l+1)%2 == 0:\n                a[(l+r)//2-1] = j+1\n            else:\n                a[(l+r)//2] = j+1\n        print(*a)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = [0] * n\n        for j in range(n):\n            l, r = map(int, input().split())\n            if (r - l + 1) % 2 == 0:\n                a[(l + r - 1) // 2] = j + 1\n            else:\n                a[(l + r) // 2] = j + 1\n        print(*a)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Create a list to store the lines of the input.\n    lines = []\n    # Create a list to store the words of the input.\n    words = []\n    # Create a list to store the words of the output.\n    output = []\n    # Create a list to store the characters of the input.\n    characters = []\n    # Create a list to store the characters of the output.\n    output_characters = []\n    # Create a list to store the characters of the output.\n    output_words = []\n    # Create a list to store the characters of the output.\n    output_lines = []\n    # Create a list to store the characters of the output.\n    output_lines_words = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse_reverse = []\n    # Create a list to store the characters of the output.\n    output_lines_words_characters_",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        line = input()\n        line = line.split()\n        line.reverse()\n        for word in line:\n            print(word, end=\" \")\n        print()\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    a = list(map(int, input().split()))\n    for i in range(q):\n        x, y = map(int, input().split())\n        if x > y:\n            x, y = y, x\n        if x == y:\n            print(\"Shi\")\n            continue\n        if a[x-1] == 0 or a[y-1] == 0:\n            print(\"Fou\")\n            continue\n        for j in range(x, y):\n            if a[j] == 0:\n                print(\"Fou\")\n                break\n        else:\n            print(\"Shi\")\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    a = list(map(int, input().split()))\n    for i in range(q):\n        x, y = map(int, input().split())\n        if x > y:\n            x, y = y, x\n        if x == y:\n            print(\"Shi\")\n            continue\n        if a[x-1] == 0:\n            print(\"Fou\")\n            continue\n        p = [x]\n        while p[-1] != y:\n            if p[-1] == n:\n                print(\"Fou\")\n                break\n            if a[p[-1]-1] == 0:\n                print(\"Fou\")\n                break\n            for i in range(p[-1]+1, n+1):\n                if a[i-1] & a[p[-1]-1] > 0:\n                    p.append(i)\n                    break\n        else:\n            print(\"Shi\")\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        if a[2*i] == a[2*i+1]:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        if arr[2*i] == arr[2*i+1]:\n            count += 1\n            arr[2*i], arr[2*i+1] = arr[2*i+1], arr[2*i]\n    print(count)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = []\n        for j in range(n):\n            a.append(j + 1)\n        for j in range(n - 1):\n            a.remove(int(input()))\n            a.remove(int(input()))\n            a.append(int(round(sum(a) / len(a))))\n        print(a[0])\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = n\n        b = 1\n        for j in range(n-1):\n            a = (a + b) // 2\n            b = n - a\n            print(a, b)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

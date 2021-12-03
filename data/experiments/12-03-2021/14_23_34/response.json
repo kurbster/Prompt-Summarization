@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAJG0XvWVKr5Hf8rXhQa8lQTM2Pu",
+    "object": "text_completion",
+    "created": 1638566586,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    return ' '.join(map(lambda x: x[:-5] + x[-5:].replace('a', 'o').replace('e', 'u').replace('i', 'y').replace('o', 'a').replace('u', 'e').replace('y', 'i') if x[-5:] == '-kont' else x, s.split()))",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ' '.join(map(kontti_word, s.split()))\n\ndef kontti_word(w):\n    if 'aeiouy' in w:\n        return w[-1] + w[:-1]\n    else:\n        return w",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        A,B,C = map(int,input().split())\n        if A+B+C == 180:\n            print(\"YES\")\n        else:\n            print(\"NO\")\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        a,b,c = map(int,input().split())\n        if a+b+c == 180:\n            print(\"YES\")\n        else:\n            print(\"NO\")\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        a.sort()\n        if a[n] == 1:\n            print(n)\n        else:\n            print(n-1)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        jars = list(map(int, input().split()))\n        if sum(jars) % 2 == 0:\n            print(0)\n        else:\n            print(2)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        print(N*N - (N-2)*(N-2))\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Create a list of lists to represent the chessboard\n    chessboard = []\n    for i in range(8):\n        chessboard.append([])\n        for j in range(8):\n            chessboard[i].append(0)\n\n    # Create a list to store the number of squares with odd side length\n    squares = []\n\n    # Loop through the chessboard and count the number of squares with odd side length\n    for i in range(8):\n        for j in range(8):\n            if i % 2 == 0:\n                if j % 2 == 0:\n                    chessboard[i][j] = 1\n            else:\n                if j % 2 == 1:\n                    chessboard[i][j] = 1\n\n    # Loop through the chessboard and add the number of squares with odd side length to the list\n    for i in range(8):\n        for j in range(8):\n            if chessboard[i][j] == 1:\n                squares.append(chessboard[i][j])\n\n    # Print the number of squares with odd side length\n    print(sum(squares))\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    newName = \"\"\n    for i in range(len(name)):\n        if name[i].isupper():\n            if i != 0:\n                newName += \"_\"\n            newName += name[i].lower()\n        else:\n            newName += name[i]\n    return newName\n\nprint(toUnderScore(\"ThisIsAUnitTest\"))\nprint(toUnderScore(\"Calculate15Plus5Equals20\"))\nprint(toUnderScore(\"This_Is_Already_Split_Correct\"))\nprint(toUnderScore(\"ThisIs_Not_SplitCorrect\"))\nprint(toUnderScore(\"_UnderscoreMarked_Test_Name_\"))",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if name == \"\":\n        return \"\"\n    if name[0] == \"_\" and name[-1] == \"_\":\n        return name\n    if name[0] == \"_\":\n        return name[1:]\n    if name[-1] == \"_\":\n        return name[:-1]\n    if name.isupper():\n        return name\n    if name.islower():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        if K == 1:\n            print(K)\n        else:\n            for j in range(K):\n                if j == 0:\n                    print(K, end=\"\")\n                else:\n                    print(K-j, end=\"\")\n                    for k in range(j):\n                        print(K-j, end=\"\")\n                    print()\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        for j in range(1, K+1):\n            print(j, end=\"\")\n        for j in range(K-1, 0, -1):\n            print(j, end=\"\")\n        print()\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = list(map(int, input().split()))\n    arr.sort()\n    ans = 0\n    for i in range(n-1):\n        ans += abs(arr[i] - arr[i+1])\n    print(ans)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    strengths = list(map(int, input().split()))\n    strengths.sort()\n    total = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            total += abs(strengths[i] - strengths[j])\n    print(total)\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        s = input()\n        if n % 2 == 0:\n            if s.count('0') == n / 2:\n                print(0)\n            else:\n                print(1)\n        else:\n            print(2)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        s = input()\n        if n % 2 == 0:\n            if s[:n//2] == s[n//2:]:\n                print(0)\n            else:\n                print(1)\n        else:\n            print(2)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(len(a)):\n        if a[i] == 1:\n            for j in range(i):\n                a[j] = 1 - a[j]\n    return a",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(len(a)):\n        if a[i] == 1:\n            for j in range(i):\n                a[j] = 1 - a[j]\n    return a",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

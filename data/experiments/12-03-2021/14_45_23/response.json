@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAeLj0saUsLlKWU3nKHgL443ObNJ",
+    "object": "text_completion",
+    "created": 1638567893,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n        res = \"\"\n        for i in range(len(indexes)):\n            if S[indexes[i]:].startswith(sources[i]):\n                res += targets[i]\n                indexes[i] = len(sources[i])\n            else:\n                res += S[indexes[i]]\n                indexes[i] = 1\n        return res + S[indexes[-1]:]",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        res = \"\"\n        for i in range(len(indexes)):\n            if S[indexes[i]:].startswith(sources[i]):\n                res += targets[i]\n                indexes[i] = len(sources[i])\n            else:\n                res += S[indexes[i]]\n                indexes[i] = 1\n        return res + S[indexes[-1]:]",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        ",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        res = [poured] + [0] * query_row\n        for row in range(1, query_row + 1):\n            for i in range(row, -1, -1):\n                res[i] = max(res[i]-1, 0)/2.0 + max(res[i-1]-1, 0)/2.0\n        return min(res[query_glass], 1)",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(list(set(santas_list) & set(children)))",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(set(santas_list).intersection(children))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        if n == 1:\n            print(\"YES\")\n            print(1)\n        elif n == 2:\n            print(\"YES\")\n            print(1, 2)\n        else:\n            b = []\n            for j in range(1, n+1):\n                for k in range(1, n+1):\n                    if j + k not in b:\n                        b.append(j+k)\n            if len(b) == n**2:\n                print(\"YES\")\n                for j in range(n):\n                    print(b[j], end=\" \")\n                print()\n            else:\n                print(\"NO\")\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        a.sort()\n        b = []\n        for j in range(n):\n            for k in range(j+1, n):\n                b.append(a[j]+a[k])\n        b.sort()\n        if len(b) == len(set(b)):\n            print(\"YES\")\n            for j in b:\n                print(j, end=\" \")\n            print()\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    count = 0\n    for i in range(1, num + 1):\n        if num % i == 0:\n            count += 1\n    return count",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    count = 0\n    for i in range(1, num):\n        if num % i == 0:\n            count += 1\n    return count",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a, b = map(int, input().split())\n        print(a%b)\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a, b = map(int, input().split())\n        print(a%b)\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not dislikes:\n            return True\n        graph = collections.defaultdict(list)\n        for u, v in dislikes:\n            graph[u].append(v)\n            graph[v].append(u)\n        color = {}\n        def dfs(node, c = 0):\n            if node in color:\n                return color[node] == c\n            color[node] = c\n            return all(dfs(nei, c ^ 1) for nei in graph[node])\n        return all(dfs(node) for node in range(1, N+1) if node not in color)",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not dislikes:\n            return True\n        graph = collections.defaultdict(list)\n        for u, v in dislikes:\n            graph[u].append(v)\n            graph[v].append(u)\n        color = {}\n        def dfs(node, c = 0):\n            if node in color:\n                return color[node] == c\n            color[node] = c\n            return all(dfs(nei, c ^ 1) for nei in graph[node])\n        return all(dfs(node) for node in range(1, N+1) if node not in color)",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    s = list(s)\n    for i in range(len(s)):\n        if s[i] == 'z':\n            s[i] = 'a'\n        else:\n            s[i] = chr(ord(s[i]) + 1)\n            break\n    print(''.join(s))\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    if len(s) == 1:\n        print(s)\n    else:\n        s = list(s)\n        for i in range(len(s)):\n            if s[i] == 'z':\n                s[i] = 'a'\n            else:\n                s[i] = chr(ord(s[i]) + 1)\n                break\n        print(''.join(s))\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

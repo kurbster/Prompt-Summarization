@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAWJ7KazGXZyAkgw2q873tBrxa7m",
+    "object": "text_completion",
+    "created": 1638567395,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j in d:\n                    d[j] += 1\n                else:\n                    d[j] = 1\n    print(max(d, key=d.get))\n\nif __name__ == '__main__':\n    code()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j in d:\n                    d[j] += 1\n                else:\n                    d[j] = 1\n    m = max(d.values())\n    for i in d:\n        if d[i] == m:\n            print(i)\n            break\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    testCases = int(input())\n    for i in range(testCases):\n        n, k = map(int, input().split())\n        s = input()\n        score = 0\n        for j in range(n):\n            if s[j] == 'W':\n                score += 1\n            elif s[j] == 'L' and k > 0:\n                score += 2\n                k -= 1\n        print(score)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if size == 1:\n        return [position]\n    else:\n        solutions = []\n        for i in range(size):\n            if not under_attack(i, position):\n                solutions.append(i)\n        return solutions\n\ndef under_attack(col, queens):\n    left = right = col\n    for r, c in reversed(queens):\n        left, right = left - 1, right + 1\n        if c in (left, col, right):\n            return True\n    return False",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return []",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not root:\n            return []\n        res = []\n        queue = [root]\n        level = 0\n        while queue:\n            level += 1\n            res.append([])\n            for i in range(len(queue)):\n                node = queue.pop(0)\n                res[-1].append(node.val)\n                if node.left:\n                    queue.append(node.left)\n                if node.right:\n                    queue.append(node.right)\n            if level % 2 == 1:\n                res[-1] = res[-1][::-1]\n        return res",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not root:\n            return []\n        res = []\n        queue = [root]\n        level = 0\n        while queue:\n            level += 1\n            res.append([])\n            for i in range(len(queue)):\n                node = queue.pop(0)\n                res[-1].append(node.val)\n                if node.left:\n                    queue.append(node.left)\n                if node.right:\n                    queue.append(node.right)\n            if level % 2 == 1:\n                res[-1] = res[-1][::-1]\n        return res",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        S = input()\n        if N == 1:\n            print(\"Yes\")\n        else:\n            if S[0] in \"AEIOU\" and S[-1] in \"AEIOU\":\n                print(\"Yes\")\n            else:\n                print(\"No\")\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        S = input()\n        vowels = ['A', 'E', 'I', 'O', 'U']\n        count = 0\n        for i in range(N):\n            if S[i] in vowels:\n                count += 1\n        if count >= 2:\n            print(\"Yes\")\n        else:\n            print(\"No\")\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [i for i in x if len(i) == 4]\n\nprint(friend([\"Ryan\", \"Kieran\", \"Mark\",]))",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [i for i in x if len(i) == 4]\n\n#Alternative Solutions\ndef friend(x):\n    return [f for f in x if len(f) == 4]",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return int(bin(n)[2:].zfill(32)[::-1], 2)\n\nprint(reverse_bits(417))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return int(bin(n)[2:].zfill(8)[::-1], 2)",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(1, num):\n        if num % i == 0:\n            if i == 1:\n                return \"1!\"\n            if i == num:\n                return str(i) + \"!\"\n            else:\n                return str(i) + \" * \" + reverse_factorial(num / i)\n    return \"None\"",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(1, num):\n        if num % i == 0:\n            if i == 1:\n                return \"1!\"\n            elif i == num:\n                return str(i) + \"!\"\n            else:\n                continue\n        else:\n            return \"None\"\n\nprint(reverse_factorial(120))\nprint(reverse_factorial(24))\nprint(reverse_factorial(150))",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = int(input())\n    b = int(input())\n    pinholes = []\n    for i in range(n):\n        pinholes.append(list(map(int, input().split())))\n    count = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if abs(pinholes[i][0] - pinholes[j][0]) == abs(pinholes[i][1] - pinholes[j][1]):\n                count += 1\n    print(count)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    x = []\n    y = []\n    for i in range(n):\n        x.append(int(input()))\n        y.append(int(input()))\n    d = []\n    for i in range(n):\n        for j in range(n):\n            if i != j:\n                d.append(abs(x[i]-x[j]) + abs(y[i]-y[j]))\n    d.sort()\n    d = list(set(d))\n    count = 0\n    for i in range(len(d)):\n        if d[i] == d[i+1]:\n            count += 1\n    print(count)\n\nif __name__ == '__main__':\n    code()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, w = [int(x) for x in input().split()]\n    arr = []\n    for i in range(n):\n        l = int(input())\n        arr.append([int(x) for x in input().split()])\n    for i in range(n):\n        arr[i] = [0]*(w-len(arr[i])) + arr[i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] < 0:\n                arr[j][i] = 0\n    for i in range(w):\n        for j in range(n):\n            for k in range(j+1, n):\n                if arr[j][i] == 0:\n                    break\n                if arr[k][i] == 0:\n                    continue\n                if arr[j][i] + arr[k][i] > arr[j][i]:\n                    arr[j][i] = arr[j][i] + arr[k][i]\n                else:\n                    arr[k][i] = 0\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] > arr[j][i-1]:\n                arr[j][i-1] = arr[j][i]\n    for i in range(w):\n        for j in range(n):\n            if arr[j][i] >",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, w = map(int, input().split())\n    a = []\n    for i in range(n):\n        a.append(list(map(int, input().split())))\n    a.sort(key=lambda x: x[0])\n    for i in range(n):\n        a[i] = a[i][1:]\n    dp = [[0 for i in range(w)] for j in range(n)]\n    for i in range(n):\n        for j in range(w):\n            if j >= a[i][0]:\n                dp[i][j] = max(dp[i-1][j], dp[i-1][j-a[i][0]]+a[i][1])\n            else:\n                dp[i][j] = dp[i-1][j]\n    for i in range(w):\n        print(dp[n-1][i])\n\nif __name__ == '__main__':\n    code()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

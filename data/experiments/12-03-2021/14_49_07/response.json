@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAhxDrJB2kbKDB5ZNFJz1mLXreia",
+    "object": "text_completion",
+    "created": 1638568117,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n        \n        pass\n\n\nif __name__ == '__main__':\n    assert Solution().kthSmallest(0) == 0",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        stack = []\n        while True:\n            while root:\n                stack.append(root)\n                root = root.left\n            root = stack.pop()\n            k -= 1\n            if not k:\n                return root.val\n            root = root.right\n\nclass Solution:\n    def kthSmallest(self, root: TreeNode, k: int) -> int:\n        stack = []\n        while True:\n            while root:\n                stack.append(root)\n                root = root.left\n            root = stack.pop()\n            k -= 1\n            if not k:\n                return root.val\n            root = root.right",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n\n#OR\n\ndef special_number(number):\n    return \"",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        \n        pass\n\n\nif __name__ == '__main__':\n    assert Solution().maxAncestorDiff(0) == 0",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        self.res = 0\n        def dfs(node, mx, mn):\n            if not node:\n                return\n            self.res = max(self.res, abs(node.val-mx), abs(node.val-mn))\n            mx = max(mx, node.val)\n            mn = min(mn, node.val)\n            dfs(node.left, mx, mn)\n            dfs(node.right, mx, mn)\n        dfs(root, root.val, root.val)\n        return self.res",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return min(st, key=lambda x: (st.rindex(x) - st.index(x), -ord(x)))",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return min([(st[i], st[-i-1]) for i in range(len(st))], key=lambda x: (abs(x[0]-x[1]), x[0]))[0]",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    l = list(map(int,input().split()))\n    l.sort()\n    s = sum(l)\n    if n == 1:\n        print(l[0],end=\" \")\n        print(0)\n    elif n == 2:\n        print(l[0],end=\" \")\n        print(l[1])\n    else:\n        if l[0] == l[1]:\n            print(l[0],end=\" \")\n            print(l[2])\n        else:\n            print(l[0],end=\" \")\n            print(l[1])\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = list(map(int, input().split()))\n    arr.sort()\n    han = []\n    chew = []\n    if n%2 == 0:\n        for i in range(n//2):\n            han.append(arr[i])\n        for i in range(n//2, n):\n            chew.append(arr[i])\n    else:\n        for i in range((n-1)//2):\n            han.append(arr[i])\n        for i in range((n-1)//2, n):\n            chew.append(arr[i])\n    print(*han)\n    print(*chew)\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    count = 0\n    for i in range(n):\n        if a[i] == i + 1:\n            count += 1\n    print(n - count)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    count = 0\n    for i in range(n):\n        if a[i] == a[i-1]:\n            count += 1\n    print(n-count)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        count = 0\n        for p in range(1, N):\n            if p > 1:\n                for i in range(2, p):\n                    if (p % i) == 0:\n                        break\n                else:\n                    if N % p == 0:\n                        q = N / p\n                        if q > 1:\n                            for i in range(2, q):\n                                if (q % i) == 0:\n                                    break\n                            else:\n                                count += 1\n        print(count)\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        count = 0\n        for p in range(2, N):\n            if p*p > N:\n                break\n            if N % p == 0:\n                q = N // p\n                if isPrime(q):\n                    count += 1\n        print(count)\n\ndef isPrime(n):\n    if n == 2:\n        return True\n    if n % 2 == 0 or n <= 1:\n        return False\n    sqr = int(n**0.5) + 1\n    for divisor in range(3, sqr, 2):\n        if n % divisor == 0:\n            return False\n    return True\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a = int(input())\n        print(a*2+2)\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a = int(input())\n        print(a+2)\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if operator == '+':\n        return value1 + value2\n    elif operator == '-':\n        return value1 - value2\n    elif operator == '*':\n        return value1 * value2\n    elif operator == '/':\n        return value1 / value2\n    else:\n        return None",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if operator == '+':\n        return value1 + value2\n    elif operator == '-':\n        return value1 - value2\n    elif operator == '*':\n        return value1 * value2\n    elif operator == '/':\n        return value1 / value2\n    else:\n        return 'Invalid operator'",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    tape = list(tape)\n    tape_pointer = 0\n    data_pointer = 0\n    output = ''\n    while tape_pointer < len(tape):\n        if tape[tape_pointer] == '>':\n            data_pointer += 1\n        elif tape[tape_pointer] == '<':\n            data_pointer -= 1\n        elif tape[tape_pointer] == '+':\n            if data_pointer < len(tape)-1:\n                tape[data_pointer] = chr(ord(tape[data_pointer])+1)\n            else:\n                tape[data_pointer] = '0'\n        elif tape[tape_pointer] == '*':\n            output += chr(ord(tape[data_pointer]))\n        elif tape[tape_pointer] == '.':\n            print(output)\n        elif tape[tape_pointer] == ',':\n            tape[data_pointer] = input()\n        elif tape[tape_pointer] == '[':\n            if tape[data_pointer] == '0':\n                while tape[tape_pointer] != ']':\n                    tape_pointer += 1\n        elif tape[tape_pointer] == ']':\n            if tape[data_pointer] != '0':\n                while tape[tape_pointer] != '[':\n                    tape_pointer -= 1\n        tape_pointer += 1\n\nif __name__ == '__main__':\n    interpreter('++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++**>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*>++++++++++++++++++++++++++++++++*>+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*<<*>>>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*<<<<*>>>>>++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*>+++++++++++++++++++++++++++++++++*')",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    tape = list(tape)\n    tape_pointer = 0\n    memory_pointer = 0\n    memory = [0]\n    output = ''\n    while tape_pointer < len(tape):\n        if tape[tape_pointer] == '>':\n            memory_pointer += 1\n            if memory_pointer == len(memory):\n                memory.append(0)\n        elif tape[tape_pointer] == '<':\n            memory_pointer -= 1\n        elif tape[tape_pointer] == '+':\n            memory[memory_pointer] += 1\n            if memory[memory_pointer] == 256:\n                memory[memory_pointer] = 0\n        elif tape[tape_pointer] == '*':\n            output += chr(memory[memory_pointer])\n        elif tape[tape_pointer] == '.':\n            return output\n        tape_pointer += 1\n    return output",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

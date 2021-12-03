@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAG0p0uwr2RxwReYXqCwHXuuZWyE",
+    "object": "text_completion",
+    "created": 1638566384,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        s = list(s)\n        s.sort()\n        s = ''.join(s)\n        print(len(set(s)))\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        l = len(s)\n        if l == 1:\n            print(1)\n        else:\n            for i in range(l):\n                if s[i] not in s[i+1:]:\n                    print(l-i)\n                    break\n                else:\n                    continue\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return \"Not implemented yet\"",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    i = str(i)\n    i = i.replace('0', '4')\n    i = i.replace('1', '3')\n    i = i.replace('2', '2')\n    i = i.replace('3', '1')\n    i = i.replace('4', '0')\n    i = i.replace('5', '9')\n    i = i.replace('6', '8')\n    i = i.replace('7', '7')\n    i = i.replace('8', '6')\n    i = i.replace('9', '5')\n    i = int(i)\n    return '{} is the fouriest ({}) in base {}'.format(i, i, i.bit_length())",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        a.sort()\n        count = 0\n        for j in range(n):\n            for k in range(j+1, n):\n                if a[k] % a[j] == 0:\n                    count += 1\n        print(count)\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        a.sort()\n        count = 0\n        for i in range(n):\n            for j in range(i+1, n):\n                if (a[i] + a[j]) % 11 == 0:\n                    count += 1\n        print(count)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [x*i for i in range(1,n+1)]",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [x*i for i in range(1,n+1)]",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if not arr:\n        return []\n    count = 0\n    sum = 0\n    for i in arr:\n        if i > 0:\n            count += 1\n        else:\n            sum += i\n    return [count, sum]",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if not arr:\n        return []\n    count = 0\n    sum = 0\n    for i in arr:\n        if i > 0:\n            count += 1\n        else:\n            sum += i\n    return [count, sum]",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not head:\n            return None\n        if m == n:\n            return head\n        dummy = ListNode(0)\n        dummy.next = head\n        pre = dummy\n        for i in range(m-1):\n            pre = pre.next\n        cur = pre.next\n        for i in range(n-m):\n            temp = cur.next\n            cur.next = temp.next\n            temp.next = pre.next\n            pre.next = temp\n        return dummy.next",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not head:\n            return None\n        if m == n:\n            return head\n        dummy = ListNode(0)\n        dummy.next = head\n        pre = dummy\n        for i in range(m-1):\n            pre = pre.next\n        cur = pre.next\n        for i in range(n-m):\n            temp = cur.next\n            cur.next = temp.next\n            temp.next = pre.next\n            pre.next = temp\n        return dummy.next",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return {i: [x for x in range(1, i+1) if not i%x] for i in range(n, m+1)}",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    A.sort()\n    min_sum = sum(abs(A[i] - A[i + k]) for i in range(n - k))\n    print(min_sum)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    A.sort()\n    ans = 10**9\n    for i in range(n - k):\n        ans = min(ans, abs(A[i] - A[i + k]))\n    print(ans)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    graph = [[] for i in range(n)]\n    for i in range(n-1):\n        a, b = map(int, input().split())\n        graph[a-1].append(b-1)\n        graph[b-1].append(a-1)\n    v = list(map(int, input().split()))\n    v.insert(0, 0)\n    visited = [False] * n\n    visited[0] = True\n    q = [0]\n    ans = 0\n    while q:\n        cur = q.pop(0)\n        for i in graph[cur]:\n            if not visited[i]:\n                visited[i] = True\n                q.append(i)\n                ans += abs(v[cur] - v[i])\n                v[i] = v[cur]\n    print(ans)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    graph = [[] for i in range(n)]\n    for i in range(n-1):\n        a, b = map(int, input().split())\n        graph[a-1].append(b-1)\n        graph[b-1].append(a-1)\n    v = list(map(int, input().split()))\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n    #print(len(graph))\n    #print(len(v))\n    #print(n)\n    #print(v)\n    #print(graph)\n    #print(v)\n",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = []\n    for i in range(n):\n        a.append(int(input()))\n    a.sort()\n    ans = a[0]\n    for i in range(1,n):\n        ans = max(ans,a[i]%a[i-1])\n    print(ans)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = []\n    for i in range(n):\n        arr.append(int(input()))\n    arr.sort()\n    ans = 0\n    for i in range(n):\n        ans = max(ans, arr[i]%arr[(i+1)%n])\n    print(ans)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

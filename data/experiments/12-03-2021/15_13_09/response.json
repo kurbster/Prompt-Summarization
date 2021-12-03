@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BB5IU2I4bK9RxSaCIMPoqxdlbUxE",
+    "object": "text_completion",
+    "created": 1638569564,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n    elif n == 2:\n        print(\"NO\")\n    else:\n        if n % 2 == 0:\n            print(\"YES\")\n            for i in range(1, n+1):\n                print(i, end=\" \")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n    elif n == 2:\n        print(\"NO\")\n    else:\n        print(\"YES\")\n        print(*list(range(1, 2*n, 2)) + list(range(2, 2*n, 2)))\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    k, n = map(int, input().split())\n    if k == 1:\n        print(1)\n    elif k == 2:\n        if n == 1:\n            print(2)\n        else:\n            print(1, 2)\n    else:\n        if n == 1:\n            print(3)\n        elif n == 2:\n            print(2, 1)\n        else:\n            print(1, 2, 3)\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    count = 0\n    for i in range(1, n+1):\n        for j in range(1, k+1):\n            count += 1\n            if count == (2*n):\n                print(i, j)\n                return\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    hour = int(angle / 30)\n    minute = int((angle % 30) * 2)\n    return '{:02d}:{:02d}'.format(hour, minute)",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    hour = int(angle / 30)\n    minute = int((angle % 30) * 2)\n    return '{:02d}:{:02d}'.format(hour, minute)",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if t1 == None or t2 == None:\n        return False\n    else:\n        return t1 + t2 > 2",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if t1 == None or t2 == None:\n        return False\n    else:\n        return t1 > t2",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    dp = [[0 for i in range(m + 1)] for j in range(n + 1)]\n    dp[0][0] = 1\n    for i in range(1, n + 1):\n        for j in range(m + 1):\n            dp[i][j] = dp[i - 1][j]\n            if j >= a[i - 1]:\n                dp[i][j] += dp[i - 1][j - a[i - 1]]\n    print(dp[n][m] % (10 ** 9 + 7))\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    a.sort()\n    a.reverse()\n    b = [0] * n\n    b[0] = 1\n    for i in range(1, n):\n        b[i] = b[i - 1] * a[i]\n    b.reverse()\n    ans = 0\n    for i in range(n):\n        if b[i] > m:\n            break\n        ans += b[i] * (m // a[i])\n        m = m % a[i]\n    print(ans % (10 ** 9 + 7))\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    lst = list(map(int, input().split()))\n    steps = 0\n    while True:\n        for i in range(n-1):\n            if lst[i] > lst[i+1]:\n                lst[i] -= 1\n                lst[i+1] += 1\n                steps += 1\n        if lst == sorted(lst):\n            break\n    print(steps)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    lst = list(map(int, input().split()))\n    steps = 0\n    while len(lst) > 1:\n        lst = sorted(lst)\n        for i in range(len(lst) - 1):\n            if lst[i] > lst[i + 1]:\n                lst.pop(i)\n                steps += 1\n                break\n    print(steps)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        A,B,C = map(int,input().split())\n        if A**2 + B**2 == C**2:\n            print(\"YES\")\n        else:\n            print(\"NO\")\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a,b,c = map(int, input().split())\n        if a**2 + b**2 == c**2:\n            print(\"YES\")\n        else:\n            print(\"NO\")\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if n == 0:\n            return []\n        def generate(start, end):\n            if start > end:\n                return [None]\n            all_trees = []\n            for i in range(start, end+1):\n                left_trees = generate(start, i-1)\n                right_trees = generate(i+1, end)\n                for l in left_trees:\n                    for r in right_trees:\n                        cur_tree = TreeNode(i)\n                        cur_tree.left = l\n                        cur_tree.right = r\n                        all_trees.append(cur_tree)\n            return all_trees\n        return generate(1, n)",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if n == 0:\n            return []\n        return self.dfs(1, n)\n\n    def dfs(self, start, end):\n        if start > end:\n            return [None]\n        res = []\n        for i in range(start, end + 1):\n            left = self.dfs(start, i - 1)\n            right = self.dfs(i + 1, end)\n            for l in left:\n                for r in right:\n                    root = TreeNode(i)\n                    root.left = l\n                    root.right = r\n                    res.append(root)\n        return res",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, h = map(int, input().split())\n    x = [0]*(n-1)\n    for i in range(n-1):\n        x[i] = (2*h - 2*i - 1)/(n-1)\n    print(*x)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, h = map(int, input().split())\n    print(\"{:.10f}\".format(h / (n - 1)))\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if not search_text:\n        return 0\n    if not allow_overlap:\n        return full_text.count(search_text)\n    count = 0\n    for i in range(len(full_text)):\n        if full_text[i:i+len(search_text)] == search_text:\n            count += 1\n    return count\n\nprint(search_substr('aa_bb_cc_dd_bb_e', 'bb'))\nprint(search_substr('aaabbbcccc', 'bbb'))\nprint(search_substr( 'aaa', 'aa' ))\nprint(search_substr( 'aaa', '' ))\nprint(search_substr( 'aaa', 'aa', False ))",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return len([i for i in range(len(full_text)) if full_text[i:].startswith(search_text)])\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))\n    else:\n        return len(full_text.split(search_text)) - 1\n\n\ndef search_substr(full_text, search_text, allow_overlap=True):\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return sum(1 for i in range(len(full_text)) if full_text[i:].startswith(search_text))",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

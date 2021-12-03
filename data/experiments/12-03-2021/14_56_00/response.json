@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAodo7ZXbBefXLz1KTcBobHKEVgZ",
+    "object": "text_completion",
+    "created": 1638568531,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x, y, k = map(int, input().split())\n        if k % 2 == 0:\n            print(k // 2 * (x + y))\n        else:\n            print(k // 2 * (x + y) + x)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x, y, k = map(int, input().split())\n        if k % 2 == 0:\n            print(k // 2 * (x + y))\n        else:\n            print(k // 2 * (x + y) + x)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    x = ord(cell[0]) - 96\n    y = int(cell[1])\n    moves = [(-2, -1), (-1, -2), (1, -2), (2, -1), (2, 1), (1, 2), (-1, 2), (-2, 1)]\n    count = 0\n    for move in moves:\n        if 1 <= x + move[0] <= 8 and 1 <= y + move[1] <= 8:\n            count += 1\n    return count",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    x = ord(cell[0]) - 96\n    y = int(cell[1])\n    return (abs(x - 2) + abs(y - 1)) // 3 + (abs(x - 1) + abs(y - 2)) // 3\n\nprint(chess_knight(\"a1\"))\nprint(chess_knight(\"c2\"))",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = input()\n        print(int(n[::-1]))\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        print(int(str(n)[::-1]))\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not root:\n            return 0\n        q = [root]\n        while q:\n            temp = []\n            for node in q:\n                if node.left:\n                    temp.append(node.left)\n                if node.right:\n                    temp.append(node.right)\n            if not temp:\n                return sum([node.val for node in q])\n            q = temp",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not root:\n            return 0\n        q = [root]\n        while q:\n            temp = []\n            for node in q:\n                if node.left:\n                    temp.append(node.left)\n                if node.right:\n                    temp.append(node.right)\n            if not temp:\n                return sum([node.val for node in q])\n            q = temp",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x, n = map(int, input().split())\n        print(sum([i for i in range(n) if i % x == 0]))\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k = map(int, input().split())\n        a = list(map(int, input().split()))\n        a.sort()\n        if k == 0:\n            print(a[-1] - a[0])\n        else:\n            print(max(a[-1] - a[0], a[-1] - a[-2] - a[-3]))\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k = map(int, input().split())\n        a = list(map(int, input().split()))\n        if k >= n:\n            print(max(a) - min(a))\n        else:\n            a.sort()\n            print(max(a[-1] - a[0], a[-2] - a[1]))\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if D == 1:\n        return sum(range(N))\n    else:\n        return sum(super_sum(D-1, N) for i in range(N))\n\nprint(super_sum(1, 10))\nprint(super_sum(2, 3))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a, b, x, y = map(int, input().split())\n        if x == 0 or x == a-1 or y == 0 or y == b-1:\n            print(a*b)\n        else:\n            print(2*(a-2) + 2*(b-2))\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a, b, x, y = map(int, input().split())\n        if x == 0:\n            print(b)\n        elif y == 0:\n            print(a)\n        elif x == a:\n            print(b)\n        elif y == b:\n            print(a)\n        else:\n            print(a*b-1)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        def dist(p1,p2):\n            return ((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)**0.5\n\n        def get_circle(p1,p2,r):\n            d = dist(p1,p2)\n            if d > 2*r:\n                return []\n            if d == 0:\n                return []\n            if d == 2*r:\n                return [p1,p2]\n            theta = math.acos((d**2+r**2-r**2)/(2*d*r))\n            x = (p1[0]+p2[0])/2\n            y = (p1[1]+p2[1])/2\n            return [[x+r*math.cos(theta),y+r*math.sin(theta)],[x-r*math.cos(theta),y-r*math.sin(theta)]]\n\n        def get_all_circles(p1,r):\n            res = []\n            for p2 in points:\n                if p1!=p2:\n                    res += get_circle(p1,p2,r)\n            return res\n\n        def get_all_circles_dict(p1,r):\n            res = {}\n            for p2 in points:\n                if p1!=p2:\n                    for p in get_circle(p1,p2,r):\n                        if p not in res:\n                            res[p] = 1\n                        else:\n                            res[p] += 1\n            return res\n\n        def get_max_circles(p1,r):\n            res = get_all_circles_dict(p1,r)\n            max_c = 0\n            for p in res:\n                if res[p]>max_c:\n                    max_c = res[p]\n            return max_c\n\n        def get_max_circles_dict(p1,r):\n            res = get_all_circles_dict(p1,r)\n            max_c = 0\n            for p in res:\n                if res[p]>max_c:\n                    max_c = res[p]\n            return max_c\n\n        def get_max_circles_dict_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict(p1,r)\n            return res\n\n        def get_max_circles_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles(p1,r)\n            return res\n\n        def get_max_circles_all_dict(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict(p1,r)\n            return res\n\n        def get_max_circles_all_dict_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all_all_all(r)\n            return",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        def dist(p1,p2):\n            return ((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)**0.5\n        def get_circle(p1,p2):\n            x1,y1=p1[0],p1[1]\n            x2,y2=p2[0],p2[1]\n            if x1==x2:\n                x3=x1+1\n            else:\n                x3=(y2-y1)/(x2-x1)*x1+y1-x1*(y2-y1)/(x2-x1)\n            y3=x3*(y2-y1)/(x2-x1)+y1-x1*(y2-y1)/(x2-x1)\n            return (x3,y3)\n        def get_darts(p1,p2,r):\n            x1,y1=p1[0],p1[1]\n            x2,y2=p2[0],p2[1]\n            x3,y3=get_circle(p1,p2)\n            x4,y4=x3+r,y3\n            x5,y5=x3-r,y3\n            x6,y6=x3,y3+r\n            x7,y7=x3,y3-r\n            return [[x4,y4],[x5,y5],[x6,y6],[x7,y7]]\n        def get_darts_num(p1,p2,r):\n            darts=get_darts(p1,p2,r)\n            num=0\n            for dart in darts:\n                if dist(p1,dart)<=r and dist(p2,dart)<=r:\n                    num+=1\n            return num\n        res=0\n        for i in range(len(points)):\n            for j in range(i+1,len(points)):\n                res=max(res,get_darts_num(points[i],points[j],r))\n        return res",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ' '.join(s[::2]) + ' ' + ' '.join(s[1::2])",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ''.join(s[::2]) + ' ' + ''.join(s[1::2])\n\nprint(sort_my_string('CodeWars'))",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
