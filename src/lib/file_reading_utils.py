@@ -1,34 +1,49 @@
+#!/usr/bin/env python3
 import os
 import json
+import logging
 
-def get_relative_dir_path(dir_path, relative_data_path = "../../", absolute_path = True):
-    if absolute_path :
-        dir_path = os.path.join(relative_data_path, "data/experiments")+dir_path.split("data/experiments")[-1]
-    return dir_path
+from pathlib import Path
 
-def get_result_dict(dir_list, relative_data_path = "../"):
-    test_file = "test.json"
-    results_file = "all_results.json"
+import my_logger
+
+logger = logging.getLogger('apiLogger')
+
+PATH_TO_EXPERIMENTS = Path(__file__, '../../../data/experiments').resolve()
+
+def split_prob(prob, keep_filename=True):
+    tmp = prob.split('data/')[-1]
+    if keep_filename:
+        return tmp
+    return os.path.split(tmp)[0]
+
+def get_result_dict(dir_list):
+    test_fname = "test.json"
+    result_fname = "all_results.json"
     result_dict = {}
+
     for dir_path in dir_list:
-        dir_path = get_relative_dir_path(dir_path, relative_data_path)
+        dir_path = PATH_TO_EXPERIMENTS.joinpath(dir_path)
         
         # read files
-        test_f = open(os.path.join(dir_path,test_file))
-        test_paths = json.load(test_f)
-        result_f = open(os.path.join(dir_path,results_file))
-        result_obj = json.load(result_f)
+        test_file = dir_path.joinpath(test_fname)
+        result_file = dir_path.joinpath(result_fname)
+
+        with open(test_file) as f:
+            test_paths = json.load(f)
+
+        with open(result_file) as f:
+            result_obj = json.load(f)
 
         #generate result dict
-        for ind in range(0, len(test_paths), 2):
-            print("*** : ", test_paths[ind].split("data")[-1])
-            result_dict[test_paths[ind].split("data")[-1]] = {
-                "human" : result_obj[str(ind)][0],
-                "original" : result_obj[str(ind+1)][0]
-            }
+        for ind, test_path in enumerate(test_paths):
+            path = split_prob(test_path)
+            logger.info(f"Adding result path: {path}")
+            result_dict[path] = result_obj[str(ind)][0]
     return result_dict   
 
-dir_list = ["/Users/Kirby_Stuff/Documents/APPS-Summary/Prompt-Summarization/data/experiments/11-29-2021/15_23", \
-    "/Users/Kirby_Stuff/Documents/APPS-Summary/Prompt-Summarization/data/experiments/11-30-2021/13_11"]
+dir_list = ["11-29-2021/20_34", "11-27-2021/12_04"]
 
-print(get_result_dict(dir_list))
+res = get_result_dict(dir_list)
+logger.debug(res)
+json.dump(res, open('meta.json', 'w'), indent=4)
