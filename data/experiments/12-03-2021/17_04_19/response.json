@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCovNfb94CV2TBYjHNcpr4jlPFF3",
+    "object": "text_completion",
+    "created": 1638576237,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    return all(i.lower() in arr[0].lower() for i in arr[1])",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return all(i.lower() in arr[0].lower() for i in arr[1])",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        res=0\n        for i in range(len(arr)):\n            for j in range(i+1,len(arr)+1):\n                if (j-i)%2==1:\n                    res+=sum(arr[i:j])\n        return res",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        res=0\n        for i in range(len(arr)):\n            for j in range(i+1,len(arr)+1):\n                if (j-i)%2==1:\n                    res+=sum(arr[i:j])\n        return res",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t=int(input())\n    for i in range(t):\n        n=input()\n        print(int(n,16))\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(int(input())):\n        print(int(input(),16))\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_number(number):\n#     return \"Special!!\" if all(int(i) in [0, 1, 2, 3, 4, 5] for i in str(number)) else \"NOT!!\"\n\n# def special_",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    return \"Special!!\" if all(int(i) in [0,1,2,3,4,5] for i in str(number)) else \"NOT!!\"\n",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return []",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly_multiply(p1, p2):\n    return [sum(p1[i]*p2[j] for i in range(len(p1)) for j in range(len(p2))) for k in range(len(p1)+len(p2)-1)]\n\ndef poly",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        count = 0\n        for j in range(n-1):\n            if a[j] > a[j+1]:\n                count += 1\n        print(count)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        bad = 0\n        for j in range(n-1):\n            if a[j] > a[j+1]:\n                bad += 1\n        print(bad)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return \"Not implemented yet\"",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    i = str(i)\n    i = i.replace('0', '4')\n    i = i.replace('1', '3')\n    i = i.replace('2', '2')\n    i = i.replace('3', '1')\n    i = i.replace('4', '0')\n    i = i.replace('5', '9')\n    i = i.replace('6', '8')\n    i = i.replace('7', '7')\n    i = i.replace('8', '6')\n    i = i.replace('9', '5')\n    i = int(i)\n    return '{} is the fouriest ({}) in base {}'.format(i, i, i.bit_length())",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        S, N, M, K = map(int, input().split())\n        if K == 0:\n            print(1)\n        elif K == 1:\n            print(0)\n        else:\n            print((M-1)/(S-1))\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        S, N, M, K = map(int, input().split())\n        if N > S:\n            print(0)\n        else:\n            if K == 0:\n                print(1)\n            else:\n                if K > M:\n                    print(0)\n                else:\n                    print((M-K)/(S-N))\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sum(arr) == 0 and len(arr) == len(set(arr))\n\ndef test():\n    assert learn_charitable_game([0, 56, 100]) == True\n    assert learn_charitable_game([0, 0, 0]) == False\n    assert learn_charitable_game([11]) == True\n    assert learn_charitable_game([100, 100, 100, 90, 1, 0, 0]) == False\n    print(\"Test passed\")\n\ntest()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(arr) == 1:\n        return True\n    if len(arr) == 2:\n        return arr[0] == arr[1]\n    if len(arr) == 3:\n        return arr[0] == arr[1] == arr[2]\n    if len(arr) == 4:\n        return arr[0] == arr[1] == arr[2] == arr[3]\n    if len(arr) == 5:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4]\n    if len(arr) == 6:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5]\n    if len(arr) == 7:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6]\n    if len(arr) == 8:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7]\n    if len(arr) == 9:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8]\n    if len(arr) == 10:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9]\n    if len(arr) == 11:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10]\n    if len(arr) == 12:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11]\n    if len(arr) == 13:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11] == arr[12]\n    if len(arr) == 14:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11] == arr[12] == arr[13]\n    if len(arr) == 15:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11] == arr[12] == arr[13] == arr[14]\n    if len(arr) == 16:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11] == arr[12] == arr[13] == arr[14] == arr[15]\n    if len(arr) == 17:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] == arr[9] == arr[10] == arr[11] == arr[12] == arr[13] == arr[14] == arr[15] == arr[16]\n    if len(arr) == 18:\n        return arr[0] == arr[1] == arr[2] == arr[3] == arr[4] == arr[5] == arr[6] == arr[7] == arr[8] ==",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    # your code here\n    return [0, 0, 0, 0]\n\n# test\nprint(get_num([2, 13, 2, 5, 2, 5, 3, 3]))",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = 1\n    for i in arr:\n        n *= i\n    divisors = []\n    for i in range(1, n + 1):\n        if n % i == 0:\n            divisors.append(i)\n    return [n, len(divisors), min(divisors), max(divisors)]",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

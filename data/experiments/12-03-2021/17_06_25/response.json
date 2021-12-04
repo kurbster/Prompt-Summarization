@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCqxgk68WTGwVawyBExZEsIPyVSi",
+    "object": "text_completion",
+    "created": 1638576363,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    if len(word) > 3:\n        return word[1:] + word[0] + 'ay'\n    else:\n        return word\n\nprint(pig_latin('hello'))\nprint(pig_latin('world'))",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(word) > 3:\n        return word[1:] + word[0] + 'ay'\n    else:\n        return word\n\nprint(pig_latin('hello'))\nprint(pig_latin('world'))",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if n == 0:\n            return []\n        def generate(start, end):\n            if start > end:\n                return [None]\n            all_trees = []\n            for i in range(start, end+1):\n                left_trees = generate(start, i-1)\n                right_trees = generate(i+1, end)\n                for l in left_trees:\n                    for r in right_trees:\n                        cur_tree = TreeNode(i)\n                        cur_tree.left = l\n                        cur_tree.right = r\n                        all_trees.append(cur_tree)\n            return all_trees\n        return generate(1, n)",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if n == 0:\n            return []\n        return self.dfs(1, n)\n\n    def dfs(self, start, end):\n        if start > end:\n            return [None]\n        res = []\n        for i in range(start, end + 1):\n            left = self.dfs(start, i - 1)\n            right = self.dfs(i + 1, end)\n            for l in left:\n                for r in right:\n                    root = TreeNode(i)\n                    root.left = l\n                    root.right = r\n                    res.append(root)\n        return res",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        l, r = map(int, input().split())\n        print(popcount(r) - popcount(l-1))\n\ndef popcount(x):\n    return bin(x).count('1')\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        l, r = map(int, input().split())\n        print(popcount(r) - popcount(l-1))\n\ndef popcount(x):\n    return bin(x).count('1')\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    b = [int(x) for x in input().split()]\n    q = int(input())\n    ops = []\n    for i in range(q):\n        ops.append([int(x) for x in input().split()])\n    # Create a list of the indices of the 1s in b.\n    ones = []\n    for i in range(n):\n        if b[i] == 1:\n            ones.append(i)\n    # Create a list of the indices of the 0s in b.\n    zeros = []\n    for i in range(n):\n        if b[i] == 0:\n            zeros.append(i)\n    # Create a list of the indices of the 1s in a.\n    a_ones = []\n    for i in range(n):\n        if a[i] == 1:\n            a_ones.append(i)\n    # Create a list of the indices of the 0s in a.\n    a_zeros = []\n    for i in range(n):\n        if a[i] == 0:\n            a_zeros.append(i)\n    # Create a list of the indices of the 1s in a that are not in b.\n    a_ones_not_in_b = []\n    for i in a_ones:\n        if i not in ones:\n            a_ones_not_in_b.append(i)\n    # Create a list of the indices of the 0s in a that are not in b.\n    a_zeros_not_in_b = []\n    for i in a_zeros:\n        if i not in zeros:\n            a_zeros_not_in_b.append(i)\n    # Create a list of the indices of the 1s in b that are not in a.\n    b_ones_not_in_a = []\n    for i in ones:\n        if i not in a_ones:\n            b_ones_not_in_a.append(i)\n    # Create a list of the indices of the 0s in b that are not in a.\n    b_zeros_not_in_a = []\n    for i in zeros:\n        if i not in a_zeros:\n            b_zeros_not_in_a.append(i)\n    # Create a list of the indices of the 1s in a that are not in b, but are adjacent to 1s in b.\n    a_ones_not_in_b_adjacent_to_b_ones = []\n    for i in a_ones_not_in_b:\n        if i in b_ones_not_in_a:\n            a_ones_not_in_b_adjacent_to_b_ones.append(i)\n    # Create a list of the indices of the 0s in a that are not in b, but are adjacent to 0s in b.\n    a_zeros_not_in_b_adjacent_to_b_zeros = []\n    for i in a_zeros_not_in_b:\n        if i in b_zeros_not_in_a:\n            a_zeros_not_in_b_adjacent_to_b_zeros.append(i)\n    # Create a list of the indices of the 1s in b that are not in a, but are adjacent to 1s in a.\n    b_ones_not_in_a_adjacent_to_a_ones = []\n    for i in b_ones_not_in_a:\n        if i in a_ones_not_in_b_adjacent_to_b_ones:\n            b_ones_not_in_a_adjacent_to_a_ones.append(i)\n    # Create a list of the indices of the 0s in b that are not in a, but are adjacent to 0s in a.\n    b_zeros_not_in_a_adjacent_to_a_zeros = []\n    for i in b_zeros_not_in_a:\n        if i in a_zeros_not_in_b_adjacent_to_b_zeros:\n            b_zeros_not_in_a_adjacent_to_a_zeros.append(i)\n    # Create a list of the indices of the 1s in a that are not in b",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    numbers = numbers.split()\n    even = []\n    odd = []\n    for i in range(len(numbers)):\n        if int(numbers[i]) % 2 == 0:\n            even.append(i)\n        else:\n            odd.append(i)\n    if len(even) == 1:\n        return even[0] + 1\n    else:\n        return odd[0] + 1",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    numbers = numbers.split()\n    even = []\n    odd = []\n    for i in range(len(numbers)):\n        if int(numbers[i]) % 2 == 0:\n            even.append(i+1)\n        else:\n            odd.append(i+1)\n    if len(even) == 1:\n        return even[0]\n    else:\n        return odd[0]",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        d, m = map(int, input().split())\n        if d == 1:\n            print(1)\n        else:\n            print((d - 2) * (m - 1) + 1)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        d, m = map(int, input().split())\n        print(d % m)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if D == 1:\n        return sum(range(N))\n    else:\n        return sum(super_sum(D-1, N) for i in range(N))\n\nprint(super_sum(1, 10))\nprint(super_sum(2, 3))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(arr)[:n]",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(arr)[:n]",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ','.join([' = '.join([str(x) for x in pair]) for pair in pairs.items()])",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ','.join(['%s = %s' % (k, v) for k, v in pairs.items()])",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, x = map(int, input().split())\n        a = list(map(int, input().split()))\n        a.sort()\n        count = 0\n        for i in range(n):\n            if a[i] * n >= x:\n                count += 1\n                n -= 1\n            else:\n                break\n        print(count)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, x = map(int, input().split())\n        a = list(map(int, input().split()))\n        a.sort()\n        teams = 0\n        for i in range(n):\n            if a[i] >= x:\n                teams += 1\n            else:\n                break\n        print(teams)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

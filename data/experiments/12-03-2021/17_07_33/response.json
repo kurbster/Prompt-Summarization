@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCsHVHuHNM5hK2ceOzbobZbVSltg",
+    "object": "text_completion",
+    "created": 1638576445,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N % sum([int(x) for x in str(N)]) == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N % sum([int(x) for x in str(N)]) == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        a1, a2 = a.split('+')\n        b1, b2 = b.split('+')\n        a1 = int(a1)\n        a2 = int(a2[:-1])\n        b1 = int(b1)\n        b2 = int(b2[:-1])\n        return str(a1*b1-a2*b2)+'+'+str(a1*b2+a2*b1)+'i'",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        a1, a2 = a.split('+')\n        b1, b2 = b.split('+')\n        a1 = int(a1)\n        a2 = int(a2[:-1])\n        b1 = int(b1)\n        b2 = int(b2[:-1])\n        return str(a1*b1-a2*b2)+'+'+str(a1*b2+a2*b1)+'i'",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        time = 0\n        for j in range(len(s)):\n            if j == 0:\n                if s[j] == 'N':\n                    time += 5\n                elif s[j] == 'S':\n                    time += 5\n                elif s[j] == 'W':\n                    time += 1\n                elif s[j] == 'E':\n                    time += 1\n            else:\n                if s[j] == 'N':\n                    if s[j-1] == 'S':\n                        time += 1\n                    else:\n                        time += 5\n                elif s[j] == 'S':\n                    if s[j-1] == 'N':\n                        time += 1\n                    else:\n                        time += 5\n                elif s[j] == 'W':\n                    if s[j-1] == 'E':\n                        time += 1\n                    else:\n                        time += 1\n                elif s[j] == 'E':\n                    if s[j-1] == 'W':\n                        time += 1\n                    else:\n                        time += 1\n        print(time)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        time = 0\n        for j in range(len(s)):\n            if j == 0:\n                if s[j] == 'N':\n                    time += 5\n                elif s[j] == 'S':\n                    time += 5\n                elif s[j] == 'W':\n                    time += 1\n                elif s[j] == 'E':\n                    time += 1\n            else:\n                if s[j] == 'N':\n                    if s[j-1] == 'S':\n                        time += 1\n                    else:\n                        time += 5\n                elif s[j] == 'S':\n                    if s[j-1] == 'N':\n                        time += 1\n                    else:\n                        time += 5\n                elif s[j] == 'W':\n                    if s[j-1] == 'E':\n                        time += 1\n                    else:\n                        time += 1\n                elif s[j] == 'E':\n                    if s[j-1] == 'W':\n                        time += 1\n                    else:\n                        time += 1\n        print(time)\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in arr:\n        if type(i) != list:\n            return False\n    return True\n\nprint(arr_check([[1],[2]]))\nprint(arr_check(['1','2']))\nprint(arr_check([{1:1},{2:2}]))",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in arr:\n        if type(i) != list:\n            return False\n    return True",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    for i in range(3):\n        l, r = map(int, input().split())\n        b = list(map(int, input().split()))\n        for j in range(l-1, r):\n            a[j] += b[j-l+1]\n    print(*a)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    for i in range(3):\n        l, r = map(int, input().split())\n        b = list(map(int, input().split()))\n        for j in range(l-1, r):\n            a[j] += b[j-l+1]\n    print(*a)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        for i in range(int((num+2)**0.5),0,-1):\n            if (num+1)%i==0:\n                return [i,(num+1)//i]\n            if (num+2)%i==0:\n                return [i,(num+2)//i]",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        def get_closest(num):\n            for i in range(int((num+2)**0.5),0,-1):\n                if (num+1)%i==0:\n                    return [i,(num+1)//i]\n                if (num+2)%i==0:\n                    return [i,(num+2)//i]\n        return get_closest(num)",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sum(x for x in arr if '3' in str(x) and x % 2 == 1)",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sum(x for x in arr if x % 2 == 1 and '3' in str(x))",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(board) == list(range(len(board) ** 2))",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for t in range(T):\n        N = int(input())\n        count = 0\n        for n in range(N):\n            S, J = map(int, input().split())\n            if J - S > 5:\n                count += 1\n        print(count)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        submissions = []\n        for _ in range(N):\n            submissions.append(list(map(int, input().split())))\n        submissions.sort(key=lambda x: x[1])\n        count = 0\n        for i in range(N):\n            if submissions[i][1] - submissions[i][0] > 5:\n                count += 1\n        print(count)\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k, d1, d2 = map(int, input().split())\n        if n - k < d1 + d2:\n            print(\"no\")\n        elif n - k == d1 + d2:\n            print(\"yes\")\n        else:\n            print(\"no\")\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k, d1, d2 = map(int, input().split())\n        if k == 0:\n            if d1 == 0 and d2 == 0:\n                print(\"yes\")\n            else:\n                print(\"no\")\n        else:\n            if d1 == 0 and d2 == 0:\n                print(\"no\")\n            else:\n                if d1 == d2:\n                    if k % 2 == 0:\n                        print(\"yes\")\n                    else:\n                        print(\"no\")\n                else:\n                    if k % 2 == 0:\n                        print(\"no\")\n                    else:\n                        print(\"yes\")\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

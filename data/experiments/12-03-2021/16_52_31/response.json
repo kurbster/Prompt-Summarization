@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCdlDbkF2bxiY5OyfnDC94lHcNoM",
+    "object": "text_completion",
+    "created": 1638575545,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    num_sets = int(input())\n    for i in range(num_sets):\n        today_high, today_low, normal_high, normal_low = input().split()\n        today_high = float(today_high)\n        today_low = float(today_low)\n        normal_high = float(normal_high)\n        normal_low = float(normal_low)\n        avg_diff = (today_high + today_low) / 2 - (normal_high + normal_low) / 2\n        if avg_diff > 0:\n            print(\"{:.1f} DEGREE(S) ABOVE NORMAL\".format(avg_diff))\n        elif avg_diff < 0:\n            print(\"{:.1f} DEGREE(S) BELOW NORMAL\".format(avg_diff))\n        else:\n            print(\"{:.1f} DEGREE(S) NORMAL\".format(avg_diff))\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = []\n    for i in range(n):\n        arr.append(int(input()))\n    arr.sort()\n    max_val = 0\n    for i in range(n):\n        for j in range(i+1,n):\n            if arr[i]%arr[j] > max_val:\n                max_val = arr[i]%arr[j]\n    print(max_val)\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = []\n    for i in range(n):\n        arr.append(int(input()))\n    arr.sort()\n    ans = 0\n    for i in range(n):\n        ans = max(ans, arr[i]%arr[n-1-i])\n    print(ans)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(len(str1)):\n        for j in range(len(str2)):\n            if str1[i] == str2[j]:\n                if str1[i:i+2] == str2[j:j+2]:\n                    return True\n    return False\n\nprint(substring_test(\"Something\",\"Fun\"))\nprint(substring_test(\"Something\",\"Home\"))",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return any(i in str2 for i in str1)\n\nprint(substring_test(\"Something\",\"Home\"))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        arr = list(map(int, input().split()))\n        arr.sort()\n        print(arr[0] + arr[1])\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        A.sort()\n        print(A[0] + A[1])\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ' '.join(s[::2]) + ' ' + ' '.join(s[1::2])",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ''.join(s[::2]) + ' ' + ''.join(s[1::2])\n\nprint(sort_my_string('CodeWars'))",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        if sum(A) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for t in range(T):\n        N = int(input())\n        coins = list(map(int, input().split()))\n        if sum(coins) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        S = input()\n        if N == 1:\n            print(0)\n        else:\n            count = 0\n            for i in range(N//2):\n                if S[i] != S[N-1-i]:\n                    count += 1\n            print(count)\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return ' '.join([words.split()[1][0]+words.split()[0][1:], words.split()[0][0]+words.split()[1][1:]])",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return '{}{} {}{}'.format(words.split()[1][0], words.split()[0][1:], words.split()[0][0], words.split()[1][1:])",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Code here\n    score = 0\n    for card in cards:\n        if card == 'A':\n            score += 11\n        elif card == 'J' or card == 'Q' or card == 'K':\n            score += 10\n        else:\n            score += int(card)\n    if score > 21:\n        for card in cards:\n            if card == 'A':\n                score -= 10\n            if score <= 21:\n                break\n    return score",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    score = 0\n    aces = 0\n    for card in cards:\n        if card == 'A':\n            aces += 1\n        elif card in 'JQK':\n            score += 10\n        else:\n            score += int(card)\n    score += aces\n    while score > 21 and aces > 0:\n        score -= 10\n        aces -= 1\n    return score",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

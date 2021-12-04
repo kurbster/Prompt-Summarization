@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCbh4iwQt1xhrx3DSgo4r3eCFboh",
+    "object": "text_completion",
+    "created": 1638575417,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    year += 1\n    while len(set(str(year))) != len(str(year)):\n        year += 1\n    return year\n\nprint(next_happy_year(1001))",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    year += 1\n    while len(set(str(year))) != 4:\n        year += 1\n    return year\n",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    subsets = []\n    for i in range(k):\n        c = int(input())\n        subset = list(map(int, input().split()))\n        subsets.append(subset)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(n)\n    #print(k)\n    #print(s)\n    #print(subsets)\n    #print(s)\n    #print(",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    subsets = []\n    for i in range(k):\n        c = int(input())\n        subset = list(map(int, input().split()))\n        subsets.append(subset)\n    m = [0] * n\n    for i in range(n):\n        for j in range(k):\n            if i + 1 in subsets[j]:\n                m[i] = 1\n                break\n    for i in range(1, n):\n        for j in range(k):\n            if i + 1 in subsets[j]:\n                m[i] = max(m[i], m[i - 1] + 1)\n    for i in range(n - 2, -1, -1):\n        for j in range(k):\n            if i + 1 in subsets[j]:\n                m[i] = max(m[i], m[i + 1] + 1)\n    for i in range(n):\n        print(m[i])\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    graph = [[] for i in range(n)]\n    for i in range(m):\n        u, v = map(int, input().split())\n        graph[u-1].append(v-1)\n        graph[v-1].append(u-1)\n    #print(graph)\n    def dfs(graph, visited, v, A, B):\n        visited[v] = True\n        if v in A:\n            for u in graph[v]:\n                if not visited[u]:\n                    dfs(graph, visited, u, A, B)\n        elif v in B:\n            for u in graph[v]:\n                if not visited[u]:\n                    dfs(graph, visited, u, A, B)\n        else:\n            for u in graph[v]:\n                if not visited[u]:\n                    dfs(graph, visited, u, A, B)\n                    break\n    def dfs2(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs2(graph, visited, u, A, B)\n    def dfs3(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs3(graph, visited, u, A, B)\n                break\n    def dfs4(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs4(graph, visited, u, A, B)\n    def dfs5(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs5(graph, visited, u, A, B)\n                break\n    def dfs6(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs6(graph, visited, u, A, B)\n    def dfs7(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs7(graph, visited, u, A, B)\n                break\n    def dfs8(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs8(graph, visited, u, A, B)\n    def dfs9(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs9(graph, visited, u, A, B)\n                break\n    def dfs10(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs10(graph, visited, u, A, B)\n    def dfs11(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs11(graph, visited, u, A, B)\n                break\n    def dfs12(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs12(graph, visited, u, A, B)\n    def dfs13(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs13(graph, visited, u, A, B)\n                break\n    def dfs14(graph, visited, v, A, B):\n        visited[v] = True\n        for u in graph[v]:\n            if not visited[u]:\n                dfs14(graph, visited, u, A, B)\n    def dfs15(graph, visited, v, A, B):\n        visited[v] = True",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    graph = [[] for i in range(n)]\n    for i in range(m):\n        u, v = map(int, input().split())\n        graph[u-1].append(v-1)\n        graph[v-1].append(u-1)\n    for i in range(n):\n        graph[i].sort()\n    # print(graph)\n    def dfs(graph, visited, v, ans):\n        visited[v] = True\n        ans.append(v)\n        for i in graph[v]:\n            if not visited[i]:\n                dfs(graph, visited, i, ans)\n    def bfs(graph, visited, v, ans):\n        queue = [v]\n        visited[v] = True\n        ans.append(v)\n        while queue:\n            v = queue.pop(0)\n            for i in graph[v]:\n                if not visited[i]:\n                    queue.append(i)\n                    visited[i] = True\n                    ans.append(i)\n    def check(graph, visited, ans):\n        for i in range(n):\n            if not visited[i]:\n                bfs(graph, visited, i, ans)\n    ans1 = []\n    ans2 = []\n    visited = [False] * n\n    check(graph, visited, ans1)\n    visited = [False] * n\n    check(graph, visited, ans2)\n    if len(ans1) != len(ans2):\n        print(-1)\n    else:\n        print(len(ans1))\n        print(*ans1)\n        print(len(ans2))\n        print(*ans2)\n\nif __name__ == '__main__':\n    code()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n < 10:\n        print(1)\n        print(n)\n    else:\n        count = 0\n        for i in range(10, n+1):\n            if i == sum(int(x) for x in str(i)):\n                count += 1\n        print(count)\n        for i in range(10, n+1):\n            if i == sum(int(x) for x in str(i)):\n                print(i)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    k = 0\n    for i in range(15, n+1):\n        if i + sum(map(int, str(i))) == n:\n            k += 1\n            print(i)\n    if k == 0:\n        print(0)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        x = list(map(int, input().split()))\n        y = list(map(int, input().split()))\n        x.sort()\n        y.sort()\n        moves = 0\n        for j in range(n):\n            moves += abs(x[j] - y[j])\n        print(moves)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for i in range(test_cases):\n        n = int(input())\n        a = list(map(int, input().split()))\n        b = list(map(int, input().split()))\n        moves = 0\n        while True:\n            if len(set(a)) == 1 and len(set(b)) == 1:\n                break\n            for j in range(n):\n                if a[j] > b[j]:\n                    a[j] -= 1\n                    b[j] += 1\n                elif a[j] < b[j]:\n                    a[j] += 1\n                    b[j] -= 1\n                else:\n                    a[j] -= 1\n                    b[j] -= 1\n            moves += 1\n        print(moves)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    #your code here\n    return sorted(arr)[:n]",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr, n):\n    return sorted(set(arr))[:n]\n\n\ndef first_n_smallest(arr,",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    # Write your code here\n    # To print results to the standard output you can use print\n    # Example: print \"Hello world!\"\n    result = []\n    for i in range(start, finish+1):\n        result.append(str(i))\n    print result",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    pass",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k = map(int, input().split())\n        a = list(map(int, input().split()))\n        a.sort()\n        if k == 0:\n            print(a[-1] - a[0])\n        else:\n            print(max(a[-1] - a[0], a[-1] - a[-2] - a[-3]))\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, k = [int(x) for x in input().split()]\n        a = [int(x) for x in input().split()]\n        a.sort()\n        if k == 0:\n            print(0)\n        elif k == 1:\n            print(a[-1] - a[0])\n        else:\n            print(max(a[-1] - a[0], a[-1] - a[-2] - a[0] + a[1]))\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        sum = 0\n        for j in range(2, n):\n            if isPrime(j):\n                sum += j\n        print(sum)\n\ndef isPrime(n):\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5)+1, 2):\n        if n % i == 0:\n            return False\n    return True\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        ans = 0\n        for i in range(1, N+1):\n            if isPrime(i):\n                ans += i\n        print(ans)\n\ndef isPrime(n):\n    if n == 1:\n        return False\n    for i in range(2, int(n**0.5)+1):\n        if n % i == 0:\n            return False\n    return True\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']\n    if type(words) != str:\n        return {'vowels': 0, 'consonants': 0}\n    else:\n        count_vowels = 0\n        count_consonants = 0\n        for i in words:\n            if i in vowels:\n                count_vowels += 1\n            elif i in consonants:\n                count_consonants += 1\n        return {'vowels': count_vowels, 'consonants': count_consonants}",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if type(words) != str:\n        return {'vowels': 0, 'consonants': 0}\n    vowels = 'aeiou'\n    consonants = 'bcdfghjklmnpqrstvwxyz'\n    return {'vowels': sum(words.lower().count(c) for c in vowels),\n            'consonants': sum(words.lower().count(c) for c in consonants)}",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

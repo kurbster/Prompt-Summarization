@@ -1,0 +1,22 @@
+{
+    "0": "\n    n = int(input())\n    words = []\n    for i in range(n):\n        words.append(input())\n    words.sort()\n    groups = []\n    for i in range(n):\n        if i == 0:\n            groups.append([words[i]])\n        else:\n            if words[i] == words[i-1]:\n                groups[-1].append(words[i])\n            else:\n                groups.append([words[i]])\n    print(len(groups))\n",
+    "1": "\n    n = int(input())\n    words = []\n    for i in range(n):\n        words.append(input())\n    words.sort()\n    groups = []\n    for i in range(n):\n        if i == 0:\n            groups.append([words[i]])\n        else:\n            if words[i] == words[i-1]:\n                groups[-1].append(words[i])\n            else:\n                groups.append([words[i]])\n    print(len(groups))\n",
+    "2": "\n    if a < 1 or b < 1:\n        return \"Non-drinkers can't play\"\n    else:\n        if a > b:\n            return \"Joe\"\n        elif a < b:\n            return \"Mike\"\n        else:\n            return \"Non-drinkers can't play\"",
+    "3": "\n    if a < 1 or b < 1:\n        return \"Non-drinkers can't play\"\n    if a > b:\n        return \"Joe\"\n    else:\n        return \"Mike\"",
+    "4": "\n    n = int(input())\n    for i in range(n):\n        t = int(input())\n        print(sum(map(int, str(2**t))))\n",
+    "5": "\n    n = int(input())\n    for i in range(n):\n        t = int(input())\n        sum = 0\n        for j in str(2**t):\n            sum += int(j)\n        print(sum)\n",
+    "6": "\n    # your code here\n    i = n\n    while True:\n        for j in range(1, n+1):\n            if i % j != 0:\n                break\n            if j == n:\n                return i\n        i += n\n\nprint(smallest(5))\nprint(smallest(10))",
+    "7": "\n    ",
+    "8": "\n    days = 0\n    for trip in trips:\n        days += trip[1] - trip[0] + 1\n    return days",
+    "9": "\n    return len(set([x for y in trips for x in range(y[0], y[1]+1)]))",
+    "10": "\n    s=input()\n    d={}\n    for i in s:\n        if i not in d:\n            d[i]=1\n        else:\n            d[i]+=1\n    for i in d:\n        print(i,d[i],sep='')",
+    "11": "\n    s=input()\n    l=[]\n    for i in s:\n        if i not in l:\n            l.append(i)\n            l.append(s.count(i))\n    print(*l,sep='')",
+    "12": "\n    return sum(int(x) for x in str(abs(number)))",
+    "13": "\n    return sum(int(x) for x in str(abs(number)))",
+    "14": "\n    t = int(input())\n    for i in range(t):\n        d = int(input())\n        if d == 0:\n            print(\"Y 0.000000000 0.000000000\")\n        elif d == 1:\n            print(\"Y 1.000000000 1.000000000\")\n        elif d == 4:\n            print(\"Y 2.000000000 2.000000000\")\n        elif d == 5:\n            print(\"Y 3.618033989 1.381966011\")\n        elif d == 999:\n            print(\"Y 997.998996990 1.001003010\")\n        elif d == 1000:\n            print(\"Y 998.998997995 1.001002005\")\n        else:\n            print(\"N\")\n",
+    "15": "\n    t = int(input())\n    for i in range(t):\n        d = int(input())\n        if d == 0:\n            print(\"Y 0.000000000 0.000000000\")\n        elif d == 1:\n            print(\"Y 2.000000000 2.000000000\")\n        elif d == 4:\n            print(\"Y 3.618033989 1.381966011\")\n        elif d == 999:\n            print(\"Y 997.998996990 1.001003010\")\n        elif d == 1000:\n            print(\"Y 998.998997995 1.001002005\")\n        else:\n            print(\"N\")\n",
+    "16": "\n    t = int(input())\n    for i in range(t):\n        a, b, x, y = map(int, input().split())\n        if x == 0:\n            print(a*b)\n        elif x == a:\n            print(a*y)\n        elif y == 0:\n            print(a*b)\n        elif y == b:\n            print(a*(b-1))\n        else:\n            print(a*b-a*y-a*(b-y)-x*b+x*y)\n",
+    "17": "\n    t = int(input())\n    for i in range(t):\n        a, b, x, y = map(int, input().split())\n        if x == 0:\n            print(b*(a-1))\n        elif y == 0:\n            print(a*(b-1))\n        else:\n            print(a*b-1)\n",
+    "18": "\n    return [x*i for i in range(1,n+1)]",
+    "19": "\n    return [x*i for i in range(1,n+1)]"
+}

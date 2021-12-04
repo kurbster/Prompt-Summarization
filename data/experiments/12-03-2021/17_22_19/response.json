@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BD6IgBDKX0Vs37S0l4tbDMx9K45o",
+    "object": "text_completion",
+    "created": 1638577314,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n        # dp[i][j] = max(dp[i][j], dp[i-x][j+x] + x)\n        # dp[i][j] = max(dp[i][j], dp[i+x][j-x] + x)\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x)\n        # dp[i][j] = max(dp[i][j], dp[i-x][j] + x, dp[i+x][j] + x)\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x)\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x)\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j])\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j])\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j])\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x] + x, dp[i][j])\n        # dp[i][j] = max(dp[i][j], dp[i][j-x] + x, dp[i][j+x] + x, dp[i-x][j+x] + x, dp[i+x][j-x",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        # dp[i][s]: the max length of the billboard that can be supported by rods[:i] with sum s\n        # dp[i][s] = max(dp[i-1][s], dp[i-1][s-rods[i]] + rods[i])\n        # initial: dp[0][0] = 0, dp[0][s] = 0\n        # answer: dp[len(rods)][0]\n        dp = [[0] * (sum(rods) + 1) for _ in range(len(rods) + 1)]\n        for i in range(1, len(rods) + 1):\n            for s in range(sum(rods) + 1):\n                dp[i][s] = dp[i-1][s]\n                if s >= rods[i-1]:\n                    dp[i][s] = max(dp[i][s], dp[i-1][s-rods[i-1]] + rods[i-1])\n        return dp[len(rods)][0]",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    sets = []\n    for i in range(n):\n        sets.append(list(map(int, input().split())))\n    sets.sort(key=lambda x: len(x))\n    cost = 0\n    for i in range(n):\n        if len(sets[i]) == 0:\n            continue\n        for j in range(i + 1, n):\n            if len(sets[j]) == 0:\n                continue\n            if len(sets[i]) + len(sets[j]) == len(set(sets[i] + sets[j])):\n                cost += 1\n                sets[i] = []\n                sets[j] = []\n                break\n    print(cost)\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    langs = []\n    for i in range(n):\n        langs.append(list(map(int, input().split())))\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)\n    # print(n, m)\n    # print(langs)",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    a = 0\n    b = 0\n    c = 0\n    for i in range(number):\n        if i % 3 == 0:\n            a += 1\n        if i % 5 == 0:\n            b += 1\n        if i % 15 == 0:\n            c += 1\n    return [a, b, c]",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a = 0\n    b = 0\n    c = 0\n    for i in range(number):\n        if i % 3 == 0 and i % 5 != 0:\n            a += 1\n        elif i % 5 == 0 and i % 3 != 0:\n            b += 1\n        elif i % 3 == 0 and i % 5 == 0:\n            c += 1\n    return [a, b, c]",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        if n % 5 == 0:\n            print(1)\n        else:\n            print(0)\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N % 5 == 0:\n            print(1)\n        else:\n            print(0)\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, m = map(int, input().split())\n        boys = []\n        girls = []\n        for i in range(n):\n            boys.append(list(input()))\n        for i in range(m):\n            girls.append(list(input()))\n        count = 0\n        for i in range(n):\n            for j in range(m):\n                if boys[i][j] == '1' and girls[j][i] == '1':\n                    count += 1\n        print(count)\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, m = map(int, input().split())\n        boys = []\n        girls = []\n        for j in range(n):\n            boys.append(input())\n        for j in range(m):\n            girls.append(input())\n        count = 0\n        for j in range(m):\n            for k in range(n):\n                if boys[k][j] == '1' and girls[j][k] == '1':\n                    count += 1\n        print(count)\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j in d:\n                    d[j] += 1\n                else:\n                    d[j] = 1\n    print(max(d, key=d.get))\n\nif __name__ == '__main__':\n    code()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j in d:\n                    d[j] += 1\n                else:\n                    d[j] = 1\n    m = max(d.values())\n    for i in d:\n        if d[i] == m:\n            print(i)\n            break\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    a = list(map(int, input().split()))\n    for i in range(q):\n        x, y = map(int, input().split())\n        if x > y:\n            x, y = y, x\n        if x == y:\n            print(\"Shi\")\n            continue\n        if a[x-1] == 0 or a[y-1] == 0:\n            print(\"Fou\")\n            continue\n        for j in range(x, y):\n            if a[j] == 0:\n                print(\"Fou\")\n                break\n        else:\n            print(\"Shi\")\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    a = list(map(int, input().split()))\n    for i in range(q):\n        x, y = map(int, input().split())\n        if x == y:\n            print(\"Shi\")\n            continue\n        if a[x-1] == 0:\n            print(\"Fou\")\n            continue\n        p = [x]\n        while p[-1] != y:\n            if p[-1] == n:\n                print(\"Fou\")\n                break\n            if a[p[-1]-1] == 0:\n                print(\"Fou\")\n                break\n            if a[p[-1]-1] & a[p[-1]+1-1] > 0:\n                p.append(p[-1]+1)\n            else:\n                print(\"Fou\")\n                break\n        else:\n            print(\"Shi\")\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    ans = float('inf')\n    for i in range(n):\n        ans = min(ans, a[i] - i)\n    print(ans)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    ans = float('inf')\n    for i in range(n):\n        ans = min(ans, a[i] - i)\n    print(ans)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    l1 = list(map(int,input().split()))\n    l2 = list(map(int,input().split()))\n    l1.sort()\n    l2.sort()\n    for i in range(n):\n        if l1[i] != l2[i]:\n            print(l2[i])\n            break\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    l = list(map(int,input().split()))\n    l1 = list(map(int,input().split()))\n    for i in l1:\n        if i not in l:\n            print(i)\n            break\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if name.isupper():\n        return name\n    else:\n        name = name.replace('_', '')\n        name = name.replace(' ', '')\n        name = name.replace('+', '')\n        name = name.replace('=', '')\n        name = name.replace('15', '')\n        name = name.replace('5', '')\n        name = name.replace('20', '')\n        name = name.replace('This', '')\n        name = name.replace('Is', '')\n        name = name.replace('A', '')\n        name = name.replace('Unit', '')\n        name = name.replace('Test', '')\n        name = name.replace('Already', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('Marked', '')\n        name = name.replace('Name', '')\n        name = name.replace('Underscore', '')\n        name = name.replace('Not', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('15', '')\n        name = name.replace('5', '')\n        name = name.replace('20', '')\n        name = name.replace('This', '')\n        name = name.replace('Is', '')\n        name = name.replace('A', '')\n        name = name.replace('Unit', '')\n        name = name.replace('Test', '')\n        name = name.replace('Already', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('Marked', '')\n        name = name.replace('Name', '')\n        name = name.replace('Underscore', '')\n        name = name.replace('Not', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('15', '')\n        name = name.replace('5', '')\n        name = name.replace('20', '')\n        name = name.replace('This', '')\n        name = name.replace('Is', '')\n        name = name.replace('A', '')\n        name = name.replace('Unit', '')\n        name = name.replace('Test', '')\n        name = name.replace('Already', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('Marked', '')\n        name = name.replace('Name', '')\n        name = name.replace('Underscore', '')\n        name = name.replace('Not', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('15', '')\n        name = name.replace('5', '')\n        name = name.replace('20', '')\n        name = name.replace('This', '')\n        name = name.replace('Is', '')\n        name = name.replace('A', '')\n        name = name.replace('Unit', '')\n        name = name.replace('Test', '')\n        name = name.replace('Already', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('Marked', '')\n        name = name.replace('Name', '')\n        name = name.replace('Underscore', '')\n        name = name.replace('Not', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n        name = name.replace('15', '')\n        name = name.replace('5', '')\n        name = name.replace('20', '')\n        name = name.replace('This', '')\n        name = name.replace('Is', '')\n        name = name.replace('A', '')\n        name = name.replace('Unit', '')\n        name = name.replace('Test', '')\n        name = name.replace('Already', '')\n        name = name.replace('Split', '')\n        name = name.replace('Correct', '')\n",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    if name == \"\":\n        return \"\"\n    if name[0] == \"_\" and name[-1] == \"_\":\n        return name\n    if name[0] == \"_\":\n        return name[1:]\n    if name[-1] == \"_\":\n        return name[:-1]\n    if name.isupper():\n        return name\n    if name.islower():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.isalpha():\n        return name\n    if name.isdigit():\n        return name\n    if name.isalnum():\n        return name\n    if name.",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

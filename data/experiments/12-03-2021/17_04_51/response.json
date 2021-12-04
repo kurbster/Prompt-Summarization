@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCpHNgk0bYbozOLj78BnadbocwI0",
+    "object": "text_completion",
+    "created": 1638576259,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    # your code here\n    return []",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [[i, n - i] for i in range(1, n // 2 + 1)] if n % 2 else [[i, n - i] for i in range(1, n // 2 + 1)] + [[n // 2, n // 2]]\n\n# Sample Tests\ntest.assert_equals(combos(1), [[1, 0]])\ntest.assert_equals(combos(2), [[1, 1], [2, 0]])\ntest.assert_equals(combos(3), [[1, 2], [1, 1, 1], [3, 0]])\ntest.assert_equals(combos(4), [[1, 3], [1, 2, 1], [1, 1, 1, 1], [2, 2], [4, 0]])\ntest.assert_equals(combos(5), [[1, 4], [1, 3, 1], [1, 2, 2], [1, 2, 1, 1], [1, 1, 1, 1, 1], [5, 0]])\ntest.assert_equals(combos(6), [[1, 5], [1, 4, 1], [1, 3, 2], [1, 3, 1, 1], [1, 2, 2, 1], [1, 2, 1, 1, 1], [1, 1, 1, 1, 1, 1], [6, 0]])\ntest.assert_equals(combos(7), [[1, 6], [1, 5, 1], [1, 4, 2], [1, 4, 1, 1], [1, 3, 3], [1, 3, 2, 1], [1, 3, 1, 1, 1], [1, 2, 2, 2], [1, 2, 2, 1, 1], [1, 2, 1, 1, 1, 1], [7, 0]])\ntest.assert_equals(combos(8), [[1, 7], [1, 6, 1], [1, 5, 2], [1, 5, 1, 1], [1, 4, 3], [1, 4, 2, 1], [1, 4, 1, 1, 1], [1, 3, 3, 1], [1, 3, 2, 2], [1, 3, 2, 1, 1], [1, 3, 1, 1, 1, 1], [1, 2, 2, 2, 1], [1, 2, 2, 1, 1, 1], [1, 2, 1, 1, 1, 1, 1], [8, 0]])\ntest.assert_equals(combos(9), [[1, 8], [1, 7, 1], [1, 6, 2], [1, 6, 1, 1], [1, 5, 3], [1, 5, 2, 1], [1, 5, 1, 1, 1], [1, 4, 4], [1, 4, 3, 1], [1, 4, 2, 2], [1, 4, 2, 1, 1], [1, 4, 1, 1, 1, 1], [1, 3, 3, 2], [1, 3, 3, 1, 1], [1, 3, 2, 2, 1], [1, 3, 2, 1, 1, 1], [1, 3, 1, 1, 1, 1, 1], [1, 2, 2, 2, 2], [1, 2, 2, 2, 1, 1], [1, 2, 2, 1, 1, 1, 1], [1, 2, 1, 1, 1, 1, 1, 1], [9, 0]])\ntest.assert_equals(combos(10), [[1, 9], [1, 8, 1], [1, 7, 2], [1, 7, 1, 1], [1, 6, 3], [1, 6, 2, 1], [1, 6, 1, 1, 1], [1, 5, 4], [1, 5, 3, 1], [1, 5, 2, 2], [1, 5, 2, 1, 1], [1, 5, 1, 1, 1, 1], [1, 4, 4, 1], [1, 4, 3, 2], [1, 4, 3, 1, 1], [1, 4, 2, 2, 1], [1, 4, 2, 1, 1, 1], [1, 4, 1, 1, 1, 1, 1], [1, 3, 3, 3], [1, 3, 3, 2, 1",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    sum = 0\n    for i in range(len(matrix)):\n        sum += matrix[i][col]\n    for j in range(len(matrix[0])):\n        sum += matrix[row][j]\n    sum -= matrix[row][col]\n    return sum\n\ndef matrixElementsSum(matrix):\n    sum = 0\n    for i in range(len(matrix[0])):\n        for j in range(len(matrix)):\n            if matrix[j][i] == 0:\n                break\n            sum += matrix[j][i]\n    return sum",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sum(matrix[row]) + sum(matrix[i][col] for i in range(len(matrix))) - matrix[row][col]\n\ndef checkio(matrix):\n    return max(crossing_sum(matrix, row, col) for row in range(len(matrix)) for col in range(len(matrix[0])))\n\n#These \"asserts\" using only for self-checking and not necessary for auto-testing\nif __name__ == '__main__':\n    assert checkio([[4, 3], [6, 3]]) == 13, \"First\"\n    assert checkio([[1, 3, 2],\n                    [1, 1, 4],\n                    [2, 2, 1]]) == 12, \"Second\"",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, m = map(int, input().split())\n        if n == m:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, m = map(int, input().split())\n        if n == m:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n,m,a=map(int,input().split())\n    print((m//a)*(n//a))\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, a = map(int, input().split())\n    if n % a == 0:\n        n_flag = n // a\n    else:\n        n_flag = n // a + 1\n    if m % a == 0:\n        m_flag = m // a\n    else:\n        m_flag = m // a + 1\n    print(n_flag * m_flag)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        line = input()\n        words = line.split()\n        words.reverse()\n        print(\" \".join(words))\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(n):\n        line = input()\n        line = line.split()\n        line.reverse()\n        for word in line:\n            print(word, end=\" \")\n        print()\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(1, num):\n        if num % i == 0:\n            num = num / i\n        else:\n            return \"None\"\n    return str(int(num)) + \"!\"\n\nprint(reverse_factorial(120))\nprint(reverse_factorial(24))\nprint(reverse_factorial(150))",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in range(1, num):\n        if num % i == 0:\n            if num / i == 1:\n                return str(i) + \"!\"\n            else:\n                continue\n        else:\n            return \"None\"\n\nprint(reverse_factorial(120))\nprint(reverse_factorial(24))\nprint(reverse_factorial(150))",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    notes = ['C', ['C#', 'Db'], 'D', ['D#', 'Eb'], 'E', 'F', ['F#', 'Gb'], 'G', ['G#', 'Ab'], 'A', ['A#', 'Bb'], 'B']\n    chord = chord.split()\n    if len(chord) != 3:\n        return 'Not a chord'\n    if chord[0] not in notes or chord[1] not in notes or chord[2] not in notes:\n        return 'Not a chord'\n    if notes.index(chord[0]) - notes.index(chord[1]) == 3 and notes.index(chord[1]) - notes.index(chord[2]) == 4:\n        return 'Minor'\n    elif notes.index(chord[0]) - notes.index(chord[1]) == 4 and notes.index(chord[1]) - notes.index(chord[2]) == 3:\n        return 'Major'\n    else:\n        return 'Not a chord'\n\nif __name__ == '__main__':\n    print(\"Example:\")\n    print(minor_or_major('A C# E'))\n\n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n    assert minor_or_major('A C# E') == 'Minor', 'Minor'\n    assert minor_or_major('A C# E') == 'Minor'\n    assert minor_or_major('A C E') == 'Major'\n    assert minor_or_major('A C E') == 'Major'\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    notes = ['C', ['C#', 'Db'], 'D', ['D#', 'Eb'], 'E', 'F', ['F#', 'Gb'], 'G', ['G#', 'Ab'], 'A', ['A#', 'Bb'], 'B']\n    chord = chord.split()\n    if len(chord) != 3:\n        return 'Not a chord'\n    if chord[0] not in notes or chord[1] not in notes or chord[2] not in notes:\n        return 'Not a chord'\n    if notes.index(chord[0]) - notes.index(chord[1]) == 3 and notes.index(chord[1]) - notes.index(chord[2]) == 4:\n        return 'Minor'\n    elif notes.index(chord[0]) - notes.index(chord[1]) == 4 and notes.index(chord[1]) - notes.index(chord[2]) == 3:\n        return 'Major'\n    else:\n        return 'Not a chord'\n\nif __name__ == '__main__':\n    print(\"Example:\")\n    print(minor_or_major('A C# E'))\n\n    #These \"asserts\" using only for self-checking and not necessary for auto-testing\n    assert minor_or_major('A C# E') == 'Minor', 'Minor'\n    assert minor_or_major('A C# E') == 'Minor'\n    assert minor_or_major('A C E') == 'Major'\n    assert minor_or_major('A C E') == 'Major'\n    print(\"Coding complete? Click 'Check' to earn cool rewards!\")",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(a) > len(b):\n        a,b = b,a\n    if len(a) == 0:\n        return len(b)\n    if len(b) == 0:\n        return len(a)\n    if a[0] == b[0]:\n        return levenshtein(a[1:],b[1:])\n    else:\n        return 1 + min(levenshtein(a[1:],b[1:]),levenshtein(a,b[1:]),levenshtein(a[1:],b))\n\nprint(levenshtein(\"kitten\",\"sitting\"))",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(a) > len(b):\n        a,b = b,a\n    if len(a) == 0:\n        return len(b)\n    if len(b) == 0:\n        return len(a)\n    if a[0] == b[0]:\n        return levenshtein(a[1:],b[1:])\n    else:\n        return 1 + min(levenshtein(a[1:],b[1:]),levenshtein(a,b[1:]),levenshtein(a[1:],b))\n\nprint(levenshtein(\"kitten\",\"sitting\"))",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    # n = number of elements, k = sum of elements\n    # n = 2, k = 2\n    # n = 3, k = 3\n    # n = 4, k = 4\n    # n = 5, k = 5\n    # n = 6, k = 6\n    # n = 7, k = 7\n    # n = 8, k = 8\n    # n = 9, k = 9\n    # n = 10, k = 10\n    # n = 11, k = 11\n    # n = 12, k = 12\n    # n = 13, k = 13\n    # n = 14, k = 14\n    # n = 15, k = 15\n    # n = 16, k = 16\n    # n = 17, k = 17\n    # n = 18, k = 18\n    # n = 19, k = 19\n    # n = 20, k = 20\n    # n = 21, k = 21\n    # n = 22, k = 22\n    # n = 23, k = 23\n    # n = 24, k = 24\n    # n = 25, k = 25\n    # n = 26, k = 26\n    # n = 27, k = 27\n    # n = 28, k = 28\n    # n = 29, k = 29\n    # n = 30, k = 30\n    # n = 31, k = 31\n    # n = 32, k = 32\n    # n = 33, k = 33\n    # n = 34, k = 34\n    # n = 35, k = 35\n    # n = 36, k = 36\n    # n = 37, k = 37\n    # n = 38, k = 38\n    # n = 39, k = 39\n    # n = 40, k = 40\n    # n = 41, k = 41\n    # n = 42, k = 42\n    # n = 43, k = 43\n    # n = 44, k = 44\n    # n = 45, k = 45\n    # n = 46, k = 46\n    # n = 47, k = 47\n    # n = 48, k = 48\n    # n = 49, k = 49\n    # n = 50, k = 50\n    # n = 51, k = 51\n    # n = 52, k = 52\n    # n = 53, k = 53\n    # n = 54, k = 54\n    # n = 55, k = 55\n    # n = 56, k = 56\n    # n = 57, k = 57\n    # n = 58, k = 58\n    # n = 59, k = 59\n    # n = 60, k = 60\n    # n = 61, k = 61\n    # n = 62, k = 62\n    # n = 63, k = 63\n    # n = 64, k = 64\n    # n = 65, k = 65\n    # n = 66, k = 66\n    # n = 67, k = 67\n    # n = 68, k = 68\n    # n = 69, k = 69\n    # n = 70, k = 70\n    # n = 71, k = 71\n    # n = 72, k = 72\n    # n = 73, k = 73\n    # n = 74, k = 74\n    # n = 75, k = 75\n    # n = 76, k = 76\n    # n = 77, k = 77\n    # n = 78, k = 78\n    # n = 79, k = 79\n    # n = 80, k = 80\n    # n = 81, k = 81\n    # n = 82, k = 82\n    # n = 83, k = 83\n    # n = 84, k = 84\n    # n = 85, k = 85\n    # n = 86, k = 86\n    # n = 87, k = 87\n    # n = 88, k = 88\n    # n = 89, k = 89\n    # n = 90, k = 90\n    # n = 91, k = 91\n    # n = 92, k = 92\n    # n = 93, k = 93\n    # n = 94, k = 94\n    # n = 95, k = 95\n    # n = 96, k = 96\n    # n = 97, k = 97\n    # n = 98, k = 98\n    # n = 99, k = 99\n    # n = 100, k = 100\n    # n = 101",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    ",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return n*(n-1)/2",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return n*(n-1)/2",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
