@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCCTLSu3AuCZeJi0MfyA7ZpfWJSd",
+    "object": "text_completion",
+    "created": 1638573853,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a sequence of $n$ integers $a_1, a_2, \\ldots, a_n$. You have to construct two sequences of integers $b$ and $c$ with length $n$ that satisfy: \nfor every $i$ ($1\\leq i\\leq n$) $b_i+c_i=a_i$ \n$b$ is non-decreasing, which means that for every $1<i\\leq n$, $b_i\\geq b_{i-1}$ must hold \n$c$ is non-increasing, which means that for every $1<i\\leq n$, $c_i\\leq c_{i-1}$ must hold \nYou have to minimize $\\max(b_i,c_i)$. In other words, you have to minimize the maximum number in sequences $b$ and $c$. Also there will be $q$ changes, the $i$-th change is described by three integers $l,r,x$. You should add $x$ to $a_l,a_{l+1}, \\ldots, a_r$. \nYou have to find the minimum possible value of $\\max(b_i,c_i)$ for the initial sequence and for sequence after each change. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

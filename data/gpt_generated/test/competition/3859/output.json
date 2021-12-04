@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDcfCWfoq5lj7ye7kLsZdFLr6TPo",
+    "object": "text_completion",
+    "created": 1638579321,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " There are 2N balls, N white and N black, arranged in a row. The integers from 1 through N are written on the white balls, one on each ball, and they are also written on the black balls, one on each ball. The integer written on the i-th ball from the left (1   i   2N) is a_i, and the color of this ball is represented by a letter c_i. c_i = W represents the ball is white; c_i = B represents the ball is black. Takahashi the human wants to achieve the following objective:  - For every pair of integers (i,j) such that 1   i < j   N, the white ball with i written on it is to the left of the white ball with j written on it.  - For every pair of integers (i,j) such that 1   i < j   N, the black ball with i written on it is to the left of the black ball with j written on it. In order to achieve this, he can perform the following operation:  - Swap two adjacent balls. Find the minimum number of operations required to achieve the objective. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

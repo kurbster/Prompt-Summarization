@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE1ANZpYvhHyAuwtkPCYKsvyKC0q",
+    "object": "text_completion",
+    "created": 1638580840,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Bike is interested in permutations. A permutation of length n is an integer sequence such that each integer from 0 to (n - 1) appears exactly once in it. For example, [0, 2, 1] is a permutation of length 3 while both [0, 2, 2] and [1, 2, 3] is not. A permutation triple of permutations of length n (a, b, c) is called a Lucky Permutation Triple if and only if $\\forall i(1 \\leq i \\leq n), a_{i} + b_{i} \\equiv c_{i} \\operatorname{mod} n$. The sign a_{i} denotes the i-th element of permutation a. The modular equality described above denotes that the remainders after dividing a_{i} + b_{i} by n and dividing c_{i} by n are equal. Now, he has an integer n and wants to find a Lucky Permutation Triple. Could you please help him ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

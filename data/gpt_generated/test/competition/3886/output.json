@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDtYgdIzU373gRS2fDhG4W1m68wm",
+    "object": "text_completion",
+    "created": 1638580368,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given an array of strings, find the k-th character of each string.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

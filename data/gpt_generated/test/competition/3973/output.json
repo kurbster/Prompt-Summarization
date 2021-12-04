@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDnQuT5KjYlXYIirMB8dfYitioz4",
+    "object": "text_completion",
+    "created": 1638579988,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Snuke is buying a lamp. The light of the lamp can be adjusted to m levels of brightness, represented by integers from 1 through m, by the two buttons on the remote control. The first button is a \"forward\" button. When this button is pressed, the brightness level is increased by 1, except when the brightness level is m, in which case the brightness level becomes 1. The second button is a \"favorite\" button. When this button is pressed, the brightness level becomes the favorite brightness level x, which is set when the lamp is purchased. Snuke is thinking of setting the favorite brightness level x so that he can efficiently adjust the brightness. He is planning to change the brightness n-1 times. In the i-th change, the brightness level is changed from a_i to a_{i+1}. The initial brightness level is a_1. Find the number of times Snuke needs to press the buttons when x is set to minimize this number. \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

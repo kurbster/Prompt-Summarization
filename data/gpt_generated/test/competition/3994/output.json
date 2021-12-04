@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BC9pZPIHPRY9nqBGC2WIG690VIu4",
+    "object": "text_completion",
+    "created": 1638573689,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You know for each light whether it's initially on or off and its corresponding parameters $a_i$ and $b_i$. Koala is wondering what is the maximum number of lights that will ever be on at the same time. So you need to find that out. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDkD4xRzI8KEFRa2zPEQNn8D3ZZI",
+    "object": "text_completion",
+    "created": 1638579789,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a set of operations, find the number of ways to choose a string of length n to be able to get a one-letter string \"a\".",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

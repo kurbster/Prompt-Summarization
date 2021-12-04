@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDfiYAmUH5PoGOdzpJp3V5sJNgIY",
+    "object": "text_completion",
+    "created": 1638579510,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Fox Ciel studies number theory. She thinks a non-empty set S contains non-negative integers is perfect if and only if for any $a, b \\in S$ (a can be equal to b), $(a \\text{xor} b) \\in S$. Where operation xor means exclusive or operation (http://en.wikipedia.org/wiki/Exclusive_or). Please calculate the number of perfect sets consisting of integers not greater than k. The answer can be very large, so print it modulo 1000000007 (10^9 + 7). ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

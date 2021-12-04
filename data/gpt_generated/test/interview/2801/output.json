@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE4MBMsIsfQ6LLvJLTDQlg4XdunH",
+    "object": "text_completion",
+    "created": 1638581038,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Margriet A. is in pizza heaven! She has bought a one-day access pass to Pizza World. Pizza World is a food festival, where all stands have their own special type of pizza. Margriet would really like to try many different types of pizza, but she thinks that she can only eat two pizzas in total. Therefore, she has come up with a cunning plan: at each stall she visits she decides whether she wants to buy this pizza or not. At the first stall where she decides to make a purchase, she buys and eats exactly one pizza. At the second one, she buys and eats half a pizza, and at the third she eats one quarter of a pizza, etc. Therefore, at the $k^\\textrm {th}$ stall where she decides to buy some pizza, she eats $\\frac1{2^{k-1}}^\\textrm {th}$ part of a pizza. This way she makes sure that she never gets full! In order to ensure that the flow of people in the park is adequate, the pizza stalls are connected by one-way paths, and to make sure that everyone eventually leaves the festival, it is impossible to visit a pizza stall more than once. However, every stall is reachable from the stall at the entrance, which is the stall with number $0$. Of course, Margriet has her own taste: she likes some pizzas more than others. Eating pizza from a stall gives her a certain amount of satisfaction which is equal to Margriet s personal stall satisfaction number multiplied by the fraction of a whole pizza she eats there. Her total satisfaction is the sum of satisfactions of every stall she visits. Can you help Margriet plot",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

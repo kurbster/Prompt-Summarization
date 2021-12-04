@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDaAHg6q6IRDAdNKc2140MRLHxWj",
+    "object": "text_completion",
+    "created": 1638579166,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Mikhail the Freelancer dreams of two things: to become a cool programmer and to buy a flat in Moscow. To become a cool programmer, he needs at least p experience points, and a desired flat in Moscow costs q dollars. Mikhail is determined to follow his dreams and registered at a freelance site. He has suggestions to work on n distinct projects. Mikhail has already evaluated that the participation in the i-th project will increase his experience by a_{i} per day and bring b_{i} dollars per day. As freelance work implies flexible working hours, Mikhail is free to stop working on one project at any time and start working on another project. Doing so, he receives the respective share of experience and money. Mikhail is only trying to become a cool programmer, so he is able to work only on one project at any moment of time. Find the real value, equal to the minimum number of days Mikhail needs to make his dream come true. For example, suppose Mikhail is suggested to work on three projects and a_1 = 6, b_1 = 2, a_2 = 1, b_2 = 3, a_3 = 2, b_3 = 6. Also, p = 20 and q = 20. In order to achieve his aims Mikhail has to work for 2.5 days on both first and third projects. Indeed, a_1 2.5 + a_2 0 + a_3 2.5 = 6 2.5 + 1 0 + 2 2.5 = 20 and b_1 2.5 + b_2 0 + b_3 2.5 = 2 2.5 + 3 0 + 6 2.5 = 20. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

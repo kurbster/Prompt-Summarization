@@ -1,0 +1,28 @@
+Lucy is making her road bike ready for the season. All parts have been checked for wear and tear and washed clean and she is ready to put the beauty back together again. There is only one thing troubling her. During the winter she has been to several motivational talks by previous professional cyclists. They have all talked about the importance of correct cadence while cycling. The cadence is the frequency your feet are pedaling at when you are cycling. Lucy is now wondering if she should change her gears setup before she reassembles the bike and goes on her first ride for the year.
+
+Bike gears typically consist of a set of different-sized gears on the crank (the thing connected to the pedals) and a set of different-sized gears on the back wheel. These are connected by the chain to drive the bike forward. Can you help her figure out if she can keep her current setup and still change to all gears without it affecting her cadence too much? Specifically she does not want her cadence to be increased by more than $P$% when changing to the next lighter gear. We assume that the bicycle will continue at the same speed immediately after the gear change.
+
+-----Input-----
+The first line of the input consists of three integers $N$, $M$ and $P$ representing the number of gears on the crank, the numbers of gears on the back wheel, and the maximum cadence change in percentage Lucy will tolerate when changing gears.
+
+ Then follows a line with $N$ integers $C_ i$ each representing the number of teeth on each of the gears on the crank.
+
+ Then follows a line with $M$ integers $D_ j$ each representing the number of teeth on each of the gears on the back wheel.
+
+
+
+-----Output-----
+Output a single line with the text Ride on! if Lucy can change through all the gears from heaviest to lightest in her current setup and Time to change gears! if she cannot.
+
+-----Limits-----
+ - $1 \leq N, M \leq 100$
+ - $0 \leq P \leq 1000$
+ - $3 \leq C, D \leq 100000$
+
+-----Examples-----
+Sample Input:
+2 11 15
+50 34
+11 12 13 14 16 18 20 22 25 28 32
+Sample Output:
+Ride on!

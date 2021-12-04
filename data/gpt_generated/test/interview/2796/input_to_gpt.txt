@@ -1,0 +1,8 @@
+Given a complete binary tree, count the number of nodes. 
+tl;dr: Given a complete binary tree, count the number of nodes. 
+
+Given 2 strings, your job is to find out if there is a substring that appears in both strings. You will return true if you find a substring that appears in both strings, or false if you do not. We only care about substrings that are longer than one letter long. #
+tl;dr: Given 2 strings, if there is a substring that appears in both strings, return true. Otherwise, return false. We only count substrings that are > 1 in length. Lowercase and uppercase letters are the same. #
+
+A long time ago in a galaxy far, far away, there were $N$ planets. There were also $N - 1$ interplanetary paths that connected all the planets (directly or indirectly). In other words, the network of planets and paths formed a tree. Additionally, each path was enumerated with an integer that denoted the curiosity of the path. A pair of planets $A$, $B$ is boring if the following holds:  - $A$ and $B$ are different planets;  - travelling between planet $A$ and $B$ is possible using one or more interplanetary paths; and  - the binary XOR of the curiosity of all the paths in that travel is equal to 0 Alas, the times have changed and an evil emperor is ruling the galaxy. He decided to use the Force to destroy all the interplanetary paths in a certain order. Determine the number of boring pairs of planets before the emperor started the destruction and after each destruction. 
+tl;dr:

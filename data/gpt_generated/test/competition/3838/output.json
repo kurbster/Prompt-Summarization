@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDnrOjD9O3aZn4xjMP2VR20YvrbY",
+    "object": "text_completion",
+    "created": 1638580015,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a sequence a_1, a_2, ..., a_{n} consisting of different integers. It is required to split this sequence into the maximum number of subsequences such that after sorting integers in each of them in increasing order, the total sequence also will be sorted in increasing order. Sorting integers in a subsequence is a process such that the numbers included in a subsequence are ordered in increasing order, and the numbers which are not included in a subsequence don't change their places. Every element of the sequence must appear in exactly one subsequence. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

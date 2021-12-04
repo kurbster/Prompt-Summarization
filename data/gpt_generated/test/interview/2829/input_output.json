@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "ICPC\n",
+        "A\n",
+        "The quick brown dog jumps over the lazy fox.\n"
+    ],
+    "outputs": [
+        "17\n",
+        "1\n",
+        "335\n"
+    ]
+}

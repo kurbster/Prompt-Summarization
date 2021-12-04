@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE07EjOP0pKtKB61HOFXozW7YjR4",
+    "object": "text_completion",
+    "created": 1638580775,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given an incomplete Sudoku grid, output the solution grid. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

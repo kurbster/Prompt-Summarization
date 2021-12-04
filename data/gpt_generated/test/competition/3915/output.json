@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDPVnvHDWlY9IYuhjCUUhou1muhh",
+    "object": "text_completion",
+    "created": 1638578505,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " For a given value of the coefficient A find the maximum n, such that \u00a0(n)\u00a0 \u00a0A\u00a0 rub(n).",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

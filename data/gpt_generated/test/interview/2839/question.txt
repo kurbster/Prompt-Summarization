@@ -1,0 +1,49 @@
+VisuAlgo (http://visualgo.net) is a website developed by a team of staff and students of School of Computing, National University of Singapore, the host of the 2015 ACM-ICPC Asia Singapore Regional. VisuAlgo visualizes a number of popular data structures and algorithms in the Computer Science curriculum. Currently, it receives approximately 2000 hits/day from CS students and instructors worldwide.
+
+One new feature of VisuAlgo is the online quiz. As an example, the above figure shows a question about the classic Single-Source (Single-Destination) Shortest Paths problem in graph theory. The beauty of this online quiz feature is that the question parameters are randomized. The drawn graph G is taken from a collection of hundreds of directed weighted graphs (with their 2-D layouts) in VisuAlgo’s internal database. The graph G has $V$ vertices numbered from $[0..V-1]$. The source vertex $s$ and the destination vertex $t$ are selected at random from $[0..V-1]$.
+
+However, such randomization of the question parameters may produce either a trivial question (e.g. “No Answer” when $s$ and $t$ are disconnected, $0$ when $s = t$, simple tracing of a path if there is only a single unique path from $s$ to $t$ as shown in the above figure) or insanely difficult question to be computed manually if there are too many possible shortest paths from $s$ to $t$.
+
+The developers of VisuAlgo want to calibrate such Shortest Paths question with randomized parameters so that it is possible for a normal Computer Science student to answer the randomly generated question manually within a reasonable amount of time. Please help them.
+
+-----Input-----
+The first line of input contains two non-negative integers $1 \leq V \leq 10000$ and $0 \leq E \leq 200000$, giving the number of vertices and edges of the drawn graph G.
+
+Thereafter follow $E$ lines, each describing the directed weighted edges in G by three integers $0 \leq u, v \leq V-1$ and $1 \leq w \leq 99$ (VisuAlgo limits the edge weight to be at most 2 characters for visual aesthetic purpose), where $u$ and $v$ are the vertex numbers and $w$ is the weight of the directed edge $u \rightarrow v$. It is guaranteed that G is a simple graph without self-loops or multiple directed edges with the same direction between the same pair of vertices.
+
+Finally, there are two integers in the last line of input $0 \leq s, t \leq V-1$.
+
+-----Output-----
+Print a line with the number of different shortest paths between $s$ to $t$ in G. Two shortest paths $p_1$ and $p_2$ are considered different if there exists at least one edge in $p_1$ that is not found in $p_2$. It is guaranteed that the answer fits in a 32-bit signed integer data type.
+
+-----Examples-----
+Sample Input 1:
+6 10
+0 1 26
+1 3 29
+1 5 9
+2 3 25
+2 4 43
+4 2 3
+5 0 13
+5 2 33
+5 3 18
+5 4 58
+5 1
+Sample Output 1:
+1
+
+Sample Input 2:
+7 9
+0 1 1
+0 2 2
+1 2 1
+2 3 1
+2 4 3
+3 4 1
+4 5 1
+4 6 2
+5 6 1
+0 6
+Sample Output 2:
+4

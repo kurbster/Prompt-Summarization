@@ -1,0 +1,24 @@
+Alice and Bob are playing a game on a simple connected graph with $N$ nodes and $M$ edges.
+
+Alice colors each edge in the graph red or blue.
+
+A path is a sequence of edges where each pair of consecutive edges have a node in common. If the first edge in the pair is of a different color than the second edge, then that is a “color change.”
+
+After Alice colors the graph, Bob chooses a path that begins at node $1$ and ends at node $N$. He can choose any path on the graph, but he wants to minimize the number of color changes in the path. Alice wants to choose an edge coloring to maximize the number of color changes Bob must make. What is the maximum number of color changes she can force Bob to make, regardless of which path he chooses?
+
+-----Input-----
+The first line contains two integer values $N$ and $M$ with $2 \le N \le 100000$ and $1 \le M \le 100000$. The next $M$ lines contain two integers $a_ i$ and $b_ i$ indicating an undirected edge between nodes $a_ i$ and $b_ i$ ($1 \le a_ i, b_ i \le N$, $a_ i \not= b_ i$).
+
+All edges in the graph are unique.
+
+-----Output-----
+Output the maximum number of color changes Alice can force Bob to make on his route from node $1$ to node $N$.
+
+-----Examples-----
+Sample Input:
+3 3
+1 3
+1 2
+2 3
+Sample Output:
+0

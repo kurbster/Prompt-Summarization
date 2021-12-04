@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "2\nab\nbc\n2 1\n",
+        "3\nabc\nbcd\nadd\n1 2 3\n",
+        "3\nbbb\nccc\nddd\n2 3 1\n"
+    ],
+    "outputs": [
+        "DA\nbacdefghijklmnopqrstuvwxyz\n",
+        "NE\n",
+        "DA\nadbcefghijklmnopqrstuvwxyz\n"
+    ]
+}

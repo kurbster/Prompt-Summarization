@@ -1,0 +1,17 @@
+Michael works in a bakery. At the end of his shift, his boss wants the breads sorted in a certain order. She can’t seem to decide on which order, though – every day there seems to be a new one – to Michael’s despair. Michael has worked there for a while now and has learned a neat trick with his wooden bakery paddle. He can take three breads next to each other on his paddle and throw them up in the air such that when they land, the right-most has moved to the left-most position, and the two other breads have moved one place to the right. In other words, he can rotate to the right a subsequence of breads of length three.
+
+Before the end of the shift, his coworkers place the breads in a long line. Michael would like to sort the line of breads using his paddle trick. He can take any three consecutive breads along the line on his paddle, rotate them, and then put them back. Sometimes though, it does not matter how many times he uses his paddle – the line of bread just doesn’t seem to be possible to sort the way the boss wants…
+
+-----Input-----
+The first line of input contains a positive integer $N, (3 \leq N \leq 100000)$, denoting the number of breads. Then two lines follow: On the first line, a permutation of the integers $1$ through $N$ describing the order in which the breads are lined up. On the second line, a permutation of the integers $1$ through $N$ describing how Michael’s boss wants the breads sorted.
+
+-----Output-----
+Output “Possible” if Michael can sort the breads with his paddle in the order prescribed by his boss, otherwise “Impossible”.
+
+-----Examples-----
+Sample Input:
+4
+1 3 4 2
+4 3 2 1
+Sample Output:
+Possible

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDZETs56sNKgSkwwAXkYJGvX3jxo",
+    "object": "text_completion",
+    "created": 1638579108,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have to figure out if it is possible for either type of person to get between various locations of interest. People can move north, south, east or west, but cannot move diagonally.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

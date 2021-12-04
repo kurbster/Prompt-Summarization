@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "4\ncute\ncat\nkattis\nis\n3 2\n4 1\n3 4\n",
+        "3\nhowis\nthis\npracticalexam\n1 2\n1 3\n"
+    ],
+    "outputs": [
+        "kattiscatiscute\n",
+        "howisthispracticalexam\n"
+    ]
+}

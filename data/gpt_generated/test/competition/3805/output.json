@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE2gfX5GxuwiMqTkfFwHB53IiP98",
+    "object": "text_completion",
+    "created": 1638580934,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a device with two wires. The wires are plugged into the wall and the device in some order. The wires are considered entangled if there are one or more places where one wire runs above the other one. For example, the picture below has four such places (top view): [Image] You are also given the sequence in which the wires run above each other. You are not allowed to unplug the wires or move the device. Determine if it is possible to untangle the wires without unplugging them and without moving the device. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

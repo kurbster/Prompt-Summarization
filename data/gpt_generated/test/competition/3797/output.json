@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDmsjO0Z4C8aHluRr14DSbOyx4AQ",
+    "object": "text_completion",
+    "created": 1638579954,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a string of length N. The string contains only lowercase letters. You are also given a list of M conditions. Each condition is a triplet of integers (x_i, l_i, r_i). The triplet represents the number of lowercase letters in the string that are less than or equal to x_i, the number of lowercase letters in the string that are greater than or equal to l_i, and the number of lowercase letters in the string that are greater than or equal to r_i. Your goal is to find the number of ways to paint the string to satisfy all the conditions. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

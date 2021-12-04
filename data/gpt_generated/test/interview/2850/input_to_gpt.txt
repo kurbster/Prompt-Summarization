@@ -1,0 +1,8 @@
+Jzzhu has picked n apples from his big apple tree. All the apples are numbered from 1 to n. Now he wants to sell them to an apple store.  Jzzhu will pack his apples into groups and then sell them. Each group must contain two apples, and the greatest common divisor of numbers of the apples in each group must be greater than 1. Of course, each apple can be part of at most one group. Jzzhu wonders how to get the maximum possible number of groups. Can you help him  
+tl;dr: You have n apples numbered from 1 to n. You have to group them. Each group must contain two apples, and the greatest common divisor of numbers of the apples in each group must be greater than 1. Each apple can be part of at most one group. Get the maximum possible number of groups. 
+
+Write a program to obtain a number $(N)$ from the user and display whether the number is a one digit number, 2 digit number, 3 digit number or more than 3 digit number 
+tl;dr: Display whether the number $(N)$ obtained from user is a one digit number, 2 digit number, 3 digit number or more than 3 digit number 
+
+Brandon Greg Jr. is moving to the United States to double his salary. He has $n$ items that he needs to pack into $k$ big boxes. The $n$ items are currently arranged in a row, and Brandon doesn t want to bother reordering them, so he will partition the $n$ items into $k$ groups of consecutive items, and put each of the $k$ groups into their own box. For convenience when moving, Brandon wants to minimize the weight of the heaviest box. The weights of the boxes themselves are negligible. 
+tl;dr:

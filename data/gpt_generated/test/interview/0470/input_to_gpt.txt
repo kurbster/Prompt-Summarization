@@ -1,0 +1,11 @@
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum. 
+tl;dr: Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum. 
+
+Chef loves triangles. But the chef is poor at maths. Given three random lengths Chef wants to find if the three sides form a right-angled triangle or not. Can you help Chef in this endeavour  
+tl;dr: Given lengths $A,B and C$ return YES if they can form a right angled triangle, NO otherwise. 
+
+Little Petya likes points a lot. Recently his mom has presented him n points lying on the line OX. Now Petya is wondering in how many ways he can choose three distinct points so that the distance between the two farthest of them doesn't exceed d. Note that the order of the points inside the group of three chosen points doesn't matter. 
+tl;dr: Given a list of n points in one-dimensional space, find the number of ways to select 3 points such that the distance between any two is not greater than d. 
+
+A little bear Limak plays a game. He has five cards. There is one number written on each card. Each number is a positive integer. Limak can discard (throw out) some cards. His goal is to minimize the sum of numbers written on remaining (not discarded) cards. He is allowed to at most once discard two or three cards with the same number. Of course, he won't discard cards if it's impossible to choose two or three cards with the same number. Given five numbers written on cards, cay you find the minimum sum of numbers on remaining cards  
+tl;dr:

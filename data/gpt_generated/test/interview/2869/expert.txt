@@ -1,0 +1,2 @@
+ You are given a number written in roman numerals. Rearrange its characters so that you create the smallest possible number, written in roman numerals. 
+-----Input----- The first and only line of input contains one integer $B$ ($1 \leq B < 100 $), written using roman numerals. -----Output----- The first and only line of output should contain a rearrangement of input characters so that it represents the smallest possible number, written in roman numerals. -----Examples----- Sample Input 1: VII Sample Output 1: VII Sample Input 2: VI Sample Output 2: IV

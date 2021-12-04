@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCBU3XLaRtVVma3UFVAI6MkEkUhJ",
+    "object": "text_completion",
+    "created": 1638573792,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You're given a function $f$ of a single variable. After much thought Arnar has concluded that $f$ can be described by\\[ c\\int _ a^b \\left(t_1\\Gamma (x) + \\sqrt [t_2]{\\log (\\operatorname {erf}(t_3 x))} - J_ k(x)^{t_4}\\right)dx \\] where $\\log $ is the natural logarithm,\\[ \\Gamma (z) = \\int _0^{\\infty } x^{z - 1} e^{-x} dx, \\]\\[ \\operatorname {erf}(x) = \\frac{2}{\\sqrt {\\pi }} \\int _0^x e^{-t^2} dt, \\] and\\[ J_ k(x) = \\frac{1}{\\pi } \\int _0^{\\pi } \\cos (k \\tau - x \\sin \\tau ) d \\tau . \\] Arnar thinks that it maybe a bit tough for you to compute $f$ as previously described so he tells you it is enough to calculate the $r$-th degree Taylor polynomial around $0$, i.e.\\[ P(x) = \\sum _{i = 0}^r \\frac{f^{(i)}(0)}{i!}x^i. \\] Arnar is a afraid he was too aggressive when approximating $f$ with $P$ so he would like to modify $P$ a little bit further",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

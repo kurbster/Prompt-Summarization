@@ -1,0 +1,29 @@
+Arnar is playing his favourite video game Association of Myths. He’s playing a character by the name of Lumen. Lumen has a special ability where she can shoot a laser beam across the entire map killing all enemies it hits. The only drawback is that the beam is rather narrow and Arnar isn’t always sure where the enemies are located. He now needs your help to determine where the enemies are hiding so he can hit them (and hopefully win the game).
+
+Arnar is very serious about this game and is therefore willing to meticulously research how the opponents move. He knows they only travel in a straight path called the ’medial path’. We can therefore describe their location as a function $f$ of a single variable. After much thought Arnar has concluded that $f$ can be described by\[ c\int _ a^b \left(t_1\Gamma (x) + \sqrt [t_2]{\log (\operatorname {erf}(t_3 x))} - J_ k(x)^{t_4}\right)dx \]
+
+where $\log $ is the natural logarithm,\[ \Gamma (z) = \int _0^{\infty } x^{z - 1} e^{-x} dx, \]\[ \operatorname {erf}(x) = \frac{2}{\sqrt {\pi }} \int _0^x e^{-t^2} dt, \]
+
+and\[ J_ k(x) = \frac{1}{\pi } \int _0^{\pi } \cos (k \tau - x \sin \tau ) d \tau . \]
+
+Arnar thinks that it maybe a bit tough for you to compute $f$ as previously described so he tells you it is enough to calculate the $r$-th degree Taylor polynomial around $0$, i.e.\[ P(x) = \sum _{i = 0}^r \frac{f^{(i)}(0)}{i!}x^i. \]
+
+Arnar is a afraid he was too aggressive when approximating $f$ with $P$ so he would like to modify $P$ a little bit further. He knows that as the game progresses his opponent will have more in-game currency and will therefore buy better, more agile shoes. To account for this Arnar recursively defines a sequence of polynomials by\[ P_0(x) = P(x), \quad P_ n(x) = \sum _{i = 0}^{r + n} P_{n - 1}(i) x^i. \]
+
+Arnar finally notes that during the endgame phase the opponent will probably have to go to the bathroom and to account for that he wants reduce the size of the final polynomial in his sequence. He therefore takes $P_ s$ and differentiates it $\operatorname {deg}(P_ s) + 1$ times and calls the outcome $g$. Arnar is now satisfied that\[ \frac{(g(n) + l)^2}{\pi e} + \frac{1}{l + 1} \]
+
+gives the location of his opponent. Why does Arnar take the last step? Well, Arnar won’t tell you because he’s afraid you will be able to beat him in Association of Myths if he tells you all his secrets. He also requests that you give him the answer to at least two correct decimal places since his mouse can track changes as small as a hundredth of an in-game unit of length.
+
+-----Input-----
+The first line of the input starts with three real numbers $a, b, c$, $-10^9 \leq a \leq b \leq 10^9$ and $1 \leq c \leq 10^9$. These numbers will have at most 6 digits after the decimal point. The second line has four integers $t_1, t_2, t_3, t_4$, $1 \leq t_ i \leq 10^9$. The third line has five integers $n, k, r, s, l$, $1 \leq n, k, r, s, l \leq 10^3$.
+
+-----Output-----
+The output should consist of one line containing the location of Arnar’s opponent as described above.
+
+-----Examples-----
+Sample Input:
+-99.99 99.99 9999.99
+99 9 999 9999
+9 99 9 99 9
+Sample Output:
+9.585073

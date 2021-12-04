@@ -1,0 +1,22 @@
+Lea runs into a lot of words in her life. A lot of them she finds unpleasant. To compensate for that she started making up pleasant words. Lea makes up new words by writing a nice looking string of characters on a piece of paper. She than erases a few of the most nasty looking characters and replaces them with underscores ‘_’. After that she tries to replace the underscores with more acceptable characters trying to form a pleasant word.
+
+Lea considers words pleasant if they do not contain $3$ sequential vowels, $3$ sequential consonants and contain at least one letter ‘L’.
+
+In Croatian, the vowels are the letters A, E, I, O, and U only. All other lettters are consonants.
+
+-----Input-----
+The first and only line of input contains a string of characters, at most $100$. The string contains only of uppercase English letters and ‘_’ characters. There will be at most $10$ ‘_’ characters.
+
+-----Output-----
+The first and only line of output should cotain a single integer – the total number of pleasant words that can be formed by substituting underscores with uppercase letters of the English alphabet.
+
+-----Examples-----
+Sample Input 1:
+L_V
+Sample Output 1:
+5
+
+Sample Input 2:
+V__K
+Sample Output 2:
+10

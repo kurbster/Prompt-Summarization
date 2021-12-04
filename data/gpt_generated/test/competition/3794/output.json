@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDVEck3xbgdsNpM4gkfKMfXBwuwZ",
+    "object": "text_completion",
+    "created": 1638578860,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Split all integers into two groups so that the GCD of all integers in the first group is equal to one and the GCD of all integers in the second group is equal to one. Both groups have to be non-empty. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

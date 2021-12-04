@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE5jRq2SzHOfk8Jth7stGYTaDfu1",
+    "object": "text_completion",
+    "created": 1638581123,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a string, find the next lexicographically greater string of the same length or else state that such string does not exist. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

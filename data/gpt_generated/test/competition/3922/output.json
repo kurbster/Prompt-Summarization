@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDcrSFhHUSKG4bRBPWbS16ZcWIpJ",
+    "object": "text_completion",
+    "created": 1638579333,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are an intergalactic surgeon and you have an alien patient. For the purposes of this problem, we can and we will model this patient's body using a $2 \\times (2k + 1)$ rectangular grid. The alien has $4k + 1$ distinct organs, numbered $1$ to $4k + 1$. In healthy such aliens, the organs are arranged in a particular way. For example, here is how the organs of a healthy such alien would be positioned, when viewed from the top, for $k = 4$: [Image]  Here, the E represents empty space.  In general, the first row contains organs $1$ to $2k + 1$ (in that order from left to right), and the second row contains organs $2k + 2$ to $4k + 1$ (in that order from left to right) and then empty space right after.  Your patient's organs are complete, and inside their body, but they somehow got shuffled around! Your job, as an intergalactic surgeon, is to put everything back in its correct position. All organs of the alien must be in its body during the entire procedure. This means that at any point during the procedure, there is exactly one cell (in the grid) that is empty. In addition, you can only move organs around by doing one of the following things:  You can switch the positions of the empty space E with any organ to its immediate left or to its immediate right (if they exist). In reality, you do this by sliding the organ in question to the empty space;  You can switch the positions of the empty space E with any organ to its immediate",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

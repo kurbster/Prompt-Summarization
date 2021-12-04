@@ -1,0 +1,31 @@
+Little penguin Polo adores strings. But most of all he adores strings of length n.
+
+One day he wanted to find a string that meets the following conditions:  The string consists of n lowercase English letters (that is, the string's length equals n), exactly k of these letters are distinct.  No two neighbouring letters of a string coincide; that is, if we represent a string as s = s_1s_2... s_{n}, then the following inequality holds, s_{i} ≠ s_{i} + 1(1 ≤ i < n).  Among all strings that meet points 1 and 2, the required string is lexicographically smallest. 
+
+Help him find such string or state that such string doesn't exist.
+
+String x = x_1x_2... x_{p} is lexicographically less than string y = y_1y_2... y_{q}, if either p < q and x_1 = y_1, x_2 = y_2, ... , x_{p} = y_{p}, or there is such number r (r < p, r < q), that x_1 = y_1, x_2 = y_2, ... , x_{r} = y_{r} and x_{r} + 1 < y_{r} + 1. The characters of the strings are compared by their ASCII codes.
+
+
+-----Input-----
+
+A single line contains two positive integers n and k (1 ≤ n ≤ 10^6, 1 ≤ k ≤ 26) — the string's length and the number of distinct letters.
+
+
+-----Output-----
+
+In a single line print the required string. If there isn't such string, print "-1" (without the quotes).
+
+
+-----Examples-----
+Input
+7 4
+
+Output
+ababacd
+
+Input
+4 7
+
+Output
+-1

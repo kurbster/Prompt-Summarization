@@ -1,0 +1,59 @@
+Emuskald is an avid horticulturist and owns the world's longest greenhouse — it is effectively infinite in length.
+
+Over the years Emuskald has cultivated n plants in his greenhouse, of m different plant species numbered from 1 to m. His greenhouse is very narrow and can be viewed as an infinite line, with each plant occupying a single point on that line.
+
+Emuskald has discovered that each species thrives at a different temperature, so he wants to arrange m - 1 borders that would divide the greenhouse into m sections numbered from 1 to m from left to right with each section housing a single species. He is free to place the borders, but in the end all of the i-th species plants must reside in i-th section from the left.
+
+Of course, it is not always possible to place the borders in such way, so Emuskald needs to replant some of his plants. He can remove each plant from its position and place it anywhere in the greenhouse (at any real coordinate) with no plant already in it. Since replanting is a lot of stress for the plants, help Emuskald find the minimum number of plants he has to replant to be able to place the borders.
+
+
+-----Input-----
+
+The first line of input contains two space-separated integers n and m (1 ≤ n, m ≤ 5000, n ≥ m), the number of plants and the number of different species. Each of the following n lines contain two space-separated numbers: one integer number s_{i} (1 ≤ s_{i} ≤ m), and one real number x_{i} (0 ≤ x_{i} ≤ 10^9), the species and position of the i-th plant. Each x_{i} will contain no more than 6 digits after the decimal point.
+
+It is guaranteed that all x_{i} are different; there is at least one plant of each species; the plants are given in order "from left to the right", that is in the ascending order of their x_{i} coordinates (x_{i} < x_{i} + 1, 1 ≤ i < n).
+
+
+-----Output-----
+
+Output a single integer — the minimum number of plants to be replanted.
+
+
+-----Examples-----
+Input
+3 2
+2 1
+1 2.0
+1 3.100
+
+Output
+1
+
+Input
+3 3
+1 5.0
+2 5.5
+3 6.0
+
+Output
+0
+
+Input
+6 3
+1 14.284235
+2 17.921382
+1 20.328172
+3 20.842331
+1 25.790145
+1 27.204125
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first test case, Emuskald can replant the first plant to the right of the last plant, so the answer is 1.
+
+In the second test case, the species are already in the correct order, so no replanting is needed.

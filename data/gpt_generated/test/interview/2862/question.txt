@@ -1,0 +1,39 @@
+The hit new RPG mobile game Curveknights was recently released and Yraglac has been absolutely obsessed with it. Yraglac has been trying to farm materials for hours on end so he can promote his units but has suddenly realized that he has forgotten about an integral system that might speed this up: the crafting system!
+
+Some higher tier materials can be crafted by combining lower tier ones. Yraglac has a list of materials that he needs, but would also like to know how many lower tier materials he would need if he wanted to take advantage of the crafting recipes. As it turns out, some of those lower tier materials might also be craftable with even lower tier materials and so on. Yraglac would like to know the numbers for each of these.
+
+For example, suppose Yraglac needed $3$ Sugar Boxes. Crafting one of these requires $2$ Sugar Packs, $1$ Iron Chunk, and $1$ Magnesium Ore. You can also craft $1$ Iron Chunk using $3$ Iron Ores. Then Yraglac’s total list of materials would be $3$ Sugar Boxes, $6$ Sugar Packs, $3$ Iron Chunks, $3$ Magnesium Ore, and $9$ Iron Ores.
+
+Given how many of each material Yraglac wants, can you find out how many of each Yraglac would need to craft them?
+
+-----Inputs-----
+The first line contains two space separated $2 \leq N \leq 50$, the number of materials and $N-1 \leq M \leq \frac{N(N-1)}{2}$, the number of crafting dependencies.
+
+The second line contains $N$ space seperated integers describing the amount of each material Yraglac wants. The $a_ i$-th integer specifies the amount of the $i$-th material Yraglac wants where $0 \leq a_ i \leq 3$.
+
+Each of the following $M$ lines contains three space seperated integers: $0 \leq u, v < N$, and $1 \leq w \leq 3$ indicating there is a recipe that takes $w$ quantities of material $u$ to produce one material $v$. It is guaranteed that each $u, v$ pair will be unique, and that there will never be any cycles in the crafting recipes.
+
+-----Outputs-----
+On a single line output the amount of materials Yraglac needs.
+
+-----Examples-----
+Sample Input 1:
+5 4
+0 0 0 0 3
+0 1 3
+1 4 1
+2 4 1
+3 4 2
+Sample Output 1:
+9 3 3 6 3
+
+Sample Input 2:
+6 5
+0 0 0 0 0 3
+0 3 3
+1 4 3
+2 5 1
+3 5 1
+4 5 1
+Sample Output 2:
+9 9 3 3 3 3

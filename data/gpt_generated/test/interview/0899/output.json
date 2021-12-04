@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCDg8ZdFPurQRorPyqtQIqbpNI6E",
+    "object": "text_completion",
+    "created": 1638573928,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given an undirected connected weighted graph with N vertices and M edges that contains neither self-loops nor double edges. The i-th (1 i M) edge connects vertex a_i and vertex b_i with a distance of c_i. Here, a self-loop is an edge where a_i = b_i (1 i M), and double edges are two edges where (a_i,b_i)=(a_j,b_j) or (a_i,b_i)=(b_j,a_j) (1 i<j M). A connected graph is a graph where there is a path between every pair of different vertices. Find the number of the edges that are not contained in any shortest path between any pair of different vertices. \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

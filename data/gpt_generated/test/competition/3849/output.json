@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDnNYx0aSjo5COWFz820KFrczDaG",
+    "object": "text_completion",
+    "created": 1638579985,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given an array of numbers, return the difference between the largest and smallest values. The array will contain a minimum of two elements. Input data range guarantees that `max-min` will cause no integer overflow. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

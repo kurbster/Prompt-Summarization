@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDjE3yrWcA4c2QBIIkPG8kUpM5yv",
+    "object": "text_completion",
+    "created": 1638579728,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Pavel drew a grid maze with all empty cells forming a connected area. That is, you can go from any empty cell to any other one. Pavel doesn't like it when his maze has too little walls. He wants to turn exactly k empty cells into walls so that all the remaining cells still formed a connected area. Help him. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

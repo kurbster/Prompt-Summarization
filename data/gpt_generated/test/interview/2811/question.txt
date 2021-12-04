@@ -1,0 +1,42 @@
+You are given a rooted tree with $n$ nodes. The nodes are numbered $1..n$. The root is node $1$, and $m$ of the nodes are colored red, the rest are black.
+
+You would like to choose a subset of nodes such that there is no node in your subset which is an ancestor of any other node in your subset. For example, if A is the parent of B and B is the parent of C, then you could have at most one of A, B or C in your subset. In addition, you would like exactly $k$ of your chosen nodes to be red.
+
+If exactly $m$ of the nodes are red, then for all $k=0..m$, figure out how many ways you can choose subsets with $k$ red nodes, and no node is an ancestor of any other node.
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. Each test case will begin with a line with two integers $n$ ($1 \le n \le 2 \times 10^5$) and $m$ ($0 \le m \le min(10^3,\ n)$), where $n$ is the number of nodes in the tree, and $m$ is the number of nodes which are red. The nodes are numbered $1..n$.
+
+Each of the next $n-1$ lines will contain a single integer $p$ ($1 \le p \le n$), which is the number of the parent of this node. The nodes are listed in order, starting with node $2$, then node $3$, and so on. Node $1$ is skipped, since it is the root. It is guaranteed that the nodes form a single tree, with a single root at node $1$ and no cycles.
+
+Each of the next $m$ lines will contain single integer $r$ ($1 \le r \le n$). These are the numbers of the red nodes. No value of $r$ will be repeated.
+
+-----Output-----
+Output $m+1$ lines, corresponding to the number of subsets satisfying the given criteria with a number of red nodes equal to $k=0..m$, in that order. Output this number modulo $10^9+7$.
+
+-----Examples-----
+Sample Input 1:
+4 1
+1
+1
+1
+3
+Sample Output 1:
+5
+4
+
+Sample Input 2:
+4 4
+1
+1
+1
+1
+2
+3
+4
+Sample Output 2:
+1
+4
+3
+1
+0

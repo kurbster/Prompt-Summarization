@@ -1,0 +1,49 @@
+The last stage of Football World Cup is played using the play-off system.
+
+There are n teams left in this stage, they are enumerated from 1 to n. Several rounds are held, in each round the remaining teams are sorted in the order of their ids, then the first in this order plays with the second, the third — with the fourth, the fifth — with the sixth, and so on. It is guaranteed that in each round there is even number of teams. The winner of each game advances to the next round, the loser is eliminated from the tournament, there are no draws. In the last round there is the only game with two remaining teams: the round is called the Final, the winner is called the champion, and the tournament is over.
+
+Arkady wants his two favorite teams to play in the Final. Unfortunately, the team ids are already determined, and it may happen that it is impossible for teams to meet in the Final, because they are to meet in some earlier stage, if they are strong enough. Determine, in which round the teams with ids a and b can meet.
+
+
+-----Input-----
+
+The only line contains three integers n, a and b (2 ≤ n ≤ 256, 1 ≤ a, b ≤ n) — the total number of teams, and the ids of the teams that Arkady is interested in. 
+
+It is guaranteed that n is such that in each round an even number of team advance, and that a and b are not equal.
+
+
+-----Output-----
+
+In the only line print "Final!" (without quotes), if teams a and b can meet in the Final.
+
+Otherwise, print a single integer — the number of the round in which teams a and b can meet. The round are enumerated from 1.
+
+
+-----Examples-----
+Input
+4 1 2
+
+Output
+1
+
+Input
+8 2 6
+
+Output
+Final!
+
+Input
+8 7 5
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first example teams 1 and 2 meet in the first round.
+
+In the second example teams 2 and 6 can only meet in the third round, which is the Final, if they win all their opponents in earlier rounds.
+
+In the third example the teams with ids 7 and 5 can meet in the second round, if they win their opponents in the first round.

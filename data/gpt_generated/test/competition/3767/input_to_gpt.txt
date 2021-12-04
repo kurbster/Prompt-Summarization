@@ -1,0 +1,8 @@
+Complete the function that determines the score of a hand in the card game [Blackjack](https://en.wikipedia.org/wiki/Blackjack) (aka 21). The function receives an array of strings that represent each card in the hand (`"2"`, `"3",` ..., `"10"`, `"J"`, `"Q"`, `"K"` or `"A"`) and should return the score of the hand (integer). ~~~if:c 
+tl;dr: Complete the function that determines the score of a hand in the card game Blackjack and return the highest score of the cards that is less than or equal to 21. If there is no score less than or equal to 21 return the smallest score more than 21. Number cards count as their face value. Jack, Queen and King count as 10. An Ace can be counted as either 1 or 11. 
+
+# Definition  A number is a **_Special Number_** *if it s digits only consist 0, 1, 2, 3, 4 or 5* **_Given_** a number *determine if it special number or not* .   # Warm-up (Highly recommended) # [Playing With Numbers Series](https://www.codewars.com/collections/playing-with-numbers) ___ 
+tl;dr: # Task A number is a special number if its digits only consist 0, 1, 2, 3, 4 or 5. Given a positive number determine if it is a special number or not.  # 
+
+Nick has n bottles of soda left after his birthday. Each bottle is described by two values: remaining amount of soda a_{i} and bottle volume b_{i} (a_{i}   b_{i}). Nick has decided to pour all remaining soda into minimal number of bottles, moreover he has to do it as soon as possible. Nick spends x seconds to pour x units of soda from one bottle to another. Nick asks you to help him to determine k   the minimal number of bottles to store all remaining soda and t   the minimal time to pour soda into k bottles. A bottle can't store more soda than its volume. All remaining soda should be saved. 
+tl;dr:

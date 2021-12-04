@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDwRUzRR6ai14ZE77d1alTbyaYLf",
+    "object": "text_completion",
+    "created": 1638580547,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Consider a table of size $n \\times m$, initially fully white. Rows are numbered $1$ through $n$ from top to bottom, columns $1$ through $m$ from left to right. Some square inside the table with odd side length was painted black. Find the center of this square. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

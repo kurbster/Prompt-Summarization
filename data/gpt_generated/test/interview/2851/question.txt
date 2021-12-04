@@ -1,0 +1,32 @@
+Mirko has received a homework assignment to compute the greatest common divisor of the two positive integers $A$ and $B$. Since the numbers are quite large, the teacher provided him with $N$ smaller integers whose product is $A$, and $M$ integers with product $B$.
+
+Mirko would like to verify his result, so he has asked you to write a program to solve his problem. If the result is more than $9$ digits long, output only the last $9$ digits.
+
+-----Input-----
+The first line of input contains the positive integer $N$ ($1 \le N \le 1000$).
+
+The second line of input contains $N$ space-separated positive integers less than $1000000000$, whose product is the number $A$.
+
+The third line of input contains the positive integer $M$ ($1 \le M \le 1000$).
+
+The fourth line of input contains $M$ space-separated positive integers less than $1000000000$, whose product is the number $B$.
+
+-----Output-----
+The first and only line of output must contain the greatest common divisor of numbers $A$ and $B$. If the result is more than $9$ digits long, output only the last (least significant) $9$ digits.
+
+-----Examples-----
+Sample Input 1:
+3
+2 3 5
+2
+4 5
+Sample Output 1:
+10
+
+Sample Input 2:
+4
+6 2 3 4
+1
+1
+Sample Output 2:
+1

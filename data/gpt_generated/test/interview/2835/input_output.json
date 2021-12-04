@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "abcdefghijklmnopqrstuvwxyz\na\n",
+        "abcdefghijklmnopqrstuvwxyz\nm\n",
+        "penpineappleapplepen\nppap\n"
+    ],
+    "outputs": [
+        "26\n",
+        "182\n",
+        "68\n"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDTUYVyXXDQoCF2ZG4eHWrGiLGws",
+    "object": "text_completion",
+    "created": 1638578752,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a list of coins, find the smallest slot size that can hold all of them. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

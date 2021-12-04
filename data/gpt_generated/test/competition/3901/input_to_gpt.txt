@@ -1,0 +1,8 @@
+# Task  You have some people who are betting money, and they all start with the same amount of money (this number>0).   Find out if the given end-state of amounts is possible after the betting is over and money is redistributed. # Input/Output  - `[input]` integer array arr   the proposed end-state showing final amounts for each player  - `[output]` a boolean value   `true` if this is a possible end-state and `false` otherwise    # 
+tl;dr: # Task  Some people start with the same positive amount of money  and the money will be redistributed.   Find out if the given end-state of amounts is possible. # Input/Output  - `[input]` integer array arr   the proposed end-state showing final amounts for each player  - `[output]` a boolean value   `true` if this is a possible end-state and `false` otherwise    # 
+
+Chef recently learned about ratios and proportions. He wrote some positive integers a, b, c, d on a paper. Chef wants to know whether he can shuffle these numbers so as to make some proportion  Formally, four numbers x, y, z, w are said to make a proportion if ratio of x : y is same as that of z : w. 
+tl;dr: You have to shuffle digits of the given proportion(x : y :: z : w) in order to check that is it possible to make new proportion or not. 
+
+You have an array a with length n, you can perform operations. Each operation is like this: choose two adjacent elements from a, say x and y, and replace one of them with gcd(x, y), where gcd denotes the greatest common divisor. What is the minimum number of operations you need to make all of the elements equal to 1  
+tl;dr:

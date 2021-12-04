@@ -1,0 +1,8 @@
+Little X has n distinct integers: p_1, p_2, ..., p_{n}. He wants to divide all of them into two sets A and B. The following two conditions must be satisfied:  If number x belongs to set A, then number a - x must also belong to set A.  If number x belongs to set B, then number b - x must also belong to set B.  Help Little X divide the numbers into two sets or determine that it's impossible. 
+tl;dr: You have n distinct integers: p_1, p_2, ..., p_{n}. You want to divide all of them into two sets A and B. The following two conditions must be satisfied:  If number x belongs to set A, then number a - x must also belong to set A.  If number x belongs to set B, then number b - x must also belong to set B.  Divide the numbers into two sets or determine that it's impossible. 
+
+Chef has a number N, Cheffina challenges the chef to check the divisibility of all the permutation of N by 3. If any of the permutations is divisible by 3 then print 1 else print 0. 
+tl;dr: Check whether the given number N is divisible by 3 or not. If yes then print 1 else print 0. 
+
+You are given an array of positive integers a_1, a_2, ..., a_{n}   T of length n   T. We know that for any i > n it is true that a_{i} = a_{i} - n. Find the length of the longest non-decreasing sequence of the given array. 
+tl;dr:

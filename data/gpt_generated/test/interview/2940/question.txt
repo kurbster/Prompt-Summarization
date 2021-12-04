@@ -1,0 +1,34 @@
+You are the boss of ACM (Association for Control over Minds), an upstanding company with a single goal of world domination.
+
+Yesterday, you woke up, and saw that the weather was clear, and the birds were singing. “Another day, another world domination plan”, you sang to yourself as you devised your next world domination plan involving the illusory mind control potions.
+
+There’s only one insignificant problem you have to solve before you can execute this perfection of a plan: you don’t know the correct recipe for the mind control potion. You asked the local Panda-breed brewmaster for the recipe, but unfortunately he didn’t know either. Instead, he gave you the mysterious tome titled The Root of all Evil (written by Halim the White). You read the evil book under candle light, and wrote down all the potion recipes contained inside the book. “One of them must be the formula for the mind control potion, I’m sure of it!”, you said to yourself. You numbered these recipes from $1$ through $N$. “I just need to try concocting all of these recipes!”, you hummed to yourself.
+
+Today, you woke up, and saw that the weather was clear, and…, anyway. You have purchased all the utensils and ingredients from the local grocery — onion, carrot, broom, vials, cauldrons, bat wings, …, all common grocery items. Now, you are ready to begin your experiments, but then you notice that some of the recipes share common ingredients! Unfortunately, you only bought one of each ingredient with you. “Oh no! What should I do now?!”, you panicked.
+
+“I’ll just create some of the potions today, and do the remaining ones later.”, you resolved. You consider all your recipes one by one in order by their number from recipe $1$ through recipe $N$. For each recipe, if you are not able to concoct this potion (explained in the next paragraph), you skip this recipe, and consider the next one, if any. Otherwise, even though it may cause some of the next potions to no longer be concoctable, you concoct this recipe. Thus, whether to concoct a potion is not a choice. It’s simply determined by whether it is possible or not to do so when you consider the potion.
+
+In order to concoct a potion, you first prepare a new empty cauldron (you managed to procure an infinite number of cauldrons from the grocery store). Then, you combine all of the ingredients required for this potion and nothing else in this cauldron (that is, the cauldron cannot contain any ingredients not listed in the recipe). For the ingredients that have not been used for any of the previous potions that you’ve decided to concoct, you can simply put it into this cauldron. You can also pour the entire content of the cauldron used for one of your previous concoctions into this cauldron, thus mixing in all of the ingredients contained inside the cauldron (since you pour all of the content of the cauldron, this previous concoction can no longer be used for any of your next concoctions). Finally, you stir this cauldron with your broom and take a vial of the concoction to test on your minions later. The remaining concoction remains in this cauldron, and can be poured into another cauldron later.
+
+“What is the number of recipes you will concoct this way today?”, you asked yourself.
+
+-----Input-----
+The first line contains a non-negative integer $2 \leq N \leq 200000$, giving the total number of recipes you have. Thereafter follow $N$ lines, the $i$-th line describes recipe number $i$. Each of these lines is a single space separated list of integers. Each of these lines begins with an integer $1 \leq M$, denoting the number of ingredients required to make this recipe. Then, $M$ integers follow, describing the required ingredients. The ingredients are identified by integers between $0$ and $500000$, inclusively, with different integers denoting different ingredients. For each recipe, all of its ingredients will be distinct. The sum of $M$ over all recipes will be no greater than $500000$.
+
+-----Output-----
+Print the number of recipes you will concoct.Sample Data Explanation
+
+In the first example, the first potion can be concocted, since both ingredients were not used so far. Thus, you will concoct this potion. The second potion will also be concocted for the same reason. The third potion cannot be concocted, since ingredient $1$ is no longer present, and is inside a cauldron mixed with another ingredient not present in the recipe. The fourth potion can be concocted by pouring the content of the cauldrons used for the first and second concoctions, and then adding ingredient $5$, which has remained unused so far. The last potion cannot be concocted, since the content of the cauldron for the first potion has all been poured when making the fourth potion and thus is now mixed with other ingredients not present in the recipe.
+
+For the second example, since the first potion can be concocted, it has to be concocted. Thus, the second and third potions can no longer be concocted.
+
+-----Examples-----
+Sample Input:
+5
+2 1 2
+2 3 4
+2 1 5
+5 1 2 3 4 5
+2 1 2
+Sample Output:
+3

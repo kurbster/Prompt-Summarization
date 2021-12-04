@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BC9O1JvIQt79s2aJi7M8zALTttrD",
+    "object": "text_completion",
+    "created": 1638573662,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a book consisting of $n$ pages, numbered from $1$ to $n$, the screen is currently displaying the contents of page $x$, and Vasya wants to read the page $y$. There are two buttons on the book which allow Vasya to scroll $d$ pages forwards or backwards (but he cannot scroll outside the book). For example, if the book consists of $10$ pages, and $d = 3$, then from the first page Vasya can scroll to the first or to the fourth page by pressing one of the buttons; from the second page to the first or to the fifth; from the sixth page to the third or to the ninth; from the eighth to the fifth or to the tenth. Help Vasya to calculate the minimum number of times he needs to press a button to move to page $y$.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

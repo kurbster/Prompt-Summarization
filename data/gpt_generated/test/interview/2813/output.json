@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDMCRloU1QqTkUyan0WX4F2ctNtP",
+    "object": "text_completion",
+    "created": 1638578300,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have a set of syllables. A haiku is a Japanese form of poetry. It consists of three phrases of $5$, $7$ and $5$ syllables each. You need to determine whether a submitted poem is a haiku, given a set of syllables. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

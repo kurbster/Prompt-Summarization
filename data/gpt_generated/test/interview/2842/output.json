@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDXXtGLxhzeAJOYOHehDCTOl0VmT",
+    "object": "text_completion",
+    "created": 1638579003,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a grid size and number of ships, how many ship placements are possible?",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

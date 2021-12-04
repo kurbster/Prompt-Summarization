@@ -1,0 +1,36 @@
+At some point or another, most computer science students have written a standard Sudoku solving program. This is yet another “put numbers in a grid” puzzle.
+
+Numbers are placed in the grid so that each outlined region contains the numbers $1$ to $n$, where $n$ is the number of squares in the region. The same number can never touch itself, not even diagonally.
+
+
+
+Incomplete Grid
+
+Solution Grid
+
+For this problem, you will write a program that takes as input an incomplete puzzle grid and outputs the puzzle solution grid.
+
+-----Input-----
+The input consists of a single data set. This data set starts with a line containing the number of rows in the input grid $R$, ($1 \le R \le 7$), and the number of columns in the input grid $C$, ($1 \le C \le 7$), separated by spaces. The next $R$ lines contain a representation of the incomplete input grid, one row per line. Each row has $C$ characters, representing the digits in each cell. The value in each cell is represented by either the digit already in that cell or a ‘-’ for an initially empty cell.
+
+This grid is followed by a description of the separate regions in the grid. The first of these lines specifies the total number of regions. This is followed by one line for each region that specifies the cells contained in that region. Each region description consists of a decimal number $N$, specifying the number of cells in the region, followed by $N$ cell descriptions separated by spaces. Each cell description consists of a left parenthesis, followed the cell’s row index, followed by a comma, followed by the cell’s row number, followed by a right parenthesis. Regions do not overlap.
+
+-----Output-----
+Output $R$ lines containing $C$ digits (separated by single spaces) showing the solution grid for the corresponding input data set. You are guaranteed that there is a unique solution.
+
+-----Examples-----
+Sample Input:
+3 5
+- - - - -
+- - - - -
+4 - - - 1
+5
+1 (1,1)
+2 (1,2) (1,3)
+5 (2,1) (2,2) (3,1) (3,2) (3,3)
+4 (2,3) (2,4) (1,4) (1,5)
+3 (3,4) (3,5) (2,5)
+Sample Output:
+1 2 1 2 1
+3 5 3 4 3
+4 2 1 2 1

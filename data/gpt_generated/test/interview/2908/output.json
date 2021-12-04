@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlll0oM0OAnv3gLKrbFshV5ncM7",
+    "object": "text_completion",
+    "created": 1638579885,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set of cards with multi-digit numbers on them. You need to select two cards that add up to a given sum.                                                                                                                                                                                                                                                                           l",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

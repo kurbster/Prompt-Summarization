@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDtCVXyi4EVgNQGslQjnDdaYPnfy",
+    "object": "text_completion",
+    "created": 1638580346,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Takahashi and Aoki are playing a stone-taking game. Initially, there are N piles of stones, and the i-th pile contains A_i stones and has an associated integer K_i. Starting from Takahashi, Takahashi and Aoki take alternate turns to perform the following operation:  - Choose a pile. If the i-th pile is selected and there are X stones left in the pile, remove some number of stones between 1 and floor(X/K_i) (inclusive) from the pile. The player who first becomes unable to perform the operation loses the game. Assuming that both players play optimally, determine the winner of the game. Here, floor(x) represents the largest integer not greater than x. -----Constraints-----  - 1 \\leq N \\leq 200  - 1 \\leq A_i,K_i \\leq 10^9  - All input values are integers.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

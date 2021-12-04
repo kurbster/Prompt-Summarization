@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE3KwVhQbxDQsg8DT2KhcOZLK7t8",
+    "object": "text_completion",
+    "created": 1638580974,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Restore the array $a_1, \\dots, a_n$ from the information that is given. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

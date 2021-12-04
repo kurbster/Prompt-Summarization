@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDtpSA5ie1n0mZiLwvb9HGvk7tNJ",
+    "object": "text_completion",
+    "created": 1638580385,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set of n distinct positive integers. Your task is to find the size of it's largest k-multiple free subset.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

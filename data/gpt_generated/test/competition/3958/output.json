@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDNbyulhrLCPMg1QHUa2YVHQDFqP",
+    "object": "text_completion",
+    "created": 1638578387,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Oleg writes down the history of the days he lived. For each day he decides if it was good or bad. Oleg calls a non-empty sequence of days a zebra, if it starts with a bad day, ends with a bad day, and good and bad days are alternating in it. Let us denote bad days as 0 and good days as 1. Then, for example, sequences of days 0, 010, 01010 are zebras, while sequences 1, 0110, 0101 are not. Oleg tells you the story of days he lived in chronological order in form of string consisting of 0 and 1. Now you are interested if it is possible to divide Oleg's life history into several subsequences, each of which is a zebra, and the way it can be done. Each day must belong to exactly one of the subsequences. For each of the subsequences, days forming it must be ordered chronologically. Note that subsequence does not have to be a group of consecutive days. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDv8y0tA7G0iE2kqivNZoGJovQOk",
+    "object": "text_completion",
+    "created": 1638580466,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Print the number of ways to divide the vertices into pairs satisfying the given condition.  ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

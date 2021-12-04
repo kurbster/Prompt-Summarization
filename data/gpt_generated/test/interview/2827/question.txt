@@ -1,0 +1,39 @@
+You are part of an elite hacking group who has just invented a new type of malware, called the hoppers. Hoppers can operate in any high-security computer networks; however, they can only propagate themselves in a very limited way.
+
+A computer network is a set of hosts $V$ ($|V| = N$) and direct links $E$ ($|E| = M$). Each direct link connects two different hosts, allowing them to communicate in both directions. If a host $u$ is infected with a hopper, then it will propagate itself to all hosts $W$ where $W$ is the set of hosts which are connected to any neighbor of $u$. Formally, $W = \{ w \mid \{ (u,v),(v,w)\} \subseteq E \} $. The newly-infected host $w$ can now proceed to infect other hosts in the same manner.
+
+You are trying to infect all hosts in a particular high-security network by compromising a single host. Of course, a compromised host will be infected with a hopper. Though it may be an impossible mission, you realize that you can trick the administrator into installing new direct links between hosts by submitting IT requests.
+
+Too many requests may arouse suspicion. Find the minimum number of IT requests you have to submit to ensure that there exists a single host such that if it is infected with a hopper, then it will propagate to the entire network.
+
+-----Input-----
+The first line contains two integers $N$ and $M$, where $3 \le N \le 5 \cdot 10^5$ and $2 \le M \le 5 \cdot 10^5$. The next $M$ lines contain two integers $u$ and $v$ ($1 \le u, v \le N$), representing a direct link between hosts $u$ and $v$. There is at most one direct link between any pair of hosts, and no host is directly linked to itself.
+
+-----Output-----
+The output contains an integer in a line representing the minimum number of IT requests you must send.
+
+-----Explanation-----
+In the first example, there are $N = 3$ hosts and $M = 2$ direct links $\{ (1,2),(2,3)\} $. In this network, there is no way to spread the hopper to all hosts by compromising only a single host, e.g., if we compromise host $1$, then only hosts $1$ and $3$ are infected, etc. We need to submit one IT request to connect $(1,3)$ to achieve our goal. By doing so, if we compromise host $1$, all hosts $1$, $2$, and $3$ are infected. $1 \rightarrow 3 \rightarrow 2$ (thus, host $2$ is infected). $1 \rightarrow 2 \rightarrow 3$ (thus, host $3$ is infected).
+
+-----Examples-----
+Sample Input 1:
+3 2
+1 2
+2 3
+Sample Output 1:
+1
+
+Sample Input 2:
+5 10
+1 2
+2 3
+3 4
+4 5
+5 1
+1 3
+2 4
+3 5
+4 1
+5 2
+Sample Output 2:
+0

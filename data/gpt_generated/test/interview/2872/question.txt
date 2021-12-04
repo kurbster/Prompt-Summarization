@@ -1,0 +1,28 @@
+Friday is the highlight of Børge and Åse’s life. They can meet up with their buddies in the ITU Friday bar and discuss anything they want: the weather, sports, favourite editors, politics, religion, and gossip about celebrities. Life can be good.
+
+Unfortunately, they don’t know which day of the week it is! They’ve woken up in a strange apartment, phones missing, and with little memory of the recent past. Which day is it? Which year is it even?
+
+After some searching, they establish today’s date, because the calendar on the wall displays it. Also, Åse has found the remains of an old newspaper from 1 January in her handbag, which has that weekday printed on the front page.
+
+Help Børge and Åse figure out if today is Friday.
+
+-----Input-----
+On the first line, today’s date. The date consists of two parts, separated by space. The first part is in an integer (the day of the month) $d$, with $1\leq d\leq 31$. The second part is the name of the month, abbreviated as JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, or DEC.
+
+On the second line, the name of the day on 1 January of the current year, abbreviated as MON, TUE, WED, THU, FRI, SAT, SUN.
+
+-----Output-----
+Output a single line: The four letters TGIF, abbreviating “Thank God it’s Friday” if today is certainly Friday. The two words not sure if today might be Friday, depending on if this year has a 29th of February. The emoticon :( if today is certainly not Friday.
+
+-----Examples-----
+Sample Input 1:
+10 OCT
+MON
+Sample Output 1:
+:(
+
+Sample Input 2:
+2 JAN
+THU
+Sample Output 2:
+TGIF

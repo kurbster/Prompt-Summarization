@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDYLy4o4jj2Z0KmERJCdKQNLmWSY",
+    "object": "text_completion",
+    "created": 1638579053,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " The train has $n$ cars ordered sequentially starting from the locomotive. The $i$-th car has $p_ i$ passengers. There are $m$ food carts Peter may put into service. Each food cart serves a unique type of food. The $j$-th food cart can move between the $l_ j$-th car and the $r_ j$-th car (both inclusive) and serve the passengers in these cars. The passengers on the train are not only hungry, but also adventurous: as long as a food cart is in service, they would love to try it! A passenger will be happy if he/she sits in a car that is served by all the food carts that are in service. Peter would like to design service plans that run one or more of the $m$ food carts so that at least $k$ of the passengers on the train are happy. Peter wants to count the number of different service plans he may choose from (modulo $10^9 + 7$). Two service plans are different if one food cart is put into service in one plan but not in the other plan.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

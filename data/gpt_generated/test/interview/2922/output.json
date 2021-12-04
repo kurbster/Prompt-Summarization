@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE0OHYhLagNT0IQNiKlVI1i2PffP",
+    "object": "text_completion",
+    "created": 1638580792,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a list of boxes of chocolate, return YES if it is possible to split the boxes between John and Sam such that both get the same number of pieces of chocolate, and such that all boxes of chocolate are used.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

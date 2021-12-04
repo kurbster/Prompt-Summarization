@@ -1,0 +1,41 @@
+You are given three sticks with positive integer lengths of a, b, and c centimeters. You can increase length of some of them by some positive integer number of centimeters (different sticks can be increased by a different length), but in total by at most l centimeters. In particular, it is allowed not to increase the length of any stick.
+
+Determine the number of ways to increase the lengths of some sticks so that you can form from them a non-degenerate (that is, having a positive area) triangle. Two ways are considered different, if the length of some stick is increased by different number of centimeters in them.
+
+
+-----Input-----
+
+The single line contains 4 integers a, b, c, l (1 ≤ a, b, c ≤ 3·10^5, 0 ≤ l ≤ 3·10^5).
+
+
+-----Output-----
+
+Print a single integer — the number of ways to increase the sizes of the sticks by the total of at most l centimeters, so that you can make a non-degenerate triangle from it.
+
+
+-----Examples-----
+Input
+1 1 1 2
+
+Output
+4
+
+Input
+1 2 3 1
+
+Output
+2
+
+Input
+10 2 1 7
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first sample test you can either not increase any stick or increase any two sticks by 1 centimeter.
+
+In the second sample test you can increase either the first or the second stick by one centimeter. Note that the triangle made from the initial sticks is degenerate and thus, doesn't meet the conditions.

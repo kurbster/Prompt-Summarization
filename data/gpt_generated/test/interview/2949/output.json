@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE3f7PsFGfczTUD8K78HGtu2JuTt",
+    "object": "text_completion",
+    "created": 1638580995,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have n pylons situated at integer coordinates in the plane. You would like to put lifts in the form of line segments between some of these pylons. The line segments must satisfy the following constraints: - A line segment can only go between pylons $(x_1, y_1)$ and $(x_2, y_2)$ if $|y_1-y_2| = 1$. - There are two types of pylons, one-way and two-way pylons. The one-way pylons can be connected to at most one other pylon, and the two-way pylons can be connected to at most two other pylons. However, if a two-way pylon $i$ is connected to two other pylons, then they must be on opposite sides of $i$ in the $y$-direction. In other words, the two pylons connected to $i$ must have different $y$-coordinates. - Two line segments may not intersect (except that the two line segments incident on a two-way pylon may touch at their endpoints). What is the maximum number of ski lifts (line segments) you can place under these constraints?",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

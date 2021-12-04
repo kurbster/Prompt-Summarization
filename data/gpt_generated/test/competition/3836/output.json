@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDQ8xc3kfue521LVMPHdqr7fJdlp",
+    "object": "text_completion",
+    "created": 1638578544,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " There are $n$ people who want to take part in the debate as a spectator. Each person is described by their influence and political views. There are four kinds of political views:  supporting none of candidates (this kind is denoted as \"00\"),  supporting Alice but not Bob (this kind is denoted as \"10\"),  supporting Bob but not Alice (this kind is denoted as \"01\"),  supporting both candidates (this kind is denoted as \"11\"). The direction of the TV channel wants to invite some of these people to the debate. The set of invited spectators should satisfy three conditions: ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

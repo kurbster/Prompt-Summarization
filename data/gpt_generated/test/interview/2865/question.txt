@@ -1,0 +1,30 @@
+It’s the slow crawl of rush hour. At any point of time, each vehicle is either stopped or is moving at the extremely slow speed of $1$ meter per second. Lately, vehicles come equipped with a simple “black box” that record all changes in a vehicle’s speed. In this problem, speeds change instantaneously. 
+
+The road is modelled as the real line (units in meters). So a car is identified with its position on the line. Also, cars are $4.4$ meters long.
+
+Given initial positions of two cars that are driving along the real line in the positive direction and a transcript of their speed changes, did these cars ever collide? While such a collision would be very slow speed (a “bumper tap”), any collision could result in erroneous readings from the black box in the future so the portions of the transcripts after a collision might not make sense.
+
+-----Input-----
+There is only one test case. The first line contains two integers $0 \leq X_1, X_2 \leq 10^6$ indicating the initial positions of the rears of the two vehicles in meters. You are guaranteed either $X_1 + 5 \leq X_2$ or $X_2 + 5 \leq X_1$. Initially (at time $0$), the two cars are stopped.
+
+The second line begins with a number $0 \leq N_1 \leq 10^5$ indicating the number of times the speed of the first car changed. The rest of the line contains $N_1$ integers $0 < T_1 < T_2 < \ldots < T_{n_1} \leq 10^6$ indicating the times (in seconds) the first vehicle changed speeds. So at time $T_1$ it begins driving at $1$ m/s, at time $T_2$ it stops, at time $T_3$ it begins driving at $1$ m/s, and so on.
+
+The last line begins with a number $0 \leq N_2 \leq 10^5$ and is followed by $N_2$ integers $0 < T’_1 < T’_2 < \ldots < T’_{n_2} \leq 10^6$ that describe the times the second vehicle starts and stops.
+
+-----Output-----
+If the vehicles collide, output the message bumper tap at time $S$ on a single line where $S$ is the number of seconds from time $0$ that the vehicles first collide, rounded up to the nearest second. If the vehicles do not collide, output the message safe and sound on a single line.
+
+-----Examples-----
+Sample Input 1:
+0 5
+3 1 4 5
+3 1 4 6
+Sample Output 1:
+bumper tap at time 6
+
+Sample Input 2:
+10 0
+2 1 2
+1 1
+Sample Output 2:
+bumper tap at time 8

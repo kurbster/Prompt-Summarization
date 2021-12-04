@@ -1,0 +1,34 @@
+Today the Intergalactic Council of Pebble Coins (ICPC) conducted an intergalactic auction of the Neutronium Chaos Pebble Coin (NCPC). This coin, which was forged in the Ancient Coin Machine (ACM), is rumored to be the key to ruling the universe. 
+
+Due to the extremely competitive nature of the auction, as well as the odd mechanics of the intergalactic currency used (far too advanced for mere mortals to understand), the auction was conducted with the following rules:
+ - only one participant was allowed to make a bid at a time,
+ - each participant was only allowed to make one bid, and
+ - a participant making a bid had to bid at least twice the amount of the highest bid at the time.
+
+The first participant making a bid was allowed to make a bid of any positive amount.
+
+After the auction there were a lot of sore losers – understandably, having just lost their chance at world domination. To make the losers feel a little better and prevent possible rioting, the ICPC has decided to hold a lottery for the participants. The winners of the lottery are determined as follows. The ICPC picks a random number $s$. A group of participants is called winning if the sum of their bets from the auction is equal to $s$. A participant wins the lottery and receives a prize – a shiny Pebble Coin – if they belong to any winning group of participants.
+
+Given the names of the participants, the bets that they made, and the random number $s$ chosen by the ICPC, help them determine which participants won the lottery.
+
+-----Input-----
+The first line of input contains two integers $n$ and $s$, where $1 \le n \le 1000$ is the number of participants, and $1 \le s < 10^{1000}$ is the random number chosen by the ICPC.
+
+Then follow $n$ lines describing the participants. Each line contains a string $t$ and an integer $b$, where $t$ is the name of a participant, and $1 \le b < 10^{1000}$ is the amount of his bet. The name of each participant is unique and consists of between $1$ and $20$ letters from the English alphabet.
+
+-----Output-----
+Output an integer $k$ denoting the number of participants that won the lottery. Then output $k$ lines containing the names of the participants that won the lottery, one per line, in any order.
+
+-----Examples-----
+Sample Input:
+5 63
+Vader 3
+Voldemort 7
+BorgQueen 20
+Terminator 40
+Megatron 101
+Sample Output:
+3
+BorgQueen
+Terminator
+Vader

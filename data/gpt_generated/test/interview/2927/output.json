@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDpaUpXygqy8dj62WydiMDgXYjAP",
+    "object": "text_completion",
+    "created": 1638580122,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " In a game of American Football, there are several factors to take into consideration when detailing the rules of the game. The goal of the game is to move the football across the field into the endzone of the defending team through a series of plays, which form a drive. In each play, the attacking team may either gain or lose a number of yards, that is, their position on the field moves either towards or away from the defending team s endzone. In the simplified version of football that we consider, a team has four chances (in up to four plays) to advance the ball $10$ yards downfield; if they are successful, they will have achieved a ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

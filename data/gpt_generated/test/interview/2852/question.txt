@@ -1,0 +1,31 @@
+Angela is a new PhD student and she is nervous about the upcoming paper submission deadline of this year’s research conference. She has been working on multiple projects throughout the past year. Luckily most of the projects concluded successfully, and she came up with $n$ candidate papers. However not all of the papers were born equal—some have better results than others. Her advisor believes she should only submit the papers with “good enough” results so they have a high chance of getting accepted. 
+
+Angela’s research group has a unique way of evaluating the success of paper submissions. They use the research productivity index, defined as $a^{a/s}$, where $s$ is the total number of papers submitted, and $a$ is the number of papers that are accepted by the conference. When $a = 0$, the index is defined to be zero. For example:
+ - if one paper is submitted and it gets accepted, the index is $1^{1/1} = 1$;
+ - if $4$ papers are submitted and all get accepted, the index is $4^{4/4} = 4$;
+ - if $10$ papers are submitted and $3$ get accepted, the index is $3^{3/10} \approx 1.390389$;
+ - if $5$ papers are submitted and $4$ get accepted, the index is $4^{4/5} \approx 3.031433$;
+ - if $3$ papers are submitted and all get rejected ($a=0$), the index is $0$.
+
+Intuitively, to get a high research productivity index one wants to get as many papers accepted as possible while keeping the acceptance rate high.
+
+For each of her $n$ papers, Angela knows exactly how likely it is that the conference would accept the paper. If she chooses wisely which papers to submit, what is the maximum expected value of her research productivity index?
+
+-----Input-----
+The first line of the input has a single integer $n$ ($1 \leq n \leq 100$), the number of Angela’s candidate papers. The next line has $n$ space-separated integers giving the probability of each paper getting accepted. Each probability value is given as an integer percentage between $1$ and $100$, inclusive.
+
+-----Output-----
+Output the maximum expected value of Angela’s research productivity index. Your answer is considered correct if it has an absolute or relative error of no more than $10^{-6}$.
+
+-----Examples-----
+Sample Input 1:
+5
+30 50 70 60 90
+Sample Output 1:
+2.220889579
+
+Sample Input 2:
+6
+30 90 30 90 30 90
+Sample Output 2:
+2.599738456

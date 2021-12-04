@@ -1,0 +1,8 @@
+# Task Write a function named `sumEvenNumbers`, taking a sequence of numbers as single parameter. Your function must return the sum of **the even values** of this sequence. Only numbers without decimals like `4` or `4.0` can be even.  ## Input * sequence of numbers: those numbers could be integers and/or floats.  For example, considering this input value : `[4,3,1,2,5,10,6,7,9,8]`, then your function should return `30` (because `4 + 2 + 10 + 6 + 8 = 30`)
+tl;dr: Write a function named sumEvenNumbers, taking a sequence of numbers as single parameter. Your function must return the sum of the even values of this sequence. Only numbers without decimals like 4 or 4.0 can be even.  
+
+You are given a string S of length n with each character being one of the first m lowercase English letters.  Calculate how many different strings T of length n composed from the first m lowercase English letters exist such that the length of LCS (longest common subsequence) between S and T is n - 1. Recall that LCS of two strings S and T is the longest string C such that C both in S and T as a subsequence. 
+tl;dr: You are given a string S of length n with each character being one of the first m lowercase English letters.  Calculate how many different strings T of length n can be composed from the first m lowercase English letters exist such that the length of Longest Common Subsequence between S and T is n - 1. 
+
+Given a directed weighted graph and two vertices $s$, $t$, the goal is to find a subset $U$ of the vertices such that $s \in U$, $t \not\in U$, and the weight of edges from $U$ to $\overline{U}$ is minimized. 
+tl;dr:

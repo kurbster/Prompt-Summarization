@@ -1,0 +1,8 @@
+Write a function to split a string and convert it into an array of words. For example: ```python "Robin Singh" ==> ["Robin", "Singh"] "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"] ``
+tl;dr: Write a function to split a string and convert it into an array of words.  
+
+Master Oogway has forseen that a panda named Po will be the dragon warrior, and the master of Chi. But he did not tell anyone about the spell that would make him the master of Chi, and has left Po confused. Now Po has to defeat Kai, who is the super villian, the strongest of them all. Po needs to master Chi, and he finds a spell which unlocks his powerful Chi. But the spell is rather strange. It asks Po to calculate the factorial of a number! Po is very good at mathematics, and thinks that this is very easy. So he leaves the spell, thinking it's a hoax. But little does he know that this can give him the ultimate power of Chi. Help Po by solving the spell and proving that it's not a hoax. 
+tl;dr: Find the factorial of each number from 1 to given positive integer n. 
+
+You have a set of $n$ weights. You know that their masses are $a_1$, $a_2$, ..., $a_n$ grams, but you don't know which of them has which mass. You can't distinguish the weights. However, your friend does know the mass of each weight. You can ask your friend to give you exactly $k$ weights with the total mass $m$ (both parameters $k$ and $m$ are chosen by you), and your friend will point to any valid subset of weights, if it is possible. You are allowed to make this query only once. Find the maximum possible number of weights you can reveal after this query. 
+tl;dr:

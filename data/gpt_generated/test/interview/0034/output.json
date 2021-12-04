@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCBqHvylHl4JqNrN3vP5arz7eFV3",
+    "object": "text_completion",
+    "created": 1638573814,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You're given two cakes and cut them into pieces. You know that there will be n people at the celebration (including yourself), so you have set n plates for the cakes. Now you are thinking about how to distribute the cakes between the plates. You want to do it in such a way that all following conditions are met:  Each piece of each cake is put on some plate;  Each plate contains at least one piece of cake;  No plate contains pieces of both cakes.  To make your guests happy, you want to distribute the cakes in such a way that the minimum number of pieces on the plate is maximized. Formally, you want to know the maximum possible number x such that you can distribute the cakes according to the aforementioned conditions, and each plate will contain at least x pieces of cake. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

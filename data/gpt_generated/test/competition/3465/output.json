@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCB8sJ1P4HkQ4GGTjuuMBVUBrI6S",
+    "object": "text_completion",
+    "created": 1638573770,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " The people of Absurdistan discovered how to build roads only last year. After the discovery, each city decided to build its own road, connecting the city to some other city. Each newly built road can be used in both directions. You bought a tourist guide which has a map of the country with the newly built roads. However, since you are very interested in history, you would like to know which city built which road. Given the description of $n$ roads, can you find an assignment of roads to $n$ cities, such that each city built one road If there are multiple assignments, you are happy with any one. At least one solution is guaranteed to exist.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

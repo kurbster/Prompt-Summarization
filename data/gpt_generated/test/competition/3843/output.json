@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDmMcOtXhQ1yQyZFxl8Tlakv9U2c",
+    "object": "text_completion",
+    "created": 1638579922,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Little robber wants to know the number of moments of time (particular values of hours and minutes), such that all digits displayed on the watches are distinct. Help her calculate this number. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

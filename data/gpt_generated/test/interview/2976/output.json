@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDc4gOBj28gGoXuhGsVVgxKbXeKf",
+    "object": "text_completion",
+    "created": 1638579284,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a tennis match history. A tennis match consists of sets, each set consisting of games. The following rules apply: - A player wins a set if he has $6$ or more games and at least two games more than his opponent. - Additionally, if the result is $6:6$ in the first or second set (but not the third set), a single final game is played to determine the winner of the set (the tie-break game). - The match ends when either player has won 2 sets. That player is the winner. A match result is valid if a match could have been played by the above rules and ended in the result. Additionally, if one of the players is Roger Federer (designated as federer in the input), then a result in which he has lost a set can t be valid (Zvonko knows Federer is from outer space). Write a program that checks the validity of all matches between two players.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDavoqTiFl34nK5nYTg812TvPcDw",
+    "object": "text_completion",
+    "created": 1638579213,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Emuskald is a well-known illusionist. One of his trademark tricks involves a set of magical boxes. The essence of the trick is in packing the boxes inside other boxes. From the top view each magical box looks like a square with side length equal to 2^{k} (k is an integer, k \u00a00) units. A magical box v can be put inside a magical box u, if side length of v is strictly less than the side length of u. In particular, Emuskald can put 4 boxes of side length 2^{k} - 1 into one box of side length 2^{k}, or as in the following figure: \u00a0[Image] \u00a0Emuskald is about to go on tour performing around the world, and needs to pack his magical boxes for the trip. He has decided that the best way to pack them would be inside another magical box, but magical boxes are quite expensive to make. Help him find the smallest magical box that can fit all his boxes. \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

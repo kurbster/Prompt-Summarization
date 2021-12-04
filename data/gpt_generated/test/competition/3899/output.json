@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDjYXZVx7YEUUFCz2sj3WhnKTMsv",
+    "object": "text_completion",
+    "created": 1638579748,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You need to execute several tasks, each associated with number of processors it needs, and the compute power it will consume. You have sufficient number of analog computers, each with enough processors for any task. Each computer can execute up to one task at a time, and no more than two tasks total. The first task can be any, the second task on each computer must use strictly less power than the first. You will assign between 1 and 2 tasks to each computer. You will then first execute the first task on each computer, wait for all of them to complete, and then execute the second task on each computer that has two tasks assigned. If the average compute power per utilized processor (the sum of all consumed powers for all tasks presently running divided by the number of utilized processors) across all computers exceeds some unknown threshold during the execution of the first tasks, the entire system will blow up. There is no restriction on the second tasks execution. Find the lowest threshold for which it is possible. Due to the specifics of the task, you need to print the answer multiplied by 1000 and rounded up. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

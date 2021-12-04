@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDTecebdHRzsUCHqnrQKHSgBcJhQ",
+    "object": "text_completion",
+    "created": 1638578762,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a list of drives and their capacities. Find the minimum capacity of an extra drive needed to reformat all the drives.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

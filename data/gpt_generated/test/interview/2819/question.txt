@@ -1,0 +1,46 @@
+The boardgame Chaos is an exotic variant of Chess, played by two players in alternating turns on an $n\times n$ playing board. All pieces have the same set of $n$ valid moves which are agreed on ahead of the game. 
+
+In a single turn a player can pick exactly one of their pieces and perform one of the following actions:
+ - Perform up to two valid moves using the chosen piece, capturing any piece that the chosen piece lands on along the way.
+ - Teleport the chosen piece to any cell on the board that is not already occupied by another piece.
+ - Leave the chosen piece untouched in its current cell.
+
+Having recently discovered Chaos, Alice and Bob are currently in the endgame of a very exciting match. Each player has a single piece left on the board and there are only two turns left, with Alice going next.
+
+Having analysed the situation, she realises that the only way she can win is to capture Bob’s piece in her turn. If that is not possible, Alice may be able to force a tie if she can teleport her piece to a cell that Bob cannot capture in his turn. Otherwise Bob will be able to win by capturing Alice’s piece, no matter what she does in her turn. Help Alice determine her optimal outcome.
+
+-----Input-----
+The input consists of:
+ - One line with an integer $n$ ($2 \leq n \leq 10^5$), the size of the playing board and the number of valid moves.
+ - One line with two integers $a_ x$ and $a_ y$ ($1 \leq a_ x, a_ y \leq n$), the column and row in which Alice’s piece is currently located.
+ - One line with two integers $b_ x$ and $b_ y$ ($1 \leq b_ x, b_ y \leq n$), the column and row in which Bob’s piece is currently located.
+ - $n$ lines, the $i$th of which contains two integers $x_ i$ and $y_ i$ ($-n < x_ i, y_ i < n$) representing one of the valid moves. This moves the given piece $x_ i$ columns to the right and $y_ i$ rows up, provided this does not take the piece outside of the board.
+
+Columns are numbered $1$ to $n$ from left to right and rows are numbered $1$ to $n$ from bottom to top. All valid moves are distinct.
+
+-----Output-----
+If Alice can capture Bob’s piece in her turn, output “Alice wins”.
+
+If Alice can use her turn to force a tie by teleporting her piece to a cell that Bob cannot capture in his turn output “tie” followed by two integers $a’_ x$ and $a’_ y$, the location of any such cell. If there are multiple valid solutions, you may output any one of them.
+
+Otherwise, if Bob is able to capture Alice’s piece no matter what she does in her turn, output “Bob wins”.
+
+-----Examples-----
+Sample Input 1:
+2
+2 1
+1 2
+1 0
+0 -1
+Sample Output 1:
+Bob wins
+
+Sample Input 2:
+3
+2 3
+1 3
+-2 1
+1 1
+1 0
+Sample Output 2:
+tie 3 1

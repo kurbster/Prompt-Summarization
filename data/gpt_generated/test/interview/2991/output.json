@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE5dKv9VUDdkEXgKXYKgIejWDepG",
+    "object": "text_completion",
+    "created": 1638581117,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have $n$ gnomes. Each gnome can be uniquely identified by a number $1..n$ written on their hat. Suppose there are $5$ gnomes. The gnomes could line up like so: $1, 3, 4, 2, 5$. Now, an evil magician will remove some of the gnomes from the lineup and wipe your memory of the order of the gnomes. The result is a subsequence, perhaps like so: $1, 4, 2$. He then tells you that if you ordered all permutations of $1..n$ in lexicographical order, the original sequence of gnomes is the first such permutation which contains the remaining subsequence. Your task is to find the original sequence of gnomes.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

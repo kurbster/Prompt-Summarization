@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDSGoorZ3182qGvc0LHZJtJP5oMo",
+    "object": "text_completion",
+    "created": 1638578676,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Mister B detected a strange signal from the space, which he started to study. After some transformation the signal turned out to be a permutation p of length n or its cyclic shift. For the further investigation Mister B need some basis, that's why he decided to choose cyclic shift of this permutation which has the minimum possible deviation. Let's define the deviation of a permutation p as $\\sum_{i = 1}^{i = n}|p [ i ] - i|$. Find a cyclic shift of permutation p with minimum possible deviation. If there are multiple solutions, print any of them. Let's denote id k (0   k < n) of a cyclic shift of permutation p as the number of right shifts needed to reach this shift, for example:   k = 0: shift p_1, p_2, ... p_{n},  k = 1: shift p_{n}, p_1, ... p_{n} - 1,  ...,  k = n - 1: shift p_2, p_3, ... p_{n}, p_1.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

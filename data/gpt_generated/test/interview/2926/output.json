@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlc7UL8QuEV9JlKbNuLqhF1JHh8",
+    "object": "text_completion",
+    "created": 1638579876,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Each category has an associated set of words, which, if they appear as words in a statement, suggest the problem belongs to this category. When classifying a statement, the program should suggest those categories which have the highest number of occurences of their associated words. Note that words that are part of other words do not count. For example, the word statement should not count as an occurance for the word ate. In the above example, we suggested that the category graph may have the associated words vertex and edge and the category string could have the associated words words and letters. Then, if there were $3$ occurances each of the words vertex and edge, the number of matches for the category graph would be $6$. If the statement contained $14$ occurances of words and $4$ of letters, the number of matches for the category string would be $18$. Since there are more matches for the second category, the program should suggest it. If there are multiple categories with the same number of matches, your program should suggest all of them.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

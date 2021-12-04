@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDfIaaK3yVX41Beg03zzBK0U3eca",
+    "object": "text_completion",
+    "created": 1638579484,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Initially there was an array $a$ consisting of $n$ integers. Positions in it are numbered from $1$ to $n$. Exactly $q$ queries were performed on the array. During the $i$-th query some segment $(l_i, r_i)$ $(1 \\le l_i \\le r_i \\le n)$ was selected and values of elements on positions from $l_i$ to $r_i$ inclusive got changed to $i$. The order of the queries couldn't be changed and all $q$ queries were applied. It is also known that every position from $1$ to $n$ got covered by at least one segment. We could have offered you the problem about checking if some given array (consisting of $n$ integers with values from $1$ to $q$) can be obtained by the aforementioned queries. However, we decided that it will come too easy for you. So the enhancement we introduced to it is the following. Some set of positions (possibly empty) in this array is selected and values of elements on these positions are set to $0$. Your task is to check if this array can be obtained by the aforementioned queries. Also if it can be obtained then restore this array. If there are multiple possible arrays then print any of them.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

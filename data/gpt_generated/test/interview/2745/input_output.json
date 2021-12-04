@@ -1,0 +1,1 @@
+{"fn_name": "findSubstring", "inputs": [["\"barfoothefoobarman", ["\"foo","\"bar\""]], ["\"wordgoodgoodgoodbestword\"", ["\"word\"","\"good\"","\"best\"","\"word\""]], ["\"barfoofoobarthefoobarman\"", ["\"bar\"","\"foo\"","\"the\""]]], "outputs": [[0,9], [], [6,9,12]]}

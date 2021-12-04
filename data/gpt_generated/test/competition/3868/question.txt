@@ -1,0 +1,53 @@
+Country of Metropolia is holding Olympiad of Metrpolises soon. It mean that all jury members of the olympiad should meet together in Metropolis (the capital of the country) for the problem preparation process.
+
+There are n + 1 cities consecutively numbered from 0 to n. City 0 is Metropolis that is the meeting point for all jury members. For each city from 1 to n there is exactly one jury member living there. Olympiad preparation is a long and demanding process that requires k days of work. For all of these k days each of the n jury members should be present in Metropolis to be able to work on problems.
+
+You know the flight schedule in the country (jury members consider themselves important enough to only use flights for transportation). All flights in Metropolia are either going to Metropolis or out of Metropolis. There are no night flights in Metropolia, or in the other words, plane always takes off at the same day it arrives. On his arrival day and departure day jury member is not able to discuss the olympiad. All flights in Megapolia depart and arrive at the same day.
+
+Gather everybody for k days in the capital is a hard objective, doing that while spending the minimum possible money is even harder. Nevertheless, your task is to arrange the cheapest way to bring all of the jury members to Metrpolis, so that they can work together for k days and then send them back to their home cities. Cost of the arrangement is defined as a total cost of tickets for all used flights. It is allowed for jury member to stay in Metropolis for more than k days.
+
+
+-----Input-----
+
+The first line of input contains three integers n, m and k (1 ≤ n ≤ 10^5, 0 ≤ m ≤ 10^5, 1 ≤ k ≤ 10^6). 
+
+The i-th of the following m lines contains the description of the i-th flight defined by four integers d_{i}, f_{i}, t_{i} and c_{i} (1 ≤ d_{i} ≤ 10^6, 0 ≤ f_{i} ≤ n, 0 ≤ t_{i} ≤ n, 1 ≤ c_{i} ≤ 10^6, exactly one of f_{i} and t_{i} equals zero), the day of departure (and arrival), the departure city, the arrival city and the ticket cost.
+
+
+-----Output-----
+
+Output the only integer that is the minimum cost of gathering all jury members in city 0 for k days and then sending them back to their home cities.
+
+If it is impossible to gather everybody in Metropolis for k days and then send them back to their home cities, output "-1" (without the quotes).
+
+
+-----Examples-----
+Input
+2 6 5
+1 1 0 5000
+3 2 0 5500
+2 2 0 6000
+15 0 2 9000
+9 0 1 7000
+8 0 2 6500
+
+Output
+24500
+
+Input
+2 4 5
+1 2 0 5000
+2 1 0 4500
+2 1 0 3000
+8 0 1 6000
+
+Output
+-1
+
+
+
+-----Note-----
+
+The optimal way to gather everybody in Metropolis in the first sample test is to use flights that take place on days 1, 2, 8 and 9. The only alternative option is to send jury member from second city back home on day 15, that would cost 2500 more.
+
+In the second sample it is impossible to send jury member from city 2 back home from Metropolis.

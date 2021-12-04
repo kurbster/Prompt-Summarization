@@ -1,0 +1,20 @@
+One day you and GTmac walk into a classroom and see a mysterious expression on the blackboard:\[ (1^b + 2^b + \cdots + a^b)~ \mathrm{mod}~ a \]
+
+Upon seeing the expression GTmac shows an evil smile and challenges you: “Let me give you the values of $a$ and $b$ and let’s assume $b$ is an odd number. Want to bet who can evaluate this expression? The one who loses shall buy pizza for us tonight.”
+
+-----Input-----
+The input has two integers $a$ ($1 \leq a \leq 10^9$) and $b$ ($1\leq b\leq 99$, $b$ is odd) on a single line.
+
+-----Output-----
+Output the value of the expression with the given $a$ and $b$.
+
+-----Examples-----
+Sample Input 1:
+2 3
+Sample Output 1:
+1
+
+Sample Input 2:
+3 7
+Sample Output 2:
+0

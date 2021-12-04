@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDzGnSlQAFnrTTgeMy8GcnNGKZsl",
+    "object": "text_completion",
+    "created": 1638580722,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given n, the number of cards Borya has, and k, the number of cards that had already been used. You are also given the number of cards of each color and value. You are asked to determine the minimum number of hints the other players should make for Borya to be certain about each card's color and value.\n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

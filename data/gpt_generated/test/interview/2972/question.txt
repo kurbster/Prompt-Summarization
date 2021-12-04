@@ -1,0 +1,15 @@
+Nicholas Neverson was a student at Northlings Neverland Academy. As with any daydreaming student, Nicholas was playing around with a Kaleidoscope one day instead of paying attention to the teacher. Since this was math class, his daydreams quickly turned to palindromic numbers. A palindromic number is any number which reads the same forwards and backwards.
+
+He describes his vision to you at lunch: numbers which are palindromic in several bases at once. Nicholas wonders how many such numbers exist. You decide you can quickly code up a program that given a range and a number $k$, outputs the number of numbers palindromic in all bases $j$, $2 \leq j \leq k$, in that range.
+
+-----Input-----
+Input consists of three space-separated integers: $a$, $b$, and $k$. The input satisfies the following constraints:\[ 0 \leq a \leq b \leq 2000000, \\ 2 \leq k \leq 100000. \]
+
+-----Output-----
+Output the quantity of numbers between $a$ and $b$ inclusive which are palindromes in every base $j$, for $2 \leq j \leq k$.
+
+-----Examples-----
+Sample Input:
+1 356 2
+Sample Output:
+36

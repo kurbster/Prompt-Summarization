@@ -1,0 +1,18 @@
+Using roman numerals the numbers $1, 2, 3, 4, 5, 6, 7, 8, 9$ are written as ‘I’, ‘II’, ‘III’, ‘IV’, ‘V’, ‘VI’, ‘VII’, ‘VIII’, ‘IX’. The numbers $10, 20, 30, 40, 50, 60, 70, 80, 90$ are written as ‘X’, ‘XX’, ‘XXX’, ‘XL’, ‘L’, ‘LX’, ‘LXX’, ‘LXXX’, ‘XC’. Any number smaller than $100$ can be written by converting tens and ones separately and concatenating the results. So, for example, the number $48$ would be written as XLVIII, XL for $40$ and VIII for $8$. Given a number written in roman numerals, rearrange its characters so that you create the smallest possible number, written in roman numerals.
+
+-----Input-----
+The first and only line of input contains one integer $B$ ($1 \leq B < 100 $), written using roman numerals.
+
+-----Output-----
+The first and only line of output should contain a rearrangement of input characters so that it represents the smallest possible number, written in roman numerals.
+
+-----Examples-----
+Sample Input 1:
+VII
+Sample Output 1:
+VII
+
+Sample Input 2:
+VI
+Sample Output 2:
+IV

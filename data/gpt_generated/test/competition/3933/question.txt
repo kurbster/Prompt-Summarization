@@ -1,0 +1,59 @@
+Vasya came up with his own weather forecasting method. He knows the information about the average air temperature for each of the last n days. Assume that the average air temperature for each day is integral.
+
+Vasya believes that if the average temperatures over the last n days form an arithmetic progression, where the first term equals to the average temperature on the first day, the second term equals to the average temperature on the second day and so on, then the average temperature of the next (n + 1)-th day will be equal to the next term of the arithmetic progression. Otherwise, according to Vasya's method, the temperature of the (n + 1)-th day will be equal to the temperature of the n-th day.
+
+Your task is to help Vasya predict the average temperature for tomorrow, i. e. for the (n + 1)-th day.
+
+
+-----Input-----
+
+The first line contains a single integer n (2 ≤ n ≤ 100) — the number of days for which the average air temperature is known.
+
+The second line contains a sequence of integers t_1, t_2, ..., t_{n} ( - 1000 ≤ t_{i} ≤ 1000) — where t_{i} is the average temperature in the i-th day.
+
+
+-----Output-----
+
+Print the average air temperature in the (n + 1)-th day, which Vasya predicts according to his method. Note that the absolute value of the predicted temperature can exceed 1000.
+
+
+-----Examples-----
+Input
+5
+10 5 0 -5 -10
+
+Output
+-15
+
+Input
+4
+1 1 1 1
+
+Output
+1
+
+Input
+3
+5 1 -5
+
+Output
+-5
+
+Input
+2
+900 1000
+
+Output
+1100
+
+
+
+-----Note-----
+
+In the first example the sequence of the average temperatures is an arithmetic progression where the first term is 10 and each following terms decreases by 5. So the predicted average temperature for the sixth day is  - 10 - 5 =  - 15.
+
+In the second example the sequence of the average temperatures is an arithmetic progression where the first term is 1 and each following terms equals to the previous one. So the predicted average temperature in the fifth day is 1.
+
+In the third example the average temperatures do not form an arithmetic progression, so the average temperature of the fourth day equals to the temperature of the third day and equals to  - 5.
+
+In the fourth example the sequence of the average temperatures is an arithmetic progression where the first term is 900 and each the following terms increase by 100. So predicted average temperature in the third day is 1000 + 100 = 1100.

@@ -1,0 +1,55 @@
+Andrew was very excited to participate in Olympiad of Metropolises. Days flew by quickly, and Andrew is already at the airport, ready to go home. He has $n$ rubles left, and would like to exchange them to euro and dollar bills. Andrew can mix dollar bills and euro bills in whatever way he wants. The price of one dollar is $d$ rubles, and one euro costs $e$ rubles.
+
+Recall that there exist the following dollar bills: $1$, $2$, $5$, $10$, $20$, $50$, $100$, and the following euro bills — $5$, $10$, $20$, $50$, $100$, $200$ (note that, in this problem we do not consider the $500$ euro bill, it is hard to find such bills in the currency exchange points). Andrew can buy any combination of bills, and his goal is to minimize the total number of rubles he will have after the exchange.
+
+Help him — write a program that given integers $n$, $e$ and $d$, finds the minimum number of rubles Andrew can get after buying dollar and euro bills.
+
+
+-----Input-----
+
+The first line of the input contains one integer $n$ ($1 \leq n \leq 10^8$) — the initial sum in rubles Andrew has. 
+
+The second line of the input contains one integer $d$ ($30 \leq d \leq 100$) — the price of one dollar in rubles. 
+
+The third line of the input contains integer $e$ ($30 \leq e \leq 100$) — the price of one euro in rubles.
+
+
+-----Output-----
+
+Output one integer — the minimum number of rubles Andrew can have after buying dollar and euro bills optimally.
+
+
+-----Examples-----
+Input
+100
+60
+70
+
+Output
+40
+
+Input
+410
+55
+70
+
+Output
+5
+
+Input
+600
+60
+70
+
+Output
+0
+
+
+
+-----Note-----
+
+In the first example, we can buy just $1$ dollar because there is no $1$ euro bill.
+
+In the second example, optimal exchange is to buy $5$ euro and $1$ dollar.
+
+In the third example, optimal exchange is to buy $10$ dollars in one bill.

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlY24hVfoAmN5am64TGf63oCSkq",
+    "object": "text_completion",
+    "created": 1638579872,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a number X. You are also given a number m. You are asked to find the maximum number of blocks that can be added to the tower and the maximum X that results this number of blocks. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE50iZqTN6oxW56pMF3ox8ZiVDXy",
+    "object": "text_completion",
+    "created": 1638581078,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given the preference list of each owner and the rankings from the previous year, which players did each owner get? ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE1vj87X4BkSPmAXeDI5FzjYLoX7",
+    "object": "text_completion",
+    "created": 1638580887,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a sequence of non-negative integers. Determine the number of sequences made of n integers from 0 to 2^m - 1 that are not a wool sequence. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

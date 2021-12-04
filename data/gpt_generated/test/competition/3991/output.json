@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDyqs1VIECws6T9voLmuDscpZYOs",
+    "object": "text_completion",
+    "created": 1638580696,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a set of points, find the sum of the maximum distance between any two points. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

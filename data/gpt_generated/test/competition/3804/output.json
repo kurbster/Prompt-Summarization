@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDSj3ZQQ42zgLN397lfy7EulZzwk",
+    "object": "text_completion",
+    "created": 1638578705,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Maxim asks you to count, how many numbers m (1   m   n) are there, such that the sum of values in the cells in the row number m + 1 of the resulting matrix equals t.  ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

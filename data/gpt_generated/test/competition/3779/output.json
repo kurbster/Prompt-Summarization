@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDO4ppqSP7K3OPFBeLcxG01fD7Py",
+    "object": "text_completion",
+    "created": 1638578416,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a number $n$, a number system base $k$ and a digit $d$, determine if the last digit of the number written in the number system with base $k$ is $d$. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCDNYLAqWhNXalkWPKF96E1wMW6v",
+    "object": "text_completion",
+    "created": 1638573909,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a line segment, find the minimum distance between two points on the line segment. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

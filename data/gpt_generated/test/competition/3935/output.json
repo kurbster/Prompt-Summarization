@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDVGlvLRgtGLbpKcLRrC0gm76jvr",
+    "object": "text_completion",
+    "created": 1638578862,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set $B$ of positive integers. Find a subset of minimum size from $B$ so that graph built on the new set is bipartite. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

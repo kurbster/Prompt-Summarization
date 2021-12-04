@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCD7mTSoQ9aTpDVYK9I5yr8ZgU1E",
+    "object": "text_completion",
+    "created": 1638573893,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " # Description Let's call a tournament binary, if it runs according to the scheme described below: - Exactly N knights take part in the tournament, N=2K for some integer K > 0. - Each knight has a unique skill called strength, described as an integer from the interval [1, N]. - Initially, all the knights are standing in a line, waiting for a battle. Since all their strengths are unique, each initial configuration can be described as a permutation of numbers from 1 to N. - There are exactly K rounds in the tournament, 2K - i + 1 knights take part in the i'th round. The K'th round is called the final. - The i'th round runs in the following way: for each positive integer j   2K - i happens a battle between a knight on the 2 j'th position and a knight on the 2 j+1'th position. The strongest of two continues his tournament, taking the j'th position on the next round, while the weakest of two is forced to leave. - The only knight, who has won K rounds, is the winner. The only knight, who has won K - 1 rounds, but lost the final, is the runner-up.     As you can see from the scheme, the winner is always the same, an initial configuration doesn't change anything. So, your task is to determine chances of each knight to appear in the final. Formally, for each knight you need to count the number of initial configurations, which will lead him to the final. Since the number can be extremly huge, you are asked to do all the calculations under modulo 109 + 9. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

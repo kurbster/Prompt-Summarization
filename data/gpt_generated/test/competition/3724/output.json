@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BC9s1wM9fgvjZgbIOpSJ2hwcAGv2",
+    "object": "text_completion",
+    "created": 1638573692,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " We have a string S of length N consisting of A, B, and C. You can do the following operation on S zero or more times: - Choose i (1 \\leq i \\leq |S| - 1) such that S_i \\neq S_{i + 1}. Replace S_i with the character (among A, B, and C) that is different from both S_i and S_{i + 1}, and remove S_{i + 1} from S. Find the number of distinct strings that S can be after zero or more operations, and print the count modulo (10^9+7). \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

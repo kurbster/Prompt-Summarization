@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDnePsELLNEBzR9mytEOqr32ioV2",
+    "object": "text_completion",
+    "created": 1638580002,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given three sticks with positive integer lengths of a, b, and c centimeters. You can increase length of some of them by some positive integer number of centimeters (different sticks can be increased by a different length), but in total by at most l centimeters. In particular, it is allowed not to increase the length of any stick. Determine the number of ways to increase the lengths of some sticks so that you can form from them a non-degenerate (that is, having a positive area) triangle. Two ways are considered different, if the length of some stick is increased by different number of centimeters in them. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

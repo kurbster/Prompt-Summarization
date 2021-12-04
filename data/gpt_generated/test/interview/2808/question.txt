@@ -1,0 +1,31 @@
+Peter is in charge of food service on a passenger train. The train has $n$ cars ordered sequentially starting from the locomotive. The $i$-th car has $p_ i$ passengers. There are $m$ food carts Peter may put into service. Each food cart serves a unique type of food. The $j$-th food cart can move between the $l_ j$-th car and the $r_ j$-th car (both inclusive) and serve the passengers in these cars.
+
+The passengers on the train are not only hungry, but also adventurous: as long as a food cart is in service, they would love to try it! A passenger will be happy if he/she sits in a car that is served by all the food carts that are in service. Peter would like to design service plans that run one or more of the $m$ food carts so that at least $k$ of the passengers on the train are happy.
+
+Peter wants to count the number of different service plans he may choose from (modulo $10^9 + 7$). Two service plans are different if one food cart is put into service in one plan but not in the other plan.
+
+-----Input-----
+The first line has three integers $n$, $m$, and $k$ ($1 \leq n, m \leq 2 \cdot 10^5, 1 \leq k \leq 10^{14}$). The next line has $n$ integers. The $i$-th integer is $p_ i$ ($1 \leq p_ i \leq 10^9 $), the number of passengers in the $i$-th car. Each of the next $m$ lines describes a food cart. The $j$-th of these lines has two integers $l_ j$ and $r_ j$ ($1 \leq l_ j \leq r_ j \leq n$), giving the service range of the $j$-th food cart.
+
+-----Output-----
+Output the number of different service plans, modulo $10^9 + 7$.
+
+-----Examples-----
+Sample Input 1:
+4 3 3
+1 2 3 4
+1 2
+2 3
+3 4
+Sample Output 1:
+4
+
+Sample Input 2:
+5 4 6
+1 2 3 4 5
+1 4
+2 3
+3 5
+4 5
+Sample Output 2:
+5

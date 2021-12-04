@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDiChMRQi0IpB51U3bOqtBqSVb50",
+    "object": "text_completion",
+    "created": 1638579664,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a list of $n$ integers. The first integer is the number of frames, the second integer is the number of millimeters the mug has moved between the first and the second frame. Find two frames between which the mug has moved exactly $D$ millimeters. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

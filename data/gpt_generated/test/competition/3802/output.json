@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDuVQXdG3cpKLT6DEoWiYc5mLAP1",
+    "object": "text_completion",
+    "created": 1638580427,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Find the longest common subsequence of two strings, such that it doesn't contain virus as a substring. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

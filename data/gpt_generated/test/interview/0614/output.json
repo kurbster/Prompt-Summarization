@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BC8nBF6zDrDBtRCKuyZuRYTPdspb",
+    "object": "text_completion",
+    "created": 1638573625,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Petya has n different souvenirs to sell; ith souvenir is characterised by its weight w_{i} and cost c_{i}. Petya wants to choose a subset of souvenirs such that its total weight is not greater than m, and total cost is maximum possible. Help Petya to determine maximum possible total cost. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

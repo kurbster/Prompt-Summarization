@@ -1,0 +1,62 @@
+During the COVID-19 quarantine, Theta discovered Minecraft Dungeons which is an offshoot of the popular Minecraft game. In Minecraft Dungeons, players crawl through a dungeon, trying to accomplish a mission without getting killed by various mobs. At the end, a boss battle with the Arch-Illager awaits.
+
+Fortunately, the mobs’ AI isn’t particularly strong, so with some planning, it’s possible to avoid the mobs. In this problem, you’re given a dungeon map and you need to find out if it’s possible for the player to reach the exit without being blown up by a creeper.
+
+You, the player, can move north, south, east, and west, except where there are obstacles. The player may also stay put. There is one creeper on the map. The player and the creeper take turns simultaneously, subject to the following simple AI:
+ - The creeper will only try to move towards the player, either horizontally or vertically, in a way that reduces the horizontal or vertical distance.
+ - If an obstacle prevents the creeper from moving vertically, it will try to move horizontally, and vice versa.
+ - If it can’t move in either direction, it will stay put.
+ - If the creeper can move both horizontally and vertically, it will choose the direction in which it is farther away from the player. In the case of a tie, it will move vertically towards the player.
+
+After each such turn, the game checks if the creeper is too close to the player, in which case the creeper will explode and kill the player, even if the player has already reached the exit in that move. Obstacles do not protect the player from explosions. If the player did not explode and reached the exit, the mission is completed.
+
+-----Input-----
+The input consists of a single test case. The first line contains three integers $n$ ($1 \le n \le 30$), $m$ ($1 \le m \le 30$), and $e$ ($1 \le e \le \min (n, m)$). $e$ specifies the creeper’s explosion “radius” - the creeper will explode if both the horizontal and the vertical distance between player and creeper is less than or equal to $e$.
+
+The following $n$ lines consist of $m$ characters each and describe the dungeon map using the following characters
+ - P - the start position of the player
+ - C - the start position of the creeper
+ - E - the position of the exit
+ - X - an obstacle
+ - . - an empty square that can be entered by both creeper and player
+
+There is exactly one of ‘E’, ‘P’, and ‘C‘ each in the input.
+
+-----Output-----
+If it is possible to complete the mission and reach the exit without being blown up by the creeper, output the minimum number of moves necessary to escape. A move consists of either the player or the creeper moving, or both. If it is not possible to escape, print “you're toast”!
+
+-----Examples-----
+Sample Input 1:
+20 20 3
+....................
+...X................
+.X.X....X.....X.....
+.X.X....X....XX.....
+.X.X..........X.....
+.X.X....XXXXXXXXXXX.
+.XXXXXXX............
+.X..................
+.X...XXXXX.XXXX.XX..
+.X..P............C..
+.X.XX.X.XX.XXX..XX..
+.X.X................
+.X.XXXX....X........
+.X.X.......X........
+.X.X.......X........
+.X.X........X.......
+.X.X...X....XX......
+.X.X...X.....XX.....
+.X.X...X......XX....
+.......X...........E
+Sample Output 1:
+119
+
+Sample Input 2:
+5 5 1
+E...C
+.....
+XXXX.
+.....
+P....
+Sample Output 2:
+you're toast

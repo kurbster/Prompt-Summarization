@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDY49dAFrX7xKR6DWB6dCMqKGAaO",
+    "object": "text_completion",
+    "created": 1638579036,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a list of locations and the number of letters to be delivered to each location. Find the shortest route that delivers all the letters.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

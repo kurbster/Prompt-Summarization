@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDkaQ2ufnFUWThtlfBA8kLBW9GKN",
+    "object": "text_completion",
+    "created": 1638579812,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " # Task Given a game board with $4$ trees in an orchard, each bearing a different type of fruit: red apples, green apples, blue plums, and yellow pears. The raven tries to reach the orchard through a pathway containing one or more steps. At each turn, the players roll a six-sided die. Four of the faces show a color (red, green, yellow, blue), the fifth face shows a fruit basket, and the sixth face shows a raven. All six faces can appear with equal probability. Your task is to determine the probability with which the players will win! # Input A space separated string of $4$ numbers, each representing the number of fruits left on a tree. E.g. ```3 2 1 2``` # Output A number representing the probability with which the players will win. E.g. ```0.75```\n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "5\nbattery_acid\ndrain_cleaner\nantifreeze\ncold_medicine\nlantern_fuel\n2\ncold_medicine battery_acid\nantifreeze lantern_fuel\n",
+        "3\nfuel\nlighter\nknife\n3\nfuel lighter\nlighter knife\nknife fuel\n"
+    ],
+    "outputs": [
+        "lantern_fuel drain_cleaner battery_acid\nantifreeze cold_medicine\n",
+        "impossible\n"
+    ]
+}

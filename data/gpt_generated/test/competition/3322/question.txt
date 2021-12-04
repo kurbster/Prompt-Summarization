@@ -1,0 +1,35 @@
+You are hosting a fancy party for fancy friends. And, like any fancy party, you need to buy some fancy antiques to put up around the venue (your house).
+
+There is a set of $n$ fancy antiques that you need to buy. And there is a set of $m$ fancy antique shops in the city. Because these antiques are extremely rare, each fancy antique can only be found at a single fancy antique shop. However, the fancy antique shops can also sell “knock-off” (duplicate) versions of some of the antiques. And of course, for any fancy antique, there is only a single fancy antique shop in the city that holds a knock-off version of that antique (this is to maintain the rareness of the antiques). The shop that sells the original is not always the same shop that holds the knock-off.
+
+It turns out that even though you can tell the difference, most people cannot tell the original version from the knock-off version of any given antique. And, because the shops can get away with it, sometimes the knock-off is more expensive than the original! Since the party is tomorrow, you only have time to visit $k$ shops. You would like to buy one version (either the original or the knock-off) of each of the $n$ antiques.
+
+Suppose that there are three shops, and three antiques we would like to buy.
+ - Antique $\# 1$ sells for $30$ at shop $\# 1$. Its knockoff sells for $50$ at shop $\# 2$.
+ - Antique $\# 2$ sells for $70$ at shop $\# 2$. Its knockoff sells for $10$ at shop $\# 3$.
+ - Antique $\# 3$ sells for $20$ at shop $\# 3$. Its knockoff sells for $80$ at shop $\# 1$.
+
+Suppose you only have time to go to two shops. You can go to shops $1$ and $3$. You can buy the original of antique $1$ with cost $30$ at shop $1$, the original of antique $3$ with cost $20$ at shop $3$, and the knock-off of antique $2$ at shop $3$ with cost $10$. The total cost to buy these items is $60$, which is the minimum possible.
+
+If you only have time to visit one shop, then it is impossible. You cannot buy a version of all three items by visiting a single shop.
+
+Given the costs of the antiques/knock-offs at the shops, what is the minimum total cost to buy one version of each antique?
+
+-----Input-----
+Each input will consist of a single test case. Note that your program may be run multiple times on different inputs. The first line of input will consist of three space-separated integers: $n$, $m$, and $k$ ($1 \le n \le 100$, $1 \le k \le m \le 40$). The next $n$ lines will each have four space separated integers, $a$, $p$, $b$ and $q$, describing an antique, where:
+ - $a$ is the index of the shop that sells the original version of the antique ($1 \le a \le m$)
+ - $p$ is the price of the original version of the antique at shop $a$ ($1 \le p \le 10^7$)
+ - $b$ is the index of the shop that sells the knock-off version of the antique ($1 \le b \le m$)
+ - $q$ is the price of the knock-off version of the antique at shop $b$ ($1 \le q \le 10^7$)
+
+-----Output-----
+If it is possible to collect all of the antiques while visiting no more than $k$ stores, then output the minimum cost. If it is not possible, output $-1$.
+
+-----Examples-----
+Sample Input:
+3 3 2
+1 30 2 50
+2 70 3 10
+3 20 1 80
+Sample Output:
+60

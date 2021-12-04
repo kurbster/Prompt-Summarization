@@ -1,0 +1,33 @@
+A long time ago in a galaxy far, far away, there were $N$ planets. There were also $N - 1$ interplanetary paths that connected all the planets (directly or indirectly). In other words, the network of planets and paths formed a tree. Additionally, each path was enumerated with an integer that denoted the curiosity of the path.
+
+A pair of planets $A$, $B$ is boring if the following holds:
+ - $A$ and $B$ are different planets;
+ - travelling between planet $A$ and $B$ is possible using one or more interplanetary paths; and
+ - the binary XOR of the curiosity of all the paths in that travel is equal to 0
+
+Alas, the times have changed and an evil emperor is ruling the galaxy. He decided to use the Force to destroy all the interplanetary paths in a certain order. Determine the number of boring pairs of planets before the emperor started the destruction and after each destruction.
+
+-----Input-----
+The first line of input contains the integer $N$ ($1 \leq N \leq 100000$). Each of the following $N - 1$ lines contains three integers $A_ i$, $B_ i$, $Z_ i$ ($1 \leq A_ i, B_ i \leq N$, $0 \leq Z_ i \leq 1000000000$) that denote that planets $A_ i$ and $B_ i$ are directly connected with a path of curiosity $Z_ i$. The following line of input contains the permutation of the first $N - 1$ integers that denote the order in which the emperor is destroying the paths. If the $i$-th element of the permutation is $j$, then the emperor destroyed the path between planets $A_ j$ and $B_ j$ in the $i$-th step.
+
+-----Output-----
+The output must contain $N$ lines, the $k$-th line containing the number of boring pairs A, $B$ from the task after the emperor destroyed exactly $k - 1$ paths.
+
+-----Examples-----
+Sample Input 1:
+2
+1 2 0
+1
+Sample Output 1:
+1
+0
+
+Sample Input 2:
+3
+1 2 4
+2 3 4
+1 2
+Sample Output 2:
+1
+0
+0

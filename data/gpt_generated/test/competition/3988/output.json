@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDNZvQE4HHvnvxuLiIie0wi5YRzj",
+    "object": "text_completion",
+    "created": 1638578385,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " you are given a graph. Each edge can be directed or undirected. You are given a vertex. Create two plans to orient edges in two directions. Each edge must be directed in both plans. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

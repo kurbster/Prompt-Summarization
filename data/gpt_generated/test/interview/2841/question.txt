@@ -1,0 +1,44 @@
+Yancy is designing a new board game called Colorland. The rules of Colorland are as follows:
+ - Colorland’s board is a linear sequence of $N+1$ squares. The first square is a special start square, the remaining $N$ squares are colored blue, orange, pink, green, red, or yellow.
+ - The goal of Colorland is to move your game piece from the start square to square $N$.
+ - Players take turns drawing from a shuffled deck of cards. Each card has a single color on it. A player moves to the nearest square after their current square with the color indicated by the drawn card.
+ - If there are no squares of the drawn color after a player’s current square, that player’s piece does not move and their turn ends.
+
+Yancy is interested in the length of play required for different board layouts. She would like to know the smallest number of cards any one player would have to draw to complete the game.
+
+For instance, the board for Sample Input 3 is [Start, Blue, Orange, Pink, Green, Red, Yellow, Yellow, Yellow, Yellow]. The best first draw is Yellow which advances a player from Start to the $6^\text {th}$ square. From the $6^\text {th}$ square to the end, only a Yellow draw will advance the player. Therefore the smallest number of draws is $4$.
+
+-----Input-----
+The first line of input consists of a single integer $N$ ($1 \le N \le 200000$) denoting the number of squares. The next $N$ lines each contain a single string $S_ i \in \{ \text {Blue}, \text {Orange}, \text {Pink}, \text {Green}, \text {Red}, \text {Yellow}\} $ representing the color of the $i^\text {th}$ square, starting with the first square on the board (not counting the start square).
+
+-----Output-----
+Output a single integer equal to the minimum number of draws required to move from the start square to square $N$.
+
+-----Examples-----
+Sample Input 1:
+6
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+Sample Output 1:
+1
+
+Sample Input 2:
+12
+Blue
+Orange
+Pink
+Green
+Red
+Yellow
+Yellow
+Red
+Green
+Pink
+Orange
+Blue
+Sample Output 2:
+2

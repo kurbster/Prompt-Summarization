@@ -1,0 +1,8 @@
+Chef Vivek is good in mathematics and likes solving problems on prime numbers. One day his friend Jatin told him about Victory numbers. Victory number can be defined as a number formed after summing up all the prime numbers till given number n. Now, chef Vivek who is very fond of solving questions on prime numbers got busy in some other tasks. Your task is to help him finding victory number. 
+tl;dr: Find sum the sum of all the prime numbers which are less than the given number N. 
+
+In number world, two different numbers are friends if they have a lot in common, but also each one has unique perks. More precisely, two different numbers $a$ and $b$ are friends if $gcd(a,b)$, $\frac{a}{gcd(a,b)}$, $\frac{b}{gcd(a,b)}$ can form sides of a triangle. Three numbers $a$, $b$ and $c$ can form sides of a triangle if $a + b > c$, $b + c > a$ and $c + a > b$. In a group of numbers, a number is lonely if it doesn't have any friends in that group. Given a group of numbers containing all numbers from $1, 2, 3, ..., n$, how many numbers in that group are lonely  
+tl;dr: Two different numbers $a$ and $b$ are friends if $gcd(a,b)$, $\frac{a}{gcd(a,b)}$, $\frac{b}{gcd(a,b)}$ can form sides of a triangle. Given a group of numbers containing all numbers from $1, 2, 3, ..., n$, how many numbers in that group are lonely  
+
+You have a team of N people. For a particular task, you can pick any non-empty subset of people. The cost of having x people for the task is x^{k}.  Output the sum of costs over all non-empty subsets of people. 
+tl;dr:

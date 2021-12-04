@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDUHLTEigGj5xnFWGuAWyxDj4KZI",
+    "object": "text_completion",
+    "created": 1638578801,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have to print the maximum and minimum strength of the rangers after performing the above operations k times. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

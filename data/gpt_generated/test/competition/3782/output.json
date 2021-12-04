@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDoeewNjgRDgSxiXYWmhYYemiQRV",
+    "object": "text_completion",
+    "created": 1638580064,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given an integer sequence A of length N and an integer K. You will perform the following operation on this sequence Q times: - Choose a contiguous subsequence of length K, then remove the smallest element among the K elements contained in the chosen subsequence (if there are multiple such elements, choose one of them as you like). Let X and Y be the values of the largest and smallest element removed in the Q operations. You would like X-Y to be as small as possible. Find the smallest possible value of X-Y when the Q operations are performed optimally. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
