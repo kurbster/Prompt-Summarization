@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BB2XHUcrB5TO5A52FwnaC84JU62D",
+    "object": "text_completion",
+    "created": 1638569393,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        R,G,B = map(int,input().split())\n        K = int(input())\n        if K > min(R,G,B):\n            print(min(R,G,B)+K-min(R,G,B))\n        else:\n            print(K)\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        R, G, B = map(int, input().split())\n        K = int(input())\n        if K > min(R, G, B):\n            print(min(R, G, B))\n        else:\n            print(K + 1)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = [int(x) for x in input().split()]\n    dislike = [[] for i in range(n)]\n    for i in range(m):\n        a, b = [int(x) for x in input().split()]\n        dislike[a-1].append(b-1)\n        dislike[b-1].append(a-1)\n    q = int(input())\n    for i in range(q):\n        v = int(input())\n        for j in dislike[v-1]:\n            dislike[j].remove(v-1)\n    ans = [0]*(q+1)\n    for i in range(n):\n        for j in dislike[i]:\n            if i > j:\n                continue\n            for k in dislike[j]:\n                if k > j:\n                    continue\n                if k > i:\n                    ans[q] += 1\n                elif k < i:\n                    ans[q] += 1\n                    ans[q+1] += 1\n    for i in range(q):\n        print(ans[i])\n    print(ans[q])\n\nif __name__ == '__main__':\n    code()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = [0] * (n + 1)\n    b = [0] * (n + 1)\n    for i in range(m):\n        a[i + 1], b[i + 1] = map(int, input().split())\n    q = int(input())\n    v = [0] * (q + 1)\n    for i in range(q):\n        v[i + 1] = int(input())\n    d = [0] * (n + 1)\n    for i in range(1, n + 1):\n        d[i] = i\n    for i in range(1, q + 1):\n        for j in range(1, n + 1):\n            if d[j] == v[i]:\n                d[j] = i\n    for i in range(1, n + 1):\n        d[i] = d[d[i]]\n    c = [0] * (n + 1)\n    for i in range(1, n + 1):\n        c[i] = i\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n        c[i] = c[d[i]]\n    for i in range(1, n + 1):\n       ",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = [0] * n\n    for i in range(n):\n        b[a[i]] = i\n    if len(set(b)) != n:\n        print(-1)\n    else:\n        print(*b)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = [0] * n\n    for i in range(n):\n        b[a[i] - 1] = i + 1\n    if a == b:\n        print(-1)\n    else:\n        print(*b)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a, b, n = map(int, input().split())\n        if n == 0:\n            print(a)\n        elif n == 1:\n            print(b)\n        else:\n            for i in range(2, n+1):\n                a, b = b, a ^ b\n            print(b)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a, b, n = map(int, input().split())\n        if n == 0:\n            print(a)\n        elif n == 1:\n            print(b)\n        else:\n            for i in range(2, n+1):\n                a, b = b, a ^ b\n            print(b)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, p = map(int, input().split())\n        k = list(map(int, input().split()))\n        k.sort()\n        if p == 1:\n            print(0)\n        else:\n            if n % 2 == 0:\n                print(abs(sum(k[:n//2]) - sum(k[n//2:])) % 1000000007)\n            else:\n                print(abs(sum(k[:n//2]) - sum(k[n//2+1:])) % 1000000007)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    def solve(n, p, k):\n        k.sort()\n        k.reverse()\n        s = sum(k)\n        if s % p != 0:\n            return s\n        else:\n            s = s // p\n            k.sort()\n            k.reverse()\n            for i in range(n):\n                if k[i] > s:\n                    return s * p\n                else:\n                    s -= k[i]\n            return s * p\n\n    t = int(input())\n    for i in range(t):\n        n, p = map(int, input().split())\n        k = list(map(int, input().split()))\n        print(solve(n, p, k) % (10 ** 9 + 7))\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    X, d = map(int, input().split())\n    n = 0\n    a = []\n    for i in range(1, 10**18):\n        if i - d <= X:\n            n += 1\n            a.append(i)\n            X -= 1\n        else:\n            break\n    if n == 0:\n        print(-1)\n    else:\n        print(n)\n        print(*a)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    X, d = map(int, input().split())\n    n = 0\n    for i in range(1, X+1):\n        if X%i == 0:\n            if i >= d:\n                n += 1\n    print(n)\n    if n == 0:\n        print(-1)\n    else:\n        for i in range(1, X+1):\n            if X%i == 0:\n                if i >= d:\n                    print(i, end=\" \")\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return len(args)",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return len(args) + len(kwargs)",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    b = list(map(int, input().split()))\n    g = list(map(int, input().split()))\n    if min(b) > max(g):\n        print(-1)\n    else:\n        print(sum(b) + sum(g) - min(b) - max(g))\n\nif __name__ == '__main__':\n    code()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    b = list(map(int, input().split()))\n    g = list(map(int, input().split()))\n    if min(b) > max(g):\n        print(-1)\n    else:\n        print(min(b) * m + sum(b))\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Get the number of elements and the number of swaps\n    n, m = [int(x) for x in input().split()]\n\n    # Get the permutation\n    perm = [int(x) for x in input().split()]\n\n    # Get the swaps\n    swaps = []\n    for i in range(m):\n        swaps.append([int(x) for x in input().split()])\n\n    # Create a dictionary to store the number of times each element appears\n    count = {}\n    for i in range(1, n + 1):\n        count[i] = 0\n\n    # Loop through the swaps\n    for i in range(m):\n        # Swap the elements\n        temp = perm[swaps[i][0] - 1]\n        perm[swaps[i][0] - 1] = perm[swaps[i][1] - 1]\n        perm[swaps[i][1] - 1] = temp\n\n        # Update the count\n        count[perm[swaps[i][0] - 1]] += 1\n        count[perm[swaps[i][1] - 1]] += 1\n\n    # Find the maximum number of times an element appears\n    max_count = 0\n    for i in range(1, n + 1):\n        if count[i] > max_count:\n            max_count = count[i]\n\n    # Print the maximum number of times an element appears\n    print(max_count)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    p = list(map(int, input().split()))\n    swaps = []\n    for i in range(m):\n        swaps.append(list(map(int, input().split())))\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.sort(key=lambda x: x[0])\n    swaps.sort(key=lambda x: x[1])\n    swaps.",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        if sum(a) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for t in range(T):\n        N = int(input())\n        coins = list(map(int, input().split()))\n        if sum(coins) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

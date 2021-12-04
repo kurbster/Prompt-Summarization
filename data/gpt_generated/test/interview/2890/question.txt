@@ -1,0 +1,26 @@
+The city of Xentopia has a well-connected railway network. The city has $N$ junctions numbered from $1$ to $N$. There are $M$ pairs of railway tracks that exist between the junctions. Trains can travel in both directions on each track. Each railway track is labelled either red, blue, or white in colour.
+
+Tima, a tourist in the city, wants to travel from junction $S$ to junction $T$ in the minimum possible time. She has a map of the railway network that she can use to achieve this goal.
+
+Tima, being rather eccentric, has an interesting constraint for her travel: She wants to travel via exactly $k_1$ red tracks, exactly $k_2$ blue tracks, and any number of white tracks, in any order. She is fine with using a railway track more than once.
+
+Can you tell the minimum time Tima will take to go from $S$ to $T$, ensuring that her constraint is not violated?
+
+-----Input-----
+The first line contains four space-separated integers: $N$, ($1 \leq N \leq 450$); $M$, ($1 \leq M \leq 1100$); $k_1$; and $k_2$, ($0 \leq k_1, k_2 \leq 800$, $k_1 \cdot k_2 \leq 800$). Following are $M$ lines. Each line contains four space-separated integers: $U~ V~ X~ C$, denoting that a track exists between junction $U$ and junction $V$, ($1 \leq U, V \leq N$, $U \neq V$); the train covers this track in $X$ seconds, ($0 \leq X \leq 10^9$); and the track is labelled colour $C$, ($0 \leq C \leq 2$). A white track is denoted by $C=0$, a red track is denoted by $C=1$, and a blue track is denoted by $C=2$.
+
+The last line contains two space-separated integers $S$, ($1 \leq S \leq N$), and $T$, ($1 \leq T \leq N$), the source and destination of Tima’s journey, respectively. Note: $S$ may be equal to $T$.
+
+-----Output-----
+Print a single integer denoting the total time Tima would take. If it is not possible for Tima to reach her destination using exactly $k_1$ red tracks, $k_2$ blue tracks, and any number of white tracks, output -1.
+
+-----Examples-----
+Sample Input:
+4 4 1 1
+1 2 1 2
+1 3 1 0
+2 4 1 1
+3 4 1 0
+1 4
+Sample Output:
+2

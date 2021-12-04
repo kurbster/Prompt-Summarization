@@ -1,0 +1,30 @@
+
+You are given a matrix N x M of N boys and M girls where Aij is 1 if the i-th boy likes the j-th girl, otherwise it will be 0. There will be a collison if two boys like the same girl. Calculate the number of different collisions
+
+-----Input-----
+The first line contains a single integer T denoting the number of test cases. Then T test cases follow.
+The first line of each test case contains two space separated integers N, M denoting the number of boys and girls, respectively.
+Each of the following N lines contain M characters, each of them is either '0' or '1'.
+
+-----Output-----
+For each test case output a single line containing an integer corresponding to the number of collisions.
+
+-----Constraints-----
+- 1 ≤ T ≤ 100
+- 1 ≤ N, M ≤ 10
+
+-----Example-----
+Input:
+2
+4 3
+111
+100
+110
+000
+2 2
+10
+01
+
+Output:
+4
+0

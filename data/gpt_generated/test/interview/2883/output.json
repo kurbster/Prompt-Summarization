@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDNvIV0dD2nW4perTeWuOFTDCuCM",
+    "object": "text_completion",
+    "created": 1638578407,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a collection of intervals, merge all overlapping intervals. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDSul9iWPGAc7Q7ZG2IKdlrPrb38",
+    "object": "text_completion",
+    "created": 1638578716,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a sequence of numbers, find the winner of a game of Lieges of Legendre. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

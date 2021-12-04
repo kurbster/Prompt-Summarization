@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "1\nB I P C F\nA G M - - -\n",
+        "2\nA B C D H\nF G M M\nF H M - *\n",
+        "3\nA C M S D\nB G S - G\nA H S - - S\nC J S *\n"
+    ],
+    "outputs": [
+        "AGM\n",
+        "E??\n",
+        "???\n"
+    ]
+}

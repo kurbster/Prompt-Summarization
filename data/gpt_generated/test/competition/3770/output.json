@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDUIZkWlXooX7VRwd4wwYEILDca0",
+    "object": "text_completion",
+    "created": 1638578802,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a simple undirected graph with N vertices and M edges. Its vertices are numbered 1, 2, \\ldots, N and its edges are numbered 1, 2, \\ldots, M. On Vertex i (1 \\leq i \\leq N) two integers A_i and B_i are written. Edge i (1 \\leq i \\leq M) connects Vertices U_i and V_i. Snuke picks zero or more vertices and delete them. Deleting Vertex i costs A_i. When a vertex is deleted, edges that are incident to the vertex are also deleted. The score after deleting vertices is calculated as follows: \n- The score is the sum of the scores of all connected components. \n- The score of a connected component is the absolute value of the sum of B_i of the vertices in the connected component. Snuke's profit is (score) - (the sum of costs). Find the maximum possible profit Snuke can gain. \nInput \n- First line contains single integer T, No. of test case \n- Next line for every test contain case a string S \nOutput \n- Print the maximum possible profit Snuke can gain on a new line. \nConstraints \n- 1 \\leq T \\leq 10 \n- 0 \\leq len(S) \\leq 100 \n- S contain a-z and A-Z and space only \nSample Input 3 \nSample Output \n-8 \nExplanation \n- Snuke picks 0 or more vertices and delete them.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

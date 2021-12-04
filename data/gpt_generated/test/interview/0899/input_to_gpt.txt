@@ -1,0 +1,11 @@
+Given two strings representing two complex numbers. You need to return a string representing their multiplication. Note i2 = -1 according to the definition. 
+tl;dr: Write program to return a string representing the multiplication of given two  strings of complex numbers. 
+
+Given an array of positive integers arr, calculate the sum of all possible odd-length subarrays. A subarray is a contiguous subsequence of the array. Return the sum of all odd-length subarrays of arr.   
+tl;dr: You are given an array arr. Calculate and return the sum of all possible odd-length subarrays. 
+
+In this kata, you have to define a function named **func** that will take a list as input. You must try and guess the pattern how we get the output number and return list - **[output number,binary representation,octal representation,hexadecimal representation]**, but **you must convert that specific number without built-in : bin,oct and hex functions.** 
+tl;dr: In this task, you have to define a function named func that will take a list as input. You must try and guess the pattern how we get the output number and return list - [output number,binary representation,octal representation,hexadecimal representation] 
+
+You are given an undirected connected weighted graph with N vertices and M edges that contains neither self-loops nor double edges. The i-th (1 i M) edge connects vertex a_i and vertex b_i with a distance of c_i. Here, a self-loop is an edge where a_i = b_i (1 i M), and double edges are two edges where (a_i,b_i)=(a_j,b_j) or (a_i,b_i)=(b_j,a_j) (1 i<j M). A connected graph is a graph where there is a path between every pair of different vertices. Find the number of the edges that are not contained in any shortest path between any pair of different vertices.   -----Constraints-----  - 2 N 100   - N-1 M min(N(N-1)/2,1000)   - 1 a_i,b_i N   - 1 c_i 1000  - c_i is an integer.  - The given graph contains neither self-loops nor double edges.  - The given graph is connected. 
+tl;dr:

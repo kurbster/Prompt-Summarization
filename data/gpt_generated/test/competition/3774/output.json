@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDamVd6Hi3nAc5VVdYLL282xR63F",
+    "object": "text_completion",
+    "created": 1638579204,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a chessboard of size $n \\times m$. You need to find maximum number of chessmen that can be placed on the chessboard such that Manhattan distance between each pair of chessmen is exactly 3. \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

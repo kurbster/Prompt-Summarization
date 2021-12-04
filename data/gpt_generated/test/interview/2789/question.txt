@@ -1,0 +1,27 @@
+Mirko and Slavko’s favourite pastime is competing against each other in mathematical games. This time they took a heap of $N$ pebbles and settled on the following rules:
+ - Mirko is the first to play, then Slavko, then Mirko again, then Slavko and so on;
+ - Mirko can take any number of pebbles (between $1$ and $N$, inclusive) from the heap during his first move;
+ - In each of the following turns the current player must take at least $1$ pebble and is allowed to take at most double the amount of pebbles taken during the previous turn by the other player; naturally, one cannot take more pebbles than the remaining amount in the heap;
+ - The player who takes the last pebble is the winner.
+
+Both Mirko and Slavko play optimally (if it is possible for one player to beat the other, that player will always win). We need to find the minimum number of pebbles that Mirko must take during his first turn such that he is guaranteed to win the game.
+
+-----Input-----
+The first and only line of input contains the positive integer $N$ ($2 \le N \le 10^{15}$), the number of pebbles in the starting heap.
+
+-----Output-----
+The first and only line of output must contain the required minimum number of pebbles that Mirko needs to remove during his first turn.
+
+-----Explanation of Sample Input 1-----
+Mirko has $4$ possibilities to choose from: he can take $1$, $2$, $3$, or $4$ pebbles from the heap. If he takes all $4$ pebbles he will naturally win, but that is not the minimum solution. We need to check the remaining alternatives. If Mirko takes only one pebble, Slavko is left with a heap of $3$, but he can take at most $2$. Slavko cannot take all pebbles, but Mirko will be able to take all remaining pebbles during his next turn, winning the game. We conclude that $1$ is the minimum solution for this test case.
+
+-----Examples-----
+Sample Input 1:
+4
+Sample Output 1:
+1
+
+Sample Input 2:
+7
+Sample Output 2:
+2

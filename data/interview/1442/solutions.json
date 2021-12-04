@@ -1,0 +1,1 @@
+["# cook your dish here\nfor _ in range(int(input())):\n    a=int(input())\n    print(a/2+2)", "# cook your dish here\nfor _ in range(int(input())):\n    a=int(input())\n    print(a//2+2)"]

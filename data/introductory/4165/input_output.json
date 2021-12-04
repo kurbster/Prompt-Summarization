@@ -1,0 +1,1 @@
+{"fn_name": "uni_total", "inputs": [["a"], ["b"], ["c"], [""], ["aaa"], ["abc"], ["Mary Had A Little Lamb"], ["Mary had a little lamb"], ["CodeWars rocks"], ["And so does Strive"]], "outputs": [[97], [98], [99], [0], [291], [294], [1873], [2001], [1370], [1661]]}

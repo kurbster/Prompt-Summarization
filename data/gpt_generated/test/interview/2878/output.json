@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDNrDSueOZxxr8S1eMED5QW9dAEs",
+    "object": "text_completion",
+    "created": 1638578403,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a string, determine if given string is a triplet or not. _____________________________________________________________ Rules: 1. A triplet is a string of three letters. 2. A triplet is on the same line if there is a line going through the centre of each of the three squares. 3. A triplet is on the same line if there is a line going through the centre of each of the three squares. _____________________________________________________________",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

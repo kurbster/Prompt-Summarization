@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE2dmewj8ktC99nR2SgVYbAghbEp",
+    "object": "text_completion",
+    "created": 1638580931,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a polygon on a plane. The polygon is not necessarily convex. The polygon is tied to a point P which lies outside the polygon. The polygon is switched on. The polygon will make a circle around P. Find the area of the region that will be cleared from snow. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

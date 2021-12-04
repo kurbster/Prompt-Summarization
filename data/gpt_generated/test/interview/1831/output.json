@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCBpxvSG3BtwGMWCUHP2phcOpnpv",
+    "object": "text_completion",
+    "created": 1638573813,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have to analyze a given nervous system of a zombie and find out whether it is valid. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

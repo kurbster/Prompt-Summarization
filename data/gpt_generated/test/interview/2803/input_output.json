@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "pig\n2\ngoat\ntoad\n",
+        "dog\n2\nsnake\nemu\n",
+        "hare\n3\nbee\ncat\neagle\n"
+    ],
+    "outputs": [
+        "goat\n",
+        "?\n",
+        "eagle!\n"
+    ]
+}

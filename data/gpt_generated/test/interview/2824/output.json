@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDRZ1z5kC8Cn3tpz15xZUuSNZRh0",
+    "object": "text_completion",
+    "created": 1638578633,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Santa Claus has started hiring other animals besides reindeer to pull his sleigh via short term \u00a0gig\u00a0 contracts. As a result, the actual animals that show up to pull his sleigh for any given trip can vary greatly in size. Last week he had $2$ buffalo, $37$ voles and a schnauzer. Unfortunately, both buffalo were hitched on the left side and the entire sleigh flipped over in mid-flight due to the weight imbalance. To prevent such accidents in the future, Santa needs to divide the animals for a given trip into two groups such that the sum of the weights of all animals in one group equals the sum of the weights of all animals in the other. To make the hitching process efficient, Santa is seeking an integer target weight $t$ such that all animals that are lighter than $t$ go in one group and those heavier than $t$ go into the other. If there are multiple such $t$, he wants the smallest one. There s one small wrinkle: what should be done if there some animals have weight exactly equal to $t$  Santa solves the problem this way: if there are an even number of such animals, he divides them equally among the two groups (thus distributing the weight evenly). But if there are an odd number of such animals, then one of those animals is sent to work with the elves to make toys (it is not put in either group), and the remaining (now an even number) are divided evenly among the two groups.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

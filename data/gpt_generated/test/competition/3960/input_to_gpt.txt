@@ -1,0 +1,8 @@
+Python dictionaries are inherently unsorted. So what do you do if you need to sort the contents of a dictionary  Create a function that returns a sorted list of `(key, value)` tuples (Javascript: arrays of 2 items). The list must be sorted by the `value` and be sorted **largest to smallest**. ## 
+tl;dr: Create a function that returns a sorted list of (key, value) tuples. The list must be sorted by the value from largest to smallest. 
+
+# Task Given some sticks by an array `V` of positive integers, where V[i] represents the length of the sticks, find the number of ways we can choose three of them to form a triangle. # 
+tl;dr: # Task You are given some sticks by an array `V` of positive integers, where V[i] represents the length of the sticks, find the number of ways we can choose three of them to form a triangle. # 
+
+Something happened in Uzhlyandia again... There are riots on the streets... Famous Uzhlyandian superheroes Shean the Sheep and Stas the Giraffe were called in order to save the situation. Upon the arriving, they found that citizens are worried about maximum values of the Main Uzhlyandian Function f, which is defined as follows:$f(l, r) = \sum_{i = l}^{r - 1}|a [ i ] - a [ i + 1 ]|\cdot(- 1)^{i - l}$ In the above formula, 1   l < r   n must hold, where n is the size of the Main Uzhlyandian Array a, and |x| means absolute value of x. But the heroes skipped their math lessons in school, so they asked you for help. Help them calculate the maximum value of f among all possible values of l and r for the given array a. 
+tl;dr:

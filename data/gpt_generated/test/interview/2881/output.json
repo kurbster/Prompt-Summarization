@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDMQVV4G18wXZMWp9hcGfISLXSDc",
+    "object": "text_completion",
+    "created": 1638578314,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given two sequences of digits $X$ and $Y$. There are matches that have been arranged to form the digits in $X$. Can you move exactly one match from them, so that the resulting matches form the other sequence $Y$ ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

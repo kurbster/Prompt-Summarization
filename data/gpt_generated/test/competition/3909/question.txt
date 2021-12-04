@@ -1,0 +1,39 @@
+Gerald has been selling state secrets at leisure. All the secrets cost the same: n marks. The state which secrets Gerald is selling, has no paper money, only coins. But there are coins of all positive integer denominations that are powers of three: 1 mark, 3 marks, 9 marks, 27 marks and so on. There are no coins of other denominations. Of course, Gerald likes it when he gets money without the change. And all buyers respect him and try to give the desired sum without change, if possible. But this does not always happen.
+
+One day an unlucky buyer came. He did not have the desired sum without change. Then he took out all his coins and tried to give Gerald a larger than necessary sum with as few coins as possible. What is the maximum number of coins he could get?
+
+The formal explanation of the previous paragraph: we consider all the possible combinations of coins for which the buyer can not give Gerald the sum of n marks without change. For each such combination calculate the minimum number of coins that can bring the buyer at least n marks. Among all combinations choose the maximum of the minimum number of coins. This is the number we want.
+
+
+-----Input-----
+
+The single line contains a single integer n (1 ≤ n ≤ 10^17).
+
+Please, do not use the %lld specifier to read or write 64 bit integers in С++. It is preferred to use the cin, cout streams or the %I64d specifier.
+
+
+-----Output-----
+
+In a single line print an integer: the maximum number of coins the unlucky buyer could have paid with.
+
+
+-----Examples-----
+Input
+1
+
+Output
+1
+
+Input
+4
+
+Output
+2
+
+
+
+-----Note-----
+
+In the first test case, if a buyer has exactly one coin of at least 3 marks, then, to give Gerald one mark, he will have to give this coin. In this sample, the customer can not have a coin of one mark, as in this case, he will be able to give the money to Gerald without any change.
+
+In the second test case, if the buyer had exactly three coins of 3 marks, then, to give Gerald 4 marks, he will have to give two of these coins. The buyer cannot give three coins as he wants to minimize the number of coins that he gives.

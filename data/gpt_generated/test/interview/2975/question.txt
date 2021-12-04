@@ -1,0 +1,25 @@
+Lisa works as a waitress in a restaurant. Tonight is her birthday so Lisa asked the chef to prepare his special meal for her friends. The chef’s meal is made of $N$ ingredients. To prepare one serving of the meal he needs a certain amount of each ingredient.
+
+There are some ingredients already available in the kitchen and Lisa will buy the rest at the grocery store. The store has all the necessary ingredients, each coming in smaller and larger packages. Lisa has $M$ dollars and wants to spend them so that the chef can make the most servings of his meal.
+
+For example, consider the first sample data below. For $99$ dollars Lisa will buy three smaller and one larger package of the first ingredient, as well as one smaller and two larger packages of the second ingredient $(3\cdot 10 + 1 \cdot 11 + 1 \cdot 10 + 2 \cdot 24 = 99)$. The chef will then have $51$ units $(8 + 3 \cdot 10 + 1 \cdot 13)$ of the first ingredient and $60$ units $(20 + 1 \cdot 6 + 2 \cdot 17)$ of the second ingredient, enough for $5$ servings.
+
+-----Input-----
+The first line contains two integers $N$ and $M$, $1 \le N \le 100$, $1 \le M \le 100000$. Each of the following $N$ lines contains $6$ positive integers, information about one ingredient. These specify, in order:
+ - $X$, $10 \le X \le 100$, the amount of the ingredient needed in one serving;
+ - $Y$, $1 \le Y \le 100$, the amount of the ingredient already available in the kitchen;
+ - $S_ M$, $1 \le S_ M < 100$, the size of the smaller package at the store;
+ - $P_ M$, $10 \le PM < 100$, the price of the smaller package;
+ - $S_ V$, $S_ M < S_ V \le 100$, the size of the larger package; and
+ - $P_ V$, $P_ M < P_ V \le 100$, the price of the larger package.
+
+-----Output-----
+Output the largest number of servings the chef can make if Lisa spends her money wisely.
+
+-----Examples-----
+Sample Input:
+2 100
+10 8 10 10 13 11
+12 20 6 10 17 24
+Sample Output:
+5

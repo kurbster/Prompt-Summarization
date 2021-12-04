@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE1JFXkZiUu0DAezOcZl4rHr4I4T",
+    "object": "text_completion",
+    "created": 1638580849,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Sergey is traveling along the Golden Circle of Beetlovers. He stops at cities each $l$ km ($l > 0$), until he stops in $s$ once again. Sergey then forgot numbers $s$ and $l$, but he remembers that the distance from the city $s$ to the nearest fast food restaurant was $a$ km, and the distance from the city he stopped at after traveling the first $l$ km from $s$ to the nearest fast food restaurant was $b$ km. Sergey always traveled in the same direction along the circle, but when he calculated distances to the restaurants, he considered both directions. Now Sergey is interested in two integers. The first integer $x$ is the minimum number of stops (excluding the first) Sergey could have done before returning to $s$. The second integer $y$ is the maximum number of stops (excluding the first) Sergey could have done before returning to $s$.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

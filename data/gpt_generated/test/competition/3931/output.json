@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDQ3lMk3pErKpYPJveow3xMD6Rgz",
+    "object": "text_completion",
+    "created": 1638578539,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Write a function that when given a number n, returns the nth number in the Fibonacci Sequence. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

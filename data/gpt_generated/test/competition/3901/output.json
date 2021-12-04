@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDeGEMiccs8KgZDLk7mFLp2cQnNA",
+    "object": "text_completion",
+    "created": 1638579420,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have to choose two adjacent elements from the given array and replace one of them with gcd(x, y). \n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -4,6 +4,7 @@ promptFile: prompt_category.yaml
 numPrompts: 3
 summaryType: expert
 ignoreIntro: True
+ignoreTrain: True
 originalPrefix: ""
 summaryPrefix: "tl;dr: "
 fewShotSuffix: "\n\n"

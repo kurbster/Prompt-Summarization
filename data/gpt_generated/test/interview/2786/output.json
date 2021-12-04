@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDvQdfGvwKNp23bgV6pGOsev8YWF",
+    "object": "text_completion",
+    "created": 1638580484,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a string consisting of characters $A$ and $B$ ( $A$ and $B$ are not brackets). You have to determine how many ways the characters $A$ and $B$ can be replaced by brackets so that the result is a regular bracket-sequence. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDegiseCf5dRcQ9SaX5ncgUNqFRs",
+    "object": "text_completion",
+    "created": 1638579446,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a text consisting of n lines. Each line contains some space-separated words, consisting of lowercase English letters. We define a syllable as a string that contains exactly one vowel and any arbitrary number (possibly none) of consonants. In English alphabet following letters are considered to be vowels: 'a', 'e', 'i', 'o', 'u' and 'y'. Each word of the text that contains at least one vowel can be divided into syllables. Each character should be a part of exactly one syllable. For example, the word \"mamma\" can be divided into syllables as \"ma\" and \"mma\", \"mam\" and \"ma\", and \"mamm\" and \"a\". Words that consist of only consonants should be ignored. The verse patterns for the given text is a sequence of n integers p_1, p_2, ..., p_{n}. Text matches the given verse pattern if for each i from 1 to n one can divide words of the i-th line in syllables in such a way that the total number of syllables is equal to p_{i}. You are given the text and the verse pattern. Check, if the given text matches the given verse pattern. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

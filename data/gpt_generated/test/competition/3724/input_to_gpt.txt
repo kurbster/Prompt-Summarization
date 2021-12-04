@@ -1,0 +1,11 @@
+Given two strings representing two complex numbers. You need to return a string representing their multiplication. Note i2 = -1 according to the definition. 
+tl;dr: Write program to return a string representing the multiplication of given two  strings of complex numbers. 
+
+**This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function called that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned. 
+tl;dr: **This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned
+
+In this kata, you have to define a function named **func** that will take a list as input. You must try and guess the pattern how we get the output number and return list - **[output number,binary representation,octal representation,hexadecimal representation]**, but **you must convert that specific number without built-in : bin,oct and hex functions.** 
+tl;dr: In this task, you have to define a function named func that will take a list as input. You must try and guess the pattern how we get the output number and return list - [output number,binary representation,octal representation,hexadecimal representation] 
+
+We have a string S of length N consisting of A, B, and C. You can do the following operation on S zero or more times:  - Choose i (1 \leq i \leq |S| - 1) such that S_i \neq S_{i + 1}. Replace S_i with the character (among A, B, and C) that is different from both S_i and S_{i + 1}, and remove S_{i + 1} from S. Find the number of distinct strings that S can be after zero or more operations, and print the count modulo (10^9+7). -----Constraints-----  - 1 \leq N \leq 10^6  - S is a string of length N consisting of A, B, and C. 
+tl;dr:

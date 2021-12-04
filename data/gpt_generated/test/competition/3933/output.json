@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlWdzpdaHyf8SdYh4rXS7s2z1oA",
+    "object": "text_completion",
+    "created": 1638579870,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given the average temperature for each of the last n days, determine whether the average temperature for the next day will be the same as the average temperature for the n-th day or the next term of the arithmetic progression. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

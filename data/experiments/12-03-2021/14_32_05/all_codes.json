@@ -1,0 +1,22 @@
+{
+    "0": "\n        a1, a2 = a.split('+')\n        b1, b2 = b.split('+')\n        a1 = int(a1)\n        a2 = int(a2[:-1])\n        b1 = int(b1)\n        b2 = int(b2[:-1])\n        c1 = a1*b1 - a2*b2\n        c2 = a1*b2 + a2*b1\n        return str(c1) + '+' + str(c2) + 'i'",
+    "1": "\n        a1, a2 = a.split('+')\n        b1, b2 = b.split('+')\n        a1 = int(a1)\n        a2 = int(a2[:-1])\n        b1 = int(b1)\n        b2 = int(b2[:-1])\n        return str(a1*b1-a2*b2)+'+'+str(a1*b2+a2*b1)+'i'",
+    "2": "\n    ",
+    "3": "\n    ",
+    "4": "\n    return sorted(d.items(), key=lambda x: x[1], reverse=True)",
+    "5": "\n    return sorted(d.items(), key=lambda x: x[1], reverse=True)",
+    "6": "\n    return all(i.lower() in arr[0].lower() for i in arr[1])",
+    "7": "\n    return all(i.lower() in arr[0].lower() for i in arr[1])",
+    "8": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        count = 0\n        for j in range(1, N+1):\n            if N % j == 0:\n                count += 1\n        if count % 2 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")",
+    "9": "\n    for _ in range(int(input())):\n        n=int(input())\n        if n%2==0:\n            print(\"NO\")\n        else:\n            print(\"YES\")",
+    "10": "\n    max_votes = max(votes)\n    if k == 0:\n        if votes.count(max_votes) == 1:\n            return 1\n        else:\n            return 0\n    else:\n        return len([i for i in votes if i + k > max_votes])",
+    "11": "\n    if k == 0:\n        return 1 if votes.count(max(votes)) == 1 else 0\n    return sum(1 for v in votes if v + k > max(votes))",
+    "12": "\n    if a < 1 or b < 1:\n        return \"Non-drinkers can't play\"\n    elif a > b:\n        return \"Mike\"\n    elif b > a:\n        return \"Joe\"\n    else:\n        return \"It's a draw\"",
+    "13": "\n    if a < 1 or b < 1:\n        return \"Non-drinkers can't play\"\n    else:\n        if a > b:\n            return \"Joe\"\n        elif a < b:\n            return \"Mike\"\n        else:\n            return \"Tie\"",
+    "14": "\n    ",
+    "15": "\n    ",
+    "16": "\n        dp = [[0 for _ in range(n)] for _ in range(m)]\n        for i in range(m):\n            for j in range(n):\n                if i == 0 or j == 0:\n                    dp[i][j] = 1\n                else:\n                    dp[i][j] = dp[i-1][j] + dp[i][j-1]\n        return dp[m-1][n-1]",
+    "17": "\n        dp = [[0 for _ in range(n)] for _ in range(m)]\n        for i in range(m):\n            for j in range(n):\n                if i == 0 or j == 0:\n                    dp[i][j] = 1\n                else:\n                    dp[i][j] = dp[i-1][j] + dp[i][j-1]\n        return dp[m-1][n-1]",
+    "18": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    q = int(input())\n    for i in range(q):\n        l, r = map(int, input().split())\n        print(f(a, l, r))\n\ndef f(a, l, r):\n    if r - l == 1:\n        return a[l]\n    else:\n        m = (l + r) // 2\n        return max(f(a, l, m), f(a, m, r)) ^ a[m]\n",
+    "19": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    q = int(input())\n    for i in range(q):\n        l, r = map(int, input().split())\n        if l == r:\n            print(a[l-1])\n        else:\n            print(max(a[l-1:r]))\n"
+}

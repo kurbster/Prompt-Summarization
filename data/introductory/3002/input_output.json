@@ -1,0 +1,1 @@
+{"fn_name": "is_pronic", "inputs": [[2], [3], [4], [5], [6], [-3], [-27]], "outputs": [[true], [false], [false], [false], [true], [false], [false]]}

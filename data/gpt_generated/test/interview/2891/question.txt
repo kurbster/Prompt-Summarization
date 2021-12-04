@@ -1,0 +1,28 @@
+The Birthday Paradox is the name given to the surprising fact that if there are just $23$ people in a group, there is a greater than $50\% $ chance that a pair of them share the same birthday. The underlying assumptions for this are that all birthdays are equally likely (which isn’t quite true), the year has exactly $365$ days (which also isn’t true), and the people in the group are uniformly randomly selected (which is a somewhat strange premise). For this problem, we’ll accept these assumptions.
+
+Consider what we might observe if we randomly select groups of $P=10$ people. Once we have chosen a group, we break them up into subgroups based on shared birthdays. Among many other possibilities, we might observe the following distributions of shared birthdays:
+ - all $10$ have different birthdays, or
+ - all $10$ have the same birthday, or
+ - $3$ people have the same birthday, $2$ other people have the same birthday (on a different day), and the remaining $5$ all have different birthdays.
+
+Of course, these distributions have different probabilities of occurring.
+
+Your job is to calculate this probability for a given distribution of people sharing birthdays. That is, if there are $P$ people in a group, how probable is the given distribution of shared birthdays (among all possible distributions for $P$ people chosen uniformly at random)?
+
+-----Input-----
+The first line gives a number $n$ where $1 \le n \le 365$. The second line contain integers $c_1$ through $c_ n$, where $1 \le c_ i \le 100$ for all $c_ i$. The value $c_ i$ represents the number of people who share a certain birthday (and whose birthday is distinct from the birthdays of everyone else in the group).
+
+-----Output-----
+Compute the probability $b$ of observing a group of people with the given distribution of shared birthdays. Since $b$ may be quite small, output instead $\log _{10}(b)$. Your submission’s answer is considered correct if it has an absolute or relative error of at most $10^{-6}$ from the judge’s answer.
+
+-----Explanations-----
+The first sample case shows $P=2$ people with distinct birthdays. The probability of this occurring is $b = 364/365 \approx 0.9972602740$, and $\log _{10}(b) \approx -0.001191480807419$.
+
+The second sample case represents the third example in the list given earlier with $P=10$ people. In this case, the probability is $b \approx 0.0000489086$, and $\log _{10}(b) \approx -4.310614508857128$.
+
+-----Examples-----
+Sample Input:
+2
+1 1
+Sample Output:
+-0.001191480807419

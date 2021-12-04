@@ -1,0 +1,13 @@
+You will be given a number and your task is to return the nth fibonacci string.
+
+
+Examples:
+Input:
+solve(2)
+Output:
+'010'
+
+Input:
+solve(3)
+Output:
+'01001'

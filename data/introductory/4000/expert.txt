@@ -1,0 +1,21 @@
+You are given a positive number, find if it is strong or not.
+
+Example 1:
+Input: strong_num(1)
+Output: "STRONG!!!!"
+Explanation: Since the sum of its digits' factorial of 1 is equal to number itself, then it's a Strong.  
+
+Example 2:
+Input: strong_num(123)
+Output: "Not Strong !!"
+Explanation: Since the sum of its digits' factorial of 1! + 2! + 3! = 9 is not equal to number itself, then it's Not Strong. 
+
+Example 3:
+Input: strong_num(2)
+Output: "STRONG!!!!"
+Explanation: Since **_the sum of its digits' factorial of 2! = 2 is equal to number itself, then it's a Strong.  
+
+Example 4:
+Input: strong_num(150)
+Output: "Not Strong !!"
+Explanation: Since the sum of its digits' factorial of 1! + 5! + 0! = 122 is not equal to number itself, then it's Not Strong.

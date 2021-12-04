@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDMZVLKkT0n80Q46ZoXaNMR7sBmH",
+    "object": "text_completion",
+    "created": 1638578323,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Ash and his Pokemon Pikachu are going on a journey. Ash has planned his route for the journey so that it passes through N cities, numbered 1, 2,  , N, and in this order. When they set out, Pikachu has an initial strength of Sin as well as an experience value (XV) of 0. As they travel they may increase his strength and experience value in a manner to be described below. In each city, Ash can choose either to train Pikachu or let Pikachu battle the Gym-leader (but not both). The Gym-leader in ith city has experience E[i]. If Pikachu enters a city i with strength S and decides to train, then this increases his strength by the cube of the sum of the digits in his current strength. For example, if he entered a city with a strength of 12, then training will increase his strength to 12 + (1+2)3 = 39. On the other hand, if he enters city i with strength S and battles the Gym-leader, then this increases his experience value XV by S*E[i]. Ash wants your help to find out the maximum XV that Pikachu can attain at the end of his journey.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

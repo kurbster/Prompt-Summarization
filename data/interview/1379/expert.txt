@@ -1,0 +1,15 @@
+
+You have find out the frequency of letters in a given string and print it as the new string which comprises of the letter followed by its frequency.For example string is- abcdabf. Then the new string is- a2b2c1d1f1
+
+-----Input-----
+The input consists of a single line string without any space or numeric or special characters.
+
+-----Output-----
+It will consist of in the new string which comprises the letters followed by each time it has occurred in the original string in order.
+
+-----Example-----
+Input:
+information
+
+Output:
+i2n2f1o2r1m1a1t1

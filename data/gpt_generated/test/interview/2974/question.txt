@@ -1,0 +1,33 @@
+“[There] is a reason why the most successful trial lawyers are often master storytellers, making their cases come to life for their jurors.” ­–G. Christopher Ritter.
+
+A good lawyer can take an incomplete set of facts and turn it into a convincing story.
+
+Last night, a major robbery occurred at a bank, and, luckily, the robber seems to have been successfully arrested. Unfortunately, it is neither clear what the order of events was, nor whether the man they caught is even really the right guy. It is necessary to reconstruct the correct order of events to convince the jury that the accused is guilty beyond reasonable doubt for a conviction to be reached.
+
+It is known that there are $N$ material events that are relevant to the case. For simplicity, we label the events $1, 2, \dots , N$. The prosecution claims that these events happened in the order $P_1, P_2, \dots , P_ N$, while the defense claims that these events instead happened in the order $D_1, D_2, \dots , D_ N$. It is guaranteed that exactly one of the two is right; in particular, this also means that the prosecution and defense do not claim the exact same order of events; that is, there exists some $i$ such that $P_ i \neq D_ i$.
+
+Define a consistent recollection as a subset of the $N$ events, in some order, such that these events happening in this order is consistent with at least one of the two parties’ claims. (That is, at least one of the parties claimed that this subset of events did happen in this order, although it is possible that some other events happened before, after, or in between.) You need to determine
+ - the minimum $k_ p$ such that there is some consistent recollection of $k_ p$ events where it is possible to determine for sure who is right, and
+ - the minimum $k_ r$ such that for any consistent recollection of $k_ r$ events, it is possible to determine for sure who is right.
+
+By finding these numbers, you can help the prosecution estimate the minimum amount of evidence they need to make their case, and the minimum amount of evidence they need to make their case foolproof. (Or determine that the man they have is really innocent.) Please help!
+
+-----Input-----
+The first line of input contains a single integer $N$ ($2 \leq N \leq 200000$), the number of events.
+
+The second line of input contains $N$ integers, $P_1, P_2, \dots , P_ N$ ($1 \leq P_ i \leq N$; all $P_ i$ are distinct), the order of events according to the prosecution. That is, according to the prosecution, the $i^\text {th}$ event was the event labelled $P_ i$.
+
+The third line of input contains $N$ integers, $D_1, D_2, \dots , D_ N$ ($1 \leq D_ i \leq N$; all $D_ i$ are distinct), the order of events according to the defense. That is, according to the defense, the $i^\text {th}$ event was the event labelled $D_ i$.
+
+It is guaranteed that the prosecution and defense do not claim the exact same order of events; that is, there exists some $i$ such that $P_ i \neq D_ i$.
+
+-----Output-----
+Output two integers on a single line, the minimum values of $k_ p$ and $k_ r$, respectively, as described in the problem statement.
+
+-----Examples-----
+Sample Input:
+4
+3 2 4 1
+1 3 4 2
+Sample Output:
+2 3

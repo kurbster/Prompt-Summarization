@@ -1,0 +1,2 @@
+def candies(s):
+	

@@ -1,0 +1,67 @@
+You are an intergalactic surgeon and you have an alien patient. For the purposes of this problem, we can and we will model this patient's body using a $2 \times (2k + 1)$ rectangular grid. The alien has $4k + 1$ distinct organs, numbered $1$ to $4k + 1$.
+
+In healthy such aliens, the organs are arranged in a particular way. For example, here is how the organs of a healthy such alien would be positioned, when viewed from the top, for $k = 4$: [Image] 
+
+Here, the E represents empty space. 
+
+In general, the first row contains organs $1$ to $2k + 1$ (in that order from left to right), and the second row contains organs $2k + 2$ to $4k + 1$ (in that order from left to right) and then empty space right after. 
+
+Your patient's organs are complete, and inside their body, but they somehow got shuffled around! Your job, as an intergalactic surgeon, is to put everything back in its correct position. All organs of the alien must be in its body during the entire procedure. This means that at any point during the procedure, there is exactly one cell (in the grid) that is empty. In addition, you can only move organs around by doing one of the following things:  You can switch the positions of the empty space E with any organ to its immediate left or to its immediate right (if they exist). In reality, you do this by sliding the organ in question to the empty space;  You can switch the positions of the empty space E with any organ to its immediate top or its immediate bottom (if they exist) only if the empty space is on the leftmost column, rightmost column or in the centermost column. Again, you do this by sliding the organ in question to the empty space. 
+
+Your job is to figure out a sequence of moves you must do during the surgical procedure in order to place back all $4k + 1$ internal organs of your patient in the correct cells. If it is impossible to do so, you must say so.
+
+
+-----Input-----
+
+The first line of input contains a single integer $t$ ($1 \le t \le 4$) denoting the number of test cases. The next lines contain descriptions of the test cases.
+
+Each test case consists of three lines. The first line contains a single integer $k$ ($1 \le k \le 15$) which determines the size of the grid. Then two lines follow. Each of them contains $2k + 1$ space-separated integers or the letter E. They describe the first and second rows of organs, respectively. It is guaranteed that all $4k + 1$ organs are present and there is exactly one E.
+
+
+-----Output-----
+
+For each test case, first, print a single line containing either:  SURGERY COMPLETE if it is possible to place back all internal organs in the correct locations;  SURGERY FAILED if it is impossible. 
+
+If it is impossible, then this is the only line of output for the test case. However, if it is possible, output a few more lines describing the sequence of moves to place the organs in the correct locations. 
+
+The sequence of moves will be a (possibly empty) string of letters u, d, l or r, representing sliding the organ that's directly above, below, to the left or to the right of the empty space, respectively, into the empty space. Print the sequence of moves in the following line, as such a string. 
+
+For convenience, you may use shortcuts to reduce the size of your output. You may use uppercase letters as shortcuts for sequences of moves. For example, you could choose T to represent the string lddrr. These shortcuts may also include other shortcuts on their own! For example, you could choose E to represent TruT, etc.
+
+You may use any number of uppercase letters (including none) as shortcuts. The only requirements are the following:  The total length of all strings in your output for a single case is at most $10^4$;  There must be no cycles involving the shortcuts that are reachable from the main sequence;  The resulting sequence of moves is finite, after expanding all shortcuts. Note that the final sequence of moves (after expanding) may be much longer than $10^4$; the only requirement is that it's finite. 
+
+As an example, if T = lddrr, E = TruT and R = rrr, then TurTlER expands to:  TurTlER  lddrrurTlER  lddrrurlddrrlER  lddrrurlddrrlTruTR  lddrrurlddrrllddrrruTR  lddrrurlddrrllddrrrulddrrR  lddrrurlddrrllddrrrulddrrrrr 
+
+To use shortcuts, print each one of them in a single line as the uppercase letter, then space, and then the string that this shortcut represents. They may be printed in any order. At the end of all of those, print a single line containing DONE. 
+
+Note: You still need to print DONE even if you don't plan on using shortcuts.
+
+Your sequence does not need to be the shortest. Any valid sequence of moves (satisfying the requirements above) will be accepted.
+
+
+-----Example-----
+Input
+2
+3
+1 2 3 5 6 E 7
+8 9 10 4 11 12 13
+11
+34 45 6 22 16 43 38 44 5 4 41 14 7 29 28 19 9 18 42 8 17 33 1
+E 15 40 36 31 24 10 2 21 11 32 23 30 27 35 25 13 12 39 37 26 20 3
+
+Output
+SURGERY COMPLETE
+IR
+R SrS
+S rr
+I lldll
+DONE
+SURGERY FAILED
+
+
+
+-----Note-----
+
+There are three shortcuts defined in the first sample output:  R = SrS  S = rr  I = lldll 
+
+The sequence of moves is IR and it expands to:  IR  lldllR  lldllSrS  lldllrrrS  lldllrrrrr

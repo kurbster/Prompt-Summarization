@@ -1,0 +1,1 @@
+Your translator should take in a string and output it with all odd length words having an extra letter that is the last letter in the word. It should also remove all punctuation as well as any underscores. Examples: Input: "How did we end up here? We go?" Output: "Howw didd we endd up here We go"

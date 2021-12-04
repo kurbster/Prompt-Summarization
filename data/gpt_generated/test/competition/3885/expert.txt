@@ -1,0 +1,2 @@
+ Help Sajjad to find the minimum cost he needs to pay for tickets to visit all schools. He can start and finish in any school.
+-----Input----- The first line contains a single integer n (1 ≤ n ≤ 10^5) — the number of schools. -----Output----- Print single integer: the minimum cost of tickets needed to visit all schools. -----Examples----- Input 2 Output 0 Input 10 Output 4 -----Note----- In the first example we can buy a ticket between the schools that costs $(1 + 2) \operatorname{mod}(2 + 1) = 0$.

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDz2MQkKZrPNHreFLQ3pXO8uPgQT",
+    "object": "text_completion",
+    "created": 1638580708,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Someone give a strange birthday present to Ivan. It is hedgehog   connected undirected graph in which one vertex has degree at least $3$ (we will call it center) and all other vertices has degree 1. Ivan thought that hedgehog is too boring and decided to make himself $k$-multihedgehog. Let us define $k$-multihedgehog as follows: $1$-multihedgehog is hedgehog: it has one vertex of degree at least $3$ and some vertices of degree 1. For all $k \\ge 2$, $k$-multihedgehog is $(k-1)$-multihedgehog in which the following changes has been made for each vertex $v$ with degree 1: let $u$ be its only neighbor; remove vertex $v$, create a new hedgehog with center at vertex $w$ and connect vertices $u$ and $w$ with an edge. New hedgehogs can differ from each other and the initial gift.  Thereby $k$-multihedgehog is a tree. Ivan made $k$-multihedgehog but he is not sure that he did not make any mistakes. That is why he asked you to check if his tree is indeed $k$-multihedgehog. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

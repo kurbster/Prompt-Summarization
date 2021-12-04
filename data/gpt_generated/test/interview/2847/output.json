@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDzYVV8QKfJAX3rqUKoU7xHnUlzO",
+    "object": "text_completion",
+    "created": 1638580740,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set of songs. Find a minimum length set list that meets the requirements. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

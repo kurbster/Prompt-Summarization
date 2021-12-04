@@ -1,0 +1,28 @@
+Let's denote $\text{popcount}(x)$ as the number of bits set in the binary representation of the non-negative integer x.
+
+You are given multiple queries consisting of pairs of integers l and r. For each query, find the x, such that l ≤ x ≤ r, and $\text{popcount}(x)$ is maximum possible. If there are multiple such numbers find the smallest of them.
+
+
+-----Input-----
+
+The first line contains integer n — the number of queries (1 ≤ n ≤ 10000).
+
+Each of the following n lines contain two integers l_{i}, r_{i} — the arguments for the corresponding query (0 ≤ l_{i} ≤ r_{i} ≤ 10^18).
+
+
+-----Output-----
+
+For each query print the answer in a separate line.
+
+
+-----Examples-----
+Input
+3
+1 2
+2 4
+1 10
+
+Output
+1
+3
+7

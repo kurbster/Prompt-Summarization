@@ -1,0 +1,28 @@
+Last winter, an avalanche swept away all the ski lifts from the ski resort Valen. Instead of rebuilding the lifts like they were before, the plan is to do it in a more optimized way, and you are responsible for this. 
+
+The only thing remaining from the old lift system are $n$ pylons situated at integer coordinates in the plane. You would like to put lifts in the form of line segments between some of these pylons. The line segments must satisfy the following constraints:
+ - A line segment can only go between pylons $(x_1, y_1)$ and $(x_2, y_2)$ if $|y_1-y_2| = 1$.
+ - There are two types of pylons, one-way and two-way pylons. The one-way pylons can be connected to at most one other pylon, and the two-way pylons can be connected to at most two other pylons. However, if a two-way pylon $i$ is connected to two other pylons, then they must be on opposite sides of $i$ in the $y$-direction. In other words, the two pylons connected to $i$ must have different $y$-coordinates.
+ - Two line segments may not intersect (except that the two line segments incident on a two-way pylon may touch at their endpoints).
+
+What is the maximum number of ski lifts (line segments) you can place under these constraints?
+
+-----Input-----
+The first line contains one integer $n$ ($1 \leq n \leq 10^5$). Each of the following $n$ lines contains three integers $x$, $y$, and $a$, the coordinates and type of a pylon ($0 \leq x,y \leq 10^5$; $a=1$ for a one-way pylon and $a=2$ for a two-way pylon). All the pylons are situated at different coordinates.
+
+-----Output-----
+Output the maximum number of ski lift line segments that can be placed.
+
+-----Examples-----
+Sample Input:
+8
+1 0 1
+3 0 2
+0 1 1
+2 1 2
+4 1 2
+1 2 2
+2 3 1
+4 3 1
+Sample Output:
+4

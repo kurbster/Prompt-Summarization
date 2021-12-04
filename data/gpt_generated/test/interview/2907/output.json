@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDbD9txZio1wyd6QQGU9mnnDlQPg",
+    "object": "text_completion",
+    "created": 1638579231,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a message, determine the number of steps Boris will need to encode it so that he will be happy. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

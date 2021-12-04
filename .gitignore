@@ -4,3 +4,4 @@ logs/
 .vscode/
 *.pyc
 environ/
+fine_tuned_models

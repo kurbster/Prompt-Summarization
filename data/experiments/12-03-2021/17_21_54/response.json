@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BD5qwC9sYPfEhoWDv4x4WS0bn9Tl",
+    "object": "text_completion",
+    "created": 1638577286,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    score = 0\n    frame = 1\n    in_first_half = True\n    for i in range(len(rolls)):\n        if rolls[i] == 10:\n            score += 10 + rolls[i+1] + rolls[i+2]\n            frame += 1\n        else:\n            if rolls[i] + rolls[i+1] == 10:\n                score += 10 + rolls[i+2]\n            else:\n                score += rolls[i] + rolls[i+1]\n            frame += 1\n            in_first_half = not in_first_half\n            if not in_first_half:\n                frame += 1\n    return score",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    score = 0\n    frame = 1\n    in_first_half = True\n    for i in range(len(rolls)):\n        if rolls[i] == 10:\n            score += 10 + rolls[i+1] + rolls[i+2]\n            frame += 1\n        elif rolls[i] + rolls[i+1] == 10:\n            score += 10 + rolls[i+2]\n            frame += 1\n        else:\n            score += rolls[i] + rolls[i+1]\n            frame += 1\n        if frame == 11:\n            break\n        in_first_half = not in_first_half\n        if not in_first_half:\n            frame += 1\n    return score",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        R, C = map(int, input().split())\n        matrix = []\n        for j in range(R):\n            matrix.append(input())\n        if \"spoon\" in matrix or \"spOon\" in matrix or \"SpOon\" in matrix or \"SPOON\" in matrix:\n            print(\"There is a spoon!\")\n        else:\n            print(\"There is indeed no spoon!\")\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        R, C = map(int, input().split())\n        M = []\n        for j in range(R):\n            M.append(input())\n        if \"spoon\" in M or \"SPOON\" in M:\n            print(\"There is a spoon!\")\n        else:\n            print(\"There is indeed no spoon!\")\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a,b = map(int,input().split())\n        print(gcd(a,b),end=\" \")\n        print(lcm(a,b))\n\ndef gcd(a,b):\n    if b==0:\n        return a\n    else:\n        return gcd(b,a%b)\n\ndef lcm(a,b):\n    return (a*b)//gcd(a,b)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a,b = map(int,input().split())\n        print(gcd(a,b),end=\" \")\n        print(lcm(a,b))\n\ndef gcd(a,b):\n    if b==0:\n        return a\n    else:\n        return gcd(b,a%b)\n\ndef lcm(a,b):\n    return (a*b)//gcd(a,b)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    if k == n - 1:\n        print(n - 1)\n        for i in range(1, n):\n            print(i, i + 1)\n        print(n, n)\n    else:\n        print(k - 1)\n        for i in range(1, k):\n            print(i, i + 1)\n        for i in range(k + 1, n):\n            print(k, i)\n        print(k, k)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    nodes = [i for i in range(1, n+1)]\n    edges = []\n    for i in range(n-1):\n        for j in range(i+1, n):\n            edges.append((i+1, j+1))\n    exit_nodes = []\n    for i in range(k):\n        exit_nodes.append(int(input()))\n    exit_nodes = set(exit_nodes)\n    exit_nodes = list(exit_nodes)\n    exit_nodes.sort()\n    exit_nodes = [exit_nodes[i]-1 for i in range(len(exit_nodes))]\n    exit_nodes_index = []\n    for i in range(len(exit_nodes)):\n        exit_nodes_index.append(nodes.index(exit_nodes[i]))\n    exit_nodes_index.sort()\n    exit_nodes_index = [exit_nodes_index[i] for i in range(len(exit_nodes_index))]\n    edges_copy = edges.copy()\n    for i in range(len(exit_nodes_index)):\n        for j in range(len(edges_copy)):\n            if edges_copy[j][0] == exit_nodes_index[i]:\n                edges_copy[j] = (exit_nodes_index[i], edges_copy[j][1])\n            elif edges_copy[j][1] == exit_nodes_index[i]:\n                edges_copy[j] = (edges_copy[j][0], exit_nodes_index[i])\n    edges_copy.sort()\n    edges_copy = [edges_copy[i] for i in range(len(edges_copy))]\n    for i in range(len(edges_copy)):\n        if edges_copy[i][0] > edges_copy[i][1]:\n            edges_copy[i] = (edges_copy[i][1], edges_copy[i][0])\n    edges_copy.sort()\n    edges_copy = [edges_copy[i] for i in range(len(edges_copy))]\n    print(edges_copy[-1][1]-edges_copy[-1][0])\n    for i in range(len(edges_copy)):\n        print(edges_copy[i][0], edges_copy[i][1])\n\nif __name__ == '__main__':\n    code()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        def dist(p1,p2):\n            return ((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)**0.5\n\n        def get_circle(p1,p2,r):\n            d = dist(p1,p2)\n            if d > 2*r:\n                return []\n            if d == 0:\n                return []\n            if d == 2*r:\n                return [p1,p2]\n            theta = math.acos((d**2+r**2-r**2)/(2*d*r))\n            x = (p1[0]+p2[0])/2\n            y = (p1[1]+p2[1])/2\n            return [[x+r*math.cos(theta),y+r*math.sin(theta)],[x-r*math.cos(theta),y-r*math.sin(theta)]]\n\n        def get_all_circles(p1,r):\n            res = []\n            for p2 in points:\n                if p1==p2:\n                    continue\n                res += get_circle(p1,p2,r)\n            return res\n\n        def get_all_circles_dict(p1,r):\n            res = {}\n            for p2 in points:\n                if p1==p2:\n                    continue\n                for p in get_circle(p1,p2,r):\n                    if p not in res:\n                        res[p] = 1\n                    else:\n                        res[p] += 1\n            return res\n\n        def get_max_circles(p1,r):\n            res = get_all_circles_dict(p1,r)\n            max_c = 0\n            for p in res:\n                if res[p]>max_c:\n                    max_c = res[p]\n            return max_c\n\n        def get_max_circles_dict(p1,r):\n            res = get_all_circles_dict(p1,r)\n            max_c = 0\n            for p in res:\n                if res[p]>max_c:\n                    max_c = res[p]\n            return max_c\n\n        def get_max_circles_dict_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict(p1,r)\n            return res\n\n        def get_max_circles_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles(p1,r)\n            return res\n\n        def get_max_circles_all_dict(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict(p1,r)\n            return res\n\n        def get_max_circles_all_dict_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_dict_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all_all(r)\n            return res\n\n        def get_max_circles_all_dict_all_all_all_all_all(r):\n            res = {}\n            for p1 in points:\n                res[p1] = get_max_circles_all_dict_all_all_all(r)\n",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        def dist(p1,p2):\n            return ((p1[0]-p2[0])**2+(p1[1]-p2[1])**2)**0.5\n        def get_c(p1,p2):\n            d=dist(p1,p2)\n            x=(p1[0]*p2[0]+p1[1]*p2[1])/(p1[0]**2+p1[1]**2)\n            y=(p1[1]*p2[0]-p1[0]*p2[1])/(p1[0]**2+p1[1]**2)\n            return (x,y),d/2\n        def get_p(p1,p2,r):\n            c,d=get_c(p1,p2)\n            x,y=c\n            if d==0:\n                return []\n            if r/d<1:\n                return []\n            if r/d==1:\n                return [[x,y]]\n            else:\n                return [[x+r/d/2,y+r/d/2],[x-r/d/2,y-r/d/2]]\n        def get_all_p(points,r):\n            res=[]\n            for i in range(len(points)):\n                for j in range(i+1,len(points)):\n                    res+=get_p(points[i],points[j],r)\n            return res\n        def is_in(p,points):\n            for i in points:\n                if dist(p,i)<=r:\n                    return True\n            return False\n        all_p=get_all_p(points,r)\n        res=0\n        for i in all_p:\n            if is_in(i,points):\n                res+=1\n        return res",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(a[0]) != len(b):\n        return -1\n    else:\n        return [[sum(x * y for x, y in zip(a_row, b_col)) for b_col in zip(*b)] for a_row in a]",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(a[0]) != len(b):\n        return -1\n    else:\n        return [[sum(x*y for x,y in zip(a_row,b_col)) for b_col in zip(*b)] for a_row in a]",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        s = input()\n        l = []\n        for i in s:\n            if i not in l:\n                l.append(i)\n        print(len(l))\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t=int(input())\n    for i in range(t):\n        s=input()\n        l=len(s)\n        if l==1:\n            print(1)\n        else:\n            for i in range(l):\n                if s[i]!=s[i+1]:\n                    print(l-i)\n                    break\n                else:\n                    continue\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        k = 1\n        while k <= n:\n            sub = []\n            for j in range(n-k+1):\n                sub.append(a[j:j+k])\n            if all(x == sub[0][0] for x in sub[0]):\n                print(sub[0][0])\n                break\n            else:\n                k += 1\n        if k > n:\n            print(-1)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        k = 1\n        while k <= n:\n            sub = []\n            for j in range(n-k+1):\n                sub.append(a[j:j+k])\n            if all(len(set(i)) == 1 for i in sub):\n                print(*[i[0] for i in sub])\n                break\n            else:\n                k += 1\n        else:\n            print(-1)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n    elif n == 2:\n        print(\"NO\")\n    else:\n        for i in range(1, n + 1):\n            if i * i % n == 1:\n                print(\"YES\")\n                print(i)\n                break\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n        return\n    if n == 2:\n        print(\"NO\")\n        return\n    if n == 3:\n        print(\"YES\")\n        print(1)\n        print(2)\n        print(3)\n        return\n    if n == 4:\n        print(\"NO\")\n        return\n    if n == 5:\n        print(\"YES\")\n        print(1)\n        print(4)\n        print(3)\n        print(2)\n        print(5)\n        return\n    if n == 6:\n        print(\"YES\")\n        print(1)\n        print(4)\n        print(3)\n        print(6)\n        print(2)\n        print(5)\n        return\n    if n == 7:\n        print(\"YES\")\n        print(1)\n        print(4)\n        print(3)\n        print(6)\n        print(7)\n        print(2)\n        print(5)\n        return\n    if n == 8:\n        print(\"NO\")\n        return\n    if n == 9:\n        print(\"YES\")\n        print(1)\n        print(4)\n        print(3)\n        print(6)\n        print(8)\n        print(2)\n        print(5)\n        print(7)\n        return\n    if n == 10:\n        print(\"YES\")\n        print(1)\n        print(4)\n        print(3)\n        print(6)\n        print(8)\n        print(9)\n        print(2)\n        print(5)\n        print(7)\n        return\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

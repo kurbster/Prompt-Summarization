@@ -1,0 +1,8 @@
+{
+  "inputs": [
+    "5\nNNN\nNS\nWWEN\nWWEE\nNWNWS\n"
+  ],
+  "outputs": [
+    "15\n6\n16\n12\n25\n"
+  ]
+}

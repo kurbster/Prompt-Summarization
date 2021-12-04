@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BC9i8Bj1HpxwhTDufC3yFlXoBszW",
+    "object": "text_completion",
+    "created": 1638573682,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given two integers n and m. You have to construct an m-free square matrix of size n n such that the number of 1's in this matrix is maximum possible. Print the maximum possible number of 1's in such matrix. You don't have to solve this problem. Instead, you have to construct a few tests for it. You will be given t numbers x_1, x_2, ..., x_{t}. For every $i \\in [ 1, t ]$, find two integers n_{i} and m_{i} (n_{i} m_{i}) such that the answer for the aforementioned problem is exactly x_{i} if we set n = n_{i} and m = m_{i}.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

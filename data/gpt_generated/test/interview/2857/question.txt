@@ -1,0 +1,34 @@
+$N$ points are placed in the coordinate plane.
+
+Write a program that calculates how many ways we can choose three points so that they form a right triangle with legs parallel to the coordinate axes.
+
+A right triangle has one 90-degree internal angle. The legs of a right triangle are its two shorter sides.
+
+-----Input-----
+The first line of input contains the integer $N$ ($3 \le N \le 100000$), the number of points.
+
+Each of the following $N$ lines contains two integers $X$ and $Y$ ($1 \le X, Y \le 100000$), the coordinates of one point.
+
+No pair of points will share the same pair of coordinates.
+
+-----Output-----
+Output the number of triangles.
+
+-----Examples-----
+Sample Input 1:
+3
+4 2
+2 1
+1 3
+Sample Output 1:
+0
+
+Sample Input 2:
+5
+1 2
+2 1
+2 2
+2 3
+3 2
+Sample Output 2:
+4

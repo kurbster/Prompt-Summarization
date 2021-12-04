@@ -1,0 +1,24 @@
+Given an 2 dimentional array count number of structures in it.
+Structures are represented by 'X's and empty slots are represented with "."s.
+You may assume the following rules:
+
+
+You receive a valid 2 dimentional array, made of only structures or empty
+slots.  Structures can only be horizontal or vertical. 
+At least one horizontal or vertical cell separates between two structures.
+
+
+Example:
+X..X
+...X
+...X
+
+In the above 2 dimentional array there are 2 structures.
+
+Invalid Example:
+...X
+XXXX
+...X
+
+This is an invalid 2 dimentional array that you will not receive - as structures
+will always have a cell separating between them.

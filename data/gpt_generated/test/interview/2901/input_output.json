@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "15\n0 1\n1 2\n2 3\n0 4\n1 5\n2 6\n3 7\n4 5\n5 6\n6 7\n4 8\n5 8\n6 9\n7 9\n8 9\nGriezmann France LaLiga AtleticoMadrid\nBenzema France LaLiga RealMadrid\nNtep France Ligue1 StadeRennais\nSissoko France PremierLeague Spurs\nTolisso France Ligue1 Lyon\nDiarra France Ligue1 OM\nEvra France CalcioA Juventus\nKoscielny France PremierLeague Arsenal\nVarane France LaLiga RealMadrid\nSagna France PremierLeague ManCity\n",
+        "15\n0 1\n1 2\n2 3\n0 4\n1 5\n2 6\n3 7\n4 5\n5 6\n6 7\n4 8\n5 8\n6 9\n7 9\n8 9\nPlayerA France A1 A1-1\nPlayerB France B1 B1-1\nPlayerC France C1 C1-1\nPlayerD France D1 D1-1\nPlayerE France E1 E1-1\nPlayerF France F1 F1-1\nPlayerG France G1 G1-1\nPlayerH France H1 H1-1\nPlayerI France I1 I1-1\nPlayerJ Germany J1 J1-1\n"
+    ],
+    "outputs": [
+        "yes\n",
+        "no\n"
+    ]
+}

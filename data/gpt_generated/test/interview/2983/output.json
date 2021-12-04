@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDTHC0GkBdKLdubUPbPzmzosmwy8",
+    "object": "text_completion",
+    "created": 1638578739,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given the number of papers of different sizes that Bj rn has, can you figure out how much tape he needs to make an A1 paper? ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

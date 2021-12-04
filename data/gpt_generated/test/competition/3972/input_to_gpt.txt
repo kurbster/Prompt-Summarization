@@ -1,0 +1,8 @@
+Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits.  For example: ```python   sum_digits(10)  # Returns 1   sum_digits(99)  # Returns 18   sum_digits(-32) # Returns 5 ``` Let's assume that all numbers in the input will be integer values
+tl;dr: Write a function named sumDigits which takes a number as input and returns the sum of the absolute value of each of the number's decimal digits. For example: sum_digits(10)  # Returns 1 sum_digits(99)  # Returns 18 sum_digits(-32) # Returns 
+
+Given a binary tree, return the sum of values of its deepest leaves.   
+tl;dr: Given a binary tree, return the sum of values of its deepest leaves.   
+
+How many infinite sequences a_1, a_2, ... consisting of {{1, ... ,n}} satisfy the following conditions   - The n-th and subsequent elements are all equal. That is, if n \leq i,j, a_i = a_j.  - For every integer i, the a_i elements immediately following the i-th element are all equal. That is, if i < j < k\leq i+a_i, a_j = a_k. Find the count modulo 10^9+7. -----Constraints-----  - 1 \leq n \leq 10^6 
+tl;dr:

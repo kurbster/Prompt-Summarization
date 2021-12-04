@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "10 OCT\nMON\n",
+        "2 JAN\nTHU\n",
+        "29 NOV\nTUE\n"
+    ],
+    "outputs": [
+        ":(\n",
+        "TGIF\n",
+        "not sure\n"
+    ]
+}

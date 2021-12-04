@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDZcVwzDu7Yf7DSZK0E4RuvZYx5A",
+    "object": "text_completion",
+    "created": 1638579132,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Remove one of the characters in s, excluding both ends. However, a character cannot be removed if removal of the character would result in two neighboring equal characters in s. The player who becomes unable to perform the operation, loses the game. Determine which player will win when the two play optimally. -----Constraints-----  - 3   |s|   10^5  - s consists of lowercase English letters.  - No two neighboring characters in s are equal.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

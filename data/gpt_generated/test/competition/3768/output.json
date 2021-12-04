@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE4vxHoO532l0CXfjG1Ijk47Doxj",
+    "object": "text_completion",
+    "created": 1638581073,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Alice and Bob have a bag of fruit. They play a game where they take turns to take out a card from the bag. If the card has letter 'A', Alice takes all the fruit she has and gives it to Bob. If the card has letter 'B', Bob does the same. Find all the possible sequences of cards that Alice and Bob could have played with. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

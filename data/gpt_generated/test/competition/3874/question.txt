@@ -1,0 +1,78 @@
+Polycarp is a beginner programmer. He is studying how to use a command line.
+
+Polycarp faced the following problem. There are n files in a directory and he needs to delete some of them. Polycarp wants to run a single delete command with filename pattern as an argument. All the files to be deleted should match the pattern and all other files shouldn't match the pattern.
+
+Polycarp doesn't know about an asterisk '*', the only special character he knows is a question mark '?' which matches any single character. All other characters in the pattern match themselves only.
+
+Formally, a pattern matches a filename if and only if they have equal lengths and all characters in the corresponding positions are equal except when the character in the pattern is '?', in which case the corresponding filename character does not matter.
+
+For example, the filename pattern "a?ba?":  matches filenames "aabaa", "abba.", "a.ba9" and "a.ba.";  does not match filenames "aaba", "abaab", "aabaaa" and "aabaa.". 
+
+Help Polycarp find a pattern which matches files to be deleted and only them or report if there is no such pattern.
+
+
+-----Input-----
+
+The first line of the input contains two integers n and m (1 ≤ m ≤ n ≤ 100) — the total number of files and the number of files to be deleted.
+
+The following n lines contain filenames, single filename per line. All filenames are non-empty strings containing only lowercase English letters, digits and dots ('.'). The length of each filename doesn't exceed 100. It is guaranteed that all filenames are distinct.
+
+The last line of the input contains m distinct integer numbers in ascending order a_1, a_2, ..., a_{m} (1 ≤ a_{i} ≤ n) — indices of files to be deleted. All files are indexed from 1 to n in order of their appearance in the input.
+
+
+-----Output-----
+
+If the required pattern exists, print "Yes" in the first line of the output. The second line should contain the required pattern. If there are multiple solutions, print any of them.
+
+If the required pattern doesn't exist, print the only line containing "No".
+
+
+-----Examples-----
+Input
+3 2
+ab
+ac
+cd
+1 2
+
+Output
+Yes
+a?
+
+Input
+5 3
+test
+tezt
+test.
+.est
+tes.
+1 4 5
+
+Output
+Yes
+?es?
+
+Input
+4 4
+a
+b
+c
+dd
+1 2 3 4
+
+Output
+No
+
+Input
+6 3
+.svn
+.git
+....
+...
+..
+.
+1 2 3
+
+Output
+Yes
+.???

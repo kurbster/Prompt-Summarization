@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCkhzfiGCtPQQKwKlkFVAu131c9o",
+    "object": "text_completion",
+    "created": 1638575975,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    mask = 1 << bit_index\n    return bin(value ^ mask)\n\nprint(flip_bit(15, 4))\nprint(flip_bit(15, 5))",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return value ^ (1 << (bit_index - 1))",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        \n        pass\n\n\nif __name__ == '__main__':\n    assert Solution().findFrequentTreeSum(0) == 0",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if not root:\n            return []\n        self.res = []\n        self.dic = {}\n        self.helper(root)\n        max_val = max(self.dic.values())\n        for key, val in self.dic.items():\n            if val == max_val:\n                self.res.append(key)\n        return self.res\n    \n    def helper(self, root):\n        if not root:\n            return 0\n        left = self.helper(root.left)\n        right = self.helper(root.right)\n        total = left + right + root.val\n        self.dic[total] = self.dic.get(total, 0) + 1\n        return total",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    q = int(input())\n    for i in range(q):\n        n = int(input())\n        s = input()\n        t = input()\n        if sorted(s) == sorted(t):\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    q = int(input())\n    for i in range(q):\n        n = int(input())\n        s = input()\n        t = input()\n        if sorted(s) == sorted(t):\n            print(\"YES\")\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        for j in range(2, 1000000):\n            flag = True\n            for k in range(N):\n                if A[k] % j != 0:\n                    flag = False\n                    break\n            if flag:\n                print(j)\n                break\n        if not flag:\n            print(-1)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        for x in range(2, 1000000):\n            flag = True\n            for j in range(N):\n                if A[j] % x != 0:\n                    flag = False\n                    break\n            if flag:\n                print(x)\n                break\n        if not flag:\n            print(-1)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if value in seq:\n        return True\n    else:\n        for i in seq:\n            if type(i) == list:\n                if locate(i, value):\n                    return True\n    return False",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if value in seq:\n        return True\n    else:\n        for i in seq:\n            if type(i) == list:\n                if locate(i, value):\n                    return True\n    return False",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            m_i, p_i = map(int, input().split())\n            m.append(m_i)\n            p.append(p_i)\n        m.sort()\n        p.sort()\n        cost = 0\n        for j in range(n):\n            if m[j] > p[j]:\n                cost += p[j]\n            else:\n                cost += m[j]\n        print(cost)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    def min_coins(m, p):\n        m.sort()\n        p.sort()\n        res = 0\n        for i in range(len(m)):\n            res += m[i] * p[i]\n        return res\n\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            m_i, p_i = map(int, input().split())\n            m.append(m_i)\n            p.append(p_i)\n        print(min_coins(m, p))\n\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n        # Time: O(2^n)\n        # Space: O(n)\n        # https://leetcode.com/problems/target-sum/discuss/455024/Python-DP-Solution\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp[i-1][j-nums[i]] + dp[i-1][j+nums[i]]\n        # dp[i][j] = dp",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    if len(arg1) < 2:\n        return arg1\n    else:\n        return sorted(set(arg1), reverse=True)[:2]",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if arg1 == []:\n        return []\n    else:\n        return sorted(list(set(arg1)), reverse=True)[:2]",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N == 1:\n            print(\"NO\")\n        else:\n            count = 0\n            for j in range(1, N+1):\n                if N % j == 0:\n                    count += 1\n            if count % 2 == 0:\n                print(\"YES\")\n            else:\n                print(\"NO\")\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for _ in range(int(input())):\n        n = int(input())\n        if n%2 == 0:\n            print(\"NO\")\n        else:\n            print(\"YES\")\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(float, input().split()))\n    p.sort()\n    p.reverse()\n    score = 0\n    for i in range(n):\n        if p[i] == 0:\n            score += 0\n        else:\n            score += (i+1)**2 * p[i]\n    print(score)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(float, input().split()))\n    p.sort()\n    p.reverse()\n    s = 0\n    for i in range(n):\n        s += (i+1)**2 * p[i]\n    print(s)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

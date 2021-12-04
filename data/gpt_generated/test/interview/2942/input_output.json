@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "88\n",
+        "86\n"
+    ],
+    "outputs": [
+        "9 13\n",
+        "impossible\n"
+    ]
+}

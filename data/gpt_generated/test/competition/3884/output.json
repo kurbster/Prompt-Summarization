@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDv2ZIbcIN3tjb23DrZgWGQYcWqA",
+    "object": "text_completion",
+    "created": 1638580460,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given $n$ planets and $m$ tons of useful cargo. You need to calculate the minimum mass of fuel to load into the rocket. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

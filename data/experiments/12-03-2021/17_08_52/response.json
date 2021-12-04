@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BCtXajjmIYId9hXiy0QfiWGQzRKY",
+    "object": "text_completion",
+    "created": 1638576523,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    if arr == []:\n        return 'Gym is empty'\n    elif type(arr) == int:\n        return 'This isn\\'t the gym!!'\n    else:\n        for i in range(len(arr)):\n            arr[i] = arr[i].replace('O', ' ')\n        return arr",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if arr == []:\n        return 'Gym is empty'\n    elif type(arr) == int:\n        return 'This isn\\'t the gym!!'\n    else:\n        for i in arr:\n            if i == 'Chuck':\n                arr.remove(i)\n            else:\n                arr[arr.index(i)] = i.replace('O', ' ')\n        return arr",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return min(sorted(st), key=lambda x: st.rfind(x) - st.find(x))",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return min([(st[i:], i, len(st)-i) for i in range(len(st))], key=lambda x: (x[2], -ord(x[0][0])))[0][0]",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = [0] * n\n    for i in range(n):\n        b[a[i] - 1] = i + 1\n    if a == b:\n        print(-1)\n    else:\n        print(*b)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = [0] * n\n    for i in range(n):\n        b[a[i] - 1] = i + 1\n    if a == b:\n        print(-1)\n    else:\n        print(*b)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    diff = [abs(x - y) for x, y in zip(goals1, goals2)]\n    return diff.index(min(diff))",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    diff = [abs(x - y) for x, y in zip(goals1, goals2)]\n    return diff.index(min(diff))",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        fact = 1\n        for i in range(1,N+1):\n            fact = fact * i\n        print(fact%1589540031)\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        print(fact(N)%1589540031)\n\ndef fact(N):\n    if N == 0:\n        return 1\n    else:\n        return N*fact(N-1)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    testCases = int(input())\n    for i in range(testCases):\n        n, k = map(int, input().split())\n        s = input()\n        score = 0\n        for j in range(n):\n            if s[j] == 'W':\n                score += 1\n            elif s[j] == 'L' and k > 0:\n                score += 2\n                k -= 1\n        print(score)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Write your code here\n    # To print results to the standard output you can use print\n    # Example: print \"Hello world!\"\n    if len(arr) == 0:\n        return 0\n    if len(arr) == 1:\n        return 0\n    if len(arr) == 2:\n        if arr[0] == arr[1]:\n            return 0\n        else:\n            return 1\n    if len(arr) == 3:\n        if arr[0] == arr[1]:\n            return abs(arr[1] - arr[2])\n        elif arr[0] == arr[2]:\n            return abs(arr[0] - arr[1])\n        else:\n            return abs(arr[0] - arr[1])\n    else:\n        if arr[0] == arr[1]:\n            return max(greatest_distance(arr[2:]), greatest_distance(arr[1:]))\n        elif arr[0] == arr[2]:\n            return max(greatest_distance(arr[1:]), greatest_distance(arr[2:]))\n        elif arr[0] == arr[3]:\n            return max(greatest_distance(arr[1:]), greatest_distance(arr[2:]))\n        else:\n            return max(greatest_distance(arr[1:]), greatest_distance(arr[2:]))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if len(arr) == 0:\n        return 0\n    else:\n        arr.sort()\n        max_distance = 0\n        for i in range(len(arr)):\n            if arr[i] == arr[i+1]:\n                max_distance = i+1\n        return max_distance",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        arr = list(map(int, input().split()))\n        arr.sort()\n        max_sum = 0\n        curr_sum = 0\n        for i in range(n):\n            curr_sum += arr[i]\n            if curr_sum > max_sum:\n                max_sum = curr_sum\n            if curr_sum < 0:\n                curr_sum = 0\n        print(max_sum)\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        A = [int(x) for x in input().split()]\n        max_d = 0\n        for i in range(N):\n            for j in range(i, N):\n                d = sum(A[i:j+1])\n                if d > max_d:\n                    max_d = d\n        print(max_d)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return n == (n//2)*(n+1)\n\nprint(is_pronic(42))",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return n == (n // 2) * (n + 1)\n\nprint(is_pronic(42))",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

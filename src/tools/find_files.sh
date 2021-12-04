@@ -9,8 +9,8 @@ get_generated_test() {
 }
 
 get_generated_human() {
-    [[ -z $1 ]] && depth=1 || depth=0 
-    problems=$(find ../../data/[ic]*/$1 -mindepth $depth -type d)
+    [[ -z $1 ]] && problems=$(find ../../data/[ic]* -mindepth 1 -type d) ||\
+    problems=$(find ../../data/[ic]*/$1 -type d)
 }
 
 get_generated_model() {
@@ -28,4 +28,6 @@ get_generated_model() {
     echo "$(wc -l <<< $problems) model problems generated."
     get_generated_human
     echo "$(wc -l <<< $problems) human problems generated."
+    echo -e "$problems\n" | awk -F"data/" '{print $2}' > ../configs/human_probs.txt
+    sed -i '/^[[:space:]]*$/d' ../configs/human_probs.txt
 }

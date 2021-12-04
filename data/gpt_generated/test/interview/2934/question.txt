@@ -1,0 +1,18 @@
+Pierre is famous for his macarons. He makes round macarons, stored in square boxes of size $1\times 1$, and oval-shaped macarons, stored in rectangular boxes of size $1\times 2$ (or, rotated, in rectangular boxes of size $2\times 1$). For the purpose of a buffet, Pierre wishes to tile a rectangular table of size $N\times M$ with the two kinds of macarons, meaning that the table must be completely full, with no empty space left. The width $N$ of the table is small, for the guest to be able to grab the macarons easily, and the length $M$ of the table is large, to accommodate a huge number of guests. To keep the table pretty, the orientation of macarons should always be aligned with the sides of the table.
+
+Pierre wishes to know how many ways there are to tile the table. Can you help him?Input
+
+The input consists of the following integers:
+ - the value of $N$, an integer, on the first line;
+ - the value of $M$, an integer, on the second line.Limits
+
+The input satisfies $1 \leq N \leq 8$ and $1 \leq M \leq 10^{18}$.Output
+
+The output should consist of the total number of tilings, given modulo $10^9$, on a single line.
+
+-----Examples-----
+Sample Input:
+2
+2
+Sample Output:
+7

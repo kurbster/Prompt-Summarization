@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "3 4\nPP\nRR\nPS\nSS\n",
+        "20 3\nPRSPS\nSSSSS\nPPSPP\n"
+    ],
+    "outputs": [
+        "PS\nPP\nRR\nSS\n",
+        "PRSPS\nPPSPP\nSSSSS\n"
+    ]
+}

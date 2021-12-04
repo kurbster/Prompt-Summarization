@@ -1,0 +1,34 @@
+You have a bracket sequence s_1, s_2, ..., s_{n}, or, in other words, a string s of length n, consisting of characters "(" and ")".
+
+You need to answer m queries, each of them is described by two integers l_{i}, r_{i} (1 ≤ l_{i} ≤ r_{i} ≤ n). The answer to the i-th query is the length of the maximum correct bracket subsequence of sequence s_{l}_{i}, s_{l}_{i} + 1, ..., s_{r}_{i}.
+
+-----Input-----
+
+The first line contains a sequence of characters s_1, s_2, ..., s_{n} (1 ≤ n ≤ 10^6) without any spaces. Each character is either a "(" or a ")". The second line contains integer m (1 ≤ m ≤ 10^5) — the number of queries. Each of the next m lines contains a pair of integers. The i-th line contains integers l_{i}, r_{i} (1 ≤ l_{i} ≤ r_{i} ≤ n) — the description of the i-th query.
+
+
+-----Output-----
+
+Print the answer to each question on a single line. Print the answers in the order they go in the input.
+
+
+-----Examples-----
+Input
+())(())(())(
+7
+1 1
+2 3
+1 2
+1 12
+8 12
+5 11
+2 10
+
+Output
+0
+0
+2
+10
+4
+6
+6

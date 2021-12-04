@@ -1,0 +1,25 @@
+This problem is an extension of another Kattis problem - backspace. In that problem, every time we see a character ‘<’, it actually means that the ‘Backspace’ key is pressed and we undo the last character that was just typed.
+
+
+The extension is as follows: Now, pressing a ‘<’ (the ‘Backspace’ key) when the (typing) cursor is at the front of the line does nothing. Now if we see a character ‘[’, it actually means that the ‘Home’ key is pressed and we move the (typing) cursor to the front of the line. Similarly, if we see a character ‘]’, it actually means that the ‘End’ key is pressed and we move the (typing) cursor the back of the line. For all other valid character in the input, it actually means that the corresponding key is pressed, we insert that character at the (typing) cursor position, and advance one position to the right the cursor accordingly.
+
+-----Input-----
+The input starts with a line containing just one integer $T \: (1 \le T \le 10)$, denoting the number of test cases.
+
+
+Each test case is a line containing the string that was written in the Text Editor Sim (Steven IMproved). The length of the string is at most $10^{6}$, and it will only contain lowercase letters from the English alphabet [‘$a$’$\; \ldots \; $‘$z$’], digits [‘$0$’$\; \ldots \; $‘$9$’], spaces, as well as some of the three special characters: ‘<’, ‘[’, or ‘]’.
+
+-----Output-----
+For each test case, output one line containing the final string that is displayed on screen.
+
+-----Subtasks-----
+ - $\textbf{(27.5 points)}$: $1 \le T \le 10$, string length is at most $10^{3}$, there is no ‘[’, as seen in sample $1$.
+ - $\textbf{(32.5 points)}$: $1 \le T \le 10$, string length is at most $10^{3}$, there may be ‘[’, as seen in sample $2$.
+ - $\textbf{(40 points)}$: $1 \le T \le 4$, string length is at most $10^{6}$.
+
+-----Examples-----
+Sample Input:
+1
+my ]]name]] is]] steva<en]<n halim]]]]]
+Sample Output:
+my name is steven halim

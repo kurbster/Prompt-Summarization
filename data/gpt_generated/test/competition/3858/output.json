@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDZrx60YcA9k0KLpHjfnI8Otw9k7",
+    "object": "text_completion",
+    "created": 1638579147,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given N points (x_i,y_i) located on a two-dimensional plane. Consider a subset S of the N points that forms a convex polygon. Here, we say a set of points S forms a convex polygon when there exists a convex polygon with a positive area that has the same set of vertices as S. All the interior angles of the polygon must be strictly less than 180 . For example, in the figure above, {A,C,E} and {B,D,E} form convex polygons; {A,C,D,E}, {A,B,C,E}, {A,B,C}, {D,E} and {} do not. For a given set S, let n be the number of the points among the N points that are inside the convex hull of S (including the boundary and vertices). Then, we will define the score of S as 2^{n-|S|}. Compute the scores of all possible sets S that form convex polygons, and find the sum of all those scores. However, since the sum can be extremely large, print the sum modulo 998244353. -----Constraints-----  - 1 N 200  - 0 x_i,y_i<10^4 (1 i N)  - If i j, x_i x_j or y_i y_j.  - x_i and y_i are integers. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+Bob is preparing to pass IQ test. The most frequent task in this test is `to find out which one of the given numbers differs from the others`. Bob observed that one number usually differs from the others in **evenness**. Help Bob   to check his answers, he needs a program that among the given numbers finds one that is different in evenness, and return a position of this number. `!` Keep in mind that your task is to help Bob solve a `real IQ test`, which means indexes of the elements start from `1 (not 0)` ##
+tl;dr: Write a function that among the given numbers finds one that is different in evenness, and return a position of this number. 
+
+You're given an integer N. Write a program to calculate the sum of all the digits of N.  
+tl;dr: Write a program to calculate the sum of all the digits of given integer N.  
+
+You are given two integers $a$ and $b$. Moreover, you are given a sequence $s_0, s_1, \dots, s_{n}$. All values in $s$ are integers $1$ or $-1$. It's known that sequence is $k$-periodic and $k$ divides $n+1$. In other words, for each $k \leq i \leq n$ it's satisfied that $s_{i} = s_{i - k}$. Find out the non-negative remainder of division of $\sum \limits_{i=0}^{n} s_{i} a^{n - i} b^{i}$ by $10^{9} + 9$. Note that the modulo is unusual! 
+tl;dr:

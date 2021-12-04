@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDwpaygKf23D7RVEEoUScbZyjGBP",
+    "object": "text_completion",
+    "created": 1638580571,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Crazy Town is a plane on which there are n infinite line roads. Each road is defined by the equation a_{i}x + b_{i}y + c_{i} = 0, where a_{i} and b_{i} are not both equal to the zero. The roads divide the plane into connected regions, possibly of infinite space. Let's call each such region a block. We define an intersection as the point where at least two different roads intersect. Your home is located in one of the blocks. Today you need to get to the University, also located in some block. In one step you can move from one block to another, if the length of their common border is nonzero (in particular, this means that if the blocks are adjacent to one intersection, but have no shared nonzero boundary segment, then it are not allowed to move from one to another one in one step). Determine what is the minimum number of steps you have to perform to get to the block containing the university. It is guaranteed that neither your home nor the university is located on the road.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

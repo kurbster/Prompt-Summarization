@@ -1,0 +1,29 @@
+You are given a total of S items.Only N items can be purchased only. These items will be picked randomly.
+You need M item including your personal item. Your shopping will complete only if there are atleast K of her item and your personal item. What is the probability that you will purchase your K item with your personal item.
+
+-----Input:-----
+First line of input contains a single integer T, the number of test cases.
+
+Each test starts with a single line having 4 space separated integers, S, N, M and K.
+
+-----Output:-----
+For each test case, output a line containing the required probability. The answer will be accepted if the relative error is not more than 10-6.
+
+-----Constraints:-----
+1 ≤ T ≤ 100
+1 ≤ S ≤ 1000
+1 ≤ N ≤ S
+1 ≤ M ≤ S
+0 ≤ K < M
+
+-----Example:-----Input:
+3
+10 10 5 3
+10 4 6 4
+3 2 2 1
+
+Output:
+1.000000
+0.000000
+0.500000
+

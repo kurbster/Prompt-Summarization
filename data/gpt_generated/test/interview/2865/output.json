@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDpgAAw7lNvVlnaE7IUAq7uR32hk",
+    "object": "text_completion",
+    "created": 1638580128,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Two cars are driving along the real line in the positive direction. A transcript of their speed changes is given. Did these cars ever collide",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

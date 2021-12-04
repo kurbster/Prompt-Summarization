@@ -1,0 +1,29 @@
+Complete the function that determines the score of a hand in the card game Blackjack and return the highest score of the cards that is less than or equal to 21. If there is no score less than or equal to 21 return the smallest score more than 21.
+
+Number cards count as their face value. Jack, Queen and King count as 10. An Ace can be counted as either 1 or 11.
+
+Examples:
+Input:
+["A"]
+Output:
+11
+
+Input:
+["A", "J"]
+Output:
+21
+
+Input:
+["A", "10", "A"]
+Output:
+12
+
+Input:
+["5", "3", "7"]
+Output:
+15
+
+Input:
+["5", "4", "3", "2", "A", "K"]
+Output:
+25

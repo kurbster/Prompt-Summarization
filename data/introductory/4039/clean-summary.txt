@@ -1,0 +1,1 @@
+Create a method `fouriest` that takes a number and makes it the fouriest, telling us in which base this happened. A number's fouriest transformation converts it to the base in which it has the most 4s. Examples: Input: fouriest(42) Output: "30 is the fouriest(42) in base 7" Input: fouriest(14) Output: "15 is the fouriest(14) in base 11"

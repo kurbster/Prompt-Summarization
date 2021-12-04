@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCAl9uvp1scWvCqlSWfi7ExXjPD1",
+    "object": "text_completion",
+    "created": 1638573747,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a list of IOUs issued and settle them as much as possible by considering all cycles and reducing each debt in a cycle by the minimum amount of debt occurring in the cycle. After all cycles are considered and canceled, your app should output who owes whom how much. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

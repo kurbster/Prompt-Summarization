@@ -1,0 +1,27 @@
+You are given an array of size n. Calculate a subarray of size k with maximum sum having distinct elements same as original array.
+	
+		
+
+-----Input Format-----
+
+First line contains no. of test cases. Second line contains n and k. Third line
+contains array of n integers.
+
+
+-----Output-----
+
+Print maximum possible sum as stated in question
+
+		
+	
+-----Example Text Case-----
+Input:
+
+1
+10 6
+8 8 3 5 3 8 5 7 7 7
+
+Output:
+37
+
+		

@@ -1,0 +1,32 @@
+You are given a set of n pens, each of them can be red, blue, green, orange, and violet in color. Count a minimum number of pens that should be taken out from the set so that any two neighboring pens have different colors. Pens are considered to be neighboring if there are no other pens between them.
+
+-----Input:-----
+- 
+The first line contains t denoting the number of test cases.
+- 
+The first line of each test case will contain a single integer n.
+- 
+The second line of each test case will contain a string s.
+(s contains only 'R', 'B', 'G', 'O', and 'V' characters denoting red, blue, green, orange, and violet respectively)
+
+-----Output:-----
+For each test case, print single line containing one integer - The minimum number of pens that need to be taken out.
+
+-----Constraints-----
+- $1 \leq T \leq 100$
+- $1 \leq n \leq 1000$
+
+-----Sample Input:-----
+2
+5
+RBBRG
+5
+RBGOV
+
+-----Sample Output:-----
+1
+0
+
+-----EXPLANATION:-----
+In first test case, two blue pens are neighboring each other, if we take out any one of them then the string will be RBRG in which each pen has different neighbors.
+In second test case, no pen needs to be taken out as each pen has different neighbors.

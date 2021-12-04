@@ -1,0 +1,1 @@
+{"fn_name": "first_non_repeating_letter", "inputs": [["a"], ["stress"], ["moonmen"], [""], ["abba"], ["aa"], ["~><#~><"], ["hello world, eh?"], ["sTreSS"], ["Go hang a salami, I'm a lasagna hog!"]], "outputs": [["a"], ["t"], ["e"], [""], [""], [""], ["#"], ["w"], ["T"], [","]]}

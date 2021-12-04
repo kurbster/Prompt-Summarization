@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDi1ARvloWGw6FT0yjCngFV2Y3OQ",
+    "object": "text_completion",
+    "created": 1638579653,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " There are n inflorescences, numbered from 1 to n. Inflorescence number 1 is situated near base of tree and any other inflorescence with number i (i > 1) is situated at the top of branch, which bottom is p_{i}-th inflorescence and p_{i} < i. Once tree starts fruiting, there appears exactly one apple in each inflorescence. The same moment as apples appear, they start to roll down along branches to the very base of tree. Each second all apples, except ones in first inflorescence simultaneously roll down one branch closer to tree base, e.g. apple in a-th inflorescence gets to p_{a}-th inflorescence. Apples that end up in first inflorescence are gathered by Arcady in exactly the same moment. Second peculiarity of this tree is that once two apples are in same inflorescence they annihilate. This happens with each pair of apples, e.g. if there are 5 apples in same inflorescence in same time, only one will not be annihilated and if there are 8 apples, all apples will be annihilated. Thus, there can be no more than one apple in each inflorescence in each moment of time. Help Arcady with counting number of apples he will be able to collect from first inflorescence during one harvest. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

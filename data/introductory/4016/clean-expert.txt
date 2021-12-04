@@ -1,0 +1,1 @@
+Mike and Joe take turns chugging beers. Write the function game(A,B) that returns the winner, "Mike" or "Joe" accordingly. A is the total beers Mike can chug, while B is the total beers Joe can chug. If either A or B is smaller than 1, return the string "Non-drinkers can't play".

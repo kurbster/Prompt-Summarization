@@ -39,10 +39,16 @@ def print_results(results, args):
 
     logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
     logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
-    logger.info(f"number of test cases run = {total_testcases}")
-
     logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
     logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
+
+    logger.info(f"number of test cases run = {total_testcases}")
+    
+    # if total_testcases:
+    #     logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
+    #     logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
+    #     logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
+    #     logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
 
 def eval_and_save_problems(args):
     with open(args.test_loc, "r") as f:
@@ -84,7 +90,7 @@ def eval_and_save_problems(args):
     # main eval loop
     for index, problem in enumerate(tqdm(problems)):
         if args.debug:
-            logger.debug(f"\n\nproblem path = {problem}")
+            logger.debug(f"problem path = {problem}")
         output_str = gpt_codes[str(index+args.start)]
 
         problem_dir = os.path.dirname(problem)
@@ -109,8 +115,13 @@ def eval_and_save_problems(args):
             curr_res = fixed
             if not np.all(curr_res):
                 logger.info(f"Results were not all True: {curr_res}")
+        # There was no input output json
+        except BaseException as e:
+            logger.debug(f"{repr(e)}{e}")
+            logger.error(f"Problem {problem} did not have test cases.")
+            res.append([])
         except Exception as e:
-            logger.debug(f"test framework exception = {repr(e)}{e}\n")
+            logger.debug(f"test framework exception = {repr(e)}{e}")
             break
         finally:
             assert isinstance(curr_res, list)

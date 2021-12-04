@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDiJEM79AcXLIrkA2Js61vWwTsgG",
+    "object": "text_completion",
+    "created": 1638579671,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a hand of cards, how many moves are required to sort it? ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

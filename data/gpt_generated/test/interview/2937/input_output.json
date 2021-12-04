@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "2 0 1\nAlice\nBob\n",
+        "3 2 3\nAlice\nCharlie\nBob\nAlice Charlie\nBob Charlie\n"
+    ],
+    "outputs": [
+        "2\nAlice\nBob\n",
+        "2\nAlice Bob \nCharlie \n"
+    ]
+}

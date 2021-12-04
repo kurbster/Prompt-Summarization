@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "abba\naabb\n",
+        "caxcab\ncacxab\n",
+        "a\nz\n"
+    ],
+    "outputs": [
+        "1\n",
+        "2\n",
+        "0\n"
+    ]
+}

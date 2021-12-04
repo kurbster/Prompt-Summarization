@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDoxuz1TfIfmUgJRXDDBQjjimKv6",
+    "object": "text_completion",
+    "created": 1638580083,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given all the numbers of the GCD table G, restore array a. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

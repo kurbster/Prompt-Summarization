@@ -1,0 +1,1 @@
+{"fn_name": "shared_bits", "inputs": [[1, 2], [16, 8], [1, 1], [2, 3], [7, 10], [43, 77], [7, 15], [23, 7]], "outputs": [[false], [false], [false], [false], [false], [true], [true], [true]]}

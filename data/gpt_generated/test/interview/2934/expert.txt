@@ -1,0 +1,2 @@
+ You have to find the number of ways to tile a table with macarons. 
+Examples----- Sample Input: 2 2 Sample Output: 7

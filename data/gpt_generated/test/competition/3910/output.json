@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDiYNnD77pSvX4wW95VBPpByJ3HZ",
+    "object": "text_completion",
+    "created": 1638579686,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Arpa loves overnight parties. In the middle of one of these parties Mehrdad suddenly appeared. He saw n pairs of friends sitting around a table. i-th pair consisted of a boy, sitting on the a_{i}-th chair, and his girlfriend, sitting on the b_{i}-th chair. The chairs were numbered 1 through 2n in clockwise direction. There was exactly one person sitting on each chair. There were two types of food: Kooft and Zahre-mar. Now Mehrdad wonders, was there any way to serve food for the guests such that: Each person had exactly one type of food, No boy had the same type of food as his girlfriend, Among any three guests sitting on consecutive chairs, there was two of them who had different type of food. Note that chairs 2n and 1 are considered consecutive. Find the answer for the Mehrdad question. If it was possible, find some arrangement of food types that satisfies the conditions.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

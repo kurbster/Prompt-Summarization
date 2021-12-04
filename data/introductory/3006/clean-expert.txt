@@ -1,0 +1,1 @@
+Reducing Problems - Bug Fixing #8 Timmy's goal is to calculate the two teams scores and return the winner and sometimes teams don't enter their scores, total the scores out of 3! Return true if team 1 wins or false if team 2 wins!

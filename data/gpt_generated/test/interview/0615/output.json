@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCAs03luLsJorzAOnEQMSX9y8jin",
+    "object": "text_completion",
+    "created": 1638573754,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Snuke has an integer sequence A of length N. He will make three cuts in A and divide it into four (non-empty) contiguous subsequences B, C, D and E. The positions of the cuts can be freely chosen. Let P,Q,R,S be the sums of the elements in B,C,D,E, respectively. Snuke is happier when the absolute difference of the maximum and the minimum among P,Q,R,S is smaller. Find the minimum possible absolute difference of the maximum and the minimum among P,Q,R,S. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

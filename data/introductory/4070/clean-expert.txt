@@ -1,0 +1,1 @@
+The magic sum of 3s is calculated on an array by summing up odd numbers which include the digit 3. Write a function magic_sum which accepts an array of integers and returns the sum. If the sum cannot be calculated, 0 should be returned. Examples: Input: [3, 12, 5, 8, 30, 13] Output: 16

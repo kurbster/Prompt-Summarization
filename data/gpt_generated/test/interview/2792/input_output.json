@@ -1,0 +1,12 @@
+{
+    "inputs": [
+        "5\nUPIT 1 b\nUPIT 3 b\nSMJER 4\nUPIT 7 a\nUPIT 10 z\n",
+        "5\nSMJER 1\nSMJER 2\nSMJER 3\nUPIT 5 a\nUPIT 7 w\n",
+        "4\nUPIT 100 a\nUPIT 200 c\nUPIT 300 a\nUPIT 400 b\n"
+    ],
+    "outputs": [
+        "0\n1\n2\n1\n",
+        "2\n1\n",
+        "4\n8\n12\n16\n"
+    ]
+}

@@ -1,0 +1,20 @@
+Match sticks can be used to form digital numbers. The arrangement of matches that forms each digit between ‘0’ and ‘9’ is illustrated in the figure.
+
+You are given two sequences of digits $X$ and $Y$. There are matches that have been arranged to form the digits in $X$. Can you move exactly one match from them, so that the resulting matches form the other sequence $Y$?
+
+-----Input-----
+The input contains one line with two sequences of digits $X$ and $Y$. It is guaranteed that $X$ and $Y$ have the same length but are different sequences. Each sequence contains digits between ‘0’ and ‘9’ and has at least one and no more than $12$ digits. A sequence may contain leading zeros.
+
+-----Output-----
+Output “yes” if it is possible to move exactly one match to change $X$ into $Y$. Otherwise output “no”.
+
+-----Examples-----
+Sample Input 1:
+60 58
+Sample Output 1:
+yes
+
+Sample Input 2:
+046 040
+Sample Output 2:
+yes

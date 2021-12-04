@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "BABA\n",
+        "BBBBBAAAAA\n"
+    ],
+    "outputs": [
+        "2\n0\n1\n",
+        "1\n2\n3\n4\n5\n4\n3\n2\n1\n"
+    ]
+}

@@ -1,0 +1,27 @@
+You are given a collection of $N$ non-empty strings, denoted by $S_1, S_2, \ldots , S_ n$. Then you are given $N$-$1$ operations which you execute in the order they are given. The $i^{th}$ operation is has the following format: ‘$a$$b$’ ($1$-based indexing, without the quotes), which means that you have to make the following changes:
+ - $S_ a = S_ a + S_ b$, i.e. concatenate $a^{th}$ string and $b^{th}$ string and store the result in $a^{th}$ string,
+ - $S_ b$ = "", i.e. make the $b^{th}$ string empty, after doing the previous step.
+
+You are ensured that after the $i^{th}$ operation, there will be no future operation that will be accessing $S_ b$. Given these operations to join strings, print the last string that will remain at the end of this process.
+
+-----Input-----
+The first line contains an integer $N$ ($1 \le N \le 10^5$) denoting the number of strings given. Each of the next $N$ lines contains a string denoting the $S_ i$. All the characters in the string $S_ i$ are lowercase alphabets from ‘a’ to ‘z’. The total number of characters over all the strings is at most $10^6$, i.e $\sum _{i = 1}^{N}|S_ i| \leq 10^6$, where $|S_ i|$ denotes the length of the $i^{th}$ string. After these $N$ strings, each of the next $N$-$1$ lines contain two integers $a$ and $b$, such that $a \neq b$ and $1 \le a, b \le N$ denoting the $i^{th}$ operation.
+
+-----Output-----
+Print the last string which remains at the end of the $N$-$1$ operations.
+
+-----Warning-----
+The I/O files are large. Please use fast I/O methods.
+
+-----Examples-----
+Sample Input:
+4
+cute
+cat
+kattis
+is
+3 2
+4 1
+3 4
+Sample Output:
+kattiscatiscute

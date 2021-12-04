@@ -1,0 +1,24 @@
+Everybody is into cloud computing these days, so quite a few different business models are being experimented with. You are trying a very simple one: you sell time on your machines in one of two batches called slots. A customer can buy one second of CPU time or $Q$ seconds for some integer $Q$.
+
+Each time slot a customer purchases must be completed on a single machine, but you get to decide how to allocate the purchased time slots between machines.
+
+After coming back from a long vacation, you see that all of your machines are idle and a variety of orders have come in. To keep customers happy, you must decide how to distribute these requests between machines in a way that minimizes the time when the purchased time slots are finally all completed.
+
+What is the smallest amount of time in which you can complete all of the purchased time slots?
+
+-----Input-----
+The input consists of a single line containing four integers $Q$ ($2 \leq Q \leq 1000$), which is the time needed to complete the longer batches, $M$ ($1 \leq M \leq 1000000$), which is the number of machines owned by your company, $S$ ($0 \leq S \leq 1000000$), which is the number of 1-second time slots purchased, and $L$ ($0 \leq L \leq 1000000$), which is the number of $Q$-second time slots purchased.
+
+-----Output-----
+Display the smallest amount of time in which you can complete all of the purchased time slots.
+
+-----Examples-----
+Sample Input 1:
+2 4 3 6
+Sample Output 1:
+4
+
+Sample Input 2:
+3 4 3 5
+Sample Output 2:
+6

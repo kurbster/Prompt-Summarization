@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDtqvpo09TgryqUCKVIKqXEbgp00",
+    "object": "text_completion",
+    "created": 1638580386,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You will be given a configuration of the school when the senior student walked from the entrance to the dormitory, as well as the configuration of the school when you start following the given instructions. You want to know if every possible sequence of instructions that led the senior student to the dormitory will also lead you to the dormitory in the configuration you walk through. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+Find the second-to-last element of a list.
+
+Examples:
+Input:
+penultimate([1,2,3,4])
+Output:
+3
+Input:
+penultimate(["Python is dynamic"])
+Output:
+'i'

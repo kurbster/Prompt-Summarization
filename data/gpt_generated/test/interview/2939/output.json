@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDYudbJYD10CpZYwvTU8le072aGF",
+    "object": "text_completion",
+    "created": 1638579088,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a grid of zones, find the distance from a residential zone to the closest commercial zone. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

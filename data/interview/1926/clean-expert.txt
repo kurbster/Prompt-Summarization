@@ -1,0 +1,1 @@
+You are given an integer num, find the closest two integers in absolute difference whose product equals num + 1 or num + 2. Example 1: Input: num = 8 Output: [3,3] Example 2: Input: num = 123 Output: [5,25] Example 3: Input: num = 999 Output: [40,25]

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCAMEgnK45vDSLes1XXOaTQNP8wr",
+    "object": "text_completion",
+    "created": 1638573722,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a list of words, you need to output a sorted list. Comparison should be case sensitive",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

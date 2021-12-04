@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDzVrLWDidC8BAHntkj2CnesCzjK",
+    "object": "text_completion",
+    "created": 1638580737,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set of numbered playing cards. You are also given the maximum number of cards that can be removed from a pile. Determine whether Alice can win the game if she is the first to play.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

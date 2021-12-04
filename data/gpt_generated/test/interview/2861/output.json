@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE4zjvDtROcbfAr8rRx59Ye7HBlx",
+    "object": "text_completion",
+    "created": 1638581077,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a list of dance routines, determine the minimum number of quick changes needed to perform the routines in the given order. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

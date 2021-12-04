@@ -1,0 +1,9 @@
+Return the greatest distance of index positions between matching number values in an array or 0 if there are no matching values.  
+
+Example:
+Input:
+[0, 2, 1, 2, 4, 1]
+Output:
+3
+Explanation:
+In an array with the values [0, 2, 1, 2, 4, 1] the greatest index distance is between the matching 1 values at index 2 and 5. 

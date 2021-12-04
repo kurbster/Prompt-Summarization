@@ -1,0 +1,8 @@
+Let's say we have a number, `num`. Find the number of values of `n` such that: there exists `n` consecutive **positive** values that sum up to `num`. A positive number is `> 0`. `n` can also be 1. ```python #
+tl;dr: Given `num`. Find the total count of existing consecutive **positive** values that sum up to `num`. A positive number is `> 0`. `n` can also be 1. ```python #
+
+**This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function called that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned. 
+tl;dr: **This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned
+
+Molly Hooper has n different kinds of chemicals arranged in a line. Each of the chemicals has an affection value, The i-th of them has affection value a_{i}. Molly wants Sherlock to fall in love with her. She intends to do this by mixing a contiguous segment of chemicals together to make a love potion with total affection value as a non-negative integer power of k. Total affection value of a continuous segment of chemicals is the sum of affection values of each chemical in that segment. Help her to do so in finding the total number of such segments. 
+tl;dr:

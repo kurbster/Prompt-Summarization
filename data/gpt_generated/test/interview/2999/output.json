@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDhPVbKlzKNK98mNvej27ZNPJkPv",
+    "object": "text_completion",
+    "created": 1638579615,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a list of participants, their bets, and a random number chosen by the ICPC. Your task is to determine which participants won the lottery. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

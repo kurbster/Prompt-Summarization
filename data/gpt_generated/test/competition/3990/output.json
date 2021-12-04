@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDMVFgYdrflbFrxFLnQdnjmbJPEO",
+    "object": "text_completion",
+    "created": 1638578319,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have to plan out routes for the vehicles. Each route can use any road/railway multiple times. One of the most important aspects to consider is safety in order to avoid accidents at railway crossings, the train and the bus must not arrive at the same town (except town n) simultaneously. Under these constraints, what is the minimum number of hours needed for both vehicles to reach town n (the maximum of arrival times of the bus and the train) ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

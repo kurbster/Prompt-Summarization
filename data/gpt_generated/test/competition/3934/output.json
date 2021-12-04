@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDjJd3H1dij5IMpZQbDSo3z6xQqM",
+    "object": "text_completion",
+    "created": 1638579733,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a tree with $n$ nodes. In the beginning, $0$ is written on all edges. In one operation, you can choose any $2$ distinct leaves $u$, $v$ and any real number $x$ and add $x$ to values written on all edges on the simple path between $u$ and $v$. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

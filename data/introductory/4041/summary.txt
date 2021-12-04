@@ -1,0 +1,7 @@
+Given a string S, you have to return another string such that even-indexed and odd-indexed characters of S are grouped and groups are space-separated.
+
+Example:
+Input:
+'CodeWars'
+Output
+'CdWr oeas'

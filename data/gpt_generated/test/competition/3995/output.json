@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDS6GkGNJx816Xoj1rHIAI5wD1n7",
+    "object": "text_completion",
+    "created": 1638578666,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given $2$ positive integers $n$ and $k$, such that $(n \\bmod 2) = (k \\bmod 2)$, where $(x \\bmod 2)$ is operation of taking remainder of $x$ by dividing on $2$. Find any string $s$ consisting of $n$ symbols \"0\" or \"1\", such that the length of its minimal unique substring is equal to $k$. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDiwyEHbssgwLo8Qc0FqO7gAW35l",
+    "object": "text_completion",
+    "created": 1638579710,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given a list of integers, find the maximum sum of the list.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

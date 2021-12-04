@@ -1,0 +1,8 @@
+The chef won a duet singing award at Techsurge & Mridang 2012. From that time he is obsessed with the number 2. He just started calculating the powers of two. And adding the digits of the results. But he got puzzled after a few calculations. So gave you the job to generate the solutions to 2^n and find their sum of digits. 
+tl;dr: Obtain the solutions to 2^n for a given n and display their sum of digits. 
+
+Screen resolution of Polycarp's monitor is $a \times b$ pixels. Unfortunately, there is one dead pixel at his screen. It has coordinates $(x, y)$ ($0 \le x < a, 0 \le y < b$). You can consider columns of pixels to be numbered from $0$ to $a-1$, and rows   from $0$ to $b-1$. Polycarp wants to open a rectangular window of maximal size, which doesn't contain the dead pixel. The boundaries of the window should be parallel to the sides of the screen. Print the maximal area (in pixels) of a window that doesn't contain the dead pixel inside itself. 
+tl;dr: You are given grid of size $a \times b$ and a coordinate $(x, y)$ within that grid.  You need to output the largest area of a rectangle that does not include the coordinate $(x, y)$. The boundaries of the rectangle should be parallel to the sides of the grid. 
+
+You have number a, whose decimal representation quite luckily contains digits 1, 6, 8, 9. Rearrange the digits in its decimal representation so that the resulting number will be divisible by 7. Number a doesn't contain any leading zeroes and contains digits 1, 6, 8, 9 (it also can contain another digits). The resulting number also mustn't contain any leading zeroes. 
+tl;dr:

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDcSlDZKbB7qiDzuLi9zHU4SJWMS",
+    "object": "text_completion",
+    "created": 1638579308,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a set of coins, their values and the price of the chocolate. You need to find all the values x such that there exists a subset of coins with the sum k such that some subset of this subset has the sum x.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

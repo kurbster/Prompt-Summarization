@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BCAewWVLiIY1GAIsCJ2GwrZC9uo9",
+    "object": "text_completion",
+    "created": 1638573740,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a tree. The teacher will start from the first k nodes in a DFS-order traversal of the tree. She will then assign you a grade equal to the minimum a_{i} she finds among those k nodes. You can choose the root node that your teacher starts from. You can also rearrange the list of neighbors of each node in any order you like. Help you find the best grade you can get on this assignment. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

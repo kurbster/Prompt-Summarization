@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDzbH1Wi8FuhIfLe75gd25lyPA6v",
+    "object": "text_completion",
+    "created": 1638580743,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Nicholas Neverson was a student at Northlings Neverland Academy. As with any daydreaming student, Nicholas was playing around with a Kaleidoscope one day instead of paying attention to the teacher. Since this was math class, his daydreams quickly turned to palindromic numbers. A palindromic number is any number which reads the same forwards and backwards. He describes his vision to you at lunch: numbers which are palindromic in several bases at once. Nicholas wonders how many such numbers exist. You decide you can quickly code up a program that given a range and a number $k$, outputs the number of numbers palindromic in all bases $j$, $2 \\leq j \\leq k$, in that range. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

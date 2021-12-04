@@ -1,0 +1,8 @@
+Write a function which takes a number and returns the corresponding ASCII char for that value. 
+tl;dr: Write a function which takes a number and returns the corresponding ASCII char for that value. 
+
+> In information theory and computer science, the Levenshtein distance is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other. (http://en.wikipedia.org/wiki/Levenshtein_distance) Your task is to implement a function which calculates the Levenshtein distance for two arbitrary strings
+tl;dr: The Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other. Your task is to implement a function which calculates the Levenshtein distance for two arbitrary strings
+
+You are given a rebus of form   +   -   +   = n, consisting of only question marks, separated by arithmetic operation '+' and '-', equality and positive integer n. The goal is to replace each question mark with some positive integer from 1 to n, such that equality holds. 
+tl;dr:

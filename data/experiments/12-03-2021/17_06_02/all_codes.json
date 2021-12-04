@@ -1,0 +1,22 @@
+{
+    "0": "\n    return ''.join([word[i] for i, word in enumerate(words)])",
+    "1": "\n    return ''.join([word[i] for i, word in enumerate(words)])",
+    "2": "\n    rthns = []\n    for n in range(a, b):\n        if is_rthn(n):\n            rthns.append(n)\n    return rthns\n\ndef is_rthn(n):\n    if n < 10:\n        return False\n    digits = [int(d) for d in str(n)]\n    sum_digits = sum(digits)\n    if n % sum_digits == 0:\n        return True\n    return False",
+    "3": "\n    def is_rthn(n):\n        return n % sum(map(int, str(n))) == 0\n    return [n for n in range(a, b+1) if is_rthn(n)]",
+    "4": "\n    #\n    # Write your code here.\n    #\n    pass\n\nif __name__ == \"__main__\":\n    pass",
+    "5": "\n    ",
+    "6": "\n    if len(s) == 1:\n        return True\n    else:\n        s = list(s)\n        s.remove(s[0])\n        s = ''.join(s)\n        return solve(s)\n\nprint(solve('abba'))\nprint(solve('abbba'))\nprint(solve('aaaa'))\nprint(solve('wwwf'))",
+    "7": "\n    return len(set(s)) == len(s)",
+    "8": "\n    max_votes = max(votes)\n    if k == 0:\n        if votes.count(max_votes) == 1:\n            return 1\n        else:\n            return 0\n    else:\n        return len([i for i in votes if i + k > max_votes])",
+    "9": "\n    if k == 0:\n        return 1 if votes.count(max(votes)) == 1 else 0\n    return sum(v + k > max(votes) for v in votes)",
+    "10": "\n    T = int(input())\n    for i in range(T):\n        R,G,B = map(int,input().split())\n        K = int(input())\n        if K>=max(R,G,B):\n            print(max(R,G,B))\n        else:\n            print(K+1)",
+    "11": "\n    T = int(input())\n    for _ in range(T):\n        R, G, B = map(int, input().split())\n        K = int(input())\n        if K > min(R, G, B):\n            print(min(R, G, B))\n        else:\n            print(K)\n",
+    "12": "\n    n, m = map(int, input().split())\n    if n*m > 10**5:\n        print(\"NO\")\n        return\n    matrix = []\n    for i in range(1, n+1):\n        matrix.append([])\n        for j in range(1, m+1):\n            matrix[i-1].append(i*m + j)\n    for i in range(n):\n        for j in range(m):\n            print(matrix[i][j], end=\" \")\n        print()",
+    "13": "\n    n, m = map(int, input().split())\n    if n*m == 1:\n        print(\"YES\")\n        print(1)\n    elif n*m == 2:\n        print(\"NO\")\n    else:\n        print(\"YES\")\n        for i in range(n):\n            for j in range(m):\n                print(i*m+j+1, end=\" \")\n            print()\n",
+    "14": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        if K == 1:\n            print(1)\n        elif K == 2:\n            print(12)\n        elif K == 3:\n            print(3)\n        elif K == 4:\n            print(123)\n        elif K == 5:\n            print(45)\n        elif K == 6:\n            print(456)\n        elif K == 7:\n            print(789)\n        elif K == 8:\n            print(10)\n        elif K == 9:\n            print(90)\n        elif K == 10:\n            print(900)\n        else:\n            print(\"Error\")",
+    "15": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        for j in range(1, K+1):\n            print(j, end=\"\")\n        print()",
+    "16": "\n    hour = int(angle / 30)\n    minute = int((angle % 30) * 2)\n    return '{:02d}:{:02d}'.format(hour, minute)",
+    "17": "\n    hour = int(angle / 30)\n    minute = int((angle % 30) * 2)\n    return '{:02d}:{:02d}'.format(hour, minute)",
+    "18": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        if K == 1:\n            print(K)\n        else:\n            for j in range(K):\n                if j == 0:\n                    print(K, end=\"\")\n                else:\n                    print(K-j, end=\"\")\n                    for k in range(j):\n                        print(K-j, end=\"\")\n                    print()\n",
+    "19": "\n    T = int(input())\n    for i in range(T):\n        K = int(input())\n        for j in range(1, K+1):\n            print(j, end=\"\")\n        for j in range(K-1, 0, -1):\n            print(j, end=\"\")\n        print()"
+}

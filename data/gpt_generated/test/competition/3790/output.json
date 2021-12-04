@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDU5Lu1zuFtlX7NHoRiEhPUV5wN1",
+    "object": "text_completion",
+    "created": 1638578789,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Find the length of the longest non-decreasing sequence of the given array. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

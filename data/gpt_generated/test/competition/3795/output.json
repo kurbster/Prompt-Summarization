@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDNqM3e2nllxagUOV668UvZ9T2hA",
+    "object": "text_completion",
+    "created": 1638578402,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given $n$, $e$ and $d$. Find the minimum number of rubles Andrew can get after buying dollar and euro bills.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

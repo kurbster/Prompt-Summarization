@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDjMDr9qv3jZtQMr1WfjeGX3OdBI",
+    "object": "text_completion",
+    "created": 1638579736,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a hidden word and a number of turns. Polycarpus knows m words of exactly the same length as the hidden word. The hidden word is also known to him and appears as one of these m words. At current moment a number of turns have already been made and some letters (possibly zero) of the hidden word are already revealed. Previously Polycarp has told exactly the letters which are currently revealed. It is Polycarpus' turn. He wants to tell a letter in such a way, that the TV show host will assuredly reveal at least one more letter. Polycarpus cannot tell the letters, which are already revealed. Your task is to help Polycarpus and find out the number of letters he can tell so that the show host will assuredly reveal at least one of the remaining letters. summary :  ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

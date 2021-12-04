@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlaPm3LgjQWPQImI1zuIlE8UKRV",
+    "object": "text_completion",
+    "created": 1638579874,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Help Sajjad to find the minimum cost he needs to pay for tickets to visit all schools. He can start and finish in any school.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

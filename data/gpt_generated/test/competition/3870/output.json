@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDP2iVZRtw6dqpNXN2e2R5pbAagn",
+    "object": "text_completion",
+    "created": 1638578476,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Fox Ciel is playing a card game with her friend Jiro. Jiro has n cards, each one has two attributes: position (Attack or Defense) and strength. Fox Ciel has m cards, each one has these two attributes too. It's known that position of all Ciel's cards is Attack. Now is Ciel's battle phase, Ciel can do the following operation many times: ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

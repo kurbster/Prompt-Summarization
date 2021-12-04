@@ -1,0 +1,12 @@
+Given an integral number, determine if it's a square number.
+
+In mathematics, a square number is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+Examples:
+
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDlw04f8VH2XyU4E00U8wdSj3x0o",
+    "object": "text_completion",
+    "created": 1638579896,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a table with n rows and m columns. Each cell contains either a 0 or a 1. You can change the value of at most k cells. Return the minimum number of cells you need to change to meet the requirement. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDN9KGaiEXLt8U0oA0WivWjttWxN",
+    "object": "text_completion",
+    "created": 1638578359,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are the boss of ACM (Association for Control over Minds), an upstanding company with a single goal of world domination. Yesterday, you woke up, and saw that the weather was clear, and the birds were singing. Another day, another world domination plan, you sang to yourself as you devised your next world domination plan involving the illusory mind control potions. There s only one insignificant problem you have to solve before you can execute this perfection of a plan: you don t know the correct recipe for the mind control potion. You asked the local Panda-breed brewmaster for the recipe, but unfortunately he didn t know either. Instead, he gave you the mysterious tome titled The Root of all Evil (written by Halim the White). You read the evil book under candle light, and wrote down all the potion recipes contained inside the book. One of them must be the formula for the mind control potion, I m sure of it! , you said to yourself. You numbered these recipes from $1$ through $N$. I just need to try concocting all of these recipes! , you hummed to yourself. Today, you woke up, and saw that the weather was clear, and , anyway. You have purchased all the utensils and ingredients from the local grocery onion, carrot, broom, vials, cauldrons, bat wings, , all common grocery items. Now, you are ready to begin your experiments, but then you notice that some of the recipes share common ingredients! Unfortunately, you only bought one of each ingredient with you. Oh no! What should I do now ! , you panicked. I ll just create some of the potions today, and do the remaining",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

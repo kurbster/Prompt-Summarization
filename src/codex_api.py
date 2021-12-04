@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 import os
 import sys
-sys.path.append('..')
 import yaml
 import json
+import time
 import shutil
 import openai
 import logging
 
 from datetime import datetime
 from pathlib import Path
+from openai.error import RateLimitError
 
 import lib.my_logger
 
-from lib import test_one_solution
+from lib import test_one_solution, file_reading_utils, codex_results
 from lib.prompt_generation import generate_code_prompt, find_path_to_cfg
 
 logger = logging.getLogger('apiLogger')
+
+PATH_TO_EXP = Path(__file__, '../../data/experiments').resolve()
 
 @find_path_to_cfg
 def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
@@ -38,22 +41,34 @@ def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
     logger.info(f'using apikey: {API_KEY}')
     openai.api_key = API_KEY
 
-    response = openai.Completion.create(
-        prompt=prompts,
-        **api_settings
-    )
-    
+    try:
+        response = openai.Completion.create(
+            prompt=prompts,
+            **api_settings
+        )
+    # We have exceeded OpenAIs rate limit of 150,000 tokens/min
+    # We need to cleep for a minute then try again
+    except RateLimitError:
+        logger.error('We have hit our rate limit. Sleeping for a minute...')
+        time.sleep(60)
+        response = openai.Completion.create(
+            prompt=prompts,
+            **api_settings
+        )
+        
     return response
 
-def create_experiment_dir() -> Path:
+def create_experiment_dir(path_to_exp: Path) -> Path:
     """Create a experiment dir to save results.
 
+    Args:
+        path_to_exp (Path): Path to the experiments dir.
+    
     Returns:
         Path: The path to the new dir.
     """
-    path_to_src = Path(__file__, '..')
-    fname = datetime.now().strftime('%m-%d-%Y/%H_%M')
-    dir_path = path_to_src.joinpath('../data/experiments', fname).resolve()
+    fname = datetime.now().strftime('%m-%d-%Y/%H_%M_%S')
+    dir_path = path_to_exp.joinpath(fname)
     dir_path.mkdir(parents=True, exist_ok=False)
     return dir_path
 
@@ -115,13 +130,10 @@ def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
 def save_config(dirname: Path, config: Path) -> None:
     shutil.copy(config, dirname)
 
-if __name__ == "__main__":
-    cfg_file = 'codex_config.yaml'
-    prompts, prompt_files = generate_code_prompt(config=cfg_file)
-
+def main(prompts: list[str], prompt_files: list[str], cfg_file: str):
     response = get_codes(prompts, cfg_file)
 
-    dirname = create_experiment_dir()
+    dirname = create_experiment_dir(PATH_TO_EXP)
 
     codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
     codes = clean_codes(codes)
@@ -140,3 +152,31 @@ if __name__ == "__main__":
     test_one_solution.main(test_args)
 
     logger.info(f'Saved results here: {dirname}')
+    return dirname
+
+if __name__ == "__main__":
+    cfg_file = 'codex_config.yaml'
+    prompts, prompt_files = generate_code_prompt(config=cfg_file)
+
+    experiments_list = []
+    # Can send max of 20 prompts to codex at a time
+    for i in range(0, len(prompts), 20):
+        logger.info(f'Generating code for problems {i} through {i+20}')
+        exp_dir = main(
+            prompts[i:i+20],
+            prompt_files[i:i+20],
+            cfg_file)
+        experiments_list.append(exp_dir)
+
+    results = file_reading_utils.main(experiments_list)
+    
+    path_to_exp_agg = PATH_TO_EXP.joinpath('aggregate_results')
+    exp_dir = create_experiment_dir(path_to_exp_agg)
+    json_file = exp_dir.joinpath('all_results.json')
+
+    with open(json_file, 'w') as f:
+        json.dump(results, f)
+
+    codex_results.main(results, exp_dir)
+
+    logger.info(f'Saved final results here {exp_dir}')

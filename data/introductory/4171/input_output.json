@@ -1,0 +1,1 @@
+{"fn_name": "no_repeat", "inputs": [["aabbccdde"], ["wxyz"], ["testing"], ["codewars"], ["Testing"]], "outputs": [["e"], ["w"], ["e"], ["c"], ["T"]]}

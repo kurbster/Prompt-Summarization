@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE1yDg6YI8RBzlcCtN9LtnfQqRYI",
+    "object": "text_completion",
+    "created": 1638580890,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " It s like how hot dogs come in packs of ten, and buns come in packs of eight or twelve. You have to buy nine packs to make it come out even. This is a quote from the 1986 movie, True Stories, and it s true; well, almost true. You could buy four packs of $10$ hotdogs and five packs of $8$ buns. That would give you exactly $40$ of each. However, you can make things even with fewer packs if you buy two packs of $10$ hotdogs, along with a pack of $8$ buns and another pack of $12$ buns. That would give you $20$ of each, using only $4$ total packs. For this problem, you ll determine the fewest packs you need to buy to make hotdogs and buns come out even, given a selection of different bun and hotdog packs available for purchase. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

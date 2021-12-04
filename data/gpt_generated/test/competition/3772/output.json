@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDfBgXOG9az4zQmSwVi822J0ITNj",
+    "object": "text_completion",
+    "created": 1638579477,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a resistor with unit resistance R_0 = 1. Elements with other resistance can be constructed from these resistors. In this problem, we will consider the following as elements:   one resistor;  an element and one resistor plugged in sequence;  an element and one resistor plugged in parallel.  [Image]  With the consecutive connection the resistance of the new element equals R = R_{e} + R_0. With the parallel connection the resistance of the new element equals $R = \\frac{1}{\\frac{1}{R_{e}} + \\frac{1}{R_{0}}}$. In this case R_{e} equals the resistance of the element being connected. You need to assemble an element with a resistance equal to the fraction $\\frac{a}{b}$. Determine the smallest possible number of resistors you need to make such an element. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

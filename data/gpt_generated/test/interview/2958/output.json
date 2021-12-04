@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDRuVcTMe89NUhSApwWFKnRLZfAj",
+    "object": "text_completion",
+    "created": 1638578654,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Anthony and Cora are playing Dominion, their favorite card game. In Dominion, there are $T$ different card types, and each player has a set of cards (known as a deck). A deck $D$ is said to have $C$ combos if $C$ is the largest integer such that for $C$ different card types in the game, $D$ contains at least two cards of that type. Anthony currently has $N$ cards and he wants to trade cards with Cora such that he ll have a deck with exactly $K$ combos. For each card type $i$ ($1\\leq i\\leq T$), Anthony can choose to perform at most one transaction. There are two types of transaction: \n- Buy up to two cards of $i^{th}$ type from Cora at $a_ i$ coins each\n- Sell all his cards of $i^{th}$ type for $b_ i$ coins each Anthony wants to maximize his profit while obtaining a complete deck. Anthony is willing to spend coins in order to obtain a complete deck if necessary, but of course he wants to minimize his spending in that case. Note that he doesn t care about keeping the rest of his cards which don t contribute to the complete deck. Anthony has hired you to help him calculate how much money he can make if he chooses the optimal strategy for obtaining enough combos. If he has to spend money, output a negative number.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

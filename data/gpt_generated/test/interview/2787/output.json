@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDzZANN7AjrGi57LBABw4uOxu2cC",
+    "object": "text_completion",
+    "created": 1638580741,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Given the latitude and longitude of two airports, calculate the minimum amount of shame Skylar will accumulate on a one-way trip across the globe.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

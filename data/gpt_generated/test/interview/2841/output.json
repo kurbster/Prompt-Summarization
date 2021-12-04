@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDTFVHr0fjv7W3vdcigSuUkWeatt",
+    "object": "text_completion",
+    "created": 1638578737,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You are given a board of size $N+1$ with $N$ squares of different colors. You are also given a deck of $N$ cards of different colors. You need to find the minimum number of cards required to complete the game. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

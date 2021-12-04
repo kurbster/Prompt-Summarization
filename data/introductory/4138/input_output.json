@@ -1,0 +1,1 @@
+{"fn_name": "count_correct_characters", "inputs": [["dog", "car"], ["dog", "god"], ["dog", "cog"], ["dog", "cod"], ["dog", "bog"], ["dog", "dog"], ["abcde", "abcde"], ["same", "same"], ["z", "z"]], "outputs": [[0], [1], [2], [1], [2], [3], [5], [4], [1]]}

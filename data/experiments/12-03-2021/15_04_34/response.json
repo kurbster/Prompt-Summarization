@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BAwwvmFuP5gE0AmZBHmFEp1WHq2j",
+    "object": "text_completion",
+    "created": 1638569046,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    count = 0\n    for i in range(n-1):\n        if s[i] == s[i+1]:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    count = 0\n    for i in range(n-1):\n        if s[i] == s[i+1]:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    d = {}\n    for i in s:\n        if i in d:\n            d[i] += 1\n        else:\n            d[i] = 1\n    l = sorted(d.items(), key=lambda x: (-x[1], x[0]))\n    for i in range(3):\n        print(l[i][0], l[i][1])",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    d = {}\n    for i in s:\n        if i in d:\n            d[i] += 1\n        else:\n            d[i] = 1\n    l = sorted(d.items(), key=lambda x: (-x[1], x[0]))\n    for i in range(3):\n        print(l[i][0], l[i][1])",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            if (j - i + 1) % 2 == 0:\n                mid = (i + j - 1) // 2\n                if a[i] ^ a[mid] ^ a[j] == 0:\n                    count += 1\n    print(count)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    res = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            if (j - i + 1) % 2 == 0:\n                mid = (i + j - 1) // 2\n                if a[i] ^ a[mid] == a[mid + 1] ^ a[j]:\n                    res += 1\n    print(res)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return bound - (bound % divisor)\n\nprint(max_multiple(2,7))\nprint(max_multiple(10,50))\nprint(max_multiple(37,200))",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return bound - (bound % divisor)",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [[x, n - x] for x in range(1, n // 2 + 1) if n % x == 0]\n\n# Test.describe(\"Basic tests\")\n# Test.assert_equals(combos(1), [[1]])\n# Test.assert_equals(combos(2), [[1, 1]])\n# Test.assert_equals(combos(3), [[1, 2], [1, 1, 1]])\n# Test.assert_equals(combos(4), [[1, 3], [1, 2, 1], [1, 1, 1, 1]])\n# Test.assert_equals(combos(5), [[1, 4], [1, 3, 1], [1, 2, 2], [1, 2, 1, 1], [1, 1, 1, 1, 1]])\n# Test.assert_equals(combos(6), [[1, 5], [1, 4, 1], [1, 3, 2], [1, 3, 1, 1], [1, 2, 2, 1], [1, 2, 1, 1, 1], [1, 1, 1, 1, 1, 1]])\n# Test.assert_equals(combos(7), [[1, 6], [1, 5, 1], [1, 4, 2], [1, 4, 1, 1], [1, 3, 3], [1, 3, 2, 1], [1, 3, 1, 1, 1], [1, 2, 2, 2], [1, 2, 2, 1, 1], [1, 2, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1]])\n# Test.assert_equals(combos(8), [[1, 7], [1, 6, 1], [1, 5, 2], [1, 5, 1, 1], [1, 4, 3], [1, 4, 2, 1], [1, 4, 1, 1, 1], [1, 3, 3, 1], [1, 3, 2, 2], [1, 3, 2, 1, 1], [1, 3, 1, 1, 1, 1], [1, 2, 2, 2, 1], [1, 2, 2, 1, 1, 1], [1, 2, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1]])\n# Test.assert_equals(combos(9), [[1, 8], [1, 7, 1], [1, 6, 2], [1, 6, 1, 1], [1, 5, 3], [1, 5, 2, 1], [1, 5, 1, 1, 1], [1, 4, 4], [1, 4, 3, 1], [1, 4, 2, 2], [1, 4, 2, 1, 1], [1, 4, 1, 1, 1, 1], [1, 3, 3, 2], [1, 3, 3, 1, 1], [1, 3, 2, 2, 1], [1, 3, 2, 1, 1, 1], [1, 3, 1, 1, 1, 1, 1], [1, 2, 2, 2, 2], [1, 2, 2, 2, 1, 1], [1, 2, 2, 1, 1, 1, 1], [1, 2, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1]])\n# Test.assert_equals(combos(10), [[1, 9], [1, 8, 1], [1, 7, 2], [1, 7, 1, 1], [1, 6, 3], [1, 6, 2, 1], [1, 6, 1, 1, 1], [1, 5, 4], [1, 5, 3, 1], [1, 5, 2, 2], [1, 5, 2, 1, 1], [1, 5, 1, 1, 1, 1], [1, 4, 4, 1], [1, 4, 3, 2], [1, 4, 3, 1, 1], [1, 4, 2, 2, 1], [1, 4, 2, 1, 1, 1], [1, 4, 1, 1, 1, 1, 1], [1, 3, 3, 3], [1, 3, 3, 2, 1], [1, 3, 3,",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    # your code here\n    return []\n\n# Sample Test\nTest.describe(\"Basic tests\")\nTest.assert_equals(combos(1), [[1]])\nTest.assert_equals(combos(2), [[1,1]])\nTest.assert_equals(combos(3), [[1,1,1], [1,2]])\nTest.assert_equals(combos(4), [[1,1,1,1], [1,1,2], [1,2,1], [2,1,1], [2,2]])\nTest.assert_equals(combos(5), [[1,1,1,1,1], [1,1,1,2], [1,1,2,1], [1,2,1,1], [1,2,2], [2,1,1,1], [2,1,2], [2,2,1]])\nTest.assert_equals(combos(6), [[1,1,1,1,1,1], [1,1,1,1,2], [1,1,1,2,1], [1,1,2,1,1], [1,1,2,2], [1,2,1,1,1], [1,2,1,2], [1,2,2,1], [2,1,1,1,1], [2,1,1,2], [2,1,2,1], [2,2,1,1], [2,2,2]])\nTest.assert_equals(combos(7), [[1,1,1,1,1,1,1], [1,1,1,1,1,2], [1,1,1,1,2,1], [1,1,1,2,1,1], [1,1,1,2,2], [1,1,2,1,1,1], [1,1,2,1,2], [1,1,2,2,1], [1,2,1,1,1,1], [1,2,1,1,2], [1,2,1,2,1], [1,2,2,1,1], [1,2,2,2], [2,1,1,1,1,1], [2,1,1,1,2], [2,1,1,2,1], [2,1,2,1,1], [2,1,2,2], [2,2,1,1,1], [2,2,1,2], [2,2,2,1]])\nTest.assert_equals(combos(8), [[1,1,1,1,1,1,1,1], [1,1,1,1,1,1,2], [1,1,1,1,1,2,1], [1,1,1,1,2,1,1], [1,1,1,1,2,2], [1,1,1,2,1,1,1], [1,1,1,2,1,2], [1,1,1,2,2,1], [1,1,2,1,1,1,1], [1,1,2,1,1,2], [1,1,2,1,2,1], [1,1,2,2,1,1], [1,1,2,2,2], [1,2,1,1,1,1,1], [1,2,1,1,1,2], [1,2,1,1,2,1], [1,2,1,2,1,1], [1,2,1,2,2], [1,2,2,1,1,1], [1,2,2,1,2], [1,2,2,2,1], [2,1,1,1,1,1,1], [2,1,1,1,1,2], [2,1,1,1,2,1], [2,1,1,2,1,1], [2,1,1,2,2], [2,1,2,1,1,1], [2,1,2,1,2], [2,1,2,2,1], [2,2,1,1,1,1], [2,2",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    V = int(input())\n    for i in range(V):\n        k = [int(x) for x in input().split()]\n        if len(k) == 250:\n            if len(set(k)) == 1:\n                print(\"uniform\")\n            else:\n                print(\"poisson\")\n        else:\n            print(\"poisson\")\n\nif __name__ == '__main__':\n    code()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [i for i in range(1, n+1)]",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [i for i in range(1, n+1)]",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = str(n)\n    return max(int(''.join(n[:i]+n[i+1:])) for i in range(len(n)))",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = str(n)\n    return max(int(''.join(n[:i]+n[i+1:])) for i in range(len(n)))",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    arr = list(map(int, input().split()))\n    arr.sort()\n    ans = 0\n    for i in range(n):\n        if arr[i] <= k:\n            k -= arr[i]\n            ans += 1\n        else:\n            break\n    print(ans)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    prices = list(map(int, input().split()))\n    prices.sort()\n    count = 0\n    for i in prices:\n        if k - i >= 0:\n            count += 1\n            k -= i\n        else:\n            break\n    print(count)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        s = input()\n        c = 0\n        for j in range(len(s)):\n            if s[j] == 'M':\n                c += 3\n            else:\n                c += 4\n                if c % 6 == 0:\n                    c -= 3\n        print(c)\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        stamps = 0\n        total = 0\n        for j in input():\n            if j == 'M':\n                total += 3\n            else:\n                total += 4\n            stamps += 1\n            if stamps == 6:\n                total -= 6\n                stamps = 0\n        print(total)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

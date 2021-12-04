@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDpNWSU2tZC3MScNgu29oKHnPlNs",
+    "object": "text_completion",
+    "created": 1638580109,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " The players take turns making a move. The winner is the player that removes the last cuboid. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

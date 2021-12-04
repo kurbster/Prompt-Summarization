@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDQJiZBACIsaiIg5Zn7nEJ5DUSon",
+    "object": "text_completion",
+    "created": 1638578555,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " You have an $R\\times C$ table. You have chosen an angle $K$, a multiple of $45$, and want to rotate your table that many degrees clockwise. ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

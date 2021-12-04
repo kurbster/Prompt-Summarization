@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BDdz4lMA1U2ecJ0ielWjd9wQ6S2q",
+    "object": "text_completion",
+    "created": 1638579403,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " There are n programmers working on a project, the i-th of them makes exactly a_{i} bugs in every line of code that he writes. Let's call a sequence of non-negative integers v_1, v_2, ..., v_{n} a plan, if v_1 + v_2 + ... + v_{n} = m. The programmers follow the plan like that: in the beginning the first programmer writes the first v_1 lines of the given task, then the second programmer writes v_2 more lines of the given task, and so on. In the end, the last programmer writes the remaining lines of the code. Let's call a plan good, if all the written lines of the task contain at most b bugs in total. Your task is to determine how many distinct good plans are there. As the number of plans can be large, print the remainder of this number modulo given positive integer mod.",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

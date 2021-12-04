@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BASNRFJjrbgh6FUMcRfAueXFpEbO",
+    "object": "text_completion",
+    "created": 1638567151,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    # Write your code here\n    # To print results to the standard output you can use print\n    # Example: print \"Hello world!\"\n    if len(array) == 1:\n        return 0\n    if len(array) == 2:\n        return 0 if array[0] < array[1] else 1\n    if len(array) == 3:\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n    if len(array) > 3:\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n            return 0\n        if array[0] < array[1] and array[1] > array[2]:\n            return 1\n        if array[0] > array[1] and array[1] < array[2]:\n            return 0\n        if array[0] < array[1] and array[1] < array[2]:\n            return 2\n        if array[0] > array[1] and array[1] > array[2]:\n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    #your code here\n    return -1",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        i = 0\n        while i < len(bits):\n            if i == len(bits)-1:\n                return True\n            if bits[i] == 1:\n                i += 2\n            else:\n                i += 1\n        return False",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        i = 0\n        while i < len(bits):\n            if i == len(bits) - 1:\n                return True\n            if bits[i] == 1:\n                i += 2\n            else:\n                i += 1\n        return False",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    half = int(len(silly)/2)\n    return silly[:half].lower() + silly[half:].upper()\n\nprint(sillycase(\"brian\"))",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    mid = int(len(silly)/2)\n    return silly[:mid].lower() + silly[mid:].upper()\n\nprint(sillycase(\"brian\"))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    even = []\n    odd = []\n    for i in integers:\n        if i % 2 == 0:\n            even.append(i)\n        else:\n            odd.append(i)\n    if len(even) == 1:\n        return even[0]\n    else:\n        return odd[0]",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    even = []\n    odd = []\n    for i in integers:\n        if i % 2 == 0:\n            even.append(i)\n        else:\n            odd.append(i)\n    if len(even) > len(odd):\n        return odd[0]\n    else:\n        return even[0]",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    str1 = str1.lower()\n    str2 = str2.lower()\n    for i in range(len(str1)):\n        for j in range(len(str2)):\n            if str1[i] == str2[j]:\n                if str1[i:i+2] == str2[j:j+2]:\n                    return True\n    return False\n\nprint(substring_test(\"Something\",\"Fun\"))\nprint(substring_test(\"Something\",\"Home\"))",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return any(i in str2 for i in str1)\n\nprint(substring_test(\"Something\",\"Home\"))",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N, M = map(int, input().split())\n        boys = []\n        girls = []\n        for j in range(N):\n            boys.append(input())\n        for j in range(M):\n            girls.append(input())\n        count = 0\n        for j in range(M):\n            for k in range(N):\n                if boys[k][j] == '1' and girls[j][k] == '1':\n                    count += 1\n        print(count)\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n, m = map(int, input().split())\n        arr = []\n        for i in range(n):\n            arr.append(input())\n        count = 0\n        for i in range(n):\n            for j in range(i+1, n):\n                for k in range(m):\n                    if arr[i][k] == '1' and arr[j][k] == '1':\n                        count += 1\n        print(count)\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        \n        pass\n\n\nif __name__ == '__main__':\n    assert Solution().numMusicPlaylists(0) == 0",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] = dp[i-1][j-1] * (N-1) + dp[i-1][j] * (N-1)\n        # dp[i][j] =",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    x, y = ord(pos[0]) - ord('a') + 1, int(pos[1])\n    res = []\n    for i in range(-2, 3):\n        for j in range(-2, 3):\n            if abs(i) + abs(j) == 3:\n                if 1 <= x + i <= 8 and 1 <= y + j <= 8:\n                    res.append(chr(ord('a') + x + i - 1) + str(y + j))\n    return res\n\nif __name__ == '__main__':\n    print(possible_positions('a1'))",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    x, y = ord(pos[0]) - 96, int(pos[1])\n    return sorted([\"%s%s\" % (chr(x + i), y + j) for i in (-2, -1, 1, 2) for j in (-2, -1, 1, 2) if abs(i) != abs(j)])",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    xor = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            xor ^= a[i] + a[j]\n    print(xor)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    res = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            res ^= a[i] + a[j]\n    print(res)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N = int(input())\n    nums = []\n    for i in range(N):\n        nums.append(list(map(int, input().split())))\n    nums.sort()\n    min_red = nums[0][0]\n    max_red = nums[0][0]\n    min_blue = nums[0][1]\n    max_blue = nums[0][1]\n    for i in range(1, N):\n        if nums[i][0] > max_red:\n            max_red = nums[i][0]\n        if nums[i][0] < min_red:\n            min_red = nums[i][0]\n        if nums[i][1] > max_blue:\n            max_blue = nums[i][1]\n        if nums[i][1] < min_blue:\n            min_blue = nums[i][1]\n    print(max_red - min_red)\n    print(max_blue - min_blue)\n    print((max_red - min_red) * (max_blue - min_blue))\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Create variables\n    N = int(input())\n    x = []\n    y = []\n    for i in range(N):\n        x_i, y_i = map(int, input().split())\n        x.append(x_i)\n        y.append(y_i)\n\n    # Sort the lists\n    x.sort()\n    y.sort()\n\n    # Find the minimum possible value\n    min_val = (x[-1] - x[0]) * (y[-1] - y[0])\n\n    # Print the minimum possible value\n    print(min_val)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

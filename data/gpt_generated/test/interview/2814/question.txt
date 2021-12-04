@@ -1,0 +1,44 @@
+Concentration is a not so popular 2 player card game of both skill and luck. The standard Concentration game is played with one or two 52-card decks, however, for the sake of the problem, we will look at a variation of Concentration.
+
+The rules are as follows:
+ - A card is represented by a single integer. Two cards $i$, $j$ are considered “similar” if and only if $\lfloor i/2\rfloor =\lfloor j/2\rfloor $. A deck consisting of $2N$ cards is used for each game. More specifically, a deck of $2N$ cards contains exactly one copy of card $i$ for all $0\leq i <2N$.
+ - All cards are initially facing down on a table in random positions, i.e. neither players know what any cards are. Players take turns making moves. Player 0 goes first, then player 1 goes, then player 0 goes, and so on.
+ - During each turn, a player chooses two cards and reveals them. If the two cards are “similar”, then they are removed from the table and the player gets to keep them, the player is then granted another turn; this can happen infinitely as long as the player always finds two “similar” cards. If the cards are different, the player’s turn ends.
+ - When there are no more cards on the table, the player with more cards wins the game.
+
+Anthony and Matthew like to play this boring game and share an identical play style: whenever they are to choose a card to reveal, if they have knowledge of two “similar” cards, they will pick one of the two “similar” cards; otherwise they will pick a random unknown card to reveal.
+
+Anthony and Matthew are both extremely intelligent and have perfect memories, i.e. they remember every card that has been revealed.
+
+Before the game starts, both Anthony and Matthew make up their minds about in which order they will choose random cards to reveal, in case when they do not have knowledge of two “similar” cards.
+
+Each player’s choices of revelation can be represented by a permutation of numbers $[0,\ldots , 2N-1]$. For example, let $\sigma _0$, a permutation of $[0,\ldots , 2N-1]$ be the “random” choices of Anthony. When Anthony is to choose an unknown card, he will choose the smallest $i$ such that $\sigma _0(i)$ is not revealed, and reveal $\sigma _0(i)$.
+
+Similarly, let $\sigma _1$ be the choices of Matthew.
+
+Having knowledge of $\sigma _0$ and $\sigma _1$, we should be able to perfectly determine the winner (and win lots of money by betting on that player), and it is your job to do exactly that!
+
+-----Input-----
+The first line of input contains one integer $1\leq N\leq 10^6$.
+
+The second line contains $2N$ integers, with the $i$-th integer being $\sigma _0(i)$. This line defines $\sigma _0$.
+
+The third line contains $2N$ integers, with the $i$-th integer being $\sigma _1(i)$. This line defines $\sigma _1$.
+
+-----Output-----
+Output a single line with $0$ if Anthony wins, $1$ if Matthew wins, or $-1$ if the game ties.
+
+-----Examples-----
+Sample Input 1:
+2
+0 1 2 3 
+0 1 2 3 
+Sample Output 1:
+0
+
+Sample Input 2:
+2
+0 2 1 3 
+0 2 1 3 
+Sample Output 2:
+1

@@ -1,0 +1,10 @@
+{
+    "inputs": [
+        "prognova 4\n",
+        "helloworld 6\n"
+    ],
+    "outputs": [
+        "Yes\n",
+        "No\n"
+    ]
+}

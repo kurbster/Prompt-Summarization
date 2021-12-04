@@ -1,0 +1,26 @@
+# Task
+
+Implement a method to return how many riders are necessary to get the mail from one end to the other. Each rider travels never more than 100 miles.
+
+A rider may go missing and the rider's absence would be noticed at the next station, so the next designated rider from there would have to back-track the mail route to look for his missing colleague. The missing rider is then safely escorted back to the station he last came from, and the mail bags are handed to his rescuer. 
+
+stations is a list of miles from one station to the next along the Pony Express route.
+stationX is the number of the station where the rider's absence was noticed.
+
+# Example
+
+Input:
+stations = [43, 23, 40, 13]
+stationX = 4
+Output:
+3
+Explanation:
+`S1` ...  ... 43 ...  ... `S2` ...  ... 23 ...  ... `S3` ...  ... 40 ...  ... `S4` ...  ... 13 ...  ... `S5`
+
+* Rider 1 gets as far as Station S3
+* Rider 2 takes mail bags from Rider 1 at station S3
+* Rider 2 never arrives at station S4
+* Rider 3 goes back to find what happened to Rider 2
+* Rider 2 and Rider 3 return together back to Station S3
+* Rider 3 takes mail bags from Rider 2
+* Rider 3 completes the journey to Station S5

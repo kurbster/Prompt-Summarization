@@ -1,0 +1,14 @@
+{
+    "id": "cmpl-4BE14tIKdAixM20XYRfeDEek2JOEQ",
+    "object": "text_completion",
+    "created": 1638580834,
+    "model": "davinci:2020-05-03",
+    "choices": [
+        {
+            "text": " Alice and Bob are playing a game on a simple connected graph with $N$ nodes and $M$ edges. Alice colors each edge in the graph red or blue. A path is a sequence of edges where each pair of consecutive edges have a node in common. If the first edge in the pair is of a different color than the second edge, then that is a color change. After Alice colors the graph, Bob chooses a path that begins at node $1$ and ends at node $N$. He can choose any path on the graph, but he wants to minimize the number of color changes in the path. Alice wants to choose an edge coloring to maximize the number of color changes Bob must make. What is the maximum number of color changes she can force Bob to make, regardless of which path he chooses ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
