@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTXSCpXgrtwdHUhAO0iT4P4R0cyN",
+    "object": "text_completion",
+    "created": 1638640502,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    s, k = input().split()\n    k = int(k)\n    s = list(s)\n    for i in range(len(s)):\n        for j in range(i+1, len(s)):\n            if abs(i-j) >= k:\n                s[i], s[j] = s[j], s[i]\n    if s == sorted(s):\n        print(\"Yes\")\n    else:\n        print(\"No\")\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s, k = input().split()\n    k = int(k)\n    s = list(s)\n    for i in range(len(s)):\n        for j in range(i+1, len(s)):\n            if abs(i-j) >= k:\n                s[i], s[j] = s[j], s[i]\n    if s == sorted(s):\n        print(\"Yes\")\n    else:\n        print(\"No\")\n\nif __name__ == '__main__':\n    code()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    mps = [set() for i in range(n)]\n    for i in range(5):\n        p = int(input())\n        for j in range(p):\n            k, l = map(int, input().split())\n            mps[k-1].add(l)\n            mps[l-1].add(k)\n    for i in range(n):\n        for j in range(i+1, n):\n            if len(mps[i] & mps[j]) > 2:\n                print(\"Impossible\")\n                return\n    print(\"\".join([\"A\" if i in mps[0] else \"B\" for i in range(1, n+1)]))\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    for i in range(5):\n        p = int(input())\n        for j in range(p):\n            k, l = input().split()\n            k = int(k)\n            l = int(l)\n            if k > l:\n                k, l = l, k\n            if k < n:\n                if l < n:\n                    if k < l:\n                        if k in d[l]:\n                            d[l].remove(k)\n                        else:\n                            d[l].append(k)\n                    else:\n                        if l in d[k]:\n                            d[k].remove(l)\n                        else:\n                            d[k].append(l)\n    for i in range(1, n+1):\n        if len(d[i]) == 0:\n            print(i, end='')\n            break\n    for i in range(1, n+1):\n        if len(d[i]) == 1:\n            print(d[i][0], end='')\n            break\n    for i in range(1, n+1):\n        if len(d[i]) == 2:\n            print(d[i][0], d[i][1], end='')\n            break\n    for i in range(1, n+1):\n        if len(d[i]) > 2:\n            print(d[i][0], d[i][1], d[i][2], end='')\n            break\n\nd = {}\nfor i in range(1, 200001):\n    d[i] = []\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    if n == 1:\n        print(1)\n        return\n    if m == 0:\n        print(1)\n        return\n    if n == 2:\n        print(m)\n        return\n    if n == 3:\n        print(m*(m-1)//2)\n        return\n    if n == 4:\n        print(m*(m-1)*(m-2)*(m-3)//24)\n        return\n    if n == 5:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)//120)\n        return\n    if n == 6:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)//720)\n        return\n    if n == 7:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)//5040)\n        return\n    if n == 8:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)//40320)\n        return\n    if n == 9:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)//362880)\n        return\n    if n == 10:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)//3628800)\n        return\n    if n == 11:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)//39916800)\n        return\n    if n == 12:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)//479001600)\n        return\n    if n == 13:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)*(m-12)//6227020800)\n        return\n    if n == 14:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)*(m-12)*(m-13)//87178291200)\n        return\n    if n == 15:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)*(m-12)*(m-13)*(m-14)//1307674368000)\n        return\n    if n == 16:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)*(m-12)*(m-13)*(m-14)*(m-15)//20922789888000)\n        return\n    if n == 17:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9)*(m-10)*(m-11)*(m-12)*(m-13)*(m-",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    if n == 1:\n        print(1)\n        return\n    if n == 2:\n        print(m)\n        return\n    if n == 3:\n        print(m*(m-1) + 1)\n        return\n    if n == 4:\n        print(m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 5:\n        print(m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 6:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4) + m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 7:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5) + m*(m-1)*(m-2)*(m-3)*(m-4) + m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 8:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5) + m*(m-1)*(m-2)*(m-3)*(m-4) + m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 9:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5) + m*(m-1)*(m-2)*(m-3)*(m-4) + m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 10:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5) + m*(m-1)*(m-2)*(m-3)*(m-4) + m*(m-1)*(m-2)*(m-3) + m*(m-1)*(m-2) + m*(m-1) + 1)\n        return\n    if n == 11:\n        print(m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8)*(m-9) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7)*(m-8) + m*(m-1)*(m-2)*(m-3)*(m-4)*(m-5)*(m-6)*(m-7) + m*",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, a, b, k, f = [int(x) for x in input().split()]\n    stops = []\n    for i in range(n):\n        stops.append(input().split())\n    stops.sort()\n    money = 0\n    for i in range(n):\n        if stops[i][0] == stops[i-1][1]:\n            money += b\n        else:\n            money += a\n        if money >= f:\n            money -= f\n        else:\n            money = 0\n    print(money)\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b, k, f = map(int, input().split())\n    for i in range(n):\n        start, finish = input().split()\n        if start == finish:\n            print(a)\n        else:\n            print(b)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N = int(input())\n    S = input()\n    count = 0\n    for i in range(N):\n        if S[i] == 'A':\n            count += 1\n        else:\n            break\n    for i in range(N-1, -1, -1):\n        if S[i] == 'B':\n            count += 1\n        else:\n            break\n    print(count)\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N = int(input())\n    S = input()\n    count = 0\n    for i in range(N-1):\n        if S[i] != S[i+1]:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    p = [i/100 for i in p]\n    p = [i**(i/(n-1)) for i in range(1, n+1)]\n    print(sum(p)/n)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    p = [i/100 for i in p]\n    p = [i**(i/(n-1)) for i in range(1, n+1)]\n    print(sum(p)/n)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    pass\n\nif __name__ == '__main__':\n    code()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    syllables = input().split()\n    poem = []\n    for i in range(3):\n        poem.append(input().split())\n    for i in range(3):\n        for j in range(len(poem[i])):\n            for k in range(len(poem[i][j])):\n                if poem[i][j][k] not in syllables:\n                    print(\"come back next year\")\n                    return\n    print(\"haiku\")\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    p = list(map(int, input().split()))\n    p.sort()\n    p.reverse()\n    count = 0\n    while p:\n        if p[0] == n:\n            p.pop(0)\n            n -= 1\n            count += 1\n        else:\n            if p[0] - k >= 1:\n                p.pop(0)\n                p.insert(0, p[0] - k)\n                n -= 1\n                count += 1\n            else:\n                p.pop(0)\n                n -= 1\n                count += 1\n    print(count)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    p = list(map(int, input().split()))\n    p.sort()\n    pages = []\n    for i in range(0, len(p), k):\n        pages.append(p[i:i+k])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n    pages.append([])\n",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    print(n*a*b)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    A = [int(x) for x in input().split()]\n    B = [int(x) for x in input().split()]\n    C = [0, 0, 0]\n    for i in range(n):\n        for j in range(n):\n            C[(i+j) % 3] += A[i] * B[j]\n    print(*C)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    S = int(input())\n    streets = []\n    for i in range(S):\n        streets.append(list(map(int, input().split())))\n    T = int(input())\n    for i in range(T):\n        test = list(map(int, input().split()))\n        if test[0] == test[2] or test[1] == test[3]:\n            print(\"same\")\n        else:\n            print(\"different\")\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    S = int(input())\n    streets = []\n    for i in range(S):\n        streets.append(list(map(int, input().split())))\n    T = int(input())\n    for i in range(T):\n        properties = list(map(int, input().split()))\n        if properties[0] == properties[2] or properties[1] == properties[3]:\n            print(\"same\")\n        else:\n            print(\"different\")\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

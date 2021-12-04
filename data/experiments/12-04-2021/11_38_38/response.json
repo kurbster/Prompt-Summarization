@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BUD88gqp887GABqWDj9LfeIQdmBe",
+    "object": "text_completion",
+    "created": 1638643086,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        k = int(input())\n        a = list(map(int, input().split()))\n        b = list(map(int, input().split()))\n        c = list(map(int, input().split()))\n        d = list(map(int, input().split()))\n        e = list(map(int, input().split()))\n        f = list(map(int, input().split()))\n        g = list(map(int, input().split()))\n        h = list(map(int, input().split()))\n        i = list(map(int, input().split()))\n        j = list(map(int, input().split()))\n        k = list(map(int, input().split()))\n        l = list(map(int, input().split()))\n        m = list(map(int, input().split()))\n        n = list(map(int, input().split()))\n        o = list(map(int, input().split()))\n        p = list(map(int, input().split()))\n        q = list(map(int, input().split()))\n        r = list(map(int, input().split()))\n        s = list(map(int, input().split()))\n        t = list(map(int, input().split()))\n        u = list(map(int, input().split()))\n        v = list(map(int, input().split()))\n        w = list(map(int, input().split()))\n        x = list(map(int, input().split()))\n        y = list(map(int, input().split()))\n        z = list(map(int, input().split()))\n        a1 = list(map(int, input().split()))\n        b1 = list(map(int, input().split()))\n        c1 = list(map(int, input().split()))\n        d1 = list(map(int, input().split()))\n        e1 = list(map(int, input().split()))\n        f1 = list(map(int, input().split()))\n        g1 = list(map(int, input().split()))\n        h1 = list(map(int, input().split()))\n        i1 = list(map(int, input().split()))\n        j1 = list(map(int, input().split()))\n        k1 = list(map(int, input().split()))\n        l1 = list(map(int, input().split()))\n        m1 = list(map(int, input().split()))\n        n1 = list(map(int, input().split()))\n        o1 = list(map(int, input().split()))\n        p1 = list(map(int, input().split()))\n        q1 = list(map(int, input().split()))\n        r1 = list(map(int, input().split()))\n        s1 = list(map(int, input().split()))\n        t1 = list(map(int, input().split()))\n        u1 = list(map(int, input().split()))\n        v1 = list(map(int, input().split()))\n        w1 = list(map(int, input().split()))\n        x1 = list(map(int, input().split()))\n        y1 = list(map(int, input().split()))\n        z1 = list(map(int, input().split()))\n        a2 = list(map(int, input().split()))\n        b2 = list(map(int, input().split()))\n        c2 = list(map(int, input().split()))\n        d2 = list(map(int, input().split()))\n        e2 = list(map(int, input().split()))\n        f2 = list(map(int, input().split()))\n        g2 = list(map(int, input().split()))\n        h2 = list(map(int, input().split()))\n        i2 = list(map(int, input().split()))\n        j2 = list(map(int, input().split()))\n        k2 = list(map(int, input().split()))\n        l2 = list(map(int, input().split()))\n",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    ",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    stack = []\n    for i in input():\n        if i == 'S':\n            stack.append(0)\n        elif i == 'T':\n            stack.append(1)\n        elif i == 'N':\n            stack.append(2)\n        elif i == ' ':\n            if len(stack) > 0:\n                stack.pop()\n        elif i == '\\n':\n            if len(stack) > 0:\n                stack.pop()\n            if len(stack) > 0:\n                stack.pop()\n        elif i == '-':\n            if len(stack) > 0:\n                stack.pop()\n            if len(stack) > 0:\n                stack.pop()\n            if len(stack) > 0:\n                stack.pop()\n    print(sum(stack))\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    stack = []\n    for i in input():\n        if i == 'S':\n            stack.append(int(input()))\n        elif i == 'N':\n            if len(stack) < 2:\n                print('Invalid copy operation')\n            else:\n                stack.append(stack[-1])\n        elif i == 'T':\n            if len(stack) < 2:\n                print('Invalid swap operation')\n            else:\n                stack[-1], stack[-2] = stack[-2], stack[-1]\n        elif i == 'N':\n            if len(stack) < 1:\n                print('Invalid remove operation')\n            else:\n                stack.pop()\n        elif i == 'S':\n            if len(stack) < 2:\n                print('Invalid addition operation')\n            else:\n                stack[-2] += stack[-1]\n                stack.pop()\n        elif i == 'T':\n            if len(stack) < 2:\n                print('Invalid subtraction operation')\n            else:\n                stack[-2] -= stack[-1]\n                stack.pop()\n        elif i == 'N':\n            if len(stack) < 2:\n                print('Invalid multiplication operation')\n            else:\n                stack[-2] *= stack[-1]\n                stack.pop()\n        elif i == 'S':\n            if len(stack) < 2:\n                print('Invalid division operation')\n            else:\n                if stack[-1] == 0:\n                    print('Division by zero')\n                else:\n                    stack[-2] //= stack[-1]\n                    stack.pop()\n        elif i == 'T':\n            if len(stack) < 1:\n                print('Invalid print operation')\n            else:\n                print(stack[-1])\n                stack.pop()\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    h, c = map(int, input().split())\n    a = [0] * c\n    d = [0] * c\n    for i in range(c):\n        a[i], d[i] = map(int, input().split())\n    a.sort()\n    d.sort()\n    for i in range(c):\n        if h > 0:\n            h -= 1\n            a[i] += d[i]\n        else:\n            break\n    print(max(a))\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    h, c = map(int, input().split())\n    a = [0] * c\n    d = [0] * c\n    for i in range(c):\n        a[i], d[i] = map(int, input().split())\n    a = [0] + a\n    d = [0] + d\n    for i in range(1, c+1):\n        a[i] += a[i-1]\n        d[i] += d[i-1]\n    for i in range(1, c+1):\n        a[i] += d[i] * h\n    print(max(a))\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    l = []\n    for i in range(n):\n        l.append(int(input()))\n    l.sort()\n    l1 = []\n    l2 = []\n    for i in range(n-1):\n        if l[i] < l[i+1]:\n            l1.append(l[i])\n            l2.append(l[i+1])\n        else:\n            l1.append(l[i+1])\n            l2.append(l[i])\n    l1.append(l[n-1])\n    l2.append(l[n-1])\n    print(len(l1))\n    print(l1)\n    print(l2)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    lst = []\n    for i in range(n):\n        lst.append(int(input()))\n    inc = [1]\n    dec = [1]\n    for i in range(1, n):\n        if lst[i] > lst[i-1]:\n            inc.append(inc[i-1] + 1)\n            dec.append(1)\n        elif lst[i] < lst[i-1]:\n            inc.append(1)\n            dec.append(dec[i-1] + 1)\n        else:\n            inc.append(1)\n            dec.append(1)\n    return max(max(inc), max(dec))\n\nprint(code())",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = [int(x) for x in input().split()]\n    ingredients = []\n    for i in range(n):\n        ingredients.append([int(x) for x in input().split()])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2])\n    # sort by amount\n    ingredients.sort(key=lambda x: x[0])\n    # sort by amount available\n    ingredients.sort(key=lambda x: x[1])\n    # sort by price per unit\n    ingredients.sort(key=lambda x: x[4]/x[0])\n    # sort by price\n    ingredients.sort(key=lambda x: x[4])\n    # sort by size\n    ingredients.sort(key=lambda x: x[2",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = [int(x) for x in input().split()]\n    ingredients = []\n    for i in range(n):\n        ingredients.append([int(x) for x in input().split()])\n    # Sort the ingredients by price per unit\n    ingredients.sort(key=lambda x: x[5]/x[0])\n    # Sort the ingredients by size\n    ingredients.sort(key=lambda x: x[2])\n    # Initialize the variables\n    total = 0\n    servings = 0\n    # Loop through the ingredients\n    for i in ingredients:\n        # If the ingredient is available\n        if i[1] > 0:\n            # If the ingredient is the last one\n            if i == ingredients[-1]:\n                # If the ingredient is the only one\n                if len(ingredients) == 1:\n                    # If the ingredient is the only one and it is available\n                    if i[1] >= m:\n                        # Buy the rest of the ingredient\n                        total += m * i[5]\n                        servings += m\n                        break\n                    # If the ingredient is the only one and it is not available\n                    else:\n                        # Buy the available amount\n                        total += i[1] * i[5]\n                        servings += i[1]\n                        break\n                # If the ingredient is not the only one\n                else:\n                    # If the ingredient is the last one and it is available\n                    if i[1] >= m:\n                        # Buy the rest of the ingredient\n                        total += m * i[5]\n                        servings += m\n                        break\n                    # If the ingredient is the last one and it is not available\n                    else:\n                        # Buy the available amount\n                        total += i[1] * i[5]\n                        servings += i[1]\n                        break\n            # If the ingredient is not the last one\n            else:\n                # If the ingredient is available in the smaller package\n                if i[1] >= i[2]:\n                    # Buy the smaller package\n                    total += i[2] * i[4]\n                    servings += i[2]\n                    i[1] -= i[2]\n                # If the ingredient is not available in the smaller package\n                else:\n                    # Buy the available amount\n                    total += i[1] * i[4]\n                    servings += i[1]\n                    i[1] -= i[1]\n        # If the ingredient is not available\n        else:\n            # If the ingredient is the last one\n            if i == ingredients[-1]:\n                # If the ingredient is the only one\n                if len(ingredients) == 1:\n                    # If the ingredient is the only one and it is not available\n                    if i[1] < m:\n                        # Buy the rest of the ingredient\n                        total += m * i[5]\n                        servings += m\n                        break\n                    # If the ingredient is the only one and it is available\n                    else:\n                        # Buy the available amount\n                        total += i[1] * i[5]\n                        servings += i[1]\n                        break\n                # If the ingredient is not the only one\n                else:\n                    # If the ingredient is the last one and it is not available\n                    if i[1] < m:\n                        # Buy the rest of the ingredient\n                        total += m * i[5]\n                        servings += m\n                        break\n                    # If the ingredient is the last one and it is available\n                    else:\n                        # Buy the available amount\n                        total += i[1] * i[5]\n                        servings += i[1]\n                        break\n            # If the ingredient is not the last one\n            else:\n                # If the ingredient is available in the smaller package\n                if i[1] >= i[2]:\n                    # Buy the smaller package\n                    total += i[2] * i[4]\n                    servings += i[2]\n                    i[1] -= i[2]\n                # If the ingredient is not available in the smaller package\n                else:\n                    # Buy the available amount\n                    total += i[1] * i[4]\n                    servings += i[1]\n                    i[1] -= i[1]\n    print(servings)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, t = map(int, input().split())\n    if t == 1:\n        print(1)\n    elif t == n + 1:\n        print(0)\n    else:\n        print(n - t + 1)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, t = map(int, input().split())\n    if t == 1:\n        print(1)\n    elif t == n + 1:\n        print(0)\n    else:\n        print(n - t + 1)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = [float(x) for x in input().split()]\n    p.sort()\n    p.reverse()\n    res = 0\n    for i in range(n):\n        res += p[i]*(1-res)\n    print(res)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = [float(x) for x in input().split()]\n    p.sort()\n    p.reverse()\n    res = 0\n    for i in range(n):\n        res += p[i] * (1 - p[i]) ** (i + 1)\n    print(res)\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    coins = list(map(int, input().split()))\n    coins.sort()\n    coins.reverse()\n    result = []\n    for i in range(n):\n        if coins[i] < k:\n            result.append(coins[i])\n            k -= coins[i]\n        else:\n            result.append(k)\n            break\n    print(len(result))\n    print(*result)\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    coins = list(map(int, input().split()))\n    coins.sort()\n    coins.reverse()\n    dp = [0] * (k + 1)\n    for i in range(n):\n        for j in range(k, coins[i] - 1, -1):\n            dp[j] = max(dp[j], dp[j - coins[i]] + coins[i])\n    print(dp[k])\n    for i in range(k + 1):\n        if dp[i] == k:\n            print(i, end=' ')\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    if n == 1:\n        print(-1)\n        return\n    if n % 2 == 0:\n        print(n)\n        return\n    if s.count('(') == s.count(')'):\n        print(n)\n        return\n    if s.count('(') == 0:\n        print(-1)\n        return\n    if s.count('(') == 1:\n        print(n)\n        return\n    if s.count('(') == s.count(')'):\n        print(n)\n        return\n    if s.count('(') == n // 2:\n        print(n)\n        return\n    if s.count('(') == n // 2 + 1:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 1:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 2:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 3:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 4:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 5:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 6:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 7:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 8:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 9:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 10:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 11:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 12:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 13:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 14:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 15:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 16:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 17:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 18:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 19:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 20:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 21:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 22:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 23:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 24:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 25:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 26:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 27:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 28:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 29:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 30:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 31:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 32:\n        print(n)\n        return\n    if s.count('(') == n // 2 - 33:\n        print(n)\n        return\n    if s.count('(') == n",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    if n == 1:\n        print(-1)\n    else:\n        if s.count(\"(\") == s.count(\")\"):\n            print(0)\n        else:\n            if s.count(\"(\") > s.count(\")\"):\n                print(s.count(\"(\") - s.count(\")\"))\n            else:\n                print(-1)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, s, t = map(int, input().split())\n    graph = [[] for i in range(n)]\n    for i in range(m):\n        x, y = map(int, input().split())\n        graph[x].append(y)\n        graph[y].append(x)\n    infected = [False] * n\n    infected[s] = True\n    for i in range(t):\n        for j in range(n):\n            if infected[j]:\n                for k in graph[j]:\n                    infected[k] = True\n    print(sum(infected))\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, s, t = map(int, input().split())\n    adj = [[] for i in range(n)]\n    for i in range(m):\n        x, y = map(int, input().split())\n        adj[x].append(y)\n        adj[y].append(x)\n    q = [s]\n    visited = [False for i in range(n)]\n    visited[s] = True\n    time = [0 for i in range(n)]\n    time[s] = 1\n    while q:\n        u = q.pop(0)\n        for v in adj[u]:\n            if not visited[v]:\n                visited[v] = True\n                time[v] = time[u] + 1\n                q.append(v)\n    print(time[t])\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

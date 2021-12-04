@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTjCWw3xPyXD6qgXHnqaXTxV4ZIZ",
+    "object": "text_completion",
+    "created": 1638641230,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    expression = input()\n    stack = []\n    for i in expression:\n        if i == \"(\":\n            stack.append(i)\n        elif i == \")\":\n            if len(stack) > 0:\n                stack.pop()\n            else:\n                stack.append(i)\n    if len(stack) == 0:\n        print(expression)\n    else:\n        for i in range(len(stack)):\n            expression = expression[:len(expression)-1]\n        print(expression)\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    expression = input()\n    stack = []\n    for i in expression:\n        if i == '(':\n            stack.append(i)\n        elif i == ')':\n            if len(stack) > 0:\n                stack.pop()\n            else:\n                stack.append(i)\n    if len(stack) == 0:\n        print(expression)\n    else:\n        for i in range(len(stack)):\n            expression = expression[:len(expression)-1]\n        print(expression)\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    m, n = map(int, input().split())\n    matrix = [[0 for i in range(n)] for j in range(m)]\n    for i in range(n):\n        matrix[i] = list(map(int, input().split()))\n    count = 0\n    for i in range(m):\n        for j in range(n):\n            if matrix[i][j] == 1:\n                count += 1\n    print(count)\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    m = int(input())\n    n = int(input())\n    connections = []\n    for i in range(n):\n        connections.append(list(map(int, input().split())))\n    loops = []\n    for i in range(n):\n        for j in range(i+1, n):\n            if connections[i][1] == connections[j][0]:\n                loops.append([connections[i][0], connections[i][1], connections[j][1]])\n            if connections[i][0] == connections[j][1]:\n                loops.append([connections[j][1], connections[i][0], connections[i][1]])\n    loops = list(set([tuple(sorted(i)) for i in loops]))\n    print(len(loops))\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = [int(s) for s in input().split()]\n    u = [int(s) for s in input().split()]\n    roads = []\n    for i in range(n-1):\n        roads.append([int(s) for s in input().split()])\n    #print(n, k, u, roads)\n    #print(roads)\n    #print(u)\n    #print(u[0])\n    #print(u[1])\n    #print(u[2])\n    #print(u[3])\n    #print(u[4])\n    #print(u[5])\n    #print(u[6])\n    #print(u[7])\n    #print(u[8])\n    #print(u[9])\n    #print(u[10])\n    #print(u[11])\n    #print(u[12])\n    #print(u[13])\n    #print(u[14])\n    #print(u[15])\n    #print(u[16])\n    #print(u[17])\n    #print(u[18])\n    #print(u[19])\n    #print(u[20])\n    #print(u[21])\n    #print(u[22])\n    #print(u[23])\n    #print(u[24])\n    #print(u[25])\n    #print(u[26])\n    #print(u[27])\n    #print(u[28])\n    #print(u[29])\n    #print(u[30])\n    #print(u[31])\n    #print(u[32])\n    #print(u[33])\n    #print(u[34])\n    #print(u[35])\n    #print(u[36])\n    #print(u[37])\n    #print(u[38])\n    #print(u[39])\n    #print(u[40])\n    #print(u[41])\n    #print(u[42])\n    #print(u[43])\n    #print(u[44])\n    #print(u[45])\n    #print(u[46])\n    #print(u[47])\n    #print(u[48])\n    #print(u[49])\n    #print(u[50])\n    #print(u[51])\n    #print(u[52])\n    #print(u[53])\n    #print(u[54])\n    #print(u[55])\n    #print(u[56])\n    #print(u[57])\n    #print(u[58])\n    #print(u[59])\n    #print(u[60])\n    #print(u[61])\n    #print(u[62])\n    #print(u[63])\n    #print(u[64])\n    #print(u[65])\n    #print(u[66])\n    #print(u[67])\n    #print(u[68])\n    #print(u[69])\n    #print(u[70])\n    #print(u[71])\n    #print(u[72])\n    #print(u[73])\n    #print(u[74])\n    #print(u[75])\n    #print(u[76])\n    #print(u[77])\n    #print(u[78])\n    #print(u[79])\n    #print(u[80])\n    #print(u[81])\n    #print(u[82])\n    #print(u[83])\n    #print(u[84])\n    #print(u[85])\n    #print(u[86])\n    #print(u[87])\n    #print(u[88])\n    #print(u[89])\n    #print(u[90])\n    #print(u[91])\n    #print(u[92])\n    #print(u[93])\n    #print(u[94])\n    #print(u[95])\n    #print(u[96])\n    #print(u[97])\n    #print(u[98])\n    #print(u[99])\n    #print(u[100])\n    #print(u[101])\n    #print(u[102])",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    u = list(map(int, input().split()))\n    u.sort()\n    d = [[0 for i in range(n)] for j in range(n)]\n    for i in range(n - 1):\n        x, y = map(int, input().split())\n        d[x - 1][y - 1] = 1\n        d[y - 1][x - 1] = 1\n    for i in range(n):\n        for j in range(n):\n            if d[i][j] == 1:\n                for k in range(n):\n                    if d[j][k] == 1:\n                        d[i][k] = 1\n    s = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            if d[i][j] == 1:\n                s += 1\n    if s == 0:\n        print(0)\n    else:\n        print(s // k)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    print(n, m)\n    if n == 1 or m == 1:\n        print(1)\n    elif n == 2 or m == 2:\n        print(n*m//2)\n    else:\n        print(n*m-2)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    m = int(input())\n    if n == 1 or m == 1:\n        print(1)\n    elif n == 2 and m == 2:\n        print(3)\n    elif n == 2 and m == 3:\n        print(4)\n    elif n == 3 and m == 2:\n        print(4)\n    elif n == 3 and m == 3:\n        print(8)\n    else:\n        print(0)\n\nif __name__ == '__main__':\n    code()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    x = input()\n    n = len(x)\n    res = 0\n    for i in range(n):\n        if x[i] == '1':\n            res += 2**(n-i-1)\n    print(res)\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input(), 2)\n    print(n ^ n)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, b, mod = map(int, input().split())\n    a = list(map(int, input().split()))\n    dp = [[0 for i in range(m + 1)] for j in range(n + 1)]\n    dp[0][0] = 1\n    for i in range(1, n + 1):\n        for j in range(m + 1):\n            for k in range(min(j, a[i - 1]) + 1):\n                dp[i][j] += dp[i - 1][j - k]\n                dp[i][j] %= mod\n    print(dp[n][m])\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, b, mod = map(int, input().split())\n    a = list(map(int, input().split()))\n    dp = [[0 for i in range(m + 1)] for j in range(n + 1)]\n    dp[0][0] = 1\n    for i in range(1, n + 1):\n        for j in range(m + 1):\n            dp[i][j] = dp[i - 1][j]\n            if j >= a[i - 1]:\n                dp[i][j] += dp[i][j - a[i - 1]]\n    print(dp[n][m] % mod)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    grid = []\n    for i in range(n):\n        grid.append(list(input()))\n    tree = []\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == 'T':\n                tree.append((i, j))\n    tree.sort()\n    tree.append((n, m))\n    rings = []\n    for i in range(len(tree) - 1):\n        rings.append(tree[i + 1][0] - tree[i][0] + tree[i + 1][1] - tree[i][1])\n    rings.sort()\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == 'T':\n                if rings[0] == 0:\n                    grid[i][j] = '.'\n                else:\n                    grid[i][j] = str(rings[0])\n                rings[0] -= 1\n            else:\n                grid[i][j] = '.'\n    for i in range(1, len(rings)):\n        if rings[i] == 0:\n            continue\n        for j in range(n):\n            for k in range(m):\n                if grid[j][k] == '.':\n                    grid[j][k] = str(rings[i])\n                    rings[i] -= 1\n                    break\n    for i in range(n):\n        print(''.join(grid[i]))\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n,m = map(int,input().split())\n    grid = []\n    for i in range(n):\n        grid.append(list(input()))\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == 'T':\n                grid[i][j] = '1'\n            else:\n                grid[i][j] = '0'\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if i == 0 or grid[i-1][j] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i-1][j])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if j == 0 or grid[i][j-1] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i][j-1])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if i == n-1 or grid[i+1][j] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i+1][j])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if j == m-1 or grid[i][j+1] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i][j+1])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if i == 0 or grid[i-1][j] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i-1][j])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if j == 0 or grid[i][j-1] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i][j-1])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if i == n-1 or grid[i+1][j] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i+1][j])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if j == m-1 or grid[i][j+1] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i][j+1])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if i == 0 or grid[i-1][j] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i-1][j])+1)\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == '1':\n                if j == 0 or grid[i][j-1] == '0':\n                    grid[i][j] = '1'\n                else:\n                    grid[i][j] = str(int(grid[i][j-1])+1)\n    for i in range(n):\n        for j in range(m):",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, p = map(int, input().split())\n    s = input()\n    if p == 1:\n        print(\"NO\")\n    else:\n        for i in range(p-1, n):\n            if s[i] > s[i+1]:\n                print(s[:i] + s[i+1] + s[i] * (n-i-1))\n                break\n        else:\n            print(\"NO\")\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p = map(int, input().split())\n    s = input()\n    if p == 26:\n        print(\"NO\")\n        return\n    for i in range(n-1, -1, -1):\n        if s[i] == chr(ord('a') + p - 1):\n            s = s[:i] + chr(ord(s[i]) + 1) + s[i+1:]\n            break\n    else:\n        s = chr(ord(s[0]) + 1) + \"a\" * (n - 1)\n    print(s)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    R = int(s, 2)\n    mod = 10**9 + 7\n    ans = 0\n    for i in range(n):\n        ans += R**i\n    ans = ans % mod\n    for i in range(n, k):\n        ans = ans * R % mod\n    print(ans)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    R = int(s, 2)\n    mod = 10**9 + 7\n    ans = 0\n    for i in range(n):\n        ans += (R - i) * (k**i)\n    print(ans % mod)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    min_value = 10**4\n    for i in range(n):\n        for j in range(i+1, n):\n            value = (i-j)**2 + g(i, j, a)**2\n            if value < min_value:\n                min_value = value\n    print(min_value)\n\ndef g(i, j, a):\n    sum = 0\n    for k in range(min(i, j)+1, max(i, j)+1):\n        sum += a[k]\n    return sum\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    min_val = 10**4\n    for i in range(n):\n        for j in range(n):\n            if i != j:\n                val = (i - j)**2 + (a[i] - a[j])**2\n                if val < min_val:\n                    min_val = val\n    print(min_val)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

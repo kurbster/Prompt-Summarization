@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTsimOLT2B59a1RVyTjgkz50DuXk",
+    "object": "text_completion",
+    "created": 1638641820,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    if a > b:\n        a, b = b, a\n    if n == a + b:\n        print(1)\n    elif n > a + b:\n        print(a + 1)\n    else:\n        print(n)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    if a == b:\n        print(a)\n    elif a > b:\n        print(b)\n    else:\n        print(a)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    s = sum(p)\n    if s == 0:\n        print(0)\n        return\n    p = [x/s for x in p]\n    p.sort()\n    p.reverse()\n    ans = 0\n    for i in range(n):\n        ans += p[i]*(i+1)\n    print(int(ans*(1e9+7)))\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    p.sort()\n    p.reverse()\n    ans = 0\n    for i in range(n):\n        ans += p[i]*(i+1)\n    print(ans%998244353)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    if n == 1:\n        print(q)\n        return\n    if n == 2:\n        print(q*(q-1)//2)\n        return\n    if n == 3:\n        print(q*(q-1)*(q-2)//6)\n        return\n    if n == 4:\n        print(q*(q-1)*(q-2)*(q-3)//24)\n        return\n    if n == 5:\n        print(q*(q-1)*(q-2)*(q-3)*(q-4)//120)\n        return\n    if n == 6:\n        print(q*(q-1)*(q-2)*(q-3)*(q-4)*(q-5)//720)\n        return\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, q = map(int, input().split())\n    a = []\n    b = []\n    for i in range(q):\n        a.append(input().split()[0])\n        b.append(input().split()[1])\n    d = {}\n    for i in range(q):\n        if a[i][0] not in d:\n            d[a[i][0]] = [i]\n        else:\n            d[a[i][0]].append(i)\n    ans = 0\n    for i in range(n):\n        if i == 0:\n            if 'a' in d:\n                ans += len(d['a'])\n        else:\n            if s[i - 1] in d:\n                ans += len(d[s[i - 1]])\n    print(ans)\n\nif __name__ == '__main__':\n    code()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    dp = [1] * n\n    for i in range(1, n):\n        for j in range(i):\n            if a[j] < a[i]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    print(max(dp))\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    dp = [1] * n\n    for i in range(1, n):\n        for j in range(i):\n            if a[j] <= a[i]:\n                dp[i] = max(dp[i], dp[j] + 1)\n    print(max(dp))\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    k = []\n    a = []\n    for i in range(n):\n        k.append(int(input()))\n        a.append(int(input()))\n    k.sort()\n    a.sort()\n    p = 0\n    while p < n and k[p] == a[p]:\n        p += 1\n    print(p)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    k = []\n    a = []\n    for i in range(n):\n        k.append(int(input().split()[0]))\n        a.append(int(input().split()[1]))\n    k.sort()\n    a.sort()\n    p = 0\n    while p < n and k[p] == a[p]:\n        p += 1\n    if p == n:\n        print(k[-1])\n    else:\n        print(k[p])\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    coins = list(map(int, input().split()))\n    coins.sort()\n    if n == 1:\n        print(\"canonical\")\n    else:\n        for i in range(n-1):\n            if coins[i] == coins[i+1]:\n                print(\"non-canonical\")\n                return\n        print(\"canonical\")\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    denominations = list(map(int, input().split()))\n    denominations.sort()\n    if denominations[0] != 1:\n        print(\"non-canonical\")\n        return\n    for i in range(1, n):\n        if denominations[i] > denominations[i-1] + 1:\n            print(\"non-canonical\")\n            return\n    print(\"canonical\")\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i, n):\n            if (sum(a[i:j+1]) % k == 0):\n                count += 1\n    print(count)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i, n):\n            if (sum(a[i:j+1]) % k == 0):\n                count += 1\n    print(count)\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    s = input()\n    t = input()\n    if n < m:\n        print(\"NO\")\n        return\n    for i in range(n - m + 1):\n        if s[i] == t[0]:\n            flag = True\n            for j in range(m):\n                if s[i + j] != t[j] and s[i + j] != '*':\n                    flag = False\n                    break\n            if flag:\n                print(\"YES\")\n                return\n    print(\"NO\")\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    s = input()\n    t = input()\n    if n < m:\n        print(\"NO\")\n        return\n    for i in range(n - m + 1):\n        if s[i] == '*':\n            continue\n        if s[i] != t[0]:\n            print(\"NO\")\n            return\n        for j in range(m):\n            if s[i + j + 1] == '*':\n                continue\n            if s[i + j + 1] != t[j]:\n                print(\"NO\")\n                return\n        print(\"YES\")\n        return\n    print(\"NO\")\n    return\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, d, b = map(int, input().split())\n    a = list(map(int, input().split()))\n    if n % 2 == 0:\n        if a[n // 2] != b:\n            print(n // 2 + 1)\n        else:\n            print(n // 2)\n    else:\n        if a[n // 2] != b:\n            print(n // 2 + 1)\n        else:\n            print(n // 2)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, d, b = map(int, input().split())\n    a = list(map(int, input().split()))\n    x = [0] * n\n    for i in range(n):\n        if a[i] != b:\n            x[i] = 1\n    for i in range(1, n):\n        if x[i] == 0:\n            if i + d < n:\n                x[i + d] += 1\n            if i - d >= 0:\n                x[i - d] += 1\n    print(max(x))\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    vehicles = []\n    for i in range(n):\n        x, v = map(int, input().split())\n        vehicles.append((x, v))\n    vehicles.sort()\n    min_distance = abs(vehicles[0][0] - vehicles[1][0])\n    for i in range(1, n):\n        min_distance = min(min_distance, abs(vehicles[i][0] - vehicles[i-1][0]))\n    print(min_distance)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    vehicles = []\n    for i in range(n):\n        x, v = map(int, input().split())\n        vehicles.append((x, v))\n    vehicles.sort()\n    min_dist = vehicles[1][0] - vehicles[0][0]\n    for i in range(2, n):\n        min_dist = min(min_dist, vehicles[i][0] - vehicles[i-1][0])\n    print(min_dist)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

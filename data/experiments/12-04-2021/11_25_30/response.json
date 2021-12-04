@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BU0QXPwByZFIQ9fGqToJtpz3Oemm",
+    "object": "text_completion",
+    "created": 1638642298,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    a = [int(i) for i in input().split()]\n    for i in range(n):\n        for j in range(n):\n            if a[i] == a[j]:\n                a[i] = j+1\n                break\n    print(*a)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    G = [int(i) for i in input().split()]\n    a = [0]*n\n    for i in range(n):\n        for j in range(n):\n            if G[i*n+j] == 1:\n                a[i] = j+1\n                break\n    print(*a)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    x = int(input())\n    y = int(input())\n    if s.count(\"F\") == 0:\n        if x == 0 and y == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    else:\n        if x == 0 and y == 0:\n            print(\"No\")\n        else:\n            if x > 0 and y > 0:\n                if s.count(\"T\") == 0:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n                else:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n            elif x < 0 and y > 0:\n                if s.count(\"T\") == 0:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n                else:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n            elif x < 0 and y < 0:\n                if s.count(\"T\") == 0:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n                else:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n            else:\n                if s.count(\"T\") == 0:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\n                else:\n                    if x % s.count(\"F\") == 0 and y % s.count(\"F\") == 0:\n                        print(\"Yes\")\n                    else:\n                        print(\"No\")\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    s = s.lower()\n    s = list(s)\n    s.sort()\n    s = ''.join(s)\n    s = s.replace(' ', '')\n    s = s.replace('0', '')\n    s = s.replace('1', '')\n    s = s.replace('2', '')\n    s = s.replace('3', '')\n    s = s.replace('4', '')\n    s = s.replace('5', '')\n    s = s.replace('6', '')\n    s = s.replace('7', '')\n    s = s.replace('8', '')\n    s = s.replace('9', '')\n    s = s.replace('a', '')\n    s = s.replace('b', '')\n    s = s.replace('c', '')\n    s = s.replace('d', '')\n    s = s.replace('e', '')\n    s = s.replace('f', '')\n    s = s.replace('g', '')\n    s = s.replace('h', '')\n    s = s.replace('i', '')\n    s = s.replace('j', '')\n    s = s.replace('k', '')\n    s = s.replace('l', '')\n    s = s.replace('m', '')\n    s = s.replace('n', '')\n    s = s.replace('o', '')\n    s = s.replace('p', '')\n    s = s.replace('q', '')\n    s = s.replace('r', '')\n    s = s.replace('s', '')\n    s = s.replace('t', '')\n    s = s.replace('u', '')\n    s = s.replace('v', '')\n    s = s.replace('w', '')\n    s = s.replace('x', '')\n    s = s.replace('y', '')\n    s = s.replace('z', '')\n    s = s.replace('A', '')\n    s = s.replace('B', '')\n    s = s.replace('C', '')\n    s = s.replace('D', '')\n    s = s.replace('E', '')\n    s = s.replace('F', '')\n    s = s.replace('G', '')\n    s = s.replace('H', '')\n    s = s.replace('I', '')\n    s = s.replace('J', '')\n    s = s.replace('K', '')\n    s = s.replace('L', '')\n    s = s.replace('M', '')\n    s = s.replace('N', '')\n    s = s.replace('O', '')\n    s = s.replace('P', '')\n    s = s.replace('Q', '')\n    s = s.replace('R', '')\n    s = s.replace('S', '')\n    s = s.replace('T', '')\n    s = s.replace('U', '')\n    s = s.replace('V', '')\n    s = s.replace('W', '')\n    s = s.replace('X', '')\n    s = s.replace('Y', '')\n    s = s.replace('Z', '')\n    s = s.replace('!', '')\n    s = s.replace('@', '')\n    s = s.replace('#', '')\n    s = s.replace('$', '')\n    s = s.replace('%', '')\n    s = s.replace('^', '')\n    s = s.replace('&', '')\n    s = s.replace('*', '')\n    s = s.replace('(', '')\n    s = s.replace(')', '')\n    s = s.replace('-', '')\n    s = s.replace('_', '')\n    s = s.replace('=', '')\n    s = s.replace('+', '')\n    s = s.replace('[', '')\n    s = s.replace(']', '')\n    s = s.replace('{', '')\n    s = s.replace('}', '')\n    s = s.replace",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    s = s.lower()\n    s = list(s)\n    s.sort()\n    s = ''.join(s)\n    s = s.replace('0', 'o')\n    s = s.replace('1', 'l')\n    s = s.replace('2', 'z')\n    s = s.replace('3', 'e')\n    s = s.replace('4', 'a')\n    s = s.replace('5', 's')\n    s = s.replace('6', 'b')\n    s = s.replace('7', 't')\n    s = s.replace('8', 'b')\n    s = s.replace('9', 'g')\n    s = s.replace('o', '0')\n    s = s.replace('l', '1')\n    s = s.replace('z', '2')\n    s = s.replace('e', '3')\n    s = s.replace('a', '4')\n    s = s.replace('s', '5')\n    s = s.replace('b', '6')\n    s = s.replace('t', '7')\n    s = s.replace('b', '8')\n    s = s.replace('g', '9')\n    s = list(s)\n    s.sort()\n    s = ''.join(s)\n    s = s.replace('0', 'o')\n    s = s.replace('1', 'l')\n    s = s.replace('2', 'z')\n    s = s.replace('3', 'e')\n    s = s.replace('4', 'a')\n    s = s.replace('5', 's')\n    s = s.replace('6', 'b')\n    s = s.replace('7', 't')\n    s = s.replace('8', 'b')\n    s = s.replace('9', 'g')\n    s = s.replace('o', '0')\n    s = s.replace('l', '1')\n    s = s.replace('z', '2')\n    s = s.replace('e', '3')\n    s = s.replace('a', '4')\n    s = s.replace('s', '5')\n    s = s.replace('b', '6')\n    s = s.replace('t', '7')\n    s = s.replace('b', '8')\n    s = s.replace('g', '9')\n    s = list(s)\n    s.sort()\n    s = ''.join(s)\n    s = s.replace('0', 'o')\n    s = s.replace('1', 'l')\n    s = s.replace('2', 'z')\n    s = s.replace('3', 'e')\n    s = s.replace('4', 'a')\n    s = s.replace('5', 's')\n    s = s.replace('6', 'b')\n    s = s.replace('7', 't')\n    s = s.replace('8', 'b')\n    s = s.replace('9', 'g')\n    s = s.replace('o', '0')\n    s = s.replace('l', '1')\n    s = s.replace('z', '2')\n    s = s.replace('e', '3')\n    s = s.replace('a', '4')\n    s = s.replace('s', '5')\n    s = s.replace('b', '6')\n    s = s.replace('t', '7')\n    s = s.replace('b', '8')\n    s = s.replace('g', '9')\n    s = list(s)\n    s.sort()\n    s = ''.join(s)\n    s = s.replace('0', 'o')\n    s = s.replace('1', 'l')\n    s = s.replace('2', 'z')\n    s = s.replace('3', 'e')\n    s = s.replace('4', 'a')\n    s = s.replace('5', 's')\n    s = s.replace('6', 'b')\n    s = s.replace('7', 't')\n    s = s.replace('8', 'b')\n    s = s.replace('9",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, e = map(int, input().split())\n    grid = [list(input()) for _ in range(n)]\n    player = None\n    creeper = None\n    for i in range(n):\n        for j in range(m):\n            if grid[i][j] == 'P':\n                player = (i, j)\n            elif grid[i][j] == 'C':\n                creeper = (i, j)\n    if player == creeper:\n        print('you\\'re toast')\n        return\n    def get_neighbors(i, j):\n        neighbors = []\n        if i > 0:\n            neighbors.append((i - 1, j))\n        if i < n - 1:\n            neighbors.append((i + 1, j))\n        if j > 0:\n            neighbors.append((i, j - 1))\n        if j < m - 1:\n            neighbors.append((i, j + 1))\n        return neighbors\n    def get_distance(i, j, x, y):\n        return abs(i - x) + abs(j - y)\n    def get_next_move(i, j, x, y):\n        if i == x:\n            if j < y:\n                return (i, j + 1)\n            else:\n                return (i, j - 1)\n        elif j == y:\n            if i < x:\n                return (i + 1, j)\n            else:\n                return (i - 1, j)\n        elif i < x:\n            if j < y:\n                return (i + 1, j + 1)\n            else:\n                return (i + 1, j - 1)\n        else:\n            if j < y:\n                return (i - 1, j + 1)\n            else:\n                return (i - 1, j - 1)\n    def get_next_move_to_player(i, j, x, y):\n        if i == x:\n            if j < y:\n                return (i, j + 1)\n            else:\n                return (i, j - 1)\n        elif j == y:\n            if i < x:\n                return (i + 1, j)\n            else:\n                return (i - 1, j)\n        elif i < x:\n            if j < y:\n                return (i + 1, j + 1)\n            else:\n                return (i + 1, j - 1)\n        else:\n            if j < y:\n                return (i - 1, j + 1)\n            else:\n                return (i - 1, j - 1)\n    def get_next_move_to_creeper(i, j, x, y):\n        if i == x:\n            if j < y:\n                return (i, j - 1)\n            else:\n                return (i, j + 1)\n        elif j == y:\n            if i < x:\n                return (i - 1, j)\n            else:\n                return (i + 1, j)\n        elif i < x:\n            if j < y:\n                return (i - 1, j - 1)\n            else:\n                return (i - 1, j + 1)\n        else:\n            if j < y:\n                return (i + 1, j - 1)\n            else:\n                return (i + 1, j + 1)\n    def get_next_move_to_creeper_from_player(i, j, x, y):\n        if i == x:\n            if j < y:\n                return (i, j - 1)\n            else:\n                return (i, j + 1)\n        elif j == y:\n            if i < x:\n                return (i - 1, j)\n            else:\n                return (i + 1, j)\n        elif i < x:\n            if j < y:\n                return (i - 1, j - 1)\n            else:\n                return (i - 1, j + 1)\n        else:\n            if j < y:\n                return (i + 1, j - 1)\n            else:\n                return (i + 1, j + 1)\n    def get_next_move_to_creeper_from_player_2(i, j, x, y):\n        if i == x:\n",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, e = [int(x) for x in input().split()]\n    dungeon = []\n    for i in range(n):\n        dungeon.append(list(input()))\n    #print(dungeon)\n    #print(n, m, e)\n    #print(dungeon)\n    #print(dungeon[0][0])\n    #print(dungeon[0][1])\n    #print(dungeon[0][2])\n    #print(dungeon[0][3])\n    #print(dungeon[0][4])\n    #print(dungeon[1][0])\n    #print(dungeon[1][1])\n    #print(dungeon[1][2])\n    #print(dungeon[1][3])\n    #print(dungeon[1][4])\n    #print(dungeon[2][0])\n    #print(dungeon[2][1])\n    #print(dungeon[2][2])\n    #print(dungeon[2][3])\n    #print(dungeon[2][4])\n    #print(dungeon[3][0])\n    #print(dungeon[3][1])\n    #print(dungeon[3][2])\n    #print(dungeon[3][3])\n    #print(dungeon[3][4])\n    #print(dungeon[4][0])\n    #print(dungeon[4][1])\n    #print(dungeon[4][2])\n    #print(dungeon[4][3])\n    #print(dungeon[4][4])\n    #print(dungeon[5][0])\n    #print(dungeon[5][1])\n    #print(dungeon[5][2])\n    #print(dungeon[5][3])\n    #print(dungeon[5][4])\n    #print(dungeon[6][0])\n    #print(dungeon[6][1])\n    #print(dungeon[6][2])\n    #print(dungeon[6][3])\n    #print(dungeon[6][4])\n    #print(dungeon[7][0])\n    #print(dungeon[7][1])\n    #print(dungeon[7][2])\n    #print(dungeon[7][3])\n    #print(dungeon[7][4])\n    #print(dungeon[8][0])\n    #print(dungeon[8][1])\n    #print(dungeon[8][2])\n    #print(dungeon[8][3])\n    #print(dungeon[8][4])\n    #print(dungeon[9][0])\n    #print(dungeon[9][1])\n    #print(dungeon[9][2])\n    #print(dungeon[9][3])\n    #print(dungeon[9][4])\n    #print(dungeon[10][0])\n    #print(dungeon[10][1])\n    #print(dungeon[10][2])\n    #print(dungeon[10][3])\n    #print(dungeon[10][4])\n    #print(dungeon[11][0])\n    #print(dungeon[11][1])\n    #print(dungeon[11][2])\n    #print(dungeon[11][3])\n    #print(dungeon[11][4])\n    #print(dungeon[12][0])\n    #print(dungeon[12][1])\n    #print(dungeon[12][2])\n    #print(dungeon[12][3])\n    #print(dungeon[12][4])\n    #print(dungeon[13][0])\n    #print(dungeon[13][1])\n    #print(dungeon[13][2])\n    #print(dungeon[13][3])\n    #print(dungeon[13][4])\n    #print(dungeon[14][0])\n    #print(dungeon[14][1])\n    #print(dungeon[14][2])",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, d = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if a[i]/d == a[j]/d:\n                count += 1\n    print(count)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, d = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if a[i]//d == a[j]//d:\n                count += 1\n    print(count)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    V, E = map(int, input().split())\n    graph = [[] for _ in range(V)]\n    for _ in range(E):\n        u, v, w = map(int, input().split())\n        graph[u].append((v, w))\n    s, t = map(int, input().split())\n\n    def dfs(v, visited, dist):\n        if v == t:\n            return dist\n        visited[v] = True\n        for u, w in graph[v]:\n            if not visited[u]:\n                d = dfs(u, visited, dist + w)\n                if d != -1:\n                    return d\n        return -1\n\n    visited = [False] * V\n    print(dfs(s, visited, 0))\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    if n % 2 == 0:\n        print(\"0\" * n)\n    else:\n        print(\"1\" * n)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    if k == n:\n        print(n * '1')\n    elif k == 1:\n        print(n * '0')\n    elif k == n - 1:\n        print((n - 1) * '0' + '1')\n    elif k == n - 2:\n        print((n - 2) * '0' + '11')\n    elif k == n - 3:\n        print((n - 3) * '0' + '111')\n    elif k == n - 4:\n        print((n - 4) * '0' + '1111')\n    elif k == n - 5:\n        print((n - 5) * '0' + '11111')\n    elif k == n - 6:\n        print((n - 6) * '0' + '111111')\n    elif k == n - 7:\n        print((n - 7) * '0' + '1111111')\n    elif k == n - 8:\n        print((n - 8) * '0' + '11111111')\n    elif k == n - 9:\n        print((n - 9) * '0' + '111111111')\n    elif k == n - 10:\n        print((n - 10) * '0' + '1111111111')\n    elif k == n - 11:\n        print((n - 11) * '0' + '11111111111')\n    elif k == n - 12:\n        print((n - 12) * '0' + '111111111111')\n    elif k == n - 13:\n        print((n - 13) * '0' + '1111111111111')\n    elif k == n - 14:\n        print((n - 14) * '0' + '11111111111111')\n    elif k == n - 15:\n        print((n - 15) * '0' + '111111111111111')\n    elif k == n - 16:\n        print((n - 16) * '0' + '1111111111111111')\n    elif k == n - 17:\n        print((n - 17) * '0' + '11111111111111111')\n    elif k == n - 18:\n        print((n - 18) * '0' + '111111111111111111')\n    elif k == n - 19:\n        print((n - 19) * '0' + '1111111111111111111')\n    elif k == n - 20:\n        print((n - 20) * '0' + '11111111111111111111')\n    elif k == n - 21:\n        print((n - 21) * '0' + '111111111111111111111')\n    elif k == n - 22:\n        print((n - 22) * '0' + '1111111111111111111111')\n    elif k == n - 23:\n        print((n - 23) * '0' + '11111111111111111111111')\n    elif k == n - 24:\n        print((n - 24) * '0' + '111111111111111111111111')\n    elif k == n - 25:\n        print((n - 25) * '0' + '1111111111111111111111111')\n    elif k == n - 26:\n        print((n - 26) * '0' + '11111111111111111111111111')\n    elif k == n - 27:\n        print((n - 27) * '0' + '111111111111111111111111111')\n    elif k == n - 28:\n        print((n - 28) * '0' + '1111111111111111111111111111')\n    elif k == n - 29:\n        print((n - 29) * '0' + '11111111111111111111111111111')\n    elif k == n - 30:\n        print((n - 30) * '0' + '111111111111111111111111111111')\n    elif k == n - 31:\n        print((n - 31) * '0' + '1111111111111111111111111111111')\n    elif k == n - 32:\n        print((n - 32) * '0' + '11111111111111111111111111111111')\n    elif k == n - 33:\n        print((n - 33) * '0' + '111111111111111111111111111111111",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    DNA = input()\n    gene = input()\n    cost = list(map(int, input().split()))\n    cost = sorted(cost)\n    cost = cost[::-1]\n    cost = cost[:len(gene)]\n    cost = sum(cost)\n    print(cost)\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    DNA = input()\n    gene = input()\n    cost = [int(x) for x in input().split()]\n    cost = [0] + cost\n    cost.append(0)\n    n = len(DNA)\n    m = len(gene)\n    dp = [[0 for i in range(n+1)] for j in range(m+1)]\n    for i in range(1, m+1):\n        for j in range(1, n+1):\n            if gene[i-1] == DNA[j-1]:\n                dp[i][j] = dp[i-1][j-1]\n            else:\n                dp[i][j] = min(dp[i-1][j] + cost[0], dp[i][j-1] + cost[1], dp[i-1][j-1] + cost[2])\n    print(dp[m][n])\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    words = []\n    for i in range(n):\n        words.append(input())\n    max_rhyme = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            rhyme = 0\n            for k in range(min(len(words[i]), len(words[j]))):\n                if words[i][k] != words[j][k]:\n                    rhyme += 1\n            max_rhyme = max(max_rhyme, rhyme)\n    print(max_rhyme)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    words = []\n    for i in range(n):\n        words.append(input())\n    max_rhyme = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if words[i][-1] == words[j][-1]:\n                max_rhyme = max(max_rhyme, 0)\n            else:\n                max_rhyme = max(max_rhyme, len(words[i]) - len(words[i].rfind(words[j][-1])))\n    print(max_rhyme)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 0:\n        print(1)\n    else:\n        print(2**(n-1))\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 0:\n        print(1)\n    else:\n        print(int((2*n) * (2*n - 1) * (2*n - 2) / 6))\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

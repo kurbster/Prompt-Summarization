@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BUHiDMlVISVcsjyKbsRRViwm6n02",
+    "object": "text_completion",
+    "created": 1638643370,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    max_points = 0\n    for i in range(n):\n        if i == 0:\n            max_points += a[i]\n        elif i == n-1:\n            max_points += a[i-1]\n        else:\n            max_points += min(a[i], a[i-1])\n    print(max_points)\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    max_points = 0\n    for i in range(n):\n        if i == 0:\n            max_points += min(a[i], a[i+1])\n        elif i == n-1:\n            max_points += min(a[i], a[i-1])\n        else:\n            max_points += min(a[i], max(a[i-1], a[i+1]))\n    print(max_points)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        a = list(map(int, input().split()))\n        if N == 1:\n            print(\"First\")\n        else:\n            if a[0] > a[1]:\n                print(\"First\")\n            else:\n                print(\"Second\")\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Take in number of test cases\n    T = int(input())\n    # Loop through test cases\n    for i in range(T):\n        # Take in number of bags and dishes\n        N = int(input())\n        # Take in the number of coins in each bag\n        coins = list(map(int, input().split()))\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish to the list\n                dishes[k] += coins[(j + k) % N]\n        # Create a list of the number of coins in each dish\n        dishes = [0] * N\n        # Create a list of the number of coins in each bag\n        bags = [0] * N\n        # Loop through the number of bags\n        for j in range(N):\n            # Add the number of coins in each bag to the list\n            bags[j] = coins[j]\n            # Loop through the number of dishes\n            for k in range(N):\n                # Add the number of coins in each dish",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    w, h, alpha = map(int, input().split())\n    alpha = alpha * math.pi / 180\n    area = w * h * math.sin(alpha) / 2\n    print(area)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    w, h, alpha = map(int, input().split())\n    alpha = alpha * math.pi / 180\n    area = w * h / 2\n    area1 = area * math.sin(alpha)\n    area2 = area * math.cos(alpha)\n    print(area1 + area2)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n  pass\n\nif __name__ == '__main__':\n  code()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    items = [input() for i in range(n)]\n    m = int(input())\n    pairs = [input().split() for i in range(m)]\n    for i in range(m):\n        pairs[i] = tuple(sorted(pairs[i]))\n    pairs = set(pairs)\n    for i in range(m):\n        if pairs.intersection(set(items[i:i+2])):\n            print(\"impossible\")\n            return\n    print(\" \".join(items[:n//2]))\n    print(\" \".join(items[n//2:]))\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    if len(a) == 1:\n        print(0)\n    else:\n        for i in range(1, len(a)):\n            if a[i] == a[i-1]:\n                print(1)\n                break\n        else:\n            print(0)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    ans = 0\n    for i in range(n-1):\n        if a[i] == a[i+1]:\n            ans += 1\n    print(ans)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s1 = input()\n    s2 = input()\n    virus = input()\n    if virus in s1 or virus in s2:\n        print(0)\n    else:\n        print(s1)\n        print(s2)\n        print(virus)\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))\n        print(s1.find(s2))\n        print(s2.find(s1))\n        print(s1.find(virus))\n        print(s2.find(virus))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    s_1 = input()\n    s_2 = input()\n    virus = input()\n    if virus in s_1 or virus in s_2:\n        print(0)\n    else:\n        if len(s_1) > len(s_2):\n            s_1, s_2 = s_2, s_1\n        lcs = \"\"\n        for i in range(len(s_1)):\n            for j in range(len(s_2)):\n                if s_1[i] == s_2[j]:\n                    lcs += s_1[i]\n                    s_2 = s_2[:j] + \"0\" + s_2[j+1:]\n                    break\n        print(lcs)\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p = map(int, input().split())\n    coder = [0] * n\n    for i in range(n):\n        coder[i] = list(map(int, input().split()))\n    coder.sort()\n    coder.append([n + 1, n + 1])\n    count = 0\n    for i in range(n):\n        if coder[i][0] == coder[i][1]:\n            count += 1\n        else:\n            count = 0\n        if count >= p:\n            print(1)\n            return\n    print(0)\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p = map(int, input().split())\n    coder = [[] for i in range(n)]\n    for i in range(n):\n        coder[i] = list(map(int, input().split()))\n    coder.sort()\n    coder.append([n+1, n+1])\n    count = 0\n    for i in range(n):\n        if coder[i][0] == coder[i+1][0]:\n            count += 1\n        elif coder[i][0] < coder[i+1][0]:\n            count += 1\n            if coder[i][1] < coder[i+1][0]:\n                count += 1\n    if count >= p:\n        print(count)\n    else:\n        print(count+1)\n\nif __name__ == '__main__':\n    code()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    c = [0] * n\n    for i in range(n):\n        c[a[i]] = b[i]\n    d = [0] * n\n    for i in range(n):\n        d[i] = c[i]\n    d.sort()\n    count = 0\n    for i in range(n):\n        if d[i] != c[i]:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    b = list(map(int, input().split()))\n    c = [0] * n\n    for i in range(n):\n        if a[i] == 0:\n            c[i] = b[i]\n        else:\n            c[i] = a[i]\n    c.sort()\n    count = 0\n    for i in range(n):\n        if c[i] != i + 1:\n            count += 1\n            for j in range(i, n):\n                if c[j] == i + 1:\n                    c[i], c[j] = c[j], c[i]\n                    break\n    print(count)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    x = int(input())\n    word = input()\n    for i in range(x):\n        word = word[1:] + word[0]\n    print(word)\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTPUTgD2eXslbQ2TUEZyfJqC2pdJ",
+    "object": "text_completion",
+    "created": 1638640008,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    B = int(input())\n    V = list(map(int, input().split()))\n    T = int(input())\n    for i in range(T):\n        M = int(input())\n        T_ = list(map(int, input().split()))\n        V = [V[i] - T_[i] for i in range(B)]\n    print(sum(V))\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    B = int(input())\n    V = list(map(int, input().split()))\n    T = int(input())\n    for i in range(T):\n        M = int(input())\n        T_ = list(map(int, input().split()))\n        for j in range(M):\n            V[T_[j]-1] += 1\n    for i in range(B):\n        if V[i] == 0:\n            print(i+1)\n            break\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = [int(x) for x in input().split()]\n    g = [int(x) for x in input().split()]\n    d = {}\n    for i in range(n):\n        for j in range(g[i]):\n            if i+1 not in d:\n                d[i+1] = []\n            d[i+1].append(int(input()))\n    #print(d)\n    ans = 0\n    for i in range(1, n+1):\n        for j in range(1, n+1):\n            if i == j:\n                continue\n            if i in d and j in d:\n                if len(set(d[i]) & set(d[j])) > 0:\n                    continue\n            ans += 1\n    print(ans)\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    g = [0] * n\n    for i in range(n):\n        g[i] = int(input())\n        g[i] = list(map(int, input().split()))\n\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    # g = [list(map(int, input().split())) for i in range(n)]\n    #",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    x = [0] * n\n    s = [0] * n\n    for i in range(n):\n        s[i], x[i] = map(float, input().split())\n    x.sort()\n    s.sort()\n    x.append(10**9)\n    s.append(0)\n    i = 0\n    j = 0\n    ans = 0\n    while i < n:\n        while j < n and s[j] * x[i] < m:\n            j += 1\n        if j == n:\n            break\n        ans += 1\n        i = j\n    print(ans)\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    plants = []\n    for i in range(n):\n        s, x = map(float, input().split())\n        plants.append((s, x))\n    plants.sort(key=lambda x: x[1])\n    borders = []\n    for i in range(m - 1):\n        borders.append(plants[i][1])\n    borders.sort()\n    count = 0\n    for i in range(n):\n        if plants[i][1] < borders[0]:\n            count += 1\n        elif plants[i][1] > borders[-1]:\n            count += 1\n        else:\n            for j in range(m - 1):\n                if plants[i][1] > borders[j] and plants[i][1] < borders[j + 1]:\n                    count += 1\n                    break\n    print(count)\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N, Q = map(int, input().split())\n    a = [0] * N\n    for i in range(Q):\n        q = input().split()\n        if q[0] == '+':\n            i, delta = int(q[1]), int(q[2])\n            a[i] += delta\n        else:\n            i = int(q[1])\n            s = 0\n            while i > 0:\n                s += a[i]\n                i -= i & -i\n            print(s)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    N, Q = map(int, input().split())\n    fenwick = [0] * (N + 1)\n    for _ in range(Q):\n        query = input().split()\n        if query[0] == '+':\n            i, delta = int(query[1]), int(query[2])\n            fenwick[i] += delta\n        else:\n            i = int(query[1])\n            print(sum(fenwick[:i+1]))\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    d = 0\n    while True:\n        if sum(a) <= k:\n            break\n        a = [i - 1 for i in a if i > 1]\n        d += 1\n    print(d)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    d = 0\n    while True:\n        if sum(a) <= k:\n            break\n        a = [i - 1 for i in a]\n        d += 1\n    print(d)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a = [int(x) for x in input().split()]\n    print(a)\n    print(a[0]*a[1]*a[2]*a[3]*a[4]*a[5])\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a = [int(i) for i in input().split()]\n    print(sum(a) - 2 * max(a))\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n        print(1, 2)\n    elif n == 2:\n        print(\"NO\")\n    else:\n        print(\"YES\")\n        print(n - 1)\n        for i in range(1, n):\n            print(i, i + 1)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(\"YES\")\n        print(1)\n        print(1, 2)\n    else:\n        print(\"NO\")\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    drives = []\n    for i in range(n):\n        a, b = map(int, input().split())\n        drives.append(b - a)\n    print(max(drives))\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    d = []\n    for i in range(n):\n        d.append(list(map(int, input().split())))\n    d.sort(key=lambda x: x[1])\n    total = 0\n    for i in range(n):\n        total += d[i][0] - d[i][1]\n    print(total)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    if k > 10**9:\n        print(\"once again\")\n    elif s.count(\"1\") == n:\n        print(\"tokitsukaze\")\n    else:\n        print(\"quailty\")\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    s = input()\n    if n*k > 10**9:\n        print(\"once again\")\n    elif s.count('1') == n:\n        print(\"tokitsukaze\")\n    elif s.count('0') == n:\n        print(\"quailty\")\n    else:\n        print(\"once again\")\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    if len(s) == 1:\n        print(1)\n    else:\n        print(len(s))\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    n = len(s)\n    if n == 1:\n        print(1)\n        return\n    if n == 2:\n        print(2)\n        return\n    if n == 3:\n        if s[0] == s[2]:\n            print(3)\n            return\n        else:\n            print(2)\n            return\n    if n == 4:\n        if s[0] == s[3]:\n            print(4)\n            return\n        else:\n            print(3)\n            return\n    if n == 5:\n        if s[0] == s[4]:\n            print(5)\n            return\n        else:\n            print(4)\n            return\n    if n == 6:\n        if s[0] == s[5]:\n            print(6)\n            return\n        else:\n            print(5)\n            return\n    if n == 7:\n        if s[0] == s[6]:\n            print(7)\n            return\n        else:\n            print(6)\n            return\n    if n == 8:\n        if s[0] == s[7]:\n            print(8)\n            return\n        else:\n            print(7)\n            return\n    if n == 9:\n        if s[0] == s[8]:\n            print(9)\n            return\n        else:\n            print(8)\n            return\n    if n == 10:\n        if s[0] == s[9]:\n            print(10)\n            return\n        else:\n            print(9)\n            return\n    if n == 11:\n        if s[0] == s[10]:\n            print(11)\n            return\n        else:\n            print(10)\n            return\n    if n == 12:\n        if s[0] == s[11]:\n            print(12)\n            return\n        else:\n            print(11)\n            return\n    if n == 13:\n        if s[0] == s[12]:\n            print(13)\n            return\n        else:\n            print(12)\n            return\n    if n == 14:\n        if s[0] == s[13]:\n            print(14)\n            return\n        else:\n            print(13)\n            return\n    if n == 15:\n        if s[0] == s[14]:\n            print(15)\n            return\n        else:\n            print(14)\n            return\n    if n == 16:\n        if s[0] == s[15]:\n            print(16)\n            return\n        else:\n            print(15)\n            return\n    if n == 17:\n        if s[0] == s[16]:\n            print(17)\n            return\n        else:\n            print(16)\n            return\n    if n == 18:\n        if s[0] == s[17]:\n            print(18)\n            return\n        else:\n            print(17)\n            return\n    if n == 19:\n        if s[0] == s[18]:\n            print(19)\n            return\n        else:\n            print(18)\n            return\n    if n == 20:\n        if s[0] == s[19]:\n            print(20)\n            return\n        else:\n            print(19)\n            return\n    if n == 21:\n        if s[0] == s[20]:\n            print(21)\n            return\n        else:\n            print(20)\n            return\n    if n == 22:\n        if s[0] == s[21]:\n            print(22)\n            return\n        else:\n            print(21)\n            return\n    if n == 23:\n        if s[0] == s[22]:\n            print(23)\n            return\n        else:\n            print(22)\n            return\n    if n == 24:\n        if s[0] == s[23]:\n            print(24)\n            return\n        else:\n            print(23)\n            return\n    if n == 25:\n        if s[0] == s[24]:\n            print(25)\n            return\n        else:\n            print(24)\n            return\n    if n == 26:\n        if s[0] == s[25]:\n            print(26)\n            return\n        else:\n            print",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

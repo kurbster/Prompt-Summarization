@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTvuf3KPVn3TtRTTwPx999Pb8g6N",
+    "object": "text_completion",
+    "created": 1638642018,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    h = int(input())\n    h_packs = list(map(int, input().split()))\n    b = int(input())\n    b_packs = list(map(int, input().split()))\n    h_packs.sort()\n    b_packs.sort()\n    h_packs.reverse()\n    b_packs.reverse()\n    h_packs_used = 0\n    b_packs_used = 0\n    for i in range(len(h_packs)):\n        if h_packs[i] > b_packs[i]:\n            b_packs_used += 1\n        else:\n            h_packs_used += 1\n    if h_packs_used > b_packs_used:\n        print(\"impossible\")\n    else:\n        print(h_packs_used)\n\ncode()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    h = [int(x) for x in input().split()]\n    b = [int(x) for x in input().split()]\n    h.sort()\n    b.sort()\n    if h[0] > b[0]:\n        print(\"impossible\")\n    else:\n        print(min(h[0], b[0]))\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    grid = [list(input()) for _ in range(n)]\n    ships = [int(input()) for _ in range(k)]\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(ships)\n    #print(n, k)\n    #print(grid)\n    #print(",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    grid = [input() for _ in range(n)]\n    ships = [int(input()) for _ in range(k)]\n    #print(n, k, grid, ships)\n    #print(grid)\n    #print(ships)\n    #print(len(grid))\n    #print(len(grid[0]))\n    #print(len(ships))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]))\n    #print(len(ships[0]",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    edges = []\n    for i in range(m):\n        a, b, c = map(int, input().split())\n        edges.append((a, b, c))\n    edges.sort(key=lambda x: x[2])\n    visited = [False] * n\n    visited[0] = True\n    count = 0\n    for i in range(m):\n        a, b, c = edges[i]\n        if not visited[a - 1] or not visited[b - 1]:\n            visited[a - 1] = True\n            visited[b - 1] = True\n            count += 1\n    print(count)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    edges = []\n    for i in range(m):\n        a, b, c = map(int, input().split())\n        edges.append((a, b, c))\n    edges.sort(key=lambda x: x[2])\n    visited = [False] * n\n    count = 0\n    for a, b, c in edges:\n        if not visited[a - 1] and not visited[b - 1]:\n            count += 1\n            visited[a - 1] = True\n            visited[b - 1] = True\n    print(count)\n\ndef main():\n    code()\n\nif __name__ == \"__main__\":\n    main()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    p, k = map(int, input().split())\n    if p % (k + 1) != 0:\n        print(-1)\n        return\n    d = 0\n    while p % (k + 1) == 0:\n        p //= (k + 1)\n        d += 1\n    print(d)\n    for i in range(d):\n        print(0, end=' ')\n    print(1)\n    for i in range(d - 1):\n        print(1, end=' ')\n    print(p)\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    p, k = map(int, input().split())\n    if p % (k + k) == p:\n        print(-1)\n        return\n    d = 0\n    while p % (k + k**(d + 1)) != p:\n        d += 1\n    print(d)\n    for i in range(d):\n        print(p % (k + k**i) // (k**i), end=' ')\n    print(p % (k + k**d))\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    p = list(map(int, input().split()))\n    l = []\n    r = []\n    for i in range(m):\n        l.append(int(input()))\n        r.append(int(input()))\n    #print(n, m, k, p, l, r)\n    #print(p[l[0]-1:r[0]])\n    #print(p[l[1]-1:r[1]])\n    #print(p[l[2]-1:r[2]])\n    #print(p[l[3]-1:r[3]])\n    #print(p[l[4]-1:r[4]])\n    #print(p[l[5]-1:r[5]])\n    #print(p[l[6]-1:r[6]])\n    #print(p[l[7]-1:r[7]])\n    #print(p[l[8]-1:r[8]])\n    #print(p[l[9]-1:r[9]])\n    #print(p[l[10]-1:r[10]])\n    #print(p[l[11]-1:r[11]])\n    #print(p[l[12]-1:r[12]])\n    #print(p[l[13]-1:r[13]])\n    #print(p[l[14]-1:r[14]])\n    #print(p[l[15]-1:r[15]])\n    #print(p[l[16]-1:r[16]])\n    #print(p[l[17]-1:r[17]])\n    #print(p[l[18]-1:r[18]])\n    #print(p[l[19]-1:r[19]])\n    #print(p[l[20]-1:r[20]])\n    #print(p[l[21]-1:r[21]])\n    #print(p[l[22]-1:r[22]])\n    #print(p[l[23]-1:r[23]])\n    #print(p[l[24]-1:r[24]])\n    #print(p[l[25]-1:r[25]])\n    #print(p[l[26]-1:r[26]])\n    #print(p[l[27]-1:r[27]])\n    #print(p[l[28]-1:r[28]])\n    #print(p[l[29]-1:r[29]])\n    #print(p[l[30]-1:r[30]])\n    #print(p[l[31]-1:r[31]])\n    #print(p[l[32]-1:r[32]])\n    #print(p[l[33]-1:r[33]])\n    #print(p[l[34]-1:r[34]])\n    #print(p[l[35]-1:r[35]])\n    #print(p[l[36]-1:r[36]])\n    #print(p[l[37]-1:r[37]])\n    #print(p[l[38]-1:r[38]])\n    #print(p[l[39]-1:r[39]])\n    #print(p[l[40]-1:r[40]])\n    #print(p[l[41]-1:r[41]])\n    #print(p[l[42]-1:r[42]])\n    #print(p[l[43]-1:r[43]])\n    #print(p[l[44]-1:r[44]])\n    #print(p[l[45]-1:r[45]])\n    #print(p[l[46]-1:r[46]])\n    #print(p[l[47]-1:r[47]])\n    #print(p[l[48]-1:r[48]])\n    #print(p[l[49]-1:r[49]])\n    #print(p[l[50]-1:r[50]])\n    #print(p[l[51]-1:r[51]]",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    p = list(map(int, input().split()))\n    l = []\n    r = []\n    for i in range(m):\n        l.append(int(input().split()[0]))\n        r.append(int(input().split()[1]))\n    #print(n, m, k, p, l, r)\n    #print(p[l[0]-1:r[0]])\n    #print(p[l[1]-1:r[1]])\n    #print(p[l[2]-1:r[2]])\n    #print(p[l[3]-1:r[3]])\n    #print(p[l[4]-1:r[4]])\n    #print(p[l[5]-1:r[5]])\n    #print(p[l[6]-1:r[6]])\n    #print(p[l[7]-1:r[7]])\n    #print(p[l[8]-1:r[8]])\n    #print(p[l[9]-1:r[9]])\n    #print(p[l[10]-1:r[10]])\n    #print(p[l[11]-1:r[11]])\n    #print(p[l[12]-1:r[12]])\n    #print(p[l[13]-1:r[13]])\n    #print(p[l[14]-1:r[14]])\n    #print(p[l[15]-1:r[15]])\n    #print(p[l[16]-1:r[16]])\n    #print(p[l[17]-1:r[17]])\n    #print(p[l[18]-1:r[18]])\n    #print(p[l[19]-1:r[19]])\n    #print(p[l[20]-1:r[20]])\n    #print(p[l[21]-1:r[21]])\n    #print(p[l[22]-1:r[22]])\n    #print(p[l[23]-1:r[23]])\n    #print(p[l[24]-1:r[24]])\n    #print(p[l[25]-1:r[25]])\n    #print(p[l[26]-1:r[26]])\n    #print(p[l[27]-1:r[27]])\n    #print(p[l[28]-1:r[28]])\n    #print(p[l[29]-1:r[29]])\n    #print(p[l[30]-1:r[30]])\n    #print(p[l[31]-1:r[31]])\n    #print(p[l[32]-1:r[32]])\n    #print(p[l[33]-1:r[33]])\n    #print(p[l[34]-1:r[34]])\n    #print(p[l[35]-1:r[35]])\n    #print(p[l[36]-1:r[36]])\n    #print(p[l[37]-1:r[37]])\n    #print(p[l[38]-1:r[38]])\n    #print(p[l[39]-1:r[39]])\n    #print(p[l[40]-1:r[40]])\n    #print(p[l[41]-1:r[41]])\n    #print(p[l[42]-1:r[42]])\n    #print(p[l[43]-1:r[43]])\n    #print(p[l[44]-1:r[44]])\n    #print(p[l[45]-1:r[45]])\n    #print(p[l[46]-1:r[46]])\n    #print(p[l[47]-1:r[47]])\n    #print(p[l[48]-1:r[48]])\n    #print(p[l[49]-1:r[49]])\n    #print(p[l[50]-1:r[50]])\n    #print(p[",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    a, b = map(int, input().split())\n    res = 0\n    for i in range(a):\n        res += pow(i+1, b)\n    print(res%a)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a, b = map(int, input().split())\n    print(((a**b)%a))\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    coins = []\n    for i in range(n):\n        coins.append(list(map(float, input().split())))\n    coins.sort(key=lambda x: x[0])\n    coins.sort(key=lambda x: x[1])\n    slot = 0\n    for i in range(n):\n        if coins[i][0] > slot:\n            slot = coins[i][0]\n        else:\n            slot += coins[i][1]\n    print(slot)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    x = []\n    y = []\n    for i in range(n):\n        x.append(float(input()))\n        y.append(float(input()))\n    x.append(x[0])\n    y.append(y[0])\n    min_x = min(x)\n    max_x = max(x)\n    min_y = min(y)\n    max_y = max(y)\n    print(max(max_x-min_x, max_y-min_y))\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    buildings = [int(input()) for _ in range(n)]\n    #print(buildings)\n    #print(buildings.count(1))\n    #print(buildings.count(2))\n    #print(buildings.count(3))\n    #print(buildings.count(4))\n    #print(buildings.count(5))\n    #print(buildings.count(6))\n    #print(buildings.count(7))\n    #print(buildings.count(8))\n    #print(buildings.count(9))\n    #print(buildings.count(10))\n    #print(buildings.count(11))\n    #print(buildings.count(12))\n    #print(buildings.count(13))\n    #print(buildings.count(14))\n    #print(buildings.count(15))\n    #print(buildings.count(16))\n    #print(buildings.count(17))\n    #print(buildings.count(18))\n    #print(buildings.count(19))\n    #print(buildings.count(20))\n    #print(buildings.count(21))\n    #print(buildings.count(22))\n    #print(buildings.count(23))\n    #print(buildings.count(24))\n    #print(buildings.count(25))\n    #print(buildings.count(26))\n    #print(buildings.count(27))\n    #print(buildings.count(28))\n    #print(buildings.count(29))\n    #print(buildings.count(30))\n    #print(buildings.count(31))\n    #print(buildings.count(32))\n    #print(buildings.count(33))\n    #print(buildings.count(34))\n    #print(buildings.count(35))\n    #print(buildings.count(36))\n    #print(buildings.count(37))\n    #print(buildings.count(38))\n    #print(buildings.count(39))\n    #print(buildings.count(40))\n    #print(buildings.count(41))\n    #print(buildings.count(42))\n    #print(buildings.count(43))\n    #print(buildings.count(44))\n    #print(buildings.count(45))\n    #print(buildings.count(46))\n    #print(buildings.count(47))\n    #print(buildings.count(48))\n    #print(buildings.count(49))\n    #print(buildings.count(50))\n    #print(buildings.count(51))\n    #print(buildings.count(52))\n    #print(buildings.count(53))\n    #print(buildings.count(54))\n    #print(buildings.count(55))\n    #print(buildings.count(56))\n    #print(buildings.count(57))\n    #print(buildings.count(58))\n    #print(buildings.count(59))\n    #print(buildings.count(60))\n    #print(buildings.count(61))\n    #print(buildings.count(62))\n    #print(buildings.count(63))\n    #print(buildings.count(64))\n    #print(buildings.count(65))\n    #print(buildings.count(66))\n    #print(buildings.count(67))\n    #print(buildings.count(68))\n    #print(buildings.count(69))\n    #print(buildings.count(70))\n    #print(buildings.count(71))\n    #print(buildings.count(72))\n    #print(buildings.count(73))\n    #print(buildings.count(74))\n    #print(buildings.count(75))\n    #print(buildings.count(76))\n    #print(buildings.count(77))\n    #print(buildings.count(78))\n    #print(buildings.count(79))\n    #print(buildings.count(80))\n    #print(buildings.count(81))\n    #print(buildings.count(82))",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    buildings = [0] * m\n    for i in range(n):\n        buildings[int(input()) - 1] += 1\n    for i in range(k):\n        if buildings.count(max(buildings)) > 1:\n            buildings[buildings.index(max(buildings))] = 0\n        else:\n            buildings[buildings.index(max(buildings))] = 0\n            break\n    print(sum(buildings))\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(0)\n    else:\n        print(n-1)\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(0)\n    else:\n        print(n-1)\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, t, k = map(int, input().split())\n    cards = list(map(int, input().split()))\n    a = []\n    b = []\n    for i in range(t):\n        ai, bi = map(int, input().split())\n        a.append(ai)\n        b.append(bi)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t, k, cards, a, b)\n    #print(n, t",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, t, k = [int(x) for x in input().split()]\n    deck = [int(x) for x in input().split()]\n    a = []\n    b = []\n    for i in range(t):\n        ai, bi = [int(x) for x in input().split()]\n        a.append(ai)\n        b.append(bi)\n    #print(n, t, k, deck, a, b)\n    #print(deck)\n    #print(a)\n    #print(b)\n    #print(k)\n    #print(n)\n    #print(t)\n    #print(n//2)\n    #print(n%2)\n    #print(t//2)\n    #print(t%2)\n    #print(k//2)\n    #print(k%2)\n    #print(n//2 + n%2)\n    #print(t//2 + t%2)\n    #print(k//2 + k%2)\n    #print(n//2 + n%2 <= k//2 + k%2)\n    #print(t//2 + t%2 <= k//2 + k%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(n//2 + n%2 <= k//2 + k%2 <= t//2 + t%2 <= n//2 + n%2)\n    #print(",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}

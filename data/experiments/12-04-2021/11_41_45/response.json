@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BUG8T01AWXdxabW43iHKZIHnVzja",
+    "object": "text_completion",
+    "created": 1638643272,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n        intervals.append(newInterval)\n        intervals.sort(key=lambda x: x[0])\n        merged = []\n        for interval in intervals:\n            if not merged or merged[-1][1] < interval[0]:\n                merged.append(interval)\n            else:\n                merged[-1][1] = max(merged[-1][1], interval[1])\n        return merged",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        intervals.append(newInterval)\n        intervals.sort(key=lambda x: x[0])\n        res = []\n        for interval in intervals:\n            if not res or res[-1][1] < interval[0]:\n                res.append(interval)\n            else:\n                res[-1][1] = max(res[-1][1], interval[1])\n        return res",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, s, k = map(int, input().split())\n    if k == 1:\n        print(1)\n    else:\n        print(round(sum([(s-i)/s for i in range(k, s+1)]), 9))\n\nif __name__ == '__main__':\n    code()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, s, k = map(int, input().split())\n    if k == 1:\n        print(1)\n    elif k == s:\n        print(1/s)\n    else:\n        print((s-k+1)/s)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    graph = [[] for i in range(n)]\n    for i in range(m):\n        a, b = map(int, input().split())\n        graph[a].append(b)\n        graph[b].append(a)\n    visited = [False] * n\n    visited[0] = True\n    queue = [0]\n    while queue:\n        cur = queue.pop(0)\n        for i in graph[cur]:\n            if not visited[i]:\n                visited[i] = True\n                queue.append(i)\n    print(visited.count(True))\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    adj = [[] for _ in range(n)]\n    for _ in range(m):\n        k, l = map(int, input().split())\n        adj[k].append(l)\n        adj[l].append(k)\n    visited = [False] * n\n    visited[0] = True\n    queue = [0]\n    while queue:\n        cur = queue.pop(0)\n        for v in adj[cur]:\n            if not visited[v]:\n                visited[v] = True\n                queue.append(v)\n    if visited[n-1]:\n        print(1)\n    else:\n        print(0)\n\nif __name__ == '__main__':\n    code()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    count = 0\n    for i in range(1, n+1):\n        if i % 2 == 0:\n            count += (n-i+1)\n        else:\n            count += (n-i+1) * 2\n    print(count % (10**9+7))\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    count = 0\n    for i in range(1, n+1):\n        count += (n-i+1) * (i-1)\n    print(count % (10**9+7))\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    b = a[:n//2]\n    c = a[n//2:n//2+n//4]\n    d = a[n//2+n//4:n//2+n//2]\n    e = a[n//2+n//2:]\n    print(min(max(b)-min(b), max(c)-min(c), max(d)-min(d), max(e)-min(e)))\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    b = a[:n//2]\n    c = a[n//2:n//2+n//4]\n    d = a[n//2+n//4:n//2+n//2]\n    e = a[n//2+n//2:]\n    print(min(max(b)-min(b), max(c)-min(c), max(d)-min(d), max(e)-min(e)))\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    dp = [0] * n\n    dp[0] = A[0]\n    for i in range(1, n):\n        dp[i] = max(dp[i-1] + A[i], A[i])\n    print(max(dp))\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    if k == 1:\n        print(max(A))\n    else:\n        max_sum = 0\n        for i in range(n-k+1):\n            max_sum = max(max_sum, sum(A[i:i+k]))\n        print(max_sum)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, e, p = map(int, input().split())\n    treehouses = []\n    for i in range(n):\n        treehouses.append(list(map(float, input().split())))\n    cables = []\n    for i in range(p):\n        cables.append(list(map(int, input().split())))\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(cables",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, e, p = map(int, input().split())\n    treehouses = []\n    for i in range(n):\n        x, y = map(float, input().split())\n        treehouses.append((x, y))\n    cables = []\n    for i in range(p):\n        a, b = map(int, input().split())\n        cables.append((a, b))\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print(cables)\n    #print(n, e, p)\n    #print(treehouses)\n    #print",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, c, b = [int(x) for x in input().split()]\n    broken = [int(x) for x in input().split()]\n    broken.sort()\n    if broken[0] != 1:\n        broken = [1] + broken\n    if broken[-1] != n:\n        broken = broken + [n]\n    if broken[-1] - broken[0] + 1 != len(broken):\n        print(\"NO\")\n        return\n    if c != len(broken) - 1:\n        print(\"NO\")\n        return\n    if b != len(broken) - 2:\n        print(\"NO\")\n        return\n    print(\"YES\")\n    print(\"\".join([\"0\" if x in broken else \"1\" for x in range(1, n + 1)]))\n\nif __name__ == '__main__':\n    code()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, c, b = [int(x) for x in input().split()]\n    broken = [int(x) for x in input().split()]\n    broken.sort()\n    broken.append(n+1)\n    i = 0\n    while i < len(broken)-1:\n        if broken[i] == broken[i+1]:\n            broken.pop(i)\n        else:\n            i += 1\n    if broken[0] == 1:\n        broken.pop(0)\n    if broken[-1] == n:\n        broken.pop(-1)\n    if broken[0] == 2:\n        broken.pop(0)\n    if broken[-1] == n-1:\n        broken.pop(-1)\n    if len(broken) == 0:\n        print(\"0\"*n)\n        return\n    if len(broken) == 1:\n        if broken[0] == 1:\n            print(\"0\"*n)\n            return\n        else:\n            print(\"1\"*n)\n            return\n    if len(broken) == 2:\n        if broken[0] == 1:\n            if broken[1] == n-1:\n                print(\"1\"*n)\n                return\n            else:\n                print(\"0\"*n)\n                return\n        else:\n            if broken[1] == n-1:\n                print(\"0\"*n)\n                return\n            else:\n                print(\"1\"*n)\n                return\n    if len(broken) == 3:\n        if broken[0] == 1:\n            if broken[1] == 2:\n                if broken[2] == n-1:\n                    print(\"1\"*n)\n                    return\n                else:\n                    print(\"0\"*n)\n                    return\n            else:\n                if broken[2] == n-1:\n                    print(\"0\"*n)\n                    return\n                else:\n                    print(\"1\"*n)\n                    return\n        else:\n            if broken[1] == 2:\n                if broken[2] == n-1:\n                    print(\"0\"*n)\n                    return\n                else:\n                    print(\"1\"*n)\n                    return\n            else:\n                if broken[2] == n-1:\n                    print(\"1\"*n)\n                    return\n                else:\n                    print(\"0\"*n)\n                    return\n    if len(broken) == 4:\n        if broken[0] == 1:\n            if broken[1] == 2:\n                if broken[2] == 3:\n                    if broken[3] == n-1:\n                        print(\"1\"*n)\n                        return\n                    else:\n                        print(\"0\"*n)\n                        return\n                else:\n                    if broken[3] == n-1:\n                        print(\"0\"*n)\n                        return\n                    else:\n                        print(\"1\"*n)\n                        return\n            else:\n                if broken[2] == 3:\n                    if broken[3] == n-1:\n                        print(\"0\"*n)\n                        return\n                    else:\n                        print(\"1\"*n)\n                        return\n                else:\n                    if broken[3] == n-1:\n                        print(\"1\"*n)\n                        return\n                    else:\n                        print(\"0\"*n)\n                        return\n        else:\n            if broken[1] == 2:\n                if broken[2] == 3:\n                    if broken[3] == n-1:\n                        print(\"0\"*n)\n                        return\n                    else:\n                        print(\"1\"*n)\n                        return\n                else:\n                    if broken[3] == n-1:\n                        print(\"1\"*n)\n                        return\n                    else:\n                        print(\"0\"*n)\n                        return\n            else:\n                if broken[2] == 3:\n                    if broken[3] == n-1:\n                        print(\"1\"*n)\n                        return\n                    else:\n                        print(\"0\"*n)\n                        return\n                else:\n                    if broken[3] == n-1:\n                        print(\"0\"*n)\n                        return\n                    else:\n                        print(\"1\"*n)\n                        return\n    if len(broken) == 5:\n        if broken[0] == 1:\n            if broken[1] == 2:\n                if",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    islands = []\n    for i in range(n):\n        islands.append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input().split())))\n    for i in range(n):\n        for j in range(islands[i][1]):\n            islands[i].append(list(map(int, input",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    N = int(input())\n    islands = []\n    for i in range(N):\n        islands.append(list(map(int, input().split())))\n    for i in range(N):\n        islands[i][1] = list(map(int, input().split()))\n    for i in range(N):\n        islands[i][1] = list(zip(islands[i][1][::2], islands[i][1][1::2]))\n    for i in range(N):\n        islands[i][1] = sorted(islands[i][1], key=lambda x: x[1], reverse=True)\n    for i in range(N):\n        islands[i][1] = sorted(islands[i][1], key=lambda x: x[0])\n    for i in range(N):\n        islands[i][1] = [x[1] for x in islands[i][1]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != i]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != 0]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][1] = [x for x in islands[i][1] if x != islands[i][0]]\n    for i in range(N):\n        islands[i][",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    m, s = [int(x) for x in input().split()]\n    songs = []\n    for i in range(m):\n        songs.append([int(x) for x in input().split()])\n    songs.sort(key=lambda x: x[0])\n    songs.sort(key=lambda x: x[-1])\n    set_list = []\n    for i in range(m):\n        for j in range(s):\n            if songs[i][j] not in set_list:\n                set_list.append(songs[i][j])\n                break\n    print(len(set_list))\n    print(*set_list)\n\nif __name__ == '__main__':\n    code()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    m, s = [int(x) for x in input().split()]\n    songs = []\n    for i in range(m):\n        songs.append([int(x) for x in input().split()])\n    songs.sort(key=lambda x: x[0])\n    set_list = []\n    for i in range(m):\n        for j in range(len(songs[i])):\n            if songs[i][j] not in set_list:\n                set_list.append(songs[i][j])\n                break\n    print(len(set_list))\n    print(*set_list)\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

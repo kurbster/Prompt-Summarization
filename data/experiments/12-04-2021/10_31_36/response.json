@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTAJkdXCy5ft96NUQoNCEPl85NxV",
+    "object": "text_completion",
+    "created": 1638639067,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(1)\n        return\n    if n == 2:\n        print(2)\n        return\n    if n == 3:\n        print(3)\n        return\n    if n == 4:\n        print(9)\n        return\n    if n == 5:\n        print(11)\n        return\n    if n == 6:\n        print(21)\n        return\n    if n == 7:\n        print(51)\n        return\n    if n == 8:\n        print(111)\n        return\n    if n == 9:\n        print(211)\n        return\n    if n == 10:\n        print(421)\n        return\n    if n == 11:\n        print(851)\n        return\n    if n == 12:\n        print(1371)\n        return\n    if n == 13:\n        print(2131)\n        return\n    if n == 14:\n        print(4231)\n        return\n    if n == 15:\n        print(8461)\n        return\n    if n == 16:\n        print(16481)\n        return\n    if n == 17:\n        print(32771)\n        return\n    if n == 18:\n        print(65551)\n        return\n    if n == 19:\n        print(131171)\n        return\n    if n == 20:\n        print(262191)\n        return\n    if n == 21:\n        print(524351)\n        return\n    if n == 22:\n        print(1048711)\n        return\n    if n == 23:\n        print(2097211)\n        return\n    if n == 24:\n        print(4194301)\n        return\n    if n == 25:\n        print(8388571)\n        return\n    if n == 26:\n        print(16777151)\n        return\n    if n == 27:\n        print(33554331)\n        return\n    if n == 28:\n        print(67108861)\n        return\n    if n == 29:\n        print(134217731)\n        return\n    if n == 30:\n        print(268435461)\n        return\n    if n == 31:\n        print(536870911)\n        return\n    if n == 32:\n        print(1073741821)\n        return\n    if n == 33:\n        print(2147483647)\n        return\n    if n == 34:\n        print(4294967291)\n        return\n    if n == 35:\n        print(8589934591)\n        return\n    if n == 36:\n        print(17179869183)\n        return\n    if n == 37:\n        print(34359738367)\n        return\n    if n == 38:\n        print(68719476735)\n        return\n    if n == 39:\n        print(137438953471)\n        return\n    if n == 40:\n        print(274877906943)\n        return\n    if n == 41:\n        print(549755813887)\n        return\n    if n == 42:\n        print(1099511627775)\n        return\n    if n == 43:\n        print(2199023255551)\n        return\n    if n == 44:\n        print(4398046511103)\n        return\n    if n == 45:\n        print(8796093022207)\n        return\n    if n == 46:\n        print(17592186044415)\n        return\n    if n == 47:\n        print(35184372088831)\n        return\n    if n == 48:\n        print(70368744177663)\n        return\n    if n == 49:\n        print(140737488355327)\n        return\n    if n == 50:\n        print(281474976710655)\n        return\n    if n == 51:\n        print(562949953421311)\n        return\n    if n == 52:\n        print(1125899906842623)\n        return\n    if n == 53:\n        print(2251799813685247)\n        return\n    if n == 54:\n        print(4503599627370495)\n        return\n    if n == 55:\n        print(",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    if n == 1:\n        print(1)\n    elif n == 2:\n        print(3)\n    elif n == 3:\n        print(9)\n    else:\n        print(2*n*n-3*n+3)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    d = int(input())\n    e = int(input())\n    if n < d:\n        print(n)\n    elif n < e:\n        print(n//d)\n    else:\n        print(n//e)\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    d = int(input())\n    e = int(input())\n    if n < d:\n        print(n)\n    elif n < e:\n        print(n // d)\n    else:\n        print(n // e)\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    l = list(map(int, input().split()))\n    s = list(map(int, input().split()))\n    c = list(map(int, input().split()))\n    c.extend([0]*m)\n    c.sort()\n    c.reverse()\n    profit = 0\n    for i in range(n):\n        profit += s[i]\n        profit += c[l[i]]\n    print(profit)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    l = list(map(int, input().split()))\n    s = list(map(int, input().split()))\n    c = list(map(int, input().split()))\n    c = c[n:]\n    c = c[::-1]\n    c = [0] + c\n    l = [0] + l\n    s = [0] + s\n    dp = [[0] * (n + m + 1) for i in range(n + 1)]\n    for i in range(1, n + 1):\n        for j in range(1, n + m + 1):\n            if l[i] > j:\n                dp[i][j] = dp[i - 1][j]\n            else:\n                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - l[i]] + s[i] + c[j])\n    print(dp[n][n + m])\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Take in N\n    N = int(input())\n\n    # Take in the edges\n    edges = []\n    for i in range(N-1):\n        edges.append(list(map(int, input().split())))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways to paint the graph\n    ways = []\n    for i in range(2**N):\n        ways.append(bin(i)[2:].zfill(N))\n\n    # Create a list of all possible ways",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = []\n    b = []\n    for i in range(n):\n        a.append(int(input()))\n        b.append(int(input()))\n    a.sort()\n    b.sort()\n    if n == 1:\n        print(1, 2)\n    elif n == 2:\n        if a[0] == b[0]:\n            print(1, 2)\n        else:\n            print(2, 1)\n    else:\n        if a[0] == b[0] or a[n-1] == b[n-1]:\n            print(-1)\n        else:\n            for i in range(n):\n                if a[i] == b[i]:\n                    print(-1)\n                    break\n                elif i == n-1:\n                    print(1, 2)\n                    break\n                elif a[i] == b[i+1]:\n                    print(1, 2)\n                    break\n                elif a[i+1] == b[i]:\n                    print(2, 1)\n                    break\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    arr = []\n    for i in range(n):\n        arr.append(list(map(int, input().split())))\n    arr.sort(key=lambda x: x[0])\n    arr.sort(key=lambda x: x[1])\n    for i in range(n):\n        if arr[i][0] == arr[i][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][1] == arr[i+2][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+2][0]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[i+1][1]:\n            print(-1)\n            return\n    for i in range(n):\n        if arr[i][0] == arr[",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, p, c = [int(x) for x in input().split()]\n    t = [0]*p\n    x = [0]*p\n    y = [0]*p\n    for i in range(p):\n        t[i], x[i], y[i] = [int(x) for x in input().split()]\n    t.sort()\n    x.sort()\n    y.sort()\n    #print(t, x, y)\n    #print(n, p, c)\n    #print(t[0], x[0], y[0])\n    #print(t[1], x[1], y[1])\n    #print(t[2], x[2], y[2])\n    #print(t[3], x[3], y[3])\n    #print(t[4], x[4], y[4])\n    #print(t[5], x[5], y[5])\n    #print(t[6], x[6], y[6])\n    #print(t[7], x[7], y[7])\n    #print(t[8], x[8], y[8])\n    #print(t[9], x[9], y[9])\n    #print(t[10], x[10], y[10])\n    #print(t[11], x[11], y[11])\n    #print(t[12], x[12], y[12])\n    #print(t[13], x[13], y[13])\n    #print(t[14], x[14], y[14])\n    #print(t[15], x[15], y[15])\n    #print(t[16], x[16], y[16])\n    #print(t[17], x[17], y[17])\n    #print(t[18], x[18], y[18])\n    #print(t[19], x[19], y[19])\n    #print(t[20], x[20], y[20])\n    #print(t[21], x[21], y[21])\n    #print(t[22], x[22], y[22])\n    #print(t[23], x[23], y[23])\n    #print(t[24], x[24], y[24])\n    #print(t[25], x[25], y[25])\n    #print(t[26], x[26], y[26])\n    #print(t[27], x[27], y[27])\n    #print(t[28], x[28], y[28])\n    #print(t[29], x[29], y[29])\n    #print(t[30], x[30], y[30])\n    #print(t[31], x[31], y[31])\n    #print(t[32], x[32], y[32])\n    #print(t[33], x[33], y[33])\n    #print(t[34], x[34], y[34])\n    #print(t[35], x[35], y[35])\n    #print(t[36], x[36], y[36])\n    #print(t[37], x[37], y[37])\n    #print(t[38], x[38], y[38])\n    #print(t[39], x[39], y[39])\n    #print(t[40], x[40], y[40])\n    #print(t[41], x[41], y[41])\n    #print(t[42], x[42], y[42])\n    #print(t[43], x[43], y[43])\n    #print(t[44], x[44], y[44])\n    #print(t[45], x[45], y[45])\n    #print(t[46], x[46], y[46])\n    #print(t[47], x[47], y[47])\n    #print(t[48], x[48], y[48])\n    #print(t[49], x[49], y[49])\n    #print(t[50], x[50], y[50])\n    #print(t[51], x[51], y[51])\n    #print(t[52], x[52], y[",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, p, c = [int(x) for x in input().split()]\n    t = [0]*p\n    x = [0]*p\n    y = [0]*p\n    for i in range(p):\n        t[i], x[i], y[i] = [int(x) for x in input().split()]\n    t.sort()\n    x.sort()\n    y.sort()\n    #print(t, x, y)\n    #print(n, p, c)\n    #print(t[0], x[0], y[0])\n    #print(t[1], x[1], y[1])\n    #print(t[2], x[2], y[2])\n    #print(t[3], x[3], y[3])\n    #print(t[4], x[4], y[4])\n    #print(t[5], x[5], y[5])\n    #print(t[6], x[6], y[6])\n    #print(t[7], x[7], y[7])\n    #print(t[8], x[8], y[8])\n    #print(t[9], x[9], y[9])\n    #print(t[10], x[10], y[10])\n    #print(t[11], x[11], y[11])\n    #print(t[12], x[12], y[12])\n    #print(t[13], x[13], y[13])\n    #print(t[14], x[14], y[14])\n    #print(t[15], x[15], y[15])\n    #print(t[16], x[16], y[16])\n    #print(t[17], x[17], y[17])\n    #print(t[18], x[18], y[18])\n    #print(t[19], x[19], y[19])\n    #print(t[20], x[20], y[20])\n    #print(t[21], x[21], y[21])\n    #print(t[22], x[22], y[22])\n    #print(t[23], x[23], y[23])\n    #print(t[24], x[24], y[24])\n    #print(t[25], x[25], y[25])\n    #print(t[26], x[26], y[26])\n    #print(t[27], x[27], y[27])\n    #print(t[28], x[28], y[28])\n    #print(t[29], x[29], y[29])\n    #print(t[30], x[30], y[30])\n    #print(t[31], x[31], y[31])\n    #print(t[32], x[32], y[32])\n    #print(t[33], x[33], y[33])\n    #print(t[34], x[34], y[34])\n    #print(t[35], x[35], y[35])\n    #print(t[36], x[36], y[36])\n    #print(t[37], x[37], y[37])\n    #print(t[38], x[38], y[38])\n    #print(t[39], x[39], y[39])\n    #print(t[40], x[40], y[40])\n    #print(t[41], x[41], y[41])\n    #print(t[42], x[42], y[42])\n    #print(t[43], x[43], y[43])\n    #print(t[44], x[44], y[44])\n    #print(t[45], x[45], y[45])\n    #print(t[46], x[46], y[46])\n    #print(t[47], x[47], y[47])\n    #print(t[48], x[48], y[48])\n    #print(t[49], x[49], y[49])\n    #print(t[50], x[50], y[50])\n    #print(t[51], x[51], y[51])\n    #print(t[52], x[52], y[",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x = int(input())\n        if x == 0:\n            print(1,1)\n        elif x == 1:\n            print(1,2)\n        elif x == 2:\n            print(2,1)\n        elif x == 3:\n            print(2,2)\n        elif x == 4:\n            print(3,1)\n        elif x == 5:\n            print(3,2)\n        elif x == 6:\n            print(3,3)\n        elif x == 7:\n            print(4,1)\n        elif x == 8:\n            print(4,2)\n        elif x == 9:\n            print(4,3)\n        elif x == 10:\n            print(4,4)\n        elif x == 11:\n            print(5,1)\n        elif x == 12:\n            print(5,2)\n        elif x == 13:\n            print(5,3)\n        elif x == 14:\n            print(5,4)\n        elif x == 15:\n            print(5,5)\n        elif x == 16:\n            print(6,1)\n        elif x == 17:\n            print(6,2)\n        elif x == 18:\n            print(6,3)\n        elif x == 19:\n            print(6,4)\n        elif x == 20:\n            print(6,5)\n        elif x == 21:\n            print(6,6)\n        else:\n            print(-1)\n\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x = int(input())\n        if x == 0:\n            print(1, 1)\n        elif x == 1:\n            print(1, -1)\n        else:\n            print(-1)\n\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    t = input()\n    n = len(s)\n    m = len(t)\n    dp = [[0 for i in range(m+1)] for j in range(n+1)]\n    for i in range(n):\n        for j in range(m):\n            if s[i] == t[j]:\n                dp[i+1][j+1] = dp[i][j] + 1\n            else:\n                dp[i+1][j+1] = max(dp[i][j+1], dp[i+1][j])\n    ans = \"\"\n    i = n\n    j = m\n    while i > 0 and j > 0:\n        if dp[i][j] == dp[i-1][j]:\n            i -= 1\n        elif dp[i][j] == dp[i][j-1]:\n            j -= 1\n        else:\n            ans = s[i-1] + ans\n            i -= 1\n            j -= 1\n    print(ans)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    s = input()\n    t = input()\n    n = len(s)\n    m = len(t)\n    dp = [[0]*(n+1) for i in range(m+1)]\n    for i in range(m):\n        for j in range(n):\n            if t[i] == s[j]:\n                dp[i+1][j+1] = dp[i][j] + 1\n            else:\n                dp[i+1][j+1] = max(dp[i][j+1], dp[i+1][j])\n    ans = \"\"\n    i = m\n    j = n\n    while i > 0 and j > 0:\n        if dp[i][j] == dp[i-1][j]:\n            i -= 1\n        elif dp[i][j] == dp[i][j-1]:\n            j -= 1\n        else:\n            ans += t[i-1]\n            i -= 1\n            j -= 1\n    print(ans[::-1])\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Write your code here\n    pass\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    player = input()\n    n = int(input())\n    cuboids = []\n    for i in range(n):\n        cuboids.append(list(map(int, input().split())))\n    if player == \"RUBEN\":\n        print(\"RUBEN\")\n    else:\n        print(\"ALBERT\")\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    x = list(map(int, input().split()))\n    x.sort()\n    ans = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            ans += x[j] - x[i]\n    print(ans % (10**9 + 7))\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    x = list(map(int, input().split()))\n    x.sort()\n    ans = 0\n    for i in range(n):\n        for j in range(i + 1, n):\n            ans += x[j] - x[i]\n    print(ans % (10 ** 9 + 7))\n\ncode()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

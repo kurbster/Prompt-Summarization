@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BTr5u5KfvGVgCPamd3Va1lY9nr5K",
+    "object": "text_completion",
+    "created": 1638641719,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    a.insert(0, 0)\n    a.append(0)\n    dp = [[0 for i in range(m+1)] for j in range(n+1)]\n    for i in range(1, n+1):\n        for j in range(1, m+1):\n            dp[i][j] = dp[i-1][j]\n            if a[i] == j:\n                dp[i][j] = min(dp[i][j], dp[i-1][j-1])\n            dp[i][j] = min(dp[i][j], dp[i-1][j]+1)\n    print(dp[n][m])\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    a = list(map(int, input().split()))\n    a.insert(0, 0)\n    a.append(m+1)\n    count = 0\n    for i in range(1, n+1):\n        count += abs(a[i] - a[i+1])\n    print(count)\n\ncode()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    matrix = []\n    for i in range(n):\n        matrix.append(input())\n    for i in range(n):\n        if matrix[i][i] == '1':\n            print(\"impossible\")\n            return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                matrix[j][i] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == 'X':\n                matrix[i][j] = '1'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '0':\n                matrix[i][j] = '1'\n            else:\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    matrix = []\n    for i in range(n):\n        matrix.append(input())\n    for i in range(n):\n        if matrix[i][i] == '0':\n            print(\"impossible\")\n            return\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                matrix[j][i] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == 'X':\n                matrix[i][j] = '1'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                matrix[i][j] = '0'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == 'X':\n                matrix[i][j] = '1'\n    for i in range(n):\n        for j in range(n):\n            if matrix[i][j] == '1':\n                print(\"impossible\")\n                return\n    print(\"1\", end=\" \")\n    for i in range(1, n):\n        for j in range(n):\n            if matrix[j][i] == '1':\n                print(j, end=\" \")\n                break\n    print()\n\nif __name__ == '__main__':\n    code()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    k, n = map(int, input().split())\n    dp = [0] * (2*k+1)\n    dp[0] = 1\n    for i in range(1, 2*k+1):\n        for j in range(1, k+1):\n            if i-j >= 0:\n                dp[i] += dp[i-j]\n                dp[i] %= 998244353\n    for i in range(1, 2*k+1):\n        print(dp[i], end=' ')\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    K, N = map(int, input().split())\n    dp = [0] * (2*K+1)\n    dp[0] = 1\n    for i in range(1, 2*K+1):\n        for j in range(1, K+1):\n            if i-j >= 0:\n                dp[i] += dp[i-j]\n        dp[i] %= 998244353\n    for i in range(1, 2*K+1):\n        print(dp[i])\n\nif __name__ == \"__main__\":\n    code()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    d = {}\n    for i in range(n):\n        if a[i] not in d:\n            d[a[i]] = 1\n        else:\n            d[a[i]] += 1\n    res = 1\n    for i in d:\n        res *= d[i] + 1\n    print(res % 1000000007)\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    dp = [0] * (n + 1)\n    dp[0] = 1\n    for i in range(1, n + 1):\n        for j in range(i):\n            if a[i] % a[j] == 0:\n                dp[i] += dp[j]\n    print(dp[n] % 1000000007)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    m, n = map(int, input().split())\n    print(m*n/2)\n\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    m, n = map(int, input().split())\n    print(m*n/2)\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, t = map(int, input().split())\n    for i in range(n):\n        d, s = map(int, input().split())\n        if s < 0:\n            s = -s\n        if s > d:\n            print(\"{:.9f}\".format(s - d))\n        else:\n            print(\"{:.9f}\".format(s))\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, t = [int(x) for x in input().split()]\n    d = []\n    s = []\n    for i in range(n):\n        d.append(int(input().split()[0]))\n        s.append(int(input().split()[0]))\n    for i in range(n):\n        if s[i] < 0:\n            s[i] = -s[i]\n    for i in range(n):\n        if s[i] > 0:\n            s[i] = -s[i]\n    c = (t*s[0] - sum(d))/(t*s[0] - sum(s))\n    print(c)\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, h = map(int, input().split())\n    u = [0] * n\n    for i in range(n):\n        u[i] = int(input())\n    c = [[0] * 2 for i in range(m)]\n    for i in range(m):\n        c[i][0], c[i][1] = map(int, input().split())\n    #print(n, m, h, u, c)\n    #print(c)\n    #print(u)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c)\n    #print(c",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, h = map(int, input().split())\n    u = list(map(int, input().split()))\n    c = [[] for i in range(n)]\n    for i in range(m):\n        c[int(input().split()[0]) - 1].append(int(input().split()[1]) - 1)\n        c[int(input().split()[0]) - 1].append(int(input().split()[1]) - 1)\n    for i in range(n):\n        c[i].sort()\n    ans = 0\n    for i in range(n):\n        if u[i] == h - 1:\n            ans += 1\n    print(ans)\n    for i in range(n):\n        if u[i] == h - 1:\n            print(i + 1, end = \" \")\ncode()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = [int(x) for x in input().split()]\n    first = set([tuple(int(x) for x in input().split()) for _ in range(n)])\n    second = set([tuple(int(x) for x in input().split()) for _ in range(m)])\n    for x in first:\n        if x in second:\n            print(x[0])\n            return\n    for x in second:\n        if x in first:\n            print(x[0])\n            return\n    print(0)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    first = set(map(int, input().split()))\n    second = set(map(int, input().split()))\n    for i in first:\n        if i in second:\n            print(i)\n            return\n    print(0)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, d = map(int, input().split())\n    people = {}\n    for i in range(n):\n        s, t = input().split()\n        people[s] = int(t)\n    connections = {}\n    for i in range(m):\n        u, v = input().split()\n        if u in connections:\n            connections[u].append(v)\n        else:\n            connections[u] = [v]\n        if v in connections:\n            connections[v].append(u)\n        else:\n            connections[v] = [u]\n    r = input()\n    for i in range(d):\n        for person in connections:\n            if person != r:\n                for friend in connections[person]:\n                    if people[friend] == 0:\n                        people[person] += 1\n                        people[friend] = 0\n    count = 0\n    for person in people:\n        if people[person] == 0:\n            count += 1\n    print(count)\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, d = map(int, input().split())\n    graph = {i: [] for i in range(n)}\n    for _ in range(m):\n        u, v = input().split()\n        graph[int(u)].append(int(v))\n        graph[int(v)].append(int(u))\n    for i in range(n):\n        graph[i].sort()\n    rumor = input()\n    rumors = {rumor: 0}\n    for _ in range(d):\n        new_rumors = {}\n        for r in rumors:\n            for v in graph[rumors[r]]:\n                if v not in rumors:\n                    new_rumors[r + ' ' + str(v)] = v\n        rumors = new_rumors\n    print(len(rumors))\n\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    q = list(map(int, input().split()))\n    s = list(map(int, input().split()))\n    q.sort()\n    s.sort()\n    if q == s:\n        print(\"YES\")\n    else:\n        print(\"NO\")\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    q = list(map(int, input().split()))\n    s = list(map(int, input().split()))\n    if k == 1:\n        if q == s:\n            print(\"YES\")\n        else:\n            print(\"NO\")\n    else:\n        if q == s:\n            print(\"NO\")\n        else:\n            print(\"YES\")\n\nif __name__ == '__main__':\n    code()",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BThh4nbjZu3ldqtgAEzcyzbx3mWs",
+    "object": "text_completion",
+    "created": 1638641137,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n        res = []\n        candidates.sort()\n        self.dfs(candidates, target, 0, [], res)\n        return res\n    \n    def dfs(self, nums, target, index, path, res):\n        if target < 0:\n            return  # backtracking\n        if target == 0:\n            res.append(path)\n            return \n        for i in range(index, len(nums)):\n            if i > index and nums[i] == nums[i-1]:\n                continue\n            self.dfs(nums, target-nums[i], i+1, path+[nums[i]], res)",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        res = []\n        candidates.sort()\n        self.dfs(candidates, target, 0, [], res)\n        return res\n\n    def dfs(self, nums, target, index, path, res):\n        if target < 0:\n            return  # backtracking\n        if target == 0:\n            res.append(path)\n            return\n        for i in range(index, len(nums)):\n            if i > index and nums[i] == nums[i - 1]:\n                continue\n            self.dfs(nums, target - nums[i], i + 1, path + [nums[i]], res)",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = input()\n    d = {'A':0, 'B':0, 'C':0}\n    for i in s:\n        d[i] += 1\n    print((d['A']*(d['A']-1)*(d['A']-2)//6)+(d['B']*(d['B']-1)*(d['B']-2)//6)+(d['C']*(d['C']-1)*(d['C']-2)//6))\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    x, y = map(int, input().split())\n    points = []\n    for i in range(n):\n        x1, y1 = map(int, input().split())\n        points.append((x1, y1))\n    points.append(points[0])\n    points.append((x, y))\n    area = 0\n    for i in range(n):\n        area += points[i][0] * points[i+1][1] - points[i+1][0] * points[i][1]\n    area = abs(area) / 2\n    print(area)\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, x, y = map(int, input().split())\n    x, y = x + 1, y + 1\n    a = [list(map(int, input().split())) for i in range(n)]\n    a.append(a[0])\n    a = [(x[0] - x[1] * y[0], x[0] - x[1] * y[1]) for x, y in zip(a, a[1:])]\n    a = [x[0] * y[1] - x[1] * y[0] for x, y in zip(a, a[1:])]\n    print(abs(sum(a)))\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p, k = [int(x) for x in input().split()]\n    stations = [0] + [int(x) for x in input().split()]\n    pipes = []\n    for i in range(p):\n        a, b, c = [int(x) for x in input().split()]\n        pipes.append((a, b, c))\n    for i in range(k):\n        a, b, c = [int(x) for x in input().split()]\n        pipes.append((a, b, c))\n    pipes.sort(key=lambda x: x[2])\n    pipes_dict = {}\n    for i in range(1, n+1):\n        pipes_dict[i] = []\n    for pipe in pipes:\n        pipes_dict[pipe[0]].append((pipe[1], pipe[2]))\n        pipes_dict[pipe[1]].append((pipe[0], pipe[2]))\n    max_flow = [0] * (k+1)\n    max_flow[0] = 1\n    for i in range(1, k+1):\n        max_flow[i] = 0\n        for j in range(1, n+1):\n            if j == stations[1]:\n                continue\n            for pipe in pipes_dict[j]:\n                if pipe[0] == stations[1]:\n                    continue\n                if max_flow[i-1] > 0:\n                    if pipe[1] + max_flow[i-1] > max_flow[i]:\n                        max_flow[i] = pipe[1] + max_flow[i-1]\n    print(max_flow[k])\n\ncode()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p, k = [int(x) for x in input().split()]\n    pipes = {}\n    for i in range(p):\n        a, b, c = [int(x) for x in input().split()]\n        if a not in pipes:\n            pipes[a] = {}\n        if b not in pipes:\n            pipes[b] = {}\n        pipes[a][b] = c\n        pipes[b][a] = c\n    for i in range(k):\n        a, b, c = [int(x) for x in input().split()]\n        if a not in pipes:\n            pipes[a] = {}\n        if b not in pipes:\n            pipes[b] = {}\n        pipes[a][b] = c\n        pipes[b][a] = c\n    print(pipes)\n\ncode()",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    nodes = [i for i in range(1,n+1)]\n    adj = [[] for i in range(n)]\n    for i in range(n-1):\n        a,b = map(int,input().split())\n        adj[a-1].append(b-1)\n        adj[b-1].append(a-1)\n    freq = [0 for i in range(n)]\n    def dfs(node,freq):\n        if freq[node] != 0:\n            return freq[node]\n        else:\n            freq[node] = 1\n            for i in adj[node]:\n                freq[node] = max(freq[node],dfs(i,freq)+1)\n            return freq[node]\n    for i in range(n):\n        dfs(i,freq)\n    for i in range(n):\n        print(freq[i],end=\" \")\ncode()",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    adj = [[] for i in range(n)]\n    for i in range(n-1):\n        a, b = map(int, input().split())\n        adj[a-1].append(b-1)\n        adj[b-1].append(a-1)\n    freq = [0 for i in range(2*n)]\n    def dfs(node, parent):\n        for child in adj[node]:\n            if child != parent:\n                dfs(child, node)\n        if len(adj[node]) == 1:\n            freq[node] = 1\n        else:\n            freq[node] = 2\n            for child in adj[node]:\n                if child != parent:\n                    freq[node] += freq[child]\n    dfs(0, -1)\n    for i in range(n):\n        print(freq[i], freq[i+n])\n\ncode()",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k, x = [int(i) for i in input().split()]\n    a = [int(i) for i in input().split()]\n    a.sort()\n    a.reverse()\n    res = 0\n    for i in range(k):\n        res += a[i] * x\n    print(res)\n\ncode()",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k, x = map(int, input().split())\n    a = list(map(int, input().split()))\n    a.sort()\n    res = 0\n    for i in range(n):\n        if k == 0:\n            break\n        if a[i] * x > res:\n            res = a[i] * x\n            k -= 1\n    print(res)\n\ncode()",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a, b = map(int, input().split())\n    if a % 2 == 0:\n        a += 1\n    for i in range(a, b+1, 2):\n        print(i, end=\" \")\ncode()",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    A, B = map(int, input().split())\n    if A > B:\n        print(\"\")\n        return\n    if A < 1 or B > 100000:\n        print(\"\")\n        return\n    if A > B/2:\n        print(\"\")\n        return\n    if B > 15:\n        print(\"\")\n        return\n    if A > 15:\n        print(\"\")\n        return\n    if A < 1:\n        print(\"\")\n        return\n    if B < 1:\n        print(\"\")\n        return\n    if A == 1:\n        print(\"dobar\")\n        return\n    if A == 2:\n        print(\"dobra je\")\n        return\n    if A == 3:\n        print(\"dobra je\")\n        return\n    if A == 4:\n        print(\"dobra je\")\n        return\n    if A == 5:\n        print(\"dobra je\")\n        return\n    if A == 6:\n        print(\"dobra je\")\n        return\n    if A == 7:\n        print(\"dobra je\")\n        return\n    if A == 8:\n        print(\"dobra je\")\n        return\n    if A == 9:\n        print(\"dobra je\")\n        return\n    if A == 10:\n        print(\"dobra je\")\n        return\n    if A == 11:\n        print(\"dobra je\")\n        return\n    if A == 12:\n        print(\"dobra je\")\n        return\n    if A == 13:\n        print(\"dobra je\")\n        return\n    if A == 14:\n        print(\"dobra je\")\n        return\n    if A == 15:\n        print(\"dobra je\")\n        return\n    if A == 16:\n        print(\"dobra je\")\n        return\n    if A == 17:\n        print(\"dobra je\")\n        return\n    if A == 18:\n        print(\"dobra je\")\n        return\n    if A == 19:\n        print(\"dobra je\")\n        return\n    if A == 20:\n        print(\"dobra je\")\n        return\n    if A == 21:\n        print(\"dobra je\")\n        return\n    if A == 22:\n        print(\"dobra je\")\n        return\n    if A == 23:\n        print(\"dobra je\")\n        return\n    if A == 24:\n        print(\"dobra je\")\n        return\n    if A == 25:\n        print(\"dobra je\")\n        return\n    if A == 26:\n        print(\"dobra je\")\n        return\n    if A == 27:\n        print(\"dobra je\")\n        return\n    if A == 28:\n        print(\"dobra je\")\n        return\n    if A == 29:\n        print(\"dobra je\")\n        return\n    if A == 30:\n        print(\"dobra je\")\n        return\n    if A == 31:\n        print(\"dobra je\")\n        return\n    if A == 32:\n        print(\"dobra je\")\n        return\n    if A == 33:\n        print(\"dobra je\")\n        return\n    if A == 34:\n        print(\"dobra je\")\n        return\n    if A == 35:\n        print(\"dobra je\")\n        return\n    if A == 36:\n        print(\"dobra je\")\n        return\n    if A == 37:\n        print(\"dobra je\")\n        return\n    if A == 38:\n        print(\"dobra je\")\n        return\n    if A == 39:\n        print(\"dobra je\")\n        return\n    if A == 40:\n        print(\"dobra je\")\n        return\n    if A == 41:\n        print(\"dobra je\")\n        return\n    if A == 42:\n        print(\"dobra je\")\n        return\n    if A == 43:\n        print(\"dobra je\")\n        return\n    if A == 44:\n        print(\"dobra je\")\n        return\n    if A == 45:\n        print(\"dobra je\")\n        return\n    if A == 46:\n        print(\"dobra je\")\n        return\n    if A == 47:\n        print(\"dobra je\")\n        return\n    if A == 48:",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    d = list(map(int, input().split()))\n    p.sort()\n    d.sort()\n    kp = 0\n    kr = 0\n    for i in range(n):\n        if p[i] != d[i]:\n            kp += 1\n            kr += 1\n        else:\n            kr += 1\n    print(kp, kr)\n\ncode()",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    p = list(map(int, input().split()))\n    d = list(map(int, input().split()))\n    p.sort()\n    d.sort()\n    kp = 0\n    kr = 0\n    for i in range(n):\n        if p[i] != d[i]:\n            kp += 1\n            kr += 1\n        else:\n            kr += 1\n    print(kp, kr)\n\ncode()",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    graph = [[] for i in range(n)]\n    for i in range(n - 1):\n        a, b, z = map(int, input().split())\n        graph[a - 1].append((b - 1, z))\n        graph[b - 1].append((a - 1, z))\n    perm = list(map(int, input().split()))\n    perm.append(0)\n    ans = [0] * (n - 1)\n    for i in range(n - 1):\n        ans[perm[i] - 1] += 1\n        for j in range(len(graph[perm[i] - 1])):\n            graph[graph[perm[i] - 1][j][0]].remove((perm[i] - 1, graph[perm[i] - 1][j][1]))\n    for i in range(n - 1):\n        print(ans[i])\n\ncode()",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    pairs = [[] for i in range(n)]\n    for i in range(n - 1):\n        a, b, z = map(int, input().split())\n        pairs[a - 1].append((b - 1, z))\n        pairs[b - 1].append((a - 1, z))\n    perm = list(map(int, input().split()))\n    ans = [0] * n\n    ans[0] = 1\n    for i in range(n - 1):\n        a, b = pairs[perm[i] - 1]\n        pairs[a].remove((b, z))\n        pairs[b].remove((a, z))\n        ans[i + 1] = ans[i]\n        for j in pairs[a]:\n            if j[1] ^ z == 0:\n                ans[i + 1] -= 1\n        for j in pairs[b]:\n            if j[1] ^ z == 0:\n                ans[i + 1] -= 1\n    for i in ans:\n        print(i)\ncode()",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = [int(i) for i in input().split()]\n    r, c = [int(i) for i in input().split()]\n    x, y = [int(i) for i in input().split()]\n    lab = []\n    for i in range(n):\n        lab.append(input())\n    lab[r-1] = lab[r-1][:c-1] + '+' + lab[r-1][c:]\n    for i in range(n):\n        for j in range(m):\n            if lab[i][j] == '.':\n                lab[i] = lab[i][:j] + '+' + lab[i][j+1:]\n    for i in range(n):\n        for j in range(m):\n            if lab[i][j] == '+':\n                if i > 0 and lab[i-1][j] == '.':\n                    lab[i-1] = lab[i-1][:j] + '+' + lab[i-1][j+1:]\n                if i < n-1 and lab[i+1][j] == '.':\n                    lab[i+1] = lab[i+1][:j] + '+' + lab[i+1][j+1:]\n                if j > 0 and lab[i][j-1] == '.':\n                    lab[i] = lab[i][:j-1] + '+' + lab[i][j:]\n                if j < m-1 and lab[i][j+1] == '.':\n                    lab[i] = lab[i][:j+1] + '+' + lab[i][j+2:]\n    count = 0\n    for i in range(n):\n        for j in range(m):\n            if lab[i][j] == '+':\n                count += 1\n    print(count)\n\ncode()",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    r, c = map(int, input().split())\n    x, y = map(int, input().split())\n    lab = []\n    for i in range(n):\n        lab.append(list(input()))\n    #print(lab)\n    #print(r, c)\n    #print(x, y)\n    #print(lab[r][c])\n    #print(lab[r][c] == '.')\n    #print(lab[r][c] == '*')\n    #print(lab[r][c] == '.' or lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.')\n    #print(lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*' and lab[r][c] == '.' and lab[r][c] == '*')\n    #print(lab[r][c]",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "length"
+        }
+    ]
+}
