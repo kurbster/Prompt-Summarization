@@ -33,13 +33,8 @@ def get_result_dict(dir_list):
         with open(result_file) as f:
             result_obj = json.load(f)
 
-        logger.info(f'len of paths {len(test_paths)}')
-        logger.info(f'test file {test_file}')
-        logger.info(f'res file {result_file}')
         #generate result dict
         for ind, test_path in enumerate(test_paths):
-            logger.info(f'ind == {ind}')
-            logger.info(f'test path == {test_path}')
             path = split_prob(test_path)
             logger.info(f"Adding result path: {path}")
             result_dict[path] = result_obj[str(ind)][0]

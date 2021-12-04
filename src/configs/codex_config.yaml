@@ -3,13 +3,13 @@ header: "Python 3\n"
 # Only used if numPrompts < len(promptFile)
 # Also, allows only human generated problems for few shotting.
 humanOnly: True
-promptFile: human_probs.txt
+promptFile: gpt_generated.txt
 # numPrompts is the number of prompts to generate code for
 # if numPrompts == -1 then we use all prompts in promptFile
 numPrompts: -1
 # numExamples is the number of examples prepended to each example
 numExamples: 0
-summaryType: summary
+summaryType: expert
 includeOrig: True  # If True then we will test the original prompt as well
 # Codex achieves better results when formatting prompt as docstring
 promptPrefix: "\"\"\""
