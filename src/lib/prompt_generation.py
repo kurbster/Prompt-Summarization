@@ -150,6 +150,11 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True, ignore_tra
         available_probs -= set(range(5000))
         logger.info('Ignoring training problems.')
 
+    # This is limiting the number of examples we will generate with GPT.
+    # There are 250 competitive and 250 interview available.
+    available_probs -= set(range(8000, 8761))
+    available_probs -= set(range(5000, 7785))
+
     def get_num(x):
         num = int(os.path.basename(x))
         if 'test' in x:
@@ -160,7 +165,8 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True, ignore_tra
     available_probs -= probs
 
     logger.debug(f'There are {len(available_probs)} remaining problems to summarize.')
-
+    if len(available_probs) == 0:
+        raise BaseException("There are no more problems!")
     available_probs = list(available_probs)
     prob_to_summarize = random.choice(available_probs)
 

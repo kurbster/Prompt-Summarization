@@ -1,7 +1,7 @@
 header: ""
 splitFile: prompt_split.txt
 promptFile: prompt_category.yaml
-numPrompts: 3
+numPrompts: 2
 summaryType: expert
 ignoreIntro: True
 originalPrefix: ""
@@ -9,11 +9,12 @@ summaryPrefix: "tl;dr: "
 fewShotSuffix: "\n\n"
 
 apiParams:
-    engine: "ada"
+    engine: "davinci"
     temperature: 0.05
-    max_tokens: 500
+    max_tokens: 348
     top_p: 1.0
     frequency_penalty: 0.01
     presence_penalty: 0.05
     stop:
         - "\n\n"
+        - "tl;dr:"

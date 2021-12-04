@@ -63,12 +63,12 @@ def compare_results(results):
     for k1, v1 in itr:
         _, v2 = next(itr)
         # Check which prompt in the pair is the summary.
-        if k1.endswith('expert.txt'):
-            summary = v1
-            original = v2
-        else:
+        if k1.endswith('question.txt'):
             summary = v2
             original = v1
+        else:
+            summary = v1
+            original = v2
 
         # The len is different if one had a -2 error.
         if len(original) < len(summary):
