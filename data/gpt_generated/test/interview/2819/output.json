@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDX72wC4G8XRSvkwFx1ckYVdnvuh",
+    "id": "cmpl-4BqD8XwX3Ik26k9hzoDPzq9UBhdO5",
     "object": "text_completion",
-    "created": 1638578977,
+    "created": 1638727654,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You need to help Alice determine her optimal outcome. ",
+            "text": " Alice and Bob are playing a game of Chaos. Alice has a single piece left on the board and there are only two turns left. Alice must capture Bob's piece in her turn or teleport her piece to a cell that Bob cannot capture in his turn. Otherwise Bob will be able to win by capturing Alice's piece, no matter what she does in her turn. Help Alice determine her optimal outcome. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

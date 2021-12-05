@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDkD4xRzI8KEFRa2zPEQNn8D3ZZI",
+    "id": "cmpl-4Br2qWtYDZQ4gNr9xKfhzZrOn8I30",
     "object": "text_completion",
-    "created": 1638579789,
+    "created": 1638730860,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a set of operations, find the number of ways to choose a string of length n to be able to get a one-letter string \"a\".",
+            "text": " You are given a set of q possible operations. Limak can perform them in any order, any operation may be applied any number of times. The i-th operation is described by a string a_{i} of length two and a string b_{i} of length one. No two of q possible operations have the same string a_{i}. When Limak has a string s he can perform the i-th operation on s if the first two letters of s match a two-letter string a_{i}. Performing the i-th operation removes first two letters of s and inserts there a string b_{i}. See the notes section for further clarification. You may note that performing an operation decreases the length of a string s exactly by 1. Also, for some sets of operations there may be a string that cannot be compressed any further, because the first two letters don't match any a_{i}. Limak wants to start with a string of length n and perform n - 1 operations to finally get a one-letter string \"a\". In how many ways can he choose the starting string to be able to get \"a\"  Remember that Limak can use only letters he knows. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

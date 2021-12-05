@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDyTdB7Rfn0nVCWpnatvjnjtWHlh",
+    "id": "cmpl-4BqPzhLioKxMa3Ly2KJAQNR1BU7KO",
     "object": "text_completion",
-    "created": 1638580673,
+    "created": 1638728451,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have a list of materials that you need to craft. You can craft some of the materials using other materials. You need to know how many of each material you need to craft. ",
+            "text": " Yraglac has a list of materials that he needs, but would also like to know how many lower tier materials he would need if he wanted to take advantage of the crafting recipes. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

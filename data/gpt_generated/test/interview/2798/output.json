@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDpNWSU2tZC3MScNgu29oKHnPlNs",
+    "id": "cmpl-4BqOeFGZPFaSg1QtTpsBgwd8pk5do",
     "object": "text_completion",
-    "created": 1638580109,
+    "created": 1638728368,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " The players take turns making a move. The winner is the player that removes the last cuboid. ",
+            "text": " You need to write a program that takes in a state of a game (a cuboid with three planes) and outputs who would win if both players played optimally. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDNqM3e2nllxagUOV668UvZ9T2hA",
+    "id": "cmpl-4BqeKYhnvzogvBXN7D985UtSP0yNL",
     "object": "text_completion",
-    "created": 1638578402,
+    "created": 1638729340,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given $n$, $e$ and $d$. Find the minimum number of rubles Andrew can get after buying dollar and euro bills.",
+            "text": " Andrew has $n$ rubles left, and would like to exchange them to euro and dollar bills. He can mix dollar bills and euro bills in whatever way he wants. The price of one dollar is $d$ rubles, and one euro costs $e$ rubles. Recall that there exist the following dollar bills: $1$, $2$, $5$, $10$, $20$, $50$, $100$, and the following euro bills $5$, $10$, $20$, $50$, $100$, $200$. Andrew can buy any combination of bills, and his goal is to minimize the total number of rubles he will have after the exchange. Help him write a program that given integers $n$, $e$ and $d$, finds the minimum number of rubles Andrew can get after buying dollar and euro bills.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

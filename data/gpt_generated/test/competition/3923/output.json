@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE5nioycRw2lwJreH3xUvBPJSOwB",
+    "id": "cmpl-4Bqash0OrI4yRA9y4G0VEoEZMvguS",
     "object": "text_completion",
-    "created": 1638581127,
+    "created": 1638729126,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " For a permutation P[1... N] of integers from 1 to N, function f is defined as follows: $f(i, j) = \\left\\{\\begin{array}{ll}{P [ i ]} & {\\text{if} j = 1} \\\\{f(P [ i ], j - 1)} & {\\text{otherwise}} \\end{array} \\right.$ Let g(i) be the minimum positive integer j such that f(i, j) = i. We can show such j always exists. For given N, A, B, find a permutation P of integers from 1 to N such that for 1   i   N, g(i) equals either A or B. ",
+            "text": " Given a permutation P[1... N] of integers from 1 to N, function f is defined as follows: $f(i, j) = \\left\\{\\begin{array}{ll}{P [ i ]} & {\\text{if} j = 1} \\\\{f(P [ i ], j - 1)} & {\\text{otherwise}} \\end{array} \\right.$ Let g(i) be the minimum positive integer j such that f(i, j) = i. Find a permutation P of integers from 1 to N such that for 1   i   N, g(i) equals either A or B.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

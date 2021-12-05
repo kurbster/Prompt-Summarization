@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDYnZuQJ3HBBxezVE66uDxUtX5wg",
+    "id": "cmpl-4Br53A6Jq8z9DfZddtcHg7Ev79lGR",
     "object": "text_completion",
-    "created": 1638579081,
+    "created": 1638730997,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given the layout of a social network and an initial infection site, you need to determine how many squawks are made at some given time $t$. In the above example the number of squawks would be 2, 4 and 10 at times 1, 2 and 3, respectively.",
+            "text": " You are given a social network and an initial infection site. You need to determine how many squawks are made at some given time $t$. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

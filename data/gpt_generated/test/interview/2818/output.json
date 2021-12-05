@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE2NiEF4CBzdlnXo3I4xqc4wIAY2",
+    "id": "cmpl-4Bqrpim9pdPWJoXICqvFdW3bzoRd0",
     "object": "text_completion",
-    "created": 1638580915,
+    "created": 1638730177,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a number of balloons and a number of arrows. You have to pop all the balloons using as few arrows as possible.",
+            "text": " There are $N$ balloons floating in the air in a large room, lined up from left to right. Young Perica likes to play with arrows and practice his hunting abilities. He shoots an arrow from the left to the right side of the room from an arbitrary height he chooses. The arrow moves from left to right, at a chosen height $H$ until it finds a balloon. The moment when an arrow touches a balloon, the balloon pops and disappears and the arrow continues its way from left to right at a height decreased by $1$. Therefore, if the arrow was moving at height $H$, after popping the balloon it travels on height $H-1$. Our hero s goal is to pop all the balloons using as little arrows as possible.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

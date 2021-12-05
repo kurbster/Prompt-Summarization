@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDbFs53Np1CymgJOQhaxVpTrTRaz",
+    "id": "cmpl-4Bqc1MpND5BMoSgBiGK7SJD2jsrHS",
     "object": "text_completion",
-    "created": 1638579233,
+    "created": 1638729197,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have a constant strength $s$, and a decreasing energy reserve $e$. For each lift, you may choose any positive (not necessarily integer) weight $w$ to attempt. If $s \\ge w$, the lift succeeds and your energy goes down by $e_{\\text {success}}$; if $s < w$, the lift fails and your energy goes down by $e_{\\text {failure}}$. You may continue attempting lifts as long as $e > 0$. If at any point $e \\le 0$, you can make no further attempts. Your score is the maximum weight you successfully lift or $0$ if every attempt failed. Ideally, you should lift exactly at your strength limit. However, you do not know your strength $s$. You only know that you can definitely lift the empty bar ($25\\text { kg}$), and that the maximum conceivable lift is $225\\text { kg}$. How close to an optimal score can you guarantee  That is, what s the smallest $d$ for which you can ensure a score of at least $s-d$  For example, suppose $e = 4$, $e_{\\text {success}} = 1$ and $e_{\\text {failure}} = 2$. You try to lift $200\\text { kg}$ and fail. Now, $e = 2$. You try $100\\text { kg}$ and succeed. Now, $e = 1$. You try $150\\text { kg}$ and succeed. Now, $e = 0$ and you must stop. You know that you can lift $150\\text { kg}$, but you cannot lift $",
+            "text": " In competitive weightlifting, you must perform a sequence of lifts. You have a constant strength $s$, and a decreasing energy reserve $e$. For each lift, you may choose any positive (not necessarily integer) weight $w$ to attempt. If $s \\ge w$, the lift succeeds and your energy goes down by $e_{\\text {success}}$; if $s < w$, the lift fails and your energy goes down by $e_{\\text {failure}}$. You may continue attempting lifts as long as $e > 0$. If at any point $e \\le 0$, you can make no further attempts. Your score is the maximum weight you successfully lift or $0$ if every attempt failed. Ideally, you should lift exactly at your strength limit. However, you do not know your strength $s$. You only know that you can definitely lift the empty bar ($25\\text { kg}$), and that the maximum conceivable lift is $225\\text { kg}$. How close to an optimal score can you guarantee  That is, what s the smallest $d$ for which you can ensure a score of at least $s-d$  For example, suppose $e = 4$, $e_{\\text {success}} = 1$ and $e_{\\text {failure}} = 2$. You try to lift $200\\text { kg}$ and fail. Now, $e = 2$. You try $100\\text { kg}$ and succeed. Now, $e = 1$. You try $150\\text { kg}$ and succeed. Now, $e = 0$ and you must stop. You know that you can lift",
             "index": 0,
             "logprobs": null,
             "finish_reason": "length"

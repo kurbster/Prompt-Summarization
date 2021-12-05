@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDfgZo6BH8w7SfKY4YGDDQKHsL7d",
+    "id": "cmpl-4Br3q2CW4EJ2QF8JQZw1S9pm9MA2v",
     "object": "text_completion",
-    "created": 1638579508,
+    "created": 1638730922,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a dice with m faces. Each face contains a dot. The probability of getting a dot on a face is $\\frac{1}{m}$. You are supposed to calculate the expected maximum number of dots you could get after tossing the dice n times. ",
+            "text": " Given a dice with m faces, each face has probability of 1/m of appearing. Calculate the expected maximum number of dots you could get after tossing the dice n times. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

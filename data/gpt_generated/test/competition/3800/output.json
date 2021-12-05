@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDWysfM9z9jqiYzolMMeZOhyHH6a",
+    "id": "cmpl-4BqL2i21I0n08Zj7Zk0DzePsprZg6",
     "object": "text_completion",
-    "created": 1638578968,
+    "created": 1638728144,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a string of decimal digits, find the number of rectangles in a matrix such that the sum of all cells in the rectangle equals a. ",
+            "text": " You have a string of decimal digits s. Let's define b_{ij} = s_{i} s_{j}. Find in matrix b the number of such rectangles that the sum b_{ij} for all cells (i, j) that are the elements of the rectangle equals a in each rectangle. A rectangle in a matrix is a group of four integers (x, y, z, t) (x   y, z   t). The elements of the rectangle are all cells (i, j) such that x   i   y, z   j   t.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

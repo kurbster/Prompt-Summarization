@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDTmUQ7QbPXf2G4ryIsLYbqTbPMQ",
+    "id": "cmpl-4BqrKpJenlfe2oovvPMj3oFyTTEx1",
     "object": "text_completion",
-    "created": 1638578770,
+    "created": 1638730146,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Two kingdoms had been at war for a long time, until the emperor intervened to bring an end to the conflict. The territory in question comprises an $M$ by $N$ rectangular grid. At the emperor s insistence, the two kings have withdrawn their troops until no two opposing troops are in adjacent squares of the map (adjacent being horizontal or vertical   diagonal is not considered). The emperor proposes to designate certain squares of the map as neutral territory. Neither king will be allowed to move troops into those squares, and the emperor s own forces will patrol them to be sure that both kings observe these rules. The emperor is frugal and does not want to commit more soldiers to this effort than absolutely necessary. His generals have marked each square of the map with the number of soldiers required to secure that square. What remains is to choose which of those squares should be patrolled. Write a program to determine the minimum number of soldiers that the emperor will need to be deploy to guarantee that the troops of one kingdom cannot move, in one or more steps, into squares occupied by the troops of the second kingdom (moving horizontally or vertically) without encountering the emperor s own soldiers.",
+            "text": " You are given a map of an $M$ by $N$ rectangular grid. At the emperor s insistence, the two kings have withdrawn their troops until no two opposing troops are in adjacent squares of the map (adjacent being horizontal or vertical   diagonal is not considered). The emperor proposes to designate certain squares of the map as neutral territory. Neither king will be allowed to move troops into those squares, and the emperor s own forces will patrol them to be sure that both kings observe these rules. The emperor is frugal and does not want to commit more soldiers to this effort than absolutely necessary. His generals have marked each square of the map with the number of soldiers required to secure that square. What remains is to choose which of those squares should be patrolled. Determine the minimum number of soldiers that the emperor will need to be deploy to guarantee that the troops of one kingdom cannot move, in one or more steps, into squares occupied by the troops of the second kingdom (moving horizontally or vertically) without encountering the emperor s own soldiers. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

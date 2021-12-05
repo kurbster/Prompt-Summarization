@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDjH0YtDfhiXhCwkZxfTD8tboWJc",
+    "id": "cmpl-4BqKbCxsZOjOXFioh5mSoeRvHHJbT",
     "object": "text_completion",
-    "created": 1638579731,
+    "created": 1638728117,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Your task is to write a function that does just what the title suggests with an array/list/vector of integers and the expected number n of smallest elements to return. ",
+            "text": " Dora loves adventures quite a lot. During some journey she encountered an amazing city, which is formed by $n$ streets along the Eastern direction and $m$ streets across the Southern direction. Naturally, this city has $nm$ intersections. At any intersection of $i$-th Eastern street and $j$-th Southern street there is a monumental skyscraper. Dora instantly became curious and decided to explore the heights of the city buildings. When Dora passes through the intersection of the $i$-th Eastern and $j$-th Southern street she examines those two streets. After Dora learns the heights of all the skyscrapers on those two streets she wonders: how one should reassign heights to the skyscrapers on those two streets, so that the maximum height would be as small as possible and the result of comparing the heights of any two skyscrapers on one street wouldn't change. Formally, on every of $nm$ intersections Dora solves an independent problem. She sees $n + m - 1$ skyscrapers and for each of them she knows its real height. Moreover, any two heights can be compared to get a result \"greater\", \"smaller\" or \"equal\". Now Dora wants to select some integer $x$ and assign every skyscraper a height from $1$ to $x$. When assigning heights, Dora wants to preserve the relative order of the skyscrapers in both streets. That is, the result of any comparison of heights of two skyscrapers in the current Eastern street shouldn't change and the result of any comparison of heights of two skyscrapers in current Southern street shouldn't change as well. Note that skyscrapers",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDlyVbs6vxtFod0YxLry0Rb15F33",
+    "id": "cmpl-4BppSgUM6hOJUjLLYWdxqLfmctWJ7",
     "object": "text_completion",
-    "created": 1638579898,
+    "created": 1638726186,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Angela is a new PhD student and she is nervous about the upcoming paper submission deadline of this year's research conference. She has been working on multiple projects throughout the past year. Luckily most of the projects concluded successfully, and she came up with $n$ candidate papers. However not all of the papers were born equal some have better results than others. Her advisor believes she should only submit the papers with good enough results so they have a high chance of getting accepted. Angela's research group has a unique way of evaluating the success of paper submissions. They use the research productivity index, defined as $a^{a/s}$, where $s$ is the total number of papers submitted, and $a$ is the number of papers that are accepted by the conference. When $a = 0$, the index is defined to be zero. For example: - if one paper is submitted and it gets accepted, the index is $1^{1/1} = 1$; - if $4$ papers are submitted and all get accepted, the index is $4^{4/4} = 4$; - if $10$ papers are submitted and $3$ get accepted, the index is $3^{3/10} \\approx 1.390389$; - if $5$ papers are submitted and $4$ get accepted, the index is $4^{4/5} \\approx 3.031433$; - if $3$ papers are submitted and all get rejected ($a=0$), the index is $0$. Intuitively, to get a high research productivity index one wants to get as many papers accepted as possible while keeping the acceptance rate high. For each of her",
+            "text": " You are given a number $n$ and a list of $n$ numbers. You need to output the maximum expected value of the research productivity index. ",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "length"
+            "finish_reason": "stop"
         }
     ]
 }

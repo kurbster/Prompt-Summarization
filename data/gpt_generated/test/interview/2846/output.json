@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDygcNmUDZSyWVFLpVqpbupCXBQz",
+    "id": "cmpl-4BqC1dRWzILufKl9DLDGSXWQy4fnw",
     "object": "text_completion",
-    "created": 1638580686,
+    "created": 1638727585,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " In research, it is tough to determine how good of a researcher you are. One way that people determine how good you are is by looking at your $H$-Index. Each paper has a certain number of citations. Your $H$-Index is the largest number $H$ such that you have $H$ papers with at least $H$ citations. Given the number of citations on each paper you have written, what is your $H$-Index  ",
+            "text": " You are given the number of citations on each paper you have written. What is your $H$-Index? ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

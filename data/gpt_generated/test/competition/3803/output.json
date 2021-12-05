@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDX0FQN4WkMvlLJ0izR3ITrH5bFe",
+    "id": "cmpl-4BqCXB6mJsojNU8MbJIf4HZNa3JlM",
     "object": "text_completion",
-    "created": 1638578970,
+    "created": 1638727617,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " A monster is attacking the Cyberland! Master Yang, a braver, is going to beat the monster. Yang and the monster each have 3 attributes: hitpoints (HP), offensive power (ATK) and defensive power (DEF). During the battle, every second the monster's HP decrease by max(0, ATK_{Y} - DEF_{M}), while Yang's HP decreases by max(0, ATK_{M} - DEF_{Y}), where index Y denotes Master Yang and index M denotes monster. Both decreases happen simultaneously Once monster's HP   0 and the same time Master Yang's HP > 0, Master Yang wins. Master Yang can buy attributes from the magic shop of Cyberland: h bitcoins per HP, a bitcoins per ATK, and d bitcoins per DEF. Now Master Yang wants to know the minimum number of bitcoins he can spend in order to win.",
+            "text": " A monster is attacking the Cyberland! Master Yang, a braver, is going to beat the monster. Yang and the monster each have 3 attributes: hitpoints (HP), offensive power (ATK) and defensive power (DEF). During the battle, every second the monster's HP decrease by max(0, ATK_{Y} - DEF_{M}), while Yang's HP decreases by max(0, ATK_{M} - DEF_{Y}), where index Y denotes Master Yang and index M denotes monster. Both decreases happen simultaneously Once monster's HP ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

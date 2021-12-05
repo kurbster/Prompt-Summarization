@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDYudbJYD10CpZYwvTU8le072aGF",
+    "id": "cmpl-4BpnHHK8AcUNYEXcqz5vdeQRswvyV",
     "object": "text_completion",
-    "created": 1638579088,
+    "created": 1638726051,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a grid of zones, find the distance from a residential zone to the closest commercial zone. ",
+            "text": " Given a $n\\times n$ grid of square zones, each zone is labeled 1 (residential), 2 (industrial), or 3 (commercial). When travelling from one zone to another you are allowed to move north, east, south or west, and the distance travelled is the number of zone boundaries you traverse. So the distance between two adjacent zones is $1$, and the distance from the zone in square $(1,1)$ (the most south-westerly zone) to the zone in square $(2,3)$ is $3$ (one step east and two steps north). You may never move off the grid. Your task is to find the longest distance one has to travel from a residential zone to get to the commercial zone closest to that residential zone. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDdKcwGF35kJC8AQ3YJ9smBgF9Z5",
+    "id": "cmpl-4Bpmbm7SFibk63drVNS4l4kw6fw2V",
     "object": "text_completion",
-    "created": 1638579362,
+    "created": 1638726009,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a number $n$. Is there a number $m$ that powers itself up to $n$ ",
+            "text": " You are given a number $n$. Find a number $x$ such that $x^x$ is $n$. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

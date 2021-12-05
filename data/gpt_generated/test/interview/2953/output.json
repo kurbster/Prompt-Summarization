@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDMLKnlLxuV7wSU6C5FZk6kk7o31",
+    "id": "cmpl-4BqBiZe7mRe2n5kioY2cfplAPkzbL",
     "object": "text_completion",
-    "created": 1638578309,
+    "created": 1638727566,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a plotter that plots an intricate pattern of $n$ dots on the paper. In step two, the picture in the greeting emerges when the plotter connects by a straight segment each pair of dots that are exactly $2018$ length units apart. The plotter uses a special holographic ink, which has a limited supply. Find the number of all plotted segments in the picture to be sure that there is enough ink to complete the job. ",
+            "text": " You have a plotter that can plot an intricate pattern of $n$ dots on the paper. In step two, the picture in the greeting emerges when the plotter connects by a straight segment each pair of dots that are exactly $2018$ length units apart. The plotter uses a special holographic ink, which has a limited supply. You need to find out the number of all plotted segments in the picture to be sure that there is enough ink to complete the job.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

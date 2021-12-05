@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDO4ppqSP7K3OPFBeLcxG01fD7Py",
+    "id": "cmpl-4BqWW5LjmYe3PBOxndNrGduRb7OJn",
     "object": "text_completion",
-    "created": 1638578416,
+    "created": 1638728856,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a number $n$, a number system base $k$ and a digit $d$, determine if the last digit of the number written in the number system with base $k$ is $d$. ",
+            "text": " You are given $n$ banknote denominations on Mars: the value of $i$-th banknote is $a_i$. Natasha has an infinite number of banknotes of each denomination. Martians have $k$ fingers on their hands, so they use a number system with base $k$. In addition, the Martians consider the digit $d$ (in the number system with base $k$) divine. Thus, if the last digit in Natasha's tax amount written in the number system with the base $k$ is $d$, the Martians will be happy. Unfortunately, Natasha does not know the Martians' divine digit yet. Determine for which values $d$ Natasha can make the Martians happy. Natasha can use only her banknotes. Martians don't give her change. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

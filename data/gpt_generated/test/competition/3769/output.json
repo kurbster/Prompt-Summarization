@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDydEqysl4nBndlhDU7Dwx4KrKih",
+    "id": "cmpl-4Br3l6G6JtmrTPWXyV4f0Ey1ix3fw",
     "object": "text_completion",
-    "created": 1638580683,
+    "created": 1638730917,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a functional equation for some function $f : \\{0,1,2, \\cdots, p - 1 \\} \\rightarrow \\{0,1,2, \\cdots, p - 1 \\}$. Kevin wants to know how many distinct functions $f$ satisfy this equation. ",
+            "text": " You are given a function $f : \\{0,1,2, \\cdots, p - 1 \\} \\rightarrow \\{0,1,2, \\cdots, p - 1 \\}$. Find the number of distinct functions $f$ that satisfy the equation $f(k x \\operatorname{mod} p) \\equiv k \\cdot f(x) \\operatorname{mod} p$ for all integers x in the range 0 to p - 1, inclusive. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

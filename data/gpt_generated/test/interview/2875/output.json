@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDXBR8C73ApOqGpJdfdJbxaVd2fO",
+    "id": "cmpl-4BpmKFledgI0SOyIyTyGkH7BzPBJg",
     "object": "text_completion",
-    "created": 1638578981,
+    "created": 1638725992,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a list of cards sorted by their rarity, find the batch of cards that can be reversed to restore the order of the cards into non-decreasing order of their rarity.",
+            "text": " You have a collection of cards which are ordered by their rarity. Someone has touched your collection and some of the cards are out of order. The most natural suspect is your little brother Billy, who was absolutely forbidden from playing with your cards. After a few minutes of interrogation Billy confesses that he indeed took a few consecutive cards from the middle of the stack, but he swears that he put them back in exactly the same order as they were. You suspect that Billy, being so young, may have simply mistakenly reversed the order of the cards that he took. Now you want to check your theory and decide if you can find the batch of cards that Billy took to play with. Is it possible to restore the order of the cards into non-decreasing order of their rarity by reversing just one contiguous batch of cards? ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

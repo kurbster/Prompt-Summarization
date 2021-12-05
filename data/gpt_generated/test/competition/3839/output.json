@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDaYWYSJTqY3mWCogxL4Mg7ldhcO",
+    "id": "cmpl-4Bq4aJqaknWUedTMWawvfbVTNWJUt",
     "object": "text_completion",
-    "created": 1638579190,
+    "created": 1638727124,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a chessboard with n rows and n columns, place n knights on the board such that in the end there are at least n2/10 knights. ",
+            "text": " You are given $n$, the number of knights. You are also given that there is a free cell which is under attack of at least $4$ knights. You are asked to find the initial placement of exactly $n$ knights such that in the end there will be at least $\\lfloor \\frac{n^{2}}{10} \\rfloor$ knights. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

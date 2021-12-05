@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDeGEMiccs8KgZDLk7mFLp2cQnNA",
+    "id": "cmpl-4BqC4bRNPWoSz8CerIlCpn42dgzFN",
     "object": "text_completion",
-    "created": 1638579420,
+    "created": 1638727588,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have to choose two adjacent elements from the given array and replace one of them with gcd(x, y). \n",
+            "text": " You have an array a with length n, you can perform operations. Each operation is like this: choose two adjacent elements from a, say x and y, and replace one of them with gcd(x, y), where gcd denotes the greatest common divisor. What is the minimum number of operations you need to make all of the elements equal to 1 ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

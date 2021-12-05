@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDdw3kYjCnSpmwy4agiyE895hA83",
+    "id": "cmpl-4BqehT3HWeVRONhZ8Umg7zcOjR7UB",
     "object": "text_completion",
-    "created": 1638579400,
+    "created": 1638729363,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a network of cities connected by roads, the amount it costs to buy gas for traveling between pairs of cities, and a list of available flights between some of those cities. Help Peter by finding the minimum amount of money he needs to spend to get from his hometown to next year's destination! ",
+            "text": " Peter returned from the recently held ACM ICPC World Finals only to find that his return flight was overbooked and he was bumped from the flight! Well, at least he wasn t beat up by the airline and he s received a voucher for one free flight between any two destinations he wishes. He is already planning next year s trip. He plans to travel by car where necessary, but he may be using his free flight ticket for one leg of the trip. He asked for your help in his planning. He can provide you a network of cities connected by roads, the amount it costs to buy gas for traveling between pairs of cities, and a list of available flights between some of those cities. Help Peter by finding the minimum amount of money he needs to spend to get from his hometown to next year s destination! ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

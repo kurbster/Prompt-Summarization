@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDP2iVZRtw6dqpNXN2e2R5pbAagn",
+    "id": "cmpl-4BpnfsNnUnDyHbw12CmWdRr7zaTGY",
     "object": "text_completion",
-    "created": 1638578476,
+    "created": 1638726075,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Fox Ciel is playing a card game with her friend Jiro. Jiro has n cards, each one has two attributes: position (Attack or Defense) and strength. Fox Ciel has m cards, each one has these two attributes too. It's known that position of all Ciel's cards is Attack. Now is Ciel's battle phase, Ciel can do the following operation many times: ",
+            "text": " Fox Ciel is playing a card game with her friend Jiro. Jiro has n cards, each one has two attributes: position (Attack or Defense) and strength. Fox Ciel has m cards, each one has these two attributes too. It's known that position of all Ciel's cards is Attack. Now is Ciel's battle phase, Ciel can do the following operation many times:  Choose one of her cards X. This card mustn't be chosen before.  If Jiro has no alive cards at that moment, he gets the damage equal to (X's strength). Otherwise, Ciel needs to choose one Jiro's alive card Y, then:   If Y's position is Attack, then (X's strength)     (Y's strength) must hold. After this attack, card Y dies, and Jiro gets the damage equal to (X's strength) - (Y's strength).  If Y's position is Defense, then (X's strength)  >  (Y's strength) must hold. After this attack, card Y dies, but Jiro gets no damage.   Ciel can end her battle phase at any moment (so, she can use not all her cards). Help the Fox to calculate the maximal sum of damage Jiro can get.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

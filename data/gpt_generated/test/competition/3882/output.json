@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BE4oN2NwuObKRfMwGHxnchf4lrJ5",
+    "id": "cmpl-4BpmsncIgPAOtcW8cNxEGc91112dL",
     "object": "text_completion",
-    "created": 1638581066,
+    "created": 1638726026,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Count the number of binary relations over a set of size n such that they are symmetric, transitive, but not an equivalence relations (i.e. they are not reflexive). Since their number may be very large (not 0, according to Little Johnny), print the remainder of integer division of this number by 10^9 + 7. ",
+            "text": " Little Johnny has recently learned about set theory. Now he is studying binary relations. You've probably heard the term \"equivalence relation\". These relations are very important in many areas of mathematics. For example, the equality of the two numbers is an equivalence relation. A set   of pairs (a, b) of elements of some set A is called a binary relation on set A. For two elements a and b of the set A we say that they are in relation  , if pair $(a, b) \\in \\rho$, in this case we use a notation $a \\stackrel{\\rho}{\\sim} b$. Binary relation is equivalence relation, if: It is reflexive (for any a it is true that $a \\stackrel{\\rho}{\\sim} a$); It is symmetric (for any a, b it is true that if $a \\stackrel{\\rho}{\\sim} b$, then $b \\stackrel{\\rho}{\\sim} a$); It is transitive (if $a \\stackrel{\\rho}{\\sim} b$ and $b \\stackrel{\\rho}{\\sim} c$, than $a \\stackrel{\\rho}{\\sim} c$). Little Johnny is not completely a fool and he noticed that the first condition is not necessary! Here is his \"proof\": Take any two elements, a and b. If $a \\stackrel{\\rho}{\\sim} b$, then $b \\stackrel{\\rho}{\\sim} a$ (according to property (2)), which means $a \\stackrel{\\rho}{\\sim",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

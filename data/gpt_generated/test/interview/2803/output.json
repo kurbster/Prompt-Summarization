@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDwCUSFAOjflY2oo7zORJnGMY4mB",
+    "id": "cmpl-4BqZy1RwH47XAdVeK2ORdHZPWU5ql",
     "object": "text_completion",
-    "created": 1638580532,
+    "created": 1638729070,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are playing a game in which a group of players take turns saying animal names. The animal name you say when it is your turn must start with the same letter as the previously said animal ends with and it must not have been said previously in this round of the game. If there is no valid name or you cannot come up with one you are eliminated.  Given the last animal name said before your turn and a list of all names not yet used, can you make it through this turn  If so, can you make sure to eliminate the next player ",
+            "text": " You are playing a game in which a group of players take turns saying animal names. The animal name you say when it is your turn must start with the same letter as the previously said animal ends with and it must not have been said previously in this round of the game. If there is no valid name or you cannot come up with one you are eliminated. Given the last animal name said before your turn and a list of all names not yet used, can you make it through this turn If so, can you make sure to eliminate the next player ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

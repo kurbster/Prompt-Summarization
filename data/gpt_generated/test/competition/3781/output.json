@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDLjLSrpVEtrzO1kr9YaY5z8oiLR",
+    "id": "cmpl-4BqQnrhfGe4V45IYOfVtf7W2JCSRY",
     "object": "text_completion",
-    "created": 1638578271,
+    "created": 1638728501,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Two players play a game. Each player can choose one of the following two moves: - When one or more bags contain coins: Choose one bag that contains coin(s) and one dish, then move all coins in the chosen bag onto the chosen dish. (The chosen dish may already have coins on it, or not.) - When no bag contains coins: Choose one dish with coin(s) on it, then remove one or more coins from the chosen dish. The player who first becomes unable to make a move loses. Determine the winner of the game when the two players play optimally. You are given T test cases. Solve each of them.",
+            "text": " We have N bags numbered 1 through N and N dishes numbered 1 through N. Bag i contains a_i coins, and each dish has nothing on it initially. Taro the first and Jiro the second will play a game against each other. They will alternately take turns, with Taro the first going first. In each player's turn, the player can make one of the following two moves:   - When one or more bags contain coin(s): Choose one bag that contains coin(s) and one dish, then move all coins in the chosen bag onto the chosen dish. (The chosen dish may already have coins on it, or not.)  - When no bag contains coins: Choose one dish with coin(s) on it, then remove one or more coins from the chosen dish. The player who first becomes unable to make a move loses. Determine the winner of the game when the two players play optimally.   ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

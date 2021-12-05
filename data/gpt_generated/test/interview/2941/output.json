@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDbrKlhAsKn8YQNJjvgM3aAzu7uY",
+    "id": "cmpl-4BqLFA9rSSDtDBFbmpZsptg3SrJkN",
     "object": "text_completion",
-    "created": 1638579271,
+    "created": 1638728157,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You work at a clinic. The clinic factors in the waiting time when selecting patients to treat next. This approach was adopted to prevent patients from having to wait too long before being treated. Your task is to help the clinic perform $3$ types of queries: - Process a patient arrival to the clinic. The patient will have an arrival time $T$, a name $M$, and a severity $S$ that is accessed automatically by scanners at the entrance. - At time $T$, the doctor is ready to treat a patient. Every time this happens, the clinic will calculate priority values for every patient waiting in the clinic, and the patient with the highest priority value will be treated first. The priority value is computed as the following sum\\[ S + K \\cdot W \\] where $S$ is the severity value of the patient, $K$ is the constant that the clinic uses, and $W$ is the total time the patient has been waiting in the clinic. If there are multiple patients with that value, the patient with the lexicographically smallest name is treated next. Your program will announce the name of that patient. - At time $T$, the clinic receives a notification stating that, due to unfortunate circumstances, a patient with name $M$ has left the queue permanently. If no patient with name $M$ exists in the queue, it is always a false alarm and will be ignored by the clinic. Otherwise, the notification is guaranteed to be valid and should be processed accordingly.",
+            "text": " You work at a clinic. The clinic factors in the waiting time when selecting patients to treat next. This approach was adopted to prevent patients from having to wait too long before being treated. Your task is to help the clinic perform 3 types of queries: ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

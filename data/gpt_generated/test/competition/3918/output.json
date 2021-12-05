@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDUtSOxwSVzoXzlFkLG8lzjST1Dl",
+    "id": "cmpl-4Bq2P0r6r4zyFQSLtGpABxEFoE1Ku",
     "object": "text_completion",
-    "created": 1638578839,
+    "created": 1638726989,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given two arrays A and B, each of size n. The error, E, between these two arrays is defined $E = \\sum_{i = 1}^{n}(a_{i} - b_{i})^{2}$. You have to perform exactly k_1 operations on array A and exactly k_2 operations on array B. In one operation, you have to choose one element of the array and increase or decrease it by 1. Output the minimum possible value of error after k_1 operations on array A and k_2 operations on array B have been performed. ",
+            "text": " You are given two arrays A and B, each of size n. The error, E, between these two arrays is defined $E = \\sum_{i = 1}^{n}(a_{i} - b_{i})^{2}$. You have to perform exactly k_1 operations on array A and exactly k_2 operations on array B. In one operation, you have to choose one element of the array and increase or decrease it by 1. Output the minimum possible value of error after k_1 operations on array A and k_2 operations on array B have been performed.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

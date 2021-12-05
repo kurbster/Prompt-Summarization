@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDpPpyAIg5ttNXK5RGh8gLXK9pXB",
+    "id": "cmpl-4BqC3BTTCn17Y7qiC7JZ9eriYuut2",
     "object": "text_completion",
-    "created": 1638580111,
+    "created": 1638727587,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [   \"((()))\",   \"(()())\",   \"(())()\",   \"()(())\",   \"()()()\" ",
+            "text": " Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

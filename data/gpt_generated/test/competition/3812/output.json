@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDcQeKPZOZLUCKoiCNMOPqYBymPo",
+    "id": "cmpl-4BqQ2wABYG1vKRXq86zz8oQ6Ox9Ps",
     "object": "text_completion",
-    "created": 1638579306,
+    "created": 1638728454,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given two strings s and t. You need to output the minimum number of operations needed to transform s into a string consisting only of a letters and t into a string consisting only of b letters. ",
+            "text": " There are two strings s and t, consisting only of letters a and b. You can make the following operation several times: choose a prefix of s, a prefix of t and swap them. Prefixes can be empty, also a prefix can coincide with a whole string. Your task is to find a sequence of operations after which one of the strings consists only of a letters and the other consists only of b letters. The number of operations should be minimized. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

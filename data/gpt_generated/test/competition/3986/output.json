@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDMFzACnpreC30G1aZNsA6v42wSJ",
+    "id": "cmpl-4BqbzRjBYE1Mu2tpWLAw68XuVD5ke",
     "object": "text_completion",
-    "created": 1638578303,
+    "created": 1638729195,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Little penguin Polo adores strings. But most of all he adores strings of length n. One day he wanted to find a string that meets the following conditions:  The string consists of n lowercase English letters (that is, the string's length equals n), exactly k of these letters are distinct.  No two neighbouring letters of a string coincide; that is, if we represent a string as s = s_1s_2... s_{n}, then the following inequality holds, s_{i}   s_{i} + 1(1   i < n).  Among all strings that meet points 1 and 2, the required string is lexicographically smallest.  Help him find such string or state that such string doesn't exist. ",
+            "text": " Given a string s = s_1s_2... s_{n}, find the lexicographically smallest string that meets the following conditions: ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

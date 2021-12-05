@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDPL9QnFEPh1GKB5JZ54DgqyHzPz",
+    "id": "cmpl-4Bpn6PbeMoOE6C5EtGrBoFo5368t0",
     "object": "text_completion",
-    "created": 1638578495,
+    "created": 1638726040,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Jack, na ve fellow that he is, has fallen into the clutches of a dastardly and sophisticated multi-level marketing scheme. It all started when a mysterious stranger pushed upon young Jack a bag of ordinary beans, promising that if only he could amass the right quantities of each kind of bean, he could grow a mighty beanstalk and climb it to the unimaginable wealth at its top. This all sounds very sensible to Jack... But there is one catch. He must acquire the extra beans from other farmers, who as one might expect are not too keen to give away the fruits (nor the seeds) of their labour. Each time Jack comes to ask for a bean, they will give him exactly one from their farm, but since he is not a paying customer the exact species may vary between farmers and between visits. There is another option, but it is expensive. Jack can give up some of his cows to the mysterious stranger in exchange for one additional bean per cow. Of course, this is a drastic measure. We would like to help Jack keep as many of his cows as possible, while still achieving his goals. How many cows will Jack need to budget for to have $100\\% $ certainty of success",
+            "text": " You are given a sequence a1, a2, ..., aN. Find the smallest possible value of ai + aj, where 1   i < j   N. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

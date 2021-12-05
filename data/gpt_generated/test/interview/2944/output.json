@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDiIW1FjWAy9ZXzz3f7RYKzB0WHQ",
+    "id": "cmpl-4BqcZogbsZJZXRACar3XJDu04dzSR",
     "object": "text_completion",
-    "created": 1638579670,
+    "created": 1638729231,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Write a program to determine how many people will hear about a particular rumor through the grapevine after a certain number of days. ",
+            "text": " You are given a number of days. You are also given a number of people. Each person knows a rumor. Each day, a person who knows the rumor can spread it by telling the people that they know. Upon hearing of the rumor, that person must wait until the following day before they can begin to spread it themselves. Furthermore, some people are skeptical and will only spread the rumor once they ve heard it from a number of distinct sources. However once a person has heard the rumor from enough people, they will always try to spread the rumor to as many people as possible. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

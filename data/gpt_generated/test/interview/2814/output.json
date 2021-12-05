@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDOUITPKxtDo5Ob0zX60idAAYZ9m",
+    "id": "cmpl-4Bq0J2ZAWrBXuZf9u0pp4FdWNc0qy",
     "object": "text_completion",
-    "created": 1638578442,
+    "created": 1638726859,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Concentration is a not so popular 2 player card game of both skill and luck. The standard Concentration game is played with one or two 52-card decks, however, for the sake of the problem, we will look at a variation of Concentration. The rules are as follows: ",
+            "text": " Concentration is a not so popular 2 player card game of both skill and luck. The standard Concentration game is played with one or two 52-card decks, however, for the sake of the problem, we will look at a variation of Concentration. The rules are as follows: - A card is represented by a single integer. Two cards $i$, $j$ are considered similar if and only if $\\lfloor i/2\\rfloor =\\lfloor j/2\\rfloor$. A deck consisting of $2N$ cards is used for each game. More specifically, a deck of $2N$ cards contains exactly one copy of card $i$ for all $0\\leq i <2N$. - All cards are initially facing down on a table in random positions, i.e. neither players know what any cards are. Players take turns making moves. Player 0 goes first, then player 1 goes, then player 0 goes, and so on. - During each turn, a player chooses two cards and reveals them. If the two cards are similar, then they are removed from the table and the player gets to keep them, the player is then granted another turn; this can happen infinitely as long as the player always finds two similar cards. If the cards are different, the player's turn ends. - When there are no more cards on the table, the player with more cards wins the game. Anthony and Matthew like to play this boring game and share an identical play style: whenever they are to choose a card to reveal, if they have knowledge of two similar cards, they will pick one of the two similar cards; otherwise they will pick a random unknown card to",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

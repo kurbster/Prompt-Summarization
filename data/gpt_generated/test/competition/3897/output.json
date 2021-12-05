@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDiRxn1GaOszWHviZrZI4nkhxfeI",
+    "id": "cmpl-4Bqth6yoydtjMoePLaVzxMIy5y749",
     "object": "text_completion",
-    "created": 1638579679,
+    "created": 1638730293,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given an integer m as a product of integers a_1, a_2, ... a_{n} $(m = \\prod_{i = 1}^{n} a_{i})$. Your task is to find the number of distinct decompositions of number m into the product of n ordered positive integers. ",
+            "text": " Given an integer m as a product of integers a_1, a_2, ... a_{n}, your task is to find the number of distinct decompositions of number m into the product of n ordered positive integers. Decomposition into n products, given in the input, must also be considered in the answer. As the answer can be very large, print it modulo 1000000007 (10^9 + 7).",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

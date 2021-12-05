@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDQj6SX86uj3pt6de1pdjrkFaJTZ",
+    "id": "cmpl-4Br3pIIDG4NgizQzW7iRgLyBe7nCn",
     "object": "text_completion",
-    "created": 1638578581,
+    "created": 1638730921,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " One day you and GTmac walk into a classroom and see a mysterious expression on the blackboard:\\[ (1^b + 2^b + \\cdots + a^b)~ \\mathrm{mod}~ a \\] Upon seeing the expression GTmac shows an evil smile and challenges you:  Let me give you the values of $a$ and $b$ and let s assume $b$ is an odd number. Want to bet who can evaluate this expression  The one who loses shall buy pizza for us tonight. ",
+            "text": " You and GTmac are given a blackboard expression. You have to determine who can evaluate the expression. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

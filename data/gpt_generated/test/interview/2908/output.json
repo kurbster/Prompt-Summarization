@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDlll0oM0OAnv3gLKrbFshV5ncM7",
+    "id": "cmpl-4BqenInYCw0dBHm8fI5liYCkWQnZF",
     "object": "text_completion",
-    "created": 1638579885,
+    "created": 1638729369,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a set of cards with multi-digit numbers on them. You need to select two cards that add up to a given sum.                                                                                                                                                                                                                                                                           l",
+            "text": " You are given a set of cards with multi-digit numbers on them. You need to select two cards that add up to a given sum. However, to make things more interesting, the font that the cards are printed in means that certain cards will display different numbers if turned upside-down, and it is legal to turn either or both of the cards if necessary to generate the sum. Please help Simon win the game! ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

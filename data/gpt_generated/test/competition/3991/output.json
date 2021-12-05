@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDyqs1VIECws6T9voLmuDscpZYOs",
+    "id": "cmpl-4BpqNZUmvo5xFi8P5nSMqdAuSKGzu",
     "object": "text_completion",
-    "created": 1638580696,
+    "created": 1638726243,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a set of points, find the sum of the maximum distance between any two points. ",
+            "text": " You are given a set of points in a line. Calculate the sum of the maximum distance between all pairs of points. The sum should be calculated modulo 10^9 + 7. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

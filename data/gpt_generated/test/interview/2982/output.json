@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE2MhgLRZGWd5y3A7Wa3IK8oBOaa",
+    "id": "cmpl-4Bq1SP14ruhazMQoQeLedLgrth3Hs",
     "object": "text_completion",
-    "created": 1638580914,
+    "created": 1638726930,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given the hype rating of each of T ti s songs in the order he wrote them, how many setlists can he make ## ",
+            "text": " You are given a list of words, you need to output a sorted list. Comparison should be case sensitive",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

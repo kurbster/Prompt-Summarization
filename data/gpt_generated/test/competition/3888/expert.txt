@@ -1,2 +1,2 @@
- Given a matrix of size N \times N, determine the number of entries that are 0, 1, and 2. 
+ Given an N \times N matrix, find the number of entries of the matrix are 0, 1, and 2, respectively. 
 -----Input----- Input is given from Standard Input in the following format: N a_{1, 1} a_{1, 1} ... a_{1, N} a_{2, 1} : a_{N, 1} -----Output----- Print the number of 0's, 1's, and 2's separated by whitespaces. -----Sample Input----- 4 1 2 0 2 0 0 0 -----Sample Output----- 7 4 5 The matrix is as follows: 1 2 0 2 0 1 2 0 0 2 0 1 0 1 2 0

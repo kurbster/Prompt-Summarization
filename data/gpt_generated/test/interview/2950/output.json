@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDMzkrR1JRdsul68LEld6GzSYE91",
+    "id": "cmpl-4Br1nP54RnYmMHeDNhUPCMIKK225K",
     "object": "text_completion",
-    "created": 1638578349,
+    "created": 1638730795,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given the number of floors of all towers, output the minimum number of charges needed to eliminate all floors of all blocks.",
+            "text": " You are given a row of tower blocks. You have a cannon that can remove either all of the floors in a single tower block, or all the $x$-th floors in all the blocks simultaneously. Output the minimum number of charges needed to eliminate all floors of all blocks. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

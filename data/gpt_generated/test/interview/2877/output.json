@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDXYBCFAAFq5UdaLIs9SVQc6rrPf",
+    "id": "cmpl-4BqYHOOj1jh4dw0MseTrxrWls1MJ0",
     "object": "text_completion",
-    "created": 1638579004,
+    "created": 1638728965,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " # Task  Given a word, find the lexicographically smallest word possible. # ",
+            "text": " You are given a word. You should split the word in two arbitrary places to get three separate words. After that you should reverse the order of the letters in each of those three words (exchanges the first and last letters, the second and second last and so on). Finally, you should put the three words back together in the same order in which they were before splitting. The goal of the game is to obtain the lexicographically smallest word possible. In other words, of all words that can be obtained by the above procedure, find one which would be earliest in a dictionary. Write a program that plays Mario s game perfectly.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

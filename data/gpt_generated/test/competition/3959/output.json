@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDT8Z7IdClhGkTBEWNtOT1KbudSE",
+    "id": "cmpl-4Bpqlxt3Puj5YRrwadsCzJx8W8ZSX",
     "object": "text_completion",
-    "created": 1638578730,
+    "created": 1638726267,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a number of Pokemon in each gym, and a number of Pokemon of each type.   You need to output the number of distinct evolution plans that satisfy the protocol. ",
+            "text": " It's that time of the year, Felicity is around the corner and you can see people celebrating all around the Himalayan region. The Himalayan region has n gyms. The i-th gym has g_{i} Pokemon in it. There are m distinct Pokemon types in the Himalayan region numbered from 1 to m. There is a special evolution camp set up in the fest which claims to evolve any Pokemon. The type of a Pokemon could change after evolving, subject to the constraint that if two Pokemon have the same type before evolving, they will have the same type after evolving. Also, if two Pokemon have different types before evolving, they will have different types after evolving. It is also possible that a Pokemon has the same type before and after evolving.  Formally, an evolution plan is a permutation f of {1, 2, ..., m}, such that f(x) = y means that a Pokemon of type x evolves into a Pokemon of type y. The gym leaders are intrigued by the special evolution camp and all of them plan to evolve their Pokemons. The protocol of the mountain states that in each gym, for every type of Pokemon, the number of Pokemon of that type before evolving any Pokemon should be equal the number of Pokemon of that type after evolving all the Pokemons according to the evolution plan. They now want to find out how many distinct evolution plans exist which satisfy the protocol. Two evolution plans f_1 and f_2 are distinct, if they have at least one Pokemon type evolving into a different Pokemon type in the two plans, i. e. there exists an i such that f_1(i)   f_2(i). Your task is to find",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

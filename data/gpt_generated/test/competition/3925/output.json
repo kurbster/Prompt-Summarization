@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDhIPvWMMGIOpTJ3VqRvMoqaqgMW",
+    "id": "cmpl-4BqqbKox8KSsUoJXChOHtaMCWHyc1",
     "object": "text_completion",
-    "created": 1638579608,
+    "created": 1638730101,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a sequence of black and white stripes. You can split the sequence in some place into two parts, then reverses each of them and sticks them together again. Determine the maximum possible length of the zebra that you can produce. ",
+            "text": " You are given a sequence of alternating black and white stripes. You need to find the maximum possible length of the zebra that Grisha can produce. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

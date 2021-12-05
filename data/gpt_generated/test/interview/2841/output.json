@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDTFVHr0fjv7W3vdcigSuUkWeatt",
+    "id": "cmpl-4Bq1Tst8EpyyZDqCxlz8lMRdanJbt",
     "object": "text_completion",
-    "created": 1638578737,
+    "created": 1638726931,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a board of size $N+1$ with $N$ squares of different colors. You are also given a deck of $N$ cards of different colors. You need to find the minimum number of cards required to complete the game. ",
+            "text": " You are given a board of $N+1$ squares. The first square is a special start square, the remaining $N$ squares are colored blue, orange, pink, green, red, or yellow. The goal of the game is to move your game piece from the start square to square $N$. You are given a deck of cards. Each card has a single color on it. A player moves to the nearest square after their current square with the color indicated by the drawn card. If there are no squares of the drawn color after a player s current square, that player s piece does not move and their turn ends. You need to find the smallest number of cards any one player would have to draw to complete the game.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

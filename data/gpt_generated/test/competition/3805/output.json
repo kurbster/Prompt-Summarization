@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE2gfX5GxuwiMqTkfFwHB53IiP98",
+    "id": "cmpl-4BpnpxgYMEq4vN9mIydIKg8fN0PGg",
     "object": "text_completion",
-    "created": 1638580934,
+    "created": 1638726085,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a device with two wires. The wires are plugged into the wall and the device in some order. The wires are considered entangled if there are one or more places where one wire runs above the other one. For example, the picture below has four such places (top view): [Image] You are also given the sequence in which the wires run above each other. You are not allowed to unplug the wires or move the device. Determine if it is possible to untangle the wires without unplugging them and without moving the device. ",
+            "text": " You have a device powered by two wires \"plus\" and \"minus\". The wires run along the floor from the wall (on the left) to the device (on the right). Both the wall and the device have two contacts in them on the same level, into which the wires are plugged in some order. The wires are considered entangled if there are one or more places where one wire runs above the other one. For example, the picture below has four such places (top view): [Image] You know the sequence in which the wires run above each other. You also noticed that on the left side, the \"plus\" wire is always plugged into the top contact (as seen on the picture). You would like to untangle the wires without unplugging them and without moving the device. Determine if it is possible to do that. A wire can be freely moved and stretched on the floor, but cannot be cut. To understand the problem better please read the notes to the test samples. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

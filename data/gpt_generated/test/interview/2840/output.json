@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDiJEM79AcXLIrkA2Js61vWwTsgG",
+    "id": "cmpl-4BqB1ALBOpxQPNHRvS9OlxJm317pf",
     "object": "text_completion",
-    "created": 1638579671,
+    "created": 1638727523,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a hand of cards, how many moves are required to sort it? ",
+            "text": " When dealt cards in the card game Plump it is a good idea to start by sorting the cards in hand by suit and rank. The different suits should be grouped and the ranks should be sorted within each suit. But the order of the suits does not matter and within each suit, the cards may be sorted in either ascending or descending order on rank. It is allowed for some suits to be sorted in ascending order and others in descending order. Sorting is done by moving one card at a time from its current position to a new position in the hand, at the start, end, or in between two adjacent cards. What is the smallest number of moves required to sort a given hand of cards ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

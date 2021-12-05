@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDuCJYn256ZNRQkEV2pg2HdzvtZb",
+    "id": "cmpl-4BqRlBS2xeVWXLBuc74DrFJRMMUi8",
     "object": "text_completion",
-    "created": 1638580408,
+    "created": 1638728561,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Takahashi throws N dice, each having K sides with all integers from 1 to K. The dice are NOT pairwise distinguishable. For each i=2,3,...,2K, find the following value modulo 998244353: - The number of combinations of N sides shown by the dice such that the sum of no two different sides is i. Note that the dice are NOT distinguishable, that is, two combinations are considered different when there exists an integer k such that the number of dice showing k is different in those two. ",
+            "text": " You are given N dice with K sides each. You are also given K. Find the number of combinations of N sides shown by the dice such that the sum of no two different sides is i. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

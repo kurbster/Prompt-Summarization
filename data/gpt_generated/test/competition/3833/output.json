@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDfsEnFRaHO639Q1ZPXof1ARKV1X",
+    "id": "cmpl-4BqYCR6oEEPdR4D8fhZVTzbMApOkI",
     "object": "text_completion",
-    "created": 1638579520,
+    "created": 1638728960,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " The new camp by widely-known over the country Spring Programming Camp is going to start soon. Hence, all the team of friendly curators and teachers started composing the camp's schedule. After some continuous discussion, they came up with a schedule $s$, which can be represented as a binary string, in which the $i$-th symbol is '1' if students will write the contest in the $i$-th day and '0' if they will have a day off. At the last moment Gleb said that the camp will be the most productive if it runs with the schedule $t$ (which can be described in the same format as schedule $s$). Since the number of days in the current may be different from number of days in schedule $t$, Gleb required that the camp's schedule must be altered so that the number of occurrences of $t$ in it as a substring is maximum possible. At the same time, the number of contest days and days off shouldn't change, only their order may change. Could you rearrange the schedule in the best possible way  ",
+            "text": " The camp's schedule is represented as a binary string, in which the $i$-th symbol is '1' if students will write the contest in the $i$-th day and '0' if they will have a day off. The number of days in the current may be different from number of days in schedule $t$, so the camp's schedule must be altered so that the number of occurrences of $t$ in it as a substring is maximum possible. At the same time, the number of contest days and days off shouldn't change, only their order may change. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

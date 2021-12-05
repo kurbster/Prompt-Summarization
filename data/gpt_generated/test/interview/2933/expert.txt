@@ -1,2 +1,2 @@
- You are given a number and you have to determine how much weight Wallace the Weightlifting Walrus will have to lift. 
+ You are given a list of integers. You want to find the weight of the bar Wallace will have to lift. 
 -----Input----- The first line of the input contains the number of plates $n$ ($1 \leq n \leq 1000$). Each of the following $n$ lines contains one positive integer less than or equal to $1000$, denoting the weight of each plate. -----Output----- Output one integer, the combined weight closest to $1000$. -----Examples----- Sample Input: 4 900 500 498 4 Sample Output: 1002

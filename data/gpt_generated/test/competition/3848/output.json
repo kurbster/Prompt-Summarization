@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE5jRq2SzHOfk8Jth7stGYTaDfu1",
+    "id": "cmpl-4BqMo9pTEvOVhL91DnLFnIsPXqEPH",
     "object": "text_completion",
-    "created": 1638581123,
+    "created": 1638728254,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a string, find the next lexicographically greater string of the same length or else state that such string does not exist. ",
+            "text": " You have to find the next string which is lexicographically greater than the given string or else state that such string does not exist. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

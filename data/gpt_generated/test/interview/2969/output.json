@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE3ramdlgyxsEGhp0NSy8RLJInvO",
+    "id": "cmpl-4BqCWWK3HxkYVSkQ1r0Yh1JXU2bo3",
     "object": "text_completion",
-    "created": 1638581007,
+    "created": 1638727616,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given two piles of cards. You can only shuffle the piles. Is it possible to win the game after the next turn? ",
+            "text": " You have to win the game by reshuffling your piles. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

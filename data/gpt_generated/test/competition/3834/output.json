@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDlw04f8VH2XyU4E00U8wdSj3x0o",
+    "id": "cmpl-4BpqzBf6AKHYDiwk84rFVvF8oVd84",
     "object": "text_completion",
-    "created": 1638579896,
+    "created": 1638726281,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a table with n rows and m columns. Each cell contains either a 0 or a 1. You can change the value of at most k cells. Return the minimum number of cells you need to change to meet the requirement. ",
+            "text": " Given a rectangular table with n rows and m columns, each cell of the table contains a zero or a number one. The table must meet the following requirement: each connected component of the same values forms a rectangle with sides parallel to the sides of the table. Rectangles should be filled with cells, that is, if a component form a rectangle of size h \u00a0w, then the component must contain exactly hw cells. A connected component of the same values is a set of cells of the table that meet the following conditions: every two cells of the set have the same value; the cells of the set form a connected region on the table (two cells are connected if they are adjacent in some row or some column of the table); it is impossible to add any cell to the set unless we violate the two previous conditions. Given a rectangular table with n rows and m columns, can you change the values of at most k cells of the table so that the table met the described requirement? What minimum number of table cells should you change in this case?",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

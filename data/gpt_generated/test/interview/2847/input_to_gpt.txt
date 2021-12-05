@@ -1,8 +1,11 @@
------Problem Statement----- Levy's conjecture, named after Hyman Levy, states that all odd integers greater than 5 can be represented as the sum of an odd prime number and an even semiprime. To put it algebraically, 2n + 1 = p + 2q always has a solution in primes p and q (not necessary to be distinct) for n > 2. (Source: Wikipedia) In this problem, given a positive integer N (not necessary to be odd integer greater than 5). Your task is to calculate how many distinct ordered pairs (p, q) such that N = p + 2q, where p and q are primes. 
-tl;dr: You are given a positive integer N.Find how many distinct ordered pairs (p, q) are there such that N = p + 2q, where p and q are primes. 
+=====Problem Statement===== You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.  alison heck => Alison Heck Given a full name, your task is to capitalize the name appropriately. 
+tl;dr: =====Problem Statement===== Given an alphanumeric string, capitalize each word For example: alison heck => Alison Heck 
 
-Your task is to create a function that does four basic mathematical operations. The function should take three arguments - operation(string/char), value1(number), value2(number).   The function should return result of numbers after applying the chosen operation. ### 
-tl;dr: You are given an operation and two values. Return result of numbers after applying the operation. 
+You are given an unweighted, undirected graph. Write a program to check if it's a tree topology. 
+tl;dr: Write a program to check for a given unweighted, undirected graph whether it's a tree topology or not. 
+
+Christmas is coming, and Santa has a long list to go through, to find who deserves presents for the big day. Go through a list of children, and return a list containing every child who appeared on Santa's list. Do not add any child more than once. Output should be sorted. 
+tl;dr: You are given a list of words, you need to output a sorted list. Comparison should be case sensitive
 
 Every day after school, you and your friends get together and play in a band. Over the past couple of months, the band has been rehearsing a large number of songs. Now it s time to go out and perform in front of a crowd for the first time. In order to do so, a set list for the concert needs to be determined. As it turns out, every band member has a different taste in music. (Who would have thought ) Everybody is very picky: a band member doesn t want to play any particular song $X$ unless he also gets to play all songs he likes better than song $X$. This holds for every band member and for every song $X$. Furthermore, obviously at least one song should be performed. The organisers of the concert do not want you to play too many songs, so a selection needs to be made that is as small as possible. As the unofficial leader of the band, you have taken it upon yourself to find a minimum length set list that meets the requirements. 
 tl;dr:

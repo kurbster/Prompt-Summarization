@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE5BV3GyglI4E4akerCWuY25V6d1",
+    "id": "cmpl-4BqDICpVY0MrJXnpyAzMPplkgVn7X",
     "object": "text_completion",
-    "created": 1638581089,
+    "created": 1638727664,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a rooted tree with $n$ nodes. The nodes are numbered $1..n$. The root is node $1$. $m$ of the nodes are colored red, the rest are black. You would like to choose a subset of nodes such that there is no node in your subset which is an ancestor of any other node in your subset. For example, if A is the parent of B and B is the parent of C, then you could have at most one of A, B or C in your subset. In addition, you would like exactly $k$ of your chosen nodes to be red. If exactly $m$ of the nodes are red, then for all $k=0..m$, figure out how many ways you can choose subsets with $k$ red nodes, and no node is an ancestor of any other node.",
+            "text": " You are given a rooted tree with $n$ nodes. The nodes are numbered $1..n$. The root is node $1$, and $m$ of the nodes are colored red, the rest are black. You would like to choose a subset of nodes such that there is no node in your subset which is an ancestor of any other node in your subset. For example, if A is the parent of B and B is the parent of C, then you could have at most one of A, B or C in your subset. In addition, you would like exactly $k$ of your chosen nodes to be red. If exactly $m$ of the nodes are red, then for all $k=0..m$, figure out how many ways you can choose subsets with $k$ red nodes, and no node is an ancestor of any other node.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDZkKCxH7LbDHQUnOQnLMacP2pGH",
+    "id": "cmpl-4BqMTLxqy3P9tSsU5T5DNCLo3IdE5",
     "object": "text_completion",
-    "created": 1638579140,
+    "created": 1638728233,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " There is a string S of length N consisting of characters 0 and 1. You will perform the following operation for each i = 1, 2, ..., m: - Arbitrarily permute the characters within the substring of S starting at the l_i-th character from the left and extending through the r_i-th character. Here, the sequence l_i is non-decreasing. How many values are possible for S after the M operations, modulo 1000000007(= 10^9+7)  -----Constraints----- - 2 N 3000 - 1 M 3000 - S consists of characters 0 and 1. - The length of S equals N. - 1 l_i < r_i N - l_i   l_{i+1}",
+            "text": " Given a string S of length N consisting of characters 0 and 1, perform the following operation for each i = 1, 2, ..., m: Arbitrarily permute the characters within the substring of S starting at the l_i-th character from the left and extending through the r_i-th character. Here, the sequence l_i is non-decreasing. How many values are possible for S after the M operations, modulo 1000000007(= 10^9+7) ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDuHdT93u0BmzPaGIFVjRYel8u5E",
+    "id": "cmpl-4Bq2tzz5pJvIaS6VPs3WNKEJTnbX0",
     "object": "text_completion",
-    "created": 1638580413,
+    "created": 1638727019,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given an array a of integers. You are also given a function f that takes two integers l and r and returns the sum of absolute differences between consecutive elements of a. You are asked to find the maximum value of f among all possible values of l and r for the given array a. ",
+            "text": " Given an array of integers, find the maximum value of the Main Uzhlyandian Function f. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

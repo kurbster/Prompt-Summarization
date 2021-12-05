@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDoRfH6VzVWYKsibHO0py6wMQo4O",
+    "id": "cmpl-4BqQ55qqedT1vDt10p3iNLHCI4MXz",
     "object": "text_completion",
-    "created": 1638580051,
+    "created": 1638728457,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " $N$ points are placed in the coordinate plane. \u00a0Write a program that calculates how many ways we can choose three points so that they form a right triangle with legs parallel to the coordinate axes. \u00a0A right triangle has one 90-degree internal angle. \u00a0The legs of a right triangle are its two shorter sides.",
+            "text": " Given $N$ points in the coordinate plane, find the number of ways to choose 3 points so that they form a right triangle with legs parallel to the coordinate axes. A right triangle has one 90-degree internal angle. The legs of a right triangle are its two shorter sides. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

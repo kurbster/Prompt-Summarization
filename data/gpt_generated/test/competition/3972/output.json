@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDOPJxFFsfyrrZRPT8kCRyjKBahn",
+    "id": "cmpl-4Bq0YnP4O3fdu4qdZileHlV0pABqz",
     "object": "text_completion",
-    "created": 1638578437,
+    "created": 1638726874,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " How many infinite sequences a_1, a_2, ... consisting of {{1, ... ,n}} satisfy the following conditions - The n-th and subsequent elements are all equal. That is, if n \\leq i,j, a_i = a_j. - For every integer i, the a_i elements immediately following the i-th element are all equal. That is, if i < j < k\\leq i+a_i, a_j = a_k. Find the count modulo 10^9+7. -----Constraints----- - 1 \\leq n \\leq 10^6",
+            "text": " How many infinite sequences a_1, a_2, ... consisting of {{1, ... ,n}} satisfy the following conditions   - The n-th and subsequent elements are all equal. That is, if n \\leq i,j, a_i = a_j.  - For every integer i, the a_i elements immediately following the i-th element are all equal. That is, if i < j < k\\leq i+a_i, a_j = a_k. Find the count modulo 10^9+7. -----Constraints-----  - 1 \\leq n \\leq 10^6 ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

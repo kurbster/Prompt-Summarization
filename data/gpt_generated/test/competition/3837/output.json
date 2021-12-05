@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDXa5VfvtnxvHPZhngM9tRqAzXYb",
+    "id": "cmpl-4BqKP43CZxVyWnR4lfapKgxG5S2SH",
     "object": "text_completion",
-    "created": 1638579006,
+    "created": 1638728105,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Soon there will be held the world's largest programming contest, but the testing system still has m bugs. The contest organizer, a well-known university, has no choice but to attract university students to fix all the bugs. The university has n students able to perform such work. The students realize that they are the only hope of the organizers, so they don't want to work for free: the i-th student wants to get c_{i} 'passes' in his subjects (regardless of the volume of his work). Bugs, like students, are not the same: every bug is characterized by complexity a_{j}, and every student has the level of his abilities b_{i}. Student i can fix a bug j only if the level of his abilities is not less than the complexity of the bug: b_{i}   a_{j}, and he does it in one day. Otherwise, the bug will have to be fixed by another student. Of course, no student can work on a few bugs in one day. All bugs are not dependent on each other, so they can be corrected in any order, and different students can work simultaneously. The university wants to fix all the bugs as quickly as possible, but giving the students the total of not more than s passes. Determine which students to use for that and come up with the schedule of work saying which student should fix which bug. ",
+            "text": " Soon there will be held the world's largest programming contest, but the testing system still has m bugs. The contest organizer, a well-known university, has no choice but to attract university students to fix all the bugs. The university has n students able to perform such work. The students realize that they are the only hope of the organizers, so they don't want to work for free: the i-th student wants to get c_{i} 'passes' in his subjects (regardless of the volume of his work). Bugs, like students, are not the same: every bug is characterized by complexity a_{j}, and every student has the level of his abilities b_{i}. Student i can fix a bug j only if the level of his abilities is not less than the complexity of the bug: b_{i}   a_{j}, and he does it in one day. Otherwise, the bug will have to be fixed by another student. All bugs are not dependent on each other, so they can be corrected in any order, and different students can work simultaneously. The university wants to fix all the bugs as quickly as possible, but giving the students the total of not more than s passes. Determine which students to use for that and come up with the schedule of work saying which student should fix which bug.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

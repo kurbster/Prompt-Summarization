@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDNUNQsIAVZfE2o6G5NldYbGtSLt",
+    "id": "cmpl-4BqPPjACrEw8Zm3UP02gQivqlmnvP",
     "object": "text_completion",
-    "created": 1638578380,
+    "created": 1638728415,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Two guys play a game. Each time Toastman gets a group of numbers, he sums up all the numbers and adds this sum to the score. Then he gives the group to the Appleman. Each time Appleman gets a group consisting of a single number, he throws this group out. Each time Appleman gets a group consisting of more than one number, he splits the group into two non-empty groups (he can do it in any way) and gives each of them to Toastman. After guys complete all the tasks they look at the score value. What is the maximum possible value of score they can get ",
+            "text": " You are given a collection of integers. You need to split this collection into two groups of equal size. Each group must have the same sum.   ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDpaUpXygqy8dj62WydiMDgXYjAP",
+    "id": "cmpl-4BqA4EOL2JvLttWSPl9rCxSv3RnzO",
     "object": "text_completion",
-    "created": 1638580122,
+    "created": 1638727464,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " In a game of American Football, there are several factors to take into consideration when detailing the rules of the game. The goal of the game is to move the football across the field into the endzone of the defending team through a series of plays, which form a drive. In each play, the attacking team may either gain or lose a number of yards, that is, their position on the field moves either towards or away from the defending team s endzone. In the simplified version of football that we consider, a team has four chances (in up to four plays) to advance the ball $10$ yards downfield; if they are successful, they will have achieved a ",
+            "text": " In a game of American Football, there are several factors to take into consideration when detailing the rules of the game. The goal of the game is to move the football across the field into the endzone of the defending team through a series of plays, which form a drive. In each play, the attacking team may either gain or lose a number of yards, that is, their position on the field moves either towards or away from the defending team s endzone. In the simplified version of football that we consider, a team has four chances (in up to four plays) to advance the ball $10$ yards downfield; if they are successful, they will have achieved a \u00a0first down \u00a0and keep possession of the ball. If they achieve a first down, they have another up to four plays to continue their drive towards the defending team s endzone. If they keep possession and reach the defending team s endzone, they will have achieved a Touchdown. If they are pushed back into their own endzone, a Safety occurs and ends the drive. Otherwise the team loses possession of the ball and Nothing happens. Sadly, the outcome of a drive has been lost, and all that remains is the yards gained or lost on each play! Your job is to determine whether a Touchdown, Safety, or Nothing occurred on the given drive. For simplicity, we assume that the team starts the drive on their own $20$ yard line on a $100$ yard field (with $0$ being the team s own endzone, and $100$ being the defending team s endzone). This means that a touchdown is scored if at least $80$ yards are gained in total, relative to the starting position,",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

@@ -1,8 +1,11 @@
-Given a string of words, you need to find the highest scoring word. Each letter of a word scores points according to its position in the alphabet: `a = 1, b = 2, c = 3` etc. You need to return the highest scoring word as a string. If two words score the same, return the word that appears earliest in the original string. All letters will be lowercase and all inputs will be valid
-tl;dr: Given a string of lowercase words, You need to return the highest scoring word as a string. If two words score the same, return the word that appears earliest in the original string
+Find the second-to-last element of a list. 
+tl;dr: Find the second-to-last element of a list. 
 
-Chef loves triangles. But the chef is poor at maths. Given three random lengths Chef wants to find if the three sides form a right-angled triangle or not. Can you help Chef in this endeavour  
-tl;dr: Given lengths $A,B and C$ return YES if they can form a right angled triangle, NO otherwise. 
+You've got array A, consisting of n integers and a positive integer k. Array A is indexed by integers from 1 to n. You need to permute the array elements so that value $\sum_{i = 1}^{n - k}|A [ i ] - A [ i + k ]|$ became minimal possible. In particular, it is allowed not to change order of elements at all. 
+tl;dr: You've got array A, consisting of n integers and a positive integer k. You need to permute the array elements so that value $\sum_{i = 1}^{n - k}|A [ i ] - A [ i + k ]|$ became as minimal as possible. It is not allowed to change order of elements at all. 
+
+# Definition  A number is a **_Special Number_** *if it s digits only consist 0, 1, 2, 3, 4 or 5* **_Given_** a number *determine if it special number or not* .   # Warm-up (Highly recommended) # [Playing With Numbers Series](https://www.codewars.com/collections/playing-with-numbers) ___ 
+tl;dr: # Task A number is a special number if its digits only consist 0, 1, 2, 3, 4 or 5. Given a positive number determine if it is a special number or not.  # 
 
 Cady s Chocolate Company just opened down the street! Cady s chocolate is world famous, and her recipe is top secret. But the company is more renowned for the fact that they sell the chocolate in random quantities. Each box of chocolate may contain anywhere from $1$ to $100$ pieces. Bob s nephews, John and Sam, love Cady s Chocolate, but Bob has a dilemma. John will get jealous of Sam if he gets more pieces of chocolate, and vice versa. Bob knows how many pieces of chocolate are in each box. Write a program to help him determine if it is possible to split the boxes between John and Sam such that both get the same number of pieces of chocolate, and such that all boxes of chocolate are used. 
 tl;dr:

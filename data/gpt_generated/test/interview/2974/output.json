@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDfcOlrSazQE0JST37f1AIKedTVp",
+    "id": "cmpl-4Bpmdla9U89TDvSElZDkx5zNpWJXd",
     "object": "text_completion",
-    "created": 1638579504,
+    "created": 1638726011,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Write a function named `getMinimalReconstructions`, taking a sequence of events as single parameter. Your function must return the minimum number of events such that there is a consistent recollection of this number of events where it is possible to determine for sure who is right, and the minimum number of events such that for any consistent recollection of this number of events, it is possible to determine for sure who is right. ",
+            "text": " You are given the array containing n positive integers. At one turn you can pick any element and increase or decrease it by 1. The goal is the make the array strictly increasing by making the minimum possible number of operations. You are allowed to change elements in any way, they can become negative or equal to 0. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

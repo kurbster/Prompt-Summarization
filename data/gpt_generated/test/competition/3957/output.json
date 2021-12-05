@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDaZuQJLO4pXFQxx5o7GXdTEjQW6",
+    "id": "cmpl-4BpnysxINTaWKOTFFqkfhhZnjViDH",
     "object": "text_completion",
-    "created": 1638579191,
+    "created": 1638726094,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given n towns connected by n-1 two-way roads such that it's possible to get from any town to any other town.  In Treeland there are 2k universities which are located in different towns.  Recently, the president signed the decree to connect universities by high-speed network. The Ministry of Education understood the decree in its own way and decided that it was enough to connect each university with another one by using a cable. Formally, the decree will be done!  To have the maximum sum in the budget, the Ministry decided to divide universities into pairs so that the total length of the required cable will be maximum. In other words, the total distance between universities in k pairs should be as large as possible.  Help the Ministry to find the maximum total distance. Of course, each university should be present in only one pair. Consider that all roads have the same length which is equal to 1. ",
+            "text": " You are given a list of n towns and n-1 roads between them. You need to find the maximum total distance between pairs of towns. \n",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

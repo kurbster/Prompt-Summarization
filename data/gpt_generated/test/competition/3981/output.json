@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDvTS4IswZFxMHa9E33rSwLSLG7U",
+    "id": "cmpl-4BqctgtkP4fWhZvuIBLMnTds4ka7W",
     "object": "text_completion",
-    "created": 1638580487,
+    "created": 1638729251,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " A supersonic rocket consists of two engines. Each engine is a set of power sources. ",
+            "text": " Given a supersonic rocket, check whether it is safe or not. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

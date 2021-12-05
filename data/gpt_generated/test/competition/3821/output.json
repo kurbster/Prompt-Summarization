@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDmbQYiHLwOUUwcpqcRMF3AtD4I2",
+    "id": "cmpl-4BqOnk0jvGMEWlTxex0SE1ERmjyto",
     "object": "text_completion",
-    "created": 1638579937,
+    "created": 1638728377,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a set of people. Each of them has a probability of coming up with a problem. You need to choose such a set of people that maximizes the chances of Andrey not getting upset. ",
+            "text": " You are given a set of people and their probabilities of coming up with a problem. You should choose such a set of people that maximizes the chances of Andrey not getting upset. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDxlMC9Ts6T3rrTZ4XcT1ZPAcMHx",
+    "id": "cmpl-4BqQKIf1ZvkHvGJSl0snnhPdxrMOR",
     "object": "text_completion",
-    "created": 1638580629,
+    "created": 1638728472,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Chess has been a long time passion of Yraglac. He spents at least an hour per day playing chess matches online or reading chess tactics books. The game is played by two players on an $8 \\times 8$ grid, with each player taking turns to move a piece. In this problem, we will consider a simplified variant of chess consisting of two kinds of pieces: kings and rooks. Kings can move one square in any direction while rooks can move any number of squares up/down or left/right. Pieces can either move to an unoccupied square or to a square occupied by an opponent s piece, which is captured and removed from play. A piece is threatened when an opponent s piece is able to capture the piece in a single move. It is illegal to move one own s king to a position where it is threatened (but it is legal to do so for a rook). A player is considered to be in checkmate when it is their turn, their king is threatened, and all possible moves will result in the king still being threatened. Yraglac is a skilled player and has managed to reach a situation where he has one king and one rook, while his opponent only has one king. Given that it is Yraglac s turn, can he checkmate his opponent in a single move  ",
+            "text": " Write a code to print the average of the multiplication of a given number N with N-1 integer.                                  1 ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

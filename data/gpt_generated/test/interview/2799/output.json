@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDkaQ2ufnFUWThtlfBA8kLBW9GKN",
+    "id": "cmpl-4BqcwZodKcSt7Qu65FlOGwct1V7Q9",
     "object": "text_completion",
-    "created": 1638579812,
+    "created": 1638729254,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " # Task Given a game board with $4$ trees in an orchard, each bearing a different type of fruit: red apples, green apples, blue plums, and yellow pears. The raven tries to reach the orchard through a pathway containing one or more steps. At each turn, the players roll a six-sided die. Four of the faces show a color (red, green, yellow, blue), the fifth face shows a fruit basket, and the sixth face shows a raven. All six faces can appear with equal probability. Your task is to determine the probability with which the players will win! # Input A space separated string of $4$ numbers, each representing the number of fruits left on a tree. E.g. ```3 2 1 2``` # Output A number representing the probability with which the players will win. E.g. ```0.75```\n",
+            "text": " First Orchard is a cooperative game for children 2 years and up. In this simple game, the players pick colored fruits from trees in an orchard and place them into a basket. To make the game more interesting, a raven tries to reach the orchard to steal the fruits. If the players are successful in moving all fruits into the basket before the raven can get to the orchard, they ll win. If the raven gets there first, the players lose! Your task is to determine the probability with which the players will win! The game is played as follows. There are $4$ trees in the orchard, each bearing a different type of fruit: red apples, green apples, blue plums, and yellow pears. The raven tries to reach the orchard through a pathway containing one or more steps. At each turn, the players roll a six-sided die. Four of the faces show a color (red, green, yellow, blue), the fifth face shows a fruit basket, and the sixth face shows a raven. All six faces can appear with equal probability. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

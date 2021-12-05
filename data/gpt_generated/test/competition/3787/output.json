@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDREfkJ3giHjtuLvbFc5xgkUBBQW",
+    "id": "cmpl-4Bq5EEE93KRyReVlLYQJKmNTfBHCO",
     "object": "text_completion",
-    "created": 1638578612,
+    "created": 1638727164,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given the number N, the number A and the number B, determine if there exists a sequence obtained by permuting 1,2,...,N that satisfies the following conditions: - The length of its longest increasing subsequence is A. - The length of its longest decreasing subsequence is B. If it exists, construct one such sequence. \n",
+            "text": " Determine if there exists a sequence obtained by permuting 1,2,...,N that satisfies the following conditions: - The length of its longest increasing subsequence is A. - The length of its longest decreasing subsequence is B. If it exists, construct one such sequence. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

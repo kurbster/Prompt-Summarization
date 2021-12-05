@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDUamgE6ddi3B8f2bRirgXYBcYgo",
+    "id": "cmpl-4BqdnfHjbzUh3SYFIHCsAlcH9YTyt",
     "object": "text_completion",
-    "created": 1638578820,
+    "created": 1638729307,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " # Christmas is coming, and our protagonist, Bob, is preparing a spectacular present for his long-time best friend Alice. This year, he decides to prepare $n$ boxes of chocolate, numbered from $1$ to $n$. Initially, the $i$-th box contains $a_i$ chocolate pieces. Since Bob is a typical nice guy, he will not send Alice $n$ empty boxes. In other words, at least one of $a_1, a_2, \\ldots, a_n$ is positive. Since Alice dislikes coprime sets, she will be happy only if there exists some integer $k > 1$ such that the number of pieces in each box is divisible by $k$. Note that Alice won't mind if there exists some empty boxes.  Charlie, Alice's boyfriend, also is Bob's second best friend, so he decides to help Bob by rearranging the chocolate pieces. In one second, Charlie can pick up a piece in box $i$ and put it into either box $i-1$ or box $i+1$ (if such boxes exist). Of course, he wants to help his friend as quickly as possible. Therefore, he asks you to calculate the minimum number of seconds he would need to make Alice happy. \n",
+            "text": " You are given a number $n$ and a number $a_1, a_2, ..., a_n$. Initially, the $i$-th box contains $a_i$ chocolate pieces. Since Bob is a typical nice guy, he will not send Alice $n$ empty boxes. In other words, at least one of $a_1, a_2, \\ldots, a_n$ is positive. Since Alice dislikes coprime sets, she will be happy only if there exists some integer $k > 1$ such that the number of pieces in each box is divisible by $k$. Note that Alice won't mind if there exists some empty boxes.  Charlie, Alice's boyfriend, also is Bob's second best friend, so he decides to help Bob by rearranging the chocolate pieces. In one second, Charlie can pick up a piece in box $i$ and put it into either box $i-1$ or box $i+1$ (if such boxes exist). Of course, he wants to help his friend as quickly as possible. Therefore, he asks you to calculate the minimum number of seconds he would need to make Alice happy. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

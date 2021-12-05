@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDtYgdIzU373gRS2fDhG4W1m68wm",
+    "id": "cmpl-4BqR1PTcMbu8fwt26itwX0kMtM60f",
     "object": "text_completion",
-    "created": 1638580368,
+    "created": 1638728515,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given an array of strings, find the k-th character of each string.",
+            "text": " Nephren is playing a game with little leprechauns. She gives them an infinite array of strings, f_{0...  }. f_0 is \"What are you doing at the end of the world  Are you busy  Will you save us \". She wants to let more people know about it, so she defines f_{i} = \"What are you doing while sending \"f_{i} - 1\"  Are you busy  Will you send \"f_{i} - 1\" \" for all i \n1. For example, f_1 is \"What are you doing while sending \"What are you doing at the end of the world  Are you busy  Will you save us \"  Are you busy  Will you send \"What are you doing at the end of the world  Are you busy  Will you save us \" \". Note that the quotes in the very beginning and in the very end are for clarity and are not a part of f_1. It can be seen that the characters in f_{i} are letters, question marks, (possibly) quotation marks and spaces.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

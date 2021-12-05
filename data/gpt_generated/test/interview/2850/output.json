@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDPJATR5oTdQ2WinBRtqJO7FdCfT",
+    "id": "cmpl-4BqeT5iA1AgzXUInJUcZV7vjAJREz",
     "object": "text_completion",
-    "created": 1638578493,
+    "created": 1638729349,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have $n$ items numbered from 1 to $n$. You have to group them. Each group must contain two items, and the greatest common divisor of numbers of the items in each group must be greater than 1. Each item can be part of at most one group. Get the maximum possible number of groups. ",
+            "text": " Brandon Greg Jr. is moving to the United States to double his salary. He has $n$ items that he needs to pack into $k$ big boxes. The $n$ items are currently arranged in a row, and Brandon doesn t want to bother reordering them, so he will partition the $n$ items into $k$ groups of consecutive items, and put each of the $k$ groups into their own box. For convenience when moving, Brandon wants to minimize the weight of the heaviest box. The weights of the boxes themselves are negligible. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

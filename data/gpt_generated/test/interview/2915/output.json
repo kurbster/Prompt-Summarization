@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDY49dAFrX7xKR6DWB6dCMqKGAaO",
+    "id": "cmpl-4BqqdcjPOjYFQ77mfkY1aeijwjnQL",
     "object": "text_completion",
-    "created": 1638579036,
+    "created": 1638730103,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a list of locations and the number of letters to be delivered to each location. Find the shortest route that delivers all the letters.",
+            "text": " The postal service is interested in cutting costs as an alternative to raising the postage rates. One way to do this is by minimizing the distance traveled when delivering mail from the post office to all the required locations and returning to the post office. It may be that all the mail to be delivered does not fit on the mail truck at once, in which case the distance traveled by the truck must include travel back to the post office to reload. For simplicity, we assume a one dimensional world with the post office at the origin, and delivery locations each identified by a single coordinate. As an example, suppose a postal truck can carry up to $100$ letters and that $50$ letters need to be delivered to location $-10$, that $175$ need to be delivered to location $10$, and $20$ delivered to location $25$. A maximally efficient plan would be: Deliver the $50$ letters to location $-10$ (travel $2 \\cdot 10$), the first $100$ letters to location $10$ (travel $2 \\cdot 10$), the remaining $75$ letters to location $10$ while on the way to delivering the $20$ to location $25$ (travel $2 \\cdot 25$). The total round-trip distance traveled is $90$. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

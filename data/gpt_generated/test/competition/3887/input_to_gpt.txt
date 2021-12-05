@@ -1,8 +1,11 @@
-Write a function which takes a number and returns the corresponding ASCII char for that value. 
-tl;dr: Write a function which takes a number and returns the corresponding ASCII char for that value. 
+Polycarp is reading a book consisting of $n$ pages numbered from $1$ to $n$. Every time he finishes the page with the number divisible by $m$, he writes down the last digit of this page number. For example, if $n=15$ and $m=5$, pages divisible by $m$ are $5, 10, 15$. Their last digits are $5, 0, 5$ correspondingly, their sum is $10$. Your task is to calculate the sum of all digits Polycarp has written down. You have to answer $q$ independent queries. 
+tl;dr: You are given a number $n$ and a value $m$. For every number from $1$ to $n$ if the number is divisible by $m$, you store tthe last digit of this number. For example, if $n=15$ and $m=5$, numbers divisible by $m$ are $5, 10, 15$. Their last digits are $5, 0, 5$ correspondingly, their sum is $10$. 
 
-> In information theory and computer science, the Levenshtein distance is a string metric for measuring the difference between two sequences. Informally, the Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other. (http://en.wikipedia.org/wiki/Levenshtein_distance) Your task is to implement a function which calculates the Levenshtein distance for two arbitrary strings
-tl;dr: The Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other. Your task is to implement a function which calculates the Levenshtein distance for two arbitrary strings
+A spoonerism is a spoken phrase in which the first letters of two of the words are swapped around, often with amusing results. In its most basic form a spoonerism is a two word phrase in which only the first letters of each word are swapped: ```"not picking" --> "pot nicking"``` Your task is to create a function that takes a string of two words, separated by a space: ```words``` and returns a spoonerism of those words in a string, as in the above example. 
+tl;dr: Your task is to create a function that takes a string of two words separated by a space, and returns a spoonerism of those words in a string. 
+
+Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.   
+tl;dr: Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.   
 
 You are given a rebus of form   +   -   +   = n, consisting of only question marks, separated by arithmetic operation '+' and '-', equality and positive integer n. The goal is to replace each question mark with some positive integer from 1 to n, such that equality holds. 
 tl;dr:

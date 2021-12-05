@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDTAqgDTcUUpexDfpP5ktsEcUJPc",
+    "id": "cmpl-4BqMrBXby3wVOZaTldT0BIaT9YS5r",
     "object": "text_completion",
-    "created": 1638578732,
+    "created": 1638728257,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " In C++ division with positive integers always rounds down. Because of this, sometimes when two integers are divided by the same divisor they become equal even though they were originally not equal. For example in C++, $\\verb|5/4|$ and $\\verb|7/4|$ are both equal to 1, but $5 \\neq 7$. Given a list of nonnegative integers and a divisor, how many pairs of distinct entries in the list are there that give the same result when both are divided by the divisor in C++",
+            "text": " Given a list of nonnegative integers and a divisor, how many pairs of distinct entries in the list are there that give the same result when both are divided by the divisor in C++ ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

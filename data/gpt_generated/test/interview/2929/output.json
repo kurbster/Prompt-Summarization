@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDTvgyhITMs1xAaL3aCLaD91H9Zi",
+    "id": "cmpl-4BqRnyJpzMKninArmixxg6GjsytzK",
     "object": "text_completion",
-    "created": 1638578779,
+    "created": 1638728563,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have to write a program to find out how long it will take for Orange to come back home. You are given the cave system as an $N \\times N$ grid where each location $(i, j)$ contains a nonnegative integer, $h_{i, j}$, representing the height of the rocks in meters at that location. Orange can only swim left, right, up, or down from one submerged location to another submerged location (but not diagonally). A location $(i, j)$ is submerged if the water level is at least $1$ meter higher than $h_{i, j}$. Orange s starting location will always be at $(0, 0)$, with $h_{0, 0} = 0$. The initial water level is $1$ meter so that Orange s start location is submerged. The only exit in the cave is at location $(N - 1, N - 1)$. After how many hours can Orange find his way to the exit? ",
+            "text": " You are given a grid of nonnegative integers. You need to find out how many hours it will take for Orange to find his way to the exit.  \n",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

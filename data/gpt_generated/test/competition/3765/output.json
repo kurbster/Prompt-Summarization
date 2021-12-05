@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDhpHoDpQyjXOXJ5qi1BFjD3axm5",
+    "id": "cmpl-4Bq3KdxON6S1dz3hMBM4wXD7C4heL",
     "object": "text_completion",
-    "created": 1638579641,
+    "created": 1638727046,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a rectangle of size a   b. You need to find the minimum number of extensions needed to reach Arkady's goal.   ",
+            "text": " You are given a rectangular field of size h   w. You need to find the minimum number of extensions needed to reach Arkady's goal. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

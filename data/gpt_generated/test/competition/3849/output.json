@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDnNYx0aSjo5COWFz820KFrczDaG",
+    "id": "cmpl-4BqrjQCWdKWAPw9mwmYDVTUvynH9m",
     "object": "text_completion",
-    "created": 1638579985,
+    "created": 1638730171,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given an array of numbers, return the difference between the largest and smallest values. The array will contain a minimum of two elements. Input data range guarantees that `max-min` will cause no integer overflow. ",
+            "text": " You are given a sequence of $n$ cards. Each card has two sides, one of which has color. At first, some of these cards are with color sides facing up and others are with color sides facing down. Then they take turns flipping cards, in which Tokitsukaze moves first. In each move, one should choose exactly $k$ consecutive cards and flip them to the same side, which means to make their color sides all face up or all face down. If all the color sides of these $n$ cards face the same direction after one's move, the one who takes this move will win. Princess Claris wants to know who will win the game if Tokitsukaze and Quailty are so clever that they won't make mistakes. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

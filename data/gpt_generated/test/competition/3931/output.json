@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDQ3lMk3pErKpYPJveow3xMD6Rgz",
+    "id": "cmpl-4BqsNlyWznovoFhbmmW15a3AVZ6fZ",
     "object": "text_completion",
-    "created": 1638578539,
+    "created": 1638730211,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Write a function that when given a number n, returns the nth number in the Fibonacci Sequence. ",
+            "text": " You are given a list of stops and a number of trips. Find the minimum amount of money Polycarp could have spent today if he can buy no more than k travel cards. Input Format The first line contains two integers, n and k , the number of stops and the number of trips. The next line contains n space-separated integers stops[i] Constraints 1<= n <= 105 1<= k <= 109 1<= stops[i] <= 109 Output Format An integer that denotes the minimum amount of money Polycarp could have spent today if he can buy no more than k travel cards. Sample Input 7 3 1 2 3 4 5 6 7 8 9 10 Sample Output ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

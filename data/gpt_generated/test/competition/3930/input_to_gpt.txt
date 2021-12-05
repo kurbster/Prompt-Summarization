@@ -1,8 +1,11 @@
-Let's say we have a number, `num`. Find the number of values of `n` such that: there exists `n` consecutive **positive** values that sum up to `num`. A positive number is `> 0`. `n` can also be 1. ```python #
-tl;dr: Given `num`. Find the total count of existing consecutive **positive** values that sum up to `num`. A positive number is `> 0`. `n` can also be 1. ```python #
+There is an integer sequence of length 2^N: A_0, A_1, ..., A_{2^N-1}. (Note that the sequence is 0-indexed.) For every integer K satisfying 1 \leq K \leq 2^N-1, solve the following problem:  - Let i and j be integers. Find the maximum value of A_i + A_j where 0 \leq i < j \leq 2^N-1 and (i or j) \leq K. Here, or denotes the bitwise OR. -----Constraints-----  - 1 \leq N \leq 18  - 1 \leq A_i \leq 10^9  - All values in input are integers. 
+tl;dr: There is an integer sequence of length 2^N: A_0, A_1, ..., A_{2^N-1}. For every integer K satisfying 1 \leq K \leq 2^N-1, solve the following problem:  - Let i and j be integers. Find the maximum value of A_i + A_j where 0 \leq i < j \leq 2^N-1 and (i or j) \leq K. Here, or denotes the bitwise OR. -----Constraints-----  - 1 \leq N \leq 18  - 1 \leq A_i \leq 10^9  - All values in input are integers. 
 
-**This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function called that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned. 
-tl;dr: **This Kata is intended as a small challenge for my students** All Star Code Challenge #18 Create a function that accepts 2 string arguments and returns an integer of the count of occurrences the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned
+Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1 ... n. 
+tl;dr: Given an integer n, generate all structurally unique binary search trees that store values 1 ... n. 
+
+You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.   Find out how many ways to assign symbols to make sum of integers equal to target S.   
+tl;dr: You have to apply + and - symbol between the given list non-negative integers to achieve the target S. In how many ways are there to assign symbols to make sum of integers equal to target S.   
 
 Molly Hooper has n different kinds of chemicals arranged in a line. Each of the chemicals has an affection value, The i-th of them has affection value a_{i}. Molly wants Sherlock to fall in love with her. She intends to do this by mixing a contiguous segment of chemicals together to make a love potion with total affection value as a non-negative integer power of k. Total affection value of a continuous segment of chemicals is the sum of affection values of each chemical in that segment. Help her to do so in finding the total number of such segments. 
 tl;dr:

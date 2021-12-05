@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDMVFgYdrflbFrxFLnQdnjmbJPEO",
+    "id": "cmpl-4BqWMP6NBqu5oMvzft5ausCUbilwV",
     "object": "text_completion",
-    "created": 1638578319,
+    "created": 1638728846,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have to plan out routes for the vehicles. Each route can use any road/railway multiple times. One of the most important aspects to consider is safety in order to avoid accidents at railway crossings, the train and the bus must not arrive at the same town (except town n) simultaneously. Under these constraints, what is the minimum number of hours needed for both vehicles to reach town n (the maximum of arrival times of the bus and the train) ",
+            "text": " You are given n towns and m bidirectional railways. There is also an absurdly simple road network for each pair of different towns x and y, there is a bidirectional road between towns x and y if and only if there is no railway between them. Travelling to a different town using one railway or one road always takes exactly one hour. A train and a bus leave town 1 at the same time. They both have the same destination, town n, and don't make any stops on the way (but they can wait in town n). The train can move only along railways and the bus can move only along roads. You've been asked to plan out routes for the vehicles; each route can use any road/railway multiple times. One of the most important aspects to consider is safety in order to avoid accidents at railway crossings, the train and the bus must not arrive at the same town (except town n) simultaneously. Under these constraints, what is the minimum number of hours needed for both vehicles to reach town n (the maximum of arrival times of the bus and the train) Note, that bus and train are not required to arrive to the town n at the same moment of time, but are allowed to do so.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

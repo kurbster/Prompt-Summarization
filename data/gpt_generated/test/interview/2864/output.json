@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE49IkujJRkYGq2GXewyIHXnI7qu",
+    "id": "cmpl-4Bqbxxj3uC2ucFrTZR2806PgX0RcZ",
     "object": "text_completion",
-    "created": 1638581025,
+    "created": 1638729193,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a set of cards dealt to you and a history of suggestions and evidence, you need to decide how close you are to being able to make an accusation. ",
+            "text": " You are player $1$. Given a set of cards dealt to you and a history of suggestions and evidence, you need to decide how close you are to being able to make an accusation.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

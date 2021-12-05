@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDXXtGLxhzeAJOYOHehDCTOl0VmT",
+    "id": "cmpl-4BpomsqBG53vG5rMU4LCFKzqAnC7Z",
     "object": "text_completion",
-    "created": 1638579003,
+    "created": 1638726144,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a grid size and number of ships, how many ship placements are possible?",
+            "text": " Battleship is a game played by two players. Each player has their own grid, which is hidden from their opponent. Each player secretly places some ships on their grid. Each ship covers a horizontal or vertical straight line of one or more contiguous squares. Ships cannot overlap. All ships are considered distinct, even if they have the same size. The orientation of each ship is not important to the game, only the squares they occupy. After placing their ships, the players then take turns taking shots at their opponent s ships by calling out a coordinate of their opponent s grid. The opponent must honestly say whether the shot was a hit or a miss. When all of a ship s squares are hit, that ship sinks ( You sunk my battleship!! ). A player loses when all of their ships are sunk. Bob is playing a game of Mini Battleship against Alice. Regular Battleship is played on a $10 \\! \\times \\! 10$ grid with $5$ ships. Mini Battleship is much smaller, with a grid no larger than $5 \\! \\times \\! 5$ and possibly fewer than $5$ ships. Bob wonders how many ship placements are possible on Alice s board given what he knows so far. The answer will be $0$ if Alice is cheating! (Or, if the game setup isn t possible.) ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

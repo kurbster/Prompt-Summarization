@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDaoMBU0tL33iZDAwyzYRAol1WDw",
+    "id": "cmpl-4BpqjMLmNFNn5xisn2sNZv8PT9Wgp",
     "object": "text_completion",
-    "created": 1638579206,
+    "created": 1638726265,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Dima the hamster enjoys nibbling different things: cages, sticks, bad problemsetters and even trees! Recently he found a binary search tree and instinctively nibbled all of its edges, hence messing up the vertices. Dima knows that if Andrew, who has been thoroughly assembling the tree for a long time, comes home and sees his creation demolished, he'll get extremely upset. To not let that happen, Dima has to recover the binary search tree. Luckily, he noticed that any two vertices connected by a direct edge had their greatest common divisor value exceed $1$. Help Dima construct such a binary search tree or determine that it's impossible. The definition and properties of a binary search tree can be found here.",
+            "text": " Dima the hamster nibbled all the edges of a binary search tree. Andrew, who has been assembling the tree for a long time, will get extremely upset if he sees his creation demolished. Help Dima construct such a binary search tree or determine that it's impossible. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

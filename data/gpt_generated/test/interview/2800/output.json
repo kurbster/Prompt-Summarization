@@ -1,14 +1,14 @@
 {
-    "id": "cmpl-4BDzVrLWDidC8BAHntkj2CnesCzjK",
+    "id": "cmpl-4Bq32R0Yh8SfSe6OIjNndJOG8JOVC",
     "object": "text_completion",
-    "created": 1638580737,
+    "created": 1638727028,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a set of numbered playing cards. You are also given the maximum number of cards that can be removed from a pile. Determine whether Alice can win the game if she is the first to play.",
+            "text": " Alice and Bob created a new game while at the beach this summer. All they need is a set of numbered playing cards. They start by creating $P$ piles with all cards face-up and select a non-negative number $K$. After that, they take turns like this:  - A player starts by selecting one of the piles.  - Then, he removes from $0$ up to $K$ cards from the top of that pile, leaving at least one card in the pile.  - Next, he looks at the card left at the top of the pile and must remove a number of cards equal to its value (from the top of the same pile). Whoever doesn t have more cards to remove, or whoever is forced to remove more cards than those available on a pile, loses the game. In the figure, you can see an example with two piles and $K = 1$. The player to move might:   - Select the first pile and $0$ cards to remove, being forced to remove $1$ card from the top next.  - Select the second pile and $0$ cards to remove, having to remove $1$ card from the top next.  - Select the second pile and $1$ card to remove, having to remove $2$ cards from the top next. Alice has realized that Bob is very good at this game and will always win if he has the chance. Luckily, this time Alice is first to play. Is Alice able to win this game  -----Task----- Given the description of the piles with all the cards and the maximum number of cards they can start to remove, your goal is to find out whether Alice can win the game if she",
             "index": 0,
             "logprobs": null,
-            "finish_reason": "stop"
+            "finish_reason": "length"
         }
     ]
 }

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDMwFX514TZQNBY4QNw3rvh2uQ7Z",
+    "id": "cmpl-4BqYuVM5Bp8uNjbOvf5eTyiN0ekhb",
     "object": "text_completion",
-    "created": 1638578346,
+    "created": 1638729004,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You have a map of a railway network. You need to find the minimum time it takes to travel from one junction to another, ensuring that you travel via exactly $k_1$ red tracks, exactly $k_2$ blue tracks, and any number of white tracks, in any order.",
+            "text": " Find the minimum time required to travel from $S$ to $T$ via exactly $k_1$ red tracks, exactly $k_2$ blue tracks, and any number of white tracks, in any order. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

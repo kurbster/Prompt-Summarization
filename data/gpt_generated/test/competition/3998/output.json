@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDV5qiQKPEOtj1ZtPcrbyCS5m69P",
+    "id": "cmpl-4BqMKfBby4ND3bgqKQuECpnceI0kF",
     "object": "text_completion",
-    "created": 1638578851,
+    "created": 1638728224,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " There are n friends playing popular video game Toda 2. There is a rating system describing skill level of each player, initially the rating of the i-th friend is r_{i}. The friends decided to take part in the championship as a team. But they should have equal ratings to be allowed to compose a single team consisting of all n friends. So the friends are faced with the problem: how to make all their ratings equal. One way to change ratings is to willingly lose in some matches. Friends can form a party consisting of two to five (but not more than n) friends and play a match in the game. When the party loses, the rating of each of its members decreases by 1. A rating can't become negative, so r_{i} = 0 doesn't change after losing. The friends can take part in multiple matches, each time making a party from any subset of friends (but remember about constraints on party size: from 2 to 5 members). The friends want to make their ratings equal but as high as possible. Help the friends develop a strategy of losing the matches so that all their ratings become equal and the resulting rating is maximum possible.",
+            "text": " Friends want to make their ratings equal but as high as possible. Help the friends develop a strategy of losing the matches so that all their ratings become equal and the resulting rating is maximum possible. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

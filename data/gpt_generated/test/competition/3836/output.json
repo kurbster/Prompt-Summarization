@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDQ8xc3kfue521LVMPHdqr7fJdlp",
+    "id": "cmpl-4BqBMa17xGzDyQwHQgbz08jWk7T7d",
     "object": "text_completion",
-    "created": 1638578544,
+    "created": 1638727544,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " There are $n$ people who want to take part in the debate as a spectator. Each person is described by their influence and political views. There are four kinds of political views:  supporting none of candidates (this kind is denoted as \"00\"),  supporting Alice but not Bob (this kind is denoted as \"10\"),  supporting Bob but not Alice (this kind is denoted as \"01\"),  supporting both candidates (this kind is denoted as \"11\"). The direction of the TV channel wants to invite some of these people to the debate. The set of invited spectators should satisfy three conditions: ",
+            "text": " There are $n$ people who want to take part in the debate as a spectator. Each person is described by their influence and political views. There are four kinds of political views:  supporting none of candidates (this kind is denoted as \"00\"),  supporting Alice but not Bob (this kind is denoted as \"10\"),  supporting Bob but not Alice (this kind is denoted as \"01\"),  supporting both candidates (this kind is denoted as \"11\"). The direction of the TV channel wants to invite some of these people to the debate. The set of invited spectators should satisfy three conditions:  at least half of spectators support Alice (i.e. $2 \\cdot a \\ge m$, where $a$ is number of spectators supporting Alice and $m$ is the total number of spectators),  at least half of spectators support Bob (i.e. $2 \\cdot b \\ge m$, where $b$ is number of spectators supporting Bob and $m$ is the total number of spectators),  the total influence of spectators is maximal possible. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

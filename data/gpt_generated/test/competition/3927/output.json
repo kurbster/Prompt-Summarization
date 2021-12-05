@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDmBYvJ3Hl5wsuzOpteAWIvw5Bs8",
+    "id": "cmpl-4Br5c8NW6zhNQOe2s1VMxyYh1Xq7H",
     "object": "text_completion",
-    "created": 1638579911,
+    "created": 1638731032,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Find the maximum number of weights you can reveal after asking your friend to give you exactly $k$ weights with the total mass $m$. ",
+            "text": " You have a set of $n$ weights. You know that their masses are $a_1$, $a_2$, ..., $a_n$ grams, but you don't know which of them has which mass. You can't distinguish the weights. However, your friend does know the mass of each weight. You can ask your friend to give you exactly $k$ weights with the total mass $m$ (both parameters $k$ and $m$ are chosen by you), and your friend will point to any valid subset of weights, if it is possible. You are allowed to make this query only once. Find the maximum possible number of weights you can reveal after this query.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

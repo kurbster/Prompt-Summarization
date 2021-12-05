@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDuOtVrHwzVh10LY6mn5FAxXYsDZ",
+    "id": "cmpl-4Bqb6kTbbZE2LAhZabdSF12dbmRZU",
     "object": "text_completion",
-    "created": 1638580420,
+    "created": 1638729140,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a list of numbers. Find the smallest positive number that cannot be made using each of digits at most once. ",
+            "text": " Given the full list of what numbers we are in possession of, what is the smallest positive number that cannot be made using each of digits at most once ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

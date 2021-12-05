@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE45sWJUzAsUaSCybaNq4gvGSsPY",
+    "id": "cmpl-4BqQNqCk9JG2V28FNIKrlB0XZnlXe",
     "object": "text_completion",
-    "created": 1638581021,
+    "created": 1638728475,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Sheila is a student and she drives a typical student car: it is old, slow, rusty, and falling apart. Recently, the needle on the speedometer fell off. She glued it back on, but she might have placed it at the wrong angle. Thus, when the speedometer reads $s$, her true speed is $s+c$, where $c$ is an unknown constant (possibly negative). \n",
+            "text": " You are given a list of distances and times. The speedometer on Sheila's car might have been placed at an angle. The true speed of Sheila's car is $s+c$, where $c$ is an unknown constant. You need to compute $c$. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

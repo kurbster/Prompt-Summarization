@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDcpNeX8oES8tsIpSFc39yZtK5GC",
+    "id": "cmpl-4Bq54X9gm0lJf3bzlQ9gmWln1R52j",
     "object": "text_completion",
-    "created": 1638579331,
+    "created": 1638727154,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.",
+            "text": " Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

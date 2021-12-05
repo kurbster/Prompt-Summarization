@@ -1,8 +1,11 @@
-The "BerCorp" company has got n employees. These employees can use m approved official languages for the formal correspondence. The languages are numbered with integers from 1 to m. For each employee we have the list of languages, which he knows. This list could be empty, i. e. an employee may know no official languages. But the employees are willing to learn any number of official languages, as long as the company pays their lessons. A study course in one language for one employee costs 1 berdollar. Find the minimum sum of money the company needs to spend so as any employee could correspond to any other one (their correspondence can be indirect, i. e. other employees can help out translating). 
-tl;dr: You are given n sets which are a subset of the set of natural numbers in the range 1 to m. You can add a single number to any one set at the cost 1. Find the minimum total cost such that for every pair of sets the union is not a null set. 
-
 Given a string s, write a method (function) that will return true if its a valid single integer or floating number or false if its not. Valid examples, should return true: should return false
 tl;dr: Given a string s, write a method that will return true if it is a valid single integer or floating number or false if it is not
+
+Sandu, a teacher in Chefland introduced his students to a new sequence i.e. 0,1,0,1,2,0,1,2,3,0,1,2,3,4........ The Sequence starts from 0 and increases by one till $i$(initially i equals to 1), then repeat itself with $i$ changed to $i+1$ Students being curious about the sequence asks the Nth element of the sequence. Help Sandu to answer the Students 
+tl;dr: 0,1,0,1,2,0,1,2,3,0,1,2,3,4........ The sequence starts from 0 and increases by one till $i$(initially i equals to 1), then repeat itself with $i$ changed to $i+1$. Find the Nth term of the sequence. 
+
+Your are given a string $S$ containing only lowercase letter and a array of character $arr$. Find whether the given string only contains characters from the given character array.  Print $1$ if the string contains characters from the given array only else print $0$. 
+tl;dr: You are given an array to check whether the characters of given string S belongs to it or not. Print 1 if it contains else print 0. 
 
 There are $N$ balloons floating in the air in a large room, lined up from left to right. Young Perica likes to play with arrows and practice his hunting abilities. He shoots an arrow from the left to the right side of the room from an arbitrary height he chooses. The arrow moves from left to right, at a chosen height $H$ until it finds a balloon. The moment when an arrow touches a balloon, the balloon pops and disappears and the arrow continues its way from left to right at a height decreased by $1$. Therefore, if the arrow was moving at height $H$, after popping the balloon it travels on height $H-1$. Our hero s goal is to pop all the balloons using as little arrows as possible. 
 tl;dr:

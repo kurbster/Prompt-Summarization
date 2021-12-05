@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDixN0nfWF7cPSeSpGAd4zUoNsz6",
+    "id": "cmpl-4BqAxLjyKuNAwVFoUJiQfgUPy1aNN",
     "object": "text_completion",
-    "created": 1638579711,
+    "created": 1638727519,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a room represented by a grid, and a laser and sensor, find the best place to place a mirror to reflect the laser to the sensor. ",
+            "text": " You have a laser and a sensor. The laser is in the northern wall pointing south, and the sensor is mounted on the eastern wall, such that the laser must hit it from the west. You have a number of mirrors, and you want to place them such that the laser will reach the sensor (as long as no one is in its way). ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE2PZVkx13obZznv34MDWipqHkcw",
+    "id": "cmpl-4Bqbc4MSwlkBfkgzz9mjRm03TXuP5",
     "object": "text_completion",
-    "created": 1638580917,
+    "created": 1638729172,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Nauuo is a girl who loves playing cards. One day she was playing cards but found that the cards were mixed with some empty ones. There are $n$ cards numbered from $1$ to $n$, and they were mixed with another $n$ empty cards. She piled up the $2n$ cards and drew $n$ of them. The $n$ cards in Nauuo's hands are given. The remaining $n$ cards in the pile are also given in the order from top to bottom. In one operation she can choose a card in her hands and play it   put it at the bottom of the pile, then draw the top card from the pile. Nauuo wants to make the $n$ numbered cards piled up in increasing order (the $i$-th card in the pile from top to bottom is the card $i$) as quickly as possible. Can you tell her the minimum number of operations  ",
+            "text": " Nauuo is a girl who loves playing cards. One day she was playing cards but found that the cards were mixed with some empty ones. There are $n$ cards numbered from $1$ to $n$, and they were mixed with another $n$ empty cards. She piled up the $2n$ cards and drew $n$ of them. The $n$ cards in Nauuo's hands are given. The remaining $n$ cards in the pile are also given in the order from top to bottom. In one operation she can choose a card in her hands and play it   put it at the bottom of the pile, then draw the top card from the pile. Nauuo wants to make the $n$ numbered cards piled up in increasing order (the $i$-th card in the pile from top to bottom is the card $i$) as quickly as possible. Can you tell her the minimum number of operations ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

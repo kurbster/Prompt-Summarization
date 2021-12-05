@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDNw4DBdNi16hYTXb6QdVYCZya4e",
+    "id": "cmpl-4BqpyvardJeatV77RQIciTvCbW21d",
     "object": "text_completion",
-    "created": 1638578408,
+    "created": 1638730062,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Alyona's mother wants to present an array of n non-negative integers to Alyona. The array should be special. Alyona is a capricious girl so after she gets the array, she inspects m of its subarrays. Subarray is a set of some subsequent elements of the array. The i-th subarray is described with two integers l_{i} and r_{i}, and its elements are a[l_{i}], a[l_{i} + 1], ..., a[r_{i}]. Alyona is going to find mex for each of the chosen subarrays. Among these m mexes the girl is going to find the smallest. She wants this minimum mex to be as large as possible. You are to find an array a of n elements so that the minimum mex among those chosen by Alyona subarrays is as large as possible. The mex of a set S is a minimum possible non-negative integer that is not in S. ",
+            "text": " Alyona's mother wants to present an array of n non-negative integers to Alyona. The array should be special. Alyona is a capricious girl so after she gets the array, she inspects m of its subarrays. Subarray is a set of some subsequent elements of the array. The i-th subarray is described with two integers l_{i} and r_{i}, and its elements are a[l_{i}], a[l_{i} + 1], ..., a[r_{i}]. Alyona is going to find mex for each of the chosen subarrays. Among these m mexes the girl is going to find the smallest. She wants this minimum mex to be as large as possible. You are to find an array a of n elements so that the minimum mex among those chosen by Alyona subarrays is as large as possible. The mex of a set S is a minimum possible non-negative integer that is not in S.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

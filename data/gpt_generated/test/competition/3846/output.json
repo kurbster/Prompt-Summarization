@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDSPZrIAhVwGYk5TjO6xbqtLafU6",
+    "id": "cmpl-4BqWswh0VTK4wjum9ska2MywORVU0",
     "object": "text_completion",
-    "created": 1638578685,
+    "created": 1638728878,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a string of messages. You need to find the person who is present at any conversation during a chat meeting. ",
+            "text": " Given the 'user logged on'/'user logged off' messages of the meeting in the chronological order, help the director determine who can be the leader. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

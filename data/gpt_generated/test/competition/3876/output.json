@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDv8y0tA7G0iE2kqivNZoGJovQOk",
+    "id": "cmpl-4BqQ876zChOUmrv5yOVz6CULqLuxF",
     "object": "text_completion",
-    "created": 1638580466,
+    "created": 1638728460,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Print the number of ways to divide the vertices into pairs satisfying the given condition.  ",
+            "text": " Let N be an even number. There is a tree with N vertices. The vertices are numbered 1, 2, ..., N. For each i (1 \\leq i \\leq N - 1), the i-th edge connects Vertex x_i and y_i. Snuke would like to decorate the tree with ribbons, as follows. First, he will divide the N vertices into N / 2 pairs. Here, each vertex must belong to exactly one pair. Then, for each pair (u, v), put a ribbon through all the edges contained in the shortest path between u and v. Snuke is trying to divide the vertices into pairs so that the following condition is satisfied: \"for every edge, there is at least one ribbon going through it.\" How many ways are there to divide the vertices into pairs, satisfying this condition? Find the count modulo 10^9 + 7. Here, two ways to divide the vertices into pairs are considered different when there is a pair that is contained in one of the two ways but not in the other. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

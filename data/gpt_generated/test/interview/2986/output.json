@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDyke5XWIBGmzt8xkBpsTfRnGk6a",
+    "id": "cmpl-4BqOY5m3cmF0vka6avoeHXZjIKTkF",
     "object": "text_completion",
-    "created": 1638580690,
+    "created": 1638728362,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a string, if the cursor is at the front of the line, then pressing a \u00a0< \u00a0(the \u00a0Backspace \u00a0key) does nothing. If the cursor is at the back of the line, then pressing a \u00a0[ \u00a0(the \u00a0Home \u00a0key) does nothing. If the cursor is at the end of the line, then pressing a \u00a0] \u00a0(the \u00a0End \u00a0key) does nothing. For all other valid character in the input, it actually means that the corresponding key is pressed, we insert that character at the (typing) cursor position, and advance one position to the right the cursor accordingly. ",
+            "text": " Every time we see a character <, it actually means that the Backspace key is pressed and we undo the last character that was just typed. If we see a character [, it actually means that the Home key is pressed and we move the (typing) cursor to the front of the line. Similarly, if we see a character ], it actually means that the End key is pressed and we move the (typing) cursor the back of the line. For all other valid character in the input, it actually means that the corresponding key is pressed, we insert that character at the (typing) cursor position, and advance one position to the right the cursor accordingly. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

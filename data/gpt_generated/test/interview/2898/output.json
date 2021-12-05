@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDTecebdHRzsUCHqnrQKHSgBcJhQ",
+    "id": "cmpl-4BpqPnOqwnJpCCY0vMO6ijp5EhpDd",
     "object": "text_completion",
-    "created": 1638578762,
+    "created": 1638726245,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a list of drives and their capacities. Find the minimum capacity of an extra drive needed to reformat all the drives.",
+            "text": " You are given a list of integers. You need to find the minimum number of extra hard drives you need to buy to reformat all the drives in the list.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

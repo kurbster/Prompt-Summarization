@@ -1,8 +1,11 @@
-Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1 ... n. 
-tl;dr: Given an integer n, generate all structurally unique binary search trees that store values 1 ... n. 
+You are given an array (which will have a length of at least 3, but could be very large) containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer `N`. Write a method that takes the array as an argument and returns this "outlier" `N`. ## 
+tl;dr: You are given an array which will have a length of at least 3 containing integers. The array is either entirely comprised of odd integers or entirely comprised of even integers except for a single integer N. Write a method that takes the array as an argument and returns this N. 
 
-Write a function to split a string and convert it into an array of words. For example: ```python "Robin Singh" ==> ["Robin", "Singh"] "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"] ``
-tl;dr: Write a function to split a string and convert it into an array of words.  
+Christmas is coming, and Santa has a long list to go through, to find who deserves presents for the big day. Go through a list of children, and return a list containing every child who appeared on Santa's list. Do not add any child more than once. Output should be sorted. 
+tl;dr: You are given a list of words, you need to output a sorted list. Comparison should be case sensitive
+
+Your task is to create a function that does four basic mathematical operations. The function should take three arguments - operation(string/char), value1(number), value2(number).   The function should return result of numbers after applying the chosen operation. ### 
+tl;dr: You are given an operation and two values. Return result of numbers after applying the operation. 
 
 Takahashi throws N dice, each having K sides with all integers from 1 to K. The dice are NOT pairwise distinguishable. For each i=2,3,...,2K, find the following value modulo 998244353:  - The number of combinations of N sides shown by the dice such that the sum of no two different sides is i. Note that the dice are NOT distinguishable, that is, two combinations are considered different when there exists an integer k such that the number of dice showing k is different in those two. -----Constraints-----  - 1 \leq K \leq 2000  - 2 \leq N \leq 2000  - K and N are integers. 
 tl;dr:

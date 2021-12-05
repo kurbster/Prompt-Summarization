@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE3KwVhQbxDQsg8DT2KhcOZLK7t8",
+    "id": "cmpl-4BpqR4wupoIVioYOQ2MxTfJm6FA5d",
     "object": "text_completion",
-    "created": 1638580974,
+    "created": 1638726247,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Restore the array $a_1, \\dots, a_n$ from the information that is given. ",
+            "text": " Sasha grew up and went to first grade. To celebrate this event her mother bought her a multiplication table $M$ with $n$ rows and $n$ columns such that $M_{ij}=a_i \\cdot a_j$ where $a_1, \\dots, a_n$ is some sequence of positive integers. Of course, the girl decided to take it to school with her. But while she was having lunch, hooligan Grisha erased numbers on the main diagonal and threw away the array $a_1, \\dots, a_n$. Help Sasha restore the array!",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

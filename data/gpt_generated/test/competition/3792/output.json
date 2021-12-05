@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDSfpc1XlZ9VJkNn2LtpamSgAnKo",
+    "id": "cmpl-4BqQeyrlWo0FLSHdEsof5kgEnHHTi",
     "object": "text_completion",
-    "created": 1638578701,
+    "created": 1638728492,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Calculate the number of strings that are prefixes of at least one of the written strings. ",
+            "text": " The Fair Nut has written $k$ strings of length $n$, consisting of letters \"a\" and \"b\". He calculated $c$ the number of strings that are prefixes of at least one of the written strings. Every string was counted only one time. Then, he lost his sheet with strings. He remembers that all written strings were lexicographically not smaller than string $s$ and not bigger than string $t$. He is interested: what is the maximum value of $c$ that he could get. A string $a$ is lexicographically smaller than a string $b$ if and only if one of the following holds: $a$ is a prefix of $b$, but $a \\ne b$; in the first position where $a$ and $b$ differ, the string $a$ has a letter that appears earlier in the alphabet than the corresponding letter in $b$. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BE5ll1MSluzl4BF0ByQi0dXYuvlY",
+    "id": "cmpl-4Bq0vLR1VHyINU37xreGZubd0HGjt",
     "object": "text_completion",
-    "created": 1638581125,
+    "created": 1638726897,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given an array of integers. In one step, you can change the sign of any number of elements in the array. Return the maximum sum of elements in the array.   ",
+            "text": " You are given an array of integers. You can change the sign of any number of elements in the array. Return the maximum sum of elements in the array. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

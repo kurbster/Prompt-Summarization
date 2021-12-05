@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDyF9v5xE5esSd7AvnRZexRTjXtN",
+    "id": "cmpl-4Br4tEmeffeHK7S8YKRnfDUVIatBH",
     "object": "text_completion",
-    "created": 1638580659,
+    "created": 1638730987,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given the initial positions of three particles. They are confined to an infinite plane. All particles have the same radius. When two particles collide, the second particle will move away from the first one in a direction perpendicular to the tangent at the point of the contact. The first particle will cease to exist and be converted to radiation. There are a number of possible scenarios your simulator should identify: ",
+            "text": " You are given a vector $(x_ v, y_ v)$ specifying the direction particle $1$ will move when the experiment starts. When particle $i$ hits particle $j$, particle $j$ will start moving in the direction perpendicular to the tangent at the point of the contact, away from particle $i$. Particle $i$ will cease to exist and be converted to radiation. A moving particle that does not hit another will continue moving indefinitely. There are a number of possible scenarios your simulator should identify: \n- particle $1$ hits particle $2$, which in turns hits particle $3$; \n- particle $1$ hits particle $3$, which in turns hits particle $2$; \n- particle $1$ hits particle $2$, which moves indefinitely; \n- particle $1$ hits particle $3$, which moves indefinitely; \n- particle $1$ moves indefinitely.",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

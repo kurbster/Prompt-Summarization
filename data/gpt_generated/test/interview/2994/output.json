@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDXmISuRIaUCpwlMhhNruCTsXI67",
+    "id": "cmpl-4BqPV8jn6NRtsKsJ9yHK9ffjAff1L",
     "object": "text_completion",
-    "created": 1638579018,
+    "created": 1638728421,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a 2D grid. Each cell contains either an apple, an obstacle, or is empty. You must simulate gravity by moving apples into empty cells. Print out the final configuration of the board after all apples reach their final locations. ",
+            "text": " A 2D rectangular grid. Each grid cell contains either an apple, an obstacle, or is empty. Empty cells are denoted as  . , apples as  a , and obstacles as  # . You are to implement a simulation of gravity, based on the following rules: Whenever there is an empty cell immediately below an apple, the apple moves into the empty cell. Print out the final configuration of the board after all apples reach their final locations. Merely iterating the gravity rule, a step at a time, will likely take too long on large datasets. \n",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDiKWsR1iLYsUkHKZ62z3jylFOvU",
+    "id": "cmpl-4BqAeNmVWucMgkMS5MV9OlUvwkpeE",
     "object": "text_completion",
-    "created": 1638579672,
+    "created": 1638727500,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " You are given a number $n$ and a list of weights $w_1,\\dots,w_n$. You need to find a number $r$ such that $r\\cdot w_i\\equiv w_j\\pmod{998244353}$ for all $i,j$. ",
+            "text": " Nauuo is a girl who loves random picture websites. One day she made a random picture website by herself which includes $n$ pictures. When Nauuo visits the website, she sees exactly one picture. The website does not display each picture with equal probability. The $i$-th picture has a non-negative weight $w_i$, and the probability of the $i$-th picture being displayed is $\\frac{w_i}{\\sum_{j=1}^nw_j}$. That is to say, the probability of a picture to be displayed is proportional to its weight. However, Nauuo discovered that some pictures she does not like were displayed too often. To solve this problem, she came up with a great idea: when she saw a picture she likes, she would add $1$ to its weight; otherwise, she would subtract $1$ from its weight. Nauuo will visit the website $m$ times. She wants to know the expected weight of each picture after all the $m$ visits modulo $998244353$. Can you help her? ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"

@@ -1,11 +1,11 @@
 {
-    "id": "cmpl-4BDcVGUP3auHTeet0FhXyo2V2E5Nx",
+    "id": "cmpl-4Br48nLvjjdndyZ3cJeeUDApwWaMU",
     "object": "text_completion",
-    "created": 1638579311,
+    "created": 1638730940,
     "model": "davinci:2020-05-03",
     "choices": [
         {
-            "text": " Given a word, find all possible suffixes of this word. ",
+            "text": " Given a word, find all distinct strings with the length 2 or 3, which can be suffixes of this word according to the word constructing rules in Reberland language. ",
             "index": 0,
             "logprobs": null,
             "finish_reason": "stop"
