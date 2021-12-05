@@ -1,2 +1,0 @@
-def capitalize(s,ind):
-	

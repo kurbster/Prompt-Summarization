@@ -1,1 +1,0 @@
- You are given two strings $a$ and $b$. You need to encode them into two strings $c$ and $d$ such that $c$ and $d$ are of the same length, and $c$ and $d$ have the same number of '1's and '0's. 

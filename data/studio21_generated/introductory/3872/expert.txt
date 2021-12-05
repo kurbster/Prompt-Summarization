@@ -1,1 +1,0 @@
- Given a list of words, alphabetize them based on nth letter of each word.

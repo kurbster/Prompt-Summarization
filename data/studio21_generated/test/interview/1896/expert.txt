@@ -1,2 +1,0 @@
- Given a hexagon, find the number of hexagons situated not farther than n cells away from it. 
------Input----- The only line of the input contains one integer n (0 ≤ n ≤ 10^9). -----Output----- Output one integer — the number of hexagons situated not farther than n cells away from a given cell. -----Examples----- Input 2 Output 19

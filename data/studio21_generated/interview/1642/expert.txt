@@ -1,1 +1,0 @@
- You are given a number of magnitude 1. You need to divide this number into as many positive parts as possible such that at any moment given a part A, you can divide into only two parts B and C, such that B does not exceed C times some constant. 

@@ -1,1 +1,0 @@
-["#!/usr/bin/env python\n\nF = [1,1]\ndef fibo():\n for i in range(500):\n  F.append(F[-2] + F[-1])\n\ndef main():\n fibo()\n #print len(str(F[-1]))\n #print len(str(10**100))\n while True:\n  try:\n   A, B = list(map(int, input().strip().split()[:2]))\n   if A == 0 and B == 0: break\n   print(len([x for x in F if x >= A and x <= B]))\n  except:\n   break\n\nmain()\n\n"]

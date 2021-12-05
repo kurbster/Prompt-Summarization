@@ -1,1 +1,0 @@
-{"inputs": [["2", "15 5", "L H", "20 14", "R E", "*try to trim extra white spaces like new line during input in case of wrong answer"]], "outputs": [["5 H", "7 E"]]}

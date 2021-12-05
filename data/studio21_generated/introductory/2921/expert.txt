@@ -1,1 +1,0 @@
- You are given the number of levels of the pyramid, and your task is to return an object of the form: "total: 9, gold: 9, diamond: 0, emerald: 0, iron: 0".

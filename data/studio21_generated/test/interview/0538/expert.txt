@@ -1,2 +1,0 @@
- Given an integer number x, check if it's quasi-palindromic number. 
------Input----- The first line contains one integer number x (1 ≤ x ≤ 10^9). This number is given without any leading zeroes. -----Output----- Print "YES" if number x is quasi-palindromic. Otherwise, print "NO" (without quotes). -----Examples----- Input 131 Output YES Input 320 Output NO Input 2010200 Output YES

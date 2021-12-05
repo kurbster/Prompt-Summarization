@@ -1,2 +1,0 @@
- You are given a string $S$. You need to check whether $S$ is a $GOOD$ String or not.   
------Input:----- A string input is given from Standard Input that consists of only capital letters.  -----Output:----- Output  a single line  that  is either $GOOD$  (if string is a good string ) or $-1$(if string is not good). -----Constraints----- - $8 \leq S \leq 1000$ -----Sample Input 1:----- AMBITIOUSNESS -----Sample Output 2:----- GOOD -----Sample Input 2:----- COOEY -----Sample Output 2:----- -1

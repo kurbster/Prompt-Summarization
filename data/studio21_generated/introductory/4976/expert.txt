@@ -1,1 +1,0 @@
- The function must return the sequence of titles that match the string passed as an argument. TITLES is a preloaded sequence of strings. ```search(TITLES, 'ock') --> ['Rocky 1', 'Rocky 2']

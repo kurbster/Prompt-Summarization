@@ -1,3 +1,0 @@
- You are given a grid of nonnegative integers. You need to find out how many hours it will take for Orange to find his way to the exit.  
-
------Input----- The input consists of one integer, $N$, on the first line such that $2 \leq N \leq 100$, followed by $N$ lines with $N$ integers each, separated by spaces, such that each integer represents the height $h_{i, j}$ ($1 \le h_{i, j} \le 10^8$) of the rocks at location $(i, j)$. -----Output----- Output a single integer, which is the minimum number of hours that must pass before Orange can reach the exit. -----Examples----- Sample Input: 2 0 3 2 4 Sample Output: 4

@@ -1,3 +1,0 @@
-The Levenshtein distance between two words is the minimum number of single-character edits (i.e. insertions, deletions or substitutions) required to change one word into the other.
-
-Your task is to implement a function which calculates the Levenshtein distance for two arbitrary strings.

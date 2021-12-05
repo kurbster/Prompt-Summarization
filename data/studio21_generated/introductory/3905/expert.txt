@@ -1,1 +1,0 @@
- Given a string of numbers in sequence, your task will be to return the missing number. If there is no number missing or there is an error in the sequence, return `-1`.  Good luck!

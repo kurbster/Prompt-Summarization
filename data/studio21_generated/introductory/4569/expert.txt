@@ -1,1 +1,0 @@
- Given a sequence of items, return the item immediately following it. If the item occurs more than once in a sequence, return the item after the first occurence.

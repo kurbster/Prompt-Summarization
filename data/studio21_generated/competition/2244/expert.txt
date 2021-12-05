@@ -1,2 +1,0 @@
- You are given N integers, you need to find the minimum cost to achieve connectivity.
------Input----- The input is given from Standard Input in the following format: N l_1 r_1 l_2 r_2 : l_N r_N -----Output----- Print the minimum cost to achieve connectivity. -----Sample Input----- 3 1 3 5 7 1 3 -----Sample Output----- 2 The second rectangle should be moved to the left by a distance of 2.

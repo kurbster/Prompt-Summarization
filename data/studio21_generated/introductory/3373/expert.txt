@@ -1,1 +1,0 @@
- You are given two square matrices, A and B, of size 2x2 (note: tests are not limited to 2x2). Your task is to return the product of the two matrices. 

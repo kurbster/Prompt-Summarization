@@ -1,1 +1,0 @@
- Given a natural number n, return the line number it falls in, in the Floyd's triangle 

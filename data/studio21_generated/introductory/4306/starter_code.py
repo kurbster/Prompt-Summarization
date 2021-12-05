@@ -1,2 +1,0 @@
-def coordinates(degrees, radius):
-	

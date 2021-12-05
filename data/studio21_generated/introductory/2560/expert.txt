@@ -1,2 +1,0 @@
- given a list of rational numbers find the product of them
-=====Input Format===== First line contains n, the number of rational numbers. The ith of next n lines contain two integers each, the numerator (N_i) and denominator (D_i) of the ith rational number in the list. =====Constraints===== 1≤n≤100 1≤N_i,D_i≤10^9 =====Output Format===== Print only one line containing the numerator and denominator of the product of the numbers in the list in its simplest form, i.e. numerator and denominator have no common divisor other than 1.

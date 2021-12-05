@@ -1,1 +1,0 @@
- The input is a list containing dictionaries with the competitors' names and results. The names in the dictionaries are strings. The results are lists with a list of strings. And example follows. score_pole_vault([         {"name": "Linda", "results": ["XXO", "O","XXO", "O"]},         {"name": "Vickie", "results": ["O","X", "", ""]},        

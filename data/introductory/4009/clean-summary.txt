@@ -1,1 +1,0 @@
-You are given an integer, take the average of each pair of consecutive digits. Repeat this process until you have a single integer, then return that integer. If the average of two digits is not an integer, round the result up. Example 1: Input: digitsAverage(246) Output: 4 Example 2: Input: digitsAverage(89) OutputL 9

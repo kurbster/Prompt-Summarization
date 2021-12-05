@@ -1,2 +1,0 @@
- You are given two integers n and k, return the number of almost identity permutations. 
------Input----- The first line contains two integers n and k (4 ≤ n ≤ 1000, 1 ≤ k ≤ 4). -----Output----- Print the number of almost identity permutations for given n and k. -----Examples----- Input 4 1 Output 1 Input 4 2 Output 7 Input 5 3 Output 31 Input 5 4 Output 76

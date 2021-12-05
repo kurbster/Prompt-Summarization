@@ -1,1 +1,0 @@
- You are given a text, and you need to find the first occurence of the word "Wally" in the text.  "Wally" must not be part of another word, but it can be directly followed by a punctuation mark. If no such "Wally" exists, return -1. 

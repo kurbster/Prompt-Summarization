@@ -1,1 +1,0 @@
- Given a list, you need to find the leftmost value in the last row.

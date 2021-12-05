@@ -1,1 +1,0 @@
- This function takes an integer as input and returns the number of positive integers that are relatively prime to `n`.

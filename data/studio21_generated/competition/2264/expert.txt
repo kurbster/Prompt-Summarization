@@ -1,2 +1,0 @@
- 
------Input----- Input is given from Standard Input in the following format: N M S T U_1 V_1 D_1 U_2 V_2 D_2 : U_M V_M D_M -----Output----- Print the answer. -----Sample Input----- 4 4 1 3 1 2 1 2 3 1 3 4 1 4 1 1 -----Sample Output----- 2 There are two ways to choose shortest paths that satisfies the condition:  - Takahashi chooses the path 1 \rightarrow 2 \rightarrow 3, and Aoki chooses the path 3 \rightarrow 4 \rightarrow 1.  - Takahashi chooses the path 1 \rightarrow 4 \rightarrow 3, and Aoki chooses the path 3 \rightarrow 2 \rightarrow 1.

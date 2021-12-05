@@ -1,1 +1,0 @@
- You are given a set amount of ammo and an aim rating. You will shoot the ducks from left to right. You need to calculate how many successful shots you will get. Return string with X marking ducks you shot. 

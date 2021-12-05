@@ -1,2 +1,0 @@
- You are given n sets which are a subset of the set of natural numbers in the range 1 to m. You can add a single number to any one set at the cost 1. Find the minimum total cost such that for every pair of sets the union is not a null set.
-)

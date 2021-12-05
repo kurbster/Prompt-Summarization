@@ -1,1 +1,0 @@
- You are given a function that should insert an asterisk (`*`) between every pair of even digits in the given input, and return it as a string. If the input is a sequence, concat the elements first as a string.  Example 1: Input:  5312708     -->  "531270*8" Explanation:  5312708 -> 531*270*8  Example 2: Input:  0000      -->  "0*0*0*0" Explanation

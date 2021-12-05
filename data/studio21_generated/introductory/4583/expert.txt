@@ -1,2 +1,0 @@
- You are given a vector of 4 values: 1) The leg type 2) The body type 3) The mouth type 4) The eye type 
-Note:** the eyes are symmetric, and their total amount is `2 to the power of body size`.    You will also be given only valid data. That's it for the instructions, you can start coding!

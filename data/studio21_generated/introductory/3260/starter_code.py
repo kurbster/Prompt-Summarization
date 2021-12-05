@@ -1,2 +1,0 @@
-def rearranger(k, *args):
-	

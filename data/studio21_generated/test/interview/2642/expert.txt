@@ -1,2 +1,0 @@
- You are given a set of N sardines. You need to return how many ways can you put the sardines into the cooler. 
------Input----- Input is given from Standard Input in the following format: N A_1 B_1 : A_N B_N -----Output----- Print the count modulo 1000000007. -----Sample Input----- 3 1 2 -1 1 2 -1 -----Sample Output----- 5 There are five ways to choose the set of sardines, as follows:  - The 1-st  - The 1-st and 2-nd  - The 2-nd  - The 2-nd and 3-rd  - The 3-rd

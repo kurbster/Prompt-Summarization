@@ -1,1 +1,0 @@
- Given an integer $n$, check if it is prime. If it is, return `true`. Otherwise, return `false`. 

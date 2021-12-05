@@ -1,1 +1,0 @@
- The function equal_sigma1() collects all the positive integers that fulfill the property described above. The function receives an upper limit, nMax, will output the total sum of these numbers and its reversed while are less or equal nMax. 

@@ -1,2 +1,0 @@
-def chameleon(chameleons, desiredColor):
-	

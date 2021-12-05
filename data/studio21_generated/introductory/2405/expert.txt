@@ -1,1 +1,0 @@
- you are given an array of numbers. Find the maximum distance from the origin.

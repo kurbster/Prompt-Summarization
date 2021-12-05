@@ -1,8 +1,0 @@
-Given a text and a character, fully mutate the text to the character. If the text or the character are empty, return an empty string.  
-
-# Example
-Input:
-text = "abc"
-character = "z"
-Output:
-text = "zzz"

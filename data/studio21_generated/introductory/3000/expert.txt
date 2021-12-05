@@ -1,1 +1,0 @@
- You are given an integer `n`. Find the smallest possible positive integer that when multiplied by `n`, becomes a perfect power of integer `k`. A perfect power of `k` is any positive integer that can be represented as `a^k`. For example if `k = 2`, then `36` is a perfect power of `2`, but `27` isn't. 

@@ -1,2 +1,0 @@
- Given a list of values, return the highest and lowest values. If there's less than 2 unique values, return as many as possible
-Examples: ``` [4, 10, 10, 9]  =>  [10, 9] [1, 1, 1]  =>  [1] []  =>  [] ```

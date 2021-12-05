@@ -1,1 +1,0 @@
- You have an array where each element is the price of a stock on day i. You are allowed to buy the stock on day 2 and sell on day 5. Find the maximum profit. 

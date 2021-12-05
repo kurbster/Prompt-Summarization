@@ -1,2 +1,0 @@
- You are given integers n and m, computes QC(n, m) mod 2, and writes the result.
------Input----- The input begins with a single positive integer on a line by itself indicating the number of the cases. This line is followed by the input cases. The input consists two integers n and m separated by a space, with 1 ≤ m ≤ n ≤ 1000000000. -----Output----- For each test case, print the output. The output should be the integer S(n, m) mod 2. Sample Input 1 4 2 Sample Output 1

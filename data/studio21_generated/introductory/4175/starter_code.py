@@ -1,2 +1,0 @@
-def repeater(string, n):
-	

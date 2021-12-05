@@ -1,2 +1,0 @@
- You are given an integer n, print the string n!
-=====Input Format===== The first line contains an integer n. =====Constraints===== 1≤n≤150 =====Output Format===== Print the list of integers from 1 through n as a string, without spaces.

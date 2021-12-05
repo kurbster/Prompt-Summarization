@@ -1,2 +1,0 @@
-def beasts(heads, tails):
-	

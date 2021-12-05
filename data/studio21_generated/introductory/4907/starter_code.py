@@ -1,2 +1,0 @@
-def candles(m, n):
-	

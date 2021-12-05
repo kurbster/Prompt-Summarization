@@ -1,1 +1,0 @@
- Find how many non-negative integers x have the property that f(x) = K.

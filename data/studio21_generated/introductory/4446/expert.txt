@@ -1,1 +1,0 @@
- Given an array of strings, return a string containing all the strings separated by space. Example: ```["hello", "world"] -> "hello world"```

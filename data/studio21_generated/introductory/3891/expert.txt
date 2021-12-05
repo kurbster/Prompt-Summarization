@@ -1,1 +1,0 @@
- You are given an int salary, an array of bills and an array of new notes. Your task is to return the number of new notes you can get. 

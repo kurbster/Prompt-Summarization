@@ -1,1 +1,0 @@
- You are given an `Animal` class. The `mouth_size` method should return one of three values: `small`, `wide`, or `none`. 

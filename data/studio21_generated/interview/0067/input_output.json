@@ -1,8 +1,0 @@
-{
-  "inputs": [
-    "4\n5\nsouse\nhouhe\n3\ncat\ndog\n2\naa\naz\n3\nabc\nbca\n"
-  ],
-  "outputs": [
-    "Yes\n1\n1 4\nNo\nNo\nYes\n3\n2 2\n1 2\n2 3\n"
-  ]
-}

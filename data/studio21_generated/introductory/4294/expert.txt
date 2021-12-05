@@ -1,1 +1,0 @@
- Give a string ```str``` and an object/hash/dict/Dictionary ```what```. Return a string with the chars removed in ```what```. 

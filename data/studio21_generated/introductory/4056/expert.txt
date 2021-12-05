@@ -1,1 +1,0 @@
- # Leaderboard climbers In this kata you will be given a leaderboard of unique names for example: ```python ['John',  'Brian',  'Jim',  'Dave',  'Fred'] ``` Then you will be given a list of strings for example: ```python ['Dave +1', 'Fred +4', 'Brian -1'] ``` Then you sort the leaderboard. The steps for our example would be: ```python # Dave up 1 ['John',  'Brian

@@ -1,1 +1,0 @@
- Check whether a given string is an image or audio file.

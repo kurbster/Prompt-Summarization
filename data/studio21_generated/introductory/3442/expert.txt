@@ -1,1 +1,0 @@
- Given two DNA sequences, return true or false if they code for exactly the same protein. 

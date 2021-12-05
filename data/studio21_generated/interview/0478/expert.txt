@@ -1,1 +1,0 @@
- Given an array of integers, you need to find the unique element. 

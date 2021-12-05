@@ -1,2 +1,0 @@
- You are given an array of integers. You need to find the number of valid amidakuji that satisfy the following condition, modulo 1\ 000\ 000\ 007. 
------Input----- Input is given from Standard Input in the following format: H W K -----Output----- Print the number of the amidakuji that satisfy the condition, modulo 1\ 000\ 000\ 007. -----Sample Input----- 1 3 2 -----Sample Output----- 1 Only the following one amidakuji satisfies the condition:

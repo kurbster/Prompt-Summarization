@@ -1,1 +1,0 @@
- Given an array of integers representing the number of products in each category, how many products are in each category, and how many products are on each page, return a string showing which products you are viewing. 

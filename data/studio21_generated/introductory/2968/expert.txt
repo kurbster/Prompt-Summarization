@@ -1,1 +1,0 @@
- You are given a word (string) of length 0 < str < 1,000.  Your task is to return the middle character(s) of the word represented as a string.

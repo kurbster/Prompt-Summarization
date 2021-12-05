@@ -1,2 +1,0 @@
- You are given n tables. There are 5 "I fixed a critical bug" pennants and 3 "I suggested a new feature" pennants. Find the number of ways to place the pennants on these tables. 
------Input----- The only line of the input contains one integer n (1 ≤ n ≤ 500) — the number of tables in the IT company. -----Output----- Output one integer — the amount of ways to place the pennants on n tables. -----Examples----- Input 2 Output 24

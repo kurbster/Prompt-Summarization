@@ -1,1 +1,0 @@
- A "4 digit" number includes zero-padded, smaller numbers, such as 0001, 0002, up to 9999. For clarification, the bouncy numbers between 100 and 125 are: 101, 102, 103, 104, 105, 106, 107, 108, 109, 120, and 121. 

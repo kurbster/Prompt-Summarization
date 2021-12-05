@@ -1,2 +1,0 @@
- You are given an infinite rooted tree. Each vertex has exactly k children. Each edge has some weight. If we look at the edges that goes from some vertex to its children (exactly k edges), then their weights will equal 1, 2, 3, ..., k. 
------Input----- A single line contains three space-separated integers: n, k and d (1 ≤ n, k ≤ 100; 1 ≤ d ≤ k). -----Output----- Print a single integer — the answer to the problem modulo 1000000007 (10^9 + 7).  -----Examples----- Input 3 3 2 Output 3 Input 3 3 3 Output 1 Input 4 3 2 Output 6 Input 4 5 2 Output 7

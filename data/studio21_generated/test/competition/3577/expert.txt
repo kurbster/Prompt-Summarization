@@ -1,2 +1,0 @@
- You are given an array of $n$ plants. You need to calculate the number of new flower every day. 
------Input----- The first line contains an integer $N$ ($1 \le N \le 100000$), the number of days. Each of the following $N$ lines contains two integers $L$ and $R$ ($1 \le L < R \le 100000$). The $i$’th of these lines describes the coordinates of the plant that grows on day $i$. -----Output----- Output $N$ lines, the number of new flowers after each plant grows. -----Examples----- Sample Input: 4 1 4 3 7 1 6 2 6 Sample Output: 0 1 1 2

@@ -1,1 +1,0 @@
- You are given a class called Cashier that implements a getBill(int[] product, int[] amount) method. This method receives a product array, amount array, and a discount (in decimal). The method should return the value of the bill and apply the discount if needed. 

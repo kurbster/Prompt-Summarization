@@ -1,2 +1,0 @@
-def minimum(a, x):
-	

@@ -1,2 +1,0 @@
- 
------Input----- The first and only line of input contains the integer $N (1 \le N \le 15)$, the number of levels in the tree. -----Output----- Output the $2^N - 1$ separated by spaces on a single line, the binary tree in the preorder traversal. The preorder traversal first outputs the number in the root node, then outputs the left subtree (again in the preorder traversal), then the right subtree. -----Examples----- Sample Input: 2 Sample Output: 1 2 3

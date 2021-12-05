@@ -1,2 +1,0 @@
- 
------Input----- The only line contains two integers $n$ and $m$ ($1 \le n, m \le 100\,000$), the number of rows and the number of columns of the field. -----Output----- Print one integer, the number of random pictures modulo $10^9 + 7$. -----Example----- Input 2 3 Output 8 -----Note----- The picture below shows all possible random pictures of size $2$ by $3$.  [Image]

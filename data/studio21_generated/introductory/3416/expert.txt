@@ -1,1 +1,0 @@
- You are given two arrays: [l/100 km] and [l] 

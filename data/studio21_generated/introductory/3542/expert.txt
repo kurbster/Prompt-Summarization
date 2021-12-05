@@ -1,2 +1,0 @@
- You are given the age of your cat and dog. You want to know how long they have been with you.
-l

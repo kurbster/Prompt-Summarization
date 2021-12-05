@@ -1,1 +1,0 @@
- The input given is an integer. You need to write a method ```findNextSquare``` that returns the next integer after a perfect square.

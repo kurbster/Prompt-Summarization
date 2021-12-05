@@ -1,1 +1,0 @@
- You are given a string. Count the number of vowels in it. (A vowel is any letter that is not a consonant.)   Example 1: Input: "aAbcdeEfg" Output: 4

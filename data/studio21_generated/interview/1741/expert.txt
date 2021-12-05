@@ -1,2 +1,0 @@
- ### Please also check out other katas in [Domino Tiling series](https://www.codewars.com/collections/5d19554d13dba80026a74ff5)! # 
-Examples ```python five_by_2n(1) == 8 five_by_2n(2) == 95 five_by_2n(3) == 1183 five_by_2n(5) == 185921 five_by_2n(10) == 8228892 five_by_2n(20) == 9942990 five_by_2n(50) == 2308182 five_by_2n(100) == 334896 five_by_2n(1000) == 6032838 five_by_2n(10000) == 2392948 ``` # Constraints `1 <= N <= 10000` All inputs are valid integers. # Hint The reference solution uses eleven mutual recurrence equations.

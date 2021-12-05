@@ -1,2 +1,0 @@
- You are given a list of words, you need to output a sorted list. Comparison should be case sensitive
------Input----- The single line contains two space-separated integers n and k (1 ≤ n ≤ 1000, 1 ≤ k ≤ min(8, n)) — the number of the houses and the number k from the statement. -----Output----- In a single line print a single integer — the answer to the problem modulo 1000000007 (10^9 + 7). -----Examples----- Input 5 2 Output 54 Input 7 4 Output 1728

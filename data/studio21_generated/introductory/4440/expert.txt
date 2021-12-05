@@ -1,1 +1,0 @@
- You are given a string. If the string is valid ATM PIN code, return true, else return false.

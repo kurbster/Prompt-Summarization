@@ -1,1 +1,0 @@
- Your function should take an amount to change and an array of unique denominations for the coins. You should return the number of different ways you can make change for this amount. 

@@ -1,2 +1,0 @@
- You are given a list of strings showing the order of the pieces which dropped in columns. The first player who connects four items of the same color is the winner. You need to return "Yellow", "Red" or "Draw" accordingly. summary :  
-.

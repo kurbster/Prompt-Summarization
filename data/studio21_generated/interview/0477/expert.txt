@@ -1,1 +1,0 @@
- Given two positive integers n and k, return the kth bit in Sn. It is guaranteed that k is valid for the given n.

@@ -1,2 +1,0 @@
-def partitions(n):
-	

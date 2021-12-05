@@ -1,2 +1,0 @@
- 
-=====Input Format===== The first line contains the first integer, a. The second line contains the second integer, b. =====Output Format===== Print the two lines as described above.

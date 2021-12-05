@@ -1,2 +1,0 @@
- Given a sequence of commands ($n$ of them), find the possible positions that Zoma may reach. 
------Input----- The first line contains $n$ $(1 \le n \le 10^5)$ — the number of commands Mezo sends. The second line contains a string $s$ of $n$ commands, each either 'L' (Left) or 'R' (Right). -----Output----- Print one integer — the number of different positions Zoma may end up at. -----Example----- Input 4 LRLR Output 5 -----Note----- In the example, Zoma may end up anywhere between $-2$ and $2$.

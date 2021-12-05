@@ -1,2 +1,0 @@
- You are given an array of integers. Make sets of 3 numbers. Each should have numbers in ascending or descending order Return the number of such sets that can be formed. a number can be in multiple sets   
------Input----- The first line of input contains the integer $N$ ($1 \leq $N$ \leq 20$). -----Output----- The first and only line of output must contain the required number. -----Examples----- Sample Input 1: 2 Sample Output 1: 1 Sample Input 2: 3 Sample Output 2: 5

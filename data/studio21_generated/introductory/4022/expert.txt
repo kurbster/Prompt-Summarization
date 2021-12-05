@@ -1,1 +1,0 @@
- Save the first letter. Remove all occurrences of ```h``` and ```w``` except first letter. Replace all consonants (include the first letter) with digits as follows:  * ```b```, ```f```, ```p```, ```v``` = 1  * ```c```, ```g```, ```j```, ```k```, ```q```, ```s```

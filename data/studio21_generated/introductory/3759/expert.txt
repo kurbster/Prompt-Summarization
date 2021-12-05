@@ -1,1 +1,0 @@
- You are given an arrary/list of numbers. Your task is to construct an array/list of same size such That prod[i] is equal to the product of all the elements of arrary/list except arrary/list[i].

@@ -1,1 +1,0 @@
-A spoonerism is a spoken phrase in which the first letters of two of the words are swapped around. Your task is to create a function that takes a string of two words separated by a space, and returns a spoonerism of those words in a string. Example: Input: "not picking" Output: "pot nicking"

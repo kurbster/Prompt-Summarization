@@ -1,1 +1,0 @@
- The triangle (A, B, C) has side length 1.

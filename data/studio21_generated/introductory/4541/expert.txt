@@ -1,1 +1,0 @@
- Given an array a of integers, you are to perform k operations. Each operation consists of finding the maximum element value, and replacing each element with a value equal to the difference between it and the maximum. Return the final array. Example 1: Input: a = [-4, 0, -1, 0], k = 2 Output: [0, 4, 3, 4] Explanation: For `a = [-4, 0, -1, 0]` and `k = 

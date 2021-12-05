@@ -1,1 +1,0 @@
-["from math import sqrt\ndef isPrime(n):\n for i in range(2, int(sqrt(n))+1):\n  if(n%i==0): return True\n return False\nans = []\nfor _ in range(int(input())):\n x, y = map(int, input().split())\n ans.append('NO' if(isPrime(x**2-y**2)) else 'YES')\nprint('\\n'.join(ans))"]

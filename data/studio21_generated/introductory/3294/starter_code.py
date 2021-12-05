@@ -1,2 +1,0 @@
-def converter(mpg):
-	

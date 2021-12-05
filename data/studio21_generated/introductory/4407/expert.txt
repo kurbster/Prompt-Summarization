@@ -1,1 +1,0 @@
- You are given two integer numbers. If the first number is smaller then the second number then return "yes" otherwise return "no"

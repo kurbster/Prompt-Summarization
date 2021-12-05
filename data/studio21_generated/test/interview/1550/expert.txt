@@ -1,2 +1,0 @@
- You are given a sequence of numbers. You have to find the smallest number which can be obtained by pushing buttons in some order. 
------Input----- The first line contains a single integer n (1 ≤ n ≤ 1000) — the number of digits on the display. The second line contains n digits — the initial state of the display. -----Output----- Print a single line containing n digits — the desired state of the display containing the smallest possible number. -----Examples----- Input 3 579 Output 024 Input 4 2014 Output 0142

@@ -1,2 +1,0 @@
-def scramble(string, array):
-	

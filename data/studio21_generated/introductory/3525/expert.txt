@@ -1,1 +1,0 @@
- Your task is to count the number of solutions of n equations, where each equation contains at most 2 variables. The equations are of the form x = a1 + a2 + ... + an, where 0   n   100. The a1, a2, ..., an are integers, each at most 100. For example, the equation x = 2 + 2 + 1 is solved by 1, 2, 1, 2, 1, 2, 1, 2

@@ -1,1 +1,0 @@
- You are given a string (no spaces) containing `[a-z],[A-Z],[0-9]` and common symbols. The length will be `0 < string < 100`. Return `true` if the word is a valid word, or `false` if the word is not valid.

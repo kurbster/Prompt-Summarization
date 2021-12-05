@@ -1,1 +1,0 @@
-["n = int(input())\nif n % 4 == 0:\n    temp = n // 4\n    m = temp * 3\n    k = temp * 5\nelif n % 2 == 0:\n    n //=  2\n    m = n**2 // 2\n    k = m + 1\n    m *= 2\n    k *= 2\nelse:\n    m = n**2 // 2\n    k = m + 1\nif 3 > n:\n    print(\"-1\")\nelse:\n    print(m,k)\n"]

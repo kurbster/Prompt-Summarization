@@ -1,2 +1,0 @@
- Given two positive integers x and y, your task is to figure out if there exists a sequence of positive integers a_1, a_2, ..., a_n such that gcd(a_1, a_2, ..., a_n) = x and $\sum_{i = 1}^{n} a_{i} = y$. 
------Input----- The only line contains two positive integers x and y (1 ≤ x, y ≤ 10^9). -----Output----- Print the number of such sequences modulo 10^9 + 7. -----Examples----- Input 3 9 Output 3 Input 5 8 Output 0 -----Note----- There are three suitable sequences in the first test: (3, 3, 3), (3, 6), (6, 3). There are no suitable sequences in the second test.

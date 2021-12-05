@@ -1,2 +1,0 @@
- 
------Input----- The first and only line of the input contains a single integer n (3 ≤ n ≤ 54321) - the number of vertices of the regular polygon drawn by Ari. -----Output----- Print the minimum number of jumps Ada should make to collect all the walnuts. Note, that she doesn't need to leave the polygon after. -----Examples----- Input 5 Output 9 Input 3 Output 1 -----Note----- One of the possible solutions for the first sample is shown on the picture above.

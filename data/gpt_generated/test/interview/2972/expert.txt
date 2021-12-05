@@ -1,2 +1,0 @@
- You will be given a range and a number $k$. You have to output the number of numbers palindromic in all bases $j$, $2 \leq j \leq k$, in that range. 
------Input----- Input consists of three space-separated integers: $a$, $b$, and $k$. The input satisfies the following constraints:\[ 0 \leq a \leq b \leq 2000000, \\ 2 \leq k \leq 100000. \] -----Output----- Output the quantity of numbers between $a$ and $b$ inclusive which are palindromes in every base $j$, for $2 \leq j \leq k$. -----Examples----- Sample Input: 1 356 2 Sample Output: 36

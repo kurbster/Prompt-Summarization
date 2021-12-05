@@ -1,2 +1,0 @@
- Given are integers L and R. Find the number, modulo 10^9 + 7, of pairs of integers (x, y) (L \leq x \leq y \leq R) such that the remainder when y is divided by x is equal to y \mbox{ XOR } x. 
------Input----- Input is given from Standard Input in the following format: L R -----Output----- Print the number of pairs of integers (x, y) (L \leq x \leq y \leq R) satisfying the condition, modulo 10^9 + 7. -----Sample Input----- 2 3 -----Sample Output----- 3 Three pairs satisfy the condition: (2, 2), (2, 3), and (3, 3).

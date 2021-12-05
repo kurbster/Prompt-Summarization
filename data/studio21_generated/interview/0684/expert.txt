@@ -1,2 +1,0 @@
- You are given an integer $N$. Your task is to give two numbers $a$ and $b$ such that $a+b$ is a multiple of $N$. 
------Input----- The first line contains a single integer T (1 ≤ T ≤ 100) — the number of test cases. The description of the test cases follows. The only line of each test case contains a single integer — N (1 ≤ N ≤ 109). -----Output----- For each test case, print " Me" if you win, and " Grinch" if otherwise (without quotes). -----Sample Input----- 7 1 2 3 4 5 6 12 -----Sample Output----- Grinch Me Me Grinch Me Grinch Me

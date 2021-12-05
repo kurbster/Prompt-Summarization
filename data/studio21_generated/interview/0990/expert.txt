@@ -1,2 +1,0 @@
- You are given three positive integer numbers in the first line: n,  m and a (1    n, m, a   10^9). You need to print the needed number of flagstones in new line. 
-Examples input 6 6 4 output 4

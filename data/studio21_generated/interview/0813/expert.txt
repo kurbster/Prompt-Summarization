@@ -1,1 +1,0 @@
- You are given an array $A_1,A_2,\dots,A_N$, a positive integer $K$, and a function $F(x)=\displaystyle\sum_{i=1}^{N}{\left|{\left({x-A_i}\right)^K}\right|}$. Find the smallest integer $x$ such that $F(x)$ is minimum.

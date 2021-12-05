@@ -1,1 +1,0 @@
- Given two numbers(` >= 0 `), greatest common divisor of wich will be `divisor` and number of iterations, taken by Euclids algorithm will be `iterations`.

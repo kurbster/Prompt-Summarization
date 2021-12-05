@@ -1,2 +1,0 @@
- You are given a string. This string consists of F and T letters. You need to return true or false based on whether the given string is a valid instruction sequence for the robot. 
------Input----- Input is given from Standard Input in the following format: s x y -----Output----- If the objective is achievable, print Yes; if it is not, print No. -----Sample Input----- FTFFTFFF 4 2 -----Sample Output----- Yes The objective can be achieved by, for example, turning counterclockwise in the first T and turning clockwise in the second T.

@@ -1,1 +1,0 @@
- You are given a word, you need to encode the word using ka cypher.

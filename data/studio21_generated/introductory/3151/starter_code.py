@@ -1,2 +1,0 @@
-def totalAmountVisible(topNum, numOfSides):
-	

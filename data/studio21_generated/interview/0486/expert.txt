@@ -1,1 +1,0 @@
- You are given a positive integer N and a non-empty string S.  You are asked to determine if S is a substring of N. 

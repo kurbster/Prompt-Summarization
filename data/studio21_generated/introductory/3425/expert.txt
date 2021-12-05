@@ -1,1 +1,0 @@
- Given a string of various uppercase English letters, check whether a Word Square can be formed from it. 

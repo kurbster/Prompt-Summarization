@@ -1,1 +1,0 @@
- You are given a two-dimensional array of integers. Return the transposed matrix.

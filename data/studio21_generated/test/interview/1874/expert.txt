@@ -1,2 +1,0 @@
- You are given three regular polygons. You need to calculate their volume. 
------Input----- The only line of the input contains three integers l_3, l_4, l_5 (1 ≤ l_3, l_4, l_5 ≤ 1000) — the edge lengths of triangular, quadrangular and pentagonal pyramids correspondingly. -----Output----- Output one number — the total volume of the pyramids. Absolute or relative error should not be greater than 10^{ - 9}. -----Examples----- Input 2 5 3 Output 38.546168065709

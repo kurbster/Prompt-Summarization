@@ -1,1 +1,0 @@
- The numbers 12, 63 and 119 have something in common related with their divisors and their prime factors, let's see it. ``` Numbers PrimeFactorsSum(pfs)        DivisorsSum(ds)              Is ds divisible by pfs 12         2 + 2 + 3 = 7         1 + 2 + 3 + 4 + 6 + 12 = 28            28 / 7

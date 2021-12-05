@@ -1,1 +1,0 @@
-{"inputs": ["2 1 3 0\nAB\nAC\n", "3 1 0 0\nAB\nBC\nAB\n", "1 0 9 0\nAC\n", "8 6 9 1\nAC\nBC\nAB\nBC\nAC\nBC\nAB\nAB\n"], "outputs": ["Yes\nA\nC\n", "No\n", "No\n", "Yes\nC\nB\nB\nC\nC\nB\nA\nA\n"]}

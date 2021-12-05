@@ -1,2 +1,0 @@
- 
-Example This is because `H`'s index is `7`, which is odd, so it is replaced by `1`, and so on. Have fun (en)coding!

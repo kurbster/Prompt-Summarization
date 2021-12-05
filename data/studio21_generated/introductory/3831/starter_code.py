@@ -1,2 +1,0 @@
-def angle(n):
-	

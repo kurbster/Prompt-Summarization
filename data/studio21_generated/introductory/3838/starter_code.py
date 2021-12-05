@@ -1,2 +1,0 @@
-def goto(level,button):
-	

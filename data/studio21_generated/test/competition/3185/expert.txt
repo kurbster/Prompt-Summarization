@@ -1,2 +1,0 @@
- You are given an integer $n$. Find the value of $n!$. 
------Input----- The input contains the factorial $n!$ of a positive integer $n$. The number of digits of $n!$ is at most $10^{6}$. -----Output----- Output the value of $n$. -----Examples----- Sample Input 1: 120 Sample Output 1: 5 Sample Input 2: 51090942171709440000 Sample Output 2: 21

@@ -1,1 +1,0 @@
- Given an integer number `n`, output a down arrow shaped pattern. For example, when `n = 5`, the output would be:  123454321  1234321  12321  121  1 and for `n = 11`, it would be:  123456789010987654321  1234567890987654321  12345678987654321  12345678987654321  123456787654321 

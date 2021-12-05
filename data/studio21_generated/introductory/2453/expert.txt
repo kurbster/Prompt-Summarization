@@ -1,1 +1,0 @@
- Input: 19 Output: true Explanation:  19 + 19 = 39 39 + 19 = 59 59 + 19 = 79 79 + 19 = 99 79 + 19 = 1

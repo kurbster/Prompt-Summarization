@@ -1,2 +1,0 @@
- You are given an integer N, the number of widgets to be shipped. What is the smallest number of squares that will be left empty when those widgets are packed for shipping? 
------Input----- Input consists of one line containing an integer $N$, the number of widgets to be packed, where $1 \leq N \leq 10^{16}$. -----Output----- Print a single line containing an integer denoting the minimum number of empty squares. -----Examples----- Sample Input 1: 47 Sample Output 1: 1 Sample Input 2: 523 Sample Output 2: 2

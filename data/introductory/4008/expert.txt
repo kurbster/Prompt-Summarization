@@ -1,5 +1,0 @@
-You are given a string containing a list of integers separated by commas, write the function string_to_int_list(s) that takes said string and returns a new list containing all integers present in the string.
-
-Example:
-Input: string_to_int_list("-1,2,3,4,5")
-Output: [-1,2,3,4,5]

@@ -1,1 +1,0 @@
-Write program to return a string representing the multiplication of given two strings of complex numbers. Example 1: Input: "1+1i", "1+1i" Output: "0+2i" Example 2: Input: "1+-1i", "1+-1i" Output: "0+-2i"

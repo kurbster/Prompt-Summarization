@@ -1,1 +1,0 @@
- Given an array $A$, find all indices $i$ such that $A[i] = A[i - 1]$.  Constraints: 1 <= $A$. $A$ is an array with $n$ elements. 

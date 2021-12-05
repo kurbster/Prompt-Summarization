@@ -1,1 +1,0 @@
-Given a string of lowercase words, You need to return the highest scoring word as a string. If two words score the same, return the word that appears earliest in the original string.

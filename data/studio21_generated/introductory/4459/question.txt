@@ -1,3 +1,0 @@
-Return the Nth Even Number
-
-The input will not be 0.

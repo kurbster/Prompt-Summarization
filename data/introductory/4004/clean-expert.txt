@@ -1,1 +1,0 @@
-Find the first character that repeats in a String and return that character. Example 1: Input: first_dup('tweet') Output: 't' Example 2: Input: first_dup('like') Output: None

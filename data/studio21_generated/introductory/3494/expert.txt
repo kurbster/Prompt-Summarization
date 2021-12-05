@@ -1,1 +1,0 @@
- Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched. Example 1: Input: "Pig latin is cool" Output: "igPay atinlay siay oolcay pig_it('Hello world !')" Example 2: Input: "Hello world !" Output: "elloHay orldway !"

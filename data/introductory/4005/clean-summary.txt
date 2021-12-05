@@ -1,1 +1,0 @@
-Reverses the bits in a positive integer. Example: Input: 417 Output: 267 Explanation: The number 417 is 110100001 in binary. Reversing the binary is 100001011 which is 267.

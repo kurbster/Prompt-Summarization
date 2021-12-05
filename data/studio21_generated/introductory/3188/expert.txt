@@ -1,1 +1,0 @@
- Given an integer n, output the end result of the base reduction. If it cannot be fully reduced (reduced down to a single-digit number), return -1. Assume that if 150 conversions from base 11 take place in a row, the number cannot be fully reduced. 

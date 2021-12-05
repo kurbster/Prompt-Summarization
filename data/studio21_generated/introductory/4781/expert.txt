@@ -1,1 +1,0 @@
- # Background A spider web is defined by * "rings" numbered out from the centre as `0`, `1`, `2`, `3`, `4` * "radials" labelled clock-wise from the top as `A`, `B`, `C`, `D`, `E`, `F`, `G`, `H` Here is a picture to help explain: # Web Coordinates As you can see, each point where the rings and the radials intersect can be described by a "web coordinate". So

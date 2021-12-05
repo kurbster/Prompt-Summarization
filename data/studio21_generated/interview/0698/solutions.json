@@ -1,1 +1,0 @@
-["import math\nt = int(input())\n \ndef phi(n):\n\tres = n\n\ti = 2\n\twhile i*i<=n:\n\t\tif n%i==0:\n\t\t\tres/=i\n\t\t\tres*=(i-1)\n \n\t\t\twhile n%i==0:\n\t\t\t\tn/=i\n\t\ti+=1\n\t\n\tif n>1:\n\t\tres/=n\n\t\tres*=(n-1)\n \n\treturn int(res)\n \nwhile t:\n\ta,m = list(map(int,input().split()))\n\tg = math.gcd(a,m)\n\tprint(phi(m//g))\n\tt-=1\n"]

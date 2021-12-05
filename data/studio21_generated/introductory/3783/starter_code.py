@@ -1,2 +1,0 @@
-def frame(text, char):
-	

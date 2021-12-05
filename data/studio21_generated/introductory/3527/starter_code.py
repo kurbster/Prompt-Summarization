@@ -1,2 +1,0 @@
-def quotable(name, quote):
-	

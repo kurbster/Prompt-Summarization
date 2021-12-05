@@ -1,2 +1,0 @@
- Given an integer N, find the smallest positive integer $a$ such that $a \otimes a = N$. 
------Input----- The input consists of a single line with a positive integer $N$, with at most $25$ digits and no leading zeros. -----Output----- Print, on a single line, the least positive number $a$ such that $a \otimes a = N$. If there is no such $a$, print ‘-1’ instead. -----Examples----- Sample Input 1: 6 Sample Output 1: 4 Sample Input 2: 149 Sample Output 2: 17 Sample Input 3: 123476544 Sample Output 3: 11112

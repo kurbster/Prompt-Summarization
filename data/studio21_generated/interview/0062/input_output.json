@@ -1,8 +1,0 @@
-{
-  "inputs": [
-    "5\nababa\ncodedoca\nabcda\nzxzytyz\nabcdefghijklmnopqrstuvwxyza\n"
-  ],
-  "outputs": [
-    "YES\nbacdefghijklmnopqrstuvwxyz\nYES\nedocabfghijklmnpqrstuvwxyz\nNO\nYES\nxzytabcdefghijklmnopqrsuvw\nNO\n"
-  ]
-}

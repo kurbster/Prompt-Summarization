@@ -1,1 +1,0 @@
- You have an array of strings. Each string is "O", "X", " ", " ", "X", " ", "X", "O", " ", "O"

@@ -1,1 +1,0 @@
- You are given integers `N` and `K`. You want to fill `N` x `2` grid with dominoes such that:  no two adjacent dominoes have same color;  every row, column, and diagonal has exactly `K` dominoes. 

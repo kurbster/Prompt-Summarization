@@ -1,1 +1,0 @@
- You are given an array of integers. Sort odd numbers within the array in ascending order, and even numbers in descending order. 

@@ -1,1 +1,0 @@
- You are given two integers. Return a list of integers which are coprimes. Example 1: Input: n = 2, k = 10 Output: [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20] Example 2: Input: n = 3, k = 10 Output: [1, 2, 3, 4, 6, 7, 

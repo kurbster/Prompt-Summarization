@@ -1,2 +1,0 @@
-def validate(username, password):
-	

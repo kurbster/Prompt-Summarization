@@ -1,1 +1,0 @@
- You have two arrays in this kata, every array contain only unique elements. Your task is to calculate number of elements in first array which also are in second array. Example 1: Input:  array1 = [1, 2, 3, 4, 5, 6, 7]  array2 = [2, 3, 4, 5, 6, 7]  Output: 2 Explanation:  array1 contains 2 elements [2, 3]

@@ -1,2 +1,0 @@
- An integer is considered handsome if every two of its consecutive digits are of different parity. Return its closest handsome number. 
------Input----- The first and only line of input contains a positive integer $N$ that consists of at most thousand digits and is not handsome. -----Output----- The first and only line of output must contain the required closest handsome number. If two closest numbers exist, output the smaller number first and then the larger one and separate them by a single space. -----Examples----- Sample Input: 13 Sample Output: 12 14

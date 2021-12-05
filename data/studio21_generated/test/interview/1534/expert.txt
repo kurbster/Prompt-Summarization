@@ -1,2 +1,0 @@
- You are given a string s.  Determine the maximum length of s after Nikita performs his operation on it. 
------Input----- The first line contains a non-empty string of length not greater than 5 000 containing only lowercase English letters "a" and "b".  -----Output----- Print a single integer — the maximum possible size of beautiful string Nikita can get. -----Examples----- Input abba Output 4 Input bab Output 2 -----Note----- It the first sample the string is already beautiful. In the second sample he needs to delete one of "b" to make it beautiful.

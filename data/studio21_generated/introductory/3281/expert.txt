@@ -1,1 +1,0 @@
- You are given an integer year. Calculate the number of Friday 13ths in the year. 

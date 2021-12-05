@@ -1,2 +1,0 @@
- Given two strings S1 and S2, you are asked to find the maximum integer M such that S2 can be obtained from S1. 
-Example: Input: s1="acb", n1=4 s2="ab", n2=2 Return: 2

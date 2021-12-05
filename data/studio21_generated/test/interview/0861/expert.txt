@@ -1,2 +1,0 @@
- Given an array of integers $V$. Find the average distance the fly went along the coordinate plane during each of these m^2 days. 
------Input----- The first line contains two integers m, R (1 ≤ m ≤ 10^5, 1 ≤ R ≤ 10). -----Output----- In a single line print a single real number — the answer to the problem. The answer will be considered correct if its absolute or relative error doesn't exceed 10^{ - 6}. -----Examples----- Input 1 1 Output 2.0000000000 Input 2 2 Output 5.4142135624 -----Note----- [Image] Figure to the second sample

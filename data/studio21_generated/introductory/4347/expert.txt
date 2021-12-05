@@ -1,1 +1,0 @@
- Given your and your friend's lifting capabilities, check if you two are equally strong. 

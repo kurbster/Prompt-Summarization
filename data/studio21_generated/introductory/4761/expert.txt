@@ -1,1 +1,0 @@
- You are given linked list. You need to find the kth to last element. 

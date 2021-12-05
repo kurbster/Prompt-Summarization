@@ -1,1 +1,0 @@
- You are given an array $a$ consisting of one element $1$ ($a = [1]$). In one move, you can do one of the following things:   Increase some (single) element of $a$ by $1$ (choose some $i$ from $1$ to the current length of $a$ and increase $a_i$ by one);  Append the copy of some (single) element of $a$ to the end of the array (choose some $i$ from $1$ to the current length of $a$

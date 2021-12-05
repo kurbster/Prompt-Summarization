@@ -1,1 +1,0 @@
- You are given two given lists. You need to find the maximum height that any square can stick to.   Example 1: Input: [[1, 2], [2, 3], [6, 1]] Output: [2, 5, 5] Explanation: After the first drop of positions[0] = [1, 2]: _aa _aa ------- The maximum height of any square is 2. After the second drop of positions[1] = [2, 3

@@ -1,1 +1,0 @@
-{"inputs": [["3", "a.ba", "cb.bc", "a.b"]], "outputs": [["abba", "cbabc", "-1"]]}

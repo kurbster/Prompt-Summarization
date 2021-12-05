@@ -1,1 +1,0 @@
- Given an input string, convert it to a unicode string. The input string should be in utf8 format. Example: Input: "a" -> "\u001b\u000b" Explanation: The unicode codepoint for 'A' is 65. The unicode codepoint for 'a' is 65, so 65 + 65 = 130. 130 is 5 less than 131, so 65 + 65 + 65 + 65 + 65 = 131. 131 is

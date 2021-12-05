@@ -1,2 +1,0 @@
- You are given two integers P and Q. Your task is to find the minimum value of cut that is possible to arrange the skyscrapers in descending order. 
------Input----- *First line of input is the number of sky-scrappers in the city *Second line of input is the height of the respective sky-scrappers -----Output----- * Your output should be the minimum value of cut required to arrange these sky-scrappers in descending order. -----Example----- Input: 5 1 2 3 4 5 Output: 8 By: Chintan,Asad,Ashayam,Akanksha

@@ -1,1 +1,0 @@
- `deNico()` Decodes the provided `message` using `key`. 

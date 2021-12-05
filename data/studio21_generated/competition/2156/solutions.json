@@ -1,1 +1,0 @@
-["n = int(input())\nans = 'YES\\n'\nfor i in range(n):\n    x1, y1, x2, y2 = map(int, input().split())\n    res = (x1 & 1) * 2 + (y1 & 1) + 1\n    ans += str(res) + '\\n'\nprint(ans)", "n = int(input())\nprint('YES')\nfor _ in range(n):\n    x, y, *z = list(map(int, input().split()))\n    print((x & 1) * 2 + (y & 1) + 1)"]

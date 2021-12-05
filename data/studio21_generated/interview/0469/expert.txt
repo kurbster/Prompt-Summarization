@@ -1,1 +1,0 @@
- You are given n binary tree nodes. You need to determine whether the given nodes form a valid binary tree. 

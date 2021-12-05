@@ -1,1 +1,0 @@
- You are given two functions: `movie` and `price`. `movie` has 3 parameters: `card` (price of the card), `ticket` (normal price of  a ticket), `perc` (fraction of what he paid for the previous ticket) and returns the first `n` such that ``` ceil(price of System B) < price of System A. ``` `price` returns the price of a movie ticket. For example, `price(500, 15, 0.9)

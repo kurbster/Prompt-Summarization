@@ -1,1 +1,0 @@
- You are given an array Hours, representing number of working hours, of an employee for a given day. A well performing interval is an interval of days, for which the number of tiring days is strictly larger than the number of non-tiring days. You need to find the length for the longest well performing interval. 

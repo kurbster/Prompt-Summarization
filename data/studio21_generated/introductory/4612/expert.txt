@@ -1,1 +1,0 @@
- Math hasn't always been your best subject, and these programming symbols always trip you up! I mean, does `**` mean *"Times, Times"* or *"To the power of"*  Luckily, you can create the function `expression_out()` to write out the expressions for you! The operators you'll need to use are: ```python { '+':   'Plus ',   '-':   'Minus ',   '*':   'Times ',   '/':   'Divided By ',

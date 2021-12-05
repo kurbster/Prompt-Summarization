@@ -1,1 +1,0 @@
- You are given a bag of marbles. You are given two marbles. You are given the probability of picking either one marble. You need to return the probability of picking either one marble.

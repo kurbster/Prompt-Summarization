@@ -1,1 +1,0 @@
- You have n candles. Each candle burns for $a$ seconds. When a candle burns down, it leaves a leftover. You can make a new candle using leftover and number of candles you have. 

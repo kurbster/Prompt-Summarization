@@ -1,1 +1,0 @@
-["ar = []\nar.append(1)\nfor i in range(1, 31):\n ar.append(ar[i-1]*(4*i-2)/(i+1))\nt = int(input())\nwhile(t>0):\n n = int(input())\n if(n==0):\n  print(0)\n else:\n  print(ar[n]*2)\n t=t-1\n"]

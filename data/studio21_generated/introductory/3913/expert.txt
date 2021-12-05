@@ -1,2 +1,0 @@
- Given an array of float values. Convert the float values to dollars and round them. 
-`

@@ -1,2 +1,0 @@
- You are given a list of numbers. There are an even number of elements in the list and each value has a positive integer number. The objective of the game is to end with largest value. The total sum of values is odd, so there are no ties. Alex and Lee take turns, with Alex starting first. Each turn, a player takes value from either the beginning or the end of the list. This continues until there are no more values left, at which point the person with the largest value wins. Assuming Alex and Lee play optimally, return True if and only if Alex wins the game. 
-.

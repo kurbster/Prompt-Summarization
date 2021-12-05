@@ -1,1 +1,0 @@
- You have an array of integers. The array is sorted. You have to unflatten it. The array has to be unflattened in the same order as it was sorted. Example: ```  [2,3,5,4,1] -> [2,3,5,1,4] ``` Steps:  1. The 2 is added directly to the new array. 2. The next number is 3. So the next 3 numbers (3,5,1,4) are added as sub-array in the new array. 

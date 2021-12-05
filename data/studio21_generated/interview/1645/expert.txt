@@ -1,1 +1,0 @@
- Given an integer n (3 < n < 10^(9)), find the length of the smallest list of [*perfect squares*](https://en.wikipedia.org/wiki/Square_number) which add up to n. Come up with the best algorithm you can; you'll need it! Examples: sum_of_squares(17) = 2  17 = 16 + 1 (4 and 1 are perfect squares). sum_of_squares(15) = 4  15 = 9 + 

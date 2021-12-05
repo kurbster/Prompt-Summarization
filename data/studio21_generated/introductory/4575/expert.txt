@@ -1,1 +1,0 @@
- You are given a 2D integer array `matrix`. Your task is to determine the smallest non-negative integer that is not present in this array. Return the smallest non-negative integer that is not present in `matrix`. Example: Input: matrix = [  [0, 2],  [5, 1]]. Output: 3

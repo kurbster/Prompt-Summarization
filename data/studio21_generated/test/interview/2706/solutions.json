@@ -1,1 +1,0 @@
-["import operator\nN = eval(input());\nN = int(N);\nk = eval(input());\nk = int(k);\nlist= [];\nfor i in range(k):\n a=eval(input());\n a=int(a);\n list.append(a);\nlist.sort() \nfor i in range(k,N):\n a=eval(input())\n a=int(a)\n if(a>=0):\n  if(a<list[k-1]):\n    list.pop()\n    list.append(a)\n    list.sort()\n else:\n    print(list[k-1]) \n        \n"]

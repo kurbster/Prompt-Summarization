@@ -1,2 +1,0 @@
-def souls(character, build):
-	

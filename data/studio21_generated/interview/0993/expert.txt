@@ -1,2 +1,0 @@
- You given N supermarkets.  You want to know which supermarket has a parking slot that divides the number of slots exactly. 
-O

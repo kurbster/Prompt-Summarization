@@ -1,1 +1,0 @@
- A positive integer is a perfect power if there exist natural numbers m > 1, and k > 1 such that m^(k) = n. Your task is to check wheter a given integer is a perfect power. If it is a perfect power, return a pair `m` and `k` with m^(k) = n as a proof. Otherwise return `Nothing`, `Nil`, `null`, `NULL`, `None` or your language's equivalent.

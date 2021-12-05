@@ -1,1 +1,0 @@
- You are given three numbers. Your task is to find the sum of all numbers which are divisible by 3, 5 and 7.

@@ -1,2 +1,0 @@
- You are given a string. 
------Input----- A single line contains a non-empty word. This word consists of lowercase and uppercase English letters. The length of the word will not exceed 10^3. -----Output----- Output the given word after capitalization. -----Examples----- Input ApPLe Output ApPLe Input konjac Output Konjac

@@ -1,1 +1,0 @@
- Push and pop are operations used to implement stacks. Push(1) would push 1 on the stack and pop would pop 1. So 1 can be pushed and popped. 

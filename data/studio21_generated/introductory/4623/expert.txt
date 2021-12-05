@@ -1,1 +1,0 @@
- First, convert each number to an integer. Then, sort the integers.

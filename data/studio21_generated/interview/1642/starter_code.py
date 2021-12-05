@@ -1,2 +1,0 @@
-def multiply(n, k):
-	

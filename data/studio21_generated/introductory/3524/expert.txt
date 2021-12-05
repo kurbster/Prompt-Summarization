@@ -1,2 +1,0 @@
- Input a string of DNA, and output a string of RNA. 
-.

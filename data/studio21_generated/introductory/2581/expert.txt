@@ -1,2 +1,0 @@
- You are given two integer arrays, A and B of dimensions NXM. Your task is to perform the following operations: 1. Add (A + B) 2. Subtract (A - B) 3. Multiply (A * B) 4. Integer Division (A / B) 5. Mod (A % B) 6. Power (A ** B) 
-=====Input Format===== The first line contains two space separated integers, N and M. The next N lines contains M space separated integers of array A. The following N lines contains M space separated integers of array B. =====Output Format===== Print the result of each operation in the given order under Task.

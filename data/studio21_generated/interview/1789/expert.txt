@@ -1,1 +1,0 @@
- # Task  Given a valid url, return a breadcrumb-like string. # Examples  - `generate_bc("www.codewars.com/users/giacomo-sorbi", " + ") == 'HOME + USERS + GIACOMO SORBI'` - `generate_bc("www.very-long-site_name-to-make-a-silly-yet-meaningful-example.com/users/giacomo-sorbi", " + ") == 'HOME + USERS + GIACOMO SO

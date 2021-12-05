@@ -1,9 +1,0 @@
-Given a random string consisting of numbers, letters, symbols, you need to sum up the numbers in the string. Consecutive integers should be treated as a single number and all the numbers should be treaded as positive integer. If no number was given in the string, it should return 0.
-
-Examples:
-Input:
-str = "In 2015, I want to know how much does iPhone 6+ cost?"
-Output:
-2021
-Explanation:
-The numbers are 2015 and 6.

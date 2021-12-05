@@ -1,1 +1,0 @@
- Given an integer N, output the number rounded to two decimal places. 

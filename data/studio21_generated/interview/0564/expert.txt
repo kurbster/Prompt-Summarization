@@ -1,1 +1,0 @@
- You are given N sets of containers. Each set has capacity i. Containers in sets should be filled in increasing order of capacity. 1 <= i <= N 1 <= N <= 300 1 <= ci <= 1000 1 <= K <= 1000 

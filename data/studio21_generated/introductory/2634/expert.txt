@@ -1,2 +1,0 @@
- You are given a square matrix A. You should find the determinant of the matrix. 
-=====Input Format===== The first line contains the integer N. The next N lines contains the space separated elements of array A.  =====Output Format===== Print the determinant of A.

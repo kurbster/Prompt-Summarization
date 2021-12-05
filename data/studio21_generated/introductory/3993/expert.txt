@@ -1,1 +1,0 @@
- Given an array of lowercase letters and numbers only, return the difference of the count of even numbers and the count of odd numbers. Ignore letters. 

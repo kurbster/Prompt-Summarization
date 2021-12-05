@@ -1,1 +1,0 @@
- Given an array/list of numbers, return a number such that  Explanation total([1,2,3,4,5]) => 48 1+2=3--\ 3+5 =>     8 \ 2+3=5--/ \            ==  8+12=>20\                ==>5+7=> 12 / \           20+28 => 48 3+4=

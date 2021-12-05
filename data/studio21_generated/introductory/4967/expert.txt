@@ -1,1 +1,0 @@
- You are given an array of numbers, each item in the array is an array of numbers, where each item in the array is a positive number. Your task is to return the array of integers that specifies the quantity of each item according to the greedy solution (the order of the quantities must match the order of `items`). 

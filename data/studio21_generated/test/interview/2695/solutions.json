@@ -1,1 +1,0 @@
-["# cook your dish here\ntry:\n    a,b,da=list(input()),input(),list(map(int,input().split()))\n    print(len(a)-len(b))\nexcept:\n    pass", "try:\n    A,B,data = list(input()),input(),list(map(int,input().split()))\n    print(len(A)-len(B))\nexcept:\n    pass"]

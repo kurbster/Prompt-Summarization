@@ -1,1 +1,0 @@
- You are given an integer c representing the amount in cents. You need to return a hash/dictionary/object with the symbols as keys, and the numbers of coins as values. Coins that are not used should not be included in the hash. If the argument passed in is 0, then the method should return an empty hash.

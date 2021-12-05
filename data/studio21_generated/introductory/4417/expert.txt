@@ -1,1 +1,0 @@
- Given a range of integers, find how many prime numbers within the range will eventually end up being `1`. 

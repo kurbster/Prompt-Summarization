@@ -1,9 +1,0 @@
-Write a function named first_non_repeating_letter that takes a string input, and returns the first character that is not repeated anywhere in the string. Uppercase and lowercase letters are considered the same character. If a string contains all repeating characters, it should return an empty string "" or None.
-
-Examples:
-Input:
-'stress'
-Output:
-'t'
-Explanation:
-The letter t only occurs once in the string, and occurs first in the string.

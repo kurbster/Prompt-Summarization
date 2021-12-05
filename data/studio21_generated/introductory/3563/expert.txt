@@ -1,1 +1,0 @@
- You are given a number. Return the Manhattan distance considering the core of the spiral (the `1` cell) as 0 and counting each step up, right, down or left to reach a given cell. For example, using our beloved 5x5 square: ``` 17 16 15 14 13    4 3 2 3 4 18 05 04 03 12    3 2 1 2 3 19 06 01 02 11 =>

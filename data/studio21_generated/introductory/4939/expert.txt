@@ -1,1 +1,0 @@
- Given a person's date of birth, return an array describing their life-time coffee limits [regular limit, decaffeinated limit]. 

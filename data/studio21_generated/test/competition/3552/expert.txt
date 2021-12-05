@@ -1,2 +1,0 @@
- You are given $n$ gnomes and $m$ groups. Your task is to divide them into $m$ groups in such a way that the damage caused by the gnomes is minimized. 
------Input----- The input consists of a single line containing the three integers $n$, $m$, and $k$ ($1 \le n \le 10^9$, $1 \le m, k \le 10^7$), with meanings as described above. -----Output----- Output the maximum amount of damage you can cause to the enemy. -----Examples----- Sample Input: 10 4 3 Sample Output: 27

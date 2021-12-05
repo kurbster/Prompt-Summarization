@@ -1,1 +1,0 @@
- Given an array of integers, sort them by name. For example, 1, 2, 3, 4, would be sorted as "four", "one", "three", "two".

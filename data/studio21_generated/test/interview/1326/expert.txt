@@ -1,2 +1,0 @@
- 
------Input----- Input is given from Standard Input in the following format: N -----Output----- Print the value \sum_{K=1}^N K\times f(K). -----Sample Input----- 4 -----Sample Output----- 23 We have f(1)=1, f(2)=2, f(3)=2, and f(4)=3, so the answer is 1\times 1 + 2\times 2 + 3\times 2 + 4\times 3 =23.

@@ -1,1 +1,0 @@
- In January 2016, Google released Chrome 70. This version introduced a feature called "Incognito Mode". It hides the browsing history, cookies, cache, and auto-fill information from websites and apps.

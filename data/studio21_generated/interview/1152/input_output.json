@@ -1,1 +1,0 @@
-{"inputs": [["4", "flour-with-eggs 100", "chicken-ham -10", "flour-without-eggs 200", "fish-with-pepper 1100", "6", "f", "flour-with", "flour-with-", "c", "fl", "chik"]], "outputs": [["fish-with-pepper", "flour-without-eggs", "flour-with-eggs", "chicken-ham", "flour-without-eggs", "NO"]]}

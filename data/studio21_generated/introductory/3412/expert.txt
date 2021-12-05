@@ -1,1 +1,0 @@
- The geometric derivative is a function that returns ```n*`, where ```n``` is the exponent. The function ```f``` takes an exponent ```n``` and returns ```n*`. The function ```f``` always returns ```n*`.

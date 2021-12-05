@@ -1,2 +1,0 @@
-def remainder(dividend, divisor):
-	

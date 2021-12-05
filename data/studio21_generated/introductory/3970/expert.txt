@@ -1,1 +1,0 @@
- You are given a triangle of consecutive odd numbers. You need to find the row knowing the index (the rows are 1-indexed), e.g.: odd_row(1)  ==  [1] odd_row(2)  ==  [3, 5] odd_row(3)  ==  [7, 9, 11]

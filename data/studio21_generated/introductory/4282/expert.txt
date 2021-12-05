@@ -1,1 +1,0 @@
- You are given an array of digits. Find the particular sequence (7,8,9) in that array and tell 7 to come after 9 instead. 

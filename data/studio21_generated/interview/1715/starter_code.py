@@ -1,2 +1,0 @@
-def justify(text, width):
-	

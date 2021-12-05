@@ -1,2 +1,0 @@
- Decrypt a Martian message. 
------Input----- The first line of the input contains two positive integers, $N$ ($1 \le N \le 10^6$), and $X$ ($1 \le X \le 2.5 \cdot 10^5$). It is guaranteed that the base $27$ result of step 5 will be longer or equal to the length of the intercepted message. The second line of the input contains a string consisting of uppercase letters and spaces of length $N$, the encrypted text. -----Output----- Output the decrypted text. -----Examples----- Sample Input: 14 4 JQ IRKEYFG EXQ Sample Output: THIS IS A TEST

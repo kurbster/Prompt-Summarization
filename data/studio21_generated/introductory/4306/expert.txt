@@ -1,1 +1,0 @@
- Given two polar coordinates (an angle in degrees and a radius) return equivalent cartesian coordinates (rounded to 10 places). 

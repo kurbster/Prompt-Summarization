@@ -1,1 +1,0 @@
- You are given two arrays of integers. You need to return the number of exchanges that can be performed to make both arrays sorted.

@@ -1,2 +1,0 @@
-def boredom(staff):
-	

@@ -1,1 +1,0 @@
- Given 2 strings s1 and s2, remove exclamation marks from the end of s1 and s2. Words are separated by spaces in the sentence.

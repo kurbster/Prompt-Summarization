@@ -1,1 +1,0 @@
- Given an array of integers, find the number of sub-arrays with odd sum. 

@@ -1,2 +1,0 @@
- Given a grid of $N\times N$ grid. Print the number of pumpkins that are alive after $D$ days. 
-Examples----- Sample Input: 4 2 8 3 2 5 5 4 3 1 1 Sample Output: 1 2 1 2

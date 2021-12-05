@@ -1,1 +1,0 @@
-Given n, m and a, calculate the number of squares of side length a required to completely cover a rectangle of length m and breadth n. Input The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9). Output Print the needed squares. Examples input 6 6 4 output 4

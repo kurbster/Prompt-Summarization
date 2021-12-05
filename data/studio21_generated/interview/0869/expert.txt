@@ -1,2 +1,0 @@
- You are given a string S and a string M. Both strings are of length 100. You need to find whether M is a sub-string of S. 
------Input----- Input to the program consists of two line. The first line contains the string M (where size of M should be <=40). The next line contain a string S. -----Output----- Output should consist of a line with a character 'Y'/'N' indicating whether the string S is a sub-string of String M or not. -----Example----- Input: techtrishna online event onlin Output: Y

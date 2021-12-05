@@ -1,2 +1,0 @@
- You are given two integers $n$ and $A$. You need to calculate the total number of square centimeters to be colored for each of the three colors. 
-Examples----- Sample Input: 3 1 1 1 1 1 1 Sample Output: 3 3 3

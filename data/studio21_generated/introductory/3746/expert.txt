@@ -1,1 +1,0 @@
- Given an integer, output the smallest palindrome number higher than it.

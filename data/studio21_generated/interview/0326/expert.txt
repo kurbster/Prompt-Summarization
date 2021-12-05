@@ -1,1 +1,0 @@
- Given an input string, convert it into a string with given number of rows. 

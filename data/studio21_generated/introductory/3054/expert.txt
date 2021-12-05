@@ -1,1 +1,0 @@
- You are given a number `n` and a value `m`. For every number from `0` to `n` if the number is divisible by `m`, you store the last digit of this number. For example, if `n=15` and `m=5`, numbers divisible by `m` are `5, 10, 15`. Their last digits are `5, 0, 5` correspondingly, their sum is `10`. 

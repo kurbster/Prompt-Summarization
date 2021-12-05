@@ -1,4 +1,0 @@
- You are given two arrays a and b of size n and m respectively. 
-a[i] is the i-th element of the array and
-b[i] is the i-th element of the array. 
-You need to find the total sum of all the elements in array a. 

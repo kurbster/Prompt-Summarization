@@ -1,2 +1,0 @@
- Given string S, find the indices of the start and end of string k in S.
-=====Input Format===== The first line contains the string S. The second line contains the string k. =====Output Format===== Print the tuple in this format: (start_index, end_index) If no match is found, print (-1, -1).

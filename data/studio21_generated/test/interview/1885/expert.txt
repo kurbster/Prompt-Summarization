@@ -1,2 +1,0 @@
- You are given an array of numbers. You need to count number of possible group compositions. 
------Input----- The only line of the input contains one integer n (7 ≤ n ≤ 777) — the number of potential employees that sent resumes. -----Output----- Output one integer — the number of different variants of group composition. -----Examples----- Input 7 Output 29

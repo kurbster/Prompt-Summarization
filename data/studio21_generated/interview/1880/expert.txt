@@ -1,1 +1,0 @@
- You are given N values with weight attached to each value. You need to find minimum number of continuous values to be chosen such that total weight is maximum possible. 

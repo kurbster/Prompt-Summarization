@@ -1,2 +1,0 @@
- You are given a string of length seven. The turn sequence of the unlock pattern shown in the figure is  LRRRSRL . 
------Input----- The input has a single string of length seven. The string consists of characters ‘L’, ‘R’, ‘S’, ‘A’ and ‘?’ that describe the directional changes at the pivots in the order of their visit. -----Output----- Output the number of different unlock patterns that have a turn sequence matching the input. -----Examples----- Sample Input: LRRRSRL Sample Output: 44

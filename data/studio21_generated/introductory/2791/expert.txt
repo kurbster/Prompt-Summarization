@@ -1,1 +1,0 @@
- You are given a string of 3 characters. Return all trigrams for this phrase. 

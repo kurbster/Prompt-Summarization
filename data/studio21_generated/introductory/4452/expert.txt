@@ -1,1 +1,0 @@
- Given a string of 4 or more digits, find the highest possible product from splitting it into parts. 

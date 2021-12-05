@@ -1,1 +1,0 @@
- Given d dice and f faces, return the number of possible ways (out of fd total ways) modulo 10^9 + 7 to roll the dice so the sum of the face up numbers equals target. 

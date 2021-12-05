@@ -1,2 +1,0 @@
- Given the full list of what numbers we are in possession of, what is the smallest positive number that cannot be made using each of digits at most once 
------Input-----  - One string of at most $1000$ digits, containing the available digits in no particular order. -----Output-----  - One line containing one positive integer: the smallest natural number that it is not possible to assemble from the supplied digits. -----Examples----- Sample Input 1: 7129045863 Sample Output 1: 11 Sample Input 2: 55 Sample Output 2: 1

@@ -1,1 +1,0 @@
- Given a string `"baceb"` you can split it into substrings: `b, ba, bac, bace, baceb, a, ac, ace, aceb, c, ce, ceb, e, eb, b`. The number of vowels in each of these substrings is `0, 1, 1, 2, 2, 1, 1, 2, 2, 0, 1, 1,

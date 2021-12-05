@@ -1,1 +1,0 @@
- This is the string kata.  Input: A string of length n (must not exceed 2 million).  Output: A string consisting of n reversed characters.  For example, "String" becomes "gnirtS", "gnirtS" becomes "gStrin", "gStrin" becomes "gSnirt", "gSnirt" becomes "gSntri", and so on.

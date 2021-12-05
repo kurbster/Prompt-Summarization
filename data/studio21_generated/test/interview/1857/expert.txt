@@ -1,2 +1,0 @@
- You are given $n^2$ intersections and $n$ benches. Find the number of ways to place the benches. 
------Input----- The only line of the input contains one integer n (5 ≤ n ≤ 100) — the number of east to west paths and north to south paths. -----Output----- Output one integer — the number of ways to place the benches. -----Examples----- Input 5 Output 120

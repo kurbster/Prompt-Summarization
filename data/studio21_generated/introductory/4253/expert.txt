@@ -1,1 +1,0 @@
- Given two numbers n and k return k dimentional array that sums to n and has maximum GCD

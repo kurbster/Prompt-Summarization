@@ -1,1 +1,0 @@
- Create a `Funnel` data structure. It consists of three basic methods: `fill()`, `drip()` and `toString()/to_s/__str__`. Its maximum capacity is 15 data. Data should be arranged in an inverted triangle, like this:  ```  \1 2 3 4 5/   \7 8 9 0/    \4 5 6/     \2 3/      \1/  `

@@ -1,1 +1,0 @@
- Given an array of integers, you need to find a peak element and return its index. The array may contain multiple peaks, in that case return the index to any one of the peaks is fine. 

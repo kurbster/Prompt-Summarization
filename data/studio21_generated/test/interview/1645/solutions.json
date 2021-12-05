@@ -1,1 +1,0 @@
-["n=int(input())\na=list(int(i) for i in input().split())\np=[0]*(n+1)\nfor i in range(0,n) :\n\tp[i+1]+=p[i]+a[i]\nok=dict()\nans,l=0,0\nfor i in range(n+1) :\n\tif p[i] in ok :\n\t\tok[p[i]]+=1\n\telse :\n\t\tok[p[i]]=1\n\twhile ok[p[i]]>1:\n\t\tok[p[l]]-=1\n\t\tl+=1\n\tans+=(i-l+1)\nprint(ans-n-1)\n\n\n"]

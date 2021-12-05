@@ -1,1 +1,0 @@
-["for i in range(eval(input())):\n n,k=input().strip().split()\n n=int(n)\n k=int(k)\n print(int( ((n-k)&(int((k-1)/2)))==0))"]

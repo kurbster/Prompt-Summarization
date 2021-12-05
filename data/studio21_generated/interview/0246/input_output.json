@@ -1,1 +1,0 @@
-{"fn_name": "replaceWords", "inputs": [[["\"cat\"", "\"bat\"", "\"rat\""], "\"the cattle was rattled by the battery\""]], "outputs": ["\"the cattle was rattled by the battery\""]}

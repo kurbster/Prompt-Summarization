@@ -1,1 +1,0 @@
- You are given a table, and you need to output the number of days that it will take for the plant to reach/pass desiredHeight (including the last day in the total count).

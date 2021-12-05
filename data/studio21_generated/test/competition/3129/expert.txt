@@ -1,2 +1,0 @@
- The input given is a sequence of hay bales. You need to output the minimum number of operations Peter has to execute to sort the sequence. 
------Input----- The input contains a single string $s$ ($3 \leq |s| \leq 500$), the sequence of hay bales. Each character of $s$ is either ‘C’ (for a clean hay bale) or ‘P’ (for an infected one). -----Output----- The output must contain one integer, the minimum number of steps Peter has to execute. -----Examples----- Sample Input 1: CPCC Sample Output 1: 1 Sample Input 2: PPPPCCCC Sample Output 2: 8

@@ -1,2 +1,0 @@
- You are given an integer $n$. You need to compute the sum of all possible resulting prices after Vova's move. Print this sum modulo $10^9 + 7$.
------Input----- The first and only line contains a single integer $n$ ($1 \le n < 10^{10^5}$). -----Output----- In the only line print the required sum modulo $10^9 + 7$. -----Examples----- Input 107 Output 42 Input 100500100500 Output 428101984 -----Note----- Consider the first example. Vova can choose to remove $1$, $0$, $7$, $10$, $07$, or $107$. The results are $07$, $17$, $10$, $7$, $1$, $0$. Their sum is $42$.

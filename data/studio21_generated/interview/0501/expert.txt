@@ -1,1 +1,0 @@
- Given a string, convert it to palindrome.

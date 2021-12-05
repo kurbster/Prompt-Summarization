@@ -1,1 +1,0 @@
- You are given a list of numbers. Each number represents a bus stop. For each bus stop, print the number of buses we need to take to reach that bus stop. Constraints: 1 <= routes.length <= 500. 1 <= routes[i].length <= 10^5. 0 <= routes[i][j] < 10 ^ 6.

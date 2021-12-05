@@ -1,1 +1,0 @@
- You are given a function sum(a,b). You need to return the sum of all elements of arrays a,b. 

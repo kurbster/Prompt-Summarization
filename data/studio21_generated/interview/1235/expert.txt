@@ -1,2 +1,0 @@
- # Example  Given 2^10 = 2048, the output should be 2.  ![](https://codefightsuserpics.s3.amazonaws.com/tasks/decimalPower/img/ex_1.png _tm=1473533980456) # Input/Output  - `[input]` integer `n`     Number to be converted  - `[output]` integer
------Input:----- - N  — the power in which you need to raise number 5. -----Output:----- Last two digits of 5^n. -----Constraints----- - $2 \leq N \leq 2.1018$ -----Sample Input:----- 2 -----Sample Output:----- 25

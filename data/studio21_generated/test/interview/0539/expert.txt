@@ -1,2 +1,0 @@
- You are given an integer n, and want to find the number of distinct (non-degenerate) triangles with integer sides, such that sum of their lengths is 0. 
------Input----- The only line contains a single integer n (1 ≤ n ≤ 2500). -----Output----- Print the number of xorangles of order n. -----Examples----- Input 6 Output 1 Input 10 Output 2 -----Note----- The only xorangle in the first sample is (3, 5, 6).

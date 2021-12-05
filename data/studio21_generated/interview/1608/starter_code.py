@@ -1,2 +1,0 @@
-def determinant(matrix):
-	

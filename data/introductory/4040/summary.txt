@@ -1,7 +1,0 @@
-Given an array of words, you must concatenate the nth letter from each word to construct a new word which should be returned as a string, where n is the position of the word in the list.
-
-Examples:
-Input:
-["yoda", "best", "has"]
-Output:
-"yes"

@@ -1,2 +1,0 @@
-def anagrams(word, words):
-	

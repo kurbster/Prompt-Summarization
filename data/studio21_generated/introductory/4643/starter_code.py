@@ -1,2 +1,0 @@
-def zipvalidate(postcode):
-	

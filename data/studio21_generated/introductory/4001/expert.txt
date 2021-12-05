@@ -1,1 +1,0 @@
- Given two integers n and m, draw an n x m grid filled with 'X's, where each 'X' is 1 unit wide and 1 unit high.  

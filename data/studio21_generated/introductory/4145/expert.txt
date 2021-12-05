@@ -1,1 +1,0 @@
- Given an IP address (v4) and subnet mask (v4), return the network block (v4) and host identifier (v4).

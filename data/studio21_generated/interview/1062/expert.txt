@@ -1,2 +1,0 @@
- Given a list of gifts, you should output the number of ice needed for each gift. 
------Input:----- Input will consist of a single line with size $n$. -----Output:----- Print the ice wrapped gift box for the given size.  -----Constraints----- - $0 \leq n \leq 1000$ -----Sample Input:----- 4 -----Sample Output:----- 4 4 4 4 4 4 4 4 3 3 3 3 3 4 4 3 2 2 2 3 4 4 3 2 1 2 3 4 4 3 2 2 2 3 4  4 3 3 3 3 3 4 4 4 4 4 4 4 4

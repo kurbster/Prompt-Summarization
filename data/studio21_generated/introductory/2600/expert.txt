@@ -1,1 +1,0 @@
- You are given an array with dimensions NXM. Your task is to perform the sum tool over axis 0 and then find the product of that result.

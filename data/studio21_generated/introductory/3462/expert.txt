@@ -1,1 +1,0 @@
- Implement a function that performs a disjunction operation on 2 or more propositions. Should take a boolean array as its first parameter and a single boolean as its second parameter, which, if true, should indicate that the disjunction should be exclusive as opposed to inclusive. Should return true or false.

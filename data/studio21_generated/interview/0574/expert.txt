@@ -1,2 +1,0 @@
- You are given an array $A= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47
------Input----- The first line contains the number of test cases. Each test cases contains an integer N. next line consists of N integers, the elements of the array. -----Output----- Print out the maximum sub-array as stated above. -----Constraints----- -  1  ≤  T  ≤  100  -  1  ≤  N  ≤  105  -  1  ≤  Ai  ≤  105  -----Example----- Input: 1 6 1 2 5 -7 2 3 Output: 1 2 5

@@ -1,1 +1,0 @@
- Return output must be in the form of an array, with the numbers as integers and the replaced numbers (fizzbuzz) as strings. 

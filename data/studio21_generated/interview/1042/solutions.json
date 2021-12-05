@@ -1,1 +1,0 @@
-["# cook your dish here\n    \ndef G(x, y): \n   while(y): \n       x, y = y, x % y \n   return x \n# t=int(input())\n# l=list(map(int,input().split()))\nfor _ in range(int(input())):\n    n,p=map(int,input().split())\n\n    c=0\n    for i in range(1,n+1):\n        if G(i,p)==1:\n            c+=1\n    ans=c*(c-1)//2\n    print(ans)"]

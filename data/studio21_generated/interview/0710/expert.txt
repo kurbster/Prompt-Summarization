@@ -1,2 +1,0 @@
- You are given a list of numbers. You need to return the maximum sum of the elements in that list. Constraints: 1 <= A[i] <= 10^5, 1 <= N <= 10^5, 1 <= d <= 10^5, 1 <= c <= 10^5, 1 <= b <= 10^5, 1 <= a <= 10^5. 
------Input:----- - The first line contain the integer N - The second line contains N space separated integers representing A[1], A[2] … A[N] -----Output:----- The maximum score that is possible -----Constraints----- - $4 \leq N \leq 10^4$ - $0 \leq A[i] \leq 10^5$ -----Sample Input:----- 6 3 9 10 1 30 40 -----Sample Output:----- 46

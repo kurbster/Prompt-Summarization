@@ -1,1 +1,0 @@
- You are given an array representing different tree sizes. You need to find the size of the missing tree.

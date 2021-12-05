@@ -1,2 +1,0 @@
- You are given a string. Count how many times the search string appears as a sub-sequence of that string.  Spaces are also considered part of the needle. Since the answers can be very large, return only the last 8 digits of the answer in case it exceeds 8 digits. The answers to the test cases will all be shorter than 8 digits
-.

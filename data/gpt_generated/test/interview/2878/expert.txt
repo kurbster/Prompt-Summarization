@@ -1,2 +1,0 @@
- You are given a string with letters. Find all triplets of letters on a line. 
------Input----- The first line contains an integer $N$ ($3 \le N \le 100$), the dimension of the grid. Each of the $N$ following lines contains $N$ characters describing the grid – uppercase letters and the character ’.’ which marks an empty square. -----Output----- Output the number of triples on a single line. -----Examples----- Sample Input 1: 4 ...D ..C. .B.. A... Sample Output 1: 4 Sample Input 2: 5 ..T.. A.... .FE.R ....X S.... Sample Output 2: 3

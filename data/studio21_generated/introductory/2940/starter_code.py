@@ -1,2 +1,0 @@
-def repeats(arr):
-	

@@ -1,1 +1,0 @@
- You are given a graph, you need to find the shortest path from a vertex to the exit.

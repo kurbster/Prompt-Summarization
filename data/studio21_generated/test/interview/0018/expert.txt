@@ -1,2 +1,0 @@
- 
------Input----- First line contains non-empty string s (1 ≤ |s| ≤ 10^5), consisting of lowercase English letters. -----Output----- Print resulting string u. -----Examples----- Input cab Output abc Input acdb Output abdc

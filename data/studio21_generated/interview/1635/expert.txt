@@ -1,1 +1,0 @@
- Given a string `s`. For every letter in `s`, return all the strings formed by rearranging the letters in `s`. After ordering these strings in dictionary order, return the middle term.

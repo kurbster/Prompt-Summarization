@@ -1,1 +1,0 @@
-# Task Given the start and end numbers, write a method to return the frequency of all digits from start number to end number. # Example Input: start = 125, end = 132 Output: [1,9,6,3,0,1,1,1,1,1] Explanation: The digit frequencies are 1 x 0, 9 x 1, 6 x 2 etc... and so the method would return [1,9,6,3,0,1,1,1,1,1]

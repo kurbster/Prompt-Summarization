@@ -1,2 +1,0 @@
-def derive(coefficient, exponent):
-	

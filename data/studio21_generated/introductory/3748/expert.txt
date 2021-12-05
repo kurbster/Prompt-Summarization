@@ -1,1 +1,0 @@
- You are given a string `msg` representing the original message. You need to return a string `encrypted_msg` representing encrypted message.

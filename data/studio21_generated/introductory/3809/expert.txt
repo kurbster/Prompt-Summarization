@@ -1,1 +1,0 @@
- You are given a string and a number. You need to check whether the string fits inside the square. The square should be of size n x n. The input `"text"` and `"n"` should be separated by a single space.   

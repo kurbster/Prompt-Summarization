@@ -1,1 +1,0 @@
- You are given a number (type depends on the language), and your task is to determine if this number is a **dd** number or not. summary :  

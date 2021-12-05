@@ -1,1 +1,0 @@
- Given a list of integers and a positive integer `k`, return the minimum and maximum possible product of `k` elements taken from the list. 

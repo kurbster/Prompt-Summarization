@@ -1,1 +1,0 @@
- You are given an array. Return the value of that array at the index provided. If the index is out of the array's max bounds then it should return the default value instead. 

@@ -1,2 +1,0 @@
-def dithering(width, height):
-	

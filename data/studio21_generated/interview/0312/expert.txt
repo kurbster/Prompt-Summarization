@@ -1,1 +1,0 @@
- You are given an array A. The task is to find the length of the shortest, non-empty, contiguous subarray with sum at least K. If there is no such subarray, then return -1. Note: 1 <= A.length <= 50000 -10 ^ 5 <= A[i] <= 10 ^ 5

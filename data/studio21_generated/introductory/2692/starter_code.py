@@ -1,2 +1,0 @@
-def bubble(l):
-	

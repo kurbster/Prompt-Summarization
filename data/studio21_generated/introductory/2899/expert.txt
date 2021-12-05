@@ -1,1 +1,0 @@
- Given binary string `s`, return the minimum number of flips required to convert `s` to string consisting of all '0'. Example 1: Input: s = "0101", Output: 3 Explanation: 1) 0101 -> 0010 2) 0010 -> 0001 3) 0001 -> 0000

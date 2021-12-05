@@ -1,2 +1,0 @@
- You are given N values with weight attached to each value. You need to find minimum number of sequences to be chosen such that product of any two adjacent elements is maximum possible. 
------Input----- Input is given from Standard Input in the following format: N K -----Output----- Print the number of sequences, modulo 10^9+7. -----Sample Input----- 3 2 -----Sample Output----- 5 (1,1), (1,2), (1,3), (2,1), and (3,1) satisfy the condition.

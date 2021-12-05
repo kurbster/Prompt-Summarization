@@ -1,2 +1,0 @@
- You are given values n and m. Output m numbers from 1 to m, the order in which the passengers will get off the bus. 
------Input----- The only line contains two integers, n and m (1 ≤ n ≤ 100, 1 ≤ m ≤ 4n) — the number of pairs of rows and the number of passengers. -----Output----- Print m distinct integers from 1 to m — the order in which the passengers will get off the bus. -----Examples----- Input 2 7 Output 5 1 6 2 7 3 4 Input 9 36 Output 19 1 20 2 21 3 22 4 23 5 24 6 25 7 26 8 27 9 28 10 29 11 30 12 31 13 32 14 33 15 34 16 35 17 36 18

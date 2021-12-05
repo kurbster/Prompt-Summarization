@@ -1,1 +1,0 @@
- Given two positive integers w,l,h, return the number of blocks in the pyramid. 

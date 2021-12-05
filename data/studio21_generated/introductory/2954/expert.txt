@@ -1,2 +1,0 @@
- You are given a list of distances (miles) from one station to the next along the Pony Express route. Implement the `riders` method/function, to return how many riders are necessary to get the mail from one end to the other. 
-)

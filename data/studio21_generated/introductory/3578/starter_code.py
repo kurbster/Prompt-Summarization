@@ -1,2 +1,0 @@
-def paperwork(n, m):
-	

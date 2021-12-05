@@ -1,2 +1,0 @@
-def penaltyShots(shots, score):
-	

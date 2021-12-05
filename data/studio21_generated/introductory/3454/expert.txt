@@ -1,1 +1,0 @@
- You are given a number $m$. You are asked to find the minimum required number of candies to buy, so that no matter how many kids come to the party in the end, each kid can receive the same amount of candies, while leaving no candies left. 

@@ -1,1 +1,0 @@
-{"inputs": [["3 6", "CLICK 1", "CLICK 2", "CLICK 3", "CLICK 2", "CLOSEALL", "CLICK 1"]], "outputs": [["1", "2", "3", "2", "0", "1"]]}

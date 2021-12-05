@@ -1,1 +1,0 @@
- Given an array `A` and an integer `x`, map each element in the array to `F(A[i],x)` then return the xor sum of the resulting array. where F(n,x) is defined as follows: F(n, x) = ^(x)Cx **+** ^(x+1)Cx **+** ^(x+2)Cx **+** ... **+** ^(n)Cx and ^(n)Cx represents [

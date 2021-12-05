@@ -1,1 +1,0 @@
- Count how often sign changes in array

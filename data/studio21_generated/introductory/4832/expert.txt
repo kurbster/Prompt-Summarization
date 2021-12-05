@@ -1,1 +1,0 @@
- Your task is to find all the elements of an array that are non consecutive. A number is non consecutive if it is not exactly one larger than the previous element in the array. The first element gets a pass and is never considered non consecutive.

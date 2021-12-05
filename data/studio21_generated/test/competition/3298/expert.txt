@@ -1,2 +1,0 @@
- You are given a sequence of integers. You need to find the number of entirely unsorted sequences you can make by permuting its elements. 
------Input----- The input starts with an integer $1 \leq n \leq 5000$. Then follows a single line with $n$ integers $a_1, \ldots , a_ n$, with $0 \leq a_ i \leq 10^9$ for all $i$. -----Output----- Print a single integer: the number of entirely unsorted sequences you can make by permuting the $a_ i$, modulo $10^9 + 9$. -----Examples----- Sample Input 1: 4 0 1 2 3 Sample Output 1: 14 Sample Input 2: 5 1 1 2 1 1 Sample Output 2: 1

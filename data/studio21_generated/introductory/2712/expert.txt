@@ -1,2 +1,0 @@
- Given a non-negative integer, your funtion must determine if there's at least one digit `1` in this integer such that its loneliness value is minimal. 
-.

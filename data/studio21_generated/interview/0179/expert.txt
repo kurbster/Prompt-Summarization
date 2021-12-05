@@ -1,1 +1,0 @@
- Given a list of strings, you need to find the minimum number of characters that need to be deleted from each of them such that the compressed version of each of them has minimum length. 
