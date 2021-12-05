@@ -51,7 +51,9 @@ def main(dir_list) -> dict[str, list[any]]:
 if __name__ == '__main__':
     import sys
     import my_logger
-    input_file = Path(sys.argv[1])
+    input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
     results = main(input_file)
+    with open(output_file, 'w') as f:
+        json.dump(results, f) 
 else:
     from . import my_logger

@@ -152,8 +152,9 @@ def select_summary_prompt(probs: set[str], ignore_intro: bool = True, ignore_tra
 
     # This is limiting the number of examples we will generate with GPT.
     # There are 250 competitive and 250 interview available.
-    available_probs -= set(range(8000, 8761))
-    available_probs -= set(range(5000, 7785))
+    # Not counting the ones already generated w/ 3 few shot.
+    #available_probs -= set(range(8000, 8761))
+    #available_probs -= set(range(5000, 7785))
 
     def get_num(x):
         num = int(os.path.basename(x))
@@ -455,6 +456,8 @@ def generate_few_shot(available_prompts: set[str], cfg: dict[str, any]) -> list[
     available_prompts = list(available_prompts)
     few_shot_examples = random.sample(available_prompts, cfg["numExamples"])
     
+    logger.debug(f'Using {few_shot_examples} for few shot examples.')
+
     # TODO: Currently we generate few shot examples by reading the summaries.
     # The summary type is defined in the config file. Should we change this
     # to have different few shot examples if we are using the original question?
@@ -482,17 +485,40 @@ def read_code_files(prompt: str, cfg: dict[str, any], read_original: bool=False,
 
     code_prefix = get_code_prefix(prompt, cfg["codePrefix"])
 
-    prompt_str  = f'{cfg["promptPrefix"]}\n{question}\n{cfg["promptSuffix"]}\n{code_prefix}'
+    prompt_str  = f'{cfg["promptPrefix"]}\n{question}\n{cfg["promptSuffix"]}'
     
     if read_solution:
         code_fname = os.path.join(prompt, 'solutions.json')
         try:
-            code = json.load(open(code_fname))[0]   
-            prompt_str += '\n' + code
+            codes = json.load(open(code_fname))
+            min_code_len = 1e6
+            # Pick the shortest solution
+            for c in codes:
+                if len(c) < min_code_len:
+                    code = c
+            code = format_solution(code)
+            prompt_str += f'\n{code}\n'
         except FileNotFoundError:
             logger.error(f'The code solution for prompt {prompt} does not exist. Not including it in few shot examples.')
+    else:
+        prompt_str += f'\n{code_prefix}'
         
     return prompt_str
+
+def format_solution(code_str: str) -> str:
+    """Format the solution to match the format of codex.
+
+    Args:
+        code_str (str): The code string to format.
+
+    Returns:
+        str: The formatted code string.
+    """
+    if ('def' in code_str) or code_str.startswith('class'):
+        return code_str
+    code_arr = code_str.splitlines()
+    code = 'def code():\n    ' + '\n    '.join(code_arr)
+    return code
 
 def get_code_prefix(prompt: str, default: str) -> str:
     """Return the prefix for code generation.
@@ -521,8 +547,7 @@ def log_summary(prompt, extra, output_dir):
 def log_codes(prompts, output_dirs):
     for p, out in zip(prompts, output_dirs):
         logger.debug(f'Prompt for output {out}')
-        logger.debug('='*50)
-        logger.debug(p)
+        logger.debug(f'\n{p}')
 
 if __name__ == '__main__':
     import my_logger

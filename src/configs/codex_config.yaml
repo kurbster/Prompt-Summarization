@@ -26,3 +26,4 @@ apiParams:
   presence_penalty: 0.0
   stop:
       - "\"\"\""
+      - "\n\n\n"

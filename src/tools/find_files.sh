@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 get_generated_train() {
-    problems=$(find ../../data/*generated/[ic]* -mindepth 1 -type d)
+    problems=$(find ../../data/*generated/[ic]* -mindepth 1 -type d -not -path *ARCHIVE*)
 }
 
 get_generated_test() {
-    problems=$(find ../../data/*generated/ -mindepth 3 -type d)
+    problems=$(find ../../data/*generated/ -mindepth 3 -type d -not -path *ARCHIVE*)
 }
 
 get_generated_human() {
@@ -14,8 +14,8 @@ get_generated_human() {
 }
 
 get_generated_model() {
-    problems=$(find ../../data/*generated/[ic]* -mindepth 1 -type d && \
-             find ../../data/*generated/ -mindepth 3 -type d)
+    problems=$(find ../../data/*generated/[ic]* -mindepth 1 -type d  -not -path *ARCHIVE* && \
+             find ../../data/*generated/ -mindepth 3 -type d -not -path *ARCHIVE*)
 }
 
 # If this script was run directly
