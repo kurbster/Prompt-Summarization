@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BVubiP2Mib1zOVN54dhtEFpvuo6N",
+    "object": "text_completion",
+    "created": 1638649625,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    n, p, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    count = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if (a[i] + a[j]) * (a[i]**2 + a[j]**2) % p == k:\n                count += 1\n    print(count)\n\n    \nif __name__ == '__main__':\n    code()",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, p, k = map(int, input().split())\n    a = list(map(int, input().split()))\n    ans = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if (a[i] + a[j]) * (a[i]**2 + a[j]**2) % p == k:\n                ans += 1\n    print(ans)\n\n\nif __name__ == '__main__':\n    code()",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in s:\n        if s.count(i) > 1:\n            return i\n    return None",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    for i in s:\n        if s.count(i) > 1:\n            return i\n    return None",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    num_sets = int(input())\n    for i in range(num_sets):\n        high, low, normal_high, normal_low = input().split()\n        high = float(high)\n        low = float(low)\n        normal_high = float(normal_high)\n        normal_low = float(normal_low)\n\n        avg_difference = (high - low + normal_high - normal_low)/2\n\n        if avg_difference > 0:\n            print(\"{:.1f} DEGREE(S) ABOVE NORMAL\".format(avg_difference))\n        elif avg_difference < 0:\n            print(\"{:.1f} DEGREE(S) BELOW NORMAL\".format(-avg_difference))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        notes = [1,2,5,10,50,100]\n        count = 0\n        while n>0:\n            for j in range(len(notes)-1,-1,-1):\n                if n>=notes[j]:\n                    n-=notes[j]\n                    count+=1\n                    break\n\n        print(count)",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        count = 0\n        while n > 0:\n            if n >= 100:\n                count += 1\n                n -= 100\n            elif n >= 50:\n                count += 1\n                n -= 50\n            elif n >= 10:\n                count += 1\n                n -= 10 \n            elif n >= 5: \n                count += 1 \n                n -= 5 \n            elif n >= 2: \n                count += 1 \n                n -= 2 \n\n        print(count)",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(s) == list(s)",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(s) == list(s)",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    x = []\n    y = []\n    for i in range(n):\n        x.append(int(input()))\n        y.append(int(input()))\n\n    count = 0\n\n    for i in range(n):\n        for j in range(i+1, n):\n            if abs(x[i] - x[j]) + abs(y[i] - y[j]) == abs(a - b):\n                count += 1\n\n    print (count)",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    x = []\n    y = []\n    for i in range(n):\n        x.append(int(input()))\n        y.append(int(input()))\n\n    # d[i][j] is the distance between pinholes i and j.\n    d = [[0 for _ in range(n)] for _ in range(n)]\n\n    for i in range(n):\n        for j in range(i+1, n):\n            d[i][j] = abs(x[i]-x[j]) + abs(y[i]-y[j])\n\n    # s is the number of pairs of pinholes that can be pointed by the compass.\n    s = 0\n\n    # The following loop checks all possible states of the compass.\n    for i in range((1 << n) - 1):  # (1<<n)-1 is a bitmask with n ones.\n        p = 0  # p is the index of the first pinhole that will be pointed by the compass.\n        q = 0  # q is the index of the second pinhole that will be pointed by the compass.\n\n        while i > 0:  # This loop finds p and q from right to left.\n            if (i & 1) == 1:  # If i's least significant bit is 1, then we point at pinholes p and q. We increase p and decrease q accordingly to find all possible states of the compass. Note that we do not distinguish different states when it points at different order of pinholes (e.g., (p,q) and (q,p)). We only count them as one state because we can move one leg so that it points at different order of pinholes later on (see below). For example, if we have two states ((p=2,q=3),d=5) and ((p=3,q=2),d=5), they are both counted as one state because we can move one leg so that it points at (2,3). In other words, we only count them as one state because they are indistinguishable from each other when their legs point at different order of pinholes but have same distance between them (e.g., 5). However, this does not apply to all possible states because some states may have different distances between them even though they point at different order of pinholes (e.g., ((p=2,q=3),d=5) and ((p=3,q=4),d=7)). For example: ((p=2,q=3),d=5) and ((p=4,q=6),d=9). Therefore we need to check whether d[p][r] == d[r][q]. If so then these two states are indistinguishable from each other like above but if not then these two states are distinguishable from each other like above because they have different distances between them even though they point at different order of pinholes (e.g., 5 vs 7). Note that this does not apply to all possible states because some pairs may have same distances between them even though they point at different order of pinholes like above e.g., ((p=2,q=3),d_1)=5 vs ((p_1)=4 , (q_1)=6 , d_2)=9 where d_1 != d_2 even though they point at different order of pinholes like above e.g., ((p_1)=4 , (q_1)=6) vs ((p_2)=6 , (q_2)=4). Therefore we need to check whether d[a][b] == d[b][a]. If so then these two pairs are indistinguishable from each other like above but if not then these two pairs are distinguishable from each other like above because they have different distances between them even though they point at different order of pinholes like above e.g., 5 vs 9 where 5 != 9 even though they point at different order of pinholes like above e.g., 3 vs 4 where 3 != 4 . Therefore we need to check whether both conditions hold true or not: either condition 1 holds true or condition 2 holds true or both conditions hold true or neither condition holds true which means there exists no such pair whose legs can be moved so that it points at same pair but has a difference distance between them which means there exists no such pair whose legs can be moved so that it points at same pair but has a difference distance between them which means there exists no such pair whose legs can be moved so that it points at same pair but has a difference distance between them which means there exists no such pair whose legs can be moved so that it points at same pair but has a difference distance between them which means there exists no such",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    p = list(map(int, input().split()))\n    if sum(p) <= a + b:\n        print(\"YES\")\n        for i in range(n):\n            if p[i] > a:\n                print(\"0\", end=\" \")\n            else:\n                print(\"1\", end=\" \")\n\n    else:\n        print(\"NO\")",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, a, b = map(int, input().split())\n    p = list(map(int, input().split()))\n    if sum(p) <= a:\n        print(\"YES\")\n        print(*[0]*n)\n        return\n    if sum(p) <= b:\n        print(\"YES\")\n        print(*[1]*n)\n        return\n\n    for i in range(1, n):\n        if p[i] - p[i-1] > a:\n            print(\"NO\")\n            return\n\n    for i in range(1, n):\n        if p[i] - p[i-1] > b:\n            print(\"NO\")\n            return\n\n    dif = [0] * (n+1)\n\n    for i in range(n):  # O(N^2) time complexity. Can be improved to O(NlogN). But it's not the point of this problem. \n\n        dif[i+1] = dif[i]+p[i]-a\n\n        if dif[i+1] < 0:  # If the difference is negative, then we can't make it zero. So we need to move the left pointer forward. \n\n            j = i + 1  # The left pointer. \n\n            while j < n and dif[j+1]-dif[j]+p[j]-a < 0:  # Move the left pointer forward until we can make the difference zero or reach the end of array. \n\n                j += 1\n\n            if j == n:  # If we reach the end of array without making it zero, then there is no solution. So we need to output \"NO\".  \n\n                print(\"NO\")  \n\n                return  \n\n            else:   # Otherwise we need to update all elements after that index with new value and update the difference with new value as well.  \n\n                for k in range(j+1, n+1):   # Update all elements after that index with new value.  \n\n                    dif[k] += p[j]-a   # Update difference with new value as well.  \n\n                    p[k-1], p[j] = p[j], p[k-1]     # Swap two numbers at those indices because they are not sorted yet but should be sorted according to requirement 2 above.    \t\t\t\t\t\t\t# Swap two numbers at those indices because they are not sorted yet but should be sorted according to requirement 2 above.    \t\t\t\t\t\t# Swap two numbers at those indices because they are not sorted yet but should be sorted according to requirement 2 above.    \t\t\t# Swap two numbers at those indices because they are not sorted yet but should be sorted according to requirement 2 above.    \t# Swap two numbers at those indices because they are not sorted yet but should be sorted according to requirement 2 above.    \n\n                break       # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A or B by definition of problem statement itself (the problem statement guarantees that there will always exist an answer).      # Break out of loop since we have found a solution and no longer need to keep searching for more solutions since each element is unique now and can only be placed into one set A",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    arr = list(map(int, input().split()))\n    arr.sort()\n    ans = 0\n    for i in range(n):\n        if arr[i] > k:\n            break\n        curr_sum = arr[i]\n        j = i + 1\n\n        while j < n and curr_sum + arr[j] <= k:\n            curr_sum += arr[j]\n            j += 1\n\n        ans = max(ans, j - i)\n\n    print(ans)",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    prices = list(map(int, input().split()))\n    prices.sort()\n    i = 0\n    count = 0\n    while k > 0 and i < n:\n        if k - prices[i] >= 0:\n            count += 1\n            k -= prices[i]\n        else:\n            break\n\n        i += 1\n\n    print(count)",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a = 0\n    b = 0\n    c = 0\n    for i in range(number):\n        if i % 3 == 0:\n            a += 1\n        elif i % 5 == 0:\n            b += 1\n        elif i % 15 == 0:\n            c += 1\n\n    return [a, b, c]",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    a = 0\n    b = 0\n    c = 0\n    for i in range(number):\n        if i % 3 == 0 and i % 5 != 0:\n            a += 1\n        elif i % 5 == 0 and i % 3 != 0:\n            b += 1\n        elif i % 3 == 0 and i % 5 == 0:\n            c += 1\n\n    return [a, b, c]",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a, b = map(int, input().split())\n        print(a+b)",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        a,b = map(int, input().split())\n        print(a+b)",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

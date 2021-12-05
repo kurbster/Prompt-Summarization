@@ -1,0 +1,22 @@
+{
+    "0": "\n    ",
+    "1": "\n    return sorted(board) == list(range(len(board) ** 2))",
+    "2": "\n    for i in range(len(str1)):\n        for j in range(i+1, len(str1)+1):\n            if str2.find(str1[i:j]) != -1:\n                return True\n    return False",
+    "3": "\n    return any(i in str2 for i in str1)\n\nprint(substring_test(\"Something\",\"Home\"))",
+    "4": "\n    mask = 1 << bit_index\n    return bin(value ^ mask)",
+    "5": "\n    return value ^ (1 << bit_index - 1)",
+    "6": "\n    s = s.replace('_', '')\n    s = s.replace('.', '')\n    s = s.replace(',', '')\n    words = s.split()\n    for i in range(len(words)):\n        if len(words[i]) % 2 == 1:\n            words[i] += words[i][-1]\n    return ' '.join(words)",
+    "7": "\n    s = s.replace('_', '')\n    s = s.replace('.', '')\n    s = s.replace(',', '')\n    s = s.replace('?', '')\n    s = s.replace('!', '')\n    words = []\n    for word in s.split():\n        if len(word) % 2 == 0:\n            words.append(word)\n        else:\n            words.append(word[:-1])\n\n    return ' '.join(words)",
+    "8": "\n    return ''.join(text[i::2] for i in range(2))",
+    "9": "\n    row1 = []\n    row2 = []\n    for i in range(len(text)):\n        if i % 2 == 0:\n            row1.append(text[i])\n        else:\n            row2.append(text[i])\n\n    return ''.join(row1 + row2)",
+    "10": "\n    # Write your code here\n    # To print results to the standard output you can use print\n    # Example: print \"Hello world!\"\n    \n    max_distance = 0\n    for i in range(len(arr)):\n        for j in range(i+1, len(arr)):\n            if arr[i] == arr[j]:\n                distance = abs(i - j)\n                if distance > max_distance: \n                    max_distance = distance\n\n    print max_distance",
+    "11": "\n    if len(arr) == 0:\n        return 0\n    else:\n        arr.sort()\n        max_dist = 0\n        for i in range(len(arr)-1):\n            if arr[i] == arr[i+1]:\n                dist = i+1 - arr.index(arr[i])\n                if dist > max_dist:\n                    max_dist = dist\n\n        return max_dist",
+    "12": "\n    return ['{}: {}'.format(i, line) for i, line in enumerate(lines, 1)]",
+    "13": "\n    return ['{}: {}'.format(i, line) for i, line in enumerate(lines, 1)]",
+    "14": "\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return len(re.findall('(?='+search_text+')', full_text))\n    else:\n        return full_text.count(search_text)",
+    "15": "\n    if not search_text:\n        return 0\n    if allow_overlap:\n        return len([i for i in range(len(full_text)) if full_text[i:].startswith(search_text)])\n    else:\n        return len([i for i in range(len(full_text) - len(search_text) + 1) if full_text[i] == search_text[0] and full_text[i:i+len(search_text)] == search_text])\n\n\nif __name__ == '__main__':\n    print(\"Example:\")\n    print(search_substr('aaabbaaa', 'aaa'))\n\n    # These \"asserts\" are used for self-checking and not for an auto-testing\n    assert search_substr('aaabbaaa', 'aaa') == 3, \"First\"\n    assert search_substr('ababaab', 'ab') == 3, \"Second\"\n    assert search_substr('aaaaa', 'aa') == 4, \"Third\"\n    assert search_substr('abc', '') == 0, \"Fourth\"",
+    "16": "\n    T = int(input())\n    for i in range(T):\n        m, Tc, Th = map(int, input().split())\n        if (Th - Tc) % 3 != 0:\n            print(\"Yes\")\n        elif (Th - Tc) // 3 > m:\n            print(\"Yes\")\n        else:\n            print(\"No\")\n\n",
+    "17": "\n    T = int(input())\n    for i in range(T):\n        m, Tc, Th = map(int, input().split())\n        if Tc > Th:\n            print(\"No\")\n        elif (Th - Tc) % 2 == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")\n\n\nif __name__ == \"__main__\":\n    code()",
+    "18": "\n        res=0\n        for i in range(len(arr)):\n            for j in range(i+1,len(arr)+1,2):\n                res+=sum(arr[i:j])\n        return res",
+    "19": "\n        res=0\n        for i in range(1,len(arr)+1,2):\n            for j in range(len(arr)-i+1):\n                res+=sum(arr[j:j+i])\n        return res"
+}

@@ -1,0 +1,22 @@
+{
+    "0": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    res = set()\n    for i in range(n):\n        for j in range(i, n):\n            res.add(a[i] | a[j])\n    print(len(res))\n\n\nif __name__ == \"__main__\":\n    code()",
+    "1": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    d = {}\n    for i in range(n):\n        for j in range(i, n):\n            s = 0\n            for k in range(i, j+1):\n                s |= a[k]\n            if s not in d:\n                d[s] = 1\n            else:\n                d[s] += 1\n\n    print(len(d))",
+    "2": "\n    if x == 0:\n        return 0\n    elif x == 1:\n        return 1\n    else:\n        return rec(x-1) + x",
+    "3": "\n    if x == 0:\n        return 0\n    elif x == 1:\n        return 1\n    else:\n        return rec(x-1) + x if rec(x-1) + x > 0 and rec(x-1) + x not in range(0,x) else rec(x-1) - x",
+    "4": "\n    t = int(input())\n    for i in range(t):\n        n = input()\n        print(int(n[::-1]))",
+    "5": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        print(int(str(n)[::-1]))",
+    "6": "\n    if n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        return nth_fib(n-1) + nth_fib(n-2)",
+    "7": "\n    if n == 1:\n        return 0\n    elif n == 2:\n        return 1\n    else:\n        return nth_fib(n-1) + nth_fib(n-2)",
+    "8": "\n    x, y = ord(pos[0]) - 96, int(pos[1])\n    positions = []\n    for i in range(-2, 3):\n        for j in range(-2, 3):\n            if abs(i) + abs(j) == 3:\n                new_x = x + i\n                new_y = y + j\n                if 1 <= new_x <= 8 and 1 <= new_y <= 8:\n                    positions.append(chr(new_x + 96) + str(new_y))\n\n    return positions",
+    "9": "\n    x, y = ord(pos[0]) - 96, int(pos[1])\n    return sorted([chr(x + i) + str(y + j) for i in [-2, -1, 1, 2] for j in [-2, -1, 1, 2] if abs(i) != abs(j)])",
+    "10": "\n    even = []\n    odd = []\n    for i in integers:\n        if i % 2 == 0:\n            even.append(i)\n        else:\n            odd.append(i)\n\n    if len(even) > len(odd):\n        return odd[0]\n    else:\n        return even[0]",
+    "11": "\n    even = []\n    odd = []\n    for i in integers:\n        if i % 2 == 0:\n            even.append(i)\n        else:\n            odd.append(i)\n\n    if len(even) > len(odd):\n        return odd[0]\n    else:\n        return even[0]",
+    "12": "\n    if D == 1:\n        return sum(range(N))\n    else:\n        return sum([super_sum(D-1, N) for i in range(N)])",
+    "13": "\n    ",
+    "14": "\n    return ','.join(['{} = {}'.format(k, v) for k, v in pairs.items()])",
+    "15": "\n    return ','.join(['%s = %s' % (k, v) for k, v in pairs.items()])",
+    "16": "\n    for i in range(1, num):\n        if num % i == 0:\n            if i * (num / i) == num:\n                return str(i) + \"!\"\n    return \"None\"",
+    "17": "\n    for i in range(1, num):\n        if num % i == 0:\n            if num / i == 1:\n                return str(i) + \"!\"\n            else:\n                continue\n        else:\n            return \"None\"",
+    "18": "\n    factorial = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880]\n    sum_of_factorial = 0\n    for i in str(number):\n        sum_of_factorial += factorial[int(i)]\n    if sum_of_factorial == number:\n        return \"STRONG!!!!\"\n    else:\n        return \"Not Strong !!\"",
+    "19": "\n    return \"STRONG!!!!\" if sum(factorial(int(i)) for i in str(number)) == number else \"Not Strong !!\"\n"
+}

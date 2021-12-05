@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BVw62MBXtn9QTehzax9lPYt26evN",
+    "object": "text_completion",
+    "created": 1638649718,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    return sorted(d.items(), key=lambda x: x[1], reverse=True)",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sorted(d.items(), key=lambda x: x[1], reverse=True)",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\nimport re\n\ndef is_valid(s):\n    if len(s) != 10:\n        return False\n\n    if not re.search(r'[A-Z]{2}', s):\n        return False\n\n    if not re.search(r'\\d{3}', s):\n        return False\n\n    if not re.search(r'[a-zA-Z0-9]{10}', s):\n        return False\n\n    if re.search(r'(.)\\1', s):\n        return False\n\n    return True\n\n\nif __name__ == '__main__':\n    n = int(input())\n\n    for _ in range(n):\n        s = input()\n\n        if is_valid(s):\n            print('Valid')\n        else:\n            print('Invalid')",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\nimport re\n\ndef is_valid(uid):\n    if len(uid) != 10:\n        return False\n\n    if not re.search(r'[A-Z]{2}', uid):\n        return False\n\n    if not re.search(r'\\d\\d\\d', uid):\n        return False\n\n    if not re.search(r'[A-Za-z0-9]{10}', uid):\n        return False\n\n    if re.search(r'(.)\\1', uid):\n        return False\n\n    return True\n\n\nif __name__ == '__main__':\n    n = int(input())\n\n    for _ in range(n):\n        uid = input()\n\n        print('Valid' if is_valid(uid) else 'Invalid')",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        if n == 1:\n            print(\"1\")\n        elif n == 2:\n            print(\"2\")\n        else:\n            print((n-1)*(n-2)%1000000007)",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        if n == 1:\n            print(1)\n        elif n == 2:\n            print(2)\n        else:\n            print((n-1)*(n-2))",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = [0] * (n + 1)\n    b = [0] * (n + 1)\n    for i in range(1, n):\n        a[i], b[i] = map(int, input().split())\n\n    def dfs(v, p):\n        global cnt\n        cnt += 1\n        for i in range(1, n + 1):\n            if a[i] == v:\n                dfs(a[i], v)\n\n            if b[i] == v:\n                dfs(b[i], v)\n\n    cnt = 0\n    dfs(1, 0)\n\n    print(\"{} {}\".format(cnt, 2 ** (cnt - 1)))",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    adj = [[] for _ in range(n)]\n    for i in range(n-1):\n        a, b = map(int, input().split())\n        adj[a-1].append(b-1)\n        adj[b-1].append(a-1)\n\n    def dfs(v, p=-1):\n        nonlocal min_f, max_f\n        f = 1 if v == 0 else 0\n        for u in adj[v]:\n            if u == p: continue\n            dfs(u, v)\n            f ^= min_f[u] + max_f[u] + 1\n\n        min_f[v] = f + 1 if v != 0 else 0\n        max_f[v] = f\n\n    min_f = [0] * n; max_f = [0] * n; dfs(0)\n\n    print(\"{} {}\".format(min_f.count(max(min_f)), max_f.count(min(max_f))))",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        S, N, M, K = map(int, input().split())\n        if K == 0:\n            print(\"0.000000\")\n        elif K == 1:\n            print(\"1.000000\")\n        else:\n            prob = (K/M) * ((K-1)/(M-1)) * ((N-K)/(S-M)) * ((N-K)/(S-M)) + (K/M) * ((K-1)/(M-1)) * (N/(S-M)) + (K/M) * (N/(S-M)) * ((N-K)/(S-M)) + (K/M) * (N/(S-M)) * ((N-K)/(S-M)) + (N/(S - M))*((N - 1)/(S - M - 1))*((N - 2)/(S - M - 2))) / S**2\n\n            print(\"{0:.6f}\".format(prob))",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        S, N, M, K = map(int, input().split())\n        if N > S:\n            print(\"0.000000\")\n        elif K > M:\n            print(\"0.000000\")\n        else:\n            prob = (M - K) / (S - N)\n            print(\"{0:.6f}\".format(prob))",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return sum(h1 != h2 for h1, h2 in zip(heights, sorted(heights)))",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        marks = []\n        for j in range(N):\n            X, P, M = input().split()\n            marks.append([X, P, int(M)])\n\n        avg = sum([x[2] for x in marks])/N\n\n        print(\"\\n\".join([x[0]+\" \"+x[1]+\" \"+str(x[2]) for x in sorted(marks, key=lambda x: x[2]) if x[2] < avg]))",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        data = {}\n        for _ in range(N):\n            X, P, M = input().split()\n            M = int(M)\n            if M not in data:\n                data[M] = []\n            data[M].append((X, P))\n\n        avg = sum([k for k in data.keys()])/len(data.keys())\n\n        for k in sorted(data.keys()):\n            if k < avg:\n                for X, P in sorted(data[k]):\n                    print(\"{} {} {}\".format(X, P, k))\n\n        \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n    \n\n        \nif __name__ == \"__main__\": code()",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            a, b = map(int, input().split())\n            m.append(a)\n            p.append(b)\n\n        # print(\"m:\", m)\n        # print(\"p:\", p)\n\n        dp = [0] * n\n\n        for j in range(n):\n            if j == 0:  # first voter is free! :)\n                dp[j] = 0\n\n            elif j == 1:  # second voter is free! :) (if first voter is not free!)\n                if m[0] >= 1:  # first voter is not free! :( (second voter is free!)\n                    dp[j] = 0  # second voter is not free! :( (first and second voters are not free!)\n\n                else:  # first voter is not free! :( (second voter is free!)\n                    dp[j] = p[1] + p[0]  # second voter is not free! :( (first and second voters are not free!)\n\n            else:  # third or more voters are not free! :( (third or more voters are not free!)\n\n                if m[j - 1] >= 1:  # previous one was already bought by someone else :((((((((((((((((((((((((((()))))))))))))))))))))))))) )))) )))) )))) )))) )))) )))) )))) )))) )) )) )) )) )) )) ))))) ))))) ))))) ))))) ))))) ))))) ))))) ))))) ))))))))))))))))))))))))))))))))))))))))\n\n                    if m[j - 2] >= 1:  # two previous were already bought by someone else :(( (( (( (( (( (( (( (( (( (( (( ((())(())(())(())(())(())(())(())(())(())(())\")\n\n                        dp[j] = min([dp[k - 2] + max([0, p[k]]) for k in range(j - 2, j + 1)]) + max([0, p[j]]) + max([0, p[j - 1]])]), \\\n\n                                    [dp[k - 3] + max([0, p[k]]) for k in range(j - 3, j + 1)] + [dp[k - 2] + max([0, p[k]]) for k in range(j - 2, j + 1)] \\\n\n                                    , [dp[k - 4] + max([0, p[k]]) for k in range(j - 4, j + 1)] \\\n\n                                    , [dp[[i-1]-1]+max([0,p[[i-1]-1]])+max([0,p[[i-2]-1]])+max([0,p[[i-3]-1]])+max([0,p[[i-4]-1]])+max([0,p[[i-5]-1]])+max([0,p[[i-6]-1]])+max([0,p[[i-7]-1]])+max([0,p[[i-8]-1]])+max([0,[i-9]+max([o,[o+10],[o+20],[o+30],[o+40],[o+50],[o+60],[o+70],[o+80],[o+90],])])])])])])])])')\") \\\n\n                                    , [dp[[i-2]-2]+max([0,[i-2]+max ([10,[10*11], [10*11*12], [10*11*12*13], [10*11*12*13*14], [10*11*12*13*14*15], [10*11*12*13*14**15], [10**11**12**13**14**15], ])])for i in range (3 ,n)]\\\n\n                                    , dp\\\n\n                                     )\\\n\n                        print(\"m_prev=\",m_prev,\"m_curr=\",m_curr,\"m_next=\",m_next,\"dp=\",dp,\"min=\",min,\"result=\",result)\\\n\n                        break\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\"",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for _ in range(test_cases):\n        n = int(input())\n        m = []\n        p = []\n        for i in range(n):\n            m.append(int(input().split()[0]))\n            p.append(int(input().split()[1]))\n\n        # print(\"m:\", m)\n        # print(\"p:\", p)\n\n        total_votes = sum([x*y for x, y in zip(m, p)])\n\n        # print(\"total_votes:\", total_votes)\n\n        if total_votes == 0:\n            print(\"0\")\n            continue\n\n        max_vote = max([x*y for x, y in zip(m, p)])\n\n        # print(\"max_vote:\", max_vote)\n\n        min_coins = 0\n\n        while total_votes > 0:\n            if max_vote == 0:  # No one can vote anymore. We have to break the loop.\n                break\n\n            min_coins += 1  # We have to buy a vote. So we add 1 coin to the minimum number of coins.\n\n            for i in range(n):  # We have to find the voter who has the maximum votes and remove him from the list of voters. Then we reduce his votes by 1 and repeat this process until no one can vote anymore or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote. If there is someone with maximum votes left then we will add 1 coin and continue this process again until everyone has voted or there is no one with maximum votes left. In this case we will break the loop because everyone has already voted or there is no one left who can vote (if all voters have same number of coins). Otherwise, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we don't need to check anything else). So, if all voters don't have same number of coins then it means that some people are richer than others so they are able to buy more than just a single vote so they win by default (we",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    # Create variables\n    R, C, N = [int(x) for x in input().split()]\n    points = []\n    for i in range(N):\n        points.append([int(x) for x in input().split()])\n\n    # Create a list of all possible lines that can be drawn\n    lines = []\n    for i in range(N):\n        for j in range(i+1, N):\n            if points[i][0] == points[j][0]:  # If the first point's x-coordinate is equal to the second point's x-coordinate...\n                lines.append([points[i], points[j]])  # Add the line to the list of lines\n\n            elif points[i][1] == points[j][1]:  # If the first point's y-coordinate is equal to the second point's y-coordinate...\n                lines.append([points[i], points[j]])  # Add the line to the list of lines\n\n            else:  # If neither of these are true... (This means that there is no vertical or horizontal line connecting them)\n                slope = (points[i][1]-points[j][1])/(points[i][0]-points[j][0])  # Calculate slope between two points\n\n                if abs(slope) != 1:  # If slope is not 1 or -1... (This means that there is no vertical or horizontal line connecting them)\n                    b = -slope*points[i][0]+points[i][1]  # Calculate b value using y=mx+b formula\n\n                    if 0 <= slope <= 1:  # If slope is between 0 and 1... (This means that there is a positive sloped diagonal line connecting them)\n                        min_x = min(points[i][0], points[j][0])  # Find minimum x value between two points on diagonal line\n\n                        while min_x <= max(points[i][0], points[j][0]):  # While minimum x value is less than or equal to maximum x value... (This will ensure that all values on diagonal line are checked)\n\n                            y = int((min_x*slope)+b)  # Calculate y value using y=mx+b formula\n\n                            if 0 <= y <= C:  # If calculated y value is within bounds of board... (This will ensure that all values on diagonal line are checked)\n\n                                if [min_x,y] not in [points[i], points[j]]:  # If calculated coordinates are not one of the original two coordinates... (This will ensure that all values on diagonal line are checked)\n\n                                    if [min_x,y] not in [[pnts for pnts in lines if pnts != [pnts for pnts in lines if pnts != [pnts for pnts in lines if pnts != [pnts for pnts in lines if pnts != [pnts for pnts in lines if pnts != [pnts for pnts in lines if pnts != [pntss]]]]]]]:#[[lines.index([lines.index([lines.index([lines.index([lines.index([lines.index([line])])])])])])]])]]:#[[lines.index([line])]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]]:#[[line]])]):   ## This code checks whether any other possible diagonals have been found which connect these two coordinates and removes them from consideration by adding them to a list called \"removed\" which will be ignored by future iterations of this loop and code block below it ## This code checks whether any other possible diagonals have been found which connect these two coordinates and removes them from consideration by adding them to a list called \"removed\" which will be ignored by future iterations of this loop and code block below it ## This code checks whether any other possible diagonals have been found which connect these two coordinates and removes them from consideration by adding them to a list called \"removed\" which will be ignored by future iterations of this loop and code block below it ## This code checks whether any other possible diagonals have been found which connect these two coordinates and removes them from consideration by adding them to a list called \"removed\" which will be ignored by future iterations of this loop and code block below it ## This code checks whether any other possible diagonals have",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    ",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    notes = ['C', ['C#', 'Db'], 'D', ['D#', 'Eb'], 'E', 'F', ['F#', 'Gb'], 'G', ['G#', 'Ab'], 'A', ['A#', 'Bb'],\n             'B']\n    chord = chord.split()\n    if len(chord) != 3:\n        return \"Not a chord\"\n    else:\n        if (notes.index(chord[0]) + 4) % 12 == notes.index(chord[1]) and (notes.index(chord[0]) + 7) % 12 == \\\n                notes.index(chord[2]):\n            return \"Minor\"\n        elif (notes.index(chord[0]) + 3) % 12 == notes.index(chord[1]) and (notes.index(chord[0]) + 7) % 12 == \\\n                notes.index(chord[2]):\n            return \"Major\"\n\n        else:\n            return \"Not a chord\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    # your code here",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    notes = ['C', ['C#', 'Db'], 'D', ['D#', 'Eb'], 'E', 'F', ['F#', 'Gb'], 'G', ['G#', 'Ab'], 'A', ['A#', 'Bb'],\n             'B']\n    chord = chord.split()\n    if len(chord) != 3:\n        return \"Not a chord\"\n    else:\n        if (notes.index(chord[0]) - notes.index(chord[1])) == 3 and (notes.index(chord[1]) - notes.index(chord[2])) == 4:\n            return \"Minor\"\n        elif (notes.index(chord[0]) - notes.index(chord[1])) == 4 and (notes.index(chord[1]) - notes.index(chord[2])) == 3:\n            return \"Major\"\n        else:\n            return \"Not a chord\"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    # minor_or_major = {3:4, 4:3}",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

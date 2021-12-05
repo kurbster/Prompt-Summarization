@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BWA7lR85brBOZ4j8VnN3CfM9PtV9",
+    "object": "text_completion",
+    "created": 1638650587,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    for base in range(2, 37):\n        if i == sum([int(x)**base for x in str(i)]):\n            return '{} is the fouriest({}) in base {}'.format(i, i, base)",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    i = str(i)\n    i = list(i)\n    for x in range(len(i)):\n        if int(i[x]) > 9:\n            i[x] = 'x'\n    i = ''.join(i)\n    base = 2\n    while True:\n        if base > len(str(i)) + 1: break\n        count = 0\n        for x in range(len(str(i))):\n            if str(base + x) == str(i)[x]: count += 1  # Counts the number of 4's in the number. If it's more than the base, it's fouriest. \n\n        if count == len(str(i)): return \"{} is the fouriest ({}) in base {}\".format((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((int(''.join([str((base - 1)), str(\"\".join())))))))))))))))))))))))))))))))))))))), str(\"\".join())))))), str(\"\". join())))))), str(\"\". join())))))), str(\"\". join())))))), str(\"\". join())))))), str(\"\". join())))))), int(\"\". join()) - (base - 1)), base)\n\n        else: base += 1",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    a.sort()\n    ans = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if a[i] % a[j] > ans:\n                ans = a[i] % a[j]\n    print(ans)\n\n    \nif __name__ == '__main__':\n    code()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    a = list(map(int, input().split()))\n    max_mod = 0\n    for i in range(n):\n        for j in range(i+1, n):\n            if (a[i] % a[j]) > max_mod:\n                max_mod = a[i] % a[j]\n    print(max_mod)",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a = int(input())\n        print(a*2+2)\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a = int(input())\n        print(a+2)\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return None",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    pass",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        m = []\n        p = []\n        for j in range(n):\n            a, b = map(int, input().split())\n            m.append(a)\n            p.append(b)\n\n        # sort by price and then by number of voters that need to be convinced to vote for you.\n        m, p = zip(*sorted(zip(m, p)))\n\n        # if the price is 0, then everyone will vote for you. Otherwise, you have to convince people to vote for you.\n        if p[0] == 0:\n            print('0')\n\n        else:\n\n            # initialize the number of coins needed to be spent as the price of the first voter that needs to be convinced.  If there are no voters that need to be convinced, then print 0.  Otherwise, initialize the number of coins needed as infinity (float('inf')).  This is because we don't know how many coins we need until we've gone through all of the voters and figured out which ones need to be convinced and how many coins they each need.  We'll update this number as we go through each voter and figure out how many coins they need.  The minimum value will be printed at the end when we've gone through all of the voters.  If there are no voters that need to be convinced (i.e., all $m_i$ values are 0), then print 0; otherwise print infinity (float('inf')).\n\n            min_coins_needed = float('inf') if any([x > 0 for x in m]) else '0'\n\n            # iterate over each voter and figure out how many coins they need in order to convince them to vote for you; update min_coins_needed accordingly if necessary (if it's larger than what you currently have).  Note that this is a greedy algorithm: it's not guaranteed that it will find an optimal solution!\n\n            for j in range(n):\n\n                # if this voter doesn't need convincing (i.e., $m_i$ is equal to zero), then skip them and go on to the next voter; otherwise calculate how many coins they need ($c$) and update min_coins_needed accordingly if necessary ($c \\le min\\_coins\\_needed$).\n\n                if m[j] == 0: continue\n\n                c = 1 + ((m[j] - 1) // (n - j)) * p[j] + ((m[j] - 1) % (n - j)) * p[j] + sum([p[k] for k in range(j+1, n)])\n\n                min_coins_needed = c if c < min_coins_needed else min_coins_needed\n\n            print(min_coins_needed)",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    def min_coins(m, p):\n        ",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for _ in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        if sum(A) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for t in range(T):\n        N = int(input())\n        coins = list(map(int, input().split()))\n        if sum(coins) % 5 == 0:\n            print(\"YES\")\n        else:\n            print(\"NO\")",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j not in d:\n                    d[j] = 1\n                else:\n                    d[j] += 1\n\n    max_value = max(d.values())\n\n    for k, v in d.items():\n        if v == max_value:\n            print(k)",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    l, r = map(int, input().split())\n    d = {}\n    for i in range(l, r+1):\n        for j in range(2, i):\n            if i % j == 0:\n                if j not in d:\n                    d[j] = 1\n                else:\n                    d[j] += 1\n\n    mx = max(d.values())\n\n    for k, v in d.items():\n        if v == mx: print(k)",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        for i in range(int((num+2)**0.5), 0, -1):\n            if (num+1)%i==0:\n                return [i, (num+1)//i]\n            if (num+2)%i==0:\n                return [i, (num+2)//i]",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        def get_closest(num):\n            for i in range(int((num+2)**0.5), 0, -1):\n                if (num+1)%i==0:\n                    return [i, (num+1)//i]\n                if (num+2)%i==0:\n                    return [i, (num+2)//i]\n\n        return get_closest(num)",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    sum = 0\n    for i in range(len(matrix)):\n        sum += matrix[i][col]\n    for j in range(len(matrix[row])):\n        sum += matrix[row][j]\n    sum -= matrix[row][col]\n    return sum",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return sum(matrix[row]) + sum([i[col] for i in matrix]) - matrix[row][col]\n\ndef checkio(matrix):\n    return max([crossing_sum(matrix, row, col) for row in range(len(matrix)) for col in range(len(matrix[0]))])",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        s = input()\n        lis = [1]*n\n        for i in range(1,n):\n            for j in range(i):\n                if s[j] == '<' and lis[i] < lis[j]+1:\n                    lis[i] = lis[j]+1\n\n        maxlis = [0]*n\n\n        for i in range(n-2,-1,-1):\n            maxlis[i] = maxlis[i+1] + 1 if s[i] == '>' else 0\n\n        print(*list(map(lambda x,y:x+y,lis,maxlis)))",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for _ in range(test_cases):\n        n = int(input())\n        string = input()\n        lis = [1] * n\n        for i in range(1, n):\n            for j in range(i):\n                if string[j] == '<' and lis[j] + 1 > lis[i]:\n                    lis[i] = lis[j] + 1\n\n        max_lis = max(lis)\n\n        for i in range(n - 2, -1, -1):\n            if string[i] == '>' and lis[i] + 1 > max_lis:\n                max_lis = lis[i] + 1\n\n        print(*range(max_lis))\n\n        min_lis = min(lis)\n\n        for i in range(n - 2, -1, -1):\n            if string[i] == '<' and lis[i] + 1 < min_lis:\n                min_lis = lis[i] + 1\n\n        print(*range(min_lis))",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BVyMGoEVIRVp3jAa4amK8eUPf9MK",
+    "object": "text_completion",
+    "created": 1638649858,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    ",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    ",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = list(map(int, input().split()))\n    p = [0] * n\n    for i in range(n):\n        p[i] = i + 1\n        for j in range(i):\n            if s[j] < s[i]:\n                p[i] -= 1\n\n    print(*p)\n\n\ncode()",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n = int(input())\n    s = list(map(int, input().split()))\n    p = [0] * n\n    for i in range(n):\n        for j in range(i):\n            if s[j] < s[i]:\n                s[i] -= s[j]\n        p[i] = i + 1 - s[i]\n\n    print(*p)\n\n\ncode()",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    A.sort()\n    min_sum = sum([abs(A[i] - A[i + k]) for i in range(n - k)])\n    print(min_sum)\n\n\ncode()",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, k = map(int, input().split())\n    A = list(map(int, input().split()))\n    A.sort()\n    ans = 10**9\n    for i in range(n - k):\n        ans = min(ans, abs(A[i] - A[i + k]))\n    print(ans)\n\n\ncode()",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    def distance(x1, y1, x2, y2):\n        return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5\n\n    def is_favorite(a, b):\n        for i in range(len(favorites)):\n            if favorites[i] == a:\n                if b == favorites[i + 1]:\n                    return True\n                else:\n                    return False\n\n    t = int(input())\n\n    for i in range(t):\n        n, x = map(int, input().split())\n\n        favorites = list(map(int, input().split()))\n\n        hops = 0\n\n        while x > 0:\n            for j in range(n - 1):\n                if is_favorite(favorites[j], favorites[j + 1]):\n                    if distance((x % favorites[j]), 0, (x % favorites[j + 1]), 0) == favorites[j]:\n                        x -= favorites[j] * (x // favorites[j])  # hop to the next favorite number and decrease the distance by it. Repeat until you reach zero. Then increase the number of hops by one. Repeat until you reach zero again. This will be your minimum number of hops. If you can't reach zero with this method then your minimum number of hops is infinity. You can't hop to $(0,0)$ from $(x,0)$ with this method because you can't get to $(0,0)$ from any point on the plane except $(0,0)$. So your answer is infinity in that case. Otherwise it's the number of hops you've made when you've reached zero again.\n\n            hops += 1  # increase the number of hops by one and repeat until you reach zero again. This will be your minimum number of hops. If you can't reach zero with this method then your minimum number ofhops is infinity. You can't hop to $(0,0)$ from $(x,0)$ with this method because you can't get to $(0,0)$ from any point on the plane except $(0,0)$. So your answer is infinity in that case. Otherwise it's the number of hops you've made when you've reached zero again.\n\n        print(hops if x != 0 else \"INFINITY\")",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for _ in range(test_cases):\n        n, x = map(int, input().split())\n        a = list(map(int, input().split()))\n        a.sort()\n        hops = 0\n        while x > 0:\n            if x >= a[-1]:\n                hops += 1\n                x -= a[-1]\n            else:\n                a.pop()\n\n        print(hops)",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return (sum(salary)-min(salary)-max(salary))/(len(salary)-2)",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        return (sum(salary)-min(salary)-max(salary))/(len(salary)-2)",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if size == 1:\n        return [position]\n    else:\n        solutions = []\n        for i in range(size):\n            if not under_attack(i, position):\n                solutions.append(i)\n\n        return [solutions] + queens([s + str(size) for s in solutions], size - 1)\n\n\ndef under_attack(col, existing_queens):\n    left = right = col\n\n    for queen in existing_queens:\n        # check left diagonal attack\n        row = int(queen[1]) - 1\n\n        while 0 <= row < len(existing_queens) and 0 <= left < len(existing_queens):\n            if row == int(existing_queens[row][1]) - 1 and existing_queens[row][0] == existing_queens[left][0]:\n                return True\n\n            left -= 1\n\n        # check right diagonal attack\n        row = int(queen[1]) - 1\n\n        while 0 <= row < len(existing_queens) and 0 <= right < len(existing_queens):\n            if row == int(existing_queens[row][1]) - 1 and existing_queens[row][0] == existing_queens[right][0]:\n                return True\n\n            right += 1\n\n    return False",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # your code here\n    return []",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    # Get the number of elements and the number of swaps\n    n, m = [int(x) for x in input().split()]\n\n    # Get the permutation\n    p = [int(x) for x in input().split()]\n\n    # Get the swaps\n    swaps = []\n    for i in range(m):\n        swaps.append([int(x) for x in input().split()])\n\n    # Create a dictionary to store how many times each element appears in p\n    d = {}\n    for i in range(1, n + 1):\n        d[i] = 0\n\n    # Count how many times each element appears in p\n    for i in range(n):\n        d[p[i]] += 1\n\n    # Swap each pair of elements and count how many times each element appears in p after swapping it with another element. If an element's count is higher than before swapping, then it is a good candidate to be swapped. If an element's count is lower than before swapping, then it is a bad candidate to be swapped. The goal is to maximize the number of elements with a higher count after swapping. Therefore, we want to minimize the number of elements with a lower count after swapping. Therefore, we want to minimize the number of elements with a lower count that are not already at their maximum count after swapping. We can do this by sorting the list of candidates by their counts (descending). Then we can iterate through them and swap them until they reach their maximum counts or until there are no more candidates left to swap. This will give us our answer as well as some information about which pairs were swapped and how many times they were swapped. We can also use this information to update our dictionary so that we know which elements have reached their maximum counts after all swaps have been performed. This will allow us to perform additional swaps without having to check if an element has reached its maximum count or not (since it will have). This will save time when performing additional iterations on the same permutation and swap list since we won't have to check if any elements need additional swaps or not (since they won't). This also means that we don't need to sort our list of candidates again since it will already be sorted from most frequent candidate down (since it was sorted before performing any swaps). We can simply iterate through our list until there are no more candidates left that need additional swaps or until there are no more candidates left at all (in which case there are no more additional swaps needed). The time complexity of this algorithm is O(n + m), where n is the length of p and m is the length of our swap list. The space complexity is O(n), where n is again equal to the length of p since we only used O(n) space for our dictionary and O(m) space for storing our swap list (which contains at most m pairs). Note: I did not use Python's built-in sort function because I wanted practice implementing my own sort algorithm using Selection Sort! :) \n\n     # Sort our swap list by frequency descending order using Selection Sort! :) \n     def selection_sort_by_frequency_descending(swaps): \n         ",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m = map(int, input().split())\n    p = list(map(int, input().split()))\n    swaps = []\n    for i in range(m):\n        swaps.append(list(map(int, input().split())))\n\n    # Find the number of times each element appears in the permutation.\n    count = [0] * (n + 1)\n    for i in range(1, n + 1):\n        count[p[i - 1]] += 1\n\n    # Find the number of times each element appears in the swaps.\n    swap_count = [0] * (n + 1)\n    for i in range(m):\n        swap_count[swaps[i][0]] += 1\n        swap_count[swaps[i][1]] += 1\n\n    # Find the number of times each element appears in both lists. This is the maximum possible number of times an element can appear after operations.\n    max_count = 0  # The maximum possible number of times an element can appear after operations.\n    for i in range(1, n + 1):  # Iterate through all elements from 1 to N inclusive.\n        max_count += min([count[i], swap_count[i]])  # Add to max_count the minimum between count and swap_count at index i.\n\n    print(max_count)",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        x = list(map(int, input().split()))\n        y = list(map(int, input().split()))\n\n        x.sort()\n        y.sort()\n\n        moves = 0\n\n        for j in range(n):\n            moves += abs(x[j] - y[j])\n\n        print(moves)",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        a = list(map(int, input().split()))\n        b = list(map(int, input().split()))\n\n        moves = 0\n\n        while True:\n            if len([x for x in a if x > 0]) == 0 or len([x for x in b if x > 0]) == 0:\n                break\n\n            # Find the minimum number of candies and oranges.\n            min_a = min([x for x in a if x > 0])\n            min_b = min([x for x in b if x > 0])\n\n            # If they are equal, then we can eat one from each gift.\n            if min_a == min_b:\n                moves += 2 * n - 1\n\n                # Remove the candies and oranges from each gift.\n                for j in range(n):\n                    a[j] -= 1\n                    b[j] -= 1\n\n            # If they are not equal, then we can eat one from the gift with more candies.  We also need to remove this candy from the other gifts.  This is because we want all gifts to be equal after our moves.  So we need to remove this candy from all other gifts as well.  We will do this by eating one candy from each gift that has more than one candy left.  This way, all gifts will have the same number of candies after our moves (since we removed exactly one candy from each gift).  Then we can eat one orange from the gift with more oranges (since it has more oranges than candies).  Then we will repeat this process until all gifts have the same number of candies and oranges left.  \n\n            elif min_a < min_b:\n\n                # Find how many times we need to remove a candy from each gift that has more than one candy left.  \n                num_times = [0] * n\n\n                for j in range(n):\n                    num_times[j] += max((a[j] - 1) // (min_a + 1), 0)\n\n                # Remove these candies and add them to our total moves count.  \n                moves += sum(num_times) * (min_a + 1) + n - sum(num_times)\n\n                # Remove these candies from each gift that has more than one candy left.  \n                for j in range(n):\n                    a[j] -= num_times[j] * (min_a + 1)\n\n                # Now remove an orange from the gift with more oranges and add it to our total moves count.  \n                index = [i for i, val in enumerate([x for x in b if x > 0]) if val == max([x for x in b if x > 0])][0]     # Find which index contains the maximum number of oranges among those with at least one orange left over after removing as many candies as possible without making any gifts have less than zero candies or less than zero oranges..   Then find which index contains this maximum number of oranges among those with at least one orange left over after removing as many candies as possible without making any gifts have less than zero candies or less than zero oranges..   Then find which index contains this maximum number of oranges among those with at least one orange left over after removing as many candies as possible without making any gifts have less than zero candies or less than zero oranges..   Then find which index contains this maximum number of oranges among those with at least one orange left over after removing as many candies as possible without making any gifts have less than zero candies or less than zero oranges..   Then find which index contains this maximum number of oranges among those with at least one orange left over after removing as many candies as possible without making any gifts have less than zero candies or less than zero oranges..   And so on until you've found an index containing the maximum number of remaining oranges among all remaining gifts that still contain at least one orange after removing exactly enough additional candies so that no remaining gift has fewer than two fewer remainingCandysThanOrangesThresholdsThanOtherGiftsRemainingCandysThanOrangesThresholdsLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOverCandysAndOrangesLeftOversRemainingGiftsHaveAtLeastTwoFewerRemainingCandysThanRemainingOrangesThresholdsRemainingGiftsHaveAtLeastTwoFewerRemainingCandysThanRemainingOrangesThresholdsRemainingGiftsHaveAtLe",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N % sum([int(x) for x in str(N)]) == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        if N % sum([int(x) for x in str(N)]) == 0:\n            print(\"Yes\")\n        else:\n            print(\"No\")",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    d = {}\n    for i in s:\n        if i in d:\n            d[i] += 1\n        else:\n            d[i] = 1\n\n    l = sorted(d.items(), key=lambda x: (-x[1], x[0]))\n\n    for i in range(3):\n        print(l[i][0], l[i][1])",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    d = {}\n    for i in s:\n        if i in d:\n            d[i] += 1\n        else:\n            d[i] = 1\n\n    l = sorted(d.items(), key=lambda x: (-x[1], x[0]))\n\n    for i in range(3):\n        print(*l[i])",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "id": "cmpl-4BVm8IHs58ixnlxnhI3HULnInY2WE",
+    "object": "text_completion",
+    "created": 1638649100,
+    "model": "davinci-codex:2021-08-03",
+    "choices": [
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        x, y, a, b = map(int, input().split())\n        if (y - x) % (a + b) == 0:\n            print((y - x) // (a + b))\n        else:\n            print(-1)",
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    test_cases = int(input())\n    for _ in range(test_cases):\n        x, y, a, b = map(int, input().split())\n        if a == b:\n            print(-1)\n            continue\n\n        if (y - x) % (a - b) == 0:\n            print((y - x) // (a - b))\n        else:\n            print(-1)",
+            "index": 1,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        divisors = []\n        for j in range(2, max(A) + 1):\n            if all([x % j == 0 for x in A]):\n                divisors.append(j)\n\n        if len(divisors) > 0:\n            print (min(divisors))\n        else:\n            print (-1)",
+            "index": 2,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = int(input())\n        A = list(map(int, input().split()))\n        for x in range(2, 1000000):\n            flag = True\n            for j in range(N):\n                if A[j] % x != 0:\n                    flag = False\n                    break\n            if flag:\n                print(x)\n                break\n\n        if not flag: print(-1)",
+            "index": 3,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # \u5148\u628a\u6240\u6709\u7684\u70b9\u6309\u7167x\u548cy\u5206\u6210\u4e24\u4e2a\u6570\u7ec4\uff0c\u7136\u540e\u5bf9\u8fd9\u4e24\u4e2a\u6570\u7ec4\u8fdb\u884c\u6392\u5e8f\uff0c\n        # \u7136\u540e\u518d\u904d\u5386\u4e00\u904d\uff0c\u5982\u679c\u53d1\u73b0x\u76f8\u540c\u7684\u60c5\u51b5\u4e0by\u4e0d\u540c\uff0c\u90a3\u4e48\u5c31\u662f\u4e00\u6761\u659c\u7ebf\u3002\n        # \u659c\u7ebf\u4e0a\u7684\u6240\u6709\u7684\u70b9\u90fd\u662f\u5728\u8fd9\u6761\u659c\u7ebf\u4e0a\u7684\u3002\n        # \u6240\u4ee5\u53ef\u4ee5\u7528\u4e00\u4e2a\u5b57\u5178\u6765\u8bb0\u5f55x\u548cy\u4e4b\u95f4\u7684\u5bf9\u5e94\u5173\u7cfb\u3002\n\n        points.sort(key=lambda x: (x[0], x[1]))\n        d = {}\n        for i in range(len(points)):\n            if points[i][0] not in d:\n                d[points[i][0]] = []\n            d[points[i][0]].append(points[i][1])\n\n        res = float('inf')\n\n        for i in range(len(points)):\n            for j in range(i + 1, len(points)):\n                if points[j][1] == points[i][1]: continue\n\n                if points[j][1] not in d or points[i][1] not in d: continue\n\n                if len(d[points[j][1]]) > 0 and len(d[points[i][1]]) > 0:\n\n                    if (d.get(points[j][1])).index(points[i][1]) < \\\n                            (d.get(points[i][1])).index(points[j][1]): continue\n\n                    res = min((d.get(points[j][1])).index(points[i][1]), res)\n\n                    res = min((d.get(points[i][1])).index(points[j][1]), res)\n\n                    res = min((len([k for k in d.get((min((d.get(points)[res + 1]), (d.get()))) if k == max((d.get()))])) - 1), res)\n\n                    return (max((d.get())) - min((d.get()))) * (max((d.get())) - min((d.get())))",
+            "index": 4,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        # \u5148\u628a\u6240\u6709\u7684\u70b9\u6309\u7167x\u548cy\u5206\u6210\u4e24\u4e2a\u96c6\u5408\uff0c\u7136\u540e\u5bf9\u4e8e\u6bcf\u4e00\u4e2ax\uff0c\u627e\u51fa\u6240\u6709\u7684y\u3002\n        # \u6bd4\u5982\u5bf9\u4e8epoints = [[1,1],[1,3],[3,1],[3,3],[2,2]]\uff0c\u9996\u5148\u628a\u6240\u6709\u7684\u70b9\u5206\u6210x_set = {1, 3}\u548cy_set = {1, 3}\n        # \u7136\u540e\u5bf9\u4e8ex_set\u4e2d\u7684\u6bcf\u4e00\u4e2ax\uff0c\u90fd\u8981\u53bby_set\u4e2d\u627e\u5230\u76f8\u5e94\u7684\u70b9\uff1a\n        # \u5bf9\u4e8ex=1\u65f6\uff0c\u53ea\u9700\u8981\u5728y_set\u4e2d\u627e\u5230y=1\u548cy=3\u5373\u53ef\u3002\u8fd9\u6837\u5c31\u80fd\u591f\u5f97\u5230\u56db\u4e2a\u70b9\u3002\n        # \u5bf9\u4e8ex=3\u65f6\uff0c\u53ea\u9700\u8981\u5728y_set\u4e2d\u627e\u5230y=1\u548cy=3\u5373\u53ef\u3002\u8fd9\u6837\u5c31\u80fd\u591f\u5f97\u5230\u56db\u4e2a\u70b9\u3002\n\n        x_set = set()\n        y_set = set()\n\n        for point in points:\n            x_set.add(point[0])\n            y_set.add(point[1])\n\n        res = float('inf')\n\n        for x in x_set:\n            sameXPoints = []  # \u8bb0\u5f55\u76f8\u540cx\u5750\u6807\u7684\u70b9\u96c6\u5408\n\n            for point in points:  # \u904d\u5386points\u6570\u7ec4\uff0c\u8ba1\u7b97\u51fa\u76f8\u540cx\u5750\u6807\u7684\u96c6\u5408sameXPoints\n                if point[0] == x:  # \u5982\u679c\u662f\u76f8\u540c\u7684x\u5750\u6807\uff1a\u5c06\u8be5\u70b9\u52a0\u5165sameXPoints\u6570\u7ec4\u4e2d\n                    sameXPoints.append(point)\n\n            if len(sameXPoints) < 2:  # \u5982\u679c\u8be5\u96c6\u5408\u4e0d\u8db32\u4e2a\u5143\u7d20\uff1a\u8df3\u8fc7\u8be5\u96c6\u5408\n                continue\n\n            sameYSet = set()  # \u8bb0\u5f55\u76f8\u540cx\u5750\u6807\u7684\u96c6\u5408\u88ab\u5206\u5272\u5f00\u4e4b\u540e\u7684\u4e0d\u91cd\u590d\u7684y\u5750\u6807\u96c6\u5408\n\n            for i in range(len(sameXPoints)):  # \u904d\u5386sameXPoints\u6570\u7ec4\uff1a\u5c06\u4e0d\u91cd\u590d\u7684y\u5750\u6807\u52a0\u5165sameYSet\u6570\u7ec4\u4e2d\n                for j in range(i + 1, len(sameXPoints)):  # \u904d\u5386sameXPoints\u6570\u7ec4\u4ecei+1\u5f00\u59cb\u5230\u672b\u5c3e\uff1a\u5c06\u4e0d\u91cd\u590d\u7684y\u5750\u6807\u52a0\u5165sameYSet\u6570\u7ec4\u4e2d\n                    if sameXPoints[i][1] != sameXPoints[j][1]:  # \u5982\u679c\u8be52\u4e2a\u76f8\u540cx\u4f46\u662f\u4e0d\u91cd\u590d\u76842\u4e2ay\u4f4d\u4e8e\u4e0d\u540c\u884c\u4e0a\u65f6\uff1a\u5c06\u5b83\u4eec\u52a0\u5165sameYSet\u6570\u7ec4\u4e2d\u5e76\u6c42\u51fa\u5b83\u4eec\u4e4b\u95f4\u8ddd\u79bb\u5e76\u66f4\u65b0res\u53d8\u91cf\u3002\u5982\u679c\u5df2\u5b58\u5728\u8be5\u8ddd\u79bb\u6216\u8005\u65b0\u8ddd\u79bb\u5927\u4e8e\u5df2\u5b58\u5728\u8ddd\u79bb\u65f6\u4e5f\u4f1a\u5c06\u5b83\u4eec\u52a0\u5165sameYSet\u6570\u7ec4\u4e2d\u5e76\u66f4\u65b0res\u53d8\u91cf\u3002\u5982\u679c\u5df2\u5b58\u5728\u8be5\u8ddd\ub9ac\u6216\u8005\u65b0\u8ddd\ub9ac\u5927",
+            "index": 5,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    alice = list(map(int, input().split()))\n    bob = list(map(int, input().split()))\n    if len(alice) > len(bob):\n        print(\"NO\")\n        return\n\n    alice.sort()\n    bob.sort()\n\n    for i in range(len(alice)):\n        if alice[i] > bob[i]:\n            print(\"YES\")\n            return\n\n    print(\"NO\")\n\n    \nif __name__ == \"__main__\":\n    code()",
+            "index": 6,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    n, m, k = map(int, input().split())\n    alice = list(map(int, input().split()))\n    bob = list(map(int, input().split()))\n\n    if len(alice) > len(bob):\n        print(\"NO\")\n        return\n\n    for i in range(len(bob)):\n        if bob[i] in alice:\n            alice.remove(bob[i])\n\n    if len(alice) == 0:\n        print(\"YES\")\n    else:\n        print(\"NO\")",
+            "index": 7,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    t = int(input())\n    for i in range(t):\n        n = int(input())\n        if n % 5 == 0:\n            print(\"1\")\n        else:\n            print(\"0\")",
+            "index": 8,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        N = input()\n        if int(N) % 5 == 0:\n            print(\"1\")\n        else:\n            print(\"0\")",
+            "index": 9,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        s = input()\n        if len(s) == 1:\n            print(\"YES\")\n        elif len(s) == 2:\n            if s[0] == s[1]:\n                print(\"YES\")\n            else:\n                print(\"NO\")\n        else:  # len(s) > 2 and len(s) != 1 and len(s) != 2  # 3 <= len(s) <= 1000  # s contains lowercase English alphabets (ie. from 'a' to 'z')  # noqa E501\n            flag = False\n\n            for i in range(len(s)-1):  # 0, 1, ..., n-2, n-1  # noqa E226,E501\n\n                if s[i] == s[i+1]:  # aa, abcba, abdbca, abbba   # noqa E226,E501\n\n                    flag = True\n\n                    break\n\n            if flag:\n\n                print(\"YES\")\n\n            else:\n\n                print(\"NO\")",
+            "index": 10,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        s = input()\n        if s == s[::-1]:\n            print(\"YES\")\n        else:\n            print(\"NO\")",
+            "index": 11,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [x*i for i in range(1,n+1)]",
+            "index": 12,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    return [x*i for i in range(1,n+1)]",
+            "index": 13,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    rabbits = (legs - (2 * heads)) / 2\n    chickens = heads - rabbits\n    cows = horns - chickens\n    return {\"rabbits\" : int(rabbits), \"chickens\" : int(chickens), \"cows\" : int(cows)}",
+            "index": 14,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    if legs % 2 != 0 or heads < 1 or horns < 0:\n        return None\n    rabbits = (legs - (2 * heads + horns)) / 2\n    chickens = heads - rabbits - horns / 2\n    cows = horns / 2\n    return {\"rabbits\": int(rabbits), \"chickens\": int(chickens), \"cows\": int(cows)}",
+            "index": 15,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if start>destination:\n            start, destination = destination, start\n        return min(sum(distance[start:destination]), sum(distance)-sum(distance[start:destination]))",
+            "index": 16,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n        if start>destination:\n            start,destination=destination,start\n        return min(sum(distance[start:destination]),sum(distance[:start])+sum(distance[destination:]))",
+            "index": 17,
+            "logprobs": null,
+            "finish_reason": "stop"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a, b, n = map(int, input().split())\n        if n == 0:\n            print(a)\n        elif n == 1:\n            print(b)\n        else:\n            f_n_1 = a\n            f_n_2 = b\n            for j in range(2, n+1):\n                f_n = f_n_1 ^ f_n_2  # bitwise XOR operation.  (^ is the same as the python operator)  (^ is not the same as | or &)  (^ is not the same as ~)   (^ is not the same as << or >>)   (^ is not the same as + or -)   (^ is not the same as * or / or // or %)   (^ is not the same as **)   (^ is not the same as < or > or <= or >= )   (^ is not the same as == or != ) \n\n                #print(\"j=\", j, \"f_n=\", f_n, \"f_n-1=\", f_n-1, \"f_n-2=\", f_n-2)\n\n                temp = f_n - 1  # this will be used to swap values of variables.\n\n                #print(\"temp=\", temp)\n\n                # swap values of variables.\n\n                f_n -= 1  # this will be used to swap values of variables.\n\n                #print(\"j=\", j, \"f_n=\", f_n, \"f_n-1=\", f_n-1, \"f_n-2=\", f_n-2)\n\n                temp -= 1  # this will be used to swap values of variables.\n\n                #print(\"temp=\", temp)\n\n                temp += 2  # this will be used to swap values of variables.\n\n                #print(\"temp=\", temp)\n\n                temp *= 2  # this will be used to swap values of variables.\n\n                #print(\"temp=\", temp)\n\n                temp -= 3  # this will be used to swap values of variables.\n\n                #print(\"temp=\", temp)\n\n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \t\t\t\t\t\t\t#swap values of variables.     ^^^^^^^^^^^^^^^^^^^    ^^^^^^^^^^^^^^^    ^^^^^^^^^^^    ^^^^^^^    ^^^    ^^^    ^^^     ^     ^     ^      ^      ^       ^       ^       ^       ~      ~      ~      ~      ~      ~      ~      +       +       +       +       +       +       -         -         -         -         -         *           *           *           *           /           /           /           /          //          //          //          //          %          %          %          %          **         **         **         **         <           <           <           <           >           >           >           >          <=          <=          <=          <=         >=         >=         >=         >=        ==        ==        ==        ==        !=        !=        !=        !=        !=     and     and     and     and     and     and     and     and     and     and    xor    xor    xor    xor    xor    xor    xor   <<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<>>>>>>>x>>>x>>>x>>>x>>>x>>>x>>>x>>>>>x>>>>>x>>>>>x>>>>>x>>>>>x>>>>>xx>>>>>>xx>>>>>>xx>>>>>>>>xxxxxxx>>>>>>>>xxxxxxx>>>>>>>>xxxxxxx\" )                     \\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\/\\/\\/\\//\\\\\\\\\\\\/\\\\\\\\\\\\/\\\\\\\\\\\\/\\\\\\\\\\\\/\\\\\\\\\\\\/\\\\\\\\\\\\/\\\\\\\\\\\\///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\///////////////////////////////\" )                     \\/| | | | | | | | | | | | | \\||| ||| ||| ||| ||| ||| |||||||||||||||||||||||||||||||||||||||||||| \\||| ||| ||| ||| ||| ||||\" )                     \\/\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\--/-\\-/-/-/-/-/-/-/-/-/-/-",
+            "index": 18,
+            "logprobs": null,
+            "finish_reason": "length"
+        },
+        {
+            "text": "\n    T = int(input())\n    for i in range(T):\n        a, b, n = map(int, input().split())\n        if n == 0:\n            print(a)\n        elif n == 1:\n            print(b)\n        else:\n            for j in range(2, n+1):\n                c = a ^ b\n                a = b  # c is the new a and b is the new b. \n                b = c  # Now we have to find f(n+1). So we have to find f(n). So we have to find f(n-1). So we have to find f(n-2). And so on...\n\n            print (c)",
+            "index": 19,
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ]
+}
