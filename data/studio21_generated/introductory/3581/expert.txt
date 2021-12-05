@@ -1,1 +1,0 @@
- Given a string of characters, return true or false. 

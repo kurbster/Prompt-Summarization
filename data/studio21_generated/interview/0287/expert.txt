@@ -1,1 +1,0 @@
- 1. Given N, how many beautiful arrangements can you construct? 2. How many beautiful arrangements can you construct if N=2?

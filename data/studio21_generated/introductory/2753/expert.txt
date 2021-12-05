@@ -1,1 +1,0 @@
- You are given a string. You need to determine if it is simple or complex. If it is simple, return "Keep It Simple Stupid". Otherwise, return "Good work Joe!".

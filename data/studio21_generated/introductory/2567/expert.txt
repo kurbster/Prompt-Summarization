@@ -1,2 +1,0 @@
- =====Function Descriptions===== palindrome() This expression returns True if the given string is a palindromic integer. If the string is empty, it will return False. Code >>> palindrome('abc') True >>> palindrome('') False 
-=====Input Format===== The first line contains an integer N. N is the total number of integers in the list. The second line contains the space separated list of N integers. =====Constraints===== 0<N<100 =====Output Format===== Print True if all the conditions of the problem statement are satisfied. Otherwise, print False.

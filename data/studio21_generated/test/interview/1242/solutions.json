@@ -1,1 +1,0 @@
-["s = input()\narr_ans = [0] * len(s)\nfor i in range(1, len(s)):\n    if s[i] == 'a':\n        arr_ans[i - 1] = (arr_ans[i - 1] + 1) % 2\n        arr_ans[i] += 1\nprint(*arr_ans)"]

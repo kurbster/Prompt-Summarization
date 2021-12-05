@@ -202,7 +202,7 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             started = False
             # TODO: Should we define starting code here or not?
             for i in tmp_test:
-                if i.startswith("    ") and not started:
+                if (i.startswith(" ") or i.startswith("\t")) and not started:
                     new_test += "stdin = sys.stdin\nstdout = sys.stdout\n"
                     new_test += "def code():\n"
                     new_test += i

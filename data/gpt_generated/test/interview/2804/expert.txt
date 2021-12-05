@@ -1,2 +1,0 @@
- 
------Input----- The first and only line of input contains the integers $A$ and $B$ ($1 \leq A \leq B \leq 100000$) from the task. -----Output----- The first and only line of output must contain any essay that meets the rules from the task. -----Examples----- Sample Input 1: 2 7 Sample Output 1: dobar je ovaj marko marulic Sample Input 2: 26 30 Sample Output 2: nama je profesor reko da to ne treba za lektiru al onda je bila buka i nisam ga cuo pa jel bi mi mogli dat bodove

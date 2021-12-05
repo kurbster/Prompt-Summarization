@@ -1,1 +1,0 @@
- Input is an integer. Round it to the next multiple of 5 (meaning, "higher"). If input is less than 5, return 0. If input is more than 5, return input.

@@ -1,1 +1,0 @@
-Given a string s, write a method that will return true if it is a valid single integer or floating number or false if it is not.

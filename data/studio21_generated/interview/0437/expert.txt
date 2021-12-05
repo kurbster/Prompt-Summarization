@@ -1,1 +1,0 @@
- You are given an encoded string S, an index K, and a character.  Find and return the K-th letter (1 indexed) in the decoded string. 

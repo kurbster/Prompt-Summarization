@@ -1,2 +1,0 @@
- You are given a string S of length N. Find the number of times T occurs in S as a contiguous substring. 
------Input----- Input is given from Standard Input in the following format: N T -----Output----- Print the number of times T occurs in S as a contiguous substring. -----Sample Input----- 4 1011 -----Sample Output----- 9999999999 S is so long, so let us instead count the number of times 1011 occurs in the concatenation of 3 copies of 110, that is, 110110110. We can see it occurs twice:  - 1 1011 0110  - 1101 1011 0

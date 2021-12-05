@@ -1,2 +1,0 @@
-def rectangles(n, m):
-	

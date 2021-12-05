@@ -1,2 +1,0 @@
- You are given n numbers. You need to print the navigation. 
------Input----- The first and the only line contains three integers n, p, k (3 ≤ n ≤ 100; 1 ≤ p ≤ n; 1 ≤ k ≤ n) -----Output----- Print the proper navigation. Follow the format of the output from the test samples. -----Examples----- Input 17 5 2 Output << 3 4 (5) 6 7 >>  Input 6 5 2 Output << 3 4 (5) 6  Input 6 1 2 Output (1) 2 3 >>  Input 6 2 2 Output 1 (2) 3 4 >> Input 9 6 3 Output << 3 4 5 (6) 7 8 9 Input 10 6 3 Output << 3 4 5 (6) 7 8 9 >> Input 8 5 4 Output 1 2 3 4 (5) 6 7 8

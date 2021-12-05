@@ -1,1 +1,0 @@
- You are given two positive integers ```a``` and ```b```. You are supposed to find the integer positive numbers ```c```, ```d```, ```e```, ```f```, ```g```, ```h```, ```i```, ```j```, ```k```, ```l```, ```m```, ```n```, ```o```

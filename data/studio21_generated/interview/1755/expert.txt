@@ -1,1 +1,0 @@
- Your task is to write a function `splitlist(x)`, that will return two lists ```a``` and ```b```, such that ```abs(sum(a)-sum(b))``` is minimised.

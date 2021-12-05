@@ -1,1 +1,0 @@
- Given n characters, check if n characters are palindrome.

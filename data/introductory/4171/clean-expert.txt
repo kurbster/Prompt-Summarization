@@ -1,1 +1,0 @@
-Create a function called noRepeat() that takes a string argument and returns a single letter string of the first not repeated character in the entire string. Examples: Input: noRepeat("aabbccdde") Output: 'e' Input: noRepeat("wxyz") Output: 'w' Input: noRepeat("testing") Output: 'e'

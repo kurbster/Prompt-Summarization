@@ -1,1 +1,0 @@
- You are given a list of emails. Send one email to each address in the list. Return the number of different addresses that actually receive mails. 1 <= emails[i].length <= 100 1 <= emails.length <= 100 Each emails[i] contains exactly one '@' character. All local and domain names are non-empty. Local names do not start with a '+' character.

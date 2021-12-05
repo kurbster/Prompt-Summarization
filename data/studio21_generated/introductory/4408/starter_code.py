@@ -1,2 +1,0 @@
-def yoga(classroom, poses):
-	

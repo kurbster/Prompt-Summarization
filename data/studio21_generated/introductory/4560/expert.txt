@@ -1,1 +1,0 @@
- You are given a question string, and a list of potential answers. Your task is to find from the list of potential answers, the UNIQUE answer that has the highest number of words in common with the question. 

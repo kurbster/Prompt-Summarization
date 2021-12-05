@@ -1,1 +1,0 @@
- You are given a 6 digit Russian postal code. You need to check if it’s valid or not. 

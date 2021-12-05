@@ -1,8 +1,0 @@
-Given a string of words, you need to find the highest scoring word. Each letter of a word scores points according to its position in the alphabet: `a = 1, b = 2, c = 3` etc. You need to return the highest scoring word as a string. If two words score the same, return the word that appears earliest in the original string. All letters will be lowercase and all inputs will be valid
-tl;dr: Given a string of lowercase words, You need to return the highest scoring word as a string. If two words score the same, return the word that appears earliest in the original string
-
-Chef loves triangles. But the chef is poor at maths. Given three random lengths Chef wants to find if the three sides form a right-angled triangle or not. Can you help Chef in this endeavour  
-tl;dr: Given lengths $A,B and C$ return YES if they can form a right angled triangle, NO otherwise. 
-
-Cady s Chocolate Company just opened down the street! Cady s chocolate is world famous, and her recipe is top secret. But the company is more renowned for the fact that they sell the chocolate in random quantities. Each box of chocolate may contain anywhere from $1$ to $100$ pieces. Bob s nephews, John and Sam, love Cady s Chocolate, but Bob has a dilemma. John will get jealous of Sam if he gets more pieces of chocolate, and vice versa. Bob knows how many pieces of chocolate are in each box. Write a program to help him determine if it is possible to split the boxes between John and Sam such that both get the same number of pieces of chocolate, and such that all boxes of chocolate are used. 
-tl;dr:

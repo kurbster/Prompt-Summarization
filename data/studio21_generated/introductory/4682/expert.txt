@@ -1,1 +1,0 @@
- Your task is to create a method, that corrects a given date string. There was a problem in addition, so many of the date strings are broken. Date-Format is european. That means "DD.MM.YYYY". Some examples: "30.02.2016" -> "01.03.2016" "40.06.2015" -> "10.07.2015" "11.13.2014" -> "11.01.2015" "99.11.2010" -> "07.02.2011" If the input

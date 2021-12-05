@@ -1,1 +1,0 @@
-     Given a certain array of positive and negative numbers, give the longest increasing or decreasing combination of elements of the array. If our array is ```a = [a[0], a[1], ....a[n-1]]```: i) For the increasing case: there is a combination: ```a[i] < a[j] < a[k]..< a[p]```, such that ```0   i < j < k < ...< p   n - 1``` For the decreasing case the combination would be: `

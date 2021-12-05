@@ -1,1 +1,0 @@
-You will be given two integers and your task is to draw following pattern. Both integers are equal or greater than 1. Example 1: Input: dot(1,1) +---+ Output: | o | +---+ Example 2: Input: dot(3,2) +---+---+---+ | o | o | o | Output: +---+---+---+ | o | o | o | +---+---+---+

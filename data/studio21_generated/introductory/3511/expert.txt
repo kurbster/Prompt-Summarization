@@ -1,1 +1,0 @@
- You are given an encryption key. Return the prime factors of the encryption key. 

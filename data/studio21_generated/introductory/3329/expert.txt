@@ -1,1 +1,0 @@
- You are given a string `s`.  Return the length of the longest substring `t` in the string `s` that is the same in reverse. 

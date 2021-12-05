@@ -1,1 +1,0 @@
- Given a conveyor belt with packages and weight, ship all the packages in given number of days. 

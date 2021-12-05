@@ -1,1 +1,0 @@
- Given an integer, determine whether it has alternating bits. 

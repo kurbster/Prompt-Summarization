@@ -1,1 +1,0 @@
- You are given an array and you need to check if it is hollow. If it is hollow, return true, otherwise return false.

@@ -1,1 +1,0 @@
- Given two strings, convert them to their inverses (i.e., convert all letters and numbers to their equivalent values). Example: `"a25bz"` would become `"1y226"` Numbers representing letters (`n <= 26`) will always be separated by letters, for all test cases:  * `"a26b"` may be tested, but not `"a262b"` * `"cjw9k"` may be tested, but not `"cjw99k"` A list named `alphabet` is

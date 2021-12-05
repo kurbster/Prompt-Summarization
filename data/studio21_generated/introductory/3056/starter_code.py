@@ -1,2 +1,0 @@
-def palindrome(num,s):
-	

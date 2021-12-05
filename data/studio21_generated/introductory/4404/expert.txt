@@ -1,1 +1,0 @@
- Given two strings, print the first string if it is less than the second string, print the second string if it is less than the first string, and print the first string if it is greater than the second string.

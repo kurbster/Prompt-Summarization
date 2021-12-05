@@ -1,1 +1,0 @@
- Given s, return k non-empty palindromes using all the characters in s. 

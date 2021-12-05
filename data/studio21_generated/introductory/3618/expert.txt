@@ -1,1 +1,0 @@
- You are given two integers n and m. Give $n$ people numbers from 1 to n m in order of rows. Give each person number less than or equal to $n$. Give each person number less than or equal to $n$. Give each person number less than or equal to $n$. 

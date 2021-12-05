@@ -1,2 +1,0 @@
-def grille(message, code):
-	

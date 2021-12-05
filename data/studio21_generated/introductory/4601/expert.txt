@@ -1,1 +1,0 @@
- You are given an integer $n$ and an integer $m$. You need to calculate the number of missions Mormons need to embark on, in order to reach their target. 

@@ -1,8 +1,0 @@
-Given a complete binary tree, count the number of nodes. 
-tl;dr: Given a complete binary tree, count the number of nodes. 
-
-A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there  Above is a 7 x 3 grid. How many possible unique paths are there  
-tl;dr: You are at top-left corner of an m X n grid. Considering only down or right actions, how many unique paths are present to reach bottom-right corner. 
-
-Bj rn likes the square root of two, $\sqrt {2} = 1.41421356\dots $ very much. He likes it so much that he has decided to write down the first $10000$ digits of it on a single paper. He started doing this on an A4 paper, but ran out of space after writing down only $1250$ digits. Being pretty good at math, he quickly figured out that he needs an A1 paper to fit all the digits. Bj rn doesn t have an A1 paper, but he has smaller papers which he can tape together. Taping two A2 papers together along their long side turns them into an A1 paper, two A3 papers give an A2 paper, and so on. Given the number of papers of different sizes that Bj rn has, can you figure out how much tape he needs to make an A1 paper  Assume that the length of tape needed to join together two sheets of papers is equal to their long side. An A2 paper is $2^{-5/4}$ meters by $2^{-3/4}$ meters and each consecutive paper size (A3, A4, ) have the same shape but half the area of the previous one. 
-tl;dr:

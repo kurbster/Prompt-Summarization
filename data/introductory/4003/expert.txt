@@ -1,8 +1,0 @@
-# Description
-
-Given a current position of a knight in a chess board, find the possible positions that it will end up after 1 move.
-
-# Example
-
-Input: "a1"
-Output: ["b3", "c2"]

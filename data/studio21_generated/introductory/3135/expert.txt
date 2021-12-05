@@ -1,1 +1,0 @@
- You are given two integers Ta and Tb. The function should output a string giving time, in two decimal points, when the two objects A and B will meet again.

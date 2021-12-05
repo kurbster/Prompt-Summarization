@@ -1,2 +1,0 @@
- Given a string of digits find the length of the smallest number divisible by all the given numbers 
------Input----- A single input line contains a single integer n (1 ≤ n ≤ 10^5). -----Output----- Print a single integer — the answer to the problem without leading zeroes, or "-1" (without the quotes), if the number that meet the problem condition does not exist. -----Examples----- Input 1 Output -1 Input 5 Output 10080

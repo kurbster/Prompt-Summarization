@@ -1,1 +1,0 @@
- You are given a string. You need to find the minimum number of lowercase letters needed to convert this string into uppercase. 

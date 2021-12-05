@@ -1,2 +1,0 @@
- you are given a string of characters, and you need to return a permutation of that string.
-)

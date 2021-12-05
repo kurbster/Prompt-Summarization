@@ -1,1 +1,0 @@
- A hero named Teemo attacks another hero named Ashe. The attack makes Ashe be in poisoned condition. Given Teemo's attacking time series towards Ashe and the poisoning time duration per Teemo's attacking, you need to output the total time that Ashe is in poisoned condition. 

@@ -1,2 +1,0 @@
- Given two integers A and B, calculate the greatest common divisor of integers A! and B!. 
------Input----- The first and single line contains two integers A and B (1 ≤ A, B ≤ 10^9, min(A, B) ≤ 12). -----Output----- Print a single integer denoting the greatest common divisor of integers A! and B!. -----Example----- Input 4 3 Output 6 -----Note----- Consider the sample. 4! = 1·2·3·4 = 24. 3! = 1·2·3 = 6. The greatest common divisor of integers 24 and 6 is exactly 6.

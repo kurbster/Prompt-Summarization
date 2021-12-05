@@ -1,1 +1,0 @@
- The input given are three non-negative integers. You need to return the probability rounded to two decimal places i.e. 0.05 or 0.81

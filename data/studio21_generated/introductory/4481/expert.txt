@@ -1,1 +1,0 @@
- Imagine there's a big cube consisting of n^3 small cubes. Calculate, how many small cubes are not visible from outside. 

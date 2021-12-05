@@ -1,1 +1,0 @@
- You are given a sequence `s` of `n` symbols. You want to transform it to a sequence of `n` symbols, such that every symbol is preceded by its row number. (*Note:* The row number is ignored for empty input.) 

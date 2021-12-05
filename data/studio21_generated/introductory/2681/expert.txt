@@ -1,1 +1,0 @@
- You are given two numbers. You need to find the number of bounces it takes for a ball to stop moving. 

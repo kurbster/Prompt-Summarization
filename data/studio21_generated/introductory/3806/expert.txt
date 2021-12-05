@@ -1,1 +1,0 @@
-  Print the black and white pixels in each row.

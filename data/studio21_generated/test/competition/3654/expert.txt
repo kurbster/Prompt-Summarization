@@ -1,2 +1,0 @@
- You are given a number $k$ and a number $n$. The program should tell how many lawns will be rearranged.  
------Input----- The input consists of one line with two space-separated positive integers, $k$ and $n$. It is guaranteed that $k \leq 100$ and $n \leq 1000000$. -----Output----- Output a single non-negative integer giving the number of lawns that Rex will visit on which he will rearrange rocks. -----Examples----- Sample Input: 1 5 Sample Output: 0

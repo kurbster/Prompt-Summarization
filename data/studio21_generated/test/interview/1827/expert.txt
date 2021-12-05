@@ -1,2 +1,0 @@
- You are given a list of $n$ integers. You want to split the integers into two lists. You want the largest integer in the first list $A$ to differ as little as possible from the smallest integer in the second list $B$. 
-2

@@ -1,1 +1,0 @@
- You are given a string and a list of columns. Sort the columns alphabetically and incasesensitive. 

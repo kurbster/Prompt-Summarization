@@ -1,1 +1,0 @@
- Given an `n`, return all unique possible representations of `n` in an increasing order if `n` is an even integer; if `n` is odd, return an empty list. ## Constraints : `2 < n < 32000` and `n` is even ## Examples ``` 26  -->  ['3+23', '7+19', '13+13'] 100 -->  ['3+97', '11

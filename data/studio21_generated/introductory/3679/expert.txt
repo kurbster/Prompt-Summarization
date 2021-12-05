@@ -1,1 +1,0 @@
- You are given a string. You have to remove leading and trailing whitespaces and digits. 

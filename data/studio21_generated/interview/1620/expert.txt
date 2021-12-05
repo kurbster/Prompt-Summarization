@@ -1,1 +1,0 @@
- Given a set of positive integers m, and an index n, find the value of U(m)[n]. 

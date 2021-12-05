@@ -1,2 +1,0 @@
- You are given a binary tree. Return the labels of nodes in the path from the root of the tree to the node with that label.
-Example 1: Input: label = 14 Output: [1,3,4,14] Example 2: Input: label = 26 Output: [1,2,6,10,26]   Constraints: 1 <= label <= 10^6

@@ -1,2 +1,0 @@
- Given an integer sequence $a_ i$, calculate how many different values $f$ takes on. 
------Input----- The input consists of two lines.  - A single integer $1 \leq n \leq 5 \cdot 10^5$, the length of the sequence.  - The sequence of integers $a_1, a_2, \dots , a_ n$. It is given that $1 \leq a_ i \leq 10^{18}$. -----Output----- Output a single line containing a single integer, the number of distinct values $f$ takes on over the given sequence. -----Examples----- Sample Input: 4 9 6 2 4 Sample Output: 6

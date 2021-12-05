@@ -1,2 +1,0 @@
- Your task is to find the smallest (or maximum) value of $s$.   
------Input----- The only line contains integer n (1 ≤ n ≤ 5·10^5). -----Output----- Print 2n integers — the permuted array a that minimizes the value of the sum s. -----Examples----- Input 2 Output 1 1 2 2 Input 1 Output 1 1

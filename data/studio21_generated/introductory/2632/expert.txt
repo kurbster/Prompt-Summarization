@@ -1,2 +1,0 @@
- You are given N items with prices. You need to print each item with its net price.
-=====Input Format===== The first line contains the number of items, N. The next N lines contains the item's name and price, separated by a space. =====Constraints===== 0<N≤100 =====Output Format===== Print the item_name and net_price in order of its first occurrence.

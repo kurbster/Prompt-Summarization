@@ -1,2 +1,0 @@
- Calculate how many times you have to fold a paper to make it reach a certain distance.
-Note: Of course you can't do half a fold. You should know what this means ;P Also, if somebody is giving you a negative distance, it's clearly bogus and you should yell at them by returning `null` (or whatever equivalent in your language. In Shell please return `None`).

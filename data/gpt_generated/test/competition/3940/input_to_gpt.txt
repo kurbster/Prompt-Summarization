@@ -1,8 +1,0 @@
-Given a string s. Can you make it a palindrome by deleting exactly one character  Note that size of the string after deletion would be one less than it was before.  
-tl;dr: Your task is to determine whether a palindrome can be made or not by deleting only one character from the given string s. 
-
-Given an array of numbers, return the difference between the largest and smallest values.  For example: `[23, 3, 19, 21, 16]` should return `20` (i.e., `23 - 3`). `[1, 434, 555, 34, 112]` should return `554` (i.e., `555 - 1`). The array will contain a minimum of two elements. Input data range guarantees that `max-min` will cause no integer overflow
-tl;dr: Given an array of numbers, return the difference between the largest and smallest values. The array will contain a minimum of two elements. Input data range guarantees that `max-min` will cause no integer overflow. 
-
-Alyona's mother wants to present an array of n non-negative integers to Alyona. The array should be special.  Alyona is a capricious girl so after she gets the array, she inspects m of its subarrays. Subarray is a set of some subsequent elements of the array. The i-th subarray is described with two integers l_{i} and r_{i}, and its elements are a[l_{i}], a[l_{i} + 1], ..., a[r_{i}]. Alyona is going to find mex for each of the chosen subarrays. Among these m mexes the girl is going to find the smallest. She wants this minimum mex to be as large as possible.  You are to find an array a of n elements so that the minimum mex among those chosen by Alyona subarrays is as large as possible. The mex of a set S is a minimum possible non-negative integer that is not in S. 
-tl;dr:

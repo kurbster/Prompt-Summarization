@@ -1,1 +1,0 @@
- Given a list of integers, return a tree of height 5. Each element should be on a separate line.

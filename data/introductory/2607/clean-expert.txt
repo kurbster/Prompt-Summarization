@@ -1,1 +1,0 @@
-=====Problem Statement===== Given a string s in lowercase, your task is to find the top three most common characters in the string and their occurance count. Sort in descending order of occurrence count, and then by alphabetical order to break ties. For example, GOOGLE would output G 2 O 2 E 1 =====Input Format===== A single line of input containing the string S.

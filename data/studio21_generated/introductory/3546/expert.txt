@@ -1,1 +1,0 @@
- Given an 12-digits EAN-Code, validate it. Return true if the given EAN-Code is valid, otherwise false. Assumption You can assume the given code is syntactically valid, i.e. it only consists of numbers and it exactly has a length of 13 characters. Examples ```python validate_ean("4003301018398") # => True validate_ean("4003301018392") # => False ``` Good Luck and have fun.

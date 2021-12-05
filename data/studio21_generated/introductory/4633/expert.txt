@@ -1,1 +1,0 @@
- You are given an integer n as string. Return the uppercase version of n (that means, convert n to uppercase letters). Example 1: Input: n = '658776' Output: 'AWL' Example 2: Input: n = '65677' Output: 'AWL' Example 3: Input: n = '65' Output: 'A' Example 4: Input: n = '6567' Output: 'A'

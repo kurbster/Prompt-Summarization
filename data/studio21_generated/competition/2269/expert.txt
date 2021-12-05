@@ -1,2 +1,0 @@
- you are given N cities, M roads, and 2 cities to be cut 
------Input----- Input is given from Standard Input in the following format: N M A_1 B_1 A_2 B_2 : A_M B_M -----Output----- Print the answer. -----Sample Input----- 5 5 1 2 1 3 3 4 3 5 4 5 -----Sample Output----- 4 For example, if the cities 1, 2 belong to Taka and the cities 3, 4, 5 belong to Hashi, the condition is satisfied. Here, the number of roads whose endpoint cities belong to the same state, is 4.

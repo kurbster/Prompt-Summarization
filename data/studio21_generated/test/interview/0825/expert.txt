@@ -1,2 +1,0 @@
- Given an input number N, your task is to find the maximum number of times the operation can be applied. 
------Input----- Input is given from Standard Input in the following format: N -----Output----- Print the maximum number of times the operation can be applied. -----Sample Input----- 24 -----Sample Output----- 3 We can apply the operation three times by, for example, making the following choices:  - Choose z=2 (=2^1). (Now we have N=12.)  - Choose z=3 (=3^1). (Now we have N=4.)  - Choose z=4 (=2^2). (Now we have N=1.)

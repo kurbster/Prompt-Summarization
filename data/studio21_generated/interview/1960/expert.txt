@@ -1,1 +1,0 @@
- Given an array of integers, you have to process all queries. The queries are processed as follows:

@@ -1,1 +1,0 @@
- You are given an array of integers. Make sets of 3 numbers. Each should have numbers in ascending or descending order Return the number of such sets that can be formed. a number can be in multiple sets   Example 1: Input: rating = [2,5,3,4,1] Output: 3 Explanation: We can form three sets given the conditions. (2,3,4), (5,4,1), (5,3,1).  Example 2: Input: rating = [2

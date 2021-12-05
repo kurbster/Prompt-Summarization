@@ -1,8 +1,0 @@
-Chef has a binary array in an unsorted manner. Cheffina challenges chef to find the transition point in the sorted (ascending) binary array. Here indexing is starting from 0. 
-tl;dr: You are given a binary array. Find the transition point in the sorted (ascending) binary array. Here indexing is starting from 0. 
-
-Given a random string consisting of numbers, letters, symbols, you need to sum up the numbers in the string.  
-tl;dr: Given a random string consisting of numbers, letters, symbols, you need to sum up the numbers in the string. Consecutive integers should be treated as a single number and all the numbers should be treaded as positive integer. If no number was given in the string, it should return 0. 
-
-Given a collection of intervals, merge all overlapping intervals. 
-tl;dr:

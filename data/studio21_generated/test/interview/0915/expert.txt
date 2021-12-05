@@ -1,2 +1,0 @@
- Given an string $s$, your task is to find a string $t$ that contains at least $k$ subsequences codeforces. Sort $t$ in ascending order of occurance count. Print $t$. 
------Input----- The only line contains a single integer $k$ ($1 \leq k \leq 10^{16})$. -----Output----- Print a shortest string of lowercase English letters that contains at least $k$ codeforces subsequences. If there are several such strings, print any of them. -----Examples----- Input 1 Output codeforces Input 3 Output codeforcesss

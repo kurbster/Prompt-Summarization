@@ -1,1 +1,0 @@
- Given a number a and a number b, the function should return a string representation of the number a to the power b. The string representation should be formatted like: a^b

@@ -1,1 +1,0 @@
- You are given an integer ```n```. Your goal is to figure out if ```n``` is prime or not. If ```n``` is prime, then ```n``` is of the form ```2^k``` where ```k``` is some integer. Your code will be tested up to the 250th term. Memoize your results to pass the tests. Enjoy it!

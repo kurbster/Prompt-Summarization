@@ -1,2 +1,0 @@
- You are given an array of integers. Find the maximum beauty. 
------Input----- The single line contains a positive integer n (1 ≤ n ≤ 10^6). -----Output----- In the first line print integer m the maximum possible beauty. In the second line print any permutation of integers from 0 to n with the beauty equal to m. If there are several suitable permutations, you are allowed to print any of them. -----Examples----- Input 4 Output 20 0 2 1 4 3

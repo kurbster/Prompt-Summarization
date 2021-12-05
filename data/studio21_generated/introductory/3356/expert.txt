@@ -1,1 +1,0 @@
- Given a list of integers, return the 3 numbers that live next to each other in the list, and who have the most in common with each other. 

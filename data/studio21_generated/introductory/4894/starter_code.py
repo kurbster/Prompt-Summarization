@@ -1,2 +1,0 @@
-def makeParts(arr, chunkSize):
-	

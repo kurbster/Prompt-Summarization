@@ -1,8 +1,0 @@
-```if:python Create a function `args_count`, that returns the count of passed arguments ``` ```if:kotlin Create a function `argsCount`, that returns the count of passed arguments ``` ```if:ruby Create a method `args_count`, that returns the count of passed arguments ``` ```if:julia Create a method `argscount`, that returns the count of passed arguments ``` ```python args_count(1, 2, 3) -> 3 args_count(1, 2, 3, 10) -> 4 ``
-tl;dr: ```if:python Create a function `args_count`, that returns the count of passed arguments ``` ```if:kotlin Create a function `argsCount`, that returns the count of passed arguments ``` ```if:ruby Create a method `args_count`, that returns the count of passed arguments ``` ```if:julia Create a method `argscount`, that returns the count of passed arguments ``` ```python args_count(1, 2, 3) -> 3 args_count(1, 2, 3, 10) -> 4 ``
-
-Given a binary search tree, write a function kthSmallest to find the kth smallest element in it. 
-tl;dr: Write a function to find the kth smallest element in a given BST. 
-
-Kevin and Nicky Sun have invented a new game called Lieges of Legendre. In this game, two players take turns modifying the game state with Kevin moving first. Initially, the game is set up so that there are n piles of cows, with the i-th pile containing a_{i} cows. During each player's turn, that player calls upon the power of Sunlight, and uses it to either:   Remove a single cow from a chosen non-empty pile.  Choose a pile of cows with even size 2 x (x > 0), and replace it with k piles of x cows each.  The player who removes the last cow wins. Given n, k, and a sequence a_1, a_2, ..., a_{n}, help Kevin and Nicky find the winner, given that both sides play in optimal way. 
-tl;dr:

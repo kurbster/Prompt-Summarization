@@ -1,1 +1,0 @@
- Given a list of players' surnames, return a string with their first letter. If the list is empty, return "forfeit".

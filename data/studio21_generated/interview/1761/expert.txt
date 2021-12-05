@@ -1,1 +1,0 @@
- You are given a list of numbers. Return the nth number from the given list.

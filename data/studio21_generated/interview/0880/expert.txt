@@ -1,2 +1,0 @@
- You are given a circle with radius of r (0 <= r <= 200).  You need to calculate the area of all the donuts in the circle.
------Input:----- - First line will contain, number of testcases. Then the testcases follow.  - Each testcase contains of a single line of input, where in you have to provide the RADIUS of the Donuts.  -----Output:----- For each testcase, output in a single line answer is the AREA of the Donut. -----Constraints----- 1 <= Radius <= 20. -----Sample Input:----- 2 5  12 -----Sample Output:----- 78.5 452.16

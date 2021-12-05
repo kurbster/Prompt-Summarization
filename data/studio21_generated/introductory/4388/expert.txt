@@ -1,1 +1,0 @@
- In this kata, you will make a function that converts between `camelCase`, `snake_case`, and `kebab-case`. You must write a function that changes to a given case. It must be able to handle all three case types: ```python py> change_case("snakeCase", "snake") "snake_case" py> change_case("some-lisp-name", "camel") "someLispName" py> change_case("map_to_all", "

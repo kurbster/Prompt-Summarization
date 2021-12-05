@@ -1,2 +1,0 @@
- You are given two integers 1<=T<=105 and 1<=Ti<=105. Print the answer by taking mod from 109+7 .
------Input Format:----- First line consists an integer t, number of Test cases.For each test case, there is an integer denoting time Ti. -----Output Format:----- For each test case, a single output line contains two space seperated numbers ,distance covered by alpha and beta in the given time. -----Subtasks:----- Subtask 1 (30 points) - 1<=T<=10 - 1<=Ti<=1000 Subtask 2 (70 points) original contraints Sample Input: 2 1 2 Sample Output: 0 1 2 1

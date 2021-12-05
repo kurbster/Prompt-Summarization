@@ -1,1 +1,0 @@
- Input: the name of a character (without quotes) Constraints: 1 <= names.length <= 100 

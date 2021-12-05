@@ -1,2 +1,0 @@
- You are given a number. Determine if it is a magic number or not. 
------Input----- The first line of input contains an integer n, (1 ≤ n ≤ 10^9). This number doesn't contain leading zeros. -----Output----- Print "YES" if n is a magic number or print "NO" if it's not. -----Examples----- Input 114114 Output YES Input 1111 Output YES Input 441231 Output NO

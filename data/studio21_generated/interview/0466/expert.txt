@@ -1,1 +1,0 @@
- You are given a personal information string S, which may represent either an email address or a phone number. 

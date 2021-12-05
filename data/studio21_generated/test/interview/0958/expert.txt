@@ -1,2 +1,0 @@
- Given an integer k, find a string s' such that $\operatorname{dist}(s, s^{\prime}) = k$. 
------Input----- The first line contains two integers n and k (1 ≤ n ≤ 10^5, 0 ≤ k ≤ 10^6). The second line contains a string s of length n, consisting of lowercase English letters. -----Output----- If there is no string satisfying the given conditions then print "-1" (without the quotes). Otherwise, print any nice string s' that $\operatorname{dist}(s, s^{\prime}) = k$. -----Examples----- Input 4 26 bear Output roar Input 2 7 af Output db Input 3 1000 hey Output -1

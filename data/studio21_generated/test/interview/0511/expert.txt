@@ -1,2 +1,0 @@
- You are given two numbers x and y, and you want calculate f(x, y). 
------Input----- The first line contains two integer numbers x and y (1 ≤ x, y ≤ 10^12). -----Output----- Print f(x, y). -----Examples----- Input 3 5 Output 3 Input 6 3 Output 1

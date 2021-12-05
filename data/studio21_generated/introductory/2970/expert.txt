@@ -1,2 +1,0 @@
- Given a natural number n, we want to know in how many ways we may express these numbers as product of other numbers. For example the number ```python  18 = 2 x 9 = 3 x 6 = 2 x 3 x 3 # (we do not consider the product 18 x 1), (3 ways)  ``` See this example a bit more complicated, ```python 60 = 2 x 30 = 3 x 20 =  4 x 15 = 
-!

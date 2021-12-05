@@ -1,2 +1,0 @@
- you are given an integer $n$. You are to find the maximum possible proper irreducible fraction $\frac{a}{b}$ such that sum of its numerator and denominator equals n. 
------Input----- In the only line of input there is an integer n (3 ≤ n ≤ 1000), the sum of numerator and denominator of the fraction. -----Output----- Output two space-separated positive integers a and b, numerator and denominator of the maximum possible proper irreducible fraction satisfying the given sum. -----Examples----- Input 3 Output 1 2 Input 4 Output 1 3 Input 12 Output 5 7

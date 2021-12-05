@@ -1,8 +1,0 @@
-Given a binary search tree, write a function kthSmallest to find the kth smallest element in it. 
-tl;dr: Write a function to find the kth smallest element in a given BST. 
-
-Is every value in the array an array  This should only test the second array dimension of the array. The values of the nested arrays don't have to be arrays.  
-tl;dr: Given an array, check whether every value in the array is an array. This should only test the second array dimension of the array. The values of the nested arrays don't have to be arrays.  
-
-When dealt cards in the card game Plump it is a good idea to start by sorting the cards in hand by suit and rank. The different suits should be grouped and the ranks should be sorted within each suit. But the order of the suits does not matter and within each suit, the cards may be sorted in either ascending or descending order on rank. It is allowed for some suits to be sorted in ascending order and others in descending order.  Sorting is done by moving one card at a time from its current position to a new position in the hand, at the start, end, or in between two adjacent cards. What is the smallest number of moves required to sort a given hand of cards  
-tl;dr:

@@ -1,1 +1,0 @@
- You are given a string consisting of `"D", "P" and "C"`. A positive integer N is called DPC of this string if it satisfies the following properties.  

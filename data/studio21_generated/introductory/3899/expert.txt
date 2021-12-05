@@ -1,1 +1,0 @@
- Your Goal is to create a function that takes  two strings, a guess and a phone number.  Based on the guess, the function should display a portion of the phone number:  guess_my_number('052', '123-451-2345')  would return the string: '#2#-#5#-2##5'  or  guess_my_number('142', '123-451-2345')  would return the string: '12#-4#1-2#4#' 

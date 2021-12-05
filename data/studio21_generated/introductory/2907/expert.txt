@@ -1,1 +1,0 @@
- Given a number of balls (an integer), return an array with number of possible combinations (or distributions) (with no empty boxes) of that number of balls. 

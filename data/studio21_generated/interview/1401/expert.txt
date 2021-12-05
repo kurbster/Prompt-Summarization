@@ -1,2 +1,0 @@
- You are given a list of integers. You want to find the maximum number of items Anushka can buy. 
-.

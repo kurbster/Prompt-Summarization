@@ -1,1 +1,0 @@
-["t = int(input())\n\ndef conv(n):\n    k = bin(n)\n    k = k[2:]\n    z = len(k)\n    c = '1'*z\n    if c == k:\n     return False\n\ndef find(n):\n\n    x = bin(n)[2:]\n    str = ''\n    for i in x[::-1]:\n     if i == '0':\n      str+='1'\n      break\n     else:\n      str+='0'\n\n    return int(str[::-1],2)\n\nfor i in range(t):\n\n    n = int(input())"]

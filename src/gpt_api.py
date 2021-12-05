@@ -33,6 +33,7 @@ def make_prompt_gpt(config: Path):
     except BaseException:
         logger.critical(f'We have summarized everything there is nothing left!')
         return False
+
     logger.info(f'Saving gpt response in {output_dir}')
 
     logger.debug(f'Our prompt had {len(prompt.split())} words.')

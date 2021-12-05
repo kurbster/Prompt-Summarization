@@ -1,2 +1,0 @@
- Given an alphanumeric string, capitalize each word For example: alison heck => Alison Heck 
------Input----- The first line of input contains the number of blocks $n$, where $2 \leq n \leq 100000$. The second line contains $n$ consecutive block heights $h_ i$ for $i=1,2,\ldots ,n$, where $1 \leq h_ i \leq 1000000$. -----Output----- Output one line containing one integer: the minimum number of charges needed to tear down all the blocks. -----Examples----- Sample Input: 6 2 1 8 8 2 3 Sample Output: 5

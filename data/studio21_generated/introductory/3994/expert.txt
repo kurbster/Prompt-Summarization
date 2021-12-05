@@ -1,1 +1,0 @@
- You are given two numbers x and y. You need to return an array containing exactly two numbers: 1. The first number is the number of laps that Bob has to run 2. The second number is the number of laps that Charles has to run 

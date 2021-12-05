@@ -1,2 +1,0 @@
- You are given $n$ integer points. You need to draw $n$ squares, each having side length of $1$, on a $2n$ by $2n$ grid. 
------Input----- The only line of input contains a single integer $n$ ($1 \le n \le 10^{9}$), the number of squares that Sofia wants to draw. -----Output----- Print single integer, the minimum number of segments that Sofia will have to draw with a ruler without a guide in order to draw $n$ squares in the manner described above. -----Examples----- Input 1 Output 2 Input 2 Output 3 Input 4 Output 4

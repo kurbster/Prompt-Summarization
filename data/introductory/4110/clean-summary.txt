@@ -1,1 +1,0 @@
-Given a name, turn that name into a perfect square matrix. You will need to add periods to the end of the name if necessary to turn it into a matrix. If the name has a length of 0, return "name must be at least one letter" Examples: Input "Bill" Output: [ ["B", "i"], ["l", "l"] ] Input: "Frank" Output: [ ["F", "r", "a"], ["n", "k", "."], [".", ".", "."] ]

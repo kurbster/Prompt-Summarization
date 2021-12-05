@@ -1,1 +1,0 @@
- You are given a sale price (discounted price), and a sale percentage, your job is to figure out the original price. 

@@ -1,2 +1,0 @@
-def locate(seq, value):
-	

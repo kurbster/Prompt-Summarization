@@ -1,1 +1,0 @@
- you are given a list of prices. each element represent a buy/sell price. Return the best profit you can make. Example 1: Input: prices = [3, 10, 8, 4] Output: 7 Example 2: Input: prices = [0, 0, 0, 0] Output: 0 

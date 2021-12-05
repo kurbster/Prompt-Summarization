@@ -1,1 +1,0 @@
- You are given an array of strings that represent each card in the hand (`"2"`, `"3",` ..., `"10"`, `"J"`, `"Q"`, `"K"` or `"A"`). The function should return the score of the hand (integer). 

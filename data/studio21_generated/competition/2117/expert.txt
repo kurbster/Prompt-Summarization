@@ -1,2 +1,0 @@
- You are given two integers x and y. You should find the maximum strength among all groups of size x. 
------Input----- The first line of input contains integer n (1 ≤ n ≤ 2 × 10^5), the number of bears. The second line contains n integers separated by space, a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^9), heights of bears. -----Output----- Print n integers in one line. For each x from 1 to n, print the maximum strength among all groups of size x. -----Examples----- Input 10 1 2 3 4 5 4 3 2 1 6 Output 6 4 4 3 3 2 2 1 1 1

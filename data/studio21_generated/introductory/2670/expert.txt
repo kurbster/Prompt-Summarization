@@ -1,1 +1,0 @@
- Given a number n, return the sum of all the digits of n in the sequence.

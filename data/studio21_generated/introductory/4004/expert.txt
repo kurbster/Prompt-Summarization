@@ -1,2 +1,0 @@
- Given any string, find the first character that repeats in it and return that character. 
-*

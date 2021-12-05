@@ -1,8 +1,0 @@
-# Task  Given a rectangular `matrix` and integers `a` and `b`, consider the union of the ath row and the bth (both 0-based) column of the `matrix`. Return sum of all elements of that union. # 
-tl;dr: Given a rectangular matrix and integers a and b, consider the union of the ath row and the bth column of the matrix. Return sum of all elements of that union. 
-
-Ms. E.T. came from planet Hex. She has 8 fingers in each hand which makes her count in hexadecimal way. When she meets you, she tells you that she came from 7E light years from the planet Earth. You see she means that it is 126 light years far away and she is telling you the numbers in hexadecimal. Now, you are in trouble to understand what those numbers really mean. Therefore, you have to convert the hexadecimal numbers to decimals. 
-tl;dr: Write the code to convert the hexadecimal number into its corresponding decimal value. 
-
-You are a camp counselor at a summer camp and it is time to take some of the kids to lunch. There are $n$ groups of friends of different sizes who would like to be able to eat lunch together. There are $k$ bins that each hold exactly $x$ lunches. If one of the lunches in a bin is not used, then it must be thrown out due to health regulations. If you take fewer than $a$ students to lunch then your fellow counselors will get angry as they have to watch the remaining campers. However, due to child safety regulations, you can watch at most $b$ children at any given time. Is it possible to take a subset of the students to lunch such that the children get to eat with their friends, there are no wasted lunches, you take no more than the legal limit of campers, and you don t anger your fellow counselors by taking too few  
-tl;dr:

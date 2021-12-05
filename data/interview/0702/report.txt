@@ -1,7 +1,0 @@
-line word char
-  25  236 1328 question.txt
-  24  103  607 summary.txt
-  24  103  607 expert.txt
-  73  442 2542 total
-summary.txt 56.36% 54.29%
-expert.txt  56.36% 54.29%

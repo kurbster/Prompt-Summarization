@@ -1,2 +1,0 @@
- Given an input, print the smallest number of notes that will combine to give Rs. N.
------Input----- The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer N.  -----Output----- For each test case, display the smallest number of notes that will combine to give N, in a new line. -----Constraints----- - 1 ≤ T ≤ 1000 - 1 ≤ N ≤ 1000000 -----Example----- Input 3  1200 500 242 Output 12 5 7

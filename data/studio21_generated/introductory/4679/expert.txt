@@ -1,1 +1,0 @@
- For every word in the string, replace it with the explanation to everything, according to Freud. 

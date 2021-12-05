@@ -1,1 +1,0 @@
- Given an array of strings. Find the index of the first occurrence of a string in the array.

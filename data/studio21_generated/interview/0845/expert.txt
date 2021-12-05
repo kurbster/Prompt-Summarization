@@ -1,1 +1,0 @@
- Given two integers, print the number of squares, each being of maximum size, when the biscuit is cut as per the given condition.

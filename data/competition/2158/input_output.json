@@ -1,1 +1,0 @@
-{"inputs": ["7\n", "6\n", "7137\n", "1941\n", "55004\n", "1\n", "2\n", "3\n", "4\n", "5\n"], "outputs": ["YES\n1\n2\n5\n6\n3\n4\n7\n", "NO\n", "NO\n", "NO\n", "NO\n", "YES\n1\n", "YES\n1\n2\n", "YES\n1\n2\n3\n", "YES\n1\n3\n2\n4", "YES\n1\n2\n4\n3\n5\n"]}

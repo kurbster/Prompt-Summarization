@@ -1,8 +1,0 @@
-For a given stone heap, you and your friend can remove 1 to 3 stones in one step.You have to take first and the one who removes the last stone will be the winner.Determine whether you are the winner or not.
-
-
-Example:
-
-
-Input: 4
-Output: false 

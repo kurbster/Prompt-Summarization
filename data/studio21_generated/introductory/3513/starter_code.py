@@ -1,2 +1,0 @@
-def folding(a,b):
-	

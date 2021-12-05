@@ -1,1 +1,0 @@
-  You need to validate a proposed solution as being a solution to the social golfer problem. Each character represents a golfer, and each string is a group of players. Rows represent days. The solution above would be encoded as: ```  [   ['ABCD', 'EFGH', 'IJKL', 'MNOP', 'QRST'],   ['AEIM', 'BJOQ', 'CHNT', 'DGLS', 'FKPR'],   ['AGKO', 'BIPT',

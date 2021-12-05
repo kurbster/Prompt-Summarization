@@ -1,2 +1,0 @@
- You are given a list of items. You need to find if it is possible to pick some items such that no item is picked by everyone. 
------Input----- The input contains a single line with four integers, $m$, $a$, $b$, $c$, where $1\leq m\leq 100,000$, and $1\leq a, b, c\leq m$. -----Output----- If it’s possible for Alice, Bob, and Clara to pick some item such that no item on the menu is picked by everyone, print “possible” (without quotes). Otherwise, print “impossible”. -----Examples----- Sample Input: 6 2 2 2 Sample Output: possible

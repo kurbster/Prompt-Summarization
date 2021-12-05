@@ -1,1 +1,0 @@
- You are given n dices each one having s sides numbered from 1 to s. You need to count the number of outcomes that add up to a specified number k 

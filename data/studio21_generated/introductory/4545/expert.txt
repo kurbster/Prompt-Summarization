@@ -1,1 +1,0 @@
- Create a mechanical dartboard that gives back your score based on the coordinates of your dart.

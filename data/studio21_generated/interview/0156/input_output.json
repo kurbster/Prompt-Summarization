@@ -1,1 +1,0 @@
-{"fn_name": "shortestCommonSupersequence", "inputs": [["\"abac\"", "\"cab\""]], "outputs": ["\"cabac\""]}

@@ -1,1 +1,0 @@
- You are given a map. You need to count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. 

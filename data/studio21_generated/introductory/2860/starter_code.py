@@ -1,2 +1,0 @@
-def isomorph(a, b):
-	

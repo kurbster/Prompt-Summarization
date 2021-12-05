@@ -1,2 +1,0 @@
-def whoseMove(lastPlayer, win):
-	

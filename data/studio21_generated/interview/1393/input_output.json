@@ -1,1 +1,0 @@
-{"inputs": [["3", "1", "10", "3", "8 3 6", "5", "4 5 1 2 3"]], "outputs": [["1", "2", "2", "Constraints", "1 \u2264 T \u2264 100", "1 \u2264 N \u2264 10,000", "All speeds are distinct positive integers that fit in a 32 bit signed integer.", "Each input file will not be larger than 4 MB (4,000,000,000 bytes) in size.", "WARNING!  The input files are very large. Use faster I/O."]]}

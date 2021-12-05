@@ -1,2 +1,0 @@
- You are given an array/list/vector with all the people queuing and the index of your friend. Compute the time your friend will queue. 
-]

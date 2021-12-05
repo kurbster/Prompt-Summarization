@@ -1,1 +1,0 @@
- The input is a string and a shift. You need to output an encoded string. 

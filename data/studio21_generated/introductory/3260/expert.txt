@@ -1,1 +1,0 @@
- You are given N numbers with weight attached to each value. Find the minimum number concatenating the digits and this number should be divisible by ```k```. The order that the function receives their arguments is: ```python rearranger(k, n1, n2, ..., np) ``` ## Examples ```python rearranger(4, 32, 3, 34, 7, 12)  == "Rearrangement: 12, 3, 34, 7

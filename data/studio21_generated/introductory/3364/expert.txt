@@ -1,1 +1,0 @@
- You are given a list of ages. For each age, predict the age when one of your great-grandparents died. 

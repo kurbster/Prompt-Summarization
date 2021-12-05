@@ -1,2 +1,0 @@
- You are given a star shape. You are to find how much area it covers. 
------Input----- The only line of the input contains two integers n (5 ≤ n < 10^9, n is prime) and r (1 ≤ r ≤ 10^9) — the number of the star corners and the radius of the circumcircle correspondingly. -----Output----- Output one number — the star area. The relative error of your answer should not be greater than 10^{ - 7}. -----Examples----- Input 7 10 Output 108.395919545675

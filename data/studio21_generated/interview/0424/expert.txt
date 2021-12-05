@@ -1,1 +1,0 @@
- You are given two images img1 and img2.  You need to calculate the number of positions that have a 1 in both images. 

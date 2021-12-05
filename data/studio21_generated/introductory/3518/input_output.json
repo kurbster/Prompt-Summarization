@@ -1,1 +1,0 @@
-{"fn_name": "linux_type", "inputs": [["-rwxrwxrwx"], ["Drwxr-xr-x"], ["lrwxrw-rw-"], ["srwxrwxrwx"]], "outputs": [["file"], ["door"], ["symlink"], ["socket"]]}

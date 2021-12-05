@@ -1,1 +1,0 @@
-["import sys\n\nrl=sys.stdin.readline\nT=int(rl())\nfor t in range(T):\n P=int(rl())\n T=(P+1)//2\n F=list(map(int,rl().split()))[1:]\n numtorn=int(rl())\n t=sum(range(1,P+1))-sum(F)\n K=T-numtorn\n print('%.4f' % (t*K/float(T)))\n \n"]

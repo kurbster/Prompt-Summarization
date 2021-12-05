@@ -1,2 +1,0 @@
-def feast(beast, dish):
-	

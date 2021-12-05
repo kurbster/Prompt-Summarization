@@ -1,1 +1,0 @@
- You are given a 2D integer array matrix. Calculate the number of different `2   2` squares in it. Example 1: Input: matrix = [[1, 2, 1],           [2, 2, 2],           [2, 2, 2],           [1, 2, 3],           [2, 2, 1]] Output: 6 Explanation: The matrix contains 

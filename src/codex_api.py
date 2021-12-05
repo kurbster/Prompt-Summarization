@@ -55,7 +55,6 @@ def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
             prompt=prompts,
             **api_settings
         )
-        
     return response
 
 def create_experiment_dir(path_to_exp: Path) -> Path:

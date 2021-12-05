@@ -1,1 +1,0 @@
- You are given N*N matrix M representing the friend relationship between students in a class. If M[i][j] = 1, then the ith and jth students are direct friends with each other, otherwise not. And you have to output the total number of friend circles among all the students. 

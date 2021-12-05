@@ -1,1 +1,0 @@
- You are given an integer `n`. Return a string with `n` digits.

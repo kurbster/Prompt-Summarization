@@ -1,2 +1,0 @@
- You are given N integers A_i (i=1,2,...,N). You should find the minimum amount of money required to buy all the items. 
------Input----- Input is given from Standard Input in the following format: N M A_1 A_2 ... A_N -----Output----- Print the minimum amount of money required to buy all the items. -----Sample Input----- 3 3 2 13 8 -----Sample Output----- 9 We can buy all the items for 9 yen, as follows:  - Buy the 1-st item for 2 yen without tickets.  - Buy the 2-nd item for 3 yen with 2 tickets.  - Buy the 3-rd item for 4 yen with 1 ticket.

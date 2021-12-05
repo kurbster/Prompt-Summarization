@@ -1,1 +1,0 @@
- Given binary and bits, you should return 1 if binary is negative and -1 if binary is positive.

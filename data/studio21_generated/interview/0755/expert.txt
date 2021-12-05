@@ -1,2 +1,0 @@
- Given an array arr[M-1] of integers, find all integers K such that: - K > 1 - arr[1]%K = arr[2]%K = arr[3]%K =   = arr[M]%K
------Input:----- - First line of input contains an integer M. Then M lines follow each containing one integer of the list. Input data is such that at least one integer K will always exist. -----Output:----- - Output all possible integers K separated by space in increasing order. -----Constraints----- - 2<= M <=100 - 1< value of each integer <109 - All integers will be distinct -----Sample Input:----- 3 38 6 34 -----Sample Output:----- 2 4

@@ -1,1 +1,0 @@
- You are given a string. You need to return the decimal sum of all words in the string that can be interpreted as such hex values. 

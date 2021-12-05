@@ -1,1 +1,0 @@
-["print(302)\nprint(\"0 1000000\")\ncoord, rad = 17321*2, 300\nfor i in range(300):\n    print(coord, rad)\n    coord, rad = coord+600, rad-1\nprint(\"1000000 1000000\")\n", "n = 402\nprint (n)\nprint (0, 1000000)\nfor i in range(1, n-1):\n    print (i * 1000, n-i)\nprint (1000000, 1000000)"]

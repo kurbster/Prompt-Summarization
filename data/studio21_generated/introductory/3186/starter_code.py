@@ -1,2 +1,0 @@
-def similarity(a, b):
-	

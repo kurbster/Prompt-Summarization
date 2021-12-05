@@ -1,1 +1,0 @@
- You are given a list of numbers in increasing order, and you need to return a correctly formatted string in the range format.

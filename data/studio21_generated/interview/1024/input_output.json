@@ -1,1 +1,0 @@
-{"inputs": [["5", "100 4 2 2", "100 4 3 2", "100 4 3 3", "200 4 4 2", "10 3 2 2"]], "outputs": [["POSSIBLE 70", "POSSIBLE 55", "IMPOSSIBLE 20", "POSSIBLE 140", "IMPOSSIBLE 4", "POSSIBLE"]]}

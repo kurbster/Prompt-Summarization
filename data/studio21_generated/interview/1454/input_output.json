@@ -1,1 +1,0 @@
-{"inputs": [["5", "1 3 4 a", "1 5 8 a", "1 1 7 x", "2 1 6 a", "2 3 6 y"]], "outputs": [["12", "0", "In first case, there are two children between 3 and 5 between 0 - 6  having sum (4 + 8)", "There's no toffee for y in given range"]]}

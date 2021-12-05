@@ -1,2 +1,0 @@
- 
-You are given a string consisting of only the numbers in the key. 

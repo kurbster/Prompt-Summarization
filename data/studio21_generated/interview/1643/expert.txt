@@ -1,1 +1,0 @@
- You are given 2 numbers `n` and `k`. You need to find the number of integers between 1 and n (inclusive) that contains exactly `k` non-zero digit. Example 1: `almost_everywhere_zero(100, 1) return 19` by following condition we have 19 numbers that have k = 1 digits( not count zero )  ` [1,2,3,4,5,6,7,8,9,10,20,30,

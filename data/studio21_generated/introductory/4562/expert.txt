@@ -1,1 +1,0 @@
- Flash has invited his nemesis The Turtle (He actually was a real villain! ) to play his favourite card game, SNAP. In this game a 52 card deck is dealt out so both Flash and the Turtle get 26 random cards.  Each players cards will be represented by an array like below Flash s pile: ```[ 'A', '5', 'Q', 'Q', '6', '2', 'A', '9', '10', '6', '4', '

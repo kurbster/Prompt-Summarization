@@ -1,1 +1,0 @@
- This kata is the first of a sequence of four about "Squared Strings". You are given a string of `n` lines, each substring being `n` characters long: For example: `s = "abcd\nefgh\nijkl\nmnop"` We will study some transformations of this square of strings. - Vertical mirror: vert_mirror (or vertMirror or vert-mirror) ``` vert_mirror(s) => "dcba\nhgfe\nlkji\nponm"

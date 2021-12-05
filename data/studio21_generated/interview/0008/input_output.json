@@ -1,8 +1,0 @@
-{
-  "inputs": [
-    "8\n5 2\nWLWLL\n6 5\nLLLWWL\n7 1\nLWLWLWL\n15 5\nWWWLLLWWWLLLWWW\n40 7\nLLWLWLWWWLWLLWLWWWLWLLWLLWLLLLWLLWWWLWWL\n1 0\nL\n1 1\nL\n6 1\nWLLWLW\n"
-  ],
-  "outputs": [
-    "7\n11\n6\n26\n46\n0\n1\n6\n"
-  ]
-}

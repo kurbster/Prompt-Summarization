@@ -1,2 +1,0 @@
- You are given an integer. You need to count the maximum number you can get by making at most k swaps. 
------Input----- The single line contains two integers a and k (1 ≤ a ≤ 10^18; 0 ≤ k ≤ 100). -----Output----- Print the maximum number that Pasha can get if he makes at most k swaps. -----Examples----- Input 1990 1 Output 9190 Input 300 0 Output 300 Input 1034 2 Output 3104 Input 9090000078001234 6 Output 9907000008001234

@@ -1,1 +1,0 @@
- Given an integer representing a person's age, return their minimum and maximum age range. This equation doesn't work when the age <= 14, so use this equation instead: You should floor all your answers so that an integer is given instead of a float (which doesn't represent age). Return your answer in the form [min]-[max]

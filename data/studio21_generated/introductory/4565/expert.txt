@@ -1,1 +1,0 @@
- The code provided is supposed to replace all the dots `.` in the specified String `str` with dashes `-` but it's not working properly. 

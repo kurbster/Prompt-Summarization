@@ -1,1 +1,0 @@
- You are given two arrays A and B of size n and b respectively. You need to write a function that given n and b, returns an array A' of size n such that A'[i][j] = A[i][j] if A[i][j] is non-zero, else A'[i][j] = 0.  

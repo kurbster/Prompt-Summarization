@@ -1,2 +1,0 @@
- You are at top left cell of a m x n grid. You move right or down. Find the number of ways to reach bottom right cell. 
------Input----- The input is given from Standard Input in the following format: H W A B -----Output----- Print the number of ways she can travel to the bottom-right cell, modulo 10^9+7. -----Sample Input----- 2 3 1 1 -----Sample Output----- 2 We have a 2×3 grid, but entering the bottom-left cell is forbidden. The number of ways to travel is two: "Right, Right, Down" and "Right, Down, Right".

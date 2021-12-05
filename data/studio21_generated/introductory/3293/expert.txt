@@ -1,1 +1,0 @@
- You are given an array of 0 and 1. You need to iterate the array and for each iteration print a new line. The function you pass as parameter should print the current list, then the current list for the next iteration and finally the new list for the next iteration.

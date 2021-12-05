@@ -1,1 +1,0 @@
- Given a linear sequence of integers, return a function that returns the next value in the series.  

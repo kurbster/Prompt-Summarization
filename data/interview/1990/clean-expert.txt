@@ -1,1 +1,0 @@
-You are given n pairs of numbers where the first number is always smaller than the second number in a pair. A chain if formed when a pair (c, d) can follow another pair (a, b) if and only if b < c. Find the length of longest chain which can be formed. Example 1: Input: [[1,2], [2,3], [3,4]] Output: 2

@@ -1,2 +1,0 @@
-  You are given two integers n and m. Create a matrix numbered from 1 to n m in order of rows.  You have to find a matrix with n rows and m columns in which all numbers from 1 to n m appear exactly once and adjacent numbers in the original matrix are not adjacent in it, or determine that there is no such matrix. 
-2

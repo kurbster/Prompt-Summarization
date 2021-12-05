@@ -1,2 +1,0 @@
-def queens(position, size):
-	

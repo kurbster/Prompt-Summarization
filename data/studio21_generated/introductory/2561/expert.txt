@@ -1,2 +1,0 @@
- You are given an unsorted list of integers. You need to sort the list in ascending order. 
-=====Input Format===== The first line contains X, the number of shoes. The second line contains the space separated list of all the shoe sizes in the shop. The third line contains N, the number of customers. The next N lines contain the space separated values of the shoe size desired by the customer and x_i, the price of the shoe. =====Constraints===== 0<X<10^3 0<N≤10^3 0<x_i<100 2<shoe size<20 =====Output Format===== Print the amount of money earned by Raghu.

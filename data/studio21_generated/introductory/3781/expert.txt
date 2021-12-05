@@ -1,1 +1,0 @@
- You are given a number ```n```. Calculate the amount of products, excepting the number itself multiplied by one. n>=0 and has the range of a 32-bit signed integer. 

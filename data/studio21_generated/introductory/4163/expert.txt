@@ -1,1 +1,0 @@
- You are given an array. You need to return `true` if the array is `not empty` and `centered-N` or empty and centered-0. 

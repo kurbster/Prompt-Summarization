@@ -1,2 +1,0 @@
- You have to find the position of anagrams R of the keyword in the string which is the clue. 
-Note: Consider, Tac and act are not anagrams(case sensitive). -----Input:----- The first line contains a string S of length land the second line contains a keyword K. -----Output:----- Output contains a line"The antidote is found in R." Where R= string of positions of anagrams.(the position of the first word in the string is 1). -----Constraints:----- 1<=l<=500 1<=k<=50 -----Example:----- Input: cat is the act of tac cat Output: The antidote is found in 46.

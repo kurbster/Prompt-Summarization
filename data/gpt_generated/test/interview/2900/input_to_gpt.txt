@@ -1,8 +1,0 @@
-Let's assume that   v(n) is the largest prime number, that does not exceed n;  u(n) is the smallest prime number strictly greater than n.  Find $\sum_{i = 2}^{n} \frac{1}{v(i) u(i)}$. 
-tl;dr: Let's assume that   v(n) is the largest prime number, that does not exceed n;  u(n) is the smallest prime number strictly greater than n.  Find $\sum_{i = 2}^{n} \frac{1}{v(i) u(i)}$. 
-
-You are given a graph with $3 \cdot n$ vertices and $m$ edges. You are to find a matching of $n$ edges, or an independent set of $n$ vertices. A set of edges is called a matching if no two edges share an endpoint. A set of vertices is called an independent set if no two vertices are connected with an edge. 
-tl;dr: You are given a graph with $3 \cdot n$ vertices and $m$ edges. You are to find a matching of $n$ edges, or an independent set of $n$ vertices. A set of edges is called a matching if no two edges share an endpoint. A set of vertices is called an independent set if no two vertices are connected with an edge. 
-
-You are given a string $s$ consisting only of upper case letters A and B. For an integer $k$, a pair of indices $i$ and $j$ ($1 \le i<j \le n$) is called a $k$-inversion if and only if $s[i] = \textbf{B}$, $s[j] = \textbf{A}$ and $j-i = k$. Consider the string BABA. It has two $1$-inversions and one $3$-inversion. It has no $2$-inversions. For each $k$ between $1$ and $n-1$ (inclusive), print the number of $k$-inversions in the string $s$. 
-tl;dr:

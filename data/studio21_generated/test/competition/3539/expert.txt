@@ -1,2 +1,0 @@
- You are given $N$ integers $a_1, \ldots, a_N$ and $N$ integers $b_1, \ldots, b_N$. You need to find the number of possible ways to draw $N$ bipartite graphs, so that Bash always wins. 
------Input----- The first line of input contains the integer $N$ $(1 \le N \le 10^5)$. $N$ lines follow, each line contains exactly $2$ space-separated integers $a_ i$ and $b_ i$$(1 \le a_ i, b_ i \le 10^9)$. -----Output----- Print exactly one integer — the number of ways Socket can draw $N$ bipartite graphs, modulo $10^9 + 7$. -----Examples----- Sample Input: 1 1 1 Sample Output: 1

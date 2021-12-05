@@ -1,1 +1,0 @@
-["testcases = int(input())\n\nfor i in range(testcases):\n n = int(input())\n my = list(map(int,input().split()))\n opp = list(map(int,input().split()))\n \n my.sort(reverse = True)\n opp.sort(reverse = True)\n \n j = 0\n k = 0\n while(k < n):\n  if(my[j] > opp[k]):\n   j += 1\n  k += 1\n\n print(j)"]

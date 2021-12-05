@@ -1,1 +1,0 @@
-You are given an operation and two values. Your task is to create a function that does four basic mathematical operations and return the result. Example 1: Input: basic_op('+', 4, 7) Output: 11 Example 2: Input: basic_op('-', 15, 18) Output: -3 Example 3: Input: basic_op('*', 5, 5) Output: 25 Example 4: Input: basic_op('/', 49, 7) Output: 7

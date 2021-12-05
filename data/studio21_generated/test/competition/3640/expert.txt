@@ -1,2 +1,0 @@
- You are given a string of characters. The meow factor of the string is the minimum number (one or more) of operations needed to transform this string into a string which contains the word  meow  as a substring. 
------Input----- The input consists of a single line containing a string $S$, consisting only of lower-case letters ‘a’-‘z’. The length of $S$ is at least $1$ and at most $10^6$. -----Output----- Output the meow factor of $S$. -----Examples----- Sample Input: pastimeofwhimsy Sample Output: 1

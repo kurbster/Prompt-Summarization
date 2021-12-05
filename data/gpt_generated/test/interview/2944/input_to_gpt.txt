@@ -1,8 +1,0 @@
-Sereja has two integers   A and B   in 7-ary system. He wants to calculate the number C, such that B * C = A. It is guaranteed that B is a divisor of A. Please, help Sereja calculate the number C modulo 7L. 
-tl;dr: You are given two positive integers   A and B   in 7-ary system such that B * C = A and  B is a divisor of A. Calculate the number C modulo 7L. 
-
-Given two strings representing two complex numbers. You need to return a string representing their multiplication. Note i2 = -1 according to the definition. 
-tl;dr: Write program to return a string representing the multiplication of given two  strings of complex numbers. 
-
-According to Wikipedia, to hear something  through the grapevine  is to learn of something informally and unofficially by means of gossip or rumor. In this problem, you are tasked with determining how many people will hear about a particular rumor  through the grapevine  after a certain number of days. Rumors are always started by a single person. On any given day, a person who knows the rumor can spread it by telling the people that they know. Upon hearing of the rumor, that person must wait until the following day before they can begin to spread it themselves. Furthermore, some people are skeptical and will only spread the rumor once they ve heard it from a number of distinct sources. However once a person has heard the rumor from enough people, they will always try to spread the rumor to as many people as possible. 
-tl;dr:

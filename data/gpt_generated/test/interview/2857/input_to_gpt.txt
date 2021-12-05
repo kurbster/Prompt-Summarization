@@ -1,8 +1,0 @@
-Complete the solution so that it takes the object (JavaScript/CoffeeScript) or hash (ruby) passed in and generates a human readable string from its key/value pairs.  The format should be "KEY = VALUE". Each key/value pair should be separated by a comma except for the last pair. **
-tl;dr: It takes the object or hash passed in and generates a human readable string from its key/value pairs.  The format should be "KEY = VALUE". Each key/value pair should be separated by a comma except for the last pair. **
-
-Masha and Grisha like studying sets of positive integers. One day Grisha has written a set A containing n different integers a_{i} on a blackboard. Now he asks Masha to create a set B containing n different integers b_{j} such that all n^2 integers that can be obtained by summing up a_{i} and b_{j} for all possible pairs of i and j are different. Both Masha and Grisha don't like big numbers, so all numbers in A are from 1 to 10^6, and all numbers in B must also be in the same range. Help Masha to create the set B that satisfies Grisha's requirement. 
-tl;dr: Set A containing n positive different integers a_{i} are given.  Create a set B containing n different integers b_{j} such that all n^2 integers that can be obtained by summing up a_{i} and b_{j} for all possible pairs of i and j are different.  All numbers in A and B are from 1 to 10^6. 
-
-$N$ points are placed in the coordinate plane. Write a program that calculates how many ways we can choose three points so that they form a right triangle with legs parallel to the coordinate axes. A right triangle has one 90-degree internal angle. The legs of a right triangle are its two shorter sides. 
-tl;dr:

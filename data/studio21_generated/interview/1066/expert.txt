@@ -1,2 +1,0 @@
- You are given a number $N$ and a chef wants you to find the largest "nice" number that is smaller than or equal to $N$.   
------Input Format----- First line contains no. of test cases t. Then t test cases follow. Each test case contain a integer n. -----Output----- Output a integer for each test case in a new line which is largest nice integer smaller or equal to the given integer.  		 		 -----Example Text Case----- Input: 1 132 Output: 129 	 		

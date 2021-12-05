@@ -1,1 +1,0 @@
- Given an array A of integers, return true if and only if it is a valid mountain array. A mountain array is an array A of integers such that: A.length >= 3 There exists some i with 0 < i < A.length - 1 such that:          A[0] < A[1] < ... A[i-1] < A[i]  A[i] > A[i+1] > ... > A[A.length - 1]   

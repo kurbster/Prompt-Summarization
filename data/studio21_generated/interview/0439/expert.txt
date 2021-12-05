@@ -1,1 +1,0 @@
- You are given an array A.  Find the length of a maximum size turbulent subarray of A.

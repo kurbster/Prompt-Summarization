@@ -1,2 +1,0 @@
-def hamming(n):
-	

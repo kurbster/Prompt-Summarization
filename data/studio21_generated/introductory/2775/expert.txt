@@ -1,1 +1,0 @@
- Given an array of names, return a string that can be displayed next to each item. 

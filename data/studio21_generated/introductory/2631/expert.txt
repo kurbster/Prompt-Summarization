@@ -1,2 +1,0 @@
- You are given n lists. Pick one element from each list. Add squares of these elements and perform the modulo operation. The maximum possible value will be the answer. 
-=====Input Format===== The first line contains 2 space separated integers K and M. The next K lines each contains an integer N_i, denoting the number of elements in the ith list, followed by space separated integers denoting the elements in the list.  =====Constraints===== 1≤K≤7 1≤M≤1000 1≤N_i≤7 1≤Magnitude of elements in list≤10^9 =====Output Format===== Output a single integer denoting the value S_max.

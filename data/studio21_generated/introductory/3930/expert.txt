@@ -1,1 +1,0 @@
- You are given a value in dollar form, e.g. `$0.00`. You need to convert this value to a string in which the value is said, like '5 dollars' for example. This kata has many specific outputs, so good luck!

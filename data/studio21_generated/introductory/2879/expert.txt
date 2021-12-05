@@ -1,1 +1,0 @@
- Given two names, return True if both names can be shortened to "Carlos". Return False otherwise. 

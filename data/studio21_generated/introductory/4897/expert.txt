@@ -1,1 +1,0 @@
- You are given a parameter n and an integer k. The function should return a single integer equal to the number of 1s in the binary representation of the greatest common divisor of n and k. If both parameters are 0, then it should return 0. Example 1: Input: n = 300, k = 45 Output: 4 Explanation:  

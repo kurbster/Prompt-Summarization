@@ -1,1 +1,0 @@
- Given an integer `>=2`, the program should calculate the sequence `S(n)` up to `p-1` and calculate the remainder modulo `Mp`, then return `True` or `False` as a result of the test. The case `n = 2` should return `True`. You should take advantage of the fact that: ```k = (k mod 2^n + floor(k/2^n)) mod Mn``` Or in other words, if we take the least significant `n` bits of `k`,

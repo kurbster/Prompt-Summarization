@@ -1,1 +1,0 @@
- You are given an array with n positive integers (all less than `int.MaxValue`).  

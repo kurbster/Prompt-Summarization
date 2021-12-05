@@ -1,1 +1,0 @@
- Given an input `n`, find the count of all the numbers less than `n` that are both palindromic and can be written as the sum of consecutive squares. 

@@ -1,2 +1,0 @@
- You are given a word. The task is to find out if this is a mirror word.
------Input----- The first line contains a non-empty name that needs to be checked. The name contains at most 10^5 large English letters. The name will be written with the next sans serif font: $\text{ABCDEFGHI JKLMNOPQRSTUVWXYZ}$ -----Output----- Print 'YES' (without the quotes), if the given name matches its mirror reflection. Otherwise, print 'NO' (without the quotes). -----Examples----- Input AHA Output YES Input Z Output NO Input XO Output NO

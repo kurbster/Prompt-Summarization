@@ -1,1 +1,0 @@
- You are given a sequence. You need to normalize it. For example, given `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, then `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]` after normalization.

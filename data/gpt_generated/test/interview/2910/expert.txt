@@ -1,2 +1,0 @@
- Given a cake with a rectangular surface, partition it into stripes of width A and height B. The intersection of vertical stripe i and horizontal stripe j has color number (i+j) mod 3 for all 1<=i,j<=n. The output should consist of three integers separated with single spaces, representing the total area for each color 0, 1, and 2. 
-Examples----- Sample Input: 3 1 1 1 1 1 1 Sample Output: 3 3 3

@@ -1,8 +1,0 @@
-Cengiz recently learned Fibonacci numbers and now he is studying different algorithms to find them. After getting bored of reading them, he came with his own new type of numbers that he named XORinacci numbers. He defined them as follows:   $f(0) = a$;  $f(1) = b$;  $f(n) = f(n-1) \oplus f(n-2)$ when $n > 1$, where $\oplus$ denotes the bitwise XOR operation.  You are given three integers $a$, $b$, and $n$, calculate $f(n)$. You have to answer for $T$ independent test cases. 
-tl;dr: $f(0) = a$;  $f(1) = b$;  $f(n) = f(n-1) \oplus f(n-2)$ when $n > 1$, where $\oplus$ denotes the bitwise XOR operation.  You are given three integers $a$, $b$, and $n$, calculate $f(n)$. 
-
-Given a binary tree, return the zigzag level order traversal of its nodes' values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7],     3    / \   9  20     /  \    15   7 return its zigzag level order traversal as: [   [3],   [20,9],   [15,7] 
-tl;dr: Given a binary tree, return the zigzag level order traversal of its nodes' values. For example: Given binary tree [3,9,20,null,null,15,7],     3    / \   9  20     /  \    15   7 return its zigzag level order traversal as: [   [3],   [20,9],   [15,7] 
-
-One day you and GTmac walk into a classroom and see a mysterious expression on the blackboard:\[ (1^b + 2^b + \cdots + a^b)~ \mathrm{mod}~ a \] Upon seeing the expression GTmac shows an evil smile and challenges you:  Let me give you the values of $a$ and $b$ and let s assume $b$ is an odd number. Want to bet who can evaluate this expression  The one who loses shall buy pizza for us tonight.  
-tl;dr:

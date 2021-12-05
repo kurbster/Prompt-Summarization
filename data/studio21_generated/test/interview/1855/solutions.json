@@ -1,1 +1,0 @@
-["n,k=map(int,input().split())\nL=list(map(int,input().split()))\nind=[]\nfor i in range(n):\n    if L[i]>n-k:ind.append(i)\nm=1\nfor i in range(len(ind)-1):\n    m*=(ind[i+1]-ind[i])\n    m%=998244353\nprint(((n*(n+1)//2)-((n-k)*((n-k)+1))//2),m)"]

@@ -1,1 +1,0 @@
- You are playing Bulls and Cows game.  You are given a secret number and friend's guess. You need to return a hint according to the secret number and friend's guess. 

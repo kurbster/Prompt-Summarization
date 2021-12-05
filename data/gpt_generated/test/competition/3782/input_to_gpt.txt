@@ -1,8 +1,0 @@
-Chef has a number N, Cheffina challenges the chef to check the divisibility of all the permutation of N by 3. If any of the permutations is divisible by 3 then print 1 else print 0. 
-tl;dr: Check whether the given number N is divisible by 3 or not. If yes then print 1 else print 0. 
-
-Write a function that takes an integer and returns an array `[A, B, C]`, where `A` is the number of multiples of 3 (but not 5) below the given integer, `B` is the number of multiples of 5 (but not 3) below the given integer and `C` is the number of multiples of 3 and 5 below the given integer.  For example, `solution(20)` should return `[5, 2, 1]` ~~~if:r ```r # in R, returns a numeric vector solution(20) [1] 5 2 1 class(solution(20)) [1] "numeric" ``` ~~
-tl;dr: Write a function that takes an integer and returns an array [A, B, C], where A is the number of multiples of 3 below the given integer, B is the number of multiples of 5 below the given integer and C is the number of multiples of 3 and 5 below the given integer.  
-
-You are given an integer sequence A of length N and an integer K. You will perform the following operation on this sequence Q times:  - Choose a contiguous subsequence of length K, then remove the smallest element among the K elements contained in the chosen subsequence (if there are multiple such elements, choose one of them as you like). Let X and Y be the values of the largest and smallest element removed in the Q operations. You would like X-Y to be as small as possible. Find the smallest possible value of X-Y when the Q operations are performed optimally. -----Constraints-----  - 1 \leq N \leq 2000  - 1 \leq K \leq N  - 1 \leq Q \leq N-K+1  - 1 \leq A_i \leq 10^9  - All values in input are integers. 
-tl;dr:

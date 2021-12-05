@@ -1,8 +1,0 @@
-Write a function that checks if all the letters in the second string are present in the first one at least once, regardless of how many times they appear: ``` ["ab", "aaa"]    =>  true ["trances", "nectar"]    =>  true ["compadres", "DRAPES"]  =>  true ["parses", "parsecs"]    =>  false ``` Function should not be case sensitive, as indicated in example #2. 
-tl;dr: Write a function that checks if all the letters in the second string are present in the first one at least once, regardless of how many times they appear. Function should not be case sensitive. 
-
-Try guessing the statement from this picture:  $3$  You are given a non-negative integer $d$. You have to find two non-negative real numbers $a$ and $b$ such that $a + b = d$ and $a \cdot b = d$. 
-tl;dr: You are given a non-negative integer $d$. You have to find two non-negative real numbers $a$ and $b$ such that $a + b = d$ and $a \cdot b = d$. 
-
-Two participants are each given a pair of distinct numbers from 1 to 9 such that there's exactly one number that is present in both pairs. They want to figure out the number that matches by using a communication channel you have access to without revealing it to you. Both participants communicated to each other a set of pairs of numbers, that includes the pair given to them. Each pair in the communicated sets comprises two different numbers. Determine if you can with certainty deduce the common number, or if you can determine with certainty that both participants know the number but you do not. 
-tl;dr:

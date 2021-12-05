@@ -1,1 +1,0 @@
- Given two positive integers, find the next power of ```val```. For example, ```find_next_power(12385, 3) == 13824```.

@@ -1,2 +1,0 @@
- You are given a prime number p and an integer $x$. 
------Input----- The input contains a single line containing an integer p (2 ≤ p < 2000). It is guaranteed that p is a prime. -----Output----- Output on a single line the number of primitive roots $\operatorname{mod} p$. -----Examples----- Input 3 Output 1 Input 5 Output 2 -----Note----- The only primitive root $\operatorname{mod} 3$ is 2. The primitive roots $\operatorname{mod} 5$ are 2 and 3.

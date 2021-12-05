@@ -1,5 +1,0 @@
-Consider a polynomial in a list where each element in the list element corresponds to the factors. The factor order is the position in the list. The first element is the zero order factor.
-
-Examples:
-poly_multiply([1, 2], [1] ) = [1, 2]
-poly_multiply([2, 4], [4, 5] ) = [8, 26, 20]

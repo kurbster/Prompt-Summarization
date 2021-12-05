@@ -1,2 +1,0 @@
-def countOnes(left, right):
-	

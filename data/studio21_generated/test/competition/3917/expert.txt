@@ -1,2 +1,0 @@
- 
------Input----- The first line of input contains a single integer n (2 ≤ n ≤ 100000). Next line contains n integers a[1], a[2], ..., a[n] ( - 10^4 ≤ a[i] ≤ 10^4).  -----Output----- Output a single integer — the value of min_{i} ≠ j  f(i, j). -----Examples----- Input 4 1 0 0 -1 Output 1 Input 2 1 -1 Output 2

@@ -1,2 +1,0 @@
- You are given a 2D grid with M x N rooms. You need to find the knight's minimum initial health so that he is able to rescue the princess. 
-Note:        The knight's health has no upper bound.        Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.

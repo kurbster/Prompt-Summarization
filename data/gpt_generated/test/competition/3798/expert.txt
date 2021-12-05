@@ -1,2 +1,0 @@
- You are given integers n and s. Determine if there exists an integer b (b \geq 2) such that f(b,n)=s. If the answer is positive, also find the smallest such b. 
------Input----- The input is given from Standard Input in the following format: n s -----Output----- If there exists an integer b (b \geq 2) such that f(b,n)=s, print the smallest such b. If such b does not exist, print -1 instead. -----Sample Input----- 87654 30 -----Sample Output----- 10

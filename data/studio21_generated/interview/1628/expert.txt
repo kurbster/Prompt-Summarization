@@ -1,1 +1,0 @@
- Given an integer d, how many fractions can be built with d as denominator. 

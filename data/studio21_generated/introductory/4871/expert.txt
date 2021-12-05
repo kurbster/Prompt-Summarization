@@ -1,1 +1,0 @@
- You are given a text. You need to count the number of occurrences of each letter in the text.

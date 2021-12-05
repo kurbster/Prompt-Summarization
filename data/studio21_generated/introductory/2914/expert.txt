@@ -1,1 +1,0 @@
- You are given two lists. You need to find the difference and return the result. 

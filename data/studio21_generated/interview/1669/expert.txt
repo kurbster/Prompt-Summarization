@@ -1,1 +1,0 @@
- Given an array of integers, rearrange it such that each group is size W, and consists of W consecutive numbers. Return true if and only if Alice can.  

@@ -1,1 +1,0 @@
- Given string s, return the number of characters that need to be deleted to get string s with no consecutive repeats. 

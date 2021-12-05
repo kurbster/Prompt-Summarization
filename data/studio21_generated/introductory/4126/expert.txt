@@ -1,1 +1,0 @@
- Given an angle in degrees, return the time in HH:MM format. Round _down_ to the nearest minute.

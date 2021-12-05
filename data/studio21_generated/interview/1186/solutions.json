@@ -1,1 +1,0 @@
-["import math\nn = int(input())\na = sorted(map(int,input().split()))\nl = [0]*n\nfor i in range(n):\n l[i] = a[i] + l[i-1]\nfor q in range(int(input())):\n print(l[int(math.ceil(float(n)/(int(input())+1)))-1])"]

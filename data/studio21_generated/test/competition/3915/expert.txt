@@ -1,2 +1,0 @@
- You are given an integer $A$. Find the maximum integer $n$ such that  (n)   A rub(n). 
------Input----- The input consists of two positive integers p, q, the numerator and denominator of the fraction that is the value of A ($A = \frac{p}{q}$, $p, q \leq 10^{4}, \frac{1}{42} \leq \frac{p}{q} \leq 42$). -----Output----- If such maximum number exists, then print it. Otherwise, print "Palindromic tree is better than splay tree" (without the quotes). -----Examples----- Input 1 1 Output 40 Input 1 42 Output 1 Input 6 4 Output 172

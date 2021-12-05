@@ -1,4 +1,0 @@
-Make a program that filters a list of strings and returns a list with only names with exactly 4 letters in it.
-
-Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
-

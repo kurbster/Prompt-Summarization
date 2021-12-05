@@ -1,2 +1,0 @@
- You are given N and coins. In one step, the function returns the minimum price of item which can be in sale in Matunga tribe shop, knowing the values of coins used there. Function should return -1 if result is not accessible (i.e. coins of these values can't cover natural row from N to infinity without gaps). For example, some tribe has coins of 3 and 5 tungs. They can't sell items of 4 or 7 tungs, because 4 and 7 can't be represented as a sum of 3's and 5's. But
-.

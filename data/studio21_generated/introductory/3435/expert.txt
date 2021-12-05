@@ -1,1 +1,0 @@
- Given fight string consisting of only small letters, return who wins the fight.

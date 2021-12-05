@@ -1,1 +1,0 @@
- You are given a boolean value (either true or false). Your task is to return a string containing the winner's statement. If the winner is George Saint Pierre he will obviously say: - "I am not impressed by your performance." If the winner is Conor McGregor he will most undoubtedly say: - "I'd like to take this chance to apologize.. To absolutely NOBODY!"

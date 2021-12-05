@@ -1,1 +1,0 @@
- Given an integer representing the amount of newspapers, return the cheapest possible price.

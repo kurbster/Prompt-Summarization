@@ -1,1 +1,0 @@
- Given two numbers, check if one of them is a factor of the other. 

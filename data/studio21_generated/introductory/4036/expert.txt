@@ -1,1 +1,0 @@
- Given a list of pairs (first_number, second_number), return the number of days that the company is represented. 

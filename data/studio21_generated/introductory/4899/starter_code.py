@@ -1,2 +1,0 @@
-def weight(n, w):
-	

@@ -1,1 +1,0 @@
- Your task is to find the `k`th symbol (indexing from 1) in the string S(26). All strings consist of lowercase letters only. 

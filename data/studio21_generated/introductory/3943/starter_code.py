@@ -1,2 +1,0 @@
-def ellipse(a, b):
-	

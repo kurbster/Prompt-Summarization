@@ -1,9 +1,0 @@
-The factorial of a number, `n!`, is defined for whole numbers as the product of all integers from `1` to `n`. 
-
-Write an implementation to calculate the factorial of arbitrarily large numbers, without recursion.
-
-# Rules
-
-* `n < 0` should return `nil`/  `None`
-* `n = 0` should return `1`
-* `n > 0` should return `n!`

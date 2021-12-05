@@ -1,1 +1,0 @@
- Given an tree, find a copy of it, where each node has value greater than any other value in its subtree. 

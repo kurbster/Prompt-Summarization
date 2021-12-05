@@ -1,1 +1,0 @@
- The program should first print 1 then 2 then 4 and so on.

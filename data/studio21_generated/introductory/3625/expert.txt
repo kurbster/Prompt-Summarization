@@ -1,1 +1,0 @@
- Given an array, your task is to sum the elements which belong to the sequence of consecutive elements of length at least 3 (but as long as possible), such that the steps between the elements in this sequence are the same. 

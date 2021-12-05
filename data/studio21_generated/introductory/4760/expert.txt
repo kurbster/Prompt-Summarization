@@ -1,1 +1,0 @@
- You are given a binary tree. You need to validate that the tree is a binary search tree. 

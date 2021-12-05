@@ -162,7 +162,7 @@ def main(results: dict[str, list[any]], out_dir: Path):
 
 if __name__ == '__main__':
     import sys
-    input_file, output_file = sys.argv[1:3]
+    input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
     res = json.load(open(input_file))
     out_fpath = Path(output_file)
     main(res, out_fpath)

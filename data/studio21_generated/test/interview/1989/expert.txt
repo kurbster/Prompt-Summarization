@@ -1,2 +1,0 @@
- You are given n integers a_1, a_2, ..., a_n. Your task is to calculate the number of pairs of indicies i, j (1   i < j   n) such that f(1, i, a_{i}) > f(j, n, a_{j})
------Input----- The first line of the input contains an integer n (1 ≤ n ≤ 10^6). The second line contains n space-separated integers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^9). -----Output----- Print a single integer — the answer to the problem. -----Examples----- Input 7 1 2 1 1 2 2 1 Output 8 Input 3 1 1 1 Output 1 Input 5 1 2 3 4 5 Output 0

@@ -1,2 +1,0 @@
- You are given a number X and limit N. You need to output the sum of multiples of X upto N. 
------Input----- The first line contains an integer n (2 ≤ n ≤ 10^5). The second line contains n integer numbers a_1, a_2, ..., a_{n} (1 ≤ a_{i} ≤ 10^5). -----Output----- If it's impossible to sort the sequence output -1. Otherwise output the minimum number of operations Twilight Sparkle needs to sort it. -----Examples----- Input 2 2 1 Output 1 Input 3 1 3 2 Output -1 Input 2 1 2 Output 0

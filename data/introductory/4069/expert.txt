@@ -1,9 +1,0 @@
-Write a function that when given a number n, returns the nth number in the Fibonacci Sequence.
-
-Examples:
-Input:
-nth_fib(4)
-Output:
-2
-Explanation:
-Because 2 is the 4th number in the Fibonacci Sequence.

@@ -1,1 +1,0 @@
- Write a function ```avg``` which accepts a list of numbers and calculates average of those numbers. 

@@ -1,1 +1,0 @@
- Given an array of numbers, determine if any number in the array when summed (or taken individually) is divisible by a given number. 

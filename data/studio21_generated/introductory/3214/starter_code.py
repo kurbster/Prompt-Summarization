@@ -1,2 +1,0 @@
-def change(st):
-	

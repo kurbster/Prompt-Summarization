@@ -1,1 +1,0 @@
- You are given a list of n integers. You want to form a list of integers. Each integer in the resulting list should be greater than or equal to the sum of all integers in the input list. 

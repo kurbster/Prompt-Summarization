@@ -1,2 +1,0 @@
- Given N integers, choose K of them. Find the maximum product of the chosen numbers. Then, print the maximum product modulo 10^9 + 7. 
------Input----- Input is given from Standard Input in the following format: N K A_1 \ldots A_N -----Output----- Print the maximum product modulo (10^9+7), using an integer between 0 and 10^9+6 (inclusive). -----Sample Input----- 4 2 1 2 -3 -4 -----Sample Output----- 12 The possible products of the two chosen elements are 2, -3, -4, -6, -8, and 12, so the maximum product is 12.

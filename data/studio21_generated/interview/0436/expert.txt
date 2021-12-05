@@ -1,1 +1,0 @@
- You are given n oranges and d days. On each day you must eat n/2 oranges. Find the minimum number of days to eat all n oranges.

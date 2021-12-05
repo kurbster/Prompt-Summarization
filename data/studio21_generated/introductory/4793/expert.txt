@@ -1,1 +1,0 @@
- You are given an integer and you have to convert it to currency format. 

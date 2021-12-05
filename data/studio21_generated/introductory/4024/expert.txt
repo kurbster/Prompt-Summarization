@@ -1,1 +1,0 @@
- You are given a string $s$ of length $n$. You need to find the length of $s$'s first and last substrings. 

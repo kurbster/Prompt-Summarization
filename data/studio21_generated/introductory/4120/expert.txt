@@ -1,1 +1,0 @@
- Given a dictionary, return a sorted list of tuples, where tuples are sorted by values.

@@ -1,1 +1,0 @@
- You are given an integer N, and an integer d, and your task is to return a list of positive integers, such that removing all non-empty subsequences in which Maximum_element_of_the_subsequence  -  Minimum_element_of_subsequence    d from the set of all subsequences will give you N subsequences. 

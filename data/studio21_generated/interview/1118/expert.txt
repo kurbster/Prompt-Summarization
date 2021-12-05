@@ -1,2 +1,0 @@
- You are given a binary string. You need to convert it to a string with no adjacent bit being the same. 
------Input:----- - First line will contain $T$, number of test cases. Then the test cases follow.  - First line of each test case, contains the size of the  string $N$ - Seond line contains a single line of input, the binary string.  -----Output:----- For each testcase, output in a single line answer - the minimum operations. -----Constraints----- - $1 \leq T \leq 100$ - $2 \leq |S| \leq 10^3$ -----Sample Input:----- 1 4 1011 -----Sample Output:----- 1

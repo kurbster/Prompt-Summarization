@@ -1,2 +1,0 @@
- 
------Input----- Input is given from Standard Input in the following format: N L s_1 s_2 : s_N -----Output----- If Alice will win, print Alice; if Bob will win, print Bob. -----Sample Input----- 2 2 00 01 -----Sample Output----- Alice If Alice adds 1, Bob will be unable to add a new string.

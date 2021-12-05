@@ -1,2 +1,0 @@
-def expand(x, digit):
-	

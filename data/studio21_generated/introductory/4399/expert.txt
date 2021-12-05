@@ -1,1 +1,0 @@
- The function `fold_cube` should return `True` if the net can be folded into a cube. `False` if not. 

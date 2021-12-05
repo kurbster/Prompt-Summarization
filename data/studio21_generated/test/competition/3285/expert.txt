@@ -1,2 +1,0 @@
- You are given an SDS. You are to determine where in the SDS $m$ first appears. 
------Input----- Input consists of a single line containing two positive integers $A_1$$m$ ($1 \leq r \leq 100, 1 \leq m \leq 200000000$). -----Output----- Display the smallest value $n$ such that the sequence $A_1, \ldots , A_ n$ either contains $m$ as a value in the sequence or as a difference between two values in the sequence. All answers will be $\leq 10000$. -----Examples----- Sample Input 1: 1 5 Sample Output 1: 4 Sample Input 2: 1 12 Sample Output 2: 4

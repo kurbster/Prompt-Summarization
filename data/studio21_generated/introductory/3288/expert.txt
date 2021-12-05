@@ -1,1 +1,0 @@
- Given a number in form of a string and an integer `k`, your task is to insert `k` commas into the string and determine which of the partitions is the largest.  ``` For example: solve('1234',1) = 234 because ('1','234') or ('12','34') or ('123','4'). solve('1234',2) = 34 because ('1','2','34

@@ -1,1 +1,0 @@
- You are given a list of strings. For each string, print the distances between all cats. 

@@ -1,1 +1,0 @@
- You are given a list of integers, you need to output an array of integers. The given list has length in the range [0, 10000].

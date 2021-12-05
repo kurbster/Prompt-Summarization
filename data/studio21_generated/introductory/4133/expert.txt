@@ -1,1 +1,0 @@
- You are given n floors with m elevator. John can go downstairs by walking or by taking the elevator. You need to find shortest time. 

@@ -1,2 +1,0 @@
- You are given an integer $n$. You are given an array of integers $a$, $b$, and $c$. Return the number of Pythagorean triples between $1$ and $n-1$ such that $a \le b$ and $a^2 + b^2 \equiv c^2 \pmod{n}$. 
------Input----- The input consists of a single integer $n$, satisfying $2 \le n \le 500000$. -----Output----- Output the number of Pythagorean triples modulo $n$. -----Examples----- Sample Input: 7 Sample Output: 18

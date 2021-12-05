@@ -1,1 +1,0 @@
- You are given a binary message, i.e. a sequence of 0s and 1s. You need to encode this sequence using Chuck Norris  technique. 

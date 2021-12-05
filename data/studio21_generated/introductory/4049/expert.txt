@@ -1,1 +1,0 @@
- Given a number of magnitude 1. You need to populate an array with all numbers up to and including that number, but excluding zero. For example: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] 

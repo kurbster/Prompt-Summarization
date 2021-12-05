@@ -1,1 +1,0 @@
-  In JavaScript, `module` and `require` are disabled - Full Test Suite: `10` fixed tests and `150` random tests If you enjoyed this kata, be sure to check out my other katas

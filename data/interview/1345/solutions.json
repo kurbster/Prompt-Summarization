@@ -1,1 +1,0 @@
-["for _ in range(int(input())):\n code=input().strip()+'0'\n message=''\n asc=int(code[0])\n \n for i in range(len(code)-1):\n  \n  if int(str(asc)+code[i+1])>256:\n   message+=chr(asc)\n   asc=int(code[i+1])\n  else:    \n   asc=int(str(asc)+code[i+1])\n   \n print(message)\n"]

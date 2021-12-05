@@ -1,1 +1,0 @@
- You are given a positive integer `n`. You need to find the number of 2's, 3's, 4's, 5's and 6's in `n`. 

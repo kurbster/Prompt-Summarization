@@ -1,2 +1,0 @@
- Given a number n, you need to produce exactly n 'A' on the notepad by performing the minimum number of steps permitted.
-Example 1: Input: 3 Output: 3 Explanation: Intitally, we have one character 'A'. In step 1, we use Copy All operation. In step 2, we use Paste operation to get 'AA'. In step 3, we use Paste operation to get 'AAA'. Note: The n will be in the range [1, 1000].

@@ -1,1 +1,0 @@
- You are given an array of integers. You need to compute the staff wages for that week. 

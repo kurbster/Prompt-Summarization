@@ -1,1 +1,0 @@
- Write a function that counts the number of sections repeating the same word (case insensitive). The occurence of two or more equal words next after each other count as one. **Example:** ``` "dog cat"                 --> 0 "dog DOG cat"             --> 1 "apple dog cat"           --> 0 "pineapple apple dog cat" --> 0 "apple     apple dog cat" --> 1 "apple dog apple dog cat" --> 

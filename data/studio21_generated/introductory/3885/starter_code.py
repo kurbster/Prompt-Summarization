@@ -1,2 +1,0 @@
-def values(n):
-	

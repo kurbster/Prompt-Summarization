@@ -1,1 +1,0 @@
- You are given an integer `scrollY` (always non-negative) and an array of non-negative integers (with at least one element). Calculate index (starting at `0`) or `-1` if `scrollY` falls beyond last section (indication of an error).

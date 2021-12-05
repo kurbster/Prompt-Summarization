@@ -1,1 +1,0 @@
- You are given a string of ascii characters. You need to return a new string consisting of all of the correct ascii characters **in 7 bit format** (removing the parity bit), or `"error"` in place of ASCII characters in which errors were detected. 

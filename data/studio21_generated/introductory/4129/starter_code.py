@@ -1,2 +1,0 @@
-def queue(queuers,pos):
-	

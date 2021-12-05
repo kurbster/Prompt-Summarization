@@ -1,2 +1,0 @@
-def squares(x, n):
-	

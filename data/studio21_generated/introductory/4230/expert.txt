@@ -1,1 +1,0 @@
- You are given a string `str`. Reverse it omitting all non-alphabetic characters.   The output should be a string consisting of lowercase latin letters, digits and symbols. 

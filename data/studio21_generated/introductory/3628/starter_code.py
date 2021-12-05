@@ -1,2 +1,0 @@
-def rotate(arr, n):
-	

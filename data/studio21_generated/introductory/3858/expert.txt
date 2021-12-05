@@ -1,1 +1,0 @@
- You are given a string and need to return a string where only vowels exist.

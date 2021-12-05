@@ -1,1 +1,0 @@
- You are given a pair of X and Y chromosome. Determine if the sex of the offspring will be male or female based on the X or Y chromosome present in the male's sperm.

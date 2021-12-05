@@ -1,1 +1,0 @@
-Write a function smallest that will find the smallest positive number that is evenly divisible by all of the numbers from 1 to n. n <= 40. Examples: Input: smallest(5) Output: 60 Explanation: 1 to 5 can all divide evenly into 60 Input: smallest(10) Output: 2520 Explanation: 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.

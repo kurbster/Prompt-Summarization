@@ -1,2 +1,0 @@
-def knapsack(capacity, items):
-	

@@ -119,7 +119,8 @@ def eval_and_save_problems(args):
         except BaseException as e:
             logger.debug(f"{repr(e)}{e}")
             logger.error(f"Problem {problem} did not have test cases.")
-            res.append([])
+            res = [[]]
+            #res.append([])
         except Exception as e:
             logger.debug(f"test framework exception = {repr(e)}{e}")
             break
@@ -127,7 +128,7 @@ def eval_and_save_problems(args):
             assert isinstance(curr_res, list)
             res.append(curr_res)
 
-        logger.info(f"\nHow to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
+        logger.info(f"How to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
         logger.info(f"results = {res}")
 
         results[index+args.start+args.index] = res

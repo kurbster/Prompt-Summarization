@@ -1,1 +1,0 @@
- You are given a word with letters. You need to find the shortest possible passphrase containing all letters. 

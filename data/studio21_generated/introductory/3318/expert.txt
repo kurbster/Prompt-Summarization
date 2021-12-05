@@ -1,1 +1,0 @@
- Given two integers a and b, output the number of non-zero carries that will occur while adding them using the column addition method. Two integers will be added in base 10. Example 1: Input: a = 543, b = 3456 Output: 0 Example 2: Input: a = 1927, b = 6426 Output: 2 Example 3: Input: a = 9999, b = 1 Output: 4

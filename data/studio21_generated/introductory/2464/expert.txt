@@ -1,1 +1,0 @@
- Count the number of prime numbers less than a given number.

@@ -1,1 +1,0 @@
- You are given 2 strings, one contains the letters with diacritics, the other contains the Polish letters. For each pair of strings, you need to print the string that does not contain the Polish letters. For example: ``` "J drzej B  dzi ski"  ->  "Jedrzej Bladzinski" ```

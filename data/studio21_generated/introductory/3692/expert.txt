@@ -1,1 +1,0 @@
- You are given an array consisting of n elements. Your task is to find the median of an array. You can assume that all inputs are arrays of numbers in integer format. For the empty array your code should return `NaN` (false in JavaScript/`NULL` in PHP/`nil` in Ruby). 

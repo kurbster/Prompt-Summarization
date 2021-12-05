@@ -1,2 +1,0 @@
- You are given a rectangular field map.  Each cell has integer coordinates and for each integer x there are cells having center with such x coordinate and for each integer y there are cells having center with such y coordinate. 
------Input----- The only line of input contains four integers x_1, y_1, x_2, y_2 ( - 10^9 ≤ x_1 ≤ x_2 ≤ 10^9,  - 10^9 ≤ y_1 ≤ y_2 ≤ 10^9) — the coordinates of the centers of two cells. -----Output----- Output one integer — the number of cells to be filled. -----Examples----- Input 1 1 5 5 Output 13

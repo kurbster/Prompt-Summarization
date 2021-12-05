@@ -1,1 +1,0 @@
-{"inputs": [["5", "?", "??", "ab?", "a?c", "aba"]], "outputs": [["26", "26", "1", "0", "1", "Constraints", "1 \u2264 T \u2264 20", "1 \u2264 sum of length of all input strings \u2264 1,000,000", "Each input string contains only lowercase roman letters ('a' - 'z') or question marks."]]}

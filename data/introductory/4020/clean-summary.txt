@@ -1,1 +1,0 @@
-Write a simple regex to check if the string contains the word hello in different languages. Regex should be case insensitive to pass the tests. These are hello in different languages: hello - english ciao - italian salut - french hallo - german hola - spanish ahoj - czech republic czesc - polish

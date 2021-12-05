@@ -1,2 +1,0 @@
- You are given an array and a value. You need to check if all values in the array are below or equal to the given value. If they are, return true. Else, return false. You can assume that all values in the array are numbers. 
-n

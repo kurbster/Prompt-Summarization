@@ -1,1 +1,0 @@
- Given two integers `a` and `b`, the `hamming distance` between `a` and `b` is the number of binary bits that differ in their binary notation. 

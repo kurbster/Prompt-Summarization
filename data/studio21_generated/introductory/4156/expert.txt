@@ -1,1 +1,0 @@
- You are given two integers $x$ and $y$. Your task is to return the total number of squares for any given rectangle, the dimensions of which being given as two integers with the first always being equal to or greater than the second. 

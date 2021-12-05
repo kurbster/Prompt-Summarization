@@ -1,1 +1,0 @@
- You are given customers array and grumpy array. You need to return maximum number of customers that can be satisfied throughout the day. 

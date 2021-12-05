@@ -1,1 +1,0 @@
- You are given a width and height of an image. Return a ratio string (ex."16:9").   Example 1: Input: width = 640, height = 480 Output: 16:9 Example 2: Input: width = 480, height = 320 Output: 4:3 Example 3: Input: width = 320, height = 480 Output: 16:10 Example 4: Input: width = 640, height = 480 Output

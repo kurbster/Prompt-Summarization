@@ -1,2 +1,0 @@
- You are given 2^n and sum of digits. 
------Input----- N : number of inputs N<=100 then N lines with input T<=2000 -----Output----- The output for the corresponding input T -----Example----- Input: 3 5 10 4 Output: 5 7 7 Explanation: 2^5=32 3+2=5 2^10=1024 1+0+2+4=7 2^4=16 1+6=7

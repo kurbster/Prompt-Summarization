@@ -1,7 +1,0 @@
-Write a function that solves an algebraic expression given as a string and returns a string with the calculated value given in scientific notation with 5 decimal digits. The expression can include only sums and products. The numbers in the expression are in standard notation.
-
-Examples:
-Input:
-strexpression = "5 * 4 + 6"
-Output:
-sum_prod(strexpression) = "2.60000e+01"

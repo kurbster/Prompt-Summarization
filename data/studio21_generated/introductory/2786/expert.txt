@@ -1,2 +1,0 @@
- Given date d, output string representation of day. 
-.

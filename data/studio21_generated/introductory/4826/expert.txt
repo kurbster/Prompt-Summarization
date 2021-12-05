@@ -1,1 +1,0 @@
- You are given two strings. You need to find the number of occurrences of each letter.

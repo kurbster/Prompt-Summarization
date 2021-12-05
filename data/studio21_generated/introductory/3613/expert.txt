@@ -1,1 +1,0 @@
- You are given two strings, `string1` and `string2`. You need to check whether it is possible to obtain them from each other using some (possibly, different) substitution ciphers. 

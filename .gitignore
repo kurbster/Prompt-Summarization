@@ -5,3 +5,6 @@ logs/
 *.pyc
 environ/
 fine_tuned_models
+data/
+.ipynb_checkpoints/
+__pycache__

@@ -1,1 +1,0 @@
-["for _ in range(int(input())):\n n,k=list(map(int,input().split()))\n c=list(map(int,input().split()))\n count=1\n for i in range(n):\n  if i+1<n:\n   if c[i]-c[i+1]>=k or c[i+1]-c[i]>=k:\n    continue\n   else:\n    count+=1\n    c[i],c[i+1]=c[i+1],c[i]\n print(count)\n    \n"]

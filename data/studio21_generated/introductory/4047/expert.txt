@@ -1,1 +1,0 @@
- The input given are regular english sentences. You need to write a function ```toLeetSpeak``` that converts them to Leetspeak. 

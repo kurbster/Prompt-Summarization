@@ -1,2 +1,0 @@
- You are given a string containing heidi as a subsequence. Return True if the string is true, otherwise return False. 
------Input----- The first and only line of input contains a single nonempty string s of length at most 1000 composed of lowercase letters (a-z). -----Output----- Output YES if the string s contains heidi as a subsequence and NO otherwise. -----Examples----- Input abcheaibcdi Output YES Input hiedi Output NO -----Note----- A string s contains another string p as a subsequence if it is possible to delete some characters from s and obtain p.

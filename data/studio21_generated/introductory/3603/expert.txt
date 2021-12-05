@@ -1,1 +1,0 @@
- Given two flowers, return true if they are in love.

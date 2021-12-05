@@ -1,1 +1,0 @@
- You are given an integer ```n```. Calculate and return the number of trailing zeros, in any given base. Example 1: Input: ```n``` = 15 ```base``` = 10 ```trailing_zeros(15, 10) == 3``` Output: 3 Example 2: Input: ```n``` = 7 ```base``` = 2 ```trailing_zeros(7, 2) == 4

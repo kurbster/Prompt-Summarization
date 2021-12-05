@@ -1,1 +1,0 @@
- Given an array of integers, find one maximum width ramp.

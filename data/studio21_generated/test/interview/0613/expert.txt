@@ -1,2 +1,0 @@
- You are given positive integers $a$ and $b$. You need to find the number of polynomials such that $P(x) = a$, and $P(P(x)) = b$, where $x$ is a positive integer. 
------Input----- The input contains three integer positive numbers $t, a, b$ no greater than 10^18. -----Output----- If there is an infinite number of such polynomials, then print "inf" without quotes, otherwise print the reminder of an answer modulo 10^9 + 7. -----Examples----- Input 2 2 2 Output 2 Input 2 3 3 Output 1

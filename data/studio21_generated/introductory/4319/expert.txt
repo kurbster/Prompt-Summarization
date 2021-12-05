@@ -1,1 +1,0 @@
- You are given a string containing one or more "0"s. Write a program that returns the number of "0"s in the string. summary :  

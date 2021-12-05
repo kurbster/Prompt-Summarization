@@ -1,2 +1,0 @@
- Given an integer $n$, print the n-th digit of the string "123456789101112131415...".
------Input----- The only line of the input contains a single integer n (1 ≤ n ≤ 1000) — the position of the digit you need to print. -----Output----- Print the n-th digit of the line. -----Examples----- Input 3 Output 3 Input 11 Output 0 -----Note----- In the first sample the digit at position 3 is '3', as both integers 1 and 2 consist on one digit. In the second sample, the digit at position 11 is '0', it belongs to the integer 10.

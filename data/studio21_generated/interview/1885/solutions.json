@@ -1,1 +1,0 @@
-["class Solution:\n     def countBits(self, num):\n         \"\"\"\n         :type num: int\n         :rtype: List[int]\n         \"\"\"\n         ans = [0]\n         while len(ans) < num + 1:\n             ans += [1 + x for x in ans]\n         # len(ans) > num\n         return ans[:num+1]"]

@@ -1,2 +1,0 @@
- Calculate the number of ways in which you can shake hands with your friends. 
------Input----- The input contains one line containing one non-negative integer: $n$, with $0 \leq n \leq 5000$. -----Output----- Output a line containing $S_ n$. -----Examples----- Sample Input: 0 Sample Output: 1

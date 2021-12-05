@@ -1,1 +1,0 @@
- Given an array of integers A, find the number of triples of indices (i, j, k) such that 0 <= i < A.length 0 <= j < A.length 0 <= k < A.length A[i] & A[j] & A[k] == 0, where & represents the bitwise-AND operator. 

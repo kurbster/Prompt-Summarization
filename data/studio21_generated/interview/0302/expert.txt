@@ -1,1 +1,0 @@
- You are given four integer coordinates.  Return whether the four points could construct a square. 
