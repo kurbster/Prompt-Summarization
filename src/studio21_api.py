@@ -8,6 +8,7 @@ import logging
 import argparse
 
 from pathlib import Path
+from argparse import RawTextHelpFormatter
 
 import lib.my_logger
 from lib.prompt_generation import find_path_to_cfg, generate_summary_prompt
@@ -66,13 +67,7 @@ def make_prompt(token: str, config: Path, model: str = ''):
 
     return True 
 
-def main(argv):
-    parser = argparse.ArgumentParser(description="Choose how to run the Studio21 API")
-    parser.add_argument('-s', '--single', action='store_true', help="""If included then
-    only read 1 api from os.getenv""")
-
-    args = parser.parse_args(argv)
-    
+def main(args):
     cfg_file = 'studio21_config.yaml'
 
     if args.single:
@@ -96,4 +91,18 @@ def main(argv):
                 make_prompt(token=key, config=cfg_file, model='jumbo')
 
 if __name__ == '__main__':
-    main(sys.argv[1:])
+    doc_str = (
+        "Generate samples with the StudioAI21 API. If ran with no parameters then "
+        "we will the the config file \"configs/studio21_config.yaml\" and read the api key "
+        "from the environment variable STUDIO21_API_KEY. Currently, we do only generate "
+        "summaries for problems not already generated. If you want to redo a summary then save "
+        "it in a directory called ARCHIVE. All scripts will ignore this directory when looking for "
+        "current summaries."
+    )
+    parser = argparse.ArgumentParser(description=doc_str, formatter_class=RawTextHelpFormatter)
+    parser.add_argument('-s', '--single', action='store_true', help="""If included then
+    only read 1 api from os.getenv. If not included then read every key from .env/studio21_api_keys""")
+
+    args = parser.parse_args()
+    print(args)
+    #main(args)
