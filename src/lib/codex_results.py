@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 import os
+import sys
 import json
+import argparse
 import itertools
 import pandas as pd
 
 from pathlib import Path
 from typing import TextIO, Callable
+from argparse import RawTextHelpFormatter
 
 def split_prob(prob, keep_filename=True):
     tmp = prob.split('Prompt-Summarization/data/')[-1]
@@ -165,8 +168,28 @@ def main(results: dict[str, list[any]], out_dir: Path):
     out_file.close()
 
 if __name__ == '__main__':
-    import sys
-    input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
-    res = json.load(open(input_file))
-    out_fpath = Path(output_file)
-    main(res, out_fpath)
+    doc_str = (
+    "Calculate the aggregate metrics for an experiment. This file needs "
+    "to be passed the the path to the aggregated all_results.json file. "
+    "Along with the path to an output directory to save the results. This "
+    "file will create. The following files:\n\tcodex_results.txt - A text "
+    "file listing all of the results.\n\tbetter_df.csv - A pandas df that "
+    "contains all of the problems that peformed better.\n\tworse_df.csv - "
+    "A pandas df that contains all of the problems that peformed worse."
+    "\n\tsame_df.csv - A pandas df that contains all of the problems that peformed same."
+    "\n\toriginal_df.csv - A pandas df that contains the original data before "
+    "grouping the results.\n\tsummary_vs_orig_df.csv - A pandas df that contains the results "
+    "grouped by original question vs. the summary.\n\tdifficulty_df.csv - "
+    "A pandas df that contains the results when grouped by their difficulty. "
+    "\n\ttrain_test_df.csv - A pandas df that contains the results when grouped by "
+    "the train or test split."
+    )
+    parser = argparse.ArgumentParser(description=doc_str, formatter_class=RawTextHelpFormatter)
+    parser.add_argument('-i', '--result_file', type=Path, required=True,
+            help="""If included then only read 1 api from os.getenv""")
+    args = parser.parse_args()
+    print(args)
+    #input_file, output_file = Path(sys.argv[1]), Path(sys.argv[2])
+    #res = json.load(open(input_file))
+    #out_fpath = Path(output_file)
+    #main(res, out_fpath)

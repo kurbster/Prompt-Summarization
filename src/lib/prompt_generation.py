@@ -85,8 +85,6 @@ def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
                     ignore_intro=ignore_intro,
                     ignore_train=ignore_train)
 
-    output_dir = save_config(original_prompt_fname, config, f'data/{api}_generated', cfg['promptFile'])
-
     prompt_type = detect_type(original_prompt_fname)
 
     prompt, remainder = split_prompt(original_prompt_fname, cfg['splitFile'])
@@ -100,6 +98,9 @@ def generate_summary_prompt(api: str, config: str) -> tuple[str, str, str]:
 
     full_example = ensure_ascii(full_example)
     
+    # If successful copy over to data dir and save config
+    output_dir = save_config(original_prompt_fname, config, f'data/{api}_generated', cfg['promptFile'])
+
     return full_example, remainder, output_dir
 
 def get_completed_problems(api: str = '*') -> tuple[set[str], set[str]]:
@@ -114,11 +115,9 @@ def get_completed_problems(api: str = '*') -> tuple[set[str], set[str]]:
         a human has summarized. The second set is the problems that a
         model has summarized.
     """
-    human_probs = set(glob.glob(f'{path_to_data}/[ic]*/*'))
-    train_probs = set(glob.glob(f'{path_to_data}/{api}_generated/[ic]*/*'))
-    test_probs  = set(glob.glob(f'{path_to_data}/{api}_generated/test/[ic]*/*'))
-
-    model_probs = train_probs | test_probs
+    regex_for_problem_dirs = '*/[ic]*/*'
+    human_probs = set(glob.glob(f'{path_to_data}/human_generated/{regex_for_problem_dirs}'))
+    model_probs = set(glob.glob(f'{path_to_data}/{api}_generated/{regex_for_problem_dirs}'))
 
     logger.debug(f'Found {len(human_probs)} human generated summaries.')
     logger.debug(f'Found {len(model_probs)} model generated summaries.')
