@@ -39,8 +39,9 @@ def count_results(results: dict[str, dict[str, list[any]]]) -> pd.DataFrame:
     return df
 
 def get_accuracy(df: pd.DataFrame) -> None:
-    correct = df[True].sum()
-    total   = df.sum().sum()
+    summed = df.sum()
+    correct = summed[True]
+    total = summed.sum()
     acc = 100 * correct/total
     df['acc'] = 100 * df[True]/df.sum(axis=1)
     strict_acc = 100 * sum(df['acc'] >= 100)/len(df)
@@ -98,10 +99,13 @@ def agg_results(df: pd.DataFrame, func: Callable, out_file: TextIO, msg: str = '
     strict_acc = strict_acc['acc'] >= 100
     strict_acc = 100 * strict_acc.groupby(func).mean()
 
-    df = df.groupby(func).sum()
+    grouped = df.groupby(func)
+    df = grouped.sum()
     get_accuracy(df)
     df['strict acc'] = strict_acc
+    df['Num Probs'] = grouped[True].count()
     write_df(df, out_file, msg=msg, new_file=new_file)
+    return df
 
 def write_df(df: pd.DataFrame, out_file: TextIO, msg: str = '', new_file: Path = None):
     write_msg(out_file, msg)
