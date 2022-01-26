@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import os
 import sys
 import itertools
 
@@ -79,7 +78,8 @@ def main(dname: str, out_fname: Path):
         fname, 
         usecols=[0, 1, 2, 3, 4],
         header=0,
-        names=["Problem Names", -2, -1, False, True])
+        names=["Problem Names", -2, -1, False, True]
+    )
 
     # Get the original accuracy
     report_accuracy(orig, out_fname, msg='Entire experiment accuracy:\n')
