@@ -153,6 +153,7 @@ def main(prompts: list[str], prompt_files: list[str], cfg_file: str):
     logger.info(f'Saved results here: {dirname}')
     return dirname
 
+# TODO: Save the aggregated codes (all_codes.json) and aggregated file names (test.json)
 if __name__ == "__main__":
     cfg_file = 'codex_config.yaml'
     prompts, prompt_files = generate_code_prompt(config=cfg_file)
