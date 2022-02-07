@@ -7,8 +7,8 @@ get_generated_human() {
 
 get_generated_model() {
     [[ -z $1 ]] && api="*" || api="$1"
-    problems=$(find ../../data/$api"_generated"/*/[ic]* -mindepth 1 \
-        -not -path *human* -type d)
+    problems=$(find ../../data/$api"_generated"/*/* -mindepth 1 -type d -not -path '*ARCHIVE*' \
+    -and -not -path '*human*')
 }
 
 # If this script was run directly

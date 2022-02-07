@@ -14,6 +14,7 @@ from codex_results import get_accuracy, detect_summary
 
 PATH_TO_DATA = Path(__file__, '../../../data/experiments/aggregate_results').resolve()
 PATH_TO_HUMAN_DATA = Path(__file__, '../../../data/human_generated/train').resolve()
+PATH_TO_GPT_DATA = Path(__file__, '../../../data/').resolve()
 
 RESULT_TYPES = {
     'original': 'question.txt',
@@ -39,6 +40,9 @@ def get_json_len(problems: Iterable, result_type: str, agg_func: Callable):
     ftype = RESULT_TYPES[result_type]
     for prob in problems:
         fname = PATH_TO_HUMAN_DATA.joinpath(prob, ftype)
+        if not fname.exists():
+            lengths.append(0)
+            continue
         with open(fname) as f:
             sols = json.load(f)
         lens = list(map(len, sols))
@@ -128,7 +132,13 @@ def compute_statistics(df: pd.DataFrame, accuracy: pd.Series, result_dir: str):
 
     return results
 
-def main(dname: str):
+def main(dname: str, is_gpt=False):
+    # Need to set the proper parent path if we are looking @ GPT results.
+    if is_gpt:
+        global PATH_TO_HUMAN_DATA
+        PATH_TO_HUMAN_DATA = PATH_TO_GPT_DATA
+        print('I was ran.')
+
     dirname = PATH_TO_DATA.joinpath(dname)
     fname = dirname.joinpath('better_df.csv')
     better = read_pd(fname)
@@ -158,4 +168,7 @@ def main(dname: str):
 
 if __name__ == '__main__':
     dname = sys.argv[1]
-    results = main(dname)
+    is_gpt = False
+    if len(sys.argv) == 3:
+        is_gpt = bool(sys.argv[2])
+    results = main(dname, is_gpt=is_gpt)
