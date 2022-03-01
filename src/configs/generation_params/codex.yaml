@@ -1,0 +1,15 @@
+defaults:
+  - /generation_params/codex_base@_here_
+header: "Python 3\n"
+human_only: True
+# test_immediately: True
+#prompt_manifest: human_probs.txt
+prompt_manifest: test_prompts.txt
+num_prompts: -1
+num_few_shot: 0
+summary_types: [question, summary, expert]
+#summary_types: [question, summary, expert, clean-question, clean-summary, clean-expert]
+prompt_prefix: "\"\"\""
+prompt_suffix: "\"\"\""
+few_shot_suffix: "\n\n"
+completion_prefix: "def code():"

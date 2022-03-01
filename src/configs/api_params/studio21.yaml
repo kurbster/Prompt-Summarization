@@ -1,0 +1,9 @@
+defaults:
+  - /api_params/studio21_base@_here_
+engine: jumbo
+top_p: 1.0
+max_tokens: 500
+temperature: 0.3
+stop:
+  - Jargon
+  - "\n\n"

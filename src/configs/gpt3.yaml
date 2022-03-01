@@ -1,0 +1,5 @@
+defaults:
+  - main_config
+  - base_config
+  - api_params: gpt3
+  - generation_params: gpt3

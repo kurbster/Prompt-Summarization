@@ -1,0 +1,12 @@
+defaults:
+  - /generation_params/summary_base@_here_
+header: ""
+split_file: prompt_split.txt
+prompt_file: prompt_category.yaml
+num_prompts: 3
+ignore_intro: True
+ignore_train: True
+summary_types: [expert]
+prompt_prefix: "tl;dr: "
+few_shot_suffix: "\n\n"
+completion_prefix: ""

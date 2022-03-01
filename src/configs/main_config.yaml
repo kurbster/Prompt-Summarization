@@ -1,0 +1,14 @@
+defaults:
+    - override hydra/job_logging: logging
+hydra:
+    env:
+        exp_day_fmt: "${now:%m-%d-%Y}"
+        exp_time_fmt: "${now:%H-%M-%S}"
+    output_subdir: "."
+    job:
+        # If we are doing a single run specify that it is job 0
+        num: 0
+    run:
+        dir: "../data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
+    sweep:
+        dir: "../data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
