@@ -1,28 +1,24 @@
 #!/usr/bin/env python3
 import os
-import sys
-import yaml
 import json
 import time
+import hydra
 import shutil
 import openai
 import logging
 
-from datetime import datetime
+from typing import Dict, List
 from pathlib import Path
 from openai.error import RateLimitError
+from omegaconf import OmegaConf
 
-import lib.my_logger
+import lib.config as config
 
-from lib import test_one_solution, file_reading_utils, codex_results
-from lib.prompt_generation import generate_code_prompt, find_path_to_cfg
+from lib import run_results, prompt_generation
 
 logger = logging.getLogger('apiLogger')
 
-PATH_TO_EXP = Path(__file__, '../../data/experiments').resolve()
-
-@find_path_to_cfg
-def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
+def get_codes(prompts: List[str], cfg: config.APIConfig) -> Dict[str, any]:
     """Call the OpenAI API with the prompts given.
 
     Args:
@@ -32,44 +28,26 @@ def get_codes(prompts: list[str], config: Path) -> dict[str, any]:
     Returns:
         dict[str, any]: The response object.
     """
-    with open(config) as f:
-        cfg = yaml.safe_load(f)
-    api_settings = cfg['apiParams']
-    logger.info(f'Using codex model: {api_settings["engine"]}')
+    logger.info(f'Using codex model: {cfg.engine}')
     
     API_KEY = os.getenv("OPENAI_API_KEY")
     logger.info(f'using apikey: {API_KEY}')
     openai.api_key = API_KEY
 
+    api_cfg = OmegaConf.to_container(cfg)
     try:
         response = openai.Completion.create(
             prompt=prompts,
-            **api_settings
+            **api_cfg
         )
     # We have exceeded OpenAIs rate limit of 150,000 tokens/min
     # We need to cleep for a minute then try again
-    except RateLimitError:
+    except RateLimitError as e:
+        logger.debug(e)
         logger.error('We have hit our rate limit. Sleeping for a minute...')
         time.sleep(60)
-        response = openai.Completion.create(
-            prompt=prompts,
-            **api_settings
-        )
+        response = get_codes(prompts, cfg)
     return response
-
-def create_experiment_dir(path_to_exp: Path) -> Path:
-    """Create a experiment dir to save results.
-
-    Args:
-        path_to_exp (Path): Path to the experiments dir.
-    
-    Returns:
-        Path: The path to the new dir.
-    """
-    fname = datetime.now().strftime('%m-%d-%Y/%H_%M_%S')
-    dir_path = path_to_exp.joinpath(fname)
-    dir_path.mkdir(parents=True, exist_ok=False)
-    return dir_path
 
 def save_json(dirname: Path, obj_to_save: any, fname: str, indent: int = 4) -> None:
     """Save a json object to a file
@@ -80,7 +58,7 @@ def save_json(dirname: Path, obj_to_save: any, fname: str, indent: int = 4) -> N
         fname (str): The file name to save as.
         indent (int, optional): Indent of the json file. Defaults to 4.
     """
-    dir_name = os.path.join(dirname, fname)
+    dir_name = Path(dirname, fname)
     with open(dir_name, 'w') as f:
         json.dump(obj_to_save, f, indent=indent)
 
@@ -107,76 +85,103 @@ def clean_codes(codes: dict[str, str]) -> dict[str, str]:
         result[idx] = code
     return result
 
-def create_test_args(dirname: Path, debug: bool = True) -> list[str]:
-    """Create args to pass to test_one_solution.py
+def copy_codes(output_dir: Path, test_manifest: List[str], all_codes: Dict[str, str]):
+    code_dir = output_dir.joinpath('code')
+    script_dir = Path(__file__, '../tools').resolve()
 
-    Args:
-        dirname (Path): Path to our output dir.
-        debug (bool, optional): To include the debug flag or not. Defaults to True.
+    starter_code = "starter_code.py"
+    solution_fname = "solutions.json"
+    test_case_name = "input_output.json"
+    test_case_script = "jq_script.sh"
 
-    Returns:
-        list[str]: List of args to be passed.
-    """
-    arg_arr = [
-        '--save', str(dirname),
-        '--test_loc', str(dirname / "test.json")
-    ]
-    if debug:
-        arg_arr.append('--debug')
-    return arg_arr
+    test_manifest = list(map(Path, test_manifest))
+    for problem_path, code in zip(test_manifest, all_codes.values()):
+        fname = problem_path.stem 
+        problem = problem_path.parent
 
-@find_path_to_cfg
-def save_config(dirname: Path, config: Path) -> None:
-    shutil.copy(config, dirname)
+        problem_dir = str(problem).split('data/')[-1]
+        out_dir = code_dir.joinpath(problem_dir)
+        out_dir.mkdir(parents=True, exist_ok=True)
 
-def main(prompts: list[str], prompt_files: list[str], cfg_file: str):
-    response = get_codes(prompts, cfg_file)
+        code_str = "def code():"
+        
+        if (starter_path := problem.joinpath(starter_code)).exists():
+            with open(starter_path) as f:
+                code_str = f.read()
+            
+            with open(out_dir.joinpath(starter_code), 'w') as f:
+                f.write(starter_code)
 
-    dirname = create_experiment_dir(PATH_TO_EXP)
+        code_str += code
 
-    codes = {str(k): v for k, v in enumerate([val["text"] for val in response["choices"]])}
+        # This will fail when there is starter code. But there isn't an easy
+        # way to write in the provided function. This will be done by hand
+        code_str += '\ncode()'
+
+        out_path = out_dir.joinpath(fname+'_code.py')
+
+        with open(out_path, 'w') as f:
+            f.write(code_str)
+
+        shutil.copy(
+            problem.joinpath(test_case_name),
+            out_dir.joinpath(test_case_name)
+        )
+
+        shutil.copy(
+            script_dir.joinpath(test_case_script),
+            out_dir.joinpath(test_case_script)
+        )
+
+        if (solutions_path := problem.joinpath(solution_fname)).exists():
+            with open(solutions_path) as f:
+                solutions = json.load(f)
+            
+            with open(out_dir.joinpath('solution.py'), 'w') as f:
+                f.write(solutions[0])
+
+def generate_codes(prompts: List[str], offset: int, cfg: config.APIConfig):
+    response = get_codes(prompts, cfg)
+
+    codes = {str(k + offset): v for k, v in enumerate([val["text"] for val in response["choices"]])}
     codes = clean_codes(codes)
 
-    prompt_json = {str(k): v for k, v in enumerate(prompts)}
+    return codes, response
 
-    save_json(dirname, prompt_files, 'test.json')   # List of problems
-    save_json(dirname, response, 'response.json')   # Full GPT response
-    save_json(dirname, codes, 'all_codes.json')     # Code dict 
-    save_json(dirname, prompt_json, 'prompts.json') # Prompts given
-    save_config(dirname, cfg_file)                  # Config file
+@hydra.main(config_path="configs", config_name="codex")
+def main(cfg: config.ExperimentConfig):
+    output_dir = config.get_output_dir()
+    logger.info(cfg)
+    logger.info(f'Saving output here {output_dir}')
+    prompts, prompt_files = prompt_generation.generate_code_prompt(cfg.generation_params)
 
-    test_arg_arr = create_test_args(dirname)
-
-    test_args = test_one_solution.parse_args(test_arg_arr)
-    test_one_solution.main(test_args)
-
-    logger.info(f'Saved results here: {dirname}')
-    return dirname
-
-# TODO: Save the aggregated codes (all_codes.json) and aggregated file names (test.json)
-if __name__ == "__main__":
-    cfg_file = 'codex_config.yaml'
-    prompts, prompt_files = generate_code_prompt(config=cfg_file)
-
-    experiments_list = []
+    generated_codes = dict()
+    responses = []
     # Can send max of 20 prompts to codex at a time
-    for i in range(0, len(prompts), 20):
-        logger.info(f'Generating code for problems {i} through {i+20}')
-        exp_dir = main(
-            prompts[i:i+20],
-            prompt_files[i:i+20],
-            cfg_file)
-        experiments_list.append(exp_dir)
+    # for i in range(0, len(prompts), 20):
+        # logger.info(f'Generating code for problems {i} through {i+20}')
+        # new_codes, response = generate_codes(prompts[i:i+20], i, cfg.api_params)
+        # generated_codes.update(new_codes)
+        # responses.append(response)
+    for i in range(0, len(prompts), 15):
+        logger.info(f'Generating code for problems {i} through {i+15}')
+        new_codes, response = generate_codes(prompts[i:i+15], i, cfg.api_params)
+        generated_codes.update(new_codes)
+        responses.append(response)
 
-    results = file_reading_utils.main(experiments_list)
-    
-    path_to_exp_agg = PATH_TO_EXP.joinpath('aggregate_results')
-    exp_dir = create_experiment_dir(path_to_exp_agg)
-    json_file = exp_dir.joinpath('all_results.json')
+    save_json(output_dir, prompts, 'prompts.json')
+    save_json(output_dir, responses, 'responses.json')
+    save_json(output_dir, prompt_files, 'test.json')
+    save_json(output_dir, generated_codes, 'all_codes.json')
 
-    with open(json_file, 'w') as f:
-        json.dump(results, f)
+    if cfg.generation_params.test_immediately:
+        run_results.main(output_dir, cfg.generation_params.summary_types)
+    else:
+        if config.is_initial_job():
+            run_results.prepare_agave(output_dir)
 
-    codex_results.main(results, exp_dir)
+    copy_codes(output_dir, prompt_files, generated_codes)
 
-    logger.info(f'Saved final results here {exp_dir}')
+if __name__ == "__main__":
+    config.register_configs()
+    main()
