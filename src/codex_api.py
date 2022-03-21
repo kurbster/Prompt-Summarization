@@ -110,7 +110,7 @@ def copy_codes(output_dir: Path, test_manifest: List[str], all_codes: Dict[str, 
                 code_str = f.read()
             
             with open(out_dir.joinpath(starter_code), 'w') as f:
-                f.write(starter_code)
+                f.write(code_str)
 
         code_str += code
 
@@ -158,14 +158,10 @@ def main(cfg: config.ExperimentConfig):
     generated_codes = dict()
     responses = []
     # Can send max of 20 prompts to codex at a time
-    # for i in range(0, len(prompts), 20):
-        # logger.info(f'Generating code for problems {i} through {i+20}')
-        # new_codes, response = generate_codes(prompts[i:i+20], i, cfg.api_params)
-        # generated_codes.update(new_codes)
-        # responses.append(response)
-    for i in range(0, len(prompts), 15):
-        logger.info(f'Generating code for problems {i} through {i+15}')
-        new_codes, response = generate_codes(prompts[i:i+15], i, cfg.api_params)
+    prompts_per_iter = cfg.generation_params.prompts_per_iter
+    for i in range(0, len(prompts), prompts_per_iter):
+        logger.info(f'Generating code for problems {i} through {i+prompts_per_iter}')
+        new_codes, response = generate_codes(prompts[i:i+prompts_per_iter], i, cfg.api_params)
         generated_codes.update(new_codes)
         responses.append(response)
 
