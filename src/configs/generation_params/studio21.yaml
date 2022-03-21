@@ -1,11 +1,16 @@
 defaults:
   - /generation_params/summary_base@_here_
+  - _self_
+api_name: studio21
 header: The following paragraphs contain computer science jargon. Rewrite them using simple words.
 split_file: prompt_split.txt
 category_file: prompt_category.yaml
-num_few_shot: 5
+# prompt_manifest: studio_left_to_sum.txt
+prompt_manifest: improve_prob.txt
+num_prompts: -1
+num_few_shot: 3
 ignore_intro: True
 summary_types: [expert]
-summary_prefix: "Simple: "
-original_prefix: "Jargon: "
+prompt_prefix: "Simple: "
+completion_prefix: "Jargon: "
 few_shot_suffix: "\n\n"

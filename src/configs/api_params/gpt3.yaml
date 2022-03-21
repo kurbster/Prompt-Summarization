@@ -1,11 +1,12 @@
 defaults:
-  - /api_params/opanai_base@_here_
-engine: "davinci"
-temperature: 0.25
+  - /api_params/openai_base@_here_
+  - _self_
+engine: "text-davinci-001"
+temperature: 0.5
 max_tokens: 500
 top_p: 1.0
-frequency_penalty: 0.01
-presence_penalty: 0.05
+frequency_penalty: 0.1
+presence_penalty: 0.1
 stop:
-  - "\n\n"
-  - "tl;dr:"
+  # - "\n\n"
+  - "Original:"
