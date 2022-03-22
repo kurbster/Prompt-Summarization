@@ -1,5 +1,5 @@
 # Prompt-Summarization
-Using NLP techniques to summarize prompts for program synthesis. After cloning make sure to download our [dataset from here](https://drive.google.com/file/d/1O7nxqgIJw4Lof3XJdubCUIMlc8tVYImn/view?usp=sharing). The data directory contains all of the human generated summaries, Studio21 generated summaries, and GPT generated summaries. Along with an experiments directory that contains all of the experiments run.
+Using NLP techniques to summarize prompts for program synthesis. After cloning make sure to download our [dataset from here](https://drive.google.com/file/d/1yakjokSlHxkTveYumcVTmCnNbJBU-yBU/view?usp=sharing). The data directory contains all of the human generated summaries, Studio21 generated summaries, and GPT generated summaries. Along with an experiments directory that contains all of the experiments run.
 
 ## Motivation
 Recently, researchers and companies have been focusing on probram synthesis.
@@ -15,7 +15,7 @@ This area of NLP is changing rapidly and any contributions could change the cour
 2. Download the original APPS dataset.
     1. You can do this by running the `download.sh` script in the `src` directory. This will download then prepare the original dataset automatically.
 3. Download and extract our contributed dataset.
-    1. The link to download is [here](https://drive.google.com/file/d/1amSx0M_wExcfVDFjp6Ez4p_VkGouoYl7/view?usp=sharing). You will need to extract the tar file inside of the `Prompt-Summarization` directory.
+    1. The link to download is [here](https://drive.google.com/file/d/1yakjokSlHxkTveYumcVTmCnNbJBU-yBU/view?usp=sharing). You will need to extract the tar file inside of the `Prompt-Summarization` directory.
 4. Set up your api keys.
     1. Set up a directory called `.env` or `environ`. These directories are in the `.gitignore` file so your api keys won't be pushed to github.
     2. After obtaining api keys from [OpenAI](https://beta.openai.com/) or [StudioAI21](https://studio.ai21.com/) you should save them in a file like this 
