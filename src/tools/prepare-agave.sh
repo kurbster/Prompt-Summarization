@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 manifest_file="${1:?You must provide a manifest file}"
 output_dir="${2:-agave_data}"
 files="$(jq '.[]' ${manifest_file})"

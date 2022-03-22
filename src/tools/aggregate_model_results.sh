@@ -9,5 +9,6 @@ rm "$outfile"
 # file location, type of summary, word reduction, char reduction
 get_generated_model
 for file in $problems; do
-    echo "$file/report.txt",$(cat "$file/report.txt") >> "$outfile"
+    fname=${file#*"data/"}
+    echo "${fname}/report.txt",$(cat "$file/report.txt") >> "$outfile"
 done

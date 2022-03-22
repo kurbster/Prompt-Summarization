@@ -14,13 +14,22 @@ get_generated_model() {
 # If this script was run directly
 [[ ${#BASH_SOURCE[@]} == 1 ]] && {
     get_generated_model
-    echo "$(wc -l <<< $problems) model problems generated."
+    echo "$(wc -l <<< ${problems}) model problems generated."
+
+    # Was unable to make the awk and sed commands a function
+    # When passing the args echo and awk did not iterate as expected
     get_generated_model "studio21"
-    echo "$(wc -l <<< $problems) studio 21 model problems generated."
+    echo "$(wc -l <<< ${problems}) studio 21 model problems generated."
+    echo -e "${problems}\n" | awk -F"data/" '{print $2}' > ../configs/manifests/all_studio_generated.txt
+    sed -E -i '/^[[:space:]]*$/d' ../configs/manifests/human_probs.txt
+
     get_generated_model "gpt"
-    echo "$(wc -l <<< $problems) gpt model problems generated."
+    echo "$(wc -l <<< ${problems}) gpt model problems generated."
+    echo -e "${problems}\n" | awk -F"data/" '{print $2}' > ../configs/manifests/gpt_generated.txt
+    sed -E -i '/^[[:space:]]*$/d' ../configs/manifests/human_probs.txt
+
     get_generated_human
-    echo "$(wc -l <<< $problems) human problems generated."
-    echo -e "$problems\n" | awk -F"data/" '{print $2}' > ../configs/manifests/human_probs.txt
+    echo "$(wc -l <<< ${problems}) human problems generated."
+    echo -e "${problems}\n" | awk -F"data/" '{print $2}' > ../configs/manifests/human_probs.txt
     sed -E -i '/^[[:space:]]*$/d' ../configs/manifests/human_probs.txt
 }
