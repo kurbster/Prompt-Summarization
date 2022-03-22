@@ -9,10 +9,10 @@ hydra:
         # If we are doing a single run specify that it is job 0
         num: 0
     run:
-        # Use absolute path instead
-        #dir: "../data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
-        dir: "/media/HD/Documents/Prompt-Summarization/data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
+        # Use absolute path if running lib/prompt_generation.py directly this is only needed for debugging
+        # If the relative path is used then a data/experiments directory is created in the src directory
+        # and can be deleted after
+        dir: "../data/experiments/$env.exp_day_fmt/$env.exp_time_fmt"
+        #dir: "/media/HD/Documents/Prompt-Summarization/data/experiments/$env.exp_day_fmt/$env.exp_time_fmt"
     sweep:
-        # Use absolute path instead
-        #dir: "../data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
-        dir: "/media/HD/Documents/Prompt-Summarization/data/experiments/${now:%m-%d-%Y}/${now:%H-%M-%S}"
+        dir: "../data/experiments/$env.exp_day_fmt/$env.exp_time_fmt"
