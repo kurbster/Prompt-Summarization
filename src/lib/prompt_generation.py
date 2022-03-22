@@ -10,9 +10,10 @@ import shutil
 import random
 import logging
 
-from omegaconf import OmegaConf
+from hydra import compose, initialize
 from typing import List, Tuple, Set
 from pathlib import Path
+from omegaconf import OmegaConf
 
 try:
     from config import CodexConfig, GenerationConfig, ExperimentConfig, register_configs
@@ -589,17 +590,12 @@ def log_summary(prompt, extra, output_dir):
     logger.info(f'EXTRA:\n{extra}')
     logger.info(f'OUTPUT DIR: {output_dir}')
 
-def log_codes(prompts, output_dirs):
-    for p, out in zip(prompts, output_dirs):
-        logger.debug(f'Prompt for output {out}')
-        logger.debug(f'\n{p}')
-
 @hydra.main(config_path="../configs", config_name="gpt3")
 def main(cfg: ExperimentConfig):
     prompts, extras, output_dirs = generate_summary_prompt(cfg.generation_params)
     logger.info('BEGIN TEST')
     for prompt, extra, output_dir in zip(prompts, extras, output_dirs):
-        log_summary(prompt, extra, output_dir)
+       log_summary(prompt, extra, output_dir)
     logger.info('END TEST')
 
 if __name__ == "__main__":
