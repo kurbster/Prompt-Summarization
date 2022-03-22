@@ -16,6 +16,11 @@ import time
 from datetime import datetime, date
 from tqdm import tqdm
 
+try:
+    import testing_util as test_util
+except ModuleNotFoundError:
+    from . import testing_util as test_util
+
 from typing import List
 
 logger = logging.getLogger('apiLogger')
@@ -37,18 +42,14 @@ def print_results(results, args):
     successes = np.count_nonzero(np.where(res==1, 1, 0))
     failures = total_testcases - compile_errors - runtime_errors - successes
 
-    logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
-    logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
-    logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
-    logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
-
     logger.info(f"number of test cases run = {total_testcases}")
-    
-    # if total_testcases:
-    #     logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
-    #     logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
-    #     logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
-    #     logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
+    if total_testcases:
+        logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
+        logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
+        logger.info(f"number of test case failures = {failures} avg = {failures / total_testcases:.4f}")
+        logger.info(f"number of test case passes = {successes} avg = {successes / total_testcases:.4f}")
+        logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
+        logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
 
 def eval_and_save_problems(args):
     with open(args.test_loc, "r") as f:
@@ -119,7 +120,7 @@ def eval_and_save_problems(args):
         except BaseException as e:
             logger.debug(f"{repr(e)}{e}")
             logger.error(f"Problem {problem} did not have test cases.")
-            res = [[]]
+            #res = [[]]
             #res.append([])
         except Exception as e:
             logger.debug(f"test framework exception = {repr(e)}{e}")
@@ -178,10 +179,5 @@ def parse_args(arg_str: str = None):
     return args
 
 if __name__ == "__main__":
-    import testing_util as test_util
-    import my_logger
     args = parse_args()
     main(args)
-else:
-    from . import my_logger
-    from . import testing_util as test_util

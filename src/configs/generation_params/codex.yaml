@@ -1,0 +1,22 @@
+defaults:
+  - /generation_params/codex_base@_here_
+header: "Python 3\n"
+human_only: True
+# test_immediately: True
+prompts_per_iter: 15
+# prompt_manifest: human_probs.txt
+# prompt_manifest: gpt_generated.txt
+# prompt_manifest: remaining_studio_summary.txt
+# prompt_manifest: human_after_remove.txt
+prompt_manifest: improve_prob.txt
+# prompt_manifest: test_prompts.txt
+# prompt_manifest: gpt_test.txt
+num_prompts: -1
+num_few_shot: 0
+# summary_types: [question, expert]
+summary_types: [question, summary]
+# summary_types: [question, summary, expert]
+prompt_prefix: "\"\"\""
+prompt_suffix: "\"\"\""
+few_shot_suffix: "\n\n"
+completion_prefix: "def code():"

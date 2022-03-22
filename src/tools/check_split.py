@@ -3,12 +3,11 @@ import re
 import os
 import glob
 
-files = glob.glob('../[ic]*/*/question.txt')
-other = glob.glob('../data/studio21_generated/*/*/question.txt')
-test  = glob.glob('../data/studio21_generated/test/*/*/question.txt')
-files = files + other + test
+files = glob.glob('../../data/human_generated/*/*/*/question.txt')
+other = glob.glob('../../data/studio21_generated/*/*/*/question.txt')
+files = files + other
 
-with open('split.txt') as f:
+with open('../configs/manifests/prompt_split.txt') as f:
     re_str = f.read().splitlines()
 
 re_str = '|'.join(re_str)
@@ -30,8 +29,7 @@ def split_question(fname: str) -> str:
         prompt_idx = match.span()[0]
         prompt_split = True
     else:
-        name = os.path.split(fname)[0]
-        print(f'For file {name} We did not find a split!!!')
+        print(f'For file {fname} We did not find a split!!!')
 
     return prompt_split
 

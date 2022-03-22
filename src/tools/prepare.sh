@@ -4,37 +4,23 @@ levels=(interview competition introductory)
 
 make_dirs() {
     for lvl in "${levels[@]}"; do
-        [[ ! -d $lvl ]] && mkdir $lvl
+        [[ ! -d "$1/$lvl" ]] && mkdir "$1/$lvl"
     done
+    find_difficulty $1
 }
 
 find_difficulty() {
-    for fname in $(find $1 -not -path train -type d); do
-        trimmed=$(tr '\n' ' ' < "$fname/metadata.json")
+    for fname in $(find $1/[0-9]* -type d); do
         level=$(awk -F\" '{
-            if ($2 == "url") { print $8 }
-            else if ($2 == "difficulty") { print $4 }
-            else { print ERROR }
-        }' <<< $trimmed)
-        mv $fname $level
+            if ($2 == "difficulty") { print $4 }
+        }' "$fname/metadata.json")
+        mv $fname $1/$level
     done
 }
 
-pushd "../../apps_dataset/APPS" > /dev/null
+pushd "../../APPS" > /dev/null
 
-make_dirs && find_difficulty "train"
-
-pushd "test" > /dev/null
-
-make_dirs && find_difficulty "[0-9]*"
-
-popd > /dev/null
-
-rm -r train README.txt
-
-# we are in apps_dataset/APPS
-cd ../..
-mv apps_dataset/APPS .
-rmdir apps_dataset
+make_dirs "train"
+make_dirs "test"
 
 popd > /dev/null

@@ -1,0 +1,18 @@
+defaults:
+  - /generation_params/summary_base@_here_
+  - _self_
+api_name: gpt
+header: "Summarize the following paragraph:\n"
+split_file: prompt_split.txt
+category_file: prompt_category.yaml
+# prompt_manifest: studio21_good_probs.txt
+# prompt_manifest: left_to_sum.txt
+prompt_manifest: improve_prob.txt
+num_prompts: -1
+num_few_shot: 3
+ignore_intro: True
+ignore_train: True
+summary_types: [expert]
+prompt_prefix: "Original: "
+completion_prefix: "Summary: "
+few_shot_suffix: "\n\n"

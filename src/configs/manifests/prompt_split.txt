@@ -1,4 +1,5 @@
 -----Input
+-----INPUT
 =====Input
 Input:
 Sample Input:
@@ -14,3 +15,6 @@ For example :
 \*\*Note on numerical stability:\*\*
 ~~~if:java
 ### Detailed rules
+-----Constraints
+Constraints
+```python

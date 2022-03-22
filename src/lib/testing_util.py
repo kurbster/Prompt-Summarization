@@ -167,14 +167,32 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
         if debug:
             logger.debug(f"loading test code = {datetime.now().time()}")
  
+        # If it's call based we need to add the starter code
         if which_type == CODE_TYPE.call_based:
+            starter_code_path = os.path.join(root, 'starter_code.py')
+            starter_code = ''
+            if os.path.exists(starter_code_path):
+                logger.debug(f'Loading starter code {starter_code_path}.')
+                with open(starter_code_path) as f:
+                    starter_code = f.read()
+                logger.debug(f'Here is the starter code\n{starter_code}')
+                # Remove leading newline
+                test = test.lstrip('\n')
+                starter_code = starter_code.rstrip(' ')
+                starter_code = starter_code.rstrip('\t')
+                logger.debug(f'Here is the starter code after removing trailing whitespace\n{starter_code}')
+            else:
+                logger.critical(f'The problem: {root} was call based but did not have starter code. This will fail with code -2')
+            sol += starter_code
             sol += test
             if debug: # or True:
-                logger.debug(f"sol = {sol}")
+                logger.debug(f"Code being tested:\n{sol}")
+                #logger.debug(f"sol = {sol}")
             signal.alarm(timeout)
             try:
                 tmp_sol = RuntimeModule.from_string("tmp_sol", "", sol)
-                if "class Solution" not in test:
+                #if "class Solution" not in test:
+                if "class Solution" not in sol:
                     tmp = tmp_sol
                 else:
                     tmp = tmp_sol.Solution()
@@ -201,6 +219,8 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             new_test = ""
             started = False
             # TODO: Should we define starting code here or not?
+            # check for starter code and append it if there is no def function
+            # If there is a def how do we take it?
             for i in tmp_test:
                 if (i.startswith(" ") or i.startswith("\t")) and not started:
                     new_test += "stdin = sys.stdin\nstdout = sys.stdout\n"

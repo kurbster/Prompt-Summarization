@@ -8,3 +8,6 @@ fine_tuned_models
 data/
 .ipynb_checkpoints/
 __pycache__
+*.tar.gz
+present/
+tmp/
