@@ -9,7 +9,7 @@ from pathlib import Path
 try:
     import test_one_solution, codex_results, experiment_results, result_analysis
 except ModuleNotFoundError:
-    from . import test_one_solution, codex_results, experiment_results, result_analysis
+    from lib import test_one_solution, codex_results, experiment_results, result_analysis
 
 def prepare_agave(dirname: Path):
     path_to_script = Path(__file__, '../../tools/prepare-agave.sh').resolve()

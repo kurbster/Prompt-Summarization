@@ -154,7 +154,7 @@ def main(cfg: config.ExperimentConfig):
     logger.info(cfg)
     logger.info(f'Saving output here {output_dir}')
     prompts, prompt_files = prompt_generation.generate_code_prompt(cfg.generation_params)
-
+    
     generated_codes = dict()
     responses = []
     # Can send max of 20 prompts to codex at a time

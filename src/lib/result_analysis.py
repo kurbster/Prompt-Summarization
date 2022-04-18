@@ -8,8 +8,8 @@ import pandas as pd
 from typing import Iterable, Tuple, Callable
 from pathlib import Path
 
-from experiment_results import get_orig_better_worse_same, get_probs
-from codex_results import get_accuracy, detect_summary, split_prob
+from lib.experiment_results import get_orig_better_worse_same, get_probs
+from lib.codex_results import get_accuracy, detect_summary, split_prob
 
 PATH_TO_EXP = Path(__file__, '../../../data/experiments').resolve()
 PATH_TO_DATA = Path(__file__, '../../../data/').resolve()

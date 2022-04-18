@@ -1,0 +1,14 @@
+defaults:
+  - /generation_params/codex_base@_here_
+header: "Python 3\n"
+human_only: True
+test_immediately: True
+prompts_per_iter: 15
+prompt_manifest: alpha_code_probs.txt
+num_prompts: -1
+num_few_shot: 0
+summary_types: [question, summary, expert]
+prompt_prefix: "\"\"\""
+prompt_suffix: "\"\"\""
+few_shot_suffix: "\n\n"
+completion_prefix: "def code():"
