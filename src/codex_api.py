@@ -137,8 +137,9 @@ def copy_codes(output_dir: Path, test_manifest: List[str], all_codes: Dict[str, 
             with open(solutions_path) as f:
                 solutions = json.load(f)
             
-            with open(out_dir.joinpath('solution.py'), 'w') as f:
-                f.write(solutions[0])
+            if len(solutions) > 0:
+                with open(out_dir.joinpath('solution.py'), 'w') as f:
+                    f.write(solutions[0])
 
 def generate_codes(prompts: List[str], offset: int, cfg: config.APIConfig):
     response = get_codes(prompts, cfg)

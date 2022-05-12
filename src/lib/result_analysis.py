@@ -45,7 +45,10 @@ def get_json_len(problems: Iterable, result_type: str, agg_func: Callable):
             sols = json.load(f)
         lens = list(map(len, sols))
         arr = np.array(lens)
-        lengths.append(agg_func(arr))
+        if len(arr) > 0:
+            lengths.append(agg_func(arr))
+    if len(lengths) == 0:
+        lengths = [0]
     return lengths
 
 def get_code_len(problems: Iterable, result_type: str, result_dir: str) -> Tuple[np.array, np.array]:
