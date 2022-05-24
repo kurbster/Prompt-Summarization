@@ -1,4 +1,7 @@
 # Prompt-Summarization
+You can find our paper on [ArXiv](https://arxiv.org/abs/2203.08597). We presented this work as part of the [SPA workshop](https://www.semiparametric.ml/) at ACL 2022!
+
+
 Using NLP techniques to summarize prompts for program synthesis. After cloning make sure to download our [dataset from here](https://drive.google.com/file/d/1yakjokSlHxkTveYumcVTmCnNbJBU-yBU/view?usp=sharing). The data directory contains all of the human generated summaries, Studio21 generated summaries, and GPT generated summaries. Along with an experiments directory that contains all of the experiments run.
 
 ## Motivation
