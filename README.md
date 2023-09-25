@@ -1,5 +1,8 @@
 # Prompt-Summarization
-Using NLP techniques to summarize prompts for program synthesis.
+You can find our paper on [ArXiv](https://arxiv.org/abs/2203.08597). We presented this work as part of main conference at [EMNLP 2022](https://2022.emnlp.org/)!
+
+Download our human and AI generated summaries [here](https://drive.google.com/file/d/1VxB0G0BXwNrp3S0CE-fpqbZQt9hOzfay/view?usp=drive_link)
+
 ## Motivation
 Recently, researchers and companies have been focusing on probram synthesis.
 Which is the task of generating code given a prompt. There has been some success when the prompts
