@@ -5,6 +5,7 @@ Run solutions from one problem.
 import io
 import json
 import logging
+import logging.config
 import math
 import numpy as np
 import os
@@ -12,102 +13,82 @@ import pprint
 import argparse
 import platform
 import time
+import yaml
 
 # for timing debugging
 from datetime import datetime, date
 from tqdm import tqdm
+from pathlib import Path
 
 try:
     import testing_util as test_util
 except ModuleNotFoundError:
     from . import testing_util as test_util
 
-from typing import List
+from calculate_accuracy import print_results
 
-logger = logging.getLogger(__name__)
+LOGGING_CONFIG = Path(__file__, "../../configs/hydra/job_logging/logging.yaml").resolve()
 
-def print_results(results, args):
-    res = []
-    per_prob_res = []
-    all_correct = []
-    for out in results.values():
-        out = np.array(out[0])
-        res.extend(out)
-        out = np.where(out<=0, 0, out)
-        per_prob_res.append(np.mean(out))
-        all_correct.append(np.all(out))
-    res = np.asarray(res)
-    total_testcases = res.size
-    compile_errors = np.count_nonzero(np.where(res==-2, 1, 0))
-    runtime_errors = np.count_nonzero(np.where(res==-1, 1, 0))
-    successes = np.count_nonzero(np.where(res==1, 1, 0))
-    failures = total_testcases - compile_errors - runtime_errors - successes
+with open(LOGGING_CONFIG) as f:
+    config = yaml.load(f, Loader=yaml.FullLoader)
+    config["handlers"]["file"]["filename"] = "test_solution.log"
 
-    logger.info(f"number of test cases run = {total_testcases}")
-    if total_testcases:
-        logger.info(f"number of compile errors = {compile_errors} avg = {compile_errors / total_testcases:.4f}")
-        logger.info(f"number of runtime errors = {runtime_errors} avg = {runtime_errors / total_testcases:.4f}")
-        logger.info(f"number of test case failures = {failures} avg = {failures / total_testcases:.4f}")
-        logger.info(f"number of test case passes = {successes} avg = {successes / total_testcases:.4f}")
-        logger.info(f"Test Case Average (average accuracy over problems) = {np.mean(per_prob_res):.4f}")
-        logger.info(f"Strict Accuracy (all test cases passed / total problems) = {np.mean(all_correct):.4f}")
+logging.config.dictConfig(config)
+logger = logging.getLogger("apiLogger")
 
 def eval_and_save_problems(args):
-    with open(args.test_loc, "r") as f:
-        problems = json.load(f)
-
-    logger.info(f'Testing {len(problems)} problems')
-    gpt_codes = {}
     results = {}
-    codes_loc = os.path.join(args.save, f"all_codes.json")
-    if not os.path.exists(codes_loc):
-        codes_loc = os.path.join(args.save, f"{args.start}-{args.end}_codes.json")
+    with open(args.input_codes) as f:
+        codes = json.load(f)
 
-    if os.path.exists(codes_loc):
-        results_loc = os.path.join(args.save, f"all_results.json") 
-    else:
-        results_loc = os.path.join(args.save, f"{args.start}-{args.end}_results.json") 
-    logger.debug(f'Codes location {codes_loc}')
-    logger.debug(f'Results save location {results_loc}')
+    # Kirby Kuznia - If the user specified a end point, then subset those problems
 
-    with open(codes_loc, "r") as f: 
-        gpt_codes = json.load(f)
+    start = args.start
+    if start > len(codes):
+        raise ValueError(f"Start index {start} is > than number of problems {len(codes)}")
+    if start < 0:
+        raise ValueError(f"Start index cannot be zero. Got '{start}'")
 
-    if args.index:
-        problems = [problems[args.index]]
-    else:
-        if args.start > len(problems) or args.start < 0:
-            logger.critical(f"start index {args.start} > number of problems {len(problems)}")
-            return
-        start = args.start
-        if args.end is None or args.end > len(problems):
-            end = len(problems)
-        else:
-            end = args.end
-        problems = problems[start:end]
+    end = len(codes)
+    results_loc = args.input_codes.parent / "all_results.json"
+    if args.end is not None:
+        end = args.end
+        results_loc = args.input_codes.parent / f"{start}-{end}_results.json"
 
-    if args.stop_early:
-        problems = problems[:args.stop_early]
+    if start > end:
+        raise ValueError(f"Start must be <= end. Got start = {start} and end = {end}")
+    all_codes = codes.copy()
+    codes = {}
+    for i, (key, val) in enumerate(all_codes.items()):
+        if i < start:
+            continue
+        if i >= end:
+            break
+        codes[key] = val
 
-    # main eval loop
-    for index, problem in enumerate(tqdm(problems)):
+    logger.info(f'Loaded {len(codes)} problems')
+    logger.info(f'Results save location {results_loc}')
+
+    for problem, code in tqdm(codes.items()):
+        problem_path = Path(problem).resolve().parent
+        if not problem_path.exists():
+            raise ValueError(
+                f"The path '{problem}' did not exist.\n"
+                "Make sure the keys to the input json file are in the format "
+                "'/path/to/APPS/0000/experiment_1'\n"
+                "The parent of this path must exist and contain the 'input_output.json' file "
+                "that contains the unit tests provided by APPS. The name of this path is the "
+                "experiment name you wish to group by. Paths can be relative to the cwd."
+            )
         if args.debug:
-            logger.debug(f"problem path = {problem}")
-        output_str = gpt_codes[str(index+args.start)]
-
-        # problem_dir = os.path.dirname(problem)
-        # prob_path = os.path.join(args.root, problem_dir)
-        prob_path = os.path.join(args.root, problem)
-        
-        if not os.path.exists(args.save):
-            os.makedirs(args.save)
+            logger.debug(f"problem path = {problem_path}")
 
         res = []
         if args.debug:
-            logger.debug(f"\nTesting this code\n{output_str}")
+            logger.debug(f"\nTesting this code\n{code}")
         curr_res = [-2]
         try:
-            curr_res = test_util.run_test(prob_path=prob_path, test=output_str, debug=args.debug)
+            curr_res = test_util.run_test(prob_path=str(problem_path), test=code, debug=args.debug)
             fixed = []
             for e in curr_res:
                 if isinstance(e, np.ndarray):
@@ -134,11 +115,12 @@ def eval_and_save_problems(args):
         logger.info(f"How to read results [-2] = compile error, [-1] = runtime error [False] = failed test case [True] = passed test case")
         logger.info(f"results = {res}")
 
-        results[index+args.start+args.index] = res
+        results[problem] = res
         
         with open(results_loc, "w") as f:
             try:
-                f.write(json.dumps(results))
+                # f.write(json.dumps(results))
+                json.dump(results, f, indent=4)
             except Exception as e:
                 import pdb; pdb.set_trace()
                 logger.error("didn't save problem due to {e}")
@@ -161,7 +143,7 @@ def reliability_guard(maximum_memory_bytes: int = None):
     with caution.
     """
     if maximum_memory_bytes is not None:
-        logger.info("Limiting program RAM consumption to '%d'", maximum_memory_bytes)
+        logger.info("Limiting program RAM consumption to '%d' bytes", maximum_memory_bytes)
         import resource
         resource.setrlimit(resource.RLIMIT_AS, (maximum_memory_bytes, maximum_memory_bytes))
         resource.setrlimit(resource.RLIMIT_DATA, (maximum_memory_bytes, maximum_memory_bytes))
@@ -225,33 +207,35 @@ def main(args):
     logger.info(pprint.pformat(argsdict))
     reliability_guard(args.max_mem)
 
+    save_path = args.input_codes.parent
     if args.print_results:
         results = {}
-        codes_loc = os.path.join(args.save, f"all_codes.json")
+        codes_loc = save_path / "all_codes.json"
         if os.path.exists(codes_loc):
-            results_loc = os.path.join(args.save, f"all_results.json") 
+            results_loc = save_path / "all_results.json"
         else:
-            results_loc = os.path.join(args.save, f"{args.start}-{args.end}_results.json") 
+            results_loc = save_path / f"{args.start}-{args.end}_results.json"
         with open(results_loc, "r") as f: 
             results = json.load(f)
     else:
         results = eval_and_save_problems(args)
 
-    print_results(results, args)
-
+    print_results(results, save_path)
 
 def parse_args(arg_str: str = None):
     parser = argparse.ArgumentParser(description="Testing a Language Model on Python Code")
-    parser.add_argument("-t","--test_loc", default="../data_split/test.json", type=str, help="path to the json containing problem paths to be evaluated.")
-    parser.add_argument("-r","--root", default="./", type=str, help="where the data is stored.")
     parser.add_argument("-s","--start", default=0, type=int)
     parser.add_argument("-e","--end", default=None, type=int, help="If you want to evaluate a subset of problems specify start and ending index. File with start and ending prefix must exist typically used with batch evaluation.")
-    parser.add_argument("-i", "--index", default=0, type=int)
     parser.add_argument("-p", "--print_results", action="store_true", help="If you have already evaluated the results and only want to print them.")
     parser.add_argument("-d", "--debug", action="store_true")
-    parser.add_argument("--max-mem", type=int, default=8_000_000_000, help="The maximum number of bytes the program can use.")
-    parser.add_argument("--save", type=str, default="./results", help="Where the evaluated data is loaded from and results saved to.")
-    parser.add_argument("--stop-early", default=None, type=int)
+    parser.add_argument(
+        "input_codes", type=Path,
+        help="Path to the all_codes.json file. These are the codes to be tested."
+    )
+    parser.add_argument(
+        "--max-mem", type=int, default=8_000_000_000,
+        help="The maximum number of bytes the program can use. Default 8GB."
+    )
 
     args = parser.parse_args(arg_str)
     return args

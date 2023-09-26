@@ -1,3 +1,4 @@
+import re
 import argparse
 import json
 import os
@@ -157,8 +158,6 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
     if debug:
         logger.debug(f"loaded json = {datetime.now().time()}")
  
-    #else:
-    #    continue
     if test is None:
         return in_outs
     elif test is not None:
@@ -169,25 +168,19 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
  
         # If it's call based we need to add the starter code
         if which_type == CODE_TYPE.call_based:
-            starter_code_path = os.path.join(root, 'starter_code.py')
-            starter_code = ''
-            if os.path.exists(starter_code_path):
-                logger.debug(f'Loading starter code {starter_code_path}.')
-                with open(starter_code_path) as f:
-                    starter_code = f.read()
-                logger.debug(f'Here is the starter code\n{starter_code}')
-                # Remove leading newline
-                test = test.lstrip('\n')
-                starter_code = starter_code.rstrip(' ')
-                starter_code = starter_code.rstrip('\t')
-                logger.debug(f'Here is the starter code after removing trailing whitespace\n{starter_code}')
-            else:
-                logger.critical(f'The problem: {root} was call based but did not have starter code. This will fail with code -2')
-            sol += starter_code
+            # Kirby Kuznia - 09/25/2023
+            # Find the first function name in the code that does not begin with an underscore
+            # and follows python conventions i.e doesn't start with a number
+            first_function = re.search(r"def\s+(?!_)([a-zA-Z]\w*)\s*\(", test)
+            # If this regex is None then there is no function in the code (or regex is wrong)
+            # Do not raise an error here. The code will raise an error when running getattr(tmp, method_name)
+            # Which will log the message "unable to get function name"
+            if first_function is not None:
+                method_name = first_function.group(1)
+                logger.debug("Function name parsed with regex '%s'", method_name)
             sol += test
             if debug: # or True:
                 logger.debug(f"Code being tested:\n{sol}")
-                #logger.debug(f"sol = {sol}")
             signal.alarm(timeout)
             try:
                 tmp_sol = RuntimeModule.from_string("tmp_sol", "", sol)
@@ -212,28 +205,20 @@ def run_test(prob_path:str=None, problem_list:List[str]=None, prob_index:int=Non
             for x in tmp_test:
                 if (not x.startswith("from ")) and (not x.startswith("import ")):
                     new_test.append(x + "\n")
+                    # new_test.append("    " + x + "\n")
                 else:
                     new_test.append(x + "\n")
             tmp_test = new_test
             
-            new_test = ""
+            new_test = "def code():\n"
             started = False
             # TODO: Should we define starting code here or not?
             # check for starter code and append it if there is no def function
             # If there is a def how do we take it?
             for i in tmp_test:
-                if (i.startswith(" ") or i.startswith("\t")) and not started:
-                    new_test += "stdin = sys.stdin\nstdout = sys.stdout\n"
-                    new_test += "def code():\n"
-                    new_test += i
-                    started = True
-                elif started and ((i.startswith("from ")) or (i.startswith("import "))): 
-                    new_test += i
-                else:
-                    new_test += i
-            tmp_test = new_test
+                new_test += "    " + i
 
-            sol += tmp_test
+            sol += new_test
             if debug:
                 logger.debug(f"Code being tested:\n{sol}")
             method_name = "code"

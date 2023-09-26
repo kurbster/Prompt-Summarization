@@ -12,20 +12,23 @@ import pandas as pd
 ResultType = Dict[str, List[int]]
 
 def read_result_file(args) -> ResultType:
-    """Read the result file output by the test_one_solution.py script.
-    Remove the unnecessary outer list in the dictionary."""
-    result_file = Path(args.result_file)
+    """Read the result file output by the test_one_solution.py script."""
+    result_file = args.results_file
     if not result_file.exists():
         raise ValueError(f"The result file '{result_file}' did not exist!")
     with open(result_file) as f:
         results = json.load(f)
+    return clean_results(results)
+
+def clean_results(results: ResultType):
+    """Remove the unnecessary outer list in the dictionary."""
     return {k: [int(i) for i in v[0]] for k, v in results.items()}
 
 def get_output_dir(args) -> Path:
     """Ensure the output dir exists and return path."""
-    output_dir = Path(args.result_file).parent
+    output_dir = args.results_file.parent
     if args.output_dir is not None:
-        output_dir = Path(args.output_dir)
+        output_dir = args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
     return output_dir
     
@@ -48,18 +51,33 @@ def calculate_accuracy(scores: pd.DataFrame) -> Tuple[float, float]:
     # Count number of problems that had no -2, -1, 0 outcomes
     problems_all_correct = (scores[[-2, -1, 0]] == 0).all(axis=1).sum()
     strict_accuracy = 100 * (problems_all_correct / len(scores.index))
-    return acc, strict_accuracy
+    return acc, strict_accuracy, summed_scores
 
 def output_results(scores: pd.DataFrame, output_dir: Path):
-    accuracy, strict_accuracy = calculate_accuracy(scores)
-    print(f"{len(scores.index)} total problems scored.")
-    print("-"*80)
-    print(f"Raw Accuracy: {accuracy:.5f}")
-    print(f"Strict Accuracy: {strict_accuracy:.5f}")
-    print("-"*80)
+    def get_experiment_name(name):
+        return name.split("/")[-1]
+
+    exp_groups = scores.groupby(get_experiment_name).groups
+    for group, idx in exp_groups.items():
+        accuracy, strict_accuracy, summed_scores = calculate_accuracy(scores.loc[idx])
+        print(f"Results for experiment {group}")
+        print("-"*80)
+        print(f"{summed_scores.sum()} total problems scored.")
+        print(f"Number of compile errors = {summed_scores[-2]}")
+        print(f"Number of runtime errors = {summed_scores[-1]}")
+        print(f"Number of unit test failures = {summed_scores[0]}")
+        print(f"Number of unit test passes = {summed_scores[1]}")
+        print(f"Raw Accuracy: {accuracy:.5f}")
+        print(f"Strict Accuracy: {strict_accuracy:.5f}")
+        print("-"*80)
 
     output_fname = output_dir / "results.csv"
     scores.to_csv(output_fname, index_label="Problem")
+
+def print_results(results: ResultType, output_dir: Path):
+    results = clean_results(results)
+    scores = calculate_scores(results)
+    output_results(scores, output_dir)
 
 def main(args):
     results = read_result_file(args)
@@ -70,14 +88,14 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '-r', '--result_file', type=Path, required=True,
+        'results_file', type=Path,
         help=(
             "This should be the fpath to the 'all_results.json' file "
             "produced by the 'test_one_solution.py' script."
         )
     )
     parser.add_argument(
-        '-o', '--output_dir', type=Path, default=None,
+        '-o', '--output_dir', type=Path,
         help=(
             "This is the path to the directory you would like the output "
             "to be written to. A 'results.csv' file will be created in this "
